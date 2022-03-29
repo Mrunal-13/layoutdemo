@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <script async defer type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script async defer type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <script async defer type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+  <script async defer type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <!-- Local css files -->
+  <link rel="stylesheet" type="text/css" href='layout.css'/>
+
+  <!-- {% block localCss %}
+  If any HTML requires particular/its own css Files -->
+  <!-- {% endblock %} --> -->
+
+  <!-- Local JS file
+  <script async defer src="{% static 'dashboard/js/layout.js' %}"></script> -->
+
+  <!-- {% block javascript %} -->
+  <!-- If any HTML requires particular/its own JS Files -->
+  <!-- {% endblock %} -->
+
+  <title>Welldone</title>
+</head>
+
+<body>
+
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Header (Navigation) Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <a class="navbar-brand" href="index.html">WellDone</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <a class="nav-link" href="index.html">
+              <i class="fa fa-fw fa-dashboard"></i>
+              <span class="nav-link-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="#doctor">
+              <i class="fa fa-fw fa-user-md"></i>
+              <span class="nav-link-text">Doctors</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Pateints">
+            <a class="nav-link" href="tables.html">
+              <i class="fa fa-fw fa fa-wheelchair"></i>
+              <!-- <span class="nav-link-text">Patient</span> -->
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+            <a class="nav-link" href="tables.html">
+              <i class="fa fa-fw fa fa-calendar"></i>
+              <span class="nav-link-text">Appointment</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+            <a class="nav-link" href="tables.html">
+              <i class="fa fa-fw fa fa-calendar-check-o"></i>
+              <span class="nav-link-text">Doctor Schedule</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+            <a class="nav-link" href="tables.html">
+              <i class="fa fa-fw fa-building-o"></i>
+              <span class="nav-link-text">Departments</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
+              data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa fa-user"></i>
+              <span class="nav-link-text">Employee</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseComponents">
+              <li>
+                <a href="navbar.html">Employee List</a>
+              </li>
+              <li>
+                <a href="cards.html">Leaves</a>
+              </li>
+              <li>
+                <a href="cards.html">Holidays</a>
+              </li>
+              <li>
+                <a href="cards.html">Attendance</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+              data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa fa-book"></i>
+              <span class="nav-link-text">Payroll</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+              <li>
+                <a href="login.html">Pay slip</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa fa-commenting"></i>
+              <span class="nav-link-text">Chat</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
+              data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa fa-video-camera"></i>
+              <span class="nav-link-text">Call</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseMulti">
+              <li>
+                <a href="#">Voice call</a>
+              </li>
+              <li>
+                <a href="#">Video call</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail"
+              data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa fa-envelope"></i>
+              <span class="nav-link-text">email</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseEmail">
+              <li>
+                <a href="#">compose</a>
+              </li>
+              <li>
+                <a href="#">Video call</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog"
+              data-parent="#exampleAccordion">
+              <i class="fa fa-fw fas fa-comment"></i>
+              <span class="nav-link-text">Blog</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseBlog">
+              <li>
+                <a href="#">compose</a>
+              </li>
+              <li>
+                <a href="#">Video call</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fas fa-object-group"></i>
+              <span class="nav-link-text">Assets</span>
+            </a>
+          </li>
+
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa-bell-o"></i>
+              <span class="nav-link-text">Activites</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport"
+              data-parent="#exampleAccordion">
+              <i class="fa fa-fw fa-flag"></i>
+              <span class="nav-link-text">Report</span>
+            </a>
+            <ul class="sidenav-second-level collapse" id="collapseReport">
+              <li>
+                <a href="#">Expenses Report</a>
+              </li>
+              <li>
+                <a href="#">Invoice Report</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa-cog"></i>
+              <span class="nav-link-text">Setting</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav sidenav-toggler">
+          <li class="nav-item">
+            <a class="nav-link text-center" id="sidenavToggler">
+              <i class="fa fa-fw fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle mr-lg-2"
+                id="alertsDropdown"
+                href="#"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa fa-fw fa-bell"></i>
+                <span class="d-lg-none"
+                  >Alerts
+                  <span class="badge badge-pill badge-warning">6 New</span>
+                </span>
+                <span class="indicator text-warning d-none d-lg-block">
+                  <i class="fa fa-fw fa-circle"></i>
+                </span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">New Alerts:</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <span class="text-success">
+                    <strong>
+                      <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                      Update</strong
+                    >
+                  </span>
+                  <span class="small float-right text-muted">11:21 AM</span>
+                  <div class="dropdown-message small">
+                    This is an automated server response message. All systems
+                    are online.
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <span class="text-danger">
+                    <strong>
+                      <i class="fa fa-long-arrow-down fa-fw"></i>Status
+                      Update</strong
+                    >
+                  </span>
+                  <span class="small float-right text-muted">11:21 AM</span>
+                  <div class="dropdown-message small">
+                    This is an automated server response message. All systems
+                    are online.
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <span class="text-success">
+                    <strong>
+                      <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                      Update</strong
+                    >
+                  </span>
+                  <span class="small float-right text-muted">11:21 AM</span>
+                  <div class="dropdown-message small">
+                    This is an automated server response message. All systems
+                    are online.
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item small" href="#">View all alerts</a>
+              </div>
+            </li> -->
+          <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0 mr-lg-2">
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." />
+                <span class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-fw fa-microphone"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <button type="submit" class="addpatient">Add Patient</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-fw fa-calendar"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-bell"></i>
+              <span class="d-lg-none">Alerts
+                <span class="badge badge-pill badge-warning">6 New</span>
+              </span>
+              <span class="indicator text-warning d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+              <h6 class="dropdown-header">New Alerts:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                    Update</strong>
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  This is an automated server response message. All systems
+                  are online.
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-danger">
+                  <strong>
+                    <i class="fa fa-long-arrow-down fa-fw"></i>Status
+                    Update</strong>
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  This is an automated server response message. All systems
+                  are online.
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                    Update</strong>
+                </span>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  This is an automated server response message. All systems
+                  are online.
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">View all alerts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-envelope"></i>
+              <span class="d-lg-none">Messages
+                <span class="badge badge-pill badge-primary">12 New</span>
+              </span>
+              <span class="indicator text-primary d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+              <h6 class="dropdown-header">New Messages:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>David Miller</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  Hey there! This new version of SB Admin is pretty awesome!
+                  These messages clip off when they reach the end of the box
+                  so they don't overflow over to the sides!
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Jane Smith</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  I was wondering if you could meet for an appointment at 3:00
+                  instead of 4:00. Thanks!
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>John Doe</strong>
+                <span class="small float-right text-muted">11:21 AM</span>
+                <div class="dropdown-message small">
+                  I've sent the final files over to you for review. When
+                  you're able to sign off of them let me know and we can
+                  discuss distribution.
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">View all messages</a>
+            </div>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button id="dropbtnMyfunction" class="dropbtn">
+            <img class="user-img" src="images/2.png" />Rakesh Nandar
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Admin<br />xyz@gmail.com</a>
+            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Edit Profile</a>
+            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Account Setting</a>
+            <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Add New</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body section except header and footer -->
+    <div class="content-wrapper">
+      <div class="container-fluid body-container">
+        <!-- {% block body %} {% endblock %} -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+  </body>
+</body>
+<script src="layout.js"></script>
+<!-- {% block bottomJsFiles %} {% endblock %} -->
+
+</html>

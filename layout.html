@@ -403,28 +403,82 @@
         </nav>
         <!-- Navbar Second -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-second">
-            <a class="navbar-brand" href="#">
-                <img src="images/2.png" class="user-img-second" />
-            </a>
-            <img src="images/barcode.png" class="barcode-img" />
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
+            <span class="navbar-toggler-icon"></span>
+          </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto flex-column">
                     <li class="nav-item">
-                        <div class="nav-link">Rakesh Nandare</div>
-                        <button class="btn btn-primary">Edit</button>
+                        <div class="nav-link" id="dvUserImage">
+                            <a class="user-img-second-link" href="#">
+                                <img src="images/2.png" class="user-img-second" />
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <div class="nav-link">25Y 2M Old</div>
+                        <div class="nav-link">
+                            <a class="barcode-img-link" href="#">
+                                <img src="images/barcode.png" class="barcode-img" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto flex-column">
+                    <li class="nav-item">
+                        <div class="nav-link">Rakesh Nandare
+                            <button class="btn btn-primary btn-edit">Edit</button>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <div class="nav-link">25 kg</div>
+                        <div class="nav-link">25Y 2M Old
+                            <span class="spanGender"><i class="fa fa-mars" aria-hidden="true"></i></span>
+                            <span>Male</span>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <div class="nav-link">Returning</div>
+                        <div class="nav-link"><span class="spanWeight"><i class="fa fa-line-chart" aria-hidden="true"></i></span> 25 kg
+                            <span class="spanBloodGroup"><i class="fa fa-tint" aria-hidden="true"></i></span>
+                            <span>B+</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link" id="dvReturning">Returning</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto flex-column">
+                    <li class="nav-item">
+                        <div class="nav-link">Language -
+                            <span class="spanLanguage">Gujrati, Hindi</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">Insurance
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">
+                            <a class="insurance-link" href="#">
+                                <img src="images/insurance.jpg" class="insurance-img" />
+                                <span class="spanInsurance">Individual Health Insurance Policy</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto flex-column">
+                    <li class="nav-item">
+                        <div class="nav-link">Mo -
+                            <span class="spanMobile"> 1234567890</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">Email -
+                            <span class="spanEmail"> xyz@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">Address -
+                            <span class="spanAddress">Mumbai, Maharashtra</span>
+                        </div>
                     </li>
                 </ul>
             </div>

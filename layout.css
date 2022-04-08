@@ -566,13 +566,57 @@
                }
                
                .navbar-second {
-                   margin: 0px 120px 0px 269px;
+                   margin-left: 270px;
                }
                
                .user-img-second {
-                   width: 3rem;
+                   width: 3.5rem;
                }
                
                .barcode-img {
+                   width: 7rem;
+               }
+               
+               .insurance-img {
                    width: 5rem;
+               }
+               
+               .btn-edit {
+                   padding-top: 0;
+                   padding-bottom: 0;
+                   border-radius: 5px;
+                   margin-left: 8px;
+               }
+               
+               #dvUserImage {
+                   text-align: center;
+               }
+               
+               .navbar-second .nav-item .nav-link,
+               .spanInsurance {
+                   color: white !important;
+               }
+               
+               .insurance-link {
+                   text-decoration: none !important;
+               }
+               
+               #dvReturning,
+               .spanBloodGroup {
+                   color: #ff3333 !important;
+               }
+               
+               .spanBloodGroup,
+               .spanGender {
+                   margin-left: 18px;
+                   margin-right: 5px;
+               }
+               
+               .spanWeight {
+                   margin-right: 10px;
+               }
+               
+               .spanGender,
+               .spanWeight {
+                   color: #adb5bd !important;
                }

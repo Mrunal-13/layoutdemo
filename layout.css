@@ -698,3 +698,86 @@ footer.sticky-footer {
 .show {
   display: block;
 }
+
+/* css for table of pateints */
+
+.pateintTable{
+  overflow-y: scroll;
+  width: 280px;
+  height: 650px;
+  left: 64px;
+  top:172px;
+  background-color: #E5FFFF;
+  border-radius: 0px 15px 0px 0px;
+}
+
+.PateintName1{
+  display: inline-flex;
+  border: 1px solid #007185;
+  border-radius: 0px 10px 10px 0px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+/* .lefthalfpateint{
+
+} */
+
+.pateintnumber{
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25.78px;
+}
+
+.pateinttime{
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12.89px;
+}
+
+.righthalfpateint{
+  margin-right: 1rem;
+}
+
+.pateintName{
+  margin-left: 3rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+
+.visitreason{
+  margin-left: 3rem;
+  line-height: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.Returning{
+  margin-left: 3rem;
+  line-height: 0;
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.InsuranceHolder{
+  margin-left: 3rem;
+  line-height: 0;
+  color: green;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.PateintName2{
+  display: inline-flex;
+  border: 1px solid #007185;
+  border-radius: 0px 10px 10px 0px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+

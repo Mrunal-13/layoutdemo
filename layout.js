@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
-    (function($) {
+    (function($) 
+    {
         "use strict"; // Start of use strict
         // Configure tooltips for collapsed side navigation
         $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
@@ -72,3 +73,207 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }
         }
     })
+
+function showpateintTable(){
+  document.getElementById('pateintdropdown').style.display = 'block';
+  // document.getElementsById('btnforpateints').style.background = 'yellow';
+}
+
+function makelist(){
+  document.getElementById('inputforhistory').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+
+document.getElementById('inputforhistory').addEventListener('keypress', function(e){
+  if(e.key == 'Enter'){
+    
+    var text = document.getElementById('inputforhistory').value;
+    document.getElementById('inputforhistory').value = null;
+    document.getElementById('inputforhistory').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputforhistory').value;
+    if( empyttext != null){
+      document.getElementById('MedicalHistory').appendChild(li);
+    }
+  }
+});
+
+function makelist1(){
+  document.getElementById('inputfordiseases').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputfordiseases').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputfordiseases').value;
+    document.getElementById('inputfordiseases').value = null;
+    document.getElementById('inputfordiseases').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputfordiseases').value;
+    if( empyttext != null){
+      document.getElementById('otherdisease').appendChild(li);
+    }
+  }
+});
+
+function makelist2(){
+  document.getElementById('inputfordrug').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputfordrug').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputfordrug').value;
+    document.getElementById('inputfordrug').value = null;
+    document.getElementById('inputfordrug').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputfordrug').value;
+    if( empyttext != null){
+      document.getElementById('drugallergy').appendChild(li);
+    }
+  }
+});
+
+function makelist3(){
+  document.getElementById('inputforfood').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputforfood').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputforfood').value;
+    document.getElementById('inputforfood').value = null;
+    document.getElementById('inputforfood').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputforfood').value;
+    if( empyttext != null){
+      document.getElementById('foodallergy').appendChild(li);
+    }
+  }
+});
+
+function makelist4(){
+  document.getElementById('inputforinsect').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputforinsect').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputforinsect').value;
+    document.getElementById('inputforinsect').value = null;
+    document.getElementById('inputforinsect').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputforinsect').value;
+    if( empyttext != null){
+      document.getElementById('insectallergy').appendChild(li);
+    }
+  }
+});
+
+function makelist5(){
+  document.getElementById('inputforlatex').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputforlatex').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputforlatex').value;
+    document.getElementById('inputforlatex').value = null;
+    document.getElementById('inputforlatex').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputforlatex').value;
+    if( empyttext != null){
+      document.getElementById('latexallergy').appendChild(li);
+    }
+  }
+});
+
+function makelist6(){
+  document.getElementById('inputformold').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputformold').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputformold').value;
+    document.getElementById('inputformold').value = null;
+    document.getElementById('inputformold').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputformold').value;
+    if( empyttext != null){
+      document.getElementById('moldallergy').appendChild(li);
+    }
+  }
+});
+
+function makelist7(){
+  document.getElementById('inputforpet').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputforpet').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputforpet').value;
+    document.getElementById('inputforpet').value = null;
+    document.getElementById('inputforpet').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputforpet').value;
+    if( empyttext != null){
+      document.getElementById('petallergy').appendChild(li);
+    }
+  }
+});
+
+function makelist8(){
+  document.getElementById('inputforpollen').style.display = 'block';
+  $('.minus').click(function(e){
+    e.target.parentElement.remove();
+  });
+}
+
+document.getElementById('inputforpollen').addEventListener('keypress', function(e){
+
+  if(e.key == 'Enter'){
+    var text = document.getElementById('inputforpollen').value;
+    document.getElementById('inputforpollen').value = null;
+    document.getElementById('inputforpollen').style.display = 'none';
+    var li = document.createElement('li');
+    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+    var empyttext = document.getElementById('inputforpollen').value;
+    if( empyttext != null){
+      document.getElementById('pollenallergy').appendChild(li);
+    }
+  }
+});

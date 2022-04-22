@@ -33,7 +33,7 @@
                    height: 50px;
                    text-align: center;
                    color: white;
-                   background: rgba(52, 58, 64, 0.5);
+                   background: rgba(232, 238, 244, 0.5);
                    line-height: 45px;
                }
                
@@ -43,7 +43,7 @@
                }
                
                .scroll-to-top:hover {
-                   background: #343a40;
+                   background: #f9fcff;
                }
                
                .scroll-to-top i {
@@ -565,16 +565,24 @@
   display: block;
 }
 
+
 /* css for table of pateints */
 
 .pateintTable{
   overflow-y: scroll;
   width: 280px;
-  height: 650px;
-  left: 64px;
-  top:172px;
+  height: 800px;
+  /* left: 64px;
+  top:172px; */
   background-color: #E5FFFF;
   border-radius: 0px 15px 0px 0px;
+}
+.PatientTableTitle{
+  display: flex;
+}
+
+.PatientTableTitle p{
+  padding: 5px 12px 0px 12px;
 }
 
 .PateintName1{
@@ -647,3 +655,90 @@
 }
 
 
+/* communication div css */
+.Communicationdiv{
+     position: absolute;
+    right: 0px;
+    border: 1px solid #007185;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+     /* margin-left: 950px; */
+    text-align: center;
+
+}
+.communicationpng img{
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+.setschedule{
+    color: #34d0eb;
+}
+
+
+/* Medical history div css */
+
+.MedicalHistorydiv{
+    position: absolute;
+    right: 0px;
+    border: 1px solid #28c0db;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    /* margin-left: 960px; */
+    /* text-align: center; */
+    margin-top: 350px;
+}
+
+.MedicalHistorydiv span{
+    display: flex;
+    position: relative;
+}
+
+.MedicalHistorydiv h6{
+    margin-left: 10px;
+}
+
+.MedicalHistorydiv input{
+    width: 100px;
+    margin-left: 5px;
+    border-radius: 10px;
+    display: none;
+}
+ .Addsign{
+     position: absolute;
+     right: 5px;
+     color: #2fcbe7;
+     cursor: pointer;
+ }
+
+ .hrline{
+     border-top: 2px solid grey;
+     width: 90%;
+ }
+
+ .bulb{
+    margin-right: 100%;
+ }
+
+ .hints{
+     display: flex;
+     margin-left: 10px;
+ }
+
+ .addsymbol{
+     width: 20px;
+     height: 22px;
+ }
+
+ .addeditems{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 12px;
+ }
+/*  */
+ .leftright{
+     display: flex;
+     position: relative;
+ }

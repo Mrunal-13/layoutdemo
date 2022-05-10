@@ -1,83 +1,147 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+let alertsDropdown=document.getElementById("alertsDropdown");
+let alertDetails=document.getElementById("alertDetails");
+alertDetails.style.display="none";
+alertsDropdown.addEventListener("click",()=>{
+  if (alertDetails.style.display=="none") {
+    alertDetails.style.display="";
+    messageAlertDetails.style.display="none";
 
-    (function($) 
-    {
-        "use strict"; // Start of use strict
-        // Configure tooltips for collapsed side navigation
-        $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
-          template: '<div class="tooltip navbar-sidenav-tooltip" role="tooltip" style="pointer-events: none;"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
-        })
-        // Toggle the side navigation
-        $("#sidenavToggler").click(function(e) {
-          e.preventDefault();
-          $("body").toggleClass("sidenav-toggled");
-          $(".navbar-sidenav .nav-link-collapse").addClass("collapsed");
-          $(".navbar-sidenav .sidenav-second-level, .navbar-sidenav .sidenav-third-level").removeClass("show");
-        });
-        // Force the toggled class to be removed when a collapsible nav link is clicked
-        $(".navbar-sidenav .nav-link-collapse").click(function(e) {
-          e.preventDefault();
-          $("body").removeClass("sidenav-toggled");
-        });
-        // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
-        $('body.fixed-nav .navbar-sidenav, body.fixed-nav .sidenav-toggler, body.fixed-nav .navbar-collapse').on('mousewheel DOMMouseScroll', function(e) {
-          var e0 = e.originalEvent,
-            delta = e0.wheelDelta || -e0.detail;
-          this.scrollTop += (delta < 0 ? 1 : -1) * 30;
-          e.preventDefault();
-        });
-        // Scroll to top button appear
-        $(document).scroll(function() {
-          var scrollDistance = $(this).scrollTop();
-          if (scrollDistance > 100) {
-            $('.scroll-to-top').fadeIn();
-          } else {
-            $('.scroll-to-top').fadeOut();
-          }
-        });
-        // Configure tooltips globally
-        $('[data-toggle="tooltip"]').tooltip()
-        // Smooth scrolling using jQuery easing
-        $(document).on('click', 'a.scroll-to-top', function(event) {
-          var $anchor = $(this);
-          $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top)
-          }, 1000, 'easeInOutExpo');
-          event.preventDefault();
-        });
-      }); // End of use strict
+  }
+  else{
+    alertDetails.style.display="none";
+  }
+})
 
+let messagesDropdown=document.getElementById("messagesDropdown");
+let messageAlertDetails=document.getElementById("messageAlertDetails");
+messageAlertDetails.style.display="none";
 
-        document.querySelector("#dropbtnMyfunction").addEventListener('click', (e)=>{
-            document.getElementById("myDropdown").classList.toggle("show");
+messagesDropdown.addEventListener("click",()=>{
+  if (messageAlertDetails.style.display=="none") {
+    messageAlertDetails.style.display="";
+    alertDetails.style.display="none";
 
-        })
-
-        // /* When the user clicks on the button,
-        // toggle between hiding and showing the dropdown content */
-        // function myFunction() {
-        //     document.getElementById("myDropdown").classList.toggle("show");
-        // }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-                }
-            }
-            }
+  }
+  else{
+    messageAlertDetails.style.display="none";
+  }
+})
+ 
+function openNav() {
+        if (document.getElementById("mySidenav").style.width === "63px" || document.getElementById("mySidenav").style.width==="") {
+          document.getElementById("mySidenav").style.width = "250px";
         }
-    })
+        else{
+          if (window.screen.width<=767) {
+            document.getElementById("mySidenav").style.width = "";
+          }
+          else{
+            document.getElementById("mySidenav").style.width = "63px";
+          }
+        }
+        if (document.getElementById("leftright").style.width === "95.5%" || document.getElementById("leftright").style.width === "") {
+          document.getElementById("leftright").style.width = "83.5%"
+        }
+        else{
+          document.getElementById("leftright").style.width = "95.5%";
+        }
+        if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === ""){
+          document.getElementById("navbar-fourth").style.width = "83.5%";
+          console.log("83")
+        }
+        else if (document.getElementById("navbar-fourth").style.width === "78%"){
+          document.getElementById("navbar-fourth").style.width = "65%";
+          console.log("65")
+        }
+        else if(document.getElementById("navbar-fourth").style.width === "65%"){
+          document.getElementById("navbar-fourth").style.width = "78%";
+          console.log("78")
+        }
+        else{
+          document.getElementById("navbar-fourth").style.width = "96%";
+        }
+        // if (document.getElementById("commeddiv").style.marginLeft === "1170px" || document.getElementById("commeddiv").style.marginLeft === ""){
+        //   document.getElementById("commeddiv").style.marginLeft = "980px"
+        // }
+        // else if (document.getElementById("commeddiv").style.marginLeft === "900px" || document.getElementById("commeddiv").style.marginLeft === ""){
+        //   document.getElementById("commeddiv").style.marginLeft = "700px"
+        // }
+        // else if(document.getElementById("commeddiv").style.marginLeft === "980px"){
+        //   document.getElementById("commeddiv").style.marginLeft = "1170px";
+        // }
+        // else if (document.getElementById("commeddiv").style.marginLeft === "700px" || document.getElementById("commeddiv").style.marginLeft === ""){
+        //   document.getElementById("commeddiv").style.marginLeft = "900px";
+        //   console.log("900")
+        // }
+        if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === ""){
+          document.getElementById("Appointment").style.marginLeft = "300px";
+        }
+        else if (document.getElementById("Appointment").style.marginLeft === "300px"){
+          document.getElementById("Appointment").style.marginLeft = "480px"
+        }
+        else if (document.getElementById("Appointment").style.marginLeft === "180px"){
+          document.getElementById("Appointment").style.marginLeft = "10px"
+        }
+        else if (document.getElementById("Appointment").style.marginLeft === "10px"){
+          document.getElementById("Appointment").style.marginLeft = "180px"
+        }
+}
+
+let adminSettingBox=document.getElementById("adminSettingBox");
+adminSettingBox.style.display="none";
+let dropbtnMyfunction=document.getElementById("dropbtnMyfunction");
+dropbtnMyfunction.addEventListener("click",()=>{
+  if (adminSettingBox.style.display==="none") {
+      adminSettingBox.style.display="";
+  } else {
+    adminSettingBox.style.display="none";
+  }
+})
+
 
 function showpateintTable(){
-  document.getElementById('pateintdropdown').style.display = 'block';
+  if ( document.getElementById("pateintdropdown").style.display === 'none'){
+    document.getElementById('pateintdropdown').style.display = 'block';
+  }
   // document.getElementsById('btnforpateints').style.background = 'yellow';
+  if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === ""){
+    document.getElementById("navbar-fourth").style.width = "78%";
+  }
+  else if ( document.getElementById("navbar-fourth").style.width === "83.5%"){
+    document.getElementById("navbar-fourth").style.width = "65%";
+  }
+  else if (document.getElementById("pateintdropdown").style.display === "block"){
+    document.getElementById("pateintdropdown").style.display = "none";
+    if(document.getElementById("navbar-fourth").style.width === "65%"){
+      document.getElementById("navbar-fourth").style.width = "83.5%";
+    }
+    else if(document.getElementById("navbar-fourth").style.width === "78%"){
+      document.getElementById("navbar-fourth").style.width = "96%";
+    }
+  }
+  if(document.getElementById("vl").style.marginLeft === "10px" || document.getElementById("vl").style.marginLeft === ""){
+    document.getElementById("vl").style.marginLeft = "300px"
+  }
+  else if(document.getElementById("vl").style.marginLeft === "300px" || document.getElementById("vl").style.marginLeft === ""){
+    document.getElementById("vl").style.marginLeft = "10px"
+  }
+  if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === ""){
+    document.getElementById("Appointment").style.marginLeft = "180px";
+  }
+  else if (document.getElementById("Appointment").style.marginLeft === "180px" || document.getElementById("Appointment").style.marginLeft === ""){
+    document.getElementById("Appointment").style.marginLeft = "480px";
+  }
+  else if (document.getElementById("Appointment").style.marginLeft === "300px"){
+    document.getElementById("Appointment").style.marginLeft = "10px"
+  }
+  else if (document.getElementById("Appointment").style.marginLeft === "10px"){
+    document.getElementById("Appointment").style.marginLeft = "300px"
+  }
+  
 }
+
+
+
 
 function makelist(){
   document.getElementById('inputforhistory').style.display = 'block';
@@ -277,3 +341,71 @@ document.getElementById('inputforpollen').addEventListener('keypress', function(
     }
   }
 });
+
+
+function openAppointment(){
+  if(document.getElementById("AppointmentDetails").style.display = "none")
+  {
+    document.getElementById("AppointmentDetails").style.display ="block";
+  }
+}
+
+
+function openPayments(){
+  document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "rgb(237, 97, 162)";
+  document.getElementById("VeiwsAndPaymentsbutton").style.color = "black";
+  document.getElementById("VisitReportButton").style.backgroundColor = "white";
+  document.getElementById("VisitReportButton").style.color = "grey";
+  document.getElementById("VisitReportButton").style.borderWidth = "1px";
+  document.getElementById("VisitReportButton").style.borderStyle = "solid";
+  document.getElementById("VisitReportButton").style.borderColor = "grey";
+  document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "white";
+  document.getElementById("ReadyCaseFormatButton").style.color = "grey";
+  if(document.getElementById("AppointmentDetails").style.display = "block"){
+    document.getElementById("AppointmentDetails").style.display = "none";
+    document.getElementById("VeiwsAndPaymentsContent").style.display = "block"
+    document.getElementById("ReadyCaseFormatContent").style.display = "none";
+  }
+  else if(document.getElementById("AppointmentDetails").style.display = "none"){
+    document.getElementById("VeiwsAndPaymentsContent").style.display = "block";
+    document.getElementById("ReadyCaseFormatContent").style.display = "none";
+  }
+}
+
+function OpenReadyCase(){
+  document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "rgb(237, 97, 162)";
+  document.getElementById("ReadyCaseFormatButton").style.color = "black";
+  document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "white";
+  document.getElementById("VeiwsAndPaymentsbutton").style.color = "grey";
+  document.getElementById("VisitReportButton").style.backgroundColor = "white";
+  document.getElementById("VisitReportButton").style.color = "grey";
+  document.getElementById("VisitReportButton").style.borderWidth = "1px";
+  document.getElementById("VisitReportButton").style.borderStyle = "solid";
+  document.getElementById("VisitReportButton").style.borderColor = "grey";
+  document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
+  document.getElementById("ReadyCaseFormatContent").style.display = "block";
+  if(document.getElementById("AppointmentDetails").style.display = "block"){
+    document.getElementById("AppointmentDetails").style.display = "none";
+  }
+}
+
+
+function VisitReport(){
+  document.getElementById("VisitReportButton").style.backgroundColor = "rgb(237, 97, 162)";
+  document.getElementById("VisitReportButton").style.color ="black";
+  document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "white";
+  document.getElementById("VeiwsAndPaymentsbutton").style.color = "grey";
+  document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "white";
+  document.getElementById("ReadyCaseFormatButton").style.color = "grey";
+  //document.getElementById("VisitReportButton").style.borderColor = "grey";
+  if(document.getElementById("AppointmentDetails").style.display = "block"){
+    document.getElementById("AppointmentDetails").style.display = "none";
+  }
+  if(document.getElementById("ReadyCaseFormatContent").style.display = "block"){
+    document.getElementById("ReadyCaseFormatContent").style.display = "none";
+  }
+  if(document.getElementById("VeiwsAndPaymentsContent").style.display = "block"){
+    document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
+  }
+}
+

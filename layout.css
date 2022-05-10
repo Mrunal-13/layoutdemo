@@ -1,581 +1,398 @@
-               html {
-                   position: relative;
-                   min-height: 100%;
-               }
-               
-               body {
-                   overflow-x: hidden;
-               }
-               
-               body.sticky-footer {
-                   margin-bottom: 56px;
-               }
-               
-               body.sticky-footer .content-wrapper {
-                   min-height: calc(100vh - 56px - 56px);
-               }
-               
-               body.fixed-nav {
-                   padding-top: 56px;
-               }
-               
-               .content-wrapper {
-                   min-height: calc(100vh - 56px);
-                   padding-top: 1rem;
-               }
-               
-               .scroll-to-top {
-                   position: fixed;
-                   right: 15px;
-                   bottom: 3px;
-                   display: none;
-                   width: 50px;
-                   height: 50px;
-                   text-align: center;
-                   color: white;
-                   background: rgba(232, 238, 244, 0.5);
-                   line-height: 45px;
-               }
-               
-               .scroll-to-top:focus,
-               .scroll-to-top:hover {
-                   color: white;
-               }
-               
-               .scroll-to-top:hover {
-                   background: #f9fcff;
-               }
-               
-               .scroll-to-top i {
-                   font-weight: 800;
-               }
-               
-               .smaller {
-                   font-size: 0.7rem;
-               }
-               
-               .o-hidden {
-                   overflow: hidden !important;
-               }
-               
-               .z-0 {
-                   z-index: 0;
-               }
-               
-               .z-1 {
-                   z-index: 1;
-               }
-               
-               .hospital-name {
-                   margin-right: 81px;
-                   color: white;
-                   margin-top: 7px;
-                   font-size: 19px;
-               }
-               
-               .hospital-name:hover {
-                   color: white;
-                   text-decoration: none;
-               }
-               
-               .input-group {
-                   width: 350px !important;
-               }
-               
-               .addpatient {
-                   padding-top: 0;
-                   padding-bottom: 0;
-                   background: orange;
-                   border: 1px solid;
-                   border-radius: 5px;
-               }
-               
-               #mainNav .navbar-collapse {
-                   overflow: auto;
-                   max-height: 75vh;
-               }
-               
-               #mainNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-                   cursor: pointer;
-               }
-               
-               #mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
-                   float: right;
-                   content: "\f107";
-                   font-family: "FontAwesome";
-               }
-               
-               #mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse.collapsed:after {
-                   content: "\f105";
-               }
-               
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level,
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level {
-                   padding-left: 0;
-               }
-               
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level>li>a,
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level>li>a {
-                   display: block;
-                   padding: 0.5em 0;
-               }
-               
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level>li>a:focus,
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level>li>a:hover,
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level>li>a:focus,
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level>li>a:hover {
-                   text-decoration: none;
-               }
-               
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level>li>a {
-                   padding-left: 1em;
-               }
-               
-               #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level>li>a {
-                   padding-left: 2em;
-               }
-               
-               #mainNav .navbar-collapse .sidenav-toggler {
-                   display: none;
-               }
-               
-               #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown>.nav-link {
-                   position: relative;
-                   min-width: 45px;
-               }
-               
-               #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown>.nav-link:after {
-                   float: right;
-                   width: auto;
-                   content: "\f105";
-                   border: none;
-                   font-family: "FontAwesome";
-               }
-               
-               #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown>.nav-link .indicator {
-                   position: absolute;
-                   top: 5px;
-                   left: 21px;
-                   font-size: 10px;
-               }
-               
-               #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown.show>.nav-link:after {
-                   content: "\f107";
-               }
-               
-               #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown .dropdown-menu>.dropdown-item>.dropdown-message {
-                   overflow: hidden;
-                   max-width: none;
-                   text-overflow: ellipsis;
-               }
-               
-               @media (min-width: 992px) {
-                   #mainNav .navbar-collapse {
-                       overflow: visible;
-                       max-height: none;
-                   }
-                   #mainNav .navbar-collapse .navbar-sidenav {
-                       position: absolute;
-                       top: 0;
-                       left: 0;
-                       -webkit-flex-direction: column;
-                       -ms-flex-direction: column;
-                       flex-direction: column;
-                       margin-top: 56px;
-                   }
-                   #mainNav .navbar-collapse .navbar-sidenav>.nav-item {
-                       width: 250px;
-                       padding: 0;
-                   }
-                   #mainNav .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level,
-                   #mainNav .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level {
-                       padding-left: 0;
-                       list-style: none;
-                   }
-                   #mainNav .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li,
-                   #mainNav .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li {
-                       width: 250px;
-                   }
-                   #mainNav .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li>a {
-                       padding-left: 2.75em;
-                   }
-                   #mainNav .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li>a {
-                       padding-left: 3.75em;
-                   }
-                   #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown>.nav-link {
-                       min-width: 0;
-                   }
-                   #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown>.nav-link:after {
-                       width: 24px;
-                       text-align: center;
-                   }
-                   #mainNav .navbar-collapse .navbar-nav>.nav-item.dropdown .dropdown-menu>.dropdown-item>.dropdown-message {
-                       max-width: 300px;
-                   }
-               }
-               
-               #mainNav.fixed-top .sidenav-toggler {
-                   display: none;
-               }
-               
-               @media (min-width: 992px) {
-                   #mainNav.fixed-top .navbar-sidenav {
-                       /*height: calc(100vh - 112px);*/
-                       overflow-y: auto;
-                       height: 90vh;
-                   }
-                   #mainNav.fixed-top .sidenav-toggler {
-                       position: absolute;
-                       top: 11px;
-                       left: 200px;
-                       display: flex;
-                       -webkit-flex-direction: column;
-                       -ms-flex-direction: column;
-                       flex-direction: column;
-                       /* margin-top: calc(100vh - 56px);*/
-                   }
-                   #mainNav.fixed-top .sidenav-toggler>.nav-item {
-                       width: fit-content;
-                       padding: 0;
-                   }
-               }
-               
-               #mainNav.fixed-top.navbar-dark .sidenav-toggler {
-                   background-color: #212529;
-               }
-               
-               #mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
-                   color: #adb5bd;
-               }
-               
-               #mainNav.fixed-top.navbar-light .sidenav-toggler {
-                   background-color: #dee2e6;
-               }
-               
-               #mainNav.fixed-top.navbar-light .sidenav-toggler a i {
-                   color: rgba(0, 0, 0, 0.5);
-               }
-               
-               body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
-                   overflow-x: hidden;
-                   width: 55px;
-               }
-               
-               body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-item,
-               body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-link {
-                   width: 55px !important;
-               }
-               
-               body.sidenav-toggled #mainNav.fixed-top #sidenavToggler i {
-                   -webkit-transform: scaleX(-1);
-                   -moz-transform: scaleX(-1);
-                   -o-transform: scaleX(-1);
-                   transform: scaleX(-1);
-                   filter: FlipH;
-                   -ms-filter: "FlipH";
-               }
-               
-               #mainNav.static-top .sidenav-toggler {
-                   display: none;
-               }
-               
-               @media (min-width: 992px) {
-                   #mainNav.static-top .sidenav-toggler {
-                       display: flex;
-                   }
-               }
-               
-               body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
-                   -webkit-transform: scaleX(-1);
-                   -moz-transform: scaleX(-1);
-                   -o-transform: scaleX(-1);
-                   transform: scaleX(-1);
-                   filter: FlipH;
-                   -ms-filter: "FlipH";
-               }
-               
-               .content-wrapper {
-                   overflow-x: hidden;
-                   background: white;
-               }
-               
-               @media (min-width: 992px) {
-                   .content-wrapper {
-                       margin-left: 250px;
-                   }
-               }
-               
-               #sidenavToggler i {
-                   font-weight: 800;
-               }
-               
-               .navbar-sidenav-tooltip.show {
-                   display: none;
-               }
-               
-               @media (min-width: 992px) {
-                   body.sidenav-toggled .content-wrapper {
-                       margin-left: 55px;
-                   }
-               }
-               
-               body.sidenav-toggled .navbar-sidenav {
-                   width: 55px;
-               }
-               
-               body.sidenav-toggled .navbar-sidenav .nav-link-text {
-                   display: none;
-               }
-               
-               body.sidenav-toggled .navbar-sidenav .nav-item,
-               body.sidenav-toggled .navbar-sidenav .nav-link {
-                   width: 55px !important;
-               }
-               
-               body.sidenav-toggled .navbar-sidenav .nav-item:after,
-               body.sidenav-toggled .navbar-sidenav .nav-link:after {
-                   display: none;
-               }
-               
-               body.sidenav-toggled .navbar-sidenav .nav-item {
-                   white-space: nowrap;
-               }
-               
-               body.sidenav-toggled .navbar-sidenav-tooltip.show {
-                   display: flex;
-               }
-               
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
-                   color: #868e96;
-               }
-               
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item>.nav-link {
-                   color: #868e96;
-               }
-               
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item>.nav-link:hover {
-                   color: #adb5bd;
-               }
-               
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li>a,
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li>a {
-                   color: #868e96;
-               }
-               
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li>a:focus,
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li>a:hover,
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li>a:focus,
-               #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li>a:hover {
-                   color: #adb5bd;
-               }
-               
-               #mainNav.navbar-dark .navbar-collapse .navbar-nav>.nav-item.dropdown>.nav-link:after {
-                   color: #adb5bd;
-               }
-               
-               @media (min-width: 992px) {
-                   /* #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
-                       background: #343a40;
-                   } */
-                   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
-                       color: white !important;
-                       background-color: #495057;
-                   }
-                   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:focus,
-                   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:hover {
-                       color: white;
-                   }
-                   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level,
-                   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level {
-                       background: #343a40;
-                   }
-               }
-               
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
-                   color: rgba(0, 0, 0, 0.5);
-               }
-               
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item>.nav-link {
-                   color: rgba(0, 0, 0, 0.5);
-               }
-               
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item>.nav-link:hover {
-                   color: rgba(0, 0, 0, 0.7);
-               }
-               
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li>a,
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li>a {
-                   color: rgba(0, 0, 0, 0.5);
-               }
-               
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li>a:focus,
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item .sidenav-second-level>li>a:hover,
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li>a:focus,
-               #mainNav.navbar-light .navbar-collapse .navbar-sidenav>.nav-item .sidenav-third-level>li>a:hover {
-                   color: rgba(0, 0, 0, 0.7);
-               }
-               
-               #mainNav.navbar-light .navbar-collapse .navbar-nav>.nav-item.dropdown>.nav-link:after {
-                   color: rgba(0, 0, 0, 0.5);
-               }
-               
-               @media (min-width: 992px) {
-                   #mainNav.navbar-light .navbar-collapse .navbar-sidenav {
-                       background: #f8f9fa;
-                   }
-                   #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a {
-                       color: #000 !important;
-                       background-color: #e9ecef;
-                   }
-                   #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a:focus,
-                   #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a:hover {
-                       color: #000;
-                   }
-               }
-               
-               .card-body-icon {
-                   position: absolute;
-                   z-index: 0;
-                   top: -25px;
-                   right: -25px;
-                   font-size: 5rem;
-                   -webkit-transform: rotate(15deg);
-                   -ms-transform: rotate(15deg);
-                   transform: rotate(15deg);
-               }
-               
-               @media (min-width: 576px) {
-                   .card-columns {
-                       column-count: 1;
-                   }
-               }
-               
-               @media (min-width: 768px) {
-                   .card-columns {
-                       column-count: 2;
-                   }
-               }
-               
-               @media (min-width: 1200px) {
-                   .card-columns {
-                       column-count: 2;
-                   }
-               }
-               
-               .card-login {
-                   max-width: 25rem;
-               }
-               
-               .card-register {
-                   max-width: 40rem;
-               }
-               
-               footer.sticky-footer {
-                   position: absolute;
-                   right: 0;
-                   bottom: 0;
-                   width: 100%;
-                   height: 56px;
-                   background-color: #e9ecef;
-                   line-height: 55px;
-               }
-               
-               @media (min-width: 992px) {
-                   footer.sticky-footer {
-                       width: calc(100% - 250px);
-                   }
-               }
-               
-               @media (min-width: 992px) {
-                   body.sidenav-toggled footer.sticky-footer {
-                       width: calc(100% - 55px);
-                   }
-               }
-               
-               .dropbtn {
-                   background-color: transparent;
-                   color: #9a9da0;
-                   /*padding: 16px;*/
-                   font-size: 16px;
-                   border: none;
-                   cursor: pointer;
-                   margin-top: 4px;
-               }
-               
-               .dropbtn:hover {
-                   color: rgba(255, 255, 255, 0.75);
-               }
-               
-               .button:focus {
-                   outline: none !important;
-               }
-               
-               .nav-link:hover {
-                   color: none !important;
-               }
-               
-               .fa-pencil,
-               .fa-cog,
-               .fa-user-plus,
-               .fa-sign-out {
-                   margin-right: 10px;
-               }
-               
-               .user-img {
-                   width: 1.7rem;
-                   aspect-ratio: 1/1;
-                   border-radius: 50%;
-                   vertical-align: middle;
-                   margin-right: 5px;
-               }
-               /*.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }*/
-
-.dropdown {
-  position: relative;
-  display: inline-block;
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-bottom:3px solid black;
 }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 162px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border: none !important;
-}
-.dropbtn:focus {
-  outline: none;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 2px;
-  text-decoration: none;
-  display: block;
-  /*border: 1px solid #d2caca;*/
-}
-
-/* .dropdown a:hover {background-color: #ddd;} */
-
-.show {
-  display: block;
+.buttonForSideNav {
+    outline: none;
+    border: 1px solid #a4a4a4;
+    margin-right: 10px;
+    border-radius: 9px;
 }
 
 
+.buttonForSideNav:hover {
+    background-color: #a4a4a4;
+}
+
+.navbar-first {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.hospital-name {
+    flex-wrap: nowrap;
+    color: black;
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+.hospital-name:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.navbar-second {
+    width: 97%;
+}
+
+.secondNavUl {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+
+}
+.navbar-second .nav-item{
+    list-style: none;
+}
+.addPateintButton{
+    font-size: 12px;
+    margin: 0;
+}
+.nav-item.dropdown>.nav-link .indicator {
+    position: absolute;
+    bottom: 16px;
+    left: 17px;
+    font-size: 10px;
+}
+#alertsDropdown,#messagesDropdown{
+    padding: 0;
+}
+.addpatient {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: orange;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 5px;
+}
+
+.navbar-third {
+    width: 15%;
+}
+
+.navbar-fourth{
+    width: 96%;
+    /* position: absolute; */
+    right: 0;
+    margin-top: 78px;
+    border-bottom: 2px solid black;
+    color: black;
+    background-color: white;
+}
+.dropbtn {
+    background-color: transparent;
+    color: rgb(154, 157, 160);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 4px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 90%;
+    /* 100% Full-height */
+    width: 63px;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Stay on top */
+    top: 60px;
+    /* Stay at the top */
+    left: 0;
+    background-color: #FFFCE2;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navbar-sidenav>.nav-item>.nav-link {
+    color: rgb(14, 14, 14);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar-sidenav>.nav-item>.nav-link:hover {
+    background-color: rgb(236, 236, 11);
+}
+
+.nav-link-text {
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+#exampleAccordion .nav-link i {
+    margin-left: 20px;
+}
+
+.sidenav-second-level li a {
+    font-size: 15px;
+}
+
+.alertDetails {
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    left: 70%;
+    height: auto;
+    width: 30vw;
+    border: 0.01rem solid black;
+    box-shadow: 11px 11px 30px -9px black;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 16px;
+}
+
+.alertBodyitems {
+    background-color: transparent;
+    padding: 5px;
+}
+
+.alertBodyitems:hover {
+    background-color: #cce7ff;
+}
+
+.alertBodyitemsPart1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.messageAlertDetails {
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    height: auto;
+    width: 30vw;
+    border: 0.01rem solid black;
+    box-shadow: 11px 11px 30px -9px black;
+    border-radius: 5px;
+    z-index: 3;
+    padding: 16px;
+}
+
+.MadBodyitemsPart2 p {
+    font-size: 10px;
+}
+
+.MADBody {
+    height: 25vh;
+    min-height: 25vh;
+    overflow-y: scroll;
+}
+
+.adminSettingBox{
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 84%;
+    height: auto;
+    width: 16%;
+    border: 0.01rem solid black;
+    box-shadow: 11px 11px 30px -9px black;
+    border-radius: 5px;
+    z-index: 4;
+    padding: 16px;
+}
+.adminSettingBox p{
+    margin: 0;
+    padding: 0;
+}
+#settingOptions{
+    padding: 0;
+}
+#settingOptions li{
+    list-style: none;
+    font-size: 12px;
+    margin: 5px 0;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+#settingOptions li:hover{
+    background-color: #cce7ff;
+    cursor: pointer;
+}
+.nav-link{
+    color: #818181;
+}
+@media only screen and (max-width: 1024px){
+    .navbar-first{
+        width: 100px;
+    }
+    .navbar-brand,.buttonForSideNav{
+        font-size: 12px;
+    }
+    .nav-link{
+        padding: 0;
+        margin: 0;
+    }
+    .d-lg-none{
+        display: none;
+    }
+    #addPateintButton{
+        width: 71px;
+    }
+    .addpatient{
+        font-size: 10px;
+    }
+    .hospital-name{
+        font-size: 10px;
+    }
+    .inputForSearch{
+        width: 93px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .searchbtn1{
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    #dropbtnMyfunction{
+        font-size: 10px;
+    }
+    .nav-link-text {
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    .alertBodyitems {
+        font-size: 0.8rem;
+    }
+    .MadBodyitems{
+        font-size: 0.8rem;
+    }
+    .adminSettingBox {
+        left: 79%;
+        width: 21%;
+    }
+    .adminSettingHeader{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .navbar-second,.navbar-third{
+        display: none;
+    }
+    .navbar-first{
+        width: 100%;
+    }
+    .navbar-sidenav>.nav-item>.nav-link {
+        font-size: 15px;
+    }
+    #mySidenav {
+        width: 0px;
+        border: none;
+        background-color:#efefef;
+    }
+    .nav-link-text{
+        font-size: 14px;
+    }
+}
+
+/* USER IMAGE SIZE CSS */
+#dvUserImage{
+    width: 60px;
+}
+
+
+#barcodeimage{
+    width: 100px;
+}
+
+.insurance-img{
+    width: 80px;
+}
+
+.user-img {
+    width: 1.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.leftright{
+    width: 95.5%;
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.vl {
+    margin-top: 220px;
+    border-left: 3px solid black;
+    height: 10000px;
+    width: fit-content;
+    margin-left: 10px;
+    position: sticky;
+  }
 /* css for table of pateints */
 
+.btn-secondary{
+    background-color: #f2f9fb;
+    color: black;
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+    background-color: #28c0db;
+    color: black;
+}
+
 .pateintTable{
-  overflow-y: scroll;
-  width: 280px;
-  height: 800px;
-  /* left: 64px;
-  top:172px; */
-  background-color: #E5FFFF;
-  border-radius: 0px 15px 0px 0px;
+    margin-top: 80px;
+    width: 280px;
+    height: 650px;
+    /* left: 64px;
+    top:172px; */
+    background-color: #E5FFFF;
+    border-radius: 0px 15px 0px 0px;
+    position: fixed;
+}
+
+.pateintnamelist{
+    overflow-y: scroll;
+    width: 280px;
+    height: 500px;
+    /* left: 64px;
+    top:172px; */
+    background-color: #E5FFFF;
+    border-radius: 0px 15px 0px 0px;
 }
 .PatientTableTitle{
   display: flex;
@@ -657,36 +474,41 @@
 
 /* communication div css */
 .Communicationdiv{
-     position: absolute;
-    right: 0px;
     border: 1px solid #007185;
     border-radius: 10px 10px 10px 10px;
     background-color: white;
-     /* margin-left: 950px; */
     text-align: center;
+    margin-left: 30px;
 
 }
+.Communicationdiv h5{
+    font-size: small;
+}
+
+.Communicationdiv p{
+    font-size: smaller;
+}
+
 .communicationpng img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     align-self: center;
 }
 .setschedule{
     color: #34d0eb;
+    line-height: 0.5rem;
+    font-size: small;
 }
 
 
 /* Medical history div css */
 
 .MedicalHistorydiv{
-    position: absolute;
-    right: 0px;
     border: 1px solid #28c0db;
     border-radius: 10px 10px 10px 10px;
     background-color: white;
-    /* margin-left: 960px; */
-    /* text-align: center; */
-    margin-top: 350px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .MedicalHistorydiv span{
@@ -696,6 +518,7 @@
 
 .MedicalHistorydiv h6{
     margin-left: 10px;
+    font-size: smaller;
 }
 
 .MedicalHistorydiv input{
@@ -709,6 +532,7 @@
      right: 5px;
      color: #2fcbe7;
      cursor: pointer;
+     font-size: smaller;
  }
 
  .hrline{
@@ -737,8 +561,72 @@
     font-size: 15px;
     line-height: 12px;
  }
-/*  */
- .leftright{
-     display: flex;
-     position: relative;
- }
+ 
+ .commeddiv{
+     position: sticky;
+     top: 250px;
+     border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    margin-left: 5px;
+    height: fit-content;
+    /* text-align: center; */
+
+}
+
+/* carosel css */
+.carousel-indicators{
+    top: 0;
+}
+.carousel-indicators li{
+    top: 0;
+    color:black;
+    text-indent: 0px;
+    width: 50px;
+}
+.carousel-indicators .active {
+    background-color: #2ecbae;
+}
+
+.appointmentinput{
+    border: 2px solid grey;
+    color: black;
+    border-radius: 5px;
+    background-color: rgb(172, 170, 170);
+    margin-left: 10px;
+}
+
+.selectdoctor{
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.AddRecordButton{
+    border: 2px solid yellow;
+    border-radius: 5px;
+    background-color: yellow;
+    color: rgb(45, 14, 130);
+    padding: 5px 5px 5px 5px;
+    margin-left: 35%;
+}
+
+.btn-warning{
+    color: blue;
+    font-weight: 500;
+}
+#ReadyCaseFormatContent tr{
+    border: 1px solid grey;
+
+}
+
+#ReadyCaseFormatContent td{
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+}
+
+.iframes{
+    background-color: rgba(187, 245, 247, 0.87);
+}
+
+.iframe{
+    background-color: rgba(187, 245, 247, 0.87);
+}

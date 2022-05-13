@@ -629,4 +629,5 @@
 
 .iframe{
     background-color: rgba(187, 245, 247, 0.87);
+    display: none;
 }

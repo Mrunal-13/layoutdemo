@@ -1033,7 +1033,7 @@
             <option value="DR. shirshe nursing home an facilities">DR. shirshe nursing home an facilities</option>
           </select>
           <hr>
-          <select name="Add Record" id="" class="AddRecordButton">
+          <select name="Add Record" id="AddRecordButton" class="AddRecordButton">
             <option value="Add Record">Add Record</option>
             <option value="Vital Signs">Vital Signs</option>
             <option value="Clinical Notes">Clinical Notes</option>
@@ -1044,6 +1044,7 @@
             <option value="Complete Procedure">Complete Procedure</option>
             <option value="Report">Report</option>
           </select>
+          
         </div>
         <div id="VeiwsAndPaymentsContent" style="border: 2px solid rgb(198, 251, 233);background-color: rgb(198, 251, 233);height: 500px;border-radius: 5px;display: none;">
           <table style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);margin-top: 10px;border-radius: 5px;">
@@ -1125,8 +1126,8 @@
             </tr>
           </table>
         </div>
-        <div class="iframes" id="iframes" style="width:669px;">
-          <iframe class="iframe" id="iframe1" src="iframe1.html" frameborder="0" height="420" width="669" allowfullscreen></iframe>
+        <div class="iframes" id="iframes" style="width:669px;display: none;">
+          <iframe class="iframe" id="iframe1" src="iframe1.html" frameborder="0" height="445" width="669" allowfullscreen></iframe>
           <iframe class="iframe" id="iframe2" src="iframe2.html" frameborder="0"  width="669" height="900" allowfullscreen></iframe>
           <iframe class="iframe" id="iframe3" src="iframe3.html" frameborder="0"  width="669" height="500" allowfullscreen></iframe>
           <iframe class="iframe" id="iframe4" src="iframe4.html" frameborder="0" width="669" height="500"  allowfullscreen></iframe>
@@ -1140,8 +1141,7 @@
           <script>
             var div = document.getElementById("iframe4");
             div.onload = function() {
-                div.style.height =
-                  div.contentWindow.document.body.scrollHeight + 'px';
+                div.style.height =div.contentWindow.document.body.scrollHeight + 'px';
             }
           </script>
         </div>
@@ -1208,3 +1208,4 @@
     <script src="./layout.js"></script>
   </body>
 </html>
+

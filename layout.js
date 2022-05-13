@@ -343,11 +343,54 @@ document.getElementById('inputforpollen').addEventListener('keypress', function(
 });
 
 
+
+document.getElementById("AddRecordButton").addEventListener("change",function(){
+  console.log("selected: ",this.value);
+  var value = this.value;
+  document.getElementById("iframes").style.display = "block";
+  if(value === "Vital Signs"){
+    console.log("iframe1");
+    document.getElementById("iframe1").style.display = "block";
+  }
+  else if(value === "Clinical Notes"){
+    console.log("iframe2");
+    document.getElementById("iframe2").style.display = "block";
+  }
+  else if(value === "Prescription"){
+    console.log("iframe3");
+    document.getElementById("iframe3").style.display = "block";
+  }
+  else if (value === "Files"){
+    console.log("Files");
+    document.getElementById("iframe4").style.display = "block";
+  }
+  else if(value === "Lab Advice"){
+    console.log("Lab Advice");
+    document.getElementById("iframe5").style.display = "block";
+  }
+  else if (value === "Treatment Plan"){
+    console.log("Treatment Plan");
+    document.getElementById("iframe10").style.display = "block";
+  }
+  else if(value === "Complete Procedure"){
+    console.log("Complete Procedure");
+    document.getElementById("iframe11").style.display = "block";
+  }
+
+  
+});
+
+
 function openAppointment(){
   if(document.getElementById("AppointmentDetails").style.display = "none")
   {
     document.getElementById("AppointmentDetails").style.display ="block";
+    document.getElementById("iframes").style.display = "none";
   }
+  var f = document.querySelectorAll(".iframe");
+    for (let i = 0; i < f.length; i++) {
+      f[i].style.display = "none";
+    }
 }
 
 
@@ -365,10 +408,12 @@ function openPayments(){
     document.getElementById("AppointmentDetails").style.display = "none";
     document.getElementById("VeiwsAndPaymentsContent").style.display = "block"
     document.getElementById("ReadyCaseFormatContent").style.display = "none";
+    document.getElementById("iframes").style.display = "none";
   }
   else if(document.getElementById("AppointmentDetails").style.display = "none"){
     document.getElementById("VeiwsAndPaymentsContent").style.display = "block";
     document.getElementById("ReadyCaseFormatContent").style.display = "none";
+    document.getElementById("iframes").style.display = "none";
   }
 }
 
@@ -383,10 +428,12 @@ function OpenReadyCase(){
   document.getElementById("VisitReportButton").style.borderStyle = "solid";
   document.getElementById("VisitReportButton").style.borderColor = "grey";
   document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
+  document.getElementById("iframes").style.display = "none";
   document.getElementById("ReadyCaseFormatContent").style.display = "block";
   if(document.getElementById("AppointmentDetails").style.display = "block"){
     document.getElementById("AppointmentDetails").style.display = "none";
   }
+  
 }
 
 
@@ -406,6 +453,13 @@ function VisitReport(){
   }
   if(document.getElementById("VeiwsAndPaymentsContent").style.display = "block"){
     document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
+  }
+  if(document.getElementById("iframes").style.display = "none"){
+    document.getElementById("iframes").style.display ="block";
+    var f = document.querySelectorAll(".iframe");
+    for (let i = 0; i < f.length; i++) {
+      f[i].style.display = "block";
+    }
   }
 }
 

@@ -337,7 +337,7 @@
         </ul>
         <ul class="navbar-nav mr-auto flex-column">
           <li class="nav-item">
-            <div class="" style="color: #000;font-weight: 500;">
+            <div class="RakeshName">
               Rakesh Nandare
               <button class="btn btn-primary">Edit</button>
             </div>
@@ -569,8 +569,8 @@
     </div>
     <div class="leftright" id="leftright">
       <div class="pateintTable" id="pateintdropdown" style="display: none;">
-        <ul style="background-color: white; margin-top: 50px;list-style: none;">
-          <li style="color: rgb(248, 248, 254);" class="nav-item">
+        <ul class="pateintul">
+          <li class="nav-item visitselect">
             <div class="nav-link" style="font-size: 25px; color: #050505;">Pateint(s)
               <select name="" id="visitoptions" style="font-size: 10px; background-color: white;color: rgb(28, 105, 172);">
                 <option value="physical Visit">Physical Visit</option>
@@ -579,7 +579,7 @@
             </div>
           </li>
           <li>
-            <div style="color: aliceblue; margin-left: 20px;" class="e-queque">
+            <div class="e-queque">
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-secondary active">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked>E-Queue
@@ -992,38 +992,37 @@
             </div>
           </div>
         </div> <!--end of pateint name list div -->
-         
       </div><!--end of pateinttable div -->
       <div class="vl" id="vl"></div>
-      <div id="Appointment" style="height: fit-content;margin-top: 250px;margin-left: 480px;">
-        <div style="border: 2px solid grey; width: max-content; height: max-content;display: flex;border-radius: 5px; font-size: 0.8rem;">
-          <div style="line-height: 0.5rem;padding-top: 20px;"><p>10:45 AM</p><p>29 December 21
+      <div id="Appointment" class="Appointment">
+        <div class="appointmentwith">
+          <div class="appointmentwithtime"><p>10:45 AM</p><p>29 December 21
           </p></div>
-          <div style="padding-top: 20px;padding-left: 10px;">Appointment with Dr. Yash Chopra</div>
+          <div class="appointmentwithdr">Appointment with Dr. Yash Chopra</div>
           <div><img src="https://img.icons8.com/glyph-neue/64/000000/alarm-clock.png"/>20 days remaining    Reveiw on - dd/mm/yyyy</div>
-          <div style="padding: 20px 0px 8px 10px;"><button style="background-color: yellow; color: #2451C5;border-radius: 5px;">OPEN</button></div>
+          <div class="openbuttondiv"><button class="openbtn">OPEN</button></div>
         </div>
         <div>
-          <p id="CreateCaseStudy" onclick="openAppointment()" style="padding-top: 15px;color: blue;"><img src="https://img.icons8.com/ios/40/3498DB/add--v1.png"/> Create New Case Study</p>
+          <p id="CreateCaseStudy" onclick="openAppointment()"><img src="https://img.icons8.com/ios/40/3498DB/add--v1.png"/> Create New Case Study</p>
         </div>
         <div style="display: flex;">
-          <div id="VisitReportButton" onclick="VisitReport()" style="border: rgb(237, 97, 162); color: #000;border-radius: 5px; background-color: rgb(237, 97, 162);width: 150px;text-align: center;">
+          <div id="VisitReportButton" onclick="VisitReport()">
             <p>Pateint Visit Report</p>
           </div>
-          <div onclick="openPayments()" id="VeiwsAndPaymentsbutton" style="border: 1px solid grey;border-radius: 5px; color: grey; margin-left: 8px;font-weight: 500;text-align: center;">
+          <div onclick="openPayments()" id="VeiwsAndPaymentsbutton">
             <p>Veiws & Payments</p>
           </div>
-          <div id="ReadyCaseFormatButton" onclick="OpenReadyCase()" style="border: 1px solid grey;border-radius: 5px; color: grey; margin-left: 150px;font-weight: 500;height: fit-content;text-align: center;">
+          <div id="ReadyCaseFormatButton" onclick="OpenReadyCase()">
             <p><img src="https://img.icons8.com/ios/25/000000/reminders.png"/>Ready Case Format</p>
           </div>
         </div>
-        <div id="AppointmentDetails" style="border: 2px solid rgb(38, 215, 174);border-radius: 5px;display: none;">
-          <p style="font-size: 20px;font-weight: 500;margin-top: 5px;">Pateint Appointment Details</p>
+        <div id="AppointmentDetails">
+          <p class="PateintAppointmentDetails">Pateint Appointment Details</p>
           <hr>
-          <p style="float: right">Appointment no. 123456789</p>
-          <p style="font-weight: 500;">Appointment date and time</p>
+          <p class="Appno">Appointment no. 123456789</p>
+          <p class="apdatetime">Appointment date and time</p>
           <input class="appointmentinput" type="date"><input class="appointmentinput" type="time">
-          <p style="font-weight: 500;">Doctor</p>
+          <p class="apdatetime">Doctor</p>
           <select name="" id="" class="selectdoctor">
             <option value="Dr.Rakesh Nanadar">Rakesh Nandare</option>
             <option value="Dr.Aware ">Aware</option>
@@ -1043,8 +1042,8 @@
           </select>
           
         </div>
-        <div id="VeiwsAndPaymentsContent" style="border: 2px solid rgb(198, 251, 233);background-color: rgb(198, 251, 233);height: 500px;border-radius: 5px;display: none;">
-          <table style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);margin-top: 10px;border-radius: 5px;">
+        <div id="VeiwsAndPaymentsContent">
+          <table class="VeiwsAndPaymentsTable">
             <tr style="background-color: #B0CAD5;">
               <th>Invoice</th>
               <th>Status</th>
@@ -1059,20 +1058,20 @@
               <td>300.00</td>
               <td>31 Mar 2021</td>
               <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png"/></td>
-              <td><button style="border: 1px solid grey;background-color: #9BBBB2;color: white;border-radius: 5px;">Make Payment</button></td>
+              <td><button class="makepaymentsbtn">Make Payment</button></td>
             </tr>
             <tr>
-              <td style="padding-top: 40px;padding-bottom: 10px;"><button class="btn btn-primary"><img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/16/000000/external-setting-essentials-pack-tanah-basah-glyph-tanah-basah.png"/>setting</button></td>
+              <td class="tdsettings"><button class="btn btn-primary"><img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/16/000000/external-setting-essentials-pack-tanah-basah-glyph-tanah-basah.png"/>setting</button></td>
               <td></td>
               <td></td>
               <td></td>
-              <td style="padding-top: 40px;padding-bottom: 10px;"><button class="btn btn-primary">Make Payment</button></td>
-              <td style="padding-top: 40px;padding-bottom: 10px;"><button class="btn btn-primary" onclick="veiwHistory()">Veiw History</button></td>
+              <td class="tdsettings"><button class="btn btn-primary">Make Payment</button></td>
+              <td class="tdsettings"><button class="btn btn-primary" onclick="veiwHistory()">Veiw History</button></td>
             </tr>
           </table>
-          <div class="veiwHistory" id="veiwHistoryTable" style="border: 2px solid rgb(198, 251, 233);background-color: rgb(198, 251, 233);border-radius: 5px;display: none;">
-            <div style="display:flex;color: #000;margin-left: 20px;"><p onclick="Billingp()" style="border: 1px solid black;border-radius: 5px;padding: 5px 5px 5px 5px ;margin-bottom: 0px;background-color: yellow;" id="Billingp">Billing</p><p id="paymenthistoryp" style="border: 1px solid black;margin-left: 25px;border-radius: 5px;padding: 5px 5px 5px 5px;margin-bottom: 0px;" onclick="paymenthistory()">Payments History</p></div>
-            <table id="Billingt" style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);border-radius: 5px;">
+          <div class="veiwHistory" id="veiwHistoryTable">
+            <div class="Billingandhistory"><p onclick="Billingp()" id="Billingp">Billing</p><p id="paymenthistoryp" onclick="paymenthistory()">Payments History</p></div>
+            <table id="Billingt">
               <tr style="background-color: #B0CAD5;">
                 <th>Invoice</th>
                 <th>Bill Amount</th>
@@ -1087,7 +1086,7 @@
                 <td>31 Mar 2020</td>
                 <td>31 Mar 2022</td>
                 <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
-                <td><button type="button" style="border:1px solid red;border-radius:5px;color: red;">Unpaid</button></td>
+                <td><button type="button" class="Unpaidbtn">Unpaid</button></td>
               </tr>
               <tr>
                 <td>086010000271</td>
@@ -1095,7 +1094,7 @@
                 <td>31 Mar 2022</td>
                 <td>31 Mar 2022</td>
                 <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
-                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color:green">Paid</button></td>
+                <td><button class="Paid" type="button">Paid</button></td>
               </tr>
               <tr>
                 <td>086010000271</td>
@@ -1103,7 +1102,7 @@
                 <td>31 Mar 2022</td>
                 <td>31 Mar 2022</td>
                 <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
-                <td><button type="button" style="border:1px solid green;border-radius: 5px;color: green;">Paid</button></td>
+                <td><button type="button" class="Paid">Paid</button></td>
               </tr>
               <tr>
                 <td>086010000271</td>
@@ -1111,7 +1110,7 @@
                 <td>31 Mar 2022</td>
                 <td>31 Mar 2022</td>
                 <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
-                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color:green">Paid</button></td>
+                <td><button type="button" class="Paid">Paid</button></td>
               </tr>
               <tr>
                 <td>86010000271</td>
@@ -1119,7 +1118,7 @@
                 <td>31 Mar 2022</td>
                 <td>31 Mar 2022</td>
                 <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
-                <td><button type="button" style="border:1px solid green;border-radius:5px;color:green;">Paid</button></td>
+                <td><button type="button" class="Paid">Paid</button></td>
               </tr>
               <tr>
                 <td>086010000271</td>
@@ -1127,7 +1126,7 @@
                 <td>31 Mar 2022</td>
                 <td>31 Mar 2022</td>
                 <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
-                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color:green">Paid</button></td>
+                <td><button type="button" class="Paid">Paid</button></td>
               </tr>
               <tr>
                 <td>086010000271</td>
@@ -1135,10 +1134,10 @@
                 <td>31 Mar 2022</td>
                 <td>31 Mar 2022</td>
                 <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
-                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color: green;">Paid</button></td>
+                <td><button type="button" class="Paid">Paid</button></td>
               </tr>
             </table>
-            <table id="paymenthistoryt" style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);border-radius: 5px;text-align: center;display: none;">
+            <table id="paymenthistoryt">
               <tr style="background-color: #B0CAD5;">
                 <td>Bank id</td>
                 <td>Bank Ref no/UTR No</td>
@@ -1223,8 +1222,8 @@
             </table>
           </div>
         </div>
-        <div id="ReadyCaseFormatContent" style="border: 2px solid rgb(198, 251, 233);background-color: rgb(198, 251, 233);height: 800px;border-radius: 5px;display: none;">
-          <table style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);margin-top: 10px;border-radius: 5px;border-collapse: collapse;">
+        <div id="ReadyCaseFormatContent">
+          <table class="ReadyCaseFormatTable" style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);margin-top: 10px;border-radius: 5px;border-collapse: collapse;">
             <tr>
               <td style="padding-top: 40px;padding-bottom: 10px;"><button class="btn btn-warning">Create New</button></td>
               <td></td>

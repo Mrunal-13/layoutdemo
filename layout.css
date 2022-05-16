@@ -1,3 +1,4 @@
+/* navbar 1 2 3 */
 .navbar{
     position: fixed;
     width: 100%;
@@ -88,6 +89,11 @@
     color: black;
     background-color: white;
 }
+.RakeshName{
+    color: #000;
+    font-weight: 500;
+}
+
 .dropbtn {
     background-color: transparent;
     color: rgb(154, 157, 160);
@@ -348,6 +354,7 @@
     margin-right: 5px;
 }
 
+/* div leftright */
 .leftright{
     width: 95.5%;
     position: absolute;
@@ -355,6 +362,7 @@
     display: flex;
 }
 
+/* vertical line on page */
 .vl {
     margin-top: 220px;
     border-left: 3px solid black;
@@ -363,6 +371,7 @@
     margin-left: 10px;
     position: sticky;
   }
+
 /* css for table of pateints */
 
 .btn-secondary{
@@ -384,7 +393,20 @@
     border-radius: 0px 15px 0px 0px;
     position: fixed;
 }
+.pateintul{
+    background-color: white; 
+    margin-top: 50px;
+    list-style: none;
+}
 
+.visitselect{
+    color: rgb(248, 248, 254);
+}
+
+.e-queque{
+    color: aliceblue; 
+    margin-left: 20px;
+}
 .pateintnamelist{
     overflow-y: scroll;
     width: 280px;
@@ -470,7 +492,17 @@
   margin-top: 10px;
   background-color: white;
 }
+/* communication and med complete div */
+.commeddiv{
+    position: sticky;
+    top: 250px;
+    border-radius: 10px 10px 10px 10px;
+   background-color: white;
+   margin-left: 5px;
+   height: fit-content;
+   /* text-align: center; */
 
+}
 
 /* communication div css */
 .Communicationdiv{
@@ -561,19 +593,8 @@
     font-size: 15px;
     line-height: 12px;
  }
- 
- .commeddiv{
-     position: sticky;
-     top: 250px;
-     border-radius: 10px 10px 10px 10px;
-    background-color: white;
-    margin-left: 5px;
-    height: fit-content;
-    /* text-align: center; */
 
-}
-
-/* carosel css */
+/* carosel css for pateints list */
 .carousel-indicators{
     top: 0;
 }
@@ -586,6 +607,102 @@
 .carousel-indicators .active {
     background-color: #2ecbae;
 }
+
+/* center appointment div */
+
+.Appointment{
+    height: fit-content;
+    margin-top: 250px;
+    margin-left: 480px;
+}
+
+.appointmentwith{
+    border: 2px solid grey;
+     width: max-content; 
+     height: max-content;
+     display: flex;
+     border-radius: 5px;
+     font-size: 0.8rem;
+}
+
+.appointmentwithtime{
+    line-height: 0.5rem;
+    padding-top: 20px;
+}
+
+.appointmentwithdr{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.openbuttondiv{
+    padding: 20px 0px 8px 10px;
+}
+
+.openbtn{
+    background-color: yellow; 
+    color: #2451C5;
+    border-radius: 5px;
+}
+
+/* create new case study */
+
+#CreateCaseStudy{
+    padding-top: 15px;
+    color: blue;
+}
+
+/* visist report bttuon */
+#VisitReportButton{
+    border: rgb(237, 97, 162); 
+    color: #000;
+    border-radius: 5px;
+     background-color: rgb(237, 97, 162);
+     width: 150px;
+     text-align: center;
+}
+
+/* VeiwsAndPaymentsbutton */
+#VeiwsAndPaymentsbutton{
+    border: 1px solid grey;
+    border-radius: 5px;
+     color: grey; 
+     margin-left: 8px;
+     font-weight: 500;
+    text-align: center;
+}
+
+/* ReadyCaseFormatButton */
+
+#ReadyCaseFormatButton{
+    border: 1px solid grey;
+    border-radius: 5px;
+     color: grey;
+      margin-left: 150px;
+      font-weight: 500;
+      height: fit-content;
+    text-align: center;
+}
+/* appontment details input for create new case study */
+
+#AppointmentDetails{
+    border: 2px solid rgb(38, 215, 174);
+    border-radius: 5px;
+    display: none;
+}
+.PateintAppointmentDetails{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.Appno{
+    float: right;
+}
+
+.apdatetime{
+    font-weight: 500;
+}
+
 
 .appointmentinput{
     border: 2px solid grey;
@@ -609,10 +726,107 @@
     margin-left: 35%;
 }
 
+
 .btn-warning{
     color: blue;
     font-weight: 500;
 }
+
+/* VeiwsAndPaymentsContent */
+
+#VeiwsAndPaymentsContent{
+    border: 2px solid rgb(198, 251, 233);
+    background-color: rgb(198, 251, 233);
+    height: 500px;
+    border-radius: 5px;
+    display: none;
+}
+
+.VeiwsAndPaymentsTable{
+    background-color: rgb(253, 255, 254);
+    width: 100%;
+     border: 2px solid rgb(24, 131, 173);
+     margin-top: 10px;
+    border-radius: 5px;
+}
+
+.makepaymentsbtn{
+    border: 1px solid grey;
+    background-color: #9BBBB2;
+    color: white;
+    border-radius: 5px;
+}
+
+.tdsettings{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.veiwHistory{
+    border: 2px solid rgb(198, 251, 233);
+    background-color: rgb(198, 251, 233);
+    border-radius: 5px;
+    display: none;
+}
+
+.Billingandhistory{
+    display:flex;
+    color: #000;
+    margin-left: 20px;
+}
+
+#Billingp{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px ;
+    margin-bottom: 0px;
+    background-color: yellow;
+}
+
+#paymenthistoryp{
+    border: 1px solid black;
+    margin-left: 25px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 0px;
+}
+
+#Billingt{
+    background-color: rgb(253, 255, 254);
+    width: 100%; 
+    border: 2px solid rgb(24, 131, 173);
+    border-radius: 5px;
+}
+
+.Unpaidbtn{
+    border:1px solid red;
+    border-radius:5px;
+    color: red;
+}
+
+.Paid{
+    border: 1px solid green;
+    border-radius: 5px;
+    color:green;
+}
+
+.paymenthistoryt{
+    background-color: rgb(253, 255, 254);
+    width: 100%; 
+    border: 2px solid rgb(24, 131, 173);
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+#ReadyCaseFormatContent{
+    border: 2px solid rgb(198, 251, 233);
+    background-color: rgb(198, 251, 233);
+    height: 800px;
+    border-radius: 5px;
+    display: none;
+}
+/* Ready case format tab css */
 #ReadyCaseFormatContent tr{
     border: 1px solid grey;
 
@@ -622,6 +836,9 @@
     padding: 10px 10px 10px 10px;
     font-size: 15px;
 }
+
+/* pateint visit report c ss */
+/* iframes added in visit reports */
 
 .iframes{
     background-color: rgba(187, 245, 247, 0.87);

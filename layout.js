@@ -417,6 +417,27 @@ function openPayments(){
   }
 }
 
+function Billingp(){
+  document.getElementById("Billingt").style.display = "block";
+  document.getElementById("Billingp").style.backgroundColor = "yellow";
+  document.getElementById("paymenthistoryp").style.backgroundColor = "white";
+  document.getElementById("paymenthistoryt").style.display = "none";
+}
+
+
+function paymenthistory(){
+  document.getElementById("Billingp").style.backgroundColor = "white";
+  document.getElementById("paymenthistoryp").style.backgroundColor = "yellow";
+  document.getElementById("Billingt").style.display = "none";
+  document.getElementById("paymenthistoryt").style.display = "block";
+}
+
+
+function veiwHistory(){
+  document.getElementById("veiwHistoryTable").style.display = "block";
+}
+
+
 function OpenReadyCase(){
   document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "rgb(237, 97, 162)";
   document.getElementById("ReadyCaseFormatButton").style.color = "black";

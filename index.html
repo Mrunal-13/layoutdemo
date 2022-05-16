@@ -90,12 +90,9 @@
             <a
               class="nav-link mr-lg-2"
               id="addPateintButton"
-              href="#"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+              href="addpatient.html"
             >
-              <button type="submit" class="addpatient">Add Patient</button>
+              <button type="button" class="addpatient">Add Patient</button>
             </a>
           </li>
           <li class="nav-item">
@@ -998,7 +995,7 @@
          
       </div><!--end of pateinttable div -->
       <div class="vl" id="vl"></div>
-      <div id="Appointment" style="height: fit-content;margin-top: 250px;margin-left: 480px;border: 2px solid red;">
+      <div id="Appointment" style="height: fit-content;margin-top: 250px;margin-left: 480px;">
         <div style="border: 2px solid grey; width: max-content; height: max-content;display: flex;border-radius: 5px; font-size: 0.8rem;">
           <div style="line-height: 0.5rem;padding-top: 20px;"><p>10:45 AM</p><p>29 December 21
           </p></div>
@@ -1070,9 +1067,161 @@
               <td></td>
               <td></td>
               <td style="padding-top: 40px;padding-bottom: 10px;"><button class="btn btn-primary">Make Payment</button></td>
-              <td style="padding-top: 40px;padding-bottom: 10px;"><button class="btn btn-primary">Veiw History</button></td>
+              <td style="padding-top: 40px;padding-bottom: 10px;"><button class="btn btn-primary" onclick="veiwHistory()">Veiw History</button></td>
             </tr>
           </table>
+          <div class="veiwHistory" id="veiwHistoryTable" style="border: 2px solid rgb(198, 251, 233);background-color: rgb(198, 251, 233);border-radius: 5px;display: none;">
+            <div style="display:flex;color: #000;margin-left: 20px;"><p onclick="Billingp()" style="border: 1px solid black;border-radius: 5px;padding: 5px 5px 5px 5px ;margin-bottom: 0px;background-color: yellow;" id="Billingp">Billing</p><p id="paymenthistoryp" style="border: 1px solid black;margin-left: 25px;border-radius: 5px;padding: 5px 5px 5px 5px;margin-bottom: 0px;" onclick="paymenthistory()">Payments History</p></div>
+            <table id="Billingt" style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);border-radius: 5px;">
+              <tr style="background-color: #B0CAD5;">
+                <th>Invoice</th>
+                <th>Bill Amount</th>
+                <th>Date of Issue</th>
+                <th>Due Date</th>
+                <th>Veiw</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>086010000271</td>
+                <td>300.00</td>
+                <td>31 Mar 2020</td>
+                <td>31 Mar 2022</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+                <td><button type="button" style="border:1px solid red;border-radius:5px;color: red;">Unpaid</button></td>
+              </tr>
+              <tr>
+                <td>086010000271</td>
+                <td>300.00</td>
+                <td>31 Mar 2022</td>
+                <td>31 Mar 2022</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color:green">Paid</button></td>
+              </tr>
+              <tr>
+                <td>086010000271</td>
+                <td>300.00</td>
+                <td>31 Mar 2022</td>
+                <td>31 Mar 2022</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+                <td><button type="button" style="border:1px solid green;border-radius: 5px;color: green;">Paid</button></td>
+              </tr>
+              <tr>
+                <td>086010000271</td>
+                <td>300.00</td>
+                <td>31 Mar 2022</td>
+                <td>31 Mar 2022</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color:green">Paid</button></td>
+              </tr>
+              <tr>
+                <td>86010000271</td>
+                <td>300.00</td>
+                <td>31 Mar 2022</td>
+                <td>31 Mar 2022</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+                <td><button type="button" style="border:1px solid green;border-radius:5px;color:green;">Paid</button></td>
+              </tr>
+              <tr>
+                <td>086010000271</td>
+                <td>300.00</td>
+                <td>31 Mar 2022</td>
+                <td>31 Mar 2022</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color:green">Paid</button></td>
+              </tr>
+              <tr>
+                <td>086010000271</td>
+                <td>300.00</td>
+                <td>31 Mar 2022</td>
+                <td>31 Mar 2022</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+                <td><button type="button" style="border: 1px solid green;border-radius: 5px;color: green;">Paid</button></td>
+              </tr>
+            </table>
+            <table id="paymenthistoryt" style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);border-radius: 5px;text-align: center;display: none;">
+              <tr style="background-color: #B0CAD5;">
+                <td>Bank id</td>
+                <td>Bank Ref no/UTR No</td>
+                <td>Receipt No.</td>
+                <td>Payment Mode</td>
+                <td>Amount</td>
+                <td>Date of Transaction</td>
+                <td>Receipt</td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height:0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height: 0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height: 0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height:0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height:0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height:0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height: 0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+              <tr>
+                <td>AXG</td>
+                <td><p>50000136920</p><p style="line-height: 0;">4-03158</p></td>
+                <td>WAXG0939905887</td>
+                <td>Net Banking</td>
+                <td>300</td>
+                <td>28 Feb 22</td>
+                <td><img src="https://img.icons8.com/cute-clipart/32/000000/internet-explorer.png" alt=""/></td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div id="ReadyCaseFormatContent" style="border: 2px solid rgb(198, 251, 233);background-color: rgb(198, 251, 233);height: 800px;border-radius: 5px;display: none;">
           <table style="background-color: rgb(253, 255, 254);width: 100%; border: 2px solid rgb(24, 131, 173);margin-top: 10px;border-radius: 5px;border-collapse: collapse;">

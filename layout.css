@@ -614,6 +614,7 @@
     height: fit-content;
     margin-top: 250px;
     margin-left: 480px;
+    /* border-left: 3px solid black; */
 }
 
 .appointmentwith{
@@ -669,6 +670,7 @@
      margin-left: 8px;
      font-weight: 500;
     text-align: center;
+    
 }
 
 /* ReadyCaseFormatButton */
@@ -740,6 +742,9 @@
     height: 500px;
     border-radius: 5px;
     display: none;
+    margin-top: -12px;
+    position: relative;
+    z-index: 6;
 }
 
 .VeiwsAndPaymentsTable{
@@ -825,6 +830,9 @@
     height: 800px;
     border-radius: 5px;
     display: none;
+    margin-top: -12px;
+    position: relative;
+    z-index: 6;
 }
 /* Ready case format tab css */
 #ReadyCaseFormatContent tr{
@@ -842,6 +850,7 @@
 
 .iframes{
     background-color: rgba(187, 245, 247, 0.87);
+    margin-top: -12px;
 }
 
 .iframe{

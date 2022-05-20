@@ -1,3 +1,5 @@
+
+// alert box for dropdown
 let alertsDropdown=document.getElementById("alertsDropdown");
 let alertDetails=document.getElementById("alertDetails");
 alertDetails.style.display="none";
@@ -12,6 +14,7 @@ alertsDropdown.addEventListener("click",()=>{
   }
 })
 
+// dropdown for message box
 let messagesDropdown=document.getElementById("messagesDropdown");
 let messageAlertDetails=document.getElementById("messageAlertDetails");
 messageAlertDetails.style.display="none";
@@ -27,6 +30,7 @@ messagesDropdown.addEventListener("click",()=>{
   }
 })
  
+// collapse button function to toggle sidenav barr
 function openNav() {
         if (document.getElementById("mySidenav").style.width === "63px" || document.getElementById("mySidenav").style.width==="") {
           document.getElementById("mySidenav").style.width = "250px";
@@ -87,6 +91,8 @@ function openNav() {
         }
 }
 
+// dropdown for admin setting box
+
 let adminSettingBox=document.getElementById("adminSettingBox");
 adminSettingBox.style.display="none";
 let dropbtnMyfunction=document.getElementById("dropbtnMyfunction");
@@ -98,7 +104,7 @@ dropbtnMyfunction.addEventListener("click",()=>{
   }
 })
 
-
+// button for pateimt table
 function showpateintTable(){
   if ( document.getElementById("pateintdropdown").style.display === 'none'){
     document.getElementById('pateintdropdown').style.display = 'block';
@@ -141,7 +147,7 @@ function showpateintTable(){
 }
 
 
-
+// input box for medical history
 
 function makelist(){
   document.getElementById('inputforhistory').style.display = 'block';
@@ -150,7 +156,7 @@ function makelist(){
   });
 }
 
-
+// making list for mdeical history
 document.getElementById('inputforhistory').addEventListener('keypress', function(e){
   if(e.key == 'Enter'){
     
@@ -166,12 +172,14 @@ document.getElementById('inputforhistory').addEventListener('keypress', function
   }
 });
 
+// input box for other specified diseases
 function makelist1(){
   document.getElementById('inputfordiseases').style.display = 'block';
   $('.minus').click(function(e){
     e.target.parentElement.remove();
   });
 }
+
 
 document.getElementById('inputfordiseases').addEventListener('keypress', function(e){
 
@@ -188,6 +196,7 @@ document.getElementById('inputfordiseases').addEventListener('keypress', functio
   }
 });
 
+// input for drug section
 function makelist2(){
   document.getElementById('inputfordrug').style.display = 'block';
   $('.minus').click(function(e){
@@ -210,6 +219,7 @@ document.getElementById('inputfordrug').addEventListener('keypress', function(e)
   }
 });
 
+// input for food
 function makelist3(){
   document.getElementById('inputforfood').style.display = 'block';
   $('.minus').click(function(e){
@@ -232,6 +242,7 @@ document.getElementById('inputforfood').addEventListener('keypress', function(e)
   }
 });
 
+// add button and input for insect
 function makelist4(){
   document.getElementById('inputforinsect').style.display = 'block';
   $('.minus').click(function(e){
@@ -253,6 +264,8 @@ document.getElementById('inputforinsect').addEventListener('keypress', function(
     }
   }
 });
+
+// input for latex
 
 function makelist5(){
   document.getElementById('inputforlatex').style.display = 'block';
@@ -276,6 +289,8 @@ document.getElementById('inputforlatex').addEventListener('keypress', function(e
   }
 });
 
+
+// this are input mold
 function makelist6(){
   document.getElementById('inputformold').style.display = 'block';
   $('.minus').click(function(e){
@@ -298,6 +313,7 @@ document.getElementById('inputformold').addEventListener('keypress', function(e)
   }
 });
 
+// input section for pet
 function makelist7(){
   document.getElementById('inputforpet').style.display = 'block';
   $('.minus').click(function(e){
@@ -320,6 +336,7 @@ document.getElementById('inputforpet').addEventListener('keypress', function(e){
   }
 });
 
+// input section for pollen
 function makelist8(){
   document.getElementById('inputforpollen').style.display = 'block';
   $('.minus').click(function(e){
@@ -343,6 +360,7 @@ document.getElementById('inputforpollen').addEventListener('keypress', function(
 });
 
 
+// add record button for iframes
 
 document.getElementById("AddRecordButton").addEventListener("change",function(){
   console.log("selected: ",this.value);
@@ -380,6 +398,7 @@ document.getElementById("AddRecordButton").addEventListener("change",function(){
   
 });
 
+// create case study function to open button
 
 function openAppointment(){
   if(document.getElementById("AppointmentDetails").style.display = "none")
@@ -393,7 +412,7 @@ function openAppointment(){
     }
 }
 
-
+// function to click on veiws and payments
 function openPayments(){
   document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "rgb(237, 97, 162)";
   document.getElementById("VeiwsAndPaymentsbutton").style.color = "black";
@@ -417,6 +436,7 @@ function openPayments(){
   }
 }
 
+// section for billing button in veiw history
 function Billingp(){
   document.getElementById("Billingt").style.display = "block";
   document.getElementById("Billingp").style.backgroundColor = "yellow";
@@ -425,6 +445,7 @@ function Billingp(){
 }
 
 
+// paymnets history button for t and p
 function paymenthistory(){
   document.getElementById("Billingp").style.backgroundColor = "white";
   document.getElementById("paymenthistoryp").style.backgroundColor = "yellow";
@@ -432,12 +453,12 @@ function paymenthistory(){
   document.getElementById("paymenthistoryt").style.display = "block";
 }
 
-
+// veiw history table
 function veiwHistory(){
   document.getElementById("veiwHistoryTable").style.display = "block";
 }
 
-
+//function to open ready case format tab
 function OpenReadyCase(){
   document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "rgb(237, 97, 162)";
   document.getElementById("ReadyCaseFormatButton").style.color = "black";
@@ -457,7 +478,7 @@ function OpenReadyCase(){
   
 }
 
-
+// pateint visit report button functionality
 function VisitReport(){
   document.getElementById("VisitReportButton").style.backgroundColor = "rgb(237, 97, 162)";
   document.getElementById("VisitReportButton").style.color ="black";

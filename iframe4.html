@@ -75,14 +75,15 @@
                                 </ul>
                             </nav>
                             <div class="armchair">
-                                <div style="width: 100%">
+                                <div style="width: 70%">
                                     <div id="scrollView">
                                     </div>
                                     <div class="container container-tag">
                                         <div class="row tag-row">
                                             <div class="col">
-                                                <div id="dvTags" class="containerTags"></div><button id="btnAddTags" class="btn btn-primary btn-add-tag">Add
-                                                    tags</button>
+                                                <div id="dvTags" class="containerTags"></div><button id="btnAddTags" class="btn btn-primary btn-add-tag">
+                                                    Add tags
+                                                </button>
                                                 <div class="input-group"><input class="form-control input-comment-tag" id="commentTags" placeholder="Tags" /></div>
                                             </div>
                                         </div>
@@ -98,8 +99,13 @@
                         <div class="files">
                             <div class="galleryselector" id="uploading">
                                 <img src="https://img.icons8.com/external-prettycons-lineal-prettycons/32/000000/external-gallery-multimedia-prettycons-lineal-prettycons.png" />
-                                <p><label for="file" onclick="document.getElementById('image').click()">Upload a File</label></p>
-                                <p><input type="file" id="image" accept="image/*" style="display: none;" onchange="image_select()" multiple=""></input>
+                                <p>
+                                    <label for="file" onclick="document.getElementById('image').click()">
+                                        Upload a File
+                                    </label>
+                                </p>
+                                <p>
+                                    <input type="file" id="image" accept="image/*" style="display: none;" onchange="image_select()" multiple=""></input>
                                 </p>
                             </div>
                         </div>
@@ -125,7 +131,8 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h6 class="modal-title" id="staticBackdropLabel">Capture images using a webcam
+                                        <h6 class="modal-title" id="staticBackdropLabel">
+                                            Capture images using a webcam
                                         </h6>
                                         <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
@@ -135,7 +142,6 @@
                                         </div>
                                         <div class="play-area-sub" id="play-area-sub">
                                             <canvas id="capture" width="320" height="240"></canvas>
-
                                         </div>
                                         <div id="snapshot"></div>
                                     </div>
@@ -143,7 +149,6 @@
                                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
                                             Capture Photo
                                         </button>
-
                                         <button type="button" class="btn btn-secondary" id="btn-cancel" data-bs-dismiss="modal">Cancel</button>
                                     </div>
                                 </div>
@@ -153,7 +158,8 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h6 class="modal-title" id="staticBackdrop1Label1">Capture images using a webcam
+                                        <h6 class="modal-title" id="staticBackdrop1Label1">
+                                            Capture images using a webcam
                                         </h6>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-close-1"></button>
                                     </div>
@@ -166,15 +172,17 @@
                                         </div>
                                         <form>
                                             <div class="mb-3">
-                                                <label class="col-form-label">File
-                                                    Name</label>
+                                                <label class="col-form-label">
+                                                    File Name
+                                                </label>
                                                 <input type="text" class="form-control" id="fileName" placeholder="Write">
                                             </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-warning" id="btn-capture">Save
-                                            Photo</button>
+                                        <button type="button" class="btn btn-warning" id="btn-capture">
+                                            Save Photo
+                                        </button>
                                         <button type="button" class="btn btn-secondary" id="retake">Retake</button>
                                     </div>
                                 </div>
@@ -187,3 +195,5 @@
     </div>
     <script type="text/javascript" src="iframe4.js"></script>
 </body>
+
+</html>

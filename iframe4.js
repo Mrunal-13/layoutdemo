@@ -55,6 +55,7 @@ function startStreaming() {
 btnCapture.addEventListener("click", captureSnapshot);
 
 var images = [];
+
 function captureSnapshot() {
     const lastKnownCount = images.length;
     document.getElementById("play-area-sub1-1").style.display = "none";
@@ -154,9 +155,9 @@ function image_show() {
 }
 
 function delete_image(e) {
-    
-    console.log("delete_image called at",uploadImages)
-    console.log("spliced image at",e)
+
+    console.log("delete_image called at", uploadImages)
+    console.log("spliced image at", e)
     uploadImages.splice(e, 1);
     if (e !== -1) {
         images.splice(e, 1);
@@ -169,7 +170,7 @@ function delete_image(e) {
 
     document.getElementById('uploadedfiles').innerHTML = image_show();
 
-    
+
 }
 
 //<*********************************Image Popup functionalities**********************************************************************************>
@@ -282,7 +283,7 @@ function LoadImages(startPoint) {
     }
 
     for (let index = startPoint; index < images.length; index++) {
-        console.log("index of uploaded loaded image",index);
+        console.log("index of uploaded loaded image", index);
         const element =
             '<div class="container image-container" data-role="page" id="imgContainer_' +
             index +
@@ -443,14 +444,10 @@ function onClose() {
     btnImagePopup.fadeIn();
 }
 
-myWindow
-    .kendoWindow({
-        width: "600px",
-        title: "Capture Image",
-        visible: false,
-        actions: ["Pin", "Minimize", "Maximize", "Close"],
-        close: onClose,
-    })
-    .data("kendoWindow")
-    .center();
-
+myWindow.kendoWindow({
+    width: "600px",
+    title: "Capture Image",
+    visible: false,
+    actions: ["Pin", "Minimize", "Maximize", "Close"],
+    close: onClose,
+}).data("kendoWindow").center();

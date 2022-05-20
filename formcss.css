@@ -2,7 +2,6 @@
                 margin: 0;
                 box-sizing: border-box;
             }
-            
             /* .containerBox {
                 margin: 2vmax;
             } */
@@ -11,12 +10,12 @@
                 width: 100%;
                 overflow-y: scroll;
             }
-            ::-webkit-scrollbar {
+            
+             ::-webkit-scrollbar {
                 display: none;
             }
             /* Step-3 */
             
-
             .head {
                 display: flex;
                 justify-content: space-between;
@@ -215,7 +214,6 @@
                 text-shadow: 1px 1px 2px #427388;
             }
             /* clinical notes */
-            
             /* .marginclinic {
                 
             } */
@@ -325,11 +323,11 @@
                 width: 95%;
                 border-collapse: collapse;
             }
-
-            #prescriptiontable{
+            
+            #prescriptiontable {
                 padding: 0;
             }
-
+            
             .dosagef {
                 display: flex;
                 justify-content: space-around;
@@ -690,7 +688,7 @@
                 display: flex;
                 align-items: center;
             }
-
+            
             .esr .warning {
                 margin-top: 15px;
                 font-size: 0.8vmax;
@@ -736,7 +734,7 @@
                 font-size: 0.8vmax;
             }
             
-            .rightTest{
+            .rightTest {
                 margin-left: 150px;
             }
             /* .nestvisit input {
@@ -972,11 +970,12 @@
                 font-size: 1.5rem;
                 background-color: white;
                 border: none;
-                margin: auto;
+                /* margin: auto; */
+                display: -webkit-inline-box;
             }
             
             .navbar-nav>li {
-                margin-left: 3rem;
+                margin-left: 2.5rem;
             }
             
             .navbar-light .navbar-nav .nav-link:focus,
@@ -1014,9 +1013,16 @@
             
             .btnZoomOut,
             .btnRotateLeft {
-                margin-left: -49px !important;
+                margin-left: -41px !important;
                 border-bottom-right-radius: 0.625rem;
                 border-top-right-radius: 0.625rem;
+            }
+            
+            .btnZoomIn .fa,
+            .btnRotateRight .fa,
+            .btnZoomOut .fa,
+            .btnRotateLeft .fa {
+                padding-left: 17px;
             }
             
             .navbar-nav .nav-item .btnFullScreen {
@@ -1163,8 +1169,9 @@
             }
             
             .k-display-inline-flex {
-                width: 880px !important;
-                left: 320px !important;
+                /* width: 880px !important;
+                left: 320px !important; */
+                left: 35px !important;
             }
             
             .image_container,
@@ -1192,12 +1199,11 @@
             .image_container span:hover {
                 color: #e60000;
             }
-            
-            @media screen and (max-width: 1023px) {
+            /* @media screen and (max-width: 1023px) {
                 div.k-window {
                     display: none !important;
                 }
-            }
+            } */
             
             @media print {
                 body * {

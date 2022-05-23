@@ -2,7 +2,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 7;
     border-bottom:3px solid black;
 }
 .buttonForSideNav {
@@ -65,6 +65,23 @@
 #alertsDropdown,#messagesDropdown{
     padding: 0;
 }
+
+.advnc-search{
+    background: none;
+    border: none;
+    color: #435aaa;
+    font-size: 14px;
+    position: relative;
+    right: 70px;
+    width: 61px;
+}
+.searchbox{
+    display: flex;
+}
+.inputForSearch{
+    width: 50px;
+
+}
 .addpatient {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -88,6 +105,7 @@
     border-bottom: 2px solid black;
     color: black;
     background-color: white;
+    z-index: 1;
 }
 .RakeshName{
     color: #000;
@@ -114,7 +132,7 @@
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
-    z-index: 5;
+    z-index: 13;
     /* Stay on top */
     top: 60px;
     /* Stay at the top */
@@ -183,22 +201,25 @@
     border: 0.01rem solid black;
     box-shadow: 11px 11px 30px -9px black;
     border-radius: 5px;
-    z-index: 2;
+    z-index: 10;
     padding: 16px;
 }
 
 .alertBodyitems {
     background-color: transparent;
     padding: 5px;
+    z-index: 10;
 }
 
 .alertBodyitems:hover {
     background-color: #cce7ff;
+    z-index: 10;
 }
 
 .alertBodyitemsPart1 {
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .messageAlertDetails {
@@ -211,18 +232,20 @@
     border: 0.01rem solid black;
     box-shadow: 11px 11px 30px -9px black;
     border-radius: 5px;
-    z-index: 3;
+    z-index: 10;
     padding: 16px;
 }
 
 .MadBodyitemsPart2 p {
     font-size: 10px;
+    z-index: 10;
 }
 
 .MADBody {
     height: 25vh;
     min-height: 25vh;
     overflow-y: scroll;
+    z-index: 10;
 }
 
 .adminSettingBox{
@@ -744,7 +767,7 @@
     display: none;
     margin-top: -12px;
     position: relative;
-    z-index: 6;
+    z-index: 0;
 }
 
 .VeiwsAndPaymentsTable{
@@ -832,7 +855,7 @@
     display: none;
     margin-top: -12px;
     position: relative;
-    z-index: 6;
+    z-index: 0;
 }
 /* Ready case format tab css */
 #ReadyCaseFormatContent tr{

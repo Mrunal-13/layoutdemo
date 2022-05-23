@@ -353,6 +353,7 @@ $("#editDeleteModal").kendoDialog({
     show: onShow,
 });
 
+
 $("#txtUpdateComment").kendoTextBox({
     placeholder: "Comment",
 });

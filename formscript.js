@@ -59,7 +59,7 @@ function DoneVitalSigns() {
     document.getElementById("bodytempunit").style.display = "none";
     document.getElementById("bodytemptesting").style.display = "none";
 
-    //respiratory rate
+    //respiratory rate 
 
     var breath = document.getElementById("Breaths").value;
     document.getElementById("pbreath").innerHTML = breath;
@@ -646,6 +646,7 @@ $(document).ready(function() {
         counter -= 1;
     });
 });
+
 
 //<#############################################Edit Button##########################################################################################################.
 

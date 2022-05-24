@@ -8,6 +8,7 @@ $(document).ready(function() {
 });
 
 function clickAbout() {
+    $(".dvAbout").css("display", "block");
     $("#container").css("display", "none");
     $("#form-1").css("display", "none");
     $("#footer").css("display", "none");
@@ -21,6 +22,7 @@ function clickAbout() {
 }
 
 function clickBranding() {
+    $(".dvAbout").css("display", "none");
     $("#container").css("display", "flex");
     $("#form-1").css("display", "block");
     $("#footer").css("display", "block");

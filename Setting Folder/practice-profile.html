@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navForDeskTop">
+        <div class="navbar-first">
+            <a class="navbar-brand" href="#">WellDone</a>
+            <button class="buttonForSideNav" type="button" onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-second">
+            <ul class=" ml-auto secondNavUl">
+                <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
+                            <span class="input-group-append">
+                                <button class="btn btn-primary searchbtn1" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-lg-2" id="microPhoneChoose" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-microphone"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-lg-2" id="addPateintButton" href="Addpateints/addpatient.html">
+                        <button type="button" class="addpatient">Add Patient</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-lg-2" id="calenderButton" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-calendar"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-bell"></i>
+                        <span class="d-lg-none">Alerts
+                            <span class="badge badge-pill badge-warning">6 New</span>
+                        </span>
+                        <span class="indicator text-warning d-none d-lg-block">
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#">
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <span class="d-lg-none">Messages
+                            <span class="badge badge-pill badge-primary">12 New</span>
+                        </span>
+                        <span class="indicator text-primary d-none d-lg-block">
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- message shortcut -->
+            <div class="messageAlertDetails" id="messageAlertDetails">
+                <div class="MADHeader">
+                    <h6 class="MADHeader-info">New Messages:</h6>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="MADBody">
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>David Miller</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>Jane Smith</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>John Doe</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="MADFooter">
+                    <a class="viewAllMsgs" href="#">View all messages</a>
+                </div>
+            </div>
+            <!-- admin setting box -->
+            <div class="adminSettingBox" id="adminSettingBox">
+                <div class="adminSettingHeader">
+                    <strong id="nameofAdmin">Rakesh Nandre</strong>
+                    <p id="statusofAdmin">Admin</p>
+                    <p id="emailofAdmin">xyz@gmail.com</p>
+                </div>
+                <hr style="margin: 15px 0;">
+                <ul id="settingOptions">
+                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17" data-height="17"></span> Edit Profile</li>
+                    <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;" data-width="17" data-height="17"></span> Account Setting</li>
+                    <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17" data-height="17"></span> Add User</li>
+                    <li><span class="iconify" data-icon="bx:log-out" style="color: gray;" data-width="17" data-height="17"></span> Log Out</li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-third">
+            <div class="dropdown">
+                <button id="dropbtnMyfunction" class="dropbtn">
+                    <img class="user-img" src="../images/2.png" />Rakesh Nandare
+                    <i class="fa fa-angle-down"></i>
+                </button>
+            </div>
+            <!-- alert details -->
+            <div class="alertDetails" id="alertDetails">
+                <div class="alertHeader">
+                    <p>New Alerts:</p>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="alertBody">
+                    <div class="alertBodyitems" href="#">
+                        <div class="alertBodyitemsPart1">
+                            <span class="text-success">
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                                    Update</strong>
+                            </span>
+                            <span class="statusTime">11:21 AM</span>
+                        </div>
+                        <div class="alertBodyitemsPart2">
+                            <div class="alertBodyitemsmessage small">
+                                This is an automated server response message. All systems are online.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="alertBodyitems" href="#">
+                        <div class="alertBodyitemsPart1">
+                            <span class="text-danger">
+                                <strong>
+                                    <i class="fa fa-long-arrow-down fa-fw"></i>Status
+                                    Update</strong>
+                            </span>
+                            <span class="statusTime">11:21 AM</span>
+                        </div>
+                        <div class="alertBodyitemsPart2">
+                            <div class="alertBodyitemsmessage small">
+                                This is an automated server response message. All systems are online.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="alertBodyitems" href="#">
+                        <div class="alertBodyitemsPart1">
+                            <span class="text-success">
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                                    Update</strong>
+                            </span>
+                            <span class="statusTime">11:21 AM</span>
+                        </div>
+                        <div class="alertBodyitemsPart2">
+                            <div class="alertBodyitemsmessage small">
+                                This is an automated server response message. All systems are online.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                </div>
+                <div class="alertFooter">
+                    <a>View All Events</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="../index.html">
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="#doctor">
+                    <i class="fa fa-fw fa-user-md"></i>
+                    <span class="nav-link-text">Doctors</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" onclick="showpateintTable()">
+                <a class="nav-link">
+                    <i class="fa fa-fw fa fa-wheelchair"></i>
+                    <span class="nav-link-text">Patient</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="../Calendar/calendar.html">
+                    <i class="fa fa-fw fa fa-calendar"></i>
+                    <span class="nav-link-text">Appointment</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="tables.html">
+                    <i class="fa fa-fw fa fa-calendar-check-o"></i>
+                    <span class="nav-link-text">Doctor Schedule</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="tables.html">
+                    <i class="fa fa-fw fa-building-o"></i>
+                    <span class="nav-link-text">Departments</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa fa-user"></i>
+                    <span class="nav-link-text">Employee</span>
+                </a>
+                <ul class="collapse sidenav-second-level " id="collapseComponents">
+                    <li>
+                        <a href="navbar.html">Employee List</a>
+                    </li>
+                    <li>
+                        <a href="cards.html">Leaves</a>
+                    </li>
+                    <li>
+                        <a href="cards.html">Holidays</a>
+                    </li>
+                    <li>
+                        <a href="cards.html">Attendance</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa fa-book"></i>
+                    <span class="nav-link-text">Payroll</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                    <li>
+                        <a href="login.html">Pay slip</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-fw fa fa-commenting"></i>
+                    <span class="nav-link-text">Chat</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa fa-video-camera"></i>
+                    <span class="nav-link-text">Call</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseMulti">
+                    <li>
+                        <a href="#">Voice call</a>
+                    </li>
+                    <li>
+                        <a href="#">Video call</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa fa-envelope"></i>
+                    <span class="nav-link-text">email</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseEmail">
+                    <li>
+                        <a href="#">compose</a>
+                    </li>
+                    <li>
+                        <a href="#">Video call</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fas fa-comment"></i>
+                    <span class="nav-link-text">Blog</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseBlog">
+                    <li>
+                        <a href="#">compose</a>
+                    </li>
+                    <li>
+                        <a href="#">Video call</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-fw fas fa-object-group"></i>
+                    <span class="nav-link-text">Assets</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-fw fa-bell-o"></i>
+                    <span class="nav-link-text">Activites</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-flag"></i>
+                    <span class="nav-link-text">Report</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseReport">
+                    <li>
+                        <a href="#">Expenses Report</a>
+                    </li>
+                    <li>
+                        <a href="#">Invoice Report</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                <a class="nav-link active-link" href="#">
+                    <i class="fa fa-fw fa-cog"></i>
+                    <span class="nav-link-text">Setting</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="mySidenav-2" class="sidenav-2 d-flex">
+        <ul class="navbar-nav navbar-sidenav">
+            <li class="nav-item nav-item-2 mt-8">
+                <a class="nav-link nav-link-setting" href="#">
+                    <i class="fa fa-fw fa-cog"></i>
+                    <span class="nav-link-text">Settings</span>
+                    <button class="btn-admin-view">Admin View</button>
+                </a>
+                <ul>
+                    <li class="nav-item  nav-item-2 active-li">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img1.jpg" alt="">
+                            <span class="nav-link-text">Practice Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                            <span class="nav-link-text">Practice Details</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span class="nav-link-text">Practice Staff</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span class="nav-link-text">Calendar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                            <span class="nav-link-text">Communications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <span class="nav-link-text">Pricing Catalog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img8.png" alt="">
+                            <span class="nav-link-text">Consent Forms</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img2.png" alt="">
+                            <span class="nav-link-text">Data Security</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img3.png" alt="">
+                            <span class="nav-link-text">Clinical Notes Catalog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img4.png" alt="">
+                            <span class="nav-link-text">Drug Catalog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            <span class="nav-link-text">Charting Templates</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img5.png" alt="">
+                            <span class="nav-link-text">Printouts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img6.png" alt="">
+                            <span class="nav-link-text">Emails</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img7.png" alt="">
+                            <span class="nav-link-text">Billing</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img14.png" alt="">
+                            <span class="nav-link-text">Patient Groups</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img9.png" alt="">
+                            <span class="nav-link-text">Import Export</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img11.png" alt="">
+                            <span class="nav-link-text">Auto ID Generation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img2.png" alt="">
+                            <span class="nav-link-text">Insurance</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#">
+                            <img src="../images/img10.png" alt="">
+                            <span class="nav-link-text">Legal</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="divRight">
+            <div class="head-link">
+                <span class="active" id="branding-link">Branding</span>
+                <span class="about" id="about-link">About</span>
+            </div>
+            <div class="container" id="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center align-items-center">Page Logo</div>
+                        <div class="page-logo position-relative">
+                            <img src="../images/img13.png" alt="Page Logo">
+                            <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-light text-dark">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </div>
+                        <div class="para my-3">
+                            Your profile picture will appear where your practice will be presented on Welldone Health, as well as next to your videos, blogs and comments.
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>Banner Image</div>
+                        <div class="banner-image">
+                            <div class="d-flex justify-content-center align-items-center p-3">
+                                <img src="../images/img15.jpg" alt="Banner Image">
+                                <button class="btn-upload">Upload</button>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center para">For the best results on all devices, use an image that’s at least 2048 x 1152 pixels and 6MB or less.</div>
+                        </div>
+                        <div class="para mx-3">This image will appear across the top of your Practice Profile</div>
+                    </div>
+                </div>
+            </div>
+            <form id="form-1">
+                <div class="mb-3">
+                    <label for="" class="form-label">Welldone public URL</label>
+                    <input type="text" class="form-control" placeholder="www.welldonehealth.in/Practice Office">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Tagline</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-2 col-form-label">Website URL</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-2 col-form-label">Google Business URL</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-2 col-form-label">Facebook Business URL</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-2 col-form-label">Instagram Business URL</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="" class="col-sm-2 col-form-label">Welldonehealth Practice URL</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </form>
+            <footer class="footer" id="footer">
+                <div class="d-flex justify-content-center align-items-center footer-para">
+                    https://www.welldonehealth.in/Practice Office/</div>
+                <div class="d-flex justify-content-center align-items-center footer-para para-link">Get better visibility by sharing Practice on:
+                    <a class="btn" style="background-color: #55acee;" href="https://twitter.com/" role="button"><i
+                            class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class="btn" style="background-color: #3b5998;" href="https://www.facebook.com/" role="button"><i
+                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="btn" style="background-color: #0082ca;" href="https://www.linkedin.com/" role="button"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="btn" style="background-color: #ac2bac;" href="https://www.instagram.com/" role="button"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="btn" style="background-color: #ed302f;" href="https://www.youtube.com/" role="button"><i
+                            class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div>
+            </footer>
+
+            <div class="dvAbout">
+                <div class="dvHead">
+                    <h6>Display Message <sub>! Provide details to display on your page</sub></h6>
+                </div>
+                <div class="dvSubject">
+                    <input type="text" class="spanSubject" placeholder="Subject" />
+                    <div class="dvSpace"></div>
+                    <button class="btn btn-warning btn-add">Add</button>
+                </div>
+                <div class="dvSubject dvSubject-2 mt-2">
+                    <h6>New Office Safety Precautions
+                    </h6>
+                    <span class="para-one">Message from the office of Dr.aware hospital and Nursing Home
+                    </span>
+                    <p class="para-second">“We will be taking extra precautionary measures to protect the health of both you and our staff. Patients and staff <a href="">show more</a></p>
+                </div>
+                <h6 class="mt-4">Statement</h6>
+                <div class="dvSubject dvSubject-3">
+                    <textarea id="" name="" class="textarea"></textarea>
+                    <div class="btn-action">
+                        <button id="bold">B</button>
+                        <button id="italic">I</button>
+                        <button id="underline">U</button>
+                    </div>
+                </div>
+                <h6 class="mt-4">Announcement</h6>
+                <div class="dvSubject dvSubject-4 d-flex align-items-center justify-content-center">
+                    <button class="btn-upload">Upload</button>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-5">
+                    <button class="btn btn-secondary btn-save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../layout.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

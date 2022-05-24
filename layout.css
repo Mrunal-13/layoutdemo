@@ -304,11 +304,14 @@
     .hospital-name{
         font-size: 10px;
     }
+
+    
     .inputForSearch{
         width: 93px;
         height: 30px;
         font-size: 12px;
     }
+
     .searchbtn1{
         height: 30px;
         display: flex;
@@ -317,10 +320,12 @@
     #dropbtnMyfunction{
         font-size: 10px;
     }
+    
     .nav-link-text {
         font-size: 14px;
         margin-left: 25px;
     }
+
     .alertBodyitems {
         font-size: 0.8rem;
     }

@@ -353,6 +353,7 @@ $("#editDeleteModal").kendoDialog({
     show: onShow,
 });
 
+
 $("#txtUpdateComment").kendoTextBox({
     placeholder: "Comment",
 });
@@ -443,6 +444,7 @@ btnImagePopup.click(function() {
 function onClose() {
     btnImagePopup.fadeIn();
 }
+
 
 myWindow.kendoWindow({
     width: "600px",

@@ -32,8 +32,9 @@
                 <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
                 <li class="nav-item">
                     <form class="form-inline">
-                        <div class="input-group">
+                        <div class="searchbox">
                             <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
+                            <button type="button" class="advnc-search" id="advnc-search">Advanced</button>
                             <span class="input-group-append">
                                 <button class="btn btn-primary searchbtn1" type="button">
                                     <i class="fa fa-search"></i>
@@ -368,20 +369,20 @@
                     <button class="btn-admin-view">Admin View</button>
                 </a>
                 <ul>
-                    <li class="nav-item  nav-item-2 active-li">
-                        <a class="nav-link" href="#">
-                            <img src="../images/img1.jpg" alt="">
+                    <li class="nav-item  nav-item-2">
+                        <a class="nav-link" href="#" id="profile-link">
+                            <img src="../images/img17.png" alt="">
                             <span class="nav-link-text">Practice Profile</span>
                         </a>
                     </li>
                     <li class="nav-item  nav-item-2">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" id="details-link">
                             <i class="fa fa-hospital-o" aria-hidden="true"></i>
                             <span class="nav-link-text">Practice Details</span>
                         </a>
                     </li>
                     <li class="nav-item  nav-item-2">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" id="practice-staff" href="#">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             <span class="nav-link-text">Practice Staff</span>
                         </a>
@@ -493,7 +494,7 @@
             <div class="container" id="container">
                 <div class="row">
                     <div class="col">
-                        <div class="d-flex justify-content-center align-items-center">Page Logo</div>
+                        <div class="dvPageLogo">Page Logo</div>
                         <div class="page-logo position-relative">
                             <img src="../images/img13.png" alt="Page Logo">
                             <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-light text-dark">
@@ -573,6 +574,7 @@
                     <a class="btn" style="background-color: #ed302f;" href="https://www.youtube.com/" role="button"><i
                             class="fa fa-youtube-play" aria-hidden="true"></i></a>
                 </div>
+                <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
             </footer>
 
             <div class="dvAbout">
@@ -606,6 +608,673 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-center mt-5">
                     <button class="btn btn-secondary btn-save">Save</button>
+                </div>
+            </div>
+
+            <div class="dvPracticeDetails">
+                <div class="main">
+                    <div class="main_left">
+                        <div class="add_branch">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <label for="">Add Branch</label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-5">
+                            <div class="branch-card">
+                                <div class="hd">
+                                    <p>Branch-</p>
+                                    <p>Sakinaka,Nagpur</p>
+                                </div>
+                                <div class="branch_detail">
+                                    <p>Dr. Aware hospital and Nursing Home</p>
+                                    <p>ANJHK2545K</p>
+                                    <P>Shop no. 20 $ 21 Full Bazzar Half gali,Complete</P>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                            <div class="branch-card1">
+                                <div class="hd">
+                                    <p>Branch-</p>
+                                    <p>Sakinaka,Nagpur</p>
+                                </div>
+                                <div class="branch_detail">
+                                    <p>Dr. Aware hospital and Nursing Home</p>
+                                    <p>ANJHK2545K</p>
+                                    <P>Shop no. 20 $ 21 Full Bazzar Half gali,Complete</P>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+            </div>
+
+            <div class="dvPracticeStaff">
+                <ul class="d-flex li-buttons">
+                    <li class="active" id="active-manage">
+                        Manage Staff
+                    </li>
+                    <li id="active-noti">Staff Notificaton</li>
+                    <li id="active-doctor">Doctor's Visit Timings</li>
+                </ul>
+                <div class="mt-4 dvButttons">
+                    <div class="row">
+                        <div class="col-11">
+                            <button class="btn btn-light btnDoctor" id="btn-doctor">Doctors</button>
+                            <button class="btn btn-outline-dark btnOtherStaff" id="btn-other-staff">Other Staff</button>
+                        </div>
+                        <div class="col-1">
+                            <button class="btn btn-warning btnAddDoctor" id="btn-add-doctor">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-borderless mt-4 table-manage-staff">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Access Type</th>
+                            <th>This Doctor Notification</th>
+                            <th>All Doctors Notifications</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                    JS
+                                    <span
+                                        class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </button> Jay Suryawanshi
+                            </td>
+                            <td>OWNER + Doctor <span>Last Accessed: 2 hours ago</span></td>
+                            <td>Appointments Confirmation , Daily Schedule</td>
+                            <td>Daily Schedule</td>
+                            <td><a href="">Edit</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                    AP
+                                    <span
+                                        class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </button>Ashok Patil
+                            </td>
+                            <td>Doctor <span>Last Accessed: Never</span></td>
+                            <td>Appointments Confirmation , Daily Schedule</td>
+                            <td>_</td>
+                            <td><a href="">Edit/Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-danger position-relative rounded-circle text-light">
+                                    AP
+                                    <span
+                                        class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </button>Ashok Patil
+                            </td>
+                            <td>Visiting Doctor <span>Last Accessed: Never</span></td>
+                            <td>Appointments Confirmation , Daily Schedule</td>
+                            <td>_</td>
+                            <td><a href="">Edit/Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mt-4 dvOtherStaffButtton">
+                    <div class="row">
+                        <div class="col-11">
+                            <button class="btn btn-outline-dark btnOtherStaff" id="btn-other-doctor">Doctors</button>
+                            <button class="btn btn-light btnDoctor" id="btn-other-staff-2">Other Staff</button>
+                        </div>
+                        <div class="col-1">
+                            <button class="btn btn-warning btnAddDoctor" id="btn-add-staff">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-borderless mt-4 table-other-staff">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Access Type</th>
+                            <th>Active Notifications</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                    JS
+                                    <span
+                                        class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </button> Jay Suryawanshi
+                            </td>
+                            <td>OWNER + Doctor <span>Last Accessed: 2 hours ago</span></td>
+                            <td>Appointments Confirmation , Daily Schedule</td>
+                            <td><a href="">Edit</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                    AP
+                                    <span
+                                        class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </button>Ashok Patil
+                            </td>
+                            <td>Doctor <span>Last Accessed: Never</span></td>
+                            <td>Appointments Confirmation , Daily Schedule</td>
+                            <td><a href="">Edit/Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-danger position-relative rounded-circle text-light">
+                                    AP
+                                    <span
+                                        class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </button>Ashok Patil
+                            </td>
+                            <td>Visiting Doctor <span>Last Accessed: Never</span></td>
+                            <td>Appointments Confirmation , Daily Schedule</td>
+                            <td><a href="">Edit/Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="dvStaffNoti">
+                    <div class="mt-4 dvStaffNotiButtton">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-light btnDoctor" id="btn-doctor-3">Doctors</button>
+                                <button class="btn btn-outline-dark btnOtherStaff" id="btn-other-staff-3">Other
+                                    Staff</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-borderless mt-4 table-staff-noti table1-staff-noti">
+                        <thead>
+                            <tr>
+                                <th>Doctors</th>
+                                <th>WhatsApp</th>
+                                <th>SMS</th>
+                                <th>Email</th>
+                                <th>APP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-color"></td>
+                                <td class="td-color">Daily statement</td>
+                                <td class="td-color">
+                                    <div class="row">
+                                        <div class="col">Confirmation</div>
+                                        <div class="col">Schedule</div>
+                                    </div>
+                                </td>
+                                <td class="td-color">
+                                    <div class="row">
+                                        <div class="col">Confirmation</div>
+                                        <div class="col">Schedule</div>
+                                    </div>
+                                </td>
+                                <td class="td-color">
+                                    <div class="row">
+                                        <div class="col">Confirmation</div>
+                                        <div class="col">Schedule</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                        JS
+                                        <span
+                                            class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </button> Jay Suryawanshi
+                                </td>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                        AP
+                                        <span
+                                            class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </button>Ashok Patil
+                                </td>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-borderless mt-5 table-staff-noti table2-staff-noti">
+                        <thead>
+                            <tr>
+                                <th>Staff</th>
+                                <th>SMS</th>
+                                <th>Email</th>
+                                <th>APP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-color"></td>
+                                <td class="td-color">
+                                    <div class="row">
+                                        <div class="col">Online Appointment</div>
+                                        <div class="col">Schedule</div>
+                                    </div>
+                                </td>
+                                <td class="td-color">Schedule</td>
+                                <td class="td-color">
+                                    <div class="row">
+                                        <div class="col">Online Appointment</div>
+                                        <div class="col">Schedule</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                        JS
+                                        <span
+                                            class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </button> Jay Suryawanshi
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                        AP
+                                        <span
+                                            class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </button>Ashok Patil
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-danger position-relative rounded-circle text-light">
+                                        AP
+                                        <span
+                                            class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </button>Ashok Patil
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                        <div class="col"><input type="checkbox" name="" id=""></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                </div>
+
+                <div class="dvDoctorVisitTiming">
+                    <div class="container dvTime-1 mt-5">
+                        <div class="row">
+                            <div class="col-3">
+                                <h6>Mukesh Jhadhav</h6>
+                                <span>(Doctors)</span>
+                                <button type="button" class="btn btn-outline-info btn-time-edit" id="btnTimeEdit">Time Edit</button>
+                            </div>
+                            <div class="col-9">
+                                <div class="row row-1">
+                                    <div class="col-2">
+                                        Mon, Fri
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM - 02:00 PM & 06:00 PM - 09:00 PM
+
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-video-camera" aria-hidden="true"></i> Online Appointments
+                                    </div>
+                                </div>
+                                <div class="row row-2">
+                                    <div class="col-2">
+                                        Tue, Thu, Sat to Sun
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 12:15 am & 12:45 AM - 01:00 AM
+
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-home" aria-hidden="true"></i> Office Appointments
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container dvTime-1 mt-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <h6>Ashok Patil</h6>
+                                <span>(Doctors)</span>
+                                <button type="button" class="btn btn-outline-info btn-time-edit">Time Edit</button>
+                            </div>
+                            <div class="col-9">
+                                <div class="row row-1">
+                                    <div class="col-2">
+                                        Mon, Wed, Fri
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 9:00 am - 7:00 pm
+
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-video-camera" aria-hidden="true"></i> Online Appointments
+                                    </div>
+                                </div>
+                                <div class="row row-2">
+                                    <div class="col-2">
+                                        Tue, Thu, Sat to Sun
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 7:00 pm
+
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-home" aria-hidden="true"></i> Office Appointments
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container dvTime-1 mt-4" style="height:135px;">
+                        <div class="row">
+                            <div class="col-3">
+                                <h6>Rakesh Nandre</h6>
+                                <span>(Visiting Doctor)</span>
+                                <button type="button" class="btn btn-outline-info btn-time-edit">Time Edit</button>
+                            </div>
+                            <div class="col-9">
+                                <div class="row row-1">
+                                    <div class="col-2">
+                                        Mon to Sun
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 12:15 am & 12:45 AM - 01:00 AM
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-home" aria-hidden="true"></i> Office Appointments
+                                    </div>
+                                </div>
+                                <!-- <div class="row row-2">
+                                    <div class="col-2">
+                                        Tue, Thu, Sat to Sun
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 7:00 pm
+
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> Online Appointments
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footerDVT d-flex align-items-center justify-content-center">Schedule an appointment for a doctor's practice to enable online appointments</footer>
+                </div>
+
+                <div class="dvDVT-office-appoin">
+                    <ul class="d-flex li-dropdown">
+                        <li>
+                            Mukesh Jhadhav
+                            <sub>(Visiting Doctor)</sub>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light"><i class="fa fa-home" aria-hidden="true"></i> Office Appointments</button>
+                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>Online Appointments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="detail_container dvtiming">
+                        <div class="inner_wrap">
+                            <ul class="days">
+                                <li id="monday">M</li>
+                                <li id="tuesday">T</li>
+                                <li id="wednesday">W</li>
+                                <li id="thuesday">T</li>
+                                <li id="friday">F</li>
+                                <li id="saturday">S</li>
+                                <li id="sunday">S</li>
+                            </ul>
+                            <table class="table-1">
+                                <tr>
+                                    <td>Office open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Office close at</td>
+                                    <td><input type="time" class="time"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="add-break" id="addBreak-1">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-1">
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne"></td>
+                                    <td><input type="time" class="time" id="timeTwo"></td>
+                                    <td id="time-difference"></td>
+                                </tr>
+                            </table>
+                            <div class="dvlabel">
+                                <input type="checkbox" id="showTable-2"><label for="" class="dvlabel">Visiting hours are NOT same for all working days in a week</label></td>
+                            </div>
+                            <span class="dvtable" id="tableHead">Choose the day for the office Practice</span>
+                            <table class="table-2" id="table-2">
+                                <tr>
+                                    <th><input type="checkbox" id="check-M"><label for="">Monday</label></th>
+                                    <td>Open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Close at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td><span class="add-break" id="addBreak-M">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-M">
+                                    <th></th>
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne-M"></td>
+                                    <td><input type="time" class="time" id="timeTwo-M"></td>
+                                    <td id="time-difference-M"></td>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox" id="check-Tue"><label for="">Tuesday</label></th>
+                                    <td>Open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Close at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td><span class="add-break" id="addBreak-Tue">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-Tue">
+                                    <th></th>
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne-Tue"></td>
+                                    <td><input type="time" class="time" id="timeTwo-Tue"></td>
+                                    <td id="time-difference-Tue"></td>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox" id="check-Wed"><label for="">Wednesday</label></th>
+                                    <td>Open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Close at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td><span class="add-break" id="addBreak-Wed">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-Wed">
+                                    <th></th>
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne-Wed"></td>
+                                    <td><input type="time" class="time" id="timeTwo-Wed"></td>
+                                    <td id="time-difference-Wed"></td>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox" id="check-Thus"><label for="">Thursday</label></th>
+                                    <td>Open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Close at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td><span class="add-break" id="addBreak-Thus">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-Thus">
+                                    <th></th>
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne-Thus"></td>
+                                    <td><input type="time" class="time" id="timeTwo-Thus"></td>
+                                    <td id="time-difference-Thus"></td>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox" id="check-F"><label for="">Friday</label></th>
+                                    <td>Open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Close at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td><span class="add-break" id="addBreak-F">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-F">
+                                    <th></th>
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne-F"></td>
+                                    <td><input type="time" class="time" id="timeTwo-F"></td>
+                                    <td id="time-difference-F"></td>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox" id="check-Sat"><label for="">Saturday</label></th>
+                                    <td>Open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Close at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td><span class="add-break" id="addBreak-Sat">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-Sat">
+                                    <th></th>
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne-Sat"></td>
+                                    <td><input type="time" class="time" id="timeTwo-Sat"></td>
+                                    <td id="time-difference-Sat"></td>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox" id="check-Sun"><label for="">Sunday</label></th>
+                                    <td>Open at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td>Close at</td>
+                                    <td><input type="time" class="time"></td>
+                                    <td><span class="add-break" id="addBreak-Sun">Add Break</span></td>
+                                </tr>
+                                <tr class="show-lunch-time" id="trLunch-Sun">
+                                    <th></th>
+                                    <td>Lunch Break</td>
+                                    <td><input type="time" class="time" id="timeOne-Sun"></td>
+                                    <td><input type="time" class="time" id="timeTwo-Sun"></td>
+                                    <td id="time-difference-Sun"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-warning d-grid gap-2 col-3 mx-auto mt-5">Save Changes</button>
                 </div>
             </div>
         </div>

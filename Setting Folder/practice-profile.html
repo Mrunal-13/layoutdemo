@@ -360,6 +360,8 @@
             </li>
         </ul>
     </div>
+
+    <!-- Left Side Nav 2 -->
     <div id="mySidenav-2" class="sidenav-2 d-flex">
         <ul class="navbar-nav navbar-sidenav">
             <li class="nav-item nav-item-2 mt-8">
@@ -388,7 +390,7 @@
                         </a>
                     </li>
                     <li class="nav-item  nav-item-2">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" id="calendar-link">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
                             <span class="nav-link-text">Calendar</span>
                         </a>
@@ -486,7 +488,11 @@
                 </ul>
             </li>
         </ul>
+
+        <!-- Div Right Side-->
         <div class="divRight">
+
+            <!-- Branding -->
             <div class="head-link">
                 <span class="active" id="branding-link">Branding</span>
                 <span class="about" id="about-link">About</span>
@@ -577,6 +583,7 @@
                 <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
             </footer>
 
+            <!-- About -->
             <div class="dvAbout">
                 <div class="dvHead">
                     <h6>Display Message <sub>! Provide details to display on your page</sub></h6>
@@ -611,6 +618,7 @@
                 </div>
             </div>
 
+            <!-- Practice Details -->
             <div class="dvPracticeDetails">
                 <div class="main">
                     <div class="main_left">
@@ -649,6 +657,7 @@
                 <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
             </div>
 
+            <!-- Practice Staff -->
             <div class="dvPracticeStaff">
                 <ul class="d-flex li-buttons">
                     <li class="active" id="active-manage">
@@ -727,6 +736,7 @@
                     </tbody>
                 </table>
 
+                <!-- Other Staff Button -->
                 <div class="mt-4 dvOtherStaffButtton">
                     <div class="row">
                         <div class="col-11">
@@ -793,6 +803,8 @@
                     </tbody>
                 </table>
 
+
+                <!--  Staff Notification -->
                 <div class="dvStaffNoti">
                     <div class="mt-4 dvStaffNotiButtton">
                         <div class="row">
@@ -1007,7 +1019,8 @@
                             <div class="col-3">
                                 <h6>Mukesh Jhadhav</h6>
                                 <span>(Doctors)</span>
-                                <button type="button" class="btn btn-outline-info btn-time-edit" id="btnTimeEdit">Time Edit</button>
+                                <button type="button" class="btn btn-outline-info btn-time-edit" id="btnTimeEdit">Time
+                                    Edit</button>
                             </div>
                             <div class="col-9">
                                 <div class="row row-1">
@@ -1117,10 +1130,11 @@
                         </li>
                         <li>
                             <div class="btn-group">
-                                <button type="button" class="btn btn-light"><i class="fa fa-home" aria-hidden="true"></i> Office Appointments</button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-home"
+                                        aria-hidden="true"></i> Office Appointments</button>
                                 <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="visually-hidden">Toggle Dropdown</span>
-        </button>
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a class="dropdown-item" href="#">
@@ -1162,7 +1176,8 @@
                                 </tr>
                             </table>
                             <div class="dvlabel">
-                                <input type="checkbox" id="showTable-2"><label for="" class="dvlabel">Visiting hours are NOT same for all working days in a week</label></td>
+                                <input type="checkbox" id="showTable-2"><label for="" class="dvlabel">Visiting hours are
+                                    NOT same for all working days in a week</label></td>
                             </div>
                             <span class="dvtable" id="tableHead">Choose the day for the office Practice</span>
                             <table class="table-2" id="table-2">
@@ -1277,7 +1292,714 @@
                     <button type="button" class="btn btn-warning d-grid gap-2 col-3 mx-auto mt-5">Save Changes</button>
                 </div>
             </div>
+
+            <!-- Add Doctor Button -->
+            <div class="dvAddDoctorButton">
+                <h6 class="mt-2">Add Doctor</h6>
+                <form class="mt-4 ml-5">
+                    <div class="mb-3 row">
+                        <label for="inputDoctorName" class="col-sm-4 col-form-label">Doctor Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputDoctorName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputMobileNumber" class="col-sm-4 col-form-label">Mobile Number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputMobileNumber">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">Email ID</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputRegNumber" class="col-sm-4 col-form-label">Registration Number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputRegNumber">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputCalendarColour" class="col-sm-4 col-form-label">Calendar Colour</label>
+                        <div class="col-sm-2">
+                            <input type="color" class="form-control form-control-color" id="inputCalendarColour" value="#FF8C00" title="Choose your color">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                            <label for="" class="col-form-label">Activate Login</label>
+                        </div>
+                        <div class="col-sm-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="" checked>
+                            <label class="form-check-label" for="">
+                            Yes
+                        </label>
+                        </div>
+                        <div class="col-sm-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="">
+                            <label class="form-check-label" for="">
+                            No
+                        </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="" class="link-active-login">(Know more about this)</a>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                            <label for="" class="col-form-label">Types of login</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Administrator (Admin) <span>(Complete Access)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Consultant <span>(Complete Access)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Visiting Consultant <span>(No access to Billing and Reports, limited access to Appointments, EMR)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Receptionist <span>(Access to one month reporting)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="" checked>
+                            <label class="form-check-label" for="">
+                            Front Desk <span>(No access to reports, settings & cannot edit invoices)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Biller  <span>(Patient profile add/view, Billing, Inventory, Daily Summary and Inventory report)</span>
+                        </label>
+                        </div>
+                    </div>
+                </form>
+                <div class="row mt-5">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-warning">Add Doctor</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-outline-dark">Cancel</button>
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Staff Button -->
+            <div class="dvAddStaffButton">
+                <h6 class="mt-2">Add Staff</h6>
+                <form class="mt-4 ml-5">
+                    <div class="mb-3 row">
+                        <label for="inputStaffName" class="col-sm-4 col-form-label">Staff Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputStaffName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputMobileNumber" class="col-sm-4 col-form-label">Mobile Number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputMobileNumber">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">Email ID</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                            <label for="" class="col-form-label">Activate Login</label>
+                        </div>
+                        <div class="col-sm-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="" checked>
+                            <label class="form-check-label" for="">
+                            Yes
+                        </label>
+                        </div>
+                        <div class="col-sm-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="">
+                            <label class="form-check-label" for="">
+                            No
+                        </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="" class="link-active-login">(Know more about this)</a>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                            <label for="" class="col-form-label">Types of login</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Administrator (Admin) <span>(Complete Access)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Consultant <span>(Complete Access)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Visiting Consultant <span>(No access to Billing and Reports, limited access to Appointments, EMR)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Receptionist <span>(Access to one month reporting)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="" checked>
+                            <label class="form-check-label" for="">
+                            Front Desk <span>(No access to reports, settings & cannot edit invoices)</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-7">
+                            <input class="form-check-input" type="radio" name="typeOfLogin" id="">
+                            <label class="form-check-label" for="">
+                            Biller  <span>(Patient profile add/view, Billing, Inventory, Daily Summary and Inventory report)</span>
+                        </label>
+                        </div>
+                    </div>
+                </form>
+                <div class="row mt-5">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-warning">Add Staff</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-outline-dark">Cancel</button>
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="dvCalendar">
+                <ul class="d-flex li-buttons">
+                    <li class="active" id="active-general">
+                        General
+                    </li>
+                    <li id="active-practice-time">Set Practice Timings</li>
+                    <li id="active-appoin-category">Appointment Category</li>
+                    <li id="active-notification">Notifications</li>
+                    <li id="active-subscription">Subscription</li>
+                    <li id="active-trash-bin">Trash Bin</li>
+                </ul>
+                <!-- General -->
+                <div class="d-flex d-flex justify-content-center mt-5">
+                    <div class="dvRegion_Time">
+                        <h6>Region and Time </h6>
+                        <form action="" class="calendar-form">
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-3 col-form-label">Country</label>
+                                <div class="col-sm-9">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>India</option>
+                                        <option value="">USA</option>
+                                        <option value="">US</option>
+                                        <option value="">Japan</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-3 col-form-label">Date Format</label>
+                                <div class="col-sm-9">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>12/31/2022</option>
+                                        <option value="">01/01/2023</option>
+                                        <option value="">01/01/2024</option>
+                                        <option value="">01/01/2025</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-3 col-form-label">Time Format</label>
+                                <div class="col-sm-9">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>01:00 PM</option>
+                                        <option value="">02:00 PM</option>
+                                        <option value="">03:00 PM</option>
+                                        <option value="">04:00 PM</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-3 col-form-label">Time Zone</label>
+                                <div class="col-sm-9">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>(GMT+05:30) India Standard Time - Kolkata</option>
+                                        <option value="">(GMT+05:30) India Standard Time - Kolkata</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                      </select>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="dvAppoin_Setting mt-4">
+                            <h6>Appointment settings</h6>
+                            <form action="" class="calendar-form">
+                                <div class="mb-3 row">
+                                    <label for="" class="col-sm-4 col-form-label">Default duration</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>15 minutes</option>
+                                            <option value="">30 minutes</option>
+                                            <option value="">45 minutes</option>
+                                            <option value="">60 minutes</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="speedMeeting">
+                                    <label class="form-check-label" for="speedMeeting">
+                                        Speedy meetings
+                                        <div class="small-div">End 30 minute meetings 5 minutes early and longer meetings 10 minutes early</div>
+                                    </label>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-sm-6 col-form-label">Default guest permissions</label>
+                                    <div class="col-sm-6">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>Invite others, see guest list</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-sm-5 col-form-label">Add invitations</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-select form-select-sm position-relative" aria-label=".form-select-sm example">
+                                            <option selected>From everyone</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                          </select>
+                                        <span class="position-absolute"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                    <label class="form-check-label" for="">
+                                        Automatically add Meet video conferencing to my appointments
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="dvNoti_Setting mt-4">
+                            <h6>Notification settings</h6>
+                            <form action="" class="calendar-form">
+                                <div class="mb-3 row">
+                                    <label for="" class="col-sm-4 col-form-label">Notifications</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>Desktop notifications</option>
+                                            <option value="">Window notifications</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-sm-4 col-form-label">Show snoozed</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-select form-select-sm position-relative" aria-label=".form-select-sm example">
+                                            <option selected>1 minute before Appointment</option>
+                                            <option value="">5 minute before Appointment</option>
+                                            <option value="">10 minute before Appointment</option>
+                                            <option value="">15 minute before Appointment</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                    <label class="form-check-label" for="">
+                                        Play notification sounds
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Notify me only if I have responded "Yes" or "Maybe"
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="dvView_Option mt-4">
+                            <h6>View options</h6>
+                            <form action="" class="calendar-form">
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                    <label class="form-check-label" for="">
+                                        Show weekends
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Show declined Appointment
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Show week numbers
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Display shorter events the same size as 30 minute events
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Reduce the brightness of past Appointment
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                    <label class="form-check-label" for="">
+                                        View calendars side by side in Day View
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Modern Theme
+                                    </label>
+                                </div>
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                    <label class="form-check-label" for="">
+                                        Show Cancelled Appointment
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="dvView_Option mt-4">
+                            <h6>Keyboard shortcuts
+                            </h6>
+                            <form action="" class="calendar-form">
+                                <div class="mb-3 row form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                    <label class="form-check-label" for="">
+                                        Enable keyboard shortcuts
+                                        <div class="small-div">Press question mark “?” to show the list of available keyboard shortcuts</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="text-center">Not recommended on public or shared computers. <a href="">Learn more</a></div>
+                        <button type="button" class="btn btn-secondary d-grid gap-2 col-2 mx-auto mt-5">Save</button>
+                    </div>
+                </div>
+
+                <!--  Set Practice Timings -->
+                <div class="dvSet-Practice-Timings d-flex d-flex justify-content-center">
+                    <div class="dvWeek">
+                        <h6>Week</h6>
+                        <form action="" class="calendar-form">
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-5 col-form-label">First day of Week</label>
+                                <div class="col-sm-7">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>Monday</option>
+                                        <option value="">Tuesday</option>
+                                        <option value="">Wednesday</option>
+                                        <option value="">Thusday</option>
+                                        <option value="">Friday</option>
+                                        <option value="">Saturday</option>
+                                        <option value="">Sunday</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                <label class="form-check-label" for="">
+                                    Always show today as the first day on my calendar
+                                </label>
+                            </div>
+                        </form>
+                        <div class="dvTime_Slotting mt-4">
+                            <h6>Time Slotting</h6>
+                            <form action="" class="calendar-form">
+                                <div class="mb-3 row">
+                                    <label for="" class="col-sm-7 col-form-label">Show Calendar Slot Timing</label>
+                                    <div class="col-sm-5">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>15 Minutes</option>
+                                        <option value="">30 Minutes</option>
+                                        <option value="">45 Minutes</option>
+                                        <option value="">60 Minutes</option>
+                                      </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="dvWorking_Hours mt-4">
+                            <h6>Working Hours</h6>
+                            <div class="detail_container dvtiming">
+                                <div class="inner_wrap">
+                                    <ul class="days">
+                                        <li id="monday">M</li>
+                                        <li id="tuesday">T</li>
+                                        <li id="wednesday">W</li>
+                                        <li id="thuesday">T</li>
+                                        <li id="friday">F</li>
+                                        <li id="saturday">S</li>
+                                        <li id="sunday">S</li>
+                                    </ul>
+                                    <table class="table-1">
+                                        <tr>
+                                            <td>Office open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Office close at</td>
+                                            <td><input type="time" class="time"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span class="add-break" id="addBreak-1">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-1">
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne"></td>
+                                            <td><input type="time" class="time" id="timeTwo"></td>
+                                            <td id="time-difference"></td>
+                                        </tr>
+                                    </table>
+                                    <div class="dvlabel">
+                                        <input type="checkbox" id="showTable-2"><label for="" class="dvlabel">Appointment hours are not the same for all working days of the week</label></td>
+                                    </div>
+                                    <span class="dvtable" id="tableHead">Choose the day for the open office</span>
+                                    <table class="table-2" id="table-2">
+                                        <tr>
+                                            <th><input type="checkbox" id="check-M"><label for="">Monday</label></th>
+                                            <td>Open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Close at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td><span class="add-break" id="addBreak-M">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-M">
+                                            <th></th>
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne-M"></td>
+                                            <td><input type="time" class="time" id="timeTwo-M"></td>
+                                            <td id="time-difference-M"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" id="check-Tue"><label for="">Tuesday</label></th>
+                                            <td>Open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Close at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td><span class="add-break" id="addBreak-Tue">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-Tue">
+                                            <th></th>
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne-Tue"></td>
+                                            <td><input type="time" class="time" id="timeTwo-Tue"></td>
+                                            <td id="time-difference-Tue"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" id="check-Wed"><label for="">Wednesday</label></th>
+                                            <td>Open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Close at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td><span class="add-break" id="addBreak-Wed">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-Wed">
+                                            <th></th>
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne-Wed"></td>
+                                            <td><input type="time" class="time" id="timeTwo-Wed"></td>
+                                            <td id="time-difference-Wed"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" id="check-Thus"><label for="">Thursday</label></th>
+                                            <td>Open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Close at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td><span class="add-break" id="addBreak-Thus">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-Thus">
+                                            <th></th>
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne-Thus"></td>
+                                            <td><input type="time" class="time" id="timeTwo-Thus"></td>
+                                            <td id="time-difference-Thus"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" id="check-F"><label for="">Friday</label></th>
+                                            <td>Open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Close at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td><span class="add-break" id="addBreak-F">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-F">
+                                            <th></th>
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne-F"></td>
+                                            <td><input type="time" class="time" id="timeTwo-F"></td>
+                                            <td id="time-difference-F"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" id="check-Sat"><label for="">Saturday</label></th>
+                                            <td>Open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Close at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td><span class="add-break" id="addBreak-Sat">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-Sat">
+                                            <th></th>
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne-Sat"></td>
+                                            <td><input type="time" class="time" id="timeTwo-Sat"></td>
+                                            <td id="time-difference-Sat"></td>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" id="check-Sun"><label for="">Sunday</label></th>
+                                            <td>Open at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td>Close at</td>
+                                            <td><input type="time" class="time"></td>
+                                            <td><span class="add-break" id="addBreak-Sun">Add Break</span></td>
+                                        </tr>
+                                        <tr class="show-lunch-time" id="trLunch-Sun">
+                                            <th></th>
+                                            <td>Lunch Break</td>
+                                            <td><input type="time" class="time" id="timeOne-Sun"></td>
+                                            <td><input type="time" class="time" id="timeTwo-Sun"></td>
+                                            <td id="time-difference-Sun"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">Update timing on online profile also</div>
+                            <button type="button" class="btn btn-secondary d-grid gap-2 col-2 mx-auto mt-5">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Category -->
+                <div class="dvAppoin-Category d-flex d-flex justify-content-center">
+                    <div class="dvAdd_new_cate">
+                        <h6>Add New Category</h6>
+                        <form action="" class="calendar-form">
+                            <div class="mb-3 row">
+                                <input type="text" class="form-control col-sm-10" id="">
+                                <div class="col-sm-2">
+                                    <button class="btn btn-light">Add</button>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-10">
+                                    <h6><span class="badge p-2 bg-warning border border-light rounded-circle"> <span class="visually-hidden">New alerts</span></span> Non-categories</h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-10">
+                                    <h6><span class="badge p-2 bg-success border border-light rounded-circle"> <span class="visually-hidden">New alerts</span></span> Non-categories</h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-10">
+                                    <h6><span class="badge p-2 bg-primary border border-light rounded-circle"> <span class="visually-hidden">New alerts</span></span> Non-categories</h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

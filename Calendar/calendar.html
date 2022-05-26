@@ -4,11 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>calendar1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
 
     <!-- Bootstrap js file -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Fontawesone js file for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -42,7 +45,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/timepicker@1.13.18/jquery.timepicker.min.css">
 <script src="https://cdn.jsdelivr.net/npm/timepicker@1.13.18/jquery.timepicker.min.js"></script> -->
@@ -54,26 +58,116 @@
         <div class="navbar-first">
             <a class="navbar-brand" href="#">WellDone</a>
             <button class="buttonForSideNav" type="button" onclick="openNav()" style="padding:6px;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
         <div class="navbar-second">
             <ul class=" ml-auto secondNavUl">
                 <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
                 <li class="nav-item">
                     <form class="form-inline">
-                        <div class="input-group">
+                        <div class="searchbox">
                             <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
+                            <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Advanced</button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="false"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true" role="dialog" data-backdrop="false">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Advance Patient Search</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="" class="popup-form">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="dvSelect">
+                                                                <select id="ddlInfo">
+                                                                    <option value="patient_name">Patient Name</option>
+                                                                    <option value="has_contact_number">Has Contact
+                                                                        Number</option>
+                                                                    <option value="contact_number">Contact Number
+                                                                    </option>
+                                                                    <option value="age_is">Age is</option>
+                                                                    <option value="age_more_than">Age is More Than
+                                                                    </option>
+                                                                    <option value="age_less_than">Age is Less Than
+                                                                    </option>
+                                                                    <option value="has_date_of_birth">Has Date of Birth
+                                                                    </option>
+                                                                    <option value="date_of_birth">Date of Birth Is
+                                                                    </option>
+                                                                    <option value="date_of_birth_more_than">Date of
+                                                                        Birth is More Than</option>
+                                                                    <option value="date_of_birth_less_than">Date of
+                                                                        Birth is Less Than</option>
+                                                                    <option value="birthday_is_in">Birthday is in
+                                                                    </option>
+                                                                    <option value="has_patient_id">Has Patient ID
+                                                                    </option>
+                                                                    <option value="patient_id">Patient ID</option>
+                                                                    <option value="has_aadhaar_id">Has Aadhaar ID
+                                                                    </option>
+                                                                    <option value="aadhaar_id">Aadhaar ID</option>
+                                                                    <option value="has_email">Has Email</option>
+                                                                    <option value="email">Email</option>
+                                                                    <option value="has_email">Has Email</option>
+                                                                    <option value="has_gender">Has Gender</option>
+                                                                    <option value="gender">Gender is</option>
+                                                                    <option value="has_pincode">Has Pincode</option>
+                                                                    <option value="pincode">Pincode</option>
+                                                                    <option value="has_street_address">Has Street
+                                                                        Address</option>
+                                                                    <option value="street_address">Street Address
+                                                                    </option>
+                                                                    <option value="has_blood_group">Has Blood Group
+                                                                    </option>
+                                                                    <option value="blood_group">Blood Group</option>
+                                                                    <option value="was_referred_by_someone">Was Referred
+                                                                        By Someone</option>
+                                                                    <option value="referred_by_someone">Referred By
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="divControl">
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+                                            <button id="btnAddMore">Add another parameter</button>
+                                            <div id="divCategories">
+
+                                            </div>
+                                            <div id="divNoData" style="display: none;">No Data Found</div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" id="btnSearch"
+                                                onclick="ShowNoDataMessage()">Search</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                id="btnCancel" onclick="HandleCancel()">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <span class="input-group-append">
-                <button class="btn btn-primary searchbtn1" type="button">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
+                                <button class="btn btn-primary searchbtn1" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
                         </div>
                     </form>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="microPhoneChoose" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link mr-lg-2" id="microPhoneChoose" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-microphone"></i>
                     </a>
                 </li>
@@ -83,30 +177,32 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="calenderButton" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link mr-lg-2" id="calenderButton" href="#" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <i class="fa fa-fw fa-calendar"></i>
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-bell"></i>
                         <span class="d-lg-none">Alerts
-              <span class="badge badge-pill badge-warning">6 New</span>
+                            <span class="badge badge-pill badge-warning">6 New</span>
                         </span>
                         <span class="indicator text-warning d-none d-lg-block">
-              <i class="fa fa-fw fa-circle"></i>
-            </span>
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span>
                     </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#">
                         <i class="fa fa-fw fa-envelope"></i>
                         <span class="d-lg-none">Messages
-              <span class="badge badge-pill badge-primary">12 New</span>
+                            <span class="badge badge-pill badge-primary">12 New</span>
                         </span>
                         <span class="indicator text-primary d-none d-lg-block">
-              <i class="fa fa-fw fa-circle"></i>
-            </span>
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span>
                     </a>
                 </li>
             </ul>
@@ -124,7 +220,8 @@
                             <span class="MADTime">11:21 AM</span>
                         </div>
                         <div class="MadBodyitemsPart2">
-                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
                         </div>
                     </div>
                     <div class="dropdown-divider"></div>
@@ -134,7 +231,8 @@
                             <span class="MADTime">11:21 AM</span>
                         </div>
                         <div class="MadBodyitemsPart2">
-                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
                         </div>
                     </div>
                     <div class="dropdown-divider"></div>
@@ -144,7 +242,8 @@
                             <span class="MADTime">11:21 AM</span>
                         </div>
                         <div class="MadBodyitemsPart2">
-                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
                         </div>
                     </div>
                 </div>
@@ -163,19 +262,23 @@
                 </div>
                 <hr style="margin: 15px 0;">
                 <ul id="settingOptions">
-                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17" data-height="17"></span> Edit Profile</li>
-                    <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;" data-width="17" data-height="17"></span> Account Setting</li>
-                    <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17" data-height="17"></span> Add User</li>
-                    <li><span class="iconify" data-icon="bx:log-out" style="color: gray;" data-width="17" data-height="17"></span> Log Out</li>
+                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17"
+                            data-height="17"></span> Edit Profile</li>
+                    <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
+                            data-width="17" data-height="17"></span> Account Setting</li>
+                    <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
+                            data-height="17"></span> Add User</li>
+                    <li><span class="iconify" data-icon="bx:log-out" style="color: gray;" data-width="17"
+                            data-height="17"></span> Log Out</li>
                 </ul>
             </div>
         </div>
         <div class="navbar-third">
             <div class="dropdown">
                 <button id="dropbtnMyfunction" class="dropbtn">
-          <img class="user-img" src="../images/2.png" />Rakesh Nandare
-          <i class="fa fa-angle-down"></i>
-        </button>
+                    <img class="user-img" src="../images/2.png" />Rakesh Nandare
+                    <i class="fa fa-angle-down"></i>
+                </button>
             </div>
             <!-- alert details -->
             <div class="alertDetails" id="alertDetails">
@@ -188,10 +291,10 @@
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
-                <strong>
-                  <i class="fa fa-long-arrow-up fa-fw"></i>Status
-                  Update</strong>
-              </span>
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                                    Update</strong>
+                            </span>
                             <span class="statusTime">11:21 AM</span>
                         </div>
                         <div class="alertBodyitemsPart2">
@@ -206,10 +309,10 @@
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-danger">
-                <strong>
-                  <i class="fa fa-long-arrow-down fa-fw"></i>Status
-                  Update</strong>
-              </span>
+                                <strong>
+                                    <i class="fa fa-long-arrow-down fa-fw"></i>Status
+                                    Update</strong>
+                            </span>
                             <span class="statusTime">11:21 AM</span>
                         </div>
                         <div class="alertBodyitemsPart2">
@@ -224,10 +327,10 @@
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
-                <strong>
-                  <i class="fa fa-long-arrow-up fa-fw"></i>Status
-                  Update</strong>
-              </span>
+                                <strong>
+                                    <i class="fa fa-long-arrow-up fa-fw"></i>Status
+                                    Update</strong>
+                            </span>
                             <span class="statusTime">11:21 AM</span>
                         </div>
                         <div class="alertBodyitemsPart2">
@@ -251,7 +354,8 @@
             <div class="LeftSideMainHeader">
                 <h3>Calendar</h3>
                 <div class="dropdown">
-                    <button class="btn btn-secondary secondary secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary secondary secondary dropdown-toggle" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class='fas fa-user-circle'></i>Physical Visit
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -299,7 +403,8 @@
                 <div class="print" data-bs-toggle="modal" data-bs-target="#printModal">
                     <i class="fa fa-print"></i>
                 </div>
-                <div class="modal fade" id="printModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="printModalLabel" aria-hidden="true">
+                <div class="modal fade" id="printModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="printModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                         <div class="modal-content">
                             <!-- <div class="modal-header">
@@ -313,12 +418,13 @@
                                             <h5 class="modal-title" id="printModalLabel">Print preview</h5>
                                             <form>
                                                 <div class="mb-3">
-                                                    <label for="print-schedule" class="col-form-label">Print Schedule Settings</label>
+                                                    <label for="print-schedule" class="col-form-label">Print Schedule
+                                                        Settings</label>
                                                     <select class="form-select" id="selectDays">
                                                         <option value="day" selected>Day</option>
-                                                        <option value="week" >Week</option>
+                                                        <option value="week">Week</option>
                                                         <option value="month">Month</option>
-                                                      </select>
+                                                    </select>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="print-range" class="col-form-label">Print range</label>
@@ -326,13 +432,15 @@
                                                         <div class="col-md-6">
                                                             <div class="form-group">
                                                                 <label for="input_from">From</label>
-                                                                <input type="text" class="form-control" id="input_from" placeholder="Start Date">
+                                                                <input type="text" class="form-control" id="input_from"
+                                                                    placeholder="Start Date">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
                                                                 <label for="input_to">To</label>
-                                                                <input type="text" class="form-control" id="input_to" placeholder="End Date">
+                                                                <input type="text" class="form-control" id="input_to"
+                                                                    placeholder="End Date">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -343,7 +451,7 @@
                                                         <option value="alldoctor" selected>All Doctor</option>
                                                         <option value="doctor-1">Dr. Rakesh Nandre</option>
                                                         <option value="doctor-2">Dr. Jay Suryawanshi</option>
-                                                      </select>
+                                                    </select>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="font-size" class="col-form-label">Font size</label>
@@ -355,7 +463,7 @@
                                                         <option value="big">Big</option>
                                                         <option value="bigger">Bigger</option>
                                                         <option value="biggest">Biggest</option>
-                                                      </select>
+                                                    </select>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="orientation" class="col-form-label">Orientation</label>
@@ -363,61 +471,70 @@
                                                         <option value="auto" selected>Auto</option>
                                                         <option value="portrait">Portrait</option>
                                                         <option value="landscape">Landscape</option>
-                                                      </select>
+                                                    </select>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="color-style" class="col-form-label">Color & style</label>
+                                                    <label for="color-style" class="col-form-label">Color &
+                                                        style</label>
                                                     <select class="form-select" id="selectColor">
                                                         <option value="outline">Outline</option>
                                                         <option value="fullcolor" selected>Full color</option>
                                                         <option value="black-white">Black and white</option>
-                                                      </select>
+                                                    </select>
                                                 </div>
                                                 <div class="mb-3">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="showWeekends" checked>
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="showWeekends" checked>
                                                         <label class="form-check-label" for="showWeekends">
-                                                          Show weekends
+                                                            Show weekends
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="showEvents">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="showEvents">
                                                         <label class="form-check-label" for="showEvents">
-                                                        Show events you have declined
+                                                            Show events you have declined
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="showContactNumber">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="showContactNumber">
                                                         <label class="form-check-label" for="showContactNumber">
                                                             Show contact number
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="showNotes">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="showNotes">
                                                         <label class="form-check-label" for="showNotes">
                                                             Show notes
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="showAppointment">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="showAppointment">
                                                         <label class="form-check-label" for="showAppointment">
                                                             Show appointment categories
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="showTreatment">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="showTreatment">
                                                         <label class="form-check-label" for="showTreatment">
                                                             Show treatment plans
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="showSlots">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="showSlots">
                                                         <label class="form-check-label" for="showSlots">
                                                             Show free slots
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="doctorGroup">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="doctorGroup">
                                                         <label class="form-check-label" for="doctorGroup">
                                                             Group by doctors
                                                         </label>
@@ -425,8 +542,10 @@
                                                 </div>
                                             </form>
                                             <div class="modal-footer d-flex justify-content-end">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCancel">Cancel</button>
-                                                <button type="button" class="btn btn-warning" id="btnPrint">Print</button>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                    id="btnCancel">Cancel</button>
+                                                <button type="button" class="btn btn-warning"
+                                                    id="btnPrint">Print</button>
                                             </div>
                                         </div>
                                         <div class="col-md-8 ms-auto" id="printRight">
@@ -447,7 +566,7 @@
     <div id="mySidenav" class="sidenav">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                <a class="nav-link" href="dashboard.html">
+                <a class="nav-link" href="../dashboard.html">
                     <i class="fa fa-fw fa-dashboard"></i>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
@@ -458,10 +577,10 @@
                     <span class="nav-link-text">Doctors</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" onclick="showpateintTable()">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables"
+                onclick="showpateintTable()">
                 <a class="nav-link" href="../pateints/index.html">
                     <i class="fa fa-fw fa fa-wheelchair"></i>
-
                     <span class="nav-link-text">Patient</span>
                 </a>
             </li>
@@ -484,7 +603,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-user"></i>
                     <span class="nav-link-text">Employee</span>
                 </a>
@@ -504,7 +624,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-book"></i>
                     <span class="nav-link-text">Payroll</span>
                 </a>
@@ -521,7 +642,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-video-camera"></i>
                     <span class="nav-link-text">Call</span>
                 </a>
@@ -535,7 +657,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-envelope"></i>
                     <span class="nav-link-text">email</span>
                 </a>
@@ -549,7 +672,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fas fa-comment"></i>
                     <span class="nav-link-text">Blog</span>
                 </a>
@@ -575,7 +699,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-flag"></i>
                     <span class="nav-link-text">Report</span>
                 </a>
@@ -601,7 +726,8 @@
             <div class="app">
                 <div class="DepartmentMain">
                     <div class="Department">
-                        <button class="btn btn-secondary secondary Alldepartment " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary secondary Alldepartment " type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             All Departments &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                                 class="fa fa-angle-down"></i>
                         </button>
@@ -759,7 +885,8 @@
                         </div>
                     </div>
                     <div class="day">
-                        <button class="btn btn-secondary secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Doctor
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -772,7 +899,8 @@
                         </ul>
                     </div>
                     <div class="day">
-                        <button class="btn btn-secondary secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropd  ownMenuButton1">
@@ -785,7 +913,8 @@
                         </ul>
                     </div>
                     <div class="day">
-                        <button class="btn btn-secondary secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Other
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -2272,18 +2401,21 @@
                         </tr>
                     </tbody>
                 </Table>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">
                                     <div class="ChangeColorDiv">
                                         <i class="fas fa-angle-down" style="font-size: 12px;"></i>
-                                        <button type="button" id="changecolor" data-bs-toggle="modal" data-bs-target="#changecolorModal">
+                                        <button type="button" id="changecolor" data-bs-toggle="modal"
+                                            data-bs-target="#changecolorModal">
                                             <div class="defaultcolor">
                                             </div>
                                         </button>
-                                        <div class="modal fade modal3" id="changecolorModal" tabindex="-1" aria-labelledby="changecolorModalLabel" aria-hidden="true">
+                                        <div class="modal fade modal3" id="changecolorModal" tabindex="-1"
+                                            aria-labelledby="changecolorModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-sm">
                                                 <div class="modal-content">
                                                     <div class="modal-body">
@@ -2313,13 +2445,15 @@
                                     </div>
                                     <strong>Dr.Nayan kanade</strong>
                                 </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <form action="">
                                     <div class="Maincontainer">
                                         <div class="ARB">
-                                            <div class="AppointmentDiv"><button type="button" id="Appointment">Appointment</button>
+                                            <div class="AppointmentDiv"><button type="button"
+                                                    id="Appointment">Appointment</button>
                                             </div>
                                             <div class="Remider"><button type="button" id="Reminder">Reminder</button>
                                             </div>
@@ -2331,15 +2465,18 @@
                                                 <div class="PatientName">
                                                     <label for="PatientNameInput">Patient Name <span
                                                             id="required">*</span></label>
-                                                    <input type="text" name="PatientName" id="PatientNameInput" placeholder="Enter Patient Name" required>
+                                                    <input type="text" name="PatientName" id="PatientNameInput"
+                                                        placeholder="Enter Patient Name" required>
                                                 </div>
                                                 <div class="MobileNumber">
                                                     <label for="MobileNumberInput">Mobile Number </label>
-                                                    <input type="text" name="MobileNumber" id="MobileNumberInput" placeholder="Enter Mobile Number">
+                                                    <input type="text" name="MobileNumber" id="MobileNumberInput"
+                                                        placeholder="Enter Mobile Number">
                                                 </div>
                                                 <div class="EmailId">
                                                     <label for="EmailId">Email Id </label>
-                                                    <input type="text" name="EmailId" id="EmailId" placeholder="Enter Email Id">
+                                                    <input type="text" name="EmailId" id="EmailId"
+                                                        placeholder="Enter Email Id">
                                                 </div>
                                                 <div class="Doctor">
                                                     <div>Doctor</div>
@@ -2349,7 +2486,8 @@
                                                         <option value="Doctorname">xyxysh</option>
                                                     </select>
                                                     <div class="Notified">
-                                                        will be notified <input type="checkbox" name="" id="">SMS <input type="checkbox" name="" id=""> Email
+                                                        will be notified <input type="checkbox" name="" id="">SMS <input
+                                                            type="checkbox" name="" id=""> Email
                                                     </div>
                                                 </div>
                                                 <div class="Category">
@@ -2366,12 +2504,14 @@
                                                     <h6>Appointment Type</h6>
                                                     <div class="AppoitmentPandV">
                                                         <div class="PhysicalVisit">
-                                                            <div><input type="radio" name="Visit" id="PhysicalVisitAppointment"></div>
+                                                            <div><input type="radio" name="Visit"
+                                                                    id="PhysicalVisitAppointment"></div>
                                                             <div><img src="physical.png" alt="" srcset=""></div>
                                                             <label for="PhysicalVisitAppointment">Physical Visit</label>
                                                         </div>
                                                         <div class="VideoVisit">
-                                                            <div><input type="radio" name="Visit" id="VideoVisitAppointment"></div>
+                                                            <div><input type="radio" name="Visit"
+                                                                    id="VideoVisitAppointment"></div>
                                                             <div><img src="Video.png" alt="" srcset=""></div>
                                                             <label for="VideoVisitAppointment">Video Visit</label>
                                                         </div>
@@ -2406,11 +2546,13 @@
                                             </div>
                                             <div class="Procedureprogram">
                                                 <div class="ProcedureHeading">Procedure program</div>
-                                                <div class="AddTxtProcedure"><textarea name="" id="" cols="5" rows="5" placeholder="Add Procedure"></textarea></div>
+                                                <div class="AddTxtProcedure"><textarea name="" id="" cols="5" rows="5"
+                                                        placeholder="Add Procedure"></textarea></div>
                                             </div>
                                             <div class="Notes">
                                                 <div class="NotesHeading">Notes</div>
-                                                <div class="AddTxtNotes"><textarea name="" id="" cols="5" rows="5" placeholder="Add Notes"></textarea></div>
+                                                <div class="AddTxtNotes"><textarea name="" id="" cols="5" rows="5"
+                                                        placeholder="Add Notes"></textarea></div>
                                             </div>
                                             <div class="attachment">
                                                 <div class="AttachmentIcon"><img src="Attachment.png" alt="" srcset="">
@@ -2420,7 +2562,8 @@
                                                 </div>
                                             </div>
                                             <div class="Notification">
-                                                <div class="NotificationIcon"><img src="Notification.png" alt="" srcset=""></div>
+                                                <div class="NotificationIcon"><img src="Notification.png" alt=""
+                                                        srcset=""></div>
                                                 <div class="Before">
                                                     <div class="befortime">Before 30 min</div>
                                                     <div class="addNotification"><a href="#">Add notification</a></div>
@@ -2433,7 +2576,8 @@
                                                     <div class="TitleName">
                                                         <label for="TitleInput">Title <span
                                                                 id="required">*</span></label>
-                                                        <input type="text" name="TitleName" id="" placeholder="Enter Event Name" required>
+                                                        <input type="text" name="TitleName" id=""
+                                                            placeholder="Enter Event Name" required>
                                                     </div>
                                                     <div class="DoctorReminder">
                                                         <div>Doctor <span id="required">*</span></div>
@@ -2459,7 +2603,8 @@
                                                 <div class="triggerTime2">11:00 AM</div> -->
                                                         </div>
                                                         <div class="Repeat-Reminder">
-                                                            <div class="RepeatIcon"><img src="Repeat.png" alt="" srcset=""></div>
+                                                            <div class="RepeatIcon"><img src="Repeat.png" alt=""
+                                                                    srcset=""></div>
                                                             <div class="RepeatDropDown">
                                                                 <select name="SelectRepeat" id="SelectRepeat">
                                                                     <option value="">Doesn't Repeat</option>
@@ -2469,23 +2614,30 @@
                                                         </div>
                                                         <div class="CustomAndAllday">
                                                             <div class="Allday">
-                                                                <input type="radio" name="ChooseOptions" id="allday" onclick="onAllday()">
+                                                                <input type="radio" name="ChooseOptions" id="allday"
+                                                                    onclick="onAllday()">
                                                                 <label for="allday">All Day</label>
                                                             </div>
                                                             <div class="CustomeRe">
-                                                                <input type="radio" name="ChooseOptions" id="CustomRepetetion" onclick="oncustom()">
+                                                                <input type="radio" name="ChooseOptions"
+                                                                    id="CustomRepetetion" onclick="oncustom()">
                                                                 <label for="CustomRepetetion">Custom Repetetion</label>
                                                             </div>
                                                         </div>
                                                         <div id="contact">
                                                             <!-- <a data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Launch modal</a> -->
-                                                            <div class="modal fade modal2" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade modal2" id="myModal" tabindex="-1"
+                                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                            <h5 class="modal-title" id="exampleModalLabel">Custome Repetition
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Custome
+                                                                                Repetition
                                                                             </h5>
-                                                                            <button type="button" class="btn-close" onclick="$('#myModal').modal('hide');" aria-label="Close"></button>
+                                                                            <button type="button" class="btn-close"
+                                                                                onclick="$('#myModal').modal('hide');"
+                                                                                aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <div class="RepeatSection">
@@ -2493,8 +2645,10 @@
                                                                                     <div class="RepeatEvery">
                                                                                         <label for="NumbersInut">Repeat
                                                                                             every</label>
-                                                                                        <input type="number" name="" id="NumInp" min="1">
-                                                                                        <select name="" id="" onchange="displayDivDemo(this)">
+                                                                                        <input type="number" name=""
+                                                                                            id="NumInp" min="1">
+                                                                                        <select name="" id=""
+                                                                                            onchange="displayDivDemo(this)">
                                                                                             <option value="0">Day
                                                                                             </option>
                                                                                             <option value="1">Week
@@ -2511,32 +2665,53 @@
                                                                                         </div>
                                                                                         <div class="WeekDays">
                                                                                             <div class="Sunday">
-                                                                                                <input type="checkbox" id="Sunday" name="Sunday" />
-                                                                                                <label for="Sunday"><span>S</span></label>
+                                                                                                <input type="checkbox"
+                                                                                                    id="Sunday"
+                                                                                                    name="Sunday" />
+                                                                                                <label
+                                                                                                    for="Sunday"><span>S</span></label>
                                                                                             </div>
                                                                                             <div class="Monday">
-                                                                                                <input type="checkbox" id="Monday" name="Monday" />
-                                                                                                <label for="Monday"><span>M</span></label>
+                                                                                                <input type="checkbox"
+                                                                                                    id="Monday"
+                                                                                                    name="Monday" />
+                                                                                                <label
+                                                                                                    for="Monday"><span>M</span></label>
                                                                                             </div>
                                                                                             <div class="Tuesday">
-                                                                                                <input type="checkbox" id="Tuesday" name="Tuesday" />
-                                                                                                <label for="Tuesday"><span>T</span></label>
+                                                                                                <input type="checkbox"
+                                                                                                    id="Tuesday"
+                                                                                                    name="Tuesday" />
+                                                                                                <label
+                                                                                                    for="Tuesday"><span>T</span></label>
                                                                                             </div>
                                                                                             <div class="Wednesday">
-                                                                                                <input type="checkbox" id="Wednesday" name="Wednesday" />
-                                                                                                <label for="Wednesday"><span>W</span></label>
+                                                                                                <input type="checkbox"
+                                                                                                    id="Wednesday"
+                                                                                                    name="Wednesday" />
+                                                                                                <label
+                                                                                                    for="Wednesday"><span>W</span></label>
                                                                                             </div>
                                                                                             <div class="Thursday">
-                                                                                                <input type="checkbox" id="Thursday" name="Thursday" />
-                                                                                                <label for="Thursday"><span>T</span></label>
+                                                                                                <input type="checkbox"
+                                                                                                    id="Thursday"
+                                                                                                    name="Thursday" />
+                                                                                                <label
+                                                                                                    for="Thursday"><span>T</span></label>
                                                                                             </div>
                                                                                             <div class="Friday">
-                                                                                                <input type="checkbox" id="Friday" name="Friday" />
-                                                                                                <label for="Friday"><span>F</span></label>
+                                                                                                <input type="checkbox"
+                                                                                                    id="Friday"
+                                                                                                    name="Friday" />
+                                                                                                <label
+                                                                                                    for="Friday"><span>F</span></label>
                                                                                             </div>
                                                                                             <div class="Saturday">
-                                                                                                <input type="checkbox" id="Saturday" name="Saturday" />
-                                                                                                <label for="Saturday"><span>S</span></label>
+                                                                                                <input type="checkbox"
+                                                                                                    id="Saturday"
+                                                                                                    name="Saturday" />
+                                                                                                <label
+                                                                                                    for="Saturday"><span>S</span></label>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -2558,13 +2733,20 @@
                                                                                     <h5>Expiry</h5>
                                                                                     <div class="ExpiryOptions">
                                                                                         <div class="Never">
-                                                                                            <input type="radio" name="Expiry-Reminder" id="NeverExpiry">
-                                                                                            <label for="NeverExpiry">Never</label>
+                                                                                            <input type="radio"
+                                                                                                name="Expiry-Reminder"
+                                                                                                id="NeverExpiry">
+                                                                                            <label
+                                                                                                for="NeverExpiry">Never</label>
                                                                                         </div>
                                                                                         <div class="OnExipry">
-                                                                                            <input type="radio" name="Expiry-Reminder" id="OnExpiry">
-                                                                                            <label for="OnExpiry">On</label>
-                                                                                            <input type="date" name="" id="">
+                                                                                            <input type="radio"
+                                                                                                name="Expiry-Reminder"
+                                                                                                id="OnExpiry">
+                                                                                            <label
+                                                                                                for="OnExpiry">On</label>
+                                                                                            <input type="date" name=""
+                                                                                                id="">
                                                                                             <!-- <div class="dateOfExpiry">
                                                                                     <input type="hidden" id="datepicker"
                                                                                         onchange="showDate(this)">
@@ -2573,10 +2755,15 @@
                                                                                 </div> -->
                                                                                         </div>
                                                                                         <div class="After">
-                                                                                            <input type="radio" name="Expiry-Reminder" id="AfterExpiry">
-                                                                                            <label for="AfterExpiry">After</label>
+                                                                                            <input type="radio"
+                                                                                                name="Expiry-Reminder"
+                                                                                                id="AfterExpiry">
+                                                                                            <label
+                                                                                                for="AfterExpiry">After</label>
                                                                                             <div class="AfterOccurance">
-                                                                                                <input type="number" name="" id="inpnum" min="1">
+                                                                                                <input type="number"
+                                                                                                    name="" id="inpnum"
+                                                                                                    min="1">
                                                                                                 <div class="Made">Made
                                                                                                 </div>
                                                                                             </div>
@@ -2586,8 +2773,11 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="modal-footer ">
-                                                                            <button type="button" class="btn btn-secondary secondary" onclick="$('#myModal').modal('hide');">Cancel</button>
-                                                                            <button type="button" class="btn btn-primary">Done</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary secondary"
+                                                                                onclick="$('#myModal').modal('hide');">Cancel</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Done</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2603,7 +2793,8 @@
                                                     <div class="LeaveDetails">
                                                         <label for="LeaveInput">Leave Details <span
                                                                 id="required">*</span></label>
-                                                        <input type="text" name="LeaveName" id="" placeholder="" required>
+                                                        <input type="text" name="LeaveName" id="" placeholder=""
+                                                            required>
                                                     </div>
                                                     <div class="DoctorBlockCalender">
                                                         <div>Doctor <span id="required">*</span></div>
@@ -2617,18 +2808,21 @@
                                                 <div class="SecondPart">
                                                     <div class="BlockAndAllday">
                                                         <div class="Alldayblockdiv">
-                                                            <input type="radio" name="ChooseOptions" id="allday-block" onclick="onAllday2()">
+                                                            <input type="radio" name="ChooseOptions" id="allday-block"
+                                                                onclick="onAllday2()">
                                                             <label for="allday-block">All Day</label>
                                                         </div>
                                                         <div class="BlockSlot">
-                                                            <input type="radio" name="ChooseOptions" id="blockslot" onclick="onBlockList()">
+                                                            <input type="radio" name="ChooseOptions" id="blockslot"
+                                                                onclick="onBlockList()">
                                                             <label for="blockslot">Block Slot</label>
                                                         </div>
                                                     </div>
                                                     <div class="DatesBlock">
                                                         <div class="AlldayHideDiv">
                                                             <div class="Alldayblock">
-                                                                <div class="TimeIcon"><img src="Time.png" alt="" srcset=""></div>
+                                                                <div class="TimeIcon"><img src="Time.png" alt=""
+                                                                        srcset=""></div>
                                                                 <input type="date" name="" id="">
                                                                 <input type="date" name="" id="">
                                                                 <!-- <input type="hidden" id="datepicker-BLockslot"
@@ -2642,10 +2836,12 @@
                                                         </div>
                                                         <div class="BlockHidediv">
                                                             <div class="BlockSlotCustomWithTime">
-                                                                <div class="TimeIcon"><img src="Time.png" alt="" srcset=""></div>
+                                                                <div class="TimeIcon"><img src="Time.png" alt=""
+                                                                        srcset=""></div>
                                                                 <div class="DateForBlockSlot">
                                                                     <div class="DateforAllday">
-                                                                        <input type="date" name="" id="" data-date-inline-picker="true">
+                                                                        <input type="date" name="" id=""
+                                                                            data-date-inline-picker="true">
                                                                     </div>
                                                                     <!-- <input type="hidden" id="datepicker-BLockslot2"
                                                             onchange="showDateBlock2(this)">
@@ -2683,12 +2879,14 @@
                                                         </div>
                                                         <div class="VideoOrPhysical">
                                                             <div class="VideoAppoint">
-                                                                <input type="checkbox" name="VideoAppointment" id="VideoAppointment">
+                                                                <input type="checkbox" name="VideoAppointment"
+                                                                    id="VideoAppointment">
                                                                 <label for="VideoAppointment"> Video
                                                                     Appointments</label>
                                                             </div>
                                                             <div class="PhysicalAppoint">
-                                                                <input type="checkbox" name="PhysicalAppointment" id="PhysicalAppointment">
+                                                                <input type="checkbox" name="PhysicalAppointment"
+                                                                    id="PhysicalAppointment">
                                                                 <label for="PhysicalAppointment"> Physical
                                                                     Appointments</label>
                                                             </div>
@@ -2699,7 +2897,9 @@
                                                             <img src="AlertBlock.png" alt="" srcset="">
                                                         </div>
                                                         <div class="NoticeAboutblock">
-                                                            Block your page or your calender for personal reasons. The patient will not be able to book an appointment for the same day and time
+                                                            Block your page or your calender for personal reasons. The
+                                                            patient will not be able to book an appointment for the same
+                                                            day and time
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2719,7 +2919,7 @@
     </div>
 </body>
 <script src="script.js"></script>
-<script src="../pateints/layout.js"></script>
+<!-- <script src="../pateints/layout.js"></script> -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

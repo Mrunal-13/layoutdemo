@@ -1,4 +1,3 @@
-
 let alertsDropdown = document.getElementById("alertsDropdown");
 let alertDetails = document.getElementById("alertDetails");
 alertDetails.style.display = "none";
@@ -25,7 +24,7 @@ messagesDropdown.addEventListener("click", () => {
         messageAlertDetails.style.display = "none";
     }
 })
- 
+
 // collapse button function to toggle sidenav barr
 function openNav() {
     if (document.getElementById("mySidenav").style.width === "63px" || document.getElementById("mySidenav").style.width === "") {
@@ -91,38 +90,35 @@ dropbtnMyfunction.addEventListener("click", () => {
 
 
 // button for pateimt table
-function showpateintTable()
-{
-  if ( document.getElementById("pateintdropdown").style.display === 'none'){
-    document.getElementById('pateintdropdown').style.display = 'block';
-  }
-  // document.getElementsById('btnforpateints').style.background = 'yellow';
-  if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === ""){
-    document.getElementById("navbar-fourth").style.width = "78%";
-  }
-  else if ( document.getElementById("navbar-fourth").style.width === "83.5%"){
-    document.getElementById("navbar-fourth").style.width = "65%";
-  }
-  else if (document.getElementById("pateintdropdown").style.display === "block"){
-    document.getElementById("pateintdropdown").style.display = "none";
-    if(document.getElementById("navbar-fourth").style.width === "65%"){
-      document.getElementById("navbar-fourth").style.width = "83.5%";
+function showpateintTable() {
+    if (document.getElementById("pateintdropdown").style.display === 'none') {
+        document.getElementById('pateintdropdown').style.display = 'block';
     }
-    if (document.getElementById("vl").style.marginLeft === "10px" || document.getElementById("vl").style.marginLeft === "") {
-        document.getElementById("vl").style.marginLeft = "300px"
-    } else if (document.getElementById("vl").style.marginLeft === "300px" || document.getElementById("vl").style.marginLeft === "") {
-        document.getElementById("vl").style.marginLeft = "10px"
+    // document.getElementsById('btnforpateints').style.background = 'yellow';
+    if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === "") {
+        document.getElementById("navbar-fourth").style.width = "78%";
+    } else if (document.getElementById("navbar-fourth").style.width === "83.5%") {
+        document.getElementById("navbar-fourth").style.width = "65%";
+    } else if (document.getElementById("pateintdropdown").style.display === "block") {
+        document.getElementById("pateintdropdown").style.display = "none";
+        if (document.getElementById("navbar-fourth").style.width === "65%") {
+            document.getElementById("navbar-fourth").style.width = "83.5%";
+        }
+        if (document.getElementById("vl").style.marginLeft === "10px" || document.getElementById("vl").style.marginLeft === "") {
+            document.getElementById("vl").style.marginLeft = "300px"
+        } else if (document.getElementById("vl").style.marginLeft === "300px" || document.getElementById("vl").style.marginLeft === "") {
+            document.getElementById("vl").style.marginLeft = "10px"
+        }
+        if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
+            document.getElementById("Appointment").style.marginLeft = "180px";
+        } else if (document.getElementById("Appointment").style.marginLeft === "180px" || document.getElementById("Appointment").style.marginLeft === "") {
+            document.getElementById("Appointment").style.marginLeft = "480px";
+        } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
+            document.getElementById("Appointment").style.marginLeft = "10px"
+        } else if (document.getElementById("Appointment").style.marginLeft === "10px") {
+            document.getElementById("Appointment").style.marginLeft = "300px"
+        }
     }
-    if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
-        document.getElementById("Appointment").style.marginLeft = "180px";
-    } else if (document.getElementById("Appointment").style.marginLeft === "180px" || document.getElementById("Appointment").style.marginLeft === "") {
-        document.getElementById("Appointment").style.marginLeft = "480px";
-    } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
-        document.getElementById("Appointment").style.marginLeft = "10px"
-    } else if (document.getElementById("Appointment").style.marginLeft === "10px") {
-        document.getElementById("Appointment").style.marginLeft = "300px"
-    }
-}
 
 }
 
@@ -137,20 +133,20 @@ function makelist() {
 }
 
 // making list for mdeical history
-document.getElementById('inputforhistory').addEventListener('keypress', function(e){
-  if(e.key == 'Enter'){
-    
-    var text = document.getElementById('inputforhistory').value;
-    document.getElementById('inputforhistory').value = null;
-    document.getElementById('inputforhistory').style.display = 'none';
-    var li = document.createElement('li');
-    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
-    var empyttext = document.getElementById('inputforhistory').value;
-    if( empyttext != null){
-      document.getElementById('MedicalHistory').appendChild(li);
+document.getElementById('inputforhistory').addEventListener('keypress', function(e) {
+    if (e.key == 'Enter') {
 
+        var text = document.getElementById('inputforhistory').value;
+        document.getElementById('inputforhistory').value = null;
+        document.getElementById('inputforhistory').style.display = 'none';
+        var li = document.createElement('li');
+        li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+        var empyttext = document.getElementById('inputforhistory').value;
+        if (empyttext != null) {
+            document.getElementById('MedicalHistory').appendChild(li);
+
+        }
     }
-  }
 });
 
 document.getElementById('inputfordiseases').addEventListener('keypress', function(e) {
@@ -168,37 +164,37 @@ document.getElementById('inputfordiseases').addEventListener('keypress', functio
     }
 });
 // input box for other specified diseases
-function makelist1(){
-  document.getElementById('inputfordiseases').style.display = 'block';
-  $('.minus').click(function(e){
-    e.target.parentElement.remove();
-  });
+function makelist1() {
+    document.getElementById('inputfordiseases').style.display = 'block';
+    $('.minus').click(function(e) {
+        e.target.parentElement.remove();
+    });
 }
 
 
-document.getElementById('inputfordiseases').addEventListener('keypress', function(e){
+document.getElementById('inputfordiseases').addEventListener('keypress', function(e) {
 
-  if(e.key == 'Enter'){
-    var text = document.getElementById('inputfordiseases').value;
-    document.getElementById('inputfordiseases').value = null;
-    document.getElementById('inputfordiseases').style.display = 'none';
-    var li = document.createElement('li');
-    li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
-    var empyttext = document.getElementById('inputfordiseases').value;
-    if( empyttext != null){
-      document.getElementById('otherdisease').appendChild(li);
+    if (e.key == 'Enter') {
+        var text = document.getElementById('inputfordiseases').value;
+        document.getElementById('inputfordiseases').value = null;
+        document.getElementById('inputfordiseases').style.display = 'none';
+        var li = document.createElement('li');
+        li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
+        var empyttext = document.getElementById('inputfordiseases').value;
+        if (empyttext != null) {
+            document.getElementById('otherdisease').appendChild(li);
 
+        }
     }
-  }
 });
 
-  
+
 // input for drug section
-function makelist2(){
-  document.getElementById('inputfordrug').style.display = 'block';
-  $('.minus').click(function(e){
-    e.target.parentElement.remove();
-  });
+function makelist2() {
+    document.getElementById('inputfordrug').style.display = 'block';
+    $('.minus').click(function(e) {
+        e.target.parentElement.remove();
+    });
 
 }
 
@@ -218,11 +214,11 @@ document.getElementById('inputfordrug').addEventListener('keypress', function(e)
 });
 
 // input for food
-function makelist3(){
-  document.getElementById('inputforfood').style.display = 'block';
-  $('.minus').click(function(e){
-    e.target.parentElement.remove();
-  });
+function makelist3() {
+    document.getElementById('inputforfood').style.display = 'block';
+    $('.minus').click(function(e) {
+        e.target.parentElement.remove();
+    });
 }
 
 document.getElementById('inputforfood').addEventListener('keypress', function(e) {
@@ -240,11 +236,11 @@ document.getElementById('inputforfood').addEventListener('keypress', function(e)
     }
 });
 // add button and input for insect
-function makelist4(){
-  document.getElementById('inputforinsect').style.display = 'block';
-  $('.minus').click(function(e){
-    e.target.parentElement.remove();
-  });
+function makelist4() {
+    document.getElementById('inputforinsect').style.display = 'block';
+    $('.minus').click(function(e) {
+        e.target.parentElement.remove();
+    });
 }
 
 document.getElementById('inputforinsect').addEventListener('keypress', function(e) {
@@ -263,11 +259,11 @@ document.getElementById('inputforinsect').addEventListener('keypress', function(
 });
 // input for latex
 
-function makelist5(){
-  document.getElementById('inputforlatex').style.display = 'block';
-  $('.minus').click(function(e){
-    e.target.parentElement.remove();
-  });
+function makelist5() {
+    document.getElementById('inputforlatex').style.display = 'block';
+    $('.minus').click(function(e) {
+        e.target.parentElement.remove();
+    });
 
 }
 
@@ -287,11 +283,11 @@ document.getElementById('inputforlatex').addEventListener('keypress', function(e
 });
 
 // this are input mold
-function makelist6(){
-  document.getElementById('inputformold').style.display = 'block';
-  $('.minus').click(function(e){
-    e.target.parentElement.remove();
-  });
+function makelist6() {
+    document.getElementById('inputformold').style.display = 'block';
+    $('.minus').click(function(e) {
+        e.target.parentElement.remove();
+    });
 
 }
 
@@ -311,11 +307,11 @@ document.getElementById('inputformold').addEventListener('keypress', function(e)
 });
 
 // input section for pet
-function makelist7(){
-  document.getElementById('inputforpet').style.display = 'block';
-  $('.minus').click(function(e){
-    e.target.parentElement.remove();
-  });
+function makelist7() {
+    document.getElementById('inputforpet').style.display = 'block';
+    $('.minus').click(function(e) {
+        e.target.parentElement.remove();
+    });
 
 }
 
@@ -403,93 +399,172 @@ function openAppointment() {
     }
 }
 // function to click on veiws and payments
-function openPayments(){
-  document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "rgb(237, 97, 162)";
-  document.getElementById("VeiwsAndPaymentsbutton").style.color = "black";
-  document.getElementById("VisitReportButton").style.backgroundColor = "white";
-  document.getElementById("VisitReportButton").style.color = "grey";
-  document.getElementById("VisitReportButton").style.borderWidth = "1px";
-  document.getElementById("VisitReportButton").style.borderStyle = "solid";
-  document.getElementById("VisitReportButton").style.borderColor = "grey";
-  document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "white";
-  document.getElementById("ReadyCaseFormatButton").style.color = "grey";
-  if(document.getElementById("AppointmentDetails").style.display = "block"){
-    document.getElementById("AppointmentDetails").style.display = "none";
-    document.getElementById("VeiwsAndPaymentsContent").style.display = "block"
-    document.getElementById("ReadyCaseFormatContent").style.display = "none";
-    document.getElementById("iframes").style.display = "none";
-  }
-  else if(document.getElementById("AppointmentDetails").style.display = "none"){
-    document.getElementById("VeiwsAndPaymentsContent").style.display = "block";
-    document.getElementById("ReadyCaseFormatContent").style.display = "none";
-    document.getElementById("iframes").style.display = "none";
-  }
+function openPayments() {
+    document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "rgb(237, 97, 162)";
+    document.getElementById("VeiwsAndPaymentsbutton").style.color = "black";
+    document.getElementById("VisitReportButton").style.backgroundColor = "white";
+    document.getElementById("VisitReportButton").style.color = "grey";
+    document.getElementById("VisitReportButton").style.borderWidth = "1px";
+    document.getElementById("VisitReportButton").style.borderStyle = "solid";
+    document.getElementById("VisitReportButton").style.borderColor = "grey";
+    document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "white";
+    document.getElementById("ReadyCaseFormatButton").style.color = "grey";
+    if (document.getElementById("AppointmentDetails").style.display = "block") {
+        document.getElementById("AppointmentDetails").style.display = "none";
+        document.getElementById("VeiwsAndPaymentsContent").style.display = "block"
+        document.getElementById("ReadyCaseFormatContent").style.display = "none";
+        document.getElementById("iframes").style.display = "none";
+    } else if (document.getElementById("AppointmentDetails").style.display = "none") {
+        document.getElementById("VeiwsAndPaymentsContent").style.display = "block";
+        document.getElementById("ReadyCaseFormatContent").style.display = "none";
+        document.getElementById("iframes").style.display = "none";
+    }
 }
 
 // section for billing button in veiw history
-function Billingp(){
-  document.getElementById("Billingt").style.display = "block";
-  document.getElementById("Billingp").style.backgroundColor = "yellow";
-  document.getElementById("paymenthistoryp").style.backgroundColor = "white";
-  document.getElementById("paymenthistoryt").style.display = "none";
+function Billingp() {
+    document.getElementById("Billingt").style.display = "block";
+    document.getElementById("Billingp").style.backgroundColor = "yellow";
+    document.getElementById("paymenthistoryp").style.backgroundColor = "white";
+    document.getElementById("paymenthistoryt").style.display = "none";
 }
 
 
 // paymnets history button for t and p
-function paymenthistory(){
-  document.getElementById("Billingp").style.backgroundColor = "white";
-  document.getElementById("paymenthistoryp").style.backgroundColor = "yellow";
-  document.getElementById("Billingt").style.display = "none";
-  document.getElementById("paymenthistoryt").style.display = "block";
+function paymenthistory() {
+    document.getElementById("Billingp").style.backgroundColor = "white";
+    document.getElementById("paymenthistoryp").style.backgroundColor = "yellow";
+    document.getElementById("Billingt").style.display = "none";
+    document.getElementById("paymenthistoryt").style.display = "block";
 }
 
 // veiw history table
-function veiwHistory(){
-  document.getElementById("veiwHistoryTable").style.display = "block";
+function veiwHistory() {
+    document.getElementById("veiwHistoryTable").style.display = "block";
 }
 
 //function to open ready case format tab
-function OpenReadyCase(){
-  document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "rgb(237, 97, 162)";
-  document.getElementById("ReadyCaseFormatButton").style.color = "black";
-  document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "white";
-  document.getElementById("VeiwsAndPaymentsbutton").style.color = "grey";
-  document.getElementById("VisitReportButton").style.backgroundColor = "white";
-  document.getElementById("VisitReportButton").style.color = "grey";
-  document.getElementById("VisitReportButton").style.borderWidth = "1px";
-  document.getElementById("VisitReportButton").style.borderStyle = "solid";
-  document.getElementById("VisitReportButton").style.borderColor = "grey";
-  document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
-  document.getElementById("iframes").style.display = "none";
-  document.getElementById("ReadyCaseFormatContent").style.display = "block";
-  if(document.getElementById("AppointmentDetails").style.display = "block"){
-    document.getElementById("AppointmentDetails").style.display = "none";
-  }
-  
-}
-
-// pateint visit report button functionality
-function VisitReport(){
-  document.getElementById("VisitReportButton").style.backgroundColor = "rgb(237, 97, 162)";
-  document.getElementById("VisitReportButton").style.color ="black";
-  document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "white";
-  document.getElementById("VeiwsAndPaymentsbutton").style.color = "grey";
-  document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "white";
-  document.getElementById("ReadyCaseFormatButton").style.color = "grey";
-  //document.getElementById("VisitReportButton").style.borderColor = "grey";
-  if(document.getElementById("AppointmentDetails").style.display = "block"){
-    document.getElementById("AppointmentDetails").style.display = "none";
-  }
-  if(document.getElementById("ReadyCaseFormatContent").style.display = "block"){
-    document.getElementById("ReadyCaseFormatContent").style.display = "none";
-  }
-  if(document.getElementById("VeiwsAndPaymentsContent").style.display = "block")
-    {  document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
-      document.getElementById("iframes").style.display = "none";
-      document.getElementById("ReadyCaseFormatContent").style.display = "block";
-      if (document.getElementById("AppointmentDetails").style.display = "block") {
-         document.getElementById("AppointmentDetails").style.display = "none";
-       }
+function OpenReadyCase() {
+    document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "rgb(237, 97, 162)";
+    document.getElementById("ReadyCaseFormatButton").style.color = "black";
+    document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "white";
+    document.getElementById("VeiwsAndPaymentsbutton").style.color = "grey";
+    document.getElementById("VisitReportButton").style.backgroundColor = "white";
+    document.getElementById("VisitReportButton").style.color = "grey";
+    document.getElementById("VisitReportButton").style.borderWidth = "1px";
+    document.getElementById("VisitReportButton").style.borderStyle = "solid";
+    document.getElementById("VisitReportButton").style.borderColor = "grey";
+    document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
+    document.getElementById("iframes").style.display = "none";
+    document.getElementById("ReadyCaseFormatContent").style.display = "block";
+    if (document.getElementById("AppointmentDetails").style.display = "block") {
+        document.getElementById("AppointmentDetails").style.display = "none";
     }
 
 }
+
+// pateint visit report button functionality
+function VisitReport() {
+    document.getElementById("VisitReportButton").style.backgroundColor = "rgb(237, 97, 162)";
+    document.getElementById("VisitReportButton").style.color = "black";
+    document.getElementById("VeiwsAndPaymentsbutton").style.backgroundColor = "white";
+    document.getElementById("VeiwsAndPaymentsbutton").style.color = "grey";
+    document.getElementById("ReadyCaseFormatButton").style.backgroundColor = "white";
+    document.getElementById("ReadyCaseFormatButton").style.color = "grey";
+    //document.getElementById("VisitReportButton").style.borderColor = "grey";
+    if (document.getElementById("AppointmentDetails").style.display = "block") {
+        document.getElementById("AppointmentDetails").style.display = "none";
+    }
+    if (document.getElementById("ReadyCaseFormatContent").style.display = "block") {
+        document.getElementById("ReadyCaseFormatContent").style.display = "none";
+    }
+    if (document.getElementById("VeiwsAndPaymentsContent").style.display = "block") {
+        document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
+        document.getElementById("iframes").style.display = "none";
+        document.getElementById("ReadyCaseFormatContent").style.display = "block";
+        if (document.getElementById("AppointmentDetails").style.display = "block") {
+            document.getElementById("AppointmentDetails").style.display = "none";
+        }
+    }
+
+}
+
+// Advanced Patient Search
+const optionMap = new Map();
+optionMap.set("patient_name", '<input type="text" placeholder="Contains"/>');
+optionMap.set("has_contact_number", '<select><option value="has_contact_number">Yes</option><option value="no">No</option></select>');
+optionMap.set("contact_number", '<input type="text" placeholder="Contains 0123456789"/>');
+optionMap.set("age_is", '<input type="number" value="39"/>');
+optionMap.set("age_more_than", '<input type="number" value="39"/>');
+optionMap.set("age_less_than", '<input type="number" value="39"/>');
+optionMap.set("has_date_of_birth", '<select><option value="yes">Yes</option><option value="no">No</option></select>');
+optionMap.set("date_of_birth", '<input type="date"/>');
+optionMap.set("date_of_birth_more_than", '<input type="date"/>');
+optionMap.set("date_of_birth_less_than", '<input type="date"/>');
+optionMap.set("birthday_is_in", '<input type="date"/>');
+optionMap.set("has_patient_id", '<select><option value="yes">Yes</option><option value="no">No</option></select>');
+optionMap.set("patient_id", '<input type="text" placeholder="Contains"/>');
+optionMap.set("has_aadhaar_id", '<select><option value="yes">Yes</option><option value="no">No</option></select>');
+optionMap.set("aadhaar_id", '<input type="text" placeholder="Contains"/>');
+optionMap.set("has_email", '<select><option value="yes">Yes</option><option value="no">No</option>');
+optionMap.set("email", '<input type="email" placeholder="Contains xyz@gmail.com"/>');
+optionMap.set("has_gender", '<select><option value="yes">Yes</option><option value="no">No</option></select>');
+optionMap.set("gender", '<select><option value="male">Male</option><option value="female">Female</option><option value="other">Other</option></select>');
+optionMap.set("has_pincode", '<select><option value="yes">Yes</option><option value="no">No</option></select>');
+optionMap.set("pincode", '<input type="text" placeholder="Contains"/>');
+optionMap.set("has_street_address", '<select><option value="yes">Yes</option><option value="no">No</option></select>');
+optionMap.set("street_address", '<input type="text" placeholder="Contains"/>');
+optionMap.set("has_blood_group", '<select><option value="yes">Yes</option><option value="no">No</option></select>')
+optionMap.set("blood_group", '<select><option value="aP">A+</option><option value="aN">A-</option><option value="bP">B+</option><option value="bN">B-</option><option value="oP">O+</option><option value="oN">O-</option><option value="abP">AB+</option><option value="abN">AB-</option></select>');
+optionMap.set("was_referred_by_someone", '<select><option value="yes">Yes</option><option value="no">No</option></select>');
+optionMap.set("referred_by_someone", '<select><option value="another_patient">Another Patient</option><option value="google">Google</option><option value="just_dial">Just Dial</option><option value="welldone_health_care">welldonehealthcare.in</option></select>');
+
+
+const categoryList = ["Patient Name", "Has Contact Number", "Contact Number", "Age is", "Age is More Than", "Age is Less Than", "Has Date of Birth", "Date of Birth is", "Date of Birth is More Than", "Date of Birth is Less Than", "Birthday is in", "Has Patient ID", "Patient ID", "Has Aadhaar ID", "Aadhaar ID", "Has Email", "Email", "Has Gender", "Gender is", "Has Pincode", "Pincode", "Has Street Address", "Street Address", "Has Blood Group", "Blood Group", "Was Referred By Someone", "Referred By"];
+
+let isCategoriesShown = false;
+
+function GetControl(selectedCategory) {
+    const getControl = optionMap.get(selectedCategory);
+    if (getControl === undefined) {
+        $("#divControl").html("No Corrosponding Control Found.");
+    } else {
+        $("#divControl").html(getControl + '<i class="fa fa-times-circle" style="display:none;" id="errorShow"></i>');
+    }
+}
+
+function ShowNoDataMessage() {
+    $("#divNoData").show();
+    $("#errorShow").show();
+}
+
+function HandleCancel() {
+    $("#divNoData").hide();
+    $("#errorShow").hide();
+}
+
+$(document).ready(function() {
+    const firstCategory = $("#ddlInfo option:first").val();
+    GetControl(firstCategory);
+
+    $("#ddlInfo").change(function(event) {
+        const selectedCategory = $(this).val();
+        GetControl(selectedCategory);
+    });
+
+    $("#btnAddMore").click(function() {
+        if (isCategoriesShown === false) {
+            categoryList.map((category) => {
+                $("#divCategories").append('<input name="category" type="radio" id="' + category + '" value="' + category + '"><label for="' + category + '">' + category + '</label><br />');
+            });
+            isCategoriesShown = true;
+        }
+    });
+
+    $('#divCategories').on('change', "input[name=category]", function(event) {
+        $("#ddlInfo option:contains(" + event.target.value.trim() + ")").prop('selected', 'selected');
+        $('#ddlInfo').trigger('change');
+        $("#divCategories").html("");
+        isCategoriesShown = false;
+    });
+});

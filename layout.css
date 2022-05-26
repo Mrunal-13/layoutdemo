@@ -1,17 +1,18 @@
 /* navbar 1 2 3 */
-.navbar{
+
+.navbar {
     position: fixed;
     width: 100%;
     z-index: 7;
-    border-bottom:3px solid black;
+    border-bottom: 3px solid black;
 }
+
 .buttonForSideNav {
     outline: none;
     border: 1px solid #a4a4a4;
     margin-right: 10px;
     border-radius: 9px;
 }
-
 
 .buttonForSideNav:hover {
     background-color: #a4a4a4;
@@ -21,9 +22,7 @@
     width: 200px;
     display: flex;
     justify-content: space-between;
-
 }
-
 
 .hospital-name {
     flex-wrap: nowrap;
@@ -47,26 +46,30 @@
     justify-content: space-between;
     padding: 0;
     align-items: center;
-
 }
-.navbar-second .nav-item{
+
+.navbar-second .nav-item {
     list-style: none;
 }
-.addPateintButton{
+
+.addPateintButton {
     font-size: 12px;
     margin: 0;
 }
+
 .nav-item.dropdown>.nav-link .indicator {
     position: absolute;
     bottom: 16px;
     left: 17px;
     font-size: 10px;
 }
-#alertsDropdown,#messagesDropdown{
+
+#alertsDropdown,
+#messagesDropdown {
     padding: 0;
 }
 
-.advnc-search{
+.advnc-search {
     background: none;
     border: none;
     color: #435aaa;
@@ -75,13 +78,15 @@
     right: 70px;
     width: 61px;
 }
-.searchbox{
+
+.searchbox {
     display: flex;
 }
-.inputForSearch{
-    width: 50px;
 
+.inputForSearch {
+    width: 50px;
 }
+
 .addpatient {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -97,7 +102,7 @@
     width: 15%;
 }
 
-.navbar-fourth{
+.navbar-fourth {
     width: 96%;
     /* position: absolute; */
     right: 0;
@@ -107,7 +112,8 @@
     background-color: white;
     z-index: 1;
 }
-.RakeshName{
+
+.RakeshName {
     color: #000;
     font-weight: 500;
 }
@@ -124,7 +130,9 @@
     border-image: initial;
 }
 
+
 /* The side navigation menu */
+
 .sidenav {
     height: 90%;
     /* 100% Full-height */
@@ -144,7 +152,9 @@
     transition: 0.5s;
 }
 
+
 /* The navigation menu links */
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -154,12 +164,16 @@
     transition: 0.3s;
 }
 
+
 /* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
+
 /* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -248,7 +262,7 @@
     z-index: 10;
 }
 
-.adminSettingBox{
+.adminSettingBox {
     background-color: #ffffff;
     position: absolute;
     top: 100%;
@@ -261,90 +275,94 @@
     z-index: 4;
     padding: 16px;
 }
-.adminSettingBox p{
+
+.adminSettingBox p {
     margin: 0;
     padding: 0;
 }
-#settingOptions{
+
+#settingOptions {
     padding: 0;
 }
-#settingOptions li{
+
+#settingOptions li {
     list-style: none;
     font-size: 12px;
     margin: 5px 0;
     border-bottom: 1px solid rgb(190, 190, 190);
 }
-#settingOptions li:hover{
+
+#settingOptions li:hover {
     background-color: #cce7ff;
     cursor: pointer;
 }
-.nav-link{
+
+.nav-link {
     color: #818181;
 }
-@media only screen and (max-width: 1024px){
-    .navbar-first{
+
+@media only screen and (max-width: 1024px) {
+    .navbar-first {
         width: 100px;
     }
-    .navbar-brand,.buttonForSideNav{
+    .navbar-brand,
+    .buttonForSideNav {
         font-size: 12px;
     }
-    .nav-link{
+    .nav-link {
         padding: 0;
         margin: 0;
     }
-    .d-lg-none{
+    .d-lg-none {
         display: none;
     }
-    #addPateintButton{
+    #addPateintButton {
         width: 71px;
     }
-    .addpatient{
+    .addpatient {
         font-size: 10px;
     }
-    .hospital-name{
+    .hospital-name {
         font-size: 10px;
     }
-
-    
-    .inputForSearch{
+    .inputForSearch {
         width: 93px;
         height: 30px;
         font-size: 12px;
     }
-
-    .searchbtn1{
+    .searchbtn1 {
         height: 30px;
         display: flex;
         align-items: center;
     }
-    #dropbtnMyfunction{
+    #dropbtnMyfunction {
         font-size: 10px;
     }
-    
     .nav-link-text {
         font-size: 14px;
         margin-left: 25px;
     }
-
     .alertBodyitems {
         font-size: 0.8rem;
     }
-    .MadBodyitems{
+    .MadBodyitems {
         font-size: 0.8rem;
     }
     .adminSettingBox {
         left: 79%;
         width: 21%;
     }
-    .adminSettingHeader{
+    .adminSettingHeader {
         font-size: 13px;
     }
 }
-@media only screen and (max-width: 767px){
-    .navbar-second,.navbar-third{
+
+@media only screen and (max-width: 767px) {
+    .navbar-second,
+    .navbar-third {
         display: none;
     }
-    .navbar-first{
+    .navbar-first {
         width: 100%;
     }
     .navbar-sidenav>.nav-item>.nav-link {
@@ -353,24 +371,25 @@
     #mySidenav {
         width: 0px;
         border: none;
-        background-color:#efefef;
+        background-color: #efefef;
     }
-    .nav-link-text{
+    .nav-link-text {
         font-size: 14px;
     }
 }
 
+
 /* USER IMAGE SIZE CSS */
-#dvUserImage{
+
+#dvUserImage {
     width: 60px;
 }
 
-
-#barcodeimage{
+#barcodeimage {
     width: 100px;
 }
 
-.insurance-img{
+.insurance-img {
     width: 80px;
 }
 
@@ -382,15 +401,19 @@
     margin-right: 5px;
 }
 
+
 /* div leftright */
-.leftright{
+
+.leftright {
     width: 95.5%;
     position: absolute;
     right: 0;
     display: flex;
 }
 
+
 /* vertical line on page */
+
 .vl {
     margin-top: 220px;
     border-left: 3px solid black;
@@ -398,20 +421,24 @@
     width: fit-content;
     margin-left: 10px;
     position: sticky;
-  }
+}
+
 
 /* css for table of pateints */
 
-.btn-secondary{
+.btn-secondary {
     background-color: #f2f9fb;
     color: black;
 }
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
     background-color: #28c0db;
     color: black;
 }
 
-.pateintTable{
+.pateintTable {
     margin-top: 80px;
     width: 280px;
     height: 650px;
@@ -421,21 +448,23 @@
     border-radius: 0px 15px 0px 0px;
     position: fixed;
 }
-.pateintul{
-    background-color: white; 
+
+.pateintul {
+    background-color: white;
     margin-top: 50px;
     list-style: none;
 }
 
-.visitselect{
+.visitselect {
     color: rgb(248, 248, 254);
 }
 
-.e-queque{
-    color: aliceblue; 
+.e-queque {
+    color: aliceblue;
     margin-left: 20px;
 }
-.pateintnamelist{
+
+.pateintnamelist {
     overflow-y: scroll;
     width: 280px;
     height: 500px;
@@ -444,117 +473,124 @@
     background-color: #E5FFFF;
     border-radius: 0px 15px 0px 0px;
 }
-.PatientTableTitle{
-  display: flex;
+
+.PatientTableTitle {
+    display: flex;
 }
 
-.PatientTableTitle p{
-  padding: 5px 12px 0px 12px;
+.PatientTableTitle p {
+    padding: 5px 12px 0px 12px;
 }
 
-.PateintName1{
-  display: inline-flex;
-  border: 1px solid #007185;
-  border-radius: 0px 10px 10px 0px;
-  box-sizing: border-box;
-  margin-top: 40px;
+.PateintName1 {
+    display: inline-flex;
+    border: 1px solid #007185;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+    margin-top: 40px;
 }
+
 
 /* .lefthalfpateint{
 
 } */
 
-.pateintnumber{
-  margin-left: 2rem;
-  margin-top: 1rem;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 25.78px;
+.pateintnumber {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.78px;
 }
 
-.pateinttime{
-  margin-left: 1rem;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 12.89px;
+.pateinttime {
+    margin-left: 1rem;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12.89px;
 }
 
-.righthalfpateint{
-  margin-right: 1rem;
+.righthalfpateint {
+    margin-right: 1rem;
 }
 
-.pateintName{
-  margin-left: 3rem;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.41px;
+.pateintName {
+    margin-left: 3rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
 }
 
-.visitreason{
-  margin-left: 3rem;
-  line-height: 0;
-  font-size: 12px;
-  font-weight: 400;
+.visitreason {
+    margin-left: 3rem;
+    line-height: 0;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.Returning{
-  margin-left: 3rem;
-  line-height: 0;
-  color: red;
-  font-size: 12px;
-  font-weight: 400;
+.Returning {
+    margin-left: 3rem;
+    line-height: 0;
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.InsuranceHolder{
-  margin-left: 3rem;
-  line-height: 0;
-  color: green;
-  font-size: 12px;
-  font-weight: 400;
+.InsuranceHolder {
+    margin-left: 3rem;
+    line-height: 0;
+    color: green;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.PateintName2{
-  display: inline-flex;
-  border: 1px solid #007185;
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 10px;
-  background-color: white;
+.PateintName2 {
+    display: inline-flex;
+    border: 1px solid #007185;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 10px;
+    background-color: white;
 }
+
+
 /* communication and med complete div */
-.commeddiv{
+
+.commeddiv {
     position: sticky;
     top: 250px;
     border-radius: 10px 10px 10px 10px;
-   background-color: white;
-   margin-left: 5px;
-   height: fit-content;
-   /* text-align: center; */
-
+    background-color: white;
+    margin-left: 5px;
+    height: fit-content;
+    /* text-align: center; */
 }
 
+
 /* communication div css */
-.Communicationdiv{
+
+.Communicationdiv {
     border: 1px solid #007185;
     border-radius: 10px 10px 10px 10px;
     background-color: white;
     text-align: center;
     margin-left: 30px;
-
 }
-.Communicationdiv h5{
+
+.Communicationdiv h5 {
     font-size: small;
 }
 
-.Communicationdiv p{
+.Communicationdiv p {
     font-size: smaller;
 }
 
-.communicationpng img{
+.communicationpng img {
     width: 100px;
     height: 100px;
     align-self: center;
 }
-.setschedule{
+
+.setschedule {
     color: #34d0eb;
     line-height: 0.5rem;
     font-size: small;
@@ -563,7 +599,7 @@
 
 /* Medical history div css */
 
-.MedicalHistorydiv{
+.MedicalHistorydiv {
     border: 1px solid #28c0db;
     border-radius: 10px 10px 10px 10px;
     background-color: white;
@@ -571,170 +607,184 @@
     margin-top: 20px;
 }
 
-.MedicalHistorydiv span{
+.MedicalHistorydiv span {
     display: flex;
     position: relative;
 }
 
-.MedicalHistorydiv h6{
+.MedicalHistorydiv h6 {
     margin-left: 10px;
     font-size: smaller;
 }
 
-.MedicalHistorydiv input{
+.MedicalHistorydiv input {
     width: 100px;
     margin-left: 5px;
     border-radius: 10px;
     display: none;
 }
- .Addsign{
-     position: absolute;
-     right: 5px;
-     color: #2fcbe7;
-     cursor: pointer;
-     font-size: smaller;
- }
 
- .hrline{
-     border-top: 2px solid grey;
-     width: 90%;
- }
+.Addsign {
+    position: absolute;
+    right: 5px;
+    color: #2fcbe7;
+    cursor: pointer;
+    font-size: smaller;
+}
 
- .bulb{
+.hrline {
+    border-top: 2px solid grey;
+    width: 90%;
+}
+
+.bulb {
     margin-right: 100%;
- }
+}
 
- .hints{
-     display: flex;
-     margin-left: 10px;
- }
+.hints {
+    display: flex;
+    margin-left: 10px;
+}
 
- .addsymbol{
-     width: 20px;
-     height: 22px;
- }
+.addsymbol {
+    width: 20px;
+    height: 22px;
+}
 
- .addeditems{
+.addeditems {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 12px;
- }
+}
+
 
 /* carosel css for pateints list */
-.carousel-indicators{
+
+.carousel-indicators {
     top: 0;
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
     top: 0;
-    color:black;
+    color: black;
     text-indent: 0px;
     width: 50px;
 }
+
 .carousel-indicators .active {
     background-color: #2ecbae;
 }
 
+
 /* center appointment div */
 
-.Appointment{
+.Appointment {
     height: fit-content;
     margin-top: 250px;
     margin-left: 480px;
     /* border-left: 3px solid black; */
 }
 
-.appointmentwith{
+.appointmentwith {
     border: 2px solid grey;
-     width: max-content; 
-     height: max-content;
-     display: flex;
-     border-radius: 5px;
-     font-size: 0.8rem;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
 
-.appointmentwithtime{
+.appointmentwithtime {
     line-height: 0.5rem;
     padding-top: 20px;
 }
 
-.appointmentwithdr{
+.appointmentwithdr {
     padding-top: 20px;
     padding-left: 10px;
 }
-.openbuttondiv{
+
+.openbuttondiv {
     padding: 20px 0px 8px 10px;
 }
 
-.openbtn{
-    background-color: yellow; 
+.openbtn {
+    background-color: yellow;
     color: #2451C5;
     border-radius: 5px;
 }
 
+
 /* create new case study */
 
-#CreateCaseStudy{
+#CreateCaseStudy {
     padding-top: 15px;
     color: blue;
 }
 
+
 /* visist report bttuon */
-#VisitReportButton{
-    border: rgb(237, 97, 162); 
+
+#VisitReportButton {
+    border: rgb(237, 97, 162);
     color: #000;
     border-radius: 5px;
-     background-color: rgb(237, 97, 162);
-     width: 150px;
-     text-align: center;
+    background-color: rgb(237, 97, 162);
+    width: 150px;
+    text-align: center;
 }
 
+
 /* VeiwsAndPaymentsbutton */
-#VeiwsAndPaymentsbutton{
+
+#VeiwsAndPaymentsbutton {
     border: 1px solid grey;
     border-radius: 5px;
-     color: grey; 
-     margin-left: 8px;
-     font-weight: 500;
+    color: grey;
+    margin-left: 8px;
+    font-weight: 500;
     text-align: center;
-    
 }
+
 
 /* ReadyCaseFormatButton */
 
-#ReadyCaseFormatButton{
+#ReadyCaseFormatButton {
     border: 1px solid grey;
     border-radius: 5px;
-     color: grey;
-      margin-left: 150px;
-      font-weight: 500;
-      height: fit-content;
+    color: grey;
+    margin-left: 150px;
+    font-weight: 500;
+    height: fit-content;
     text-align: center;
 }
+
+
 /* appontment details input for create new case study */
 
-#AppointmentDetails{
+#AppointmentDetails {
     border: 2px solid rgb(38, 215, 174);
     border-radius: 5px;
     display: none;
 }
-.PateintAppointmentDetails{
+
+.PateintAppointmentDetails {
     font-size: 20px;
     font-weight: 500;
     margin-top: 5px;
 }
 
-.Appno{
+.Appno {
     float: right;
 }
 
-.apdatetime{
+.apdatetime {
     font-weight: 500;
 }
 
-
-.appointmentinput{
+.appointmentinput {
     border: 2px solid grey;
     color: black;
     border-radius: 5px;
@@ -742,12 +792,12 @@
     margin-left: 10px;
 }
 
-.selectdoctor{
+.selectdoctor {
     border-radius: 5px;
     border: 2px solid grey;
 }
 
-.AddRecordButton{
+.AddRecordButton {
     border: 2px solid yellow;
     border-radius: 5px;
     background-color: yellow;
@@ -756,15 +806,15 @@
     margin-left: 35%;
 }
 
-
-.btn-warning{
+.btn-warning {
     color: blue;
     font-weight: 500;
 }
 
+
 /* VeiwsAndPaymentsContent */
 
-#VeiwsAndPaymentsContent{
+#VeiwsAndPaymentsContent {
     border: 2px solid rgb(198, 251, 233);
     background-color: rgb(198, 251, 233);
     height: 500px;
@@ -775,48 +825,48 @@
     z-index: 0;
 }
 
-.VeiwsAndPaymentsTable{
+.VeiwsAndPaymentsTable {
     background-color: rgb(253, 255, 254);
     width: 100%;
-     border: 2px solid rgb(24, 131, 173);
-     margin-top: 10px;
+    border: 2px solid rgb(24, 131, 173);
+    margin-top: 10px;
     border-radius: 5px;
 }
 
-.makepaymentsbtn{
+.makepaymentsbtn {
     border: 1px solid grey;
     background-color: #9BBBB2;
     color: white;
     border-radius: 5px;
 }
 
-.tdsettings{
+.tdsettings {
     padding-top: 40px;
     padding-bottom: 10px;
 }
 
-.veiwHistory{
+.veiwHistory {
     border: 2px solid rgb(198, 251, 233);
     background-color: rgb(198, 251, 233);
     border-radius: 5px;
     display: none;
 }
 
-.Billingandhistory{
-    display:flex;
+.Billingandhistory {
+    display: flex;
     color: #000;
     margin-left: 20px;
 }
 
-#Billingp{
+#Billingp {
     border: 1px solid black;
     border-radius: 5px;
-    padding: 5px 5px 5px 5px ;
+    padding: 5px 5px 5px 5px;
     margin-bottom: 0px;
     background-color: yellow;
 }
 
-#paymenthistoryp{
+#paymenthistoryp {
     border: 1px solid black;
     margin-left: 25px;
     border-radius: 5px;
@@ -824,35 +874,35 @@
     margin-bottom: 0px;
 }
 
-#Billingt{
+#Billingt {
     background-color: rgb(253, 255, 254);
-    width: 100%; 
+    width: 100%;
     border: 2px solid rgb(24, 131, 173);
     border-radius: 5px;
 }
 
-.Unpaidbtn{
-    border:1px solid red;
-    border-radius:5px;
+.Unpaidbtn {
+    border: 1px solid red;
+    border-radius: 5px;
     color: red;
 }
 
-.Paid{
+.Paid {
     border: 1px solid green;
     border-radius: 5px;
-    color:green;
+    color: green;
 }
 
-.paymenthistoryt{
+.paymenthistoryt {
     background-color: rgb(253, 255, 254);
-    width: 100%; 
+    width: 100%;
     border: 2px solid rgb(24, 131, 173);
     border-radius: 5px;
     text-align: center;
     display: none;
 }
 
-#ReadyCaseFormatContent{
+#ReadyCaseFormatContent {
     border: 2px solid rgb(198, 251, 233);
     background-color: rgb(198, 251, 233);
     height: 800px;
@@ -862,26 +912,101 @@
     position: relative;
     z-index: 0;
 }
-/* Ready case format tab css */
-#ReadyCaseFormatContent tr{
-    border: 1px solid grey;
 
+
+/* Ready case format tab css */
+
+#ReadyCaseFormatContent tr {
+    border: 1px solid grey;
 }
 
-#ReadyCaseFormatContent td{
+#ReadyCaseFormatContent td {
     padding: 10px 10px 10px 10px;
     font-size: 15px;
 }
 
+
 /* pateint visit report c ss */
+
+
 /* iframes added in visit reports */
 
-.iframes{
+.iframes {
     background-color: rgba(187, 245, 247, 0.87);
     margin-top: -12px;
 }
 
-.iframe{
+.iframe {
     background-color: rgba(187, 245, 247, 0.87);
+    display: none;
+}
+
+
+/* Advanced Patient Search */
+
+.popup-form {
+    display: flex;
+    justify-content: center;
+}
+
+.dvSelect>select,
+#divControl>input,
+#divControl>select {
+    /* width: 15rem; */
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    text-align: initial;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.popup-form>select>option {
+    width: 15rem;
+    font-size: 12px;
+}
+
+.fa-times-circle {
+    font-size: 18px;
+    color: red;
+    margin-top: 14px;
+    margin-left: -5px;
+}
+
+#btnAddMore {
+    color: rgb(0, 162, 255);
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+#divCategories {
+    margin: 10px 27px;
+    box-shadow: 0 0 13px -7px #444444;
+    background-color: white;
+    width: 55%;
+}
+
+#divCategories>input {
+    /* width: 4rem; */
+    margin: 5px;
+}
+
+#divCategories>input,
+#divCategories>label {
+    cursor: pointer;
+}
+
+#divCategories>label:hover {
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+#divNoData {
+    color: red;
+    font-size: 14px;
+    margin-left: 36px;
     display: none;
 }

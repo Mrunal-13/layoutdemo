@@ -94,30 +94,46 @@ function showpateintTable() {
     if (document.getElementById("pateintdropdown").style.display === 'none') {
         document.getElementById('pateintdropdown').style.display = 'block';
     }
+    else if (document.getElementById("pateintdropdown").style.display === "block") {
+        document.getElementById("pateintdropdown").style.display = "none";
+    }
     // document.getElementsById('btnforpateints').style.background = 'yellow';
+    
+    if (document.getElementById("vl").style.marginLeft === "10px" || document.getElementById("vl").style.marginLeft === "") {
+        document.getElementById("vl").style.marginLeft = "300px"
+    } 
+    else if (document.getElementById("vl").style.marginLeft === "300px" || document.getElementById("vl").style.marginLeft === "") {
+        document.getElementById("vl").style.marginLeft = "10px"
+    }
+
+    if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
+        document.getElementById("Appointment").style.marginLeft = "180px";
+    }
+    else if (document.getElementById("Appointment").style.marginLeft === "180px" || document.getElementById("Appointment").style.marginLeft === "") {
+        document.getElementById("Appointment").style.marginLeft = "480px";
+    } 
+    else if (document.getElementById("Appointment").style.marginLeft === "300px") {
+        document.getElementById("Appointment").style.marginLeft = "10px"
+    }
+    else if (document.getElementById("Appointment").style.marginLeft === "10px") {
+        document.getElementById("Appointment").style.marginLeft = "300px"
+    }
+
     if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === "") {
         document.getElementById("navbar-fourth").style.width = "78%";
-    } else if (document.getElementById("navbar-fourth").style.width === "83.5%") {
+        console.log("78")
+    } 
+    else if (document.getElementById("navbar-fourth").style.width === "83.5%") {
         document.getElementById("navbar-fourth").style.width = "65%";
-    } else if (document.getElementById("pateintdropdown").style.display === "block") {
-        document.getElementById("pateintdropdown").style.display = "none";
-        if (document.getElementById("navbar-fourth").style.width === "65%") {
-            document.getElementById("navbar-fourth").style.width = "83.5%";
-        }
-        if (document.getElementById("vl").style.marginLeft === "10px" || document.getElementById("vl").style.marginLeft === "") {
-            document.getElementById("vl").style.marginLeft = "300px"
-        } else if (document.getElementById("vl").style.marginLeft === "300px" || document.getElementById("vl").style.marginLeft === "") {
-            document.getElementById("vl").style.marginLeft = "10px"
-        }
-        if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
-            document.getElementById("Appointment").style.marginLeft = "180px";
-        } else if (document.getElementById("Appointment").style.marginLeft === "180px" || document.getElementById("Appointment").style.marginLeft === "") {
-            document.getElementById("Appointment").style.marginLeft = "480px";
-        } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
-            document.getElementById("Appointment").style.marginLeft = "10px"
-        } else if (document.getElementById("Appointment").style.marginLeft === "10px") {
-            document.getElementById("Appointment").style.marginLeft = "300px"
-        }
+        console.log(65)
+    } 
+    else if (document.getElementById("navbar-fourth").style.width === "65%") {
+        document.getElementById("navbar-fourth").style.width = "83.5%";
+        console.log("83")
+    }
+    else if (document.getElementById("navbar-fourth").style.width === "78%") {
+        document.getElementById("navbar-fourth").style.width = "96%";
+        console.log("83")
     }
 
 }
@@ -480,12 +496,25 @@ function VisitReport() {
     }
     if (document.getElementById("VeiwsAndPaymentsContent").style.display = "block") {
         document.getElementById("VeiwsAndPaymentsContent").style.display = "none";
-        document.getElementById("iframes").style.display = "none";
-        document.getElementById("ReadyCaseFormatContent").style.display = "block";
-        if (document.getElementById("AppointmentDetails").style.display = "block") {
-            document.getElementById("AppointmentDetails").style.display = "none";
-        }
     }
+    if(document.getElementById("iframes").style.display = "none"){
+        document.getElementById("iframes").style.display = "block"
+        document.getElementById("iframe1").style.display = "block";
+        document.getElementById("iframe2").style.display="block";
+        document.getElementById("iframe3").style.display="block";
+        document.getElementById("iframe4").style.display="block";
+        document.getElementById("iframe5").style.display = "block";
+        document.getElementById("iframe6").style.display = "block";
+        document.getElementById("iframe7").style.display="block";
+        document.getElementById("iframe8").style.display="block";
+        document.getElementById("iframe9").style.display="block";
+        document.getElementById("iframe10").style.display="block";
+        document.getElementById("iframe11").style.display="block";
+
+    }
+
+    console.log("clicked")
+    // document.getElementById("ReadyCaseFormatContent").style.display = "block";
 
 }
 

@@ -5,19 +5,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
-    <link rel="stylesheet" href="./layout1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/invite.css">
+    <link rel="stylesheet" href="./style/doctor.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Hospital admin</title>
 </head>
 
 <body>
@@ -116,12 +126,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="addPateintButton" href="Addpateints/addpatient.html">
+                    <a class="nav-link mr-lg-2" id="addPateintButton" href="../Addpateints/addpatient.html">
                         <button type="button" class="addpatient">Add Patient</button>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="calenderButton" href="Calendar/calendar.html">
+                    <a class="nav-link mr-lg-2" id="calenderButton" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-calendar"></i>
                     </a>
                 </li>
@@ -137,19 +147,19 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="chats/chats.html">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <!-- <span class="d-lg-none">Call-Messages
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#">
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <span class="d-lg-none">Messages
                             <span class="badge badge-pill badge-primary">12 New</span>
                         </span>
                         <span class="indicator text-primary d-none d-lg-block">
                             <i class="fa fa-fw fa-circle"></i>
-                        </span> -->
+                        </span>
                     </a>
                 </li>
             </ul>
 
-            <!-- message shortcut
+            <!-- message shortcut -->
             <div class="messageAlertDetails" id="messageAlertDetails">
                 <div class="MADHeader">
                     <h6 class="MADHeader-info">New Messages:</h6>
@@ -191,7 +201,7 @@
                     <a class="viewAllMsgs" href="#">View all messages</a>
                 </div>
 
-            </div> -->
+            </div>
             <!-- admin setting box -->
             <div class="adminSettingBox" id="adminSettingBox">
                 <div class="adminSettingHeader">
@@ -211,7 +221,7 @@
         <div class="navbar-third">
             <div class="dropdown">
                 <button id="dropbtnMyfunction" class="dropbtn">
-                    <img class="user-img" src="images/2.png" />Rakesh Nandare
+                    <img class="user-img" src="../images/2.png" />Rakesh Nandare
                     <i class="fa fa-angle-down"></i>
                 </button>
             </div>
@@ -284,29 +294,28 @@
             </div>
         </div>
     </nav>
-    
     <div id="mySidenav" class="sidenav">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                <a class="nav-link" href="dashboard.html">
+                <a class="nav-link" href="../dashboard.html">
                     <i class="fa fa-fw fa-dashboard"></i>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="doctor1/doctor.html">
+                <a class="nav-link" href="/doctor1/doctor.html">
                     <i class="fa fa-fw fa-user-md"></i>
                     <span class="nav-link-text">Doctors</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" onclick="showpateintTable()">
-                <a class="nav-link" href="pateints/index.html">
+                <a class="nav-link">
                     <i class="fa fa-fw fa fa-wheelchair"></i>
                     <span class="nav-link-text">Patient</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="Calendar/calendar.html">
+                <a class="nav-link" href="../Calendar/calendar.html">
                     <i class="fa fa-fw fa fa-calendar"></i>
                     <span class="nav-link-text">Appointment</span>
                 </a>
@@ -314,7 +323,7 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="tables.html">
                     <i class="fa fa-fw fa fa-calendar-check-o"></i>
-                    <span class="nav-link-text">Doctor Schedule</span>
+                    <span class="nav-link-text">Dr.Schedule</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
@@ -429,13 +438,146 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-                <a class="nav-link" href="./Setting Folder/practice-profile.html">
+                <a class="nav-link" href="../Setting Folder/practice-profile.html">
                     <i class="fa fa-fw fa-cog"></i>
                     <span class="nav-link-text">Setting</span>
                 </a>
             </li>
         </ul>
     </div>
+    <div class="main_container">
+        <main class="ivite_main">
+            <div class="invite_head">
+                <p>Invite By Email</p>
+                <div class="invite_settingbtn">
+                    <span class="fa-solid fa-user-gear"></span>
+                    <a href="./invitations.html">User Settings</a>
+                </div>
+            </div>
+            <div class="email_container">
+                <div class="email_wrap">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="email_show">
+
+                    </div>
+                    <div class="email_input">
+                        <input type="email" name="" id="" placeholder="Type email addresses here">
+                        <a href="#" id="send_invite">Send Invite</a>
+                    </div>
+                </div>
+                <div class="email_info">
+                    <p>Separate emails with commas to invite multiple people ","
+                    </p>
+                </div>
+            </div>
+            <div class="access_level">
+                <div class="acess_head">
+                    <p>Access Level</p>
+                </div>
+                <div class="access_wrap">
+                    <div class="access_input">
+                        <input type="radio" name="access">
+                        <label for="">Admin</label>
+                    </div>
+                    <div class="access_input">
+                        <input type="radio" name="access">
+                        <label for="">Manager</label>
+                    </div>
+                    <div class="access_input">
+                        <input type="radio" name="access">
+                        <label for="">Doctor</label>
+                    </div>
+                    <div class="access_input">
+                        <input type="radio" name="access">
+                        <label for="">Nursing Staff</label>
+                    </div>
+                    <div class="access_input">
+                        <input type="radio" name="access">
+                        <label for="">Regular User</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group_head">
+                    <p>The groups they belong to</p>
+                </div>
+                <div class="group_wrap">
+                    <div class="group_input">
+                        <input type="checkbox" name="group">
+                        <label for="">Admin</label>
+                    </div>
+                    <div class="group_input">
+                        <input type="checkbox" name="group">
+                        <label for="">Manager</label>
+                    </div>
+                    <div class="group_input">
+                        <input type="checkbox" name="group">
+                        <label for="">Doctor</label>
+                    </div>
+                    <div class="group_input">
+                        <input type="checkbox" name="group">
+                        <label for="">Nursing Staff</label>
+                    </div>
+                    <div class="group_input">
+                        <input type="checkbox" name="group">
+                        <label for="">Regular User</label>
+                    </div>
+                </div>
+                <div class="group_foot">
+                    <p>Additional settings</p>
+                </div>
+            </div>
+            <div class="bottom_sendbtn">
+                <a href="#" id="send_btn">Send Invite</a>
+            </div>
+        </main>
+    </div>
+    <div class="send_modal" id="send_modal">
+        <div class="send_img">
+            <img src="./images/image 305.png" alt="">
+            <i class="fa-solid fa-xmark" id="closed"></i>
+        </div>
+        <div class="modal_bottom">
+            <p>You've invited 1 person</p>
+            <div class="invited">
+                <div class="invited_item1">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            send
+                        </span>
+                    </div>
+                    <p>xyz@gmail.com</p>
+                </div>
+                <div class="invited_item2">
+                    <p>Invited as a coworker</p>
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" id="invite_btn">Invite More People</a>
+                <a href="#" id="done_btn">Done</a>
+            </div>
+        </div>
+    </div>
+    <div class="restore_modal" id="restore_modal">
+        <div class="sender_info">
+            <p>Some users already exist</p>
+            <p>The following user(s) are already part of this company but
+                are pending permanent deletion:</p>
+            <p>xyz@gmail.com</p>
+            <p>Would you like to skip adding them, or restore them with the settings from this page applied?</p>
+        </div>
+        <div class="button_restore">
+            <a href="#" id="cancel">CANCEL</a>
+            <a href="#" id="restore">Restore</a>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/invite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./layout1.js"></script>
 </body>
+
+</html>

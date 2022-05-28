@@ -6,6 +6,7 @@ $(document).ready(function() {
     $(".dvPracticeDetails").css("display", "none");
     $(".dvPracticeStaff").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 
     $("#about-link").click(function() {
         clickAbout();
@@ -63,6 +64,24 @@ $(document).ready(function() {
     });
     $("#active-appoin-category").click(function() {
         clickAppoinCate();
+    });
+    $("#active-notification").click(function() {
+        clickNotification();
+    });
+    $("#active-subscription").click(function() {
+        clickSubscription();
+    });
+    $("#active-trash-bin").click(function() {
+        clickTrashBin();
+    });
+    $("#communication-link").click(function() {
+        clickCommunication();
+    });
+    $("#active-appoin-follow").click(function() {
+        clickAppoinFollow();
+    });
+    $("#active-comm-detail").click(function() {
+        clickCommDetail();
     });
 
     // Doctor's Practice Timings- Office Appointments
@@ -332,6 +351,7 @@ function clickPracticeProfile() {
     $("#practice-staff").removeClass("active-li");
     $("#calendar-link").removeClass("active-li");
     $("#profile-link").addClass("active-li");
+    $("#communication-link").removeClass("active-li");
 
     $("#container").css("display", "flex");
     $("#form-1").css("display", "block");
@@ -343,6 +363,7 @@ function clickPracticeProfile() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 }
 
 function clickPracticeDetails() {
@@ -350,6 +371,7 @@ function clickPracticeDetails() {
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
     $("#calendar-link").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -361,14 +383,16 @@ function clickPracticeDetails() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 
 }
 
 function manageStaffTable() {
     $("#details-link").removeClass("active-li");
-    $("#calendar-link").removeClass("active-li");
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").addClass("active-li");
+    $("#calendar-link").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
 
     $("#active-manage").addClass("active");
     $("#active-noti").removeClass("active");
@@ -391,6 +415,7 @@ function manageStaffTable() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 }
 
 function staffNotiTable() {
@@ -409,6 +434,7 @@ function staffNotiTable() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 
 }
 
@@ -428,6 +454,7 @@ function doctorVisitTable() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 
 }
 
@@ -446,6 +473,7 @@ function clickOtherStaff() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 }
 
 function clickDoctor() {
@@ -459,6 +487,7 @@ function clickDoctor() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 }
 
 function doctorOfficeAppoin() {
@@ -472,6 +501,7 @@ function doctorOfficeAppoin() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvDVT-office-appoin").css("display", "block");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 }
 
 function clickAddDoctor() {
@@ -486,6 +516,7 @@ function clickAddDoctor() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvAddDoctorButton").css("display", "block");
     $(".dvCalendar").css("display", "none");
+    $(".dvCommunication").css("display", "none");
 }
 
 function clickAddStaff() {
@@ -499,6 +530,7 @@ function clickAddStaff() {
     $(".dvPracticeStaff").css("display", "none");
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvAddStaffButton").css("display", "block");
+    $(".dvCommunication").css("display", "none");
     $(".dvCalendar").css("display", "none");
 }
 
@@ -507,6 +539,7 @@ function clickCalendar() {
     $("#calendar-link").addClass("active-li");
     $("#details-link").removeClass("active-li");
     $("#profile-link").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
 
     $(".dvAbout").css("display", "none");
@@ -520,7 +553,11 @@ function clickCalendar() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "block");
     $(".dvWeek").css("display", "none");
+    $(".dvName").css("display", "none");
+    $(".dv_Subscription").css("display", "none");
+    $(".dvCommunication").css("display", "none");
     $(".dvAdd_new_cate").css("display", "none");
+    $(".dvTrash_Bin").css("display", "none");
 
 }
 
@@ -537,6 +574,7 @@ function clickGeneral() {
     $("#details-link").removeClass("active-li");
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -549,6 +587,9 @@ function clickGeneral() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvRegion_Time").css("display", "block");
     $(".dvWeek").css("display", "none");
+    $(".dvName").css("display", "none");
+    $(".dv_Subscription").css("display", "none");
+    $(".dvTrash_Bin").css("display", "none");
     $(".dvAdd_new_cate").css("display", "none");
 
 }
@@ -560,6 +601,7 @@ function clickPracticeTime() {
     $("#details-link").addClass("active-li");
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
 
     $("#active-practice-time").addClass("active");
     $("#active-general").removeClass("active");
@@ -580,6 +622,9 @@ function clickPracticeTime() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvWeek").css("display", "block");
     $(".dvRegion_Time").css("display", "none");
+    $(".dvName").css("display", "none");
+    $(".dv_Subscription").css("display", "none");
+    $(".dvTrash_Bin").css("display", "none");
     $(".dvAdd_new_cate").css("display", "none");
 }
 
@@ -588,6 +633,7 @@ function clickAppoinCate() {
     $("#details-link").removeClass("active-li");
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
 
     $("#active-appoin-category").addClass("active");
     $("#active-practice-time").removeClass("active");
@@ -608,5 +654,168 @@ function clickAppoinCate() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvWeek").css("display", "none");
     $(".dvRegion_Time").css("display", "none");
+    $(".dvName").css("display", "none");
+    $(".dv_Subscription").css("display", "none");
+    $(".dvTrash_Bin").css("display", "none");
     $(".dvAdd_new_cate").css("display", "block");
+}
+
+function clickNotification() {
+    $("#calendar-link").addClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#profile-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
+
+    $("#active-notification").addClass("active");
+    $("#active-appoin-category").removeClass("active");
+    $("#active-practice-time").removeClass("active");
+    $("#active-general").removeClass("active");
+    $("#active-practime-time").removeClass("active");
+    $("#active-subscription").removeClass("active");
+    $("#active-trash-bin").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvWeek").css("display", "none");
+    $(".dvRegion_Time").css("display", "none");
+    $(".dvAdd_new_cate").css("display", "none");
+    $(".dv_Subscription").css("display", "none");
+    $(".dvTrash_Bin").css("display", "none");
+    $(".dvName").css("display", "block");
+}
+
+function clickSubscription() {
+    $("#calendar-link").addClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#profile-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
+
+    $("#active-subscription").addClass("active");
+    $("#active-notification").removeClass("active");
+    $("#active-appoin-category").removeClass("active");
+    $("#active-practice-time").removeClass("active");
+    $("#active-general").removeClass("active");
+    $("#active-practime-time").removeClass("active");
+    $("#active-trash-bin").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvWeek").css("display", "none");
+    $(".dvRegion_Time").css("display", "none");
+    $(".dvAdd_new_cate").css("display", "none");
+    $(".dvName").css("display", "none");
+    $(".dvTrash_Bin").css("display", "none");
+    $(".dv_Subscription").css("display", "block");
+}
+
+function clickTrashBin() {
+    $("#calendar-link").addClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#profile-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
+
+    $("#active-trash-bin").addClass("active");
+    $("#active-subscription").removeClass("active");
+    $("#active-notification").removeClass("active");
+    $("#active-appoin-category").removeClass("active");
+    $("#active-practice-time").removeClass("active");
+    $("#active-general").removeClass("active");
+    $("#active-practime-time").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvWeek").css("display", "none");
+    $(".dvRegion_Time").css("display", "none");
+    $(".dvAdd_new_cate").css("display", "none");
+    $(".dvName").css("display", "none");
+    $(".dv_Subscription").css("display", "none");
+    $(".dvTrash_Bin").css("display", "block");
+
+}
+
+// Communication
+function clickCommunication() {
+    $("#communication-link").addClass("active-li");
+    $("#calendar-link").removeClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#profile-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "none");
+    $(".dvCommunication").css("display", "block");
+
+}
+
+function clickCommDetail() {
+    $("#active-comm-detail").addClass("active");
+    $("#active-appoin-follow").removeClass("active");
+    $("#active-wish-sms").removeClass("active");
+    $("#active-email").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "none");
+    $(".dvComm_Detail").css("display", "block");
+}
+
+function clickAppoinFollow() {
+    $("#active-appoin-follow").addClass("active");
+    $("#active-comm-detail").removeClass("active");
+    $("#active-wish-sms").removeClass("active");
+    $("#active-email").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvComm_Detail").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "block");
 }

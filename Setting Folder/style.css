@@ -44,7 +44,8 @@
 
 .navbar-sidenav>.nav-item-2>ul,
 .dvPracticeStaff ul,
-.dvCalendar ul {
+.dvCalendar ul,
+.dvCommunication ul {
     list-style-type: none;
 }
 
@@ -690,7 +691,8 @@ table-2 th td {
     box-sizing: border-box;
 }
 
-.calendar-form select {
+.calendar-form select,
+.dvName .name-description {
     background-color: #F1F3F4
 }
 
@@ -706,19 +708,96 @@ table-2 th td {
     font-size: 10px;
 }
 
-.col-sm-7 .position-absolute {
-    top: 2px;
-    left: 250px;
-}
-
 
 /* Appointment Category */
 
 .dvAdd_new_cate .row {
     border-bottom: 1px solid #C1C1C1;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .dvAdd_new_cate .row input {
     width: 300px;
+}
+
+.dvShare_With_Specific_People .row .small-label,
+.dv_Notification .row .small-label {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.dvShare_With_Specific_People .row img {
+    width: 50px;
+    height: 50px;
+}
+
+.dvShare_With_Specific_People .mb-3,
+.dv_Notification .mb-3,
+.dvImport_Export .border-row {
+    border-bottom: 1px solid #C1C1C1;
+}
+
+.dvShare_With_Specific_People .border-none,
+.dv_Notification .border-none {
+    border-bottom: none;
+}
+
+
+/* Notification */
+
+.dv_Notification .row .input-number {
+    width: 56px;
+}
+
+
+/* Subscription */
+
+.dv_Subscription .label-sub {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.dv_Subscription .border-div {
+    border: 0.5px solid #000000;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.dv_Subscription .footer-para {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+/* Trash - Bin */
+
+.dvTrash_Bin .row .col-sm-12 h6 {
+    font-size: 10px;
+}
+
+.dvTrash_Bin .row .heading-trash {
+    font-size: 11px;
+}
+
+.dvTrash_Bin .row .col-sm-12 {
+    background: #E7E9EA;
+    border-radius: 10px;
+    padding: 2px 15px;
+}
+
+.dvTrash_Bin table tbody tr th {
+    font-size: 14px;
+}
+
+
+/* Communications */
+
+.dvComm_Detail .row .col {
+    font-size: 15px;
+}
+
+.dvComm_Detail h6 .fa {
+    color: #B6B6B6;
 }

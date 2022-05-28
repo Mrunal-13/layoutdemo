@@ -623,11 +623,11 @@
                 <div class="main">
                     <div class="main_left">
                         <div class="add_branch">
-                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <a href="#" id="add-branch"><i class="fa fa-plus" aria-hidden="true"></i></a>
                             <label for="">Add Branch</label>
                         </div>
                         <div class="d-flex align-items-center justify-content-center mt-5">
-                            <div class="branch-card">
+                            <div class="branch-card branchCard">
                                 <div class="hd">
                                     <p>Branch-</p>
                                     <p>Sakinaka,Nagpur</p>
@@ -639,7 +639,7 @@
                                     <a href="#">Change</a>
                                 </div>
                             </div>
-                            <div class="branch-card1">
+                            <div class="branch-card1 branchCard">
                                 <div class="hd">
                                     <p>Branch-</p>
                                     <p>Sakinaka,Nagpur</p>
@@ -656,6 +656,351 @@
                 </div>
                 <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
             </div>
+
+            <!-- Add Branch -->
+            <div class="dvPractice-Profile dvAddBranch">
+                <ul class="d-flex li-buttons">
+                    <li class="active" id="active-practice-profile">
+                        Practice Profile
+                    </li>
+                    <li id="active-branches">Branches</li>
+                    <li id="active-media">Media</li>
+                    <li id="active-service-avalilable">Service Available</li>
+                    <li id="active-stories">Stories</li>
+                    <li id="active-patient-relation">Patient Relation</li>
+                    <li id="active-practice-achievment">Practice Achievement</li>
+                </ul>
+                <div class="dvPractice-Profile-1">
+                    <h6>Type of Practice Office</h6>
+                    <p>(please tick whichever is applicable)-You can select more than one option</p>
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col-2">
+                                <span class="text-warning position-absolute span-input">a)</span>
+                                <input type="checkbox" name="" id="" class="form-check-input position-relative" checked>Inpatient
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" name="" id="" class="form-check-input" checked>Outpatient
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" name="" id="" class="form-check-input" checked>Laboratory
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" name="" id="" class="form-check-input" checked>Imaging
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" name="" id="" class="form-check-input" checked>Centre
+                            </div>
+                            <div class="col-2">
+                                <input type="checkbox" name="" id="" class="form-check-input" checked>Any other (please specify)
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-2 mb-3">
+                                <span class="text-warning">b) (i) Inpatient:</span>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Hospital
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Nursing Home
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Maternity Home
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Primary Health Centre
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Community Health Centre
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Sanatorium
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Palliative Care
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                </div>
+                                <div class="col-3">
+                                    <input class="form-control" type="text" value="" id="">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-3">
+                                    <span class="text-warning">b) (ii) Number of Beds:</span>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-2 mb-3">
+                                <span class="text-warning">	b) (iii) Outpatient:</span>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Single Practitioner
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Polyclinic
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Sub-Centre
+                                </div>
+                                <div class="col-6">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Physiotherapy / Occupational Therapy Clinic
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Infertility Clinic
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Dental Clinic
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Dispensary
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Dialysis Centre
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Day Care Centre
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Mobile Clinic
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-2 mb-3">
+                                <span class="text-warning">b) (iv) Laboratory:</span>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Pathology
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Haematology
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Biochemistry
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Microbiology
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Genetics
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Collection Centre
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3 mb-3">
+                                <span class="text-warning">b) (v) Imaging Centre:</span>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" class="form-check-input">X-Ray
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Electro Cardio Graph (ECG)
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Ultra Sound
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" name="" id="" class="form-check-input">CT Scan
+                                </div>
+                                <div class="col-4">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Magnetic Resonance Imaging (MRI)
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-3">
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <span class="text-warning">	b) (vi) Any other (please specify):</span>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" name="" id="" class="form-control">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                    </div>
+                </div>
+
+                <!-- Practice-profile-2 -->
+                <div class="dvPractice-Profile-2">
+                    <div class="mt-4">
+                        <h6>Where are you located?</h6>
+                        <p>Drag and zoom the map and position the marker on the exact spot where your business is located.</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.069217773328!2d72.98418881482382!3d19.192178887021367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b92944c50103%3A0x75c197816350e9!2sChhatrapati%20Shivaji%20Maharaj%20Hospital%2C%20Kalwa%20West%2C%20Budhaji%20Nagar%2C%20Kalwa%2C%20Thane%2C%20Maharashtra%20400605!5e0!3m2!1sen!2sin!4v1653738443480!5m2!1sen!2sin"
+                            width="500" height="372" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                </div>
+
+                <!-- Practice-profile-3 -->
+                <div class="dvPractice-Profile-3">
+                    <div class="container mt-4 p-3">
+                        <h6>1. Office</h6>
+                        <div class="row mb-3">
+                            <div class="col-8">
+                                <label for="" class="form-label">Clinic Name/Hospital Name/Practice Establishment Name:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="" placeholder="DR. Jay Kumar">
+                                <div id="" class="form-text">eg. Sai Hospital, Sai Clinic, Sai Nursing Home etc</div>
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">Types of Practice services:<span class="text-danger">*</span></label>
+                                <select class="form-select">
+                                    <option value="" selected>Select</option>
+                                    <option value="">Select</option>
+                                    <option value="">Select</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="" class="form-label">Contact Number</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="+919373028151">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0 bg-success" type="checkbox" value="" aria-label="Checkbox for following text input" checked>
+                                    </div>
+                                    <span class="badge text-primary d-flex align-items-center justify-content-center"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" aria-label="Text input with checkbox" placeholder="jaysuryawanshi7896@gmail.com">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0 bg-success" type="checkbox" value="" aria-label="Checkbox for following text input" checked>
+                                    </div>
+                                    <span class="badge text-primary d-flex align-items-center justify-content-center"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">Website</label>
+                                <input type="text" class="form-control" id="">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="" class="form-label">Alternate Contact Number</label>
+                                <input type="text" class="form-control" id="" placeholder="+919373028151">
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">Alternate Email</label>
+                                <input type="email" class="form-control" id="" placeholder="jaysuryawanshi7896@gmail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-4 p-3">
+                        <h6>2. Address</h6>
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="" class="form-label">Address Line 1 </label>
+                                <input type="text" class="form-control" id="">
+                                <div id="" class="form-text d-flex justify-content-end"><a href="">Add Address Line</a></div>
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">Locality</label>
+                                <input type="text" class="form-control" id="" placeholder="Enter Locality">
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">City</label>
+                                <input type="text" class="form-control" id="" placeholder="Mumbai">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="" class="form-label">Country</label>
+                                <input type="text" class="form-control" id="" placeholder="India">
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">State / Province / Region</label>
+                                <select class="form-select">
+                                    <option value="" selected>Select</option>
+                                    <option value="">Select</option>
+                                    <option value="">Select</option>
+                                  </select>
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">Pincode</label>
+                                <input type="text" class="form-control" id="" placeholder="Enetr Pincode">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-4 p-3">
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                <h6>3. Name of the owner</h6>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="" placeholder="testerabc">
+                            </div>
+                            <div class="col-3">
+                                <input type="checkbox" class="form-check-input" id="" checked>
+                                <span class="text-warning">Same as Clinical Establishmet</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-4 p-3">
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                <h6 class="small-head">4. Name of the Person In-charge:<span class="text-danger">*</span></h6>
+                                <div id="" class="form-text">(owner of Practice Dashboard)</div>
+                            </div>
+                            <div class="col-4">
+                                <input type="text" class="form-control" id="">
+                            </div>
+                            <div class="col-2">
+                                <label for="" class="form-label">Qualification:<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                </div>
+            </div>
+
 
             <!-- Practice Staff -->
             <div class="dvPracticeStaff">

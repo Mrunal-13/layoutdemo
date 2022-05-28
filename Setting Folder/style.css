@@ -45,7 +45,8 @@
 .navbar-sidenav>.nav-item-2>ul,
 .dvPracticeStaff ul,
 .dvCalendar ul,
-.dvCommunication ul {
+.dvCommunication ul,
+.dvAddBranch ul {
     list-style-type: none;
 }
 
@@ -351,6 +352,10 @@ sub {
     height: 300px;
     background-color: #EFF4E4;
     border-radius: 10px;
+}
+
+.branchCard {
+    cursor: pointer;
 }
 
 .hd {
@@ -800,4 +805,39 @@ table-2 th td {
 
 .dvComm_Detail h6 .fa {
     color: #B6B6B6;
+}
+
+
+/* Practice - profile-1*/
+
+.dvAddBranch {
+    width: 1004px;
+}
+
+.dvAddBranch .li-buttons li {
+    margin: 0 23px;
+}
+
+.dvPractice-Profile-1 p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.dvPractice-Profile-1 .container .row {
+    font-size: 14px;
+}
+
+.dvPractice-Profile-1 .container .row .span-input {
+    left: -25px;
+}
+
+
+/*  Practice - profile-3*/
+
+.dvPractice-Profile-3 .container {
+    border-bottom: 1px solid #C1C1C1;
+}
+
+.dvPractice-Profile-3 .container .small-head {
+    font-size: 14px;
 }

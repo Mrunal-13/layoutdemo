@@ -7,6 +7,7 @@ $(document).ready(function() {
     $(".dvPracticeStaff").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 
     $("#about-link").click(function() {
         clickAbout();
@@ -82,6 +83,9 @@ $(document).ready(function() {
     });
     $("#active-comm-detail").click(function() {
         clickCommDetail();
+    });
+    $(".branchCard").click(function() {
+        clickAddBranch();
     });
 
     // Doctor's Practice Timings- Office Appointments
@@ -364,6 +368,7 @@ function clickPracticeProfile() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 }
 
 function clickPracticeDetails() {
@@ -384,6 +389,8 @@ function clickPracticeDetails() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 
 }
 
@@ -416,6 +423,7 @@ function manageStaffTable() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 }
 
 function staffNotiTable() {
@@ -558,6 +566,7 @@ function clickCalendar() {
     $(".dvCommunication").css("display", "none");
     $(".dvAdd_new_cate").css("display", "none");
     $(".dvTrash_Bin").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 
 }
 
@@ -777,6 +786,7 @@ function clickCommunication() {
     $(".dvCalendar").css("display", "none");
     $(".dvAppoin_Detail").css("display", "none");
     $(".dvCommunication").css("display", "block");
+    $(".dvAddBranch").css("display", "none");
 
 }
 
@@ -818,4 +828,24 @@ function clickAppoinFollow() {
     $(".dvCalendar").css("display", "none");
     $(".dvComm_Detail").css("display", "none");
     $(".dvAppoin_Detail").css("display", "block");
+}
+
+// Add Branch
+function clickAddBranch() {
+    $("#profile-link").addClass("active-li");
+    $("#communication-link").removeClass("active-li");
+    $("#calendar-link").removeClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+
+    $("#active-practice-profile").addClass("active");
+    $("#active-branches").removeClass("active");
+    $("#active-media").removeClass("active");
+    $("#active-service-avalilable").removeClass("active");
+    $("#active-stories").removeClass("active");
+    $("#active-patient-relation").removeClass("active");
+    $("#active-practice-achievment").removeClass("active");
+
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddBranch").css("display", "block");
 }

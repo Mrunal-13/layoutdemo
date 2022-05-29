@@ -140,12 +140,17 @@
     /* padding: 35px 65px; */
 }
 
-.btn-upload {
+
+/* .btn-upload {
     width: 75px;
     height: 30px;
     border: 1px solid black;
     border-radius: 7px;
     font-size: 15px;
+} */
+
+.choose-file {
+    width: 235px;
 }
 
 .para {
@@ -698,7 +703,11 @@ table-2 th td {
 
 .calendar-form select,
 .dvName .name-description {
-    background-color: #F1F3F4
+    background-color: #F1F3F4;
+}
+
+.modal-select {
+    background-color: white !important;
 }
 
 .calendar-form label {
@@ -829,6 +838,14 @@ table-2 th td {
 
 .dvPractice-Profile-1 .container .row .span-input {
     left: -25px;
+}
+
+
+/* Practice-profile-2 */
+
+#map {
+    width: 500px;
+    height: 371.67px;
 }
 
 

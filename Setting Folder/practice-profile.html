@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHqO46BDIhQnJpizDLv35o0FUkdAB-vnk"></script>
 
     <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
@@ -34,7 +35,73 @@
                     <form class="form-inline">
                         <div class="searchbox">
                             <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
-                            <button type="button" class="advnc-search" id="advnc-search">Advanced</button>
+                            <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal" data-bs-target="#popup">Advanced</button>
+                            <div class="modal fade" id="popup" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true" role="dialog" data-backdrop="false">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="popupLabel">Advance Patient Search</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="" class="popup-form">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="dvSelect">
+                                                                <select id="ddlInfo">
+                                                                <option value="patient_name">Patient Name</option>
+                                                                <option value="has_contact_number">Has Contact Number</option>
+                                                                <option value="contact_number">Contact Number</option>
+                                                                <option value="age_is">Age is</option>
+                                                                <option value="age_more_than">Age is More Than</option>
+                                                                <option value="age_less_than">Age is Less Than</option>
+                                                                <option value="has_date_of_birth">Has Date of Birth</option>
+                                                                <option value="date_of_birth">Date of Birth Is</option>
+                                                                <option value="date_of_birth_more_than">Date of Birth is More Than</option>
+                                                                <option value="date_of_birth_less_than">Date of Birth is Less Than</option>
+                                                                <option value="birthday_is_in">Birthday is in</option>
+                                                                <option value="has_patient_id">Has Patient ID</option>
+                                                                <option value="patient_id">Patient ID</option>
+                                                                <option value="has_aadhaar_id">Has Aadhaar ID</option>
+                                                                <option value="aadhaar_id">Aadhaar ID</option>
+                                                                <option value="has_email">Has Email</option>
+                                                                <option value="email">Email</option>
+                                                                <option value="has_email">Has Email</option>
+                                                                <option value="has_gender">Has Gender</option>
+                                                                <option value="gender">Gender is</option>
+                                                                <option value="has_pincode">Has Pincode</option>
+                                                                <option value="pincode">Pincode</option>
+                                                                <option value="has_street_address">Has Street Address</option>
+                                                                <option value="street_address">Street Address</option>
+                                                                <option value="has_blood_group">Has Blood Group</option>
+                                                                <option value="blood_group">Blood Group</option>
+                                                                <option value="was_referred_by_someone">Was Referred By Someone</option>
+                                                                <option value="referred_by_someone">Referred By</option>
+                                                            </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="divControl">
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+                                            <button id="btnAddMore">Add another parameter</button>
+                                            <div id="divCategories">
+
+                                            </div>
+                                            <div id="divNoData" style="display: none;">No Data Found</div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" id="btnSearch" onclick="ShowNoDataMessage()">Search</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCancel" onclick="HandleCancel()">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <span class="input-group-append">
                                 <button class="btn btn-primary searchbtn1" type="button">
                                     <i class="fa fa-search"></i>
@@ -517,9 +584,11 @@
                         <div class="banner-image">
                             <div class="d-flex justify-content-center align-items-center p-3">
                                 <img src="../images/img15.jpg" alt="Banner Image">
-                                <button class="btn-upload">Upload</button>
+                                <!-- <button class="btn-upload">Upload</button> -->
+                                <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                                <input type="file" class="form-control choose-file" id="inputGroupFile01">
                             </div>
-                            <div class="d-flex justify-content-center align-items-center para">For the best results on all devices, use an image that’s at least 2048 x 1152 pixels and 6MB or less.</div>
+                            <div class="d-flex justify-content-center align-items-center para">For the best results on all devices, use an image that's at least 2048 x 1152 pixels and 6MB or less.</div>
                         </div>
                         <div class="para mx-3">This image will appear across the top of your Practice Profile</div>
                     </div>
@@ -611,7 +680,9 @@
                 </div>
                 <h6 class="mt-4">Announcement</h6>
                 <div class="dvSubject dvSubject-4 d-flex align-items-center justify-content-center">
-                    <button class="btn-upload">Upload</button>
+                    <!-- <button class="btn-upload">Upload</button> -->
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    <input type="file" class="form-control choose-file" id="inputGroupFile02">
                 </div>
                 <div class="d-flex align-items-center justify-content-center mt-5">
                     <button class="btn btn-secondary btn-save">Save</button>
@@ -867,9 +938,8 @@
                         <h6>Where are you located?</h6>
                         <p>Drag and zoom the map and position the marker on the exact spot where your business is located.</p>
                     </div>
-                    <div class="d-flex align-items-center justify-content-center" id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.069217773328!2d72.98418881482382!3d19.192178887021367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b92944c50103%3A0x75c197816350e9!2sChhatrapati%20Shivaji%20Maharaj%20Hospital%2C%20Kalwa%20West%2C%20Budhaji%20Nagar%2C%20Kalwa%2C%20Thane%2C%20Maharashtra%20400605!5e0!3m2!1sen!2sin!4v1653738443480!5m2!1sen!2sin"
-                            width="500" height="372" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="responsive-map d-flex align-items-center justify-content-center">
+                        <div id="map"></div>
                     </div>
                     <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
                 </div>
@@ -1127,7 +1197,7 @@
                                     </span>
                                 </button>Ashok Patil
                             </td>
-                            <td>Doctor <span>Last Accessed: Never</span></td>
+                            <td>Receptionist <span>Last Accessed: Never</span></td>
                             <td>Appointments Confirmation , Daily Schedule</td>
                             <td><a href="">Edit/Delete</a></td>
                         </tr>
@@ -1141,7 +1211,7 @@
                                     </span>
                                 </button>Ashok Patil
                             </td>
-                            <td>Visiting Doctor <span>Last Accessed: Never</span></td>
+                            <td>Biller <span>Last Accessed: Never</span></td>
                             <td>Appointments Confirmation , Daily Schedule</td>
                             <td><a href="">Edit/Delete</a></td>
                         </tr>
@@ -2365,7 +2435,6 @@
                                         <option selected>Dr. Jay Suryawanshi</option>
                                         <option value="">Dr. Rakesh Nandre</option>
                                         <option value="">Dr. Ashok Patil</option>
-                                        <option value="">Dr. Ashok Patil</option>
                                     </select>
                                 </div>
                             </div>
@@ -2413,10 +2482,10 @@
                                     <label for="" class="col-sm-5 form-label">rakeshnandre433@gmail.com</label>
                                     <div class="col-sm-4">
                                         <select class="form-select form-select-sm position-relative" aria-label=".form-select-sm example">
-                                            <option selected>See all Appointment details</option>
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
+                                            <option selected>See all appointment details</option>
+                                            <option value="">See only free/busy (hide details)</option>
+                                            <option value="">Make changes to appointment</option>
+                                            <option value="">Make changes and manage sharing</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-1">
@@ -2426,7 +2495,38 @@
                                 <div class="mb-3 row border-none">
                                     <div class="col-sm-8"></div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-warning">+ Add People</button>
+                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addPeoplePopup">+ Add People</button>
+                                        <div class="modal fade" id="addPeoplePopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addPeoplePopupLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="addPeoplePopupLabel">Share with specific people</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="">
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Add email or name</label>
+                                                                <input type="text" class="form-control" placeholder="Add email or name">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Permissions</label>
+                                                                <select class="form-select form-select-sm modal-select" aria-label=".form-select-sm example">
+                                                                    <option selected>See all event details</option>
+                                                                    <option value="">See only free/busy (hide details)</option>
+                                                                    <option value="">Make changes to event</option>
+                                                                    <option value="">Make changes and manage sharing</option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer d-flex justify-content-between">
+                                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-primary">Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -2443,6 +2543,7 @@
                                     <div class="col-sm-3">
                                         <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
                                             <option selected>Notification</option>
+                                            <option value="">Email Notification</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-2">
@@ -2475,6 +2576,7 @@
                                     <div class="col-sm-3">
                                         <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
                                             <option selected>Notification</option>
+                                            <option value="">Email Notification</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-2">
@@ -2527,6 +2629,8 @@
                                     <div class="col-sm-3">
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                             <option selected>Email</option>
+                                            <option value="">None</option>
+                                            <option value="">Desktop Notification</option>
                                         </select>
                                     </div>
                                 </div>
@@ -2547,6 +2651,8 @@
                                     <div class="col-sm-3">
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                             <option selected>Email</option>
+                                            <option value="">None</option>
+                                            <option value="">Desktop Notification</option>
                                         </select>
                                     </div>
                                 </div>
@@ -2567,6 +2673,8 @@
                                     <div class="col-sm-3">
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                             <option selected>Email</option>
+                                            <option value="">None</option>
+                                            <option value="">Desktop Notification</option>
                                         </select>
                                     </div>
                                 </div>
@@ -2588,6 +2696,8 @@
                                     <div class="col-sm-3">
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                             <option selected>Email</option>
+                                            <option value="">None</option>
+                                            <option value="">Desktop Notification</option>
                                         </select>
                                     </div>
                                 </div>
@@ -2609,6 +2719,8 @@
                                     <div class="col-sm-3">
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                             <option selected>Email</option>
+                                            <option value="">None</option>
+                                            <option value="">Desktop Notification</option>
                                         </select>
                                     </div>
                                 </div>

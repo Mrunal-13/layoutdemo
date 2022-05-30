@@ -7,6 +7,7 @@ $(document).ready(function() {
     $(".dvPracticeStaff").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 
     $("#about-link").click(function() {
         clickAbout();
@@ -36,10 +37,10 @@ $(document).ready(function() {
         clickOtherStaff();
     });
     $("#btn-doctor").click(function() {
-        clickOtherStaff();
-    });
-    $("#btn-other-staff-2").click(function() {
         clickDoctor();
+    });
+    $("#btn-other-staff").click(function() {
+        clickOtherStaff();
     });
     $("#btn-other-doctor").click(function() {
         clickDoctor();
@@ -82,6 +83,9 @@ $(document).ready(function() {
     });
     $("#active-comm-detail").click(function() {
         clickCommDetail();
+    });
+    $(".branchCard").click(function() {
+        clickAddBranch();
     });
 
     // Doctor's Practice Timings- Office Appointments
@@ -364,6 +368,7 @@ function clickPracticeProfile() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 }
 
 function clickPracticeDetails() {
@@ -384,6 +389,8 @@ function clickPracticeDetails() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 
 }
 
@@ -416,6 +423,7 @@ function manageStaffTable() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 }
 
 function staffNotiTable() {
@@ -558,6 +566,7 @@ function clickCalendar() {
     $(".dvCommunication").css("display", "none");
     $(".dvAdd_new_cate").css("display", "none");
     $(".dvTrash_Bin").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
 
 }
 
@@ -777,6 +786,7 @@ function clickCommunication() {
     $(".dvCalendar").css("display", "none");
     $(".dvAppoin_Detail").css("display", "none");
     $(".dvCommunication").css("display", "block");
+    $(".dvAddBranch").css("display", "none");
 
 }
 
@@ -819,3 +829,77 @@ function clickAppoinFollow() {
     $(".dvComm_Detail").css("display", "none");
     $(".dvAppoin_Detail").css("display", "block");
 }
+
+// Add Branch
+function clickAddBranch() {
+    $("#profile-link").addClass("active-li");
+    $("#communication-link").removeClass("active-li");
+    $("#calendar-link").removeClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+
+    $("#active-practice-profile").addClass("active");
+    $("#active-branches").removeClass("active");
+    $("#active-media").removeClass("active");
+    $("#active-service-avalilable").removeClass("active");
+    $("#active-stories").removeClass("active");
+    $("#active-patient-relation").removeClass("active");
+    $("#active-practice-achievment").removeClass("active");
+
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddBranch").css("display", "block");
+}
+
+// Map
+var position = [19.1922, 72.9864];
+
+function initialize() {
+    var latlng = new google.maps.LatLng(position[0], position[1]);
+    var options = {
+        zoom: 10,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    map = new google.maps.Map(document.getElementById("map"), options);
+
+    marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title: "Latitude:" + position[0] +
+            " | Longitude:" + position[1]
+    });
+
+    google.maps.event.addListener(map, "click", function(event) {
+        var result = [event.latLng.lat(), event.latLng.lng()];
+        transition(result);
+    });
+};
+
+google.maps.event.addDomListener(window, "load", initialize);
+
+var numDeltas = 100;
+var delay = 5;
+var i = 0;
+var deltaLat;
+var deltaLng;
+
+function transition(result) {
+    i = 0;
+    deltaLat = (result[0] - position[0]) / numDeltas;
+    deltaLng = (result[1] - position[1]) / numDeltas;
+    moveMarker();
+};
+
+function moveMarker() {
+    position[0] += deltaLat;
+    position[1] += deltaLng;
+    var latlng = new google.maps.LatLng(position[0], position[1]);
+    marker.setTitle("Latitude:" + position[0] +
+        " | Longitude:" + position[1]);
+    marker.setPosition(latlng);
+    if (i != numDeltas) {
+        i++;
+        setTimeout(moveMarker, delay);
+    }
+};

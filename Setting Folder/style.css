@@ -318,7 +318,6 @@ sub {
     }
 }
 
-
 /* Practice Details  Add Branch*/
 
 .main_left .d-flex {
@@ -421,7 +420,6 @@ sub {
     border-radius: 10px;
 }
 
-
 /* Practice Staff */
 
 .li-buttons li,
@@ -463,7 +461,6 @@ sub {
     padding: 1.5rem 1.2rem;
     box-sizing: border-box;
 }
-
 
 /* Staff Notification */
 
@@ -524,7 +521,6 @@ sub {
     box-sizing: border-box;
 }
 
-
 /* Doctor's Visit Timings */
 
 .li-dropdown li sub:first-child {
@@ -583,7 +579,6 @@ sub {
     color: #8B8B8B;
     font-size: 16px;
 }
-
 
 /* Visit Doctor Office Appointments */
 
@@ -676,7 +671,6 @@ table-2 th td {
     position: relative;
 }
 
-
 /* Button Add Doctor */
 
 .dvAddDoctorButton .link-active-login,
@@ -690,7 +684,6 @@ table-2 th td {
 .dvAddStaffButton .form-check-label span {
     font-size: 10px;
 }
-
 
 /* Calendar */
 
@@ -721,7 +714,6 @@ table-2 th td {
 .calendar-form .small-div {
     font-size: 10px;
 }
-
 
 /* Appointment Category */
 
@@ -757,13 +749,11 @@ table-2 th td {
     border-bottom: none;
 }
 
-
 /* Notification */
 
 .dv_Notification .row .input-number {
     width: 56px;
 }
-
 
 /* Subscription */
 
@@ -783,7 +773,6 @@ table-2 th td {
     font-weight: 400;
     font-size: 12px;
 }
-
 
 /* Trash - Bin */
 
@@ -805,7 +794,6 @@ table-2 th td {
     font-size: 14px;
 }
 
-
 /* Communications */
 
 .dvComm_Detail .row .col {
@@ -815,7 +803,6 @@ table-2 th td {
 .dvComm_Detail h6 .fa {
     color: #B6B6B6;
 }
-
 
 /* Practice - profile-1*/
 
@@ -840,14 +827,12 @@ table-2 th td {
     left: -25px;
 }
 
-
 /* Practice-profile-2 */
 
 #map {
     width: 500px;
     height: 371.67px;
 }
-
 
 /*  Practice - profile-3*/
 

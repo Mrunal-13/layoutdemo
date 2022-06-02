@@ -41,8 +41,8 @@ function openNav() {
     } else {
         document.getElementById("leftright").style.width = "95.5%";
     }
-    if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === "") {
-        document.getElementById("navbar-fourth").style.width = "83.5%";
+    if (document.getElementById("navbar-fourth").style.width === "83.5%" || document.getElementById("navbar-fourth").style.width === "") {
+        document.getElementById("navbar-fourth").style.width = "65%";
         console.log("83")
     } else if (document.getElementById("navbar-fourth").style.width === "78%") {
         document.getElementById("navbar-fourth").style.width = "65%";
@@ -67,7 +67,7 @@ function openNav() {
     //   console.log("900")
     // }
     if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
-        document.getElementById("Appointment").style.marginLeft = "300px";
+        document.getElementById("Appointment").style.marginLeft = "10px";
     } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
         document.getElementById("Appointment").style.marginLeft = "480px"
     } else if (document.getElementById("Appointment").style.marginLeft === "180px") {
@@ -90,53 +90,53 @@ dropbtnMyfunction.addEventListener("click", () => {
 
 
 // button for pateimt table
-function showpateintTable() {
-    if (document.getElementById("pateintdropdown").style.display === 'none') {
-        document.getElementById('pateintdropdown').style.display = 'block';
-    }
-    else if (document.getElementById("pateintdropdown").style.display === "block") {
-        document.getElementById("pateintdropdown").style.display = "none";
-    }
-    // document.getElementsById('btnforpateints').style.background = 'yellow';
+// function showpateintTable() {
+//     if (document.getElementById("pateintdropdown").style.display === 'none') {
+//         document.getElementById('pateintdropdown').style.display = 'block';
+//     }
+//     else if (document.getElementById("pateintdropdown").style.display === "block") {
+//         document.getElementById("pateintdropdown").style.display = "none";
+//     }
+//     // document.getElementsById('btnforpateints').style.background = 'yellow';
     
-    if (document.getElementById("vl").style.marginLeft === "10px" || document.getElementById("vl").style.marginLeft === "") {
-        document.getElementById("vl").style.marginLeft = "300px"
-    } 
-    else if (document.getElementById("vl").style.marginLeft === "300px" || document.getElementById("vl").style.marginLeft === "") {
-        document.getElementById("vl").style.marginLeft = "10px"
-    }
+//     if (document.getElementById("vl").style.marginLeft === "10px" || document.getElementById("vl").style.marginLeft === "") {
+//         document.getElementById("vl").style.marginLeft = "300px"
+//     } 
+//     else if (document.getElementById("vl").style.marginLeft === "300px" || document.getElementById("vl").style.marginLeft === "") {
+//         document.getElementById("vl").style.marginLeft = "10px"
+//     }
 
-    if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
-        document.getElementById("Appointment").style.marginLeft = "180px";
-    }
-    else if (document.getElementById("Appointment").style.marginLeft === "180px" || document.getElementById("Appointment").style.marginLeft === "") {
-        document.getElementById("Appointment").style.marginLeft = "480px";
-    } 
-    else if (document.getElementById("Appointment").style.marginLeft === "300px") {
-        document.getElementById("Appointment").style.marginLeft = "10px"
-    }
-    else if (document.getElementById("Appointment").style.marginLeft === "10px") {
-        document.getElementById("Appointment").style.marginLeft = "300px"
-    }
+//     if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
+//         document.getElementById("Appointment").style.marginLeft = "180px";
+//     }
+//     else if (document.getElementById("Appointment").style.marginLeft === "180px" || document.getElementById("Appointment").style.marginLeft === "") {
+//         document.getElementById("Appointment").style.marginLeft = "480px";
+//     } 
+//     else if (document.getElementById("Appointment").style.marginLeft === "300px") {
+//         document.getElementById("Appointment").style.marginLeft = "10px"
+//     }
+//     else if (document.getElementById("Appointment").style.marginLeft === "10px") {
+//         document.getElementById("Appointment").style.marginLeft = "300px"
+//     }
 
-    if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === "") {
-        document.getElementById("navbar-fourth").style.width = "78%";
-        console.log("78")
-    } 
-    else if (document.getElementById("navbar-fourth").style.width === "83.5%") {
-        document.getElementById("navbar-fourth").style.width = "65%";
-        console.log(65)
-    } 
-    else if (document.getElementById("navbar-fourth").style.width === "65%") {
-        document.getElementById("navbar-fourth").style.width = "83.5%";
-        console.log("83")
-    }
-    else if (document.getElementById("navbar-fourth").style.width === "78%") {
-        document.getElementById("navbar-fourth").style.width = "96%";
-        console.log("83")
-    }
+//     if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === "") {
+//         document.getElementById("navbar-fourth").style.width = "78%";
+//         console.log("78")
+//     } 
+//     else if (document.getElementById("navbar-fourth").style.width === "83.5%") {
+//         document.getElementById("navbar-fourth").style.width = "65%";
+//         console.log(65)
+//     } 
+//     else if (document.getElementById("navbar-fourth").style.width === "65%") {
+//         document.getElementById("navbar-fourth").style.width = "83.5%";
+//         console.log("83")
+//     }
+//     else if (document.getElementById("navbar-fourth").style.width === "78%") {
+//         document.getElementById("navbar-fourth").style.width = "96%";
+//         console.log("83")
+//     }
 
-}
+// }
 
 
 // input box for medical history

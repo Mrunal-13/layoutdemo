@@ -104,7 +104,7 @@
 }
 
 .navbar-fourth {
-    width: 96%;
+    width: 78%;
     /* position: absolute; */
     right: 0;
     margin-top: 78px;
@@ -420,7 +420,7 @@
     border-left: 3px solid black;
     height: 10000px;
     width: fit-content;
-    margin-left: 10px;
+    margin-left: 300px;
     position: sticky;
 }
 
@@ -684,7 +684,7 @@
 .Appointment {
     height: fit-content;
     margin-top: 250px;
-    margin-left: 480px;
+    margin-left: 180px;
     /* border-left: 3px solid black; */
 }
 

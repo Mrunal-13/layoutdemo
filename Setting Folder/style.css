@@ -6,6 +6,7 @@
 
 .sidenav-2 .navbar-sidenav {
     background-color: #bcfffc;
+    height: fit-content;
 }
 
 .mt-8 {

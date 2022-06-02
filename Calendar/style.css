@@ -596,6 +596,12 @@ select {
     /* border-bottom-right-radius: calc(0.3rem - 1px); */
     /* border-bottom-left-radius: calc(0.3rem - 1px); */
 }
+.advnc-search-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+}
 
 .modalend button {
     width: 80%;
@@ -964,4 +970,9 @@ select {
 
 .color-3 {
     color: #4C5BCC;
+}
+
+#mySidenav .navbar-sidenav .nav-item .active-link{
+        background-color: rgb(236, 236, 11);
+
 }

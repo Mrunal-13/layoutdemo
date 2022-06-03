@@ -521,7 +521,8 @@ font-size: 36px;
 .dvSelect>select,
 #divControl>input,
 #divControl>select {
-    /* width: 15rem; */
+    width: 12.5rem;
+    height: 32px;
     margin: 10px;
     border: 1px solid black;
     border-radius: 7px;
@@ -578,4 +579,7 @@ font-size: 36px;
     font-size: 14px;
     margin-left: 36px;
     display: none;
+}
+.input-group-append{
+    margin-left: -64px;
 }

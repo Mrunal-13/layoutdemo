@@ -401,9 +401,9 @@
 }
 
 
-/* Advanced Patient Search */
+  /* Advanced Patient Search */
 
-.popup-form {
+  .popup-form {
     display: flex;
     justify-content: center;
 }
@@ -411,8 +411,8 @@
 .dvSelect>select,
 #divControl>input,
 #divControl>select {
-    /* width: 15rem; */
-    margin: 10px;
+    width: 12.5rem;
+    margin: 13px;
     border: 1px solid black;
     border-radius: 7px;
     text-align: initial;
@@ -469,6 +469,23 @@
     margin-left: 36px;
     display: none;
 }
+
+.advnc-search {
+    background: none;
+    border: none;
+    color: #435aaa;
+    font-size: 14px;
+    position: relative;
+    right: 70px;
+    width: 61px;
+}
+
 .input-group-append{
     margin-left: -64px;
+}
+@media (min-width: 576px) {
+    .form-inline label {
+        display: initial !important;
+
+    }
 }

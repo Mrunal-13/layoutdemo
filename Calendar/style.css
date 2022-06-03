@@ -1045,3 +1045,10 @@ select {
         background-color: rgb(236, 236, 11);
 
 }
+
+@media (min-width: 576px) {
+    .form-inline label {
+        display: initial !important;
+
+    }
+}

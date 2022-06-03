@@ -469,3 +469,6 @@
     margin-left: 36px;
     display: none;
 }
+.input-group-append{
+    margin-left: -64px;
+}

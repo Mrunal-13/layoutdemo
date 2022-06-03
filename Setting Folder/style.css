@@ -6,7 +6,10 @@
 
 .sidenav-2 .navbar-sidenav {
     background-color: #bcfffc;
-    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 .mt-8 {
@@ -24,16 +27,17 @@
     margin-left: 10px;
 }
 
-.navbar-sidenav>.nav-item-2>ul>li>a {
+/* .navbar-sidenav>.nav-item-2>ul>li>a {
     border-bottom: 1px solid lightgray;
-}
+} */
 
 .navbar-sidenav>.nav-item-2>ul>li>a>img {
-    width: 30px;
+    width: 20px;
 }
 
 .navbar-sidenav>.nav-item-2>ul>li {
     margin-right: 40px;
+    margin-top: -10.4px;
 }
 
 .navbar-sidenav>.nav-item-2>.nav-link>.btn-admin-view {
@@ -79,6 +83,7 @@
 .divRight {
     margin-top: 80px;
     padding: 50px 60px;
+    margin-left: 395px;
 }
 
 .head-link,

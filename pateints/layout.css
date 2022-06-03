@@ -953,7 +953,7 @@
 .dvSelect>select,
 #divControl>input,
 #divControl>select {
-    /* width: 15rem; */
+    width: 12.8rem;
     margin: 10px;
     border: 1px solid black;
     border-radius: 7px;
@@ -1025,4 +1025,8 @@
 .btn-sec-popup{
     background-color: #6c757d;
     border-color: #6c757d;
+}
+#mySidenav .navbar-sidenav .nav-item .active-link{
+    background-color: rgb(236, 236, 11);
+
 }

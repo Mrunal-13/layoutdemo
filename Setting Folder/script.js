@@ -996,6 +996,7 @@ function openNav() {
     }
 }
 
+
 // Advanced Patient Search
 const optionMap = new Map();
 optionMap.set("patient_name", '<input type="text" placeholder="Contains"/>');

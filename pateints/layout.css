@@ -73,11 +73,6 @@
     background-color: rgb(236, 236, 11);
 }
 
-#exampleAccordion .nav-link-text {
-    font-size: 18px;
-    margin-left: 25px;
-}
-
 #alertsDropdown,
 #messagesDropdown {
     padding: 0;
@@ -211,13 +206,18 @@
     font-size: 18px;
     margin-left: 25px;
 }
+#exampleAccordion .nav-link-text {
+    font-size: 11.5px;
+    margin-left: 36px;
+}
 
 #exampleAccordion .nav-link i {
-    margin-left: 13px;
+    margin-left: 20px;
+    font-size: 21px;
 }
 
 .sidenav-second-level li a {
-    font-size: 15px;
+    font-size: 21px;
 }
 
 .alertDetails {

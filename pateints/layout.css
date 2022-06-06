@@ -67,7 +67,6 @@
     color: rgb(14, 14, 14);
     display: flex;
     flex-wrap: nowrap;
-    font-size: 21px;
 }
 
 .navbar-sidenav>.nav-item>.nav-link:hover {
@@ -75,9 +74,10 @@
 }
 
 #exampleAccordion .nav-link-text {
-    font-size: 11.5px;
+    font-size: 18px;
     margin-left: 25px;
 }
+
 #alertsDropdown,
 #messagesDropdown {
     padding: 0;
@@ -213,7 +213,7 @@
 }
 
 #exampleAccordion .nav-link i {
-    margin-left: 20px;
+    margin-left: 13px;
 }
 
 .sidenav-second-level li a {
@@ -967,8 +967,8 @@
 .dvSelect>select,
 #divControl>input,
 #divControl>select {
-    /* width: 15rem; */
-    margin: 10px;
+    width: 12rem;
+    margin: 16px;
     border: 1px solid black;
     border-radius: 7px;
     text-align: initial;
@@ -1007,6 +1007,9 @@
 #divCategories>input {
     /* width: 4rem; */
     margin: 5px;
+}
+#divCategories>label {
+    display: initial;
 }
 
 #divCategories>input,

@@ -843,3 +843,11 @@ table-2 th td {
 .dvPractice-Profile-3 .container .small-head {
     font-size: 14px;
 }
+#exampleAccordion .nav-link-text {
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+#exampleAccordion .nav-link i {
+    margin-left: 12px;
+}

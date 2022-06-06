@@ -80,20 +80,83 @@
             <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
             <li class="nav-item">
               <form class="form-inline">
-                <div class="input-group">
-                  <input
-                    class="form-control inputForSearch"
-                    type="text"
-                    placeholder="Search for..."
-                  />
-                  <span class="input-group-append">
-                    <button class="btn btn-primary searchbtn1" type="button">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </span>
-                </div>
+                  <div class="searchbox">
+                      <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
+                      <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Advanced</button>
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog" data-backdrop="false">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="staticBackdropLabel">Advance Patient Search</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <form action="" class="popup-form">
+                                          <table>
+                                              <tr>
+                                                  <td>
+                                                      <div class="dvSelect">
+                                                          <select id="ddlInfo">
+                                                          <option value="patient_name">Patient Name</option>
+                                                          <option value="has_contact_number">Has Contact Number</option>
+                                                          <option value="contact_number">Contact Number</option>
+                                                          <option value="age_is">Age is</option>
+                                                          <option value="age_more_than">Age is More Than</option>
+                                                          <option value="age_less_than">Age is Less Than</option>
+                                                          <option value="has_date_of_birth">Has Date of Birth</option>
+                                                          <option value="date_of_birth">Date of Birth Is</option>
+                                                          <option value="date_of_birth_more_than">Date of Birth is More Than</option>
+                                                          <option value="date_of_birth_less_than">Date of Birth is Less Than</option>
+                                                          <option value="birthday_is_in">Birthday is in</option>
+                                                          <option value="has_patient_id">Has Patient ID</option>
+                                                          <option value="patient_id">Patient ID</option>
+                                                          <option value="has_aadhaar_id">Has Aadhaar ID</option>
+                                                          <option value="aadhaar_id">Aadhaar ID</option>
+                                                          <option value="has_email">Has Email</option>
+                                                          <option value="email">Email</option>
+                                                          <option value="has_email">Has Email</option>
+                                                          <option value="has_gender">Has Gender</option>
+                                                          <option value="gender">Gender is</option>
+                                                          <option value="has_pincode">Has Pincode</option>
+                                                          <option value="pincode">Pincode</option>
+                                                          <option value="has_street_address">Has Street Address</option>
+                                                          <option value="street_address">Street Address</option>
+                                                          <option value="has_blood_group">Has Blood Group</option>
+                                                          <option value="blood_group">Blood Group</option>
+                                                          <option value="was_referred_by_someone">Was Referred By Someone</option>
+                                                          <option value="referred_by_someone">Referred By</option>
+                                                      </select>
+                                                      </div>
+                                                  </td>
+                                                  <td>
+                                                      <div id="divControl">
+
+                                                      </div>
+                                                  </td>
+                                              </tr>
+                                          </table>
+                                      </form>
+                                      <button id="btnAddMore" type="button">Add another parameter</button>
+                                      <div id="divCategories">
+
+                                      </div>
+                                      <div id="divNoData" style="display: none;">No Data Found</div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" id="btnSearch" onclick="ShowNoDataMessage()">Search</button>
+                                      <button type="button" class="btn btn-secondary btn-sec-popup" data-bs-dismiss="modal" id="btnCancel" onclick="HandleCancel()">Cancel</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <span class="input-group-append">
+                          <button class="btn btn-primary searchbtn1" type="button">
+                              <i class="fa fa-search"></i>
+                          </button>
+                      </span>
+                  </div>
               </form>
-            </li>
+          </li>
             <li class="nav-item">
               <a
                 class="nav-link mr-lg-2"

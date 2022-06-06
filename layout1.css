@@ -5,7 +5,6 @@
     width: 100%;
     z-index: 7;
     border-bottom: 3px solid black;
-    padding: 0;
 }
 
 .buttonForSideNav {
@@ -70,8 +69,7 @@
     padding: 0;
 }
 .input-group-append {
-    margin-right: 61px;
-    margin-left: -61px;
+    margin-left: -48px;
 }
 .advnc-search {
     background: none;
@@ -81,6 +79,7 @@
     position: relative;
     right: 70px;
     width: 61px;
+    margin-left: -17px;
 }
 
 .searchbox {
@@ -190,7 +189,6 @@
     color: rgb(14, 14, 14);
     display: flex;
     flex-wrap: nowrap;
-    font-size: 21px;
 }
 
 .navbar-sidenav>.nav-item>.nav-link:hover {
@@ -198,12 +196,12 @@
 }
 
 #exampleAccordion .nav-link-text {
-    font-size: 11.5px;
+    font-size: 18px;
     margin-left: 25px;
 }
 
 #exampleAccordion .nav-link i {
-    margin-left: 20px;
+    margin-left: 12px;
 }
 
 .sidenav-second-level li a {
@@ -431,8 +429,8 @@
 .dvSelect>select,
 #divControl>input,
 #divControl>select {
-    /* width: 15rem; */
-    margin: 10px;
+    width: 12rem;
+    margin: 16px;
     border: 1px solid black;
     border-radius: 7px;
     text-align: initial;
@@ -471,6 +469,9 @@
 #divCategories>input {
     /* width: 4rem; */
     margin: 5px;
+}
+#divCategories>label {
+    display: initial;
 }
 
 #divCategories>input,

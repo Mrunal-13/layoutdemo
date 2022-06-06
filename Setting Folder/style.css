@@ -6,6 +6,7 @@
 
 .sidenav-2 .navbar-sidenav {
     background-color: #bcfffc;
+    position: fixed;
 }
 
 .mt-8 {
@@ -24,7 +25,8 @@
 }
 
 .navbar-sidenav>.nav-item-2>ul>li>a {
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
+    margin-top: -10.5px;
 }
 
 .navbar-sidenav>.nav-item-2>ul>li>a>img {
@@ -76,6 +78,7 @@
 }
 
 .divRight {
+    margin-left: 395px;
     margin-top: 80px;
     padding: 50px 60px;
 }
@@ -846,6 +849,9 @@ table-2 th td {
 #exampleAccordion .nav-link-text {
     font-size: 11.5px;
     margin-left: 36px;
+}
+.nav-item-2 .nav-link-text{
+    font-size: 16px;
 }
 
 #exampleAccordion .nav-link i {

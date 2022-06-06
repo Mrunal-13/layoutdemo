@@ -412,7 +412,7 @@
 #divControl>input,
 #divControl>select {
     width: 12.5rem;
-    margin: 13px;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 7px;
     text-align: initial;

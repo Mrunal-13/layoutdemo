@@ -322,16 +322,17 @@ font-size: 36px;
 }
 
 #exampleAccordion .nav-link-text {
-    font-size: 18px;
-    margin-left: 25px;
+    font-size: 11.5px;
+    margin-left: 36px;
 }
 
 #exampleAccordion .nav-link i {
-    margin-left: 12px;
+    margin-left: 20px;
+    font-size: 21px;
 }
 
 .sidenav-second-level li a {
-    font-size: 15px;
+    font-size: 21px;
 }
 
 .alertDetails {

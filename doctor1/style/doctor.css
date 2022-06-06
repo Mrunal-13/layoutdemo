@@ -1,4 +1,4 @@
-.doctor {
+.doctor{
     position: relative;
     /* left: 75px; */
     display: flex;
@@ -7,15 +7,13 @@
     margin-top: 100px;
     margin-left: 50px;
 }
-
-.card_profile {
+.card_profile{
     display: flex;
     gap: 53px;
     flex-wrap: wrap;
     position: relative;
     left: 76px;
 }
-
 .doctor_head {
     display: flex;
     align-items: center;
@@ -24,8 +22,7 @@
     position: relative;
     left: 33px;
 }
-
-.doctor_head a {
+.doctor_head a{
     font-size: 30px;
     width: 215px;
     height: 42px;
@@ -34,12 +31,10 @@
     text-align: center;
     color: white;
 }
-
 .doctor_head p {
-    font-size: 36px;
+font-size: 36px;
 }
-
-.doctor_card {
+.doctor_card{
     display: flex;
     flex-direction: column;
     width: 374px;
@@ -49,17 +44,14 @@
     /* filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)); */
     border-radius: 3px;
 }
-
-.item1 {
+.item1{
     display: flex;
 }
-
-.name_img img {
+.name_img img{
     width: 100px;
     height: 100px;
 }
-
-.name_img {
+.name_img{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -69,23 +61,19 @@
     left: 23px;
     top: 14px;
 }
-
-.name_img :nth-child(2) {
+.name_img :nth-child(2){
     font-size: 22px;
     font-family: 'arial';
 }
-
-.name_img span {
+.name_img span{
     font-weight: 600;
 }
-
-.name_img p {
+.name_img p{
     font-weight: 30;
     font-size: 14px;
     margin: 0;
 }
-
-.item2 {
+.item2{
     width: 350px;
     display: flex;
     align-items: center;
@@ -97,12 +85,10 @@
     top: 63px;
     gap: 16px;
 }
-
-.type p {
+.type p{
     margin: 0;
 }
-
-.type {
+.type{
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -110,12 +96,10 @@
     right: 14px;
     top: 14px;
 }
-
-.one :nth-child(1) {
+.one :nth-child(1){
     font-weight: 600;
 }
-
-.two {
+.two{
     font-weight: 600;
 }
 
@@ -161,7 +145,21 @@
 .navbar-second {
     width: 97%;
 }
+#exampleAccordion .nav-item a {
+    color: rgb(14, 14, 14);
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 21px;
+}
 
+.navbar-sidenav>.nav-item>.nav-link:hover {
+    background-color: rgb(236, 236, 11);
+}
+
+#exampleAccordion .nav-link-text {
+    font-size: 11.5px;
+    margin-left: 25px;
+}
 .secondNavUl {
     width: 100%;
     display: flex;
@@ -204,7 +202,6 @@
 .searchbox {
     display: flex;
 }
-
 /* .input.form-control.inputForSearch {
     height: 40px;
 } */
@@ -432,93 +429,74 @@
     .navbar-first {
         width: 100px;
     }
-
     .navbar-brand,
     .buttonForSideNav {
         font-size: 12px;
     }
-
     .nav-link {
         padding: 0;
         margin: 0;
     }
-
     .d-lg-none {
         display: none;
     }
-
     #addPateintButton {
         width: 71px;
     }
-
     .addpatient {
         font-size: 10px;
     }
-
     .hospital-name {
         font-size: 10px;
     }
-
     .inputForSearch {
         width: 93px;
         height: 30px;
         font-size: 12px;
     }
-
     .searchbtn1 {
         height: 30px;
         display: flex;
         align-items: center;
     }
-
     #dropbtnMyfunction {
         font-size: 10px;
     }
-
     .nav-link-text {
         font-size: 14px;
         margin-left: 25px;
     }
-
     .alertBodyitems {
         font-size: 0.8rem;
     }
-
     .MadBodyitems {
         font-size: 0.8rem;
     }
-
     .adminSettingBox {
         left: 79%;
         width: 21%;
     }
-
     .adminSettingHeader {
         font-size: 13px;
     }
 }
 
 @media only screen and (max-width: 767px) {
-
     .navbar-second,
     .navbar-third {
         display: none;
     }
-
     .navbar-first {
         width: 100%;
     }
-
     .navbar-sidenav>.nav-item>.nav-link {
         font-size: 15px;
     }
-
     #mySidenav {
         width: 0px;
         border: none;
         background-color: #efefef;
     }
-
     .nav-link-text {
         font-size: 14px;
     }
@@ -557,8 +535,7 @@
 .dvSelect>select,
 #divControl>input,
 #divControl>select {
-    width: 12.5rem;
-    height: 32px;
+    /* width: 15rem; */
     margin: 10px;
     border: 1px solid black;
     border-radius: 7px;
@@ -615,15 +592,4 @@
     font-size: 14px;
     margin-left: 36px;
     display: none;
-}
-
-.input-group-append {
-    margin-left: -64px;
-}
-
-@media (min-width: 576px) {
-    .form-inline label {
-        display: initial !important;
-
-    }
 }

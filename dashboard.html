@@ -6,17 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script async defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script async defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script async defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
     <link rel="stylesheet" href="./layout1.css">
 </head>
 
@@ -35,13 +45,17 @@
                     <form class="form-inline">
                         <div class="searchbox">
                             <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
-                            <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Advanced</button>
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog" data-backdrop="false">
+                            <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Advanced</button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="false"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true" role="dialog" data-backdrop="false">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="staticBackdropLabel">Advance Patient Search</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="popup-form">
@@ -50,35 +64,51 @@
                                                         <td>
                                                             <div class="dvSelect">
                                                                 <select id="ddlInfo">
-                                                                <option value="patient_name">Patient Name</option>
-                                                                <option value="has_contact_number">Has Contact Number</option>
-                                                                <option value="contact_number">Contact Number</option>
-                                                                <option value="age_is">Age is</option>
-                                                                <option value="age_more_than">Age is More Than</option>
-                                                                <option value="age_less_than">Age is Less Than</option>
-                                                                <option value="has_date_of_birth">Has Date of Birth</option>
-                                                                <option value="date_of_birth">Date of Birth Is</option>
-                                                                <option value="date_of_birth_more_than">Date of Birth is More Than</option>
-                                                                <option value="date_of_birth_less_than">Date of Birth is Less Than</option>
-                                                                <option value="birthday_is_in">Birthday is in</option>
-                                                                <option value="has_patient_id">Has Patient ID</option>
-                                                                <option value="patient_id">Patient ID</option>
-                                                                <option value="has_aadhaar_id">Has Aadhaar ID</option>
-                                                                <option value="aadhaar_id">Aadhaar ID</option>
-                                                                <option value="has_email">Has Email</option>
-                                                                <option value="email">Email</option>
-                                                                <option value="has_email">Has Email</option>
-                                                                <option value="has_gender">Has Gender</option>
-                                                                <option value="gender">Gender is</option>
-                                                                <option value="has_pincode">Has Pincode</option>
-                                                                <option value="pincode">Pincode</option>
-                                                                <option value="has_street_address">Has Street Address</option>
-                                                                <option value="street_address">Street Address</option>
-                                                                <option value="has_blood_group">Has Blood Group</option>
-                                                                <option value="blood_group">Blood Group</option>
-                                                                <option value="was_referred_by_someone">Was Referred By Someone</option>
-                                                                <option value="referred_by_someone">Referred By</option>
-                                                            </select>
+                                                                    <option value="patient_name">Patient Name</option>
+                                                                    <option value="has_contact_number">Has Contact
+                                                                        Number</option>
+                                                                    <option value="contact_number">Contact Number
+                                                                    </option>
+                                                                    <option value="age_is">Age is</option>
+                                                                    <option value="age_more_than">Age is More Than
+                                                                    </option>
+                                                                    <option value="age_less_than">Age is Less Than
+                                                                    </option>
+                                                                    <option value="has_date_of_birth">Has Date of Birth
+                                                                    </option>
+                                                                    <option value="date_of_birth">Date of Birth Is
+                                                                    </option>
+                                                                    <option value="date_of_birth_more_than">Date of
+                                                                        Birth is More Than</option>
+                                                                    <option value="date_of_birth_less_than">Date of
+                                                                        Birth is Less Than</option>
+                                                                    <option value="birthday_is_in">Birthday is in
+                                                                    </option>
+                                                                    <option value="has_patient_id">Has Patient ID
+                                                                    </option>
+                                                                    <option value="patient_id">Patient ID</option>
+                                                                    <option value="has_aadhaar_id">Has Aadhaar ID
+                                                                    </option>
+                                                                    <option value="aadhaar_id">Aadhaar ID</option>
+                                                                    <option value="has_email">Has Email</option>
+                                                                    <option value="email">Email</option>
+                                                                    <option value="has_email">Has Email</option>
+                                                                    <option value="has_gender">Has Gender</option>
+                                                                    <option value="gender">Gender is</option>
+                                                                    <option value="has_pincode">Has Pincode</option>
+                                                                    <option value="pincode">Pincode</option>
+                                                                    <option value="has_street_address">Has Street
+                                                                        Address</option>
+                                                                    <option value="street_address">Street Address
+                                                                    </option>
+                                                                    <option value="has_blood_group">Has Blood Group
+                                                                    </option>
+                                                                    <option value="blood_group">Blood Group</option>
+                                                                    <option value="was_referred_by_someone">Was Referred
+                                                                        By Someone</option>
+                                                                    <option value="referred_by_someone">Referred By
+                                                                    </option>
+                                                                </select>
                                                             </div>
                                                         </td>
                                                         <td>
@@ -96,8 +126,10 @@
                                             <div id="divNoData" style="display: none;">No Data Found</div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" id="btnSearch" onclick="ShowNoDataMessage()">Search</button>
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCancel" onclick="HandleCancel()">Cancel</button>
+                                            <button type="button" class="btn btn-primary" id="btnSearch"
+                                                onclick="ShowNoDataMessage()">Search</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                id="btnCancel" onclick="HandleCancel()">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +143,8 @@
                     </form>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="microPhoneChoose" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link mr-lg-2" id="microPhoneChoose" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-microphone"></i>
                     </a>
                 </li>
@@ -126,7 +159,8 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-bell"></i>
                         <span class="d-lg-none">Alerts
                             <span class="badge badge-pill badge-warning">6 New</span>
@@ -201,10 +235,14 @@
                 </div>
                 <hr style="margin: 15px 0;">
                 <ul id="settingOptions">
-                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17" data-height="17"></span> Edit Profile</li>
-                    <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;" data-width="17" data-height="17"></span> Account Setting</li>
-                    <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17" data-height="17"></span> Add User</li>
-                    <li><span class="iconify" data-icon="bx:log-out" style="color: gray;" data-width="17" data-height="17"></span> Log Out</li>
+                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17"
+                            data-height="17"></span> Edit Profile</li>
+                    <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
+                            data-width="17" data-height="17"></span> Account Setting</li>
+                    <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
+                            data-height="17"></span> Add User</li>
+                    <li><span class="iconify" data-icon="bx:log-out" style="color: gray;" data-width="17"
+                            data-height="17"></span> Log Out</li>
                 </ul>
             </div>
         </div>
@@ -283,7 +321,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div id="mySidenav" class="sidenav">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
@@ -298,7 +336,8 @@
                     <span class="nav-link-text">Doctors</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" onclick="showpateintTable()">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables"
+                onclick="showpateintTable()">
                 <a class="nav-link" href="pateints/index.html">
                     <i class="fa fa-fw fa fa-wheelchair"></i>
                     <span class="nav-link-text">Patient</span>
@@ -329,7 +368,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-user"></i>
                     <span class="nav-link-text">Employee</span>
                 </a>
@@ -349,7 +389,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-book"></i>
                     <span class="nav-link-text">Payroll</span>
                 </a>
@@ -366,7 +407,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-video-camera"></i>
                     <span class="nav-link-text">Call</span>
                 </a>
@@ -380,7 +422,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-envelope"></i>
                     <span class="nav-link-text">email</span>
                 </a>
@@ -394,7 +437,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fas fa-comment"></i>
                     <span class="nav-link-text">Blog</span>
                 </a>
@@ -420,7 +464,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-flag"></i>
                     <span class="nav-link-text">Report</span>
                 </a>
@@ -441,7 +486,10 @@
             </li>
         </ul>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="./layout1.js"></script>
 </body>
+<!-- malkesh code -->

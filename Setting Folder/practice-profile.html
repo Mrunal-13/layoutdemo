@@ -41,7 +41,9 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="popupLabel">Advance Patient Search</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="HandleCancel()"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="popup-form">
@@ -575,9 +577,14 @@
                     <div class="col">
                         <div class="dvPageLogo">Page Logo</div>
                         <div class="page-logo position-relative">
-                            <img src="../images/img13.png" alt="Page Logo">
+                            <img src="../images/img13.png" alt="Page Logo" id="pageLogo">
                             <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-light text-dark">
-                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                <!-- Code for setting-branding Page Logo @anjudewangan -->
+                                <label for="imgInp">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </label>
+                                <input type="file" accept="image/*" id="imgInp" />
+                                 <!-- Code for setting-branding Page Logo @anjudewangan -->
                                 <span class="visually-hidden">unread messages</span>
                             </span>
                         </div>

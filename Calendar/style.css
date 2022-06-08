@@ -603,6 +603,11 @@ select {
     color: white;
     border-radius: 5px;
 }
+.modalend {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 .TitleName {
     display: flex;

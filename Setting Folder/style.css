@@ -133,31 +133,32 @@
     margin-top: 15px;
 }
 
-.banner-image img {
-    width: 150px;
-    height: 79px;
-}
-
 .container .row .col {
     margin: 35px 0;
     /* padding: 35px 65px; */
 }
 
+/* Code for setting - banner @anjudewangan */
+.banner-image img,
+.dvAbout .dvSubject-4 img {
+    width: 150px;
+    height: 79px;
+}
 
-/* .btn-upload {
-    width: 75px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 7px;
-    font-size: 15px;
-} */
-
+/* Code for setting - banner @anjudewangan */
 .choose-file {
-    width: 235px;
+    display: none;
 }
 
 .para {
     font-size: 14px;
+    padding: 0 13px;
+}
+
+#banner-img-icon-1 label,
+#banner-img-icon-2 label {
+    display: none;
+    margin-bottom: 0 !important;
 }
 
 .badge .fa {
@@ -165,11 +166,17 @@
     cursor: pointer;
 }
 
+/* Code for setting - banner @anjudewangan */
+
+
 /* Code for setting - branding page logo @anjudewangan */
-#imgInp {
+#imgInp,
+#inputGroupFile03,
+#inputGroupFile04 {
     display: none;
 }
-.page-logo label{
+
+.page-logo label {
     margin-bottom: 0 !important;
 }
 

@@ -88,6 +88,137 @@ $(document).ready(function () {
         clickAddBranch();
     });
 
+    // Code for Add Doctor @anjudewangan
+    $("#btn-cancel").click(function () {
+        clickbtnCancelDoctor();
+    });
+
+    $("#inputDoctorName").change(function () {
+        var inputvalues = $(this).val();
+        var nameFilter = /^[a-zA-Z ]+$/;
+        if (!nameFilter.test(inputvalues)) {
+            $("#inputDoctorName").val("");
+            alert("Invalid Name");
+            return nameFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputMobileNumber").change(function () {
+        var inputvalues = $(this).val();
+        var mobNumberFilter = /^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/;
+        if (!mobNumberFilter.test(inputvalues)) {
+            $("#inputMobileNumber").val("");
+            alert("Invalid Mobile Number");
+            return mobNumberFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputEmail").change(function () {
+        var inputvalues = $(this).val();
+        var emailFilter = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+        if (!emailFilter.test(inputvalues)) {
+            $("#inputEmail").val("");
+            alert("Invalid Email ID");
+            return emailFilter.test(inputvalues);
+        }
+    });
+
+    const addDoctorList = [];
+    addDoctorList.map((doctorName, mobileNumber, emailID, regNumber) => {
+        $(".table-manage-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + doctorName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + doctorName + '</td><td>' + mobileNumber + '</td><td>' + emailID + '</td><td>' + regNumber + '</td><td><a href="">Edit/Delete</a></td></tr>');
+    });
+
+    $("#btnAddDoctor").click(function () {
+        $(".dvPracticeStaff").css("display", "block");
+        $(".table-manage-staff").css("display", "block");
+        $(".dvButttons").css("display", "block");
+        $(".dvAddDoctorButton").css("display", "none");
+
+        const getDoctorName = $("#inputDoctorName").val().trim();
+        const getMobileNumber = $("#inputMobileNumber").val().trim();
+        const getEmailID = $("#inputEmail").val().trim();
+        const getRegNumber = $("#inputRegNumber").val().trim();
+
+        addDoctorList.push(getDoctorName);
+        addDoctorList.push(getMobileNumber);
+        addDoctorList.push(getEmailID);
+        addDoctorList.push(getRegNumber);
+
+        $(".table-manage-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + getDoctorName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + getDoctorName + '</td><td>' + getMobileNumber + '</td><td>' + getEmailID + '</td><td>' + getRegNumber + '</td><td><a href="">Edit/Delete</a></td></tr>');
+
+        $("#inputDoctorName").val("");
+        $("#inputMobileNumber").val("");
+        $("#inputEmail").val("");
+        $("#inputRegNumber").val("");
+        return false;
+    });
+    // Code for Add Doctor @anjudewangan
+
+
+    // Code for Add Staff @anjudewangan
+    $("#btn-staff-cancel").click(function () {
+        clickbtnCancelStaff();
+    });
+
+    $("#inputStaffName").change(function () {
+        var inputvalues = $(this).val();
+        var nameFilter = /^[a-zA-Z ]+$/;
+        if (!nameFilter.test(inputvalues)) {
+            $("#inputStaffName").val("");
+            alert("Invalid Name");
+            return nameFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputStaffMobNumber").change(function () {
+        var inputvalues = $(this).val();
+        var mobNumberFilter = /^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/;
+        if (!mobNumberFilter.test(inputvalues)) {
+            $("#inputStaffMobNumber").val("");
+            alert("Invalid Mobile Number");
+            return mobNumberFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputStaffEmail").change(function () {
+        var inputvalues = $(this).val();
+        var emailFilter = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+        if (!emailFilter.test(inputvalues)) {
+            $("#inputStaffEmail").val("");
+            alert("Invalid Email ID");
+            return emailFilter.test(inputvalues);
+        }
+    });
+
+    const addStaffList = [];
+    addStaffList.map((staffName, staffMobNumber, staffEmail) => {
+        $(".table-other-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + staffName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + staffName + '</td><td>' + staffMobNumber + '</td><td>' + staffEmail + '</td><td><a href="">Edit/Delete</a></td></tr>');
+    });
+
+    $("#btnAddStaff").click(function () {
+        $(".dvPracticeStaff").css("display", "block");
+        $(".dvOtherStaffButtton").css("display", "block");
+        $(".table-other-staff").css("display", "block");
+        $(".dvAddStaffButton").css("display", "none");
+
+        const getStaffName = $("#inputStaffName").val().trim();
+        const getStaffMobNumber = $("#inputStaffMobNumber").val().trim();
+        const getStaffEmailID = $("#inputStaffEmail").val().trim();
+
+        addStaffList.push(getStaffName);
+        addStaffList.push(getStaffMobNumber);
+        addStaffList.push(getStaffEmailID);
+
+        $(".table-other-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + getStaffName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + getStaffName + '</td><td>' + getStaffMobNumber + '</td><td>' + getStaffEmailID + '</td><td><a href="">Edit/Delete</a></td></tr>');
+
+        $("#inputStaffName").val("");
+        $("#inputStaffMobNumber").val("");
+        $("#inputStaffEmail").val("");
+        return false;
+    });
+    // Code for Add Staff @anjudewangan
+
+
     // Code for upload img in banner @anjudewangan
     $("label[for='inputGroupFile01']").click(function () {
         uploadBtnHide();
@@ -539,6 +670,25 @@ function clickAddDoctor() {
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
 }
+
+// Code for Add Doctor @anjudewangan
+function clickbtnCancelDoctor() {
+    $(".dvPracticeStaff").css("display", "block");
+    $(".table-manage-staff").css("display", "block");
+    $(".dvButttons").css("display", "block");
+    $(".dvAddDoctorButton").css("display", "none");
+}
+// Code for Add Doctor @anjudewangan
+
+
+// Code for Add Staff @anjudewangan
+function clickbtnCancelStaff() {
+    $(".dvPracticeStaff").css("display", "block");
+    $(".dvOtherStaffButtton").css("display", "block");
+    $(".table-other-staff").css("display", "block");
+    $(".dvAddStaffButton").css("display", "none");
+}
+// Code for Add Staff @anjudewangan
 
 function clickAddStaff() {
     $(".dvButttons").css("display", "none");

@@ -1142,3 +1142,13 @@ select {
 }
 
 /* Code for Calendar new popup @anjudewangan */
+
+
+/* Code for admin setting box @anjudewangan  */
+#statusofAdmin,
+#emailofAdmin {
+    color: black;
+    font-weight: 400;
+}
+
+/* Code for admin setting box @anjudewangan  */

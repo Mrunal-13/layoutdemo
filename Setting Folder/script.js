@@ -172,7 +172,7 @@ $(document).ready(function () {
 
     $("#inputStaffMobNumber").change(function () {
         var inputvalues = $(this).val();
-        var mobNumberFilter = /^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/;
+        var mobNumberFilter = /^(0|\+91)?[789]\d{9}$/;
         if (!mobNumberFilter.test(inputvalues)) {
             $("#inputStaffMobNumber").val("");
             alert("Invalid Mobile Number");

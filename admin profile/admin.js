@@ -117,7 +117,9 @@ function GetControl(selectedCategory) {
     if (getControl === undefined) {
         $("#divControl").html("No Corrosponding Control Found.");
     } else {
-        $("#divControl").html(getControl + '<i class="fa fa-times-circle" style="display:none;" id="errorShow"></i>');
+        // code for advanced patient serach cross icon show and hide @anjudewangan
+        $("#divControl").html(getControl + '<i class="fa fa-times-circle" style="display:none;" id="errorShow" onclick="HandleCancel()"></i>');
+         // code for advanced patient serach cross icon show and hide @anjudewangan
     }
 }
 

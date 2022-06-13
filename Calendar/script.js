@@ -650,3 +650,60 @@ $(document).ready(function() {
         isCategoriesShown = false;
     });
 });
+
+// Code for appointment @anjudewangan2000
+
+$("#PatientNameInput").change(function () {
+    var inputvalues = $(this).val();
+    var nameFilter = /^[a-zA-Z ]+$/;
+    if (!nameFilter.test(inputvalues)) {
+        $("#PatientNameInput").val("");
+        alert("Invalid Name");
+        return nameFilter.test(inputvalues);
+    }
+});
+
+$("#MobileNumberInput").change(function () {
+    var inputvalues = $(this).val();
+    var mobNumberFilter = /^(0|\+91)?[789]\d{9}$/;
+    if (!mobNumberFilter.test(inputvalues)) {
+        $("#MobileNumberInput").val("");
+        alert("Invalid Mobile Number");
+        return mobNumberFilter.test(inputvalues);
+    }
+});
+
+$("#EmailId").change(function () {
+    var inputvalues = $(this).val();
+    var emailFilter = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+    if (!emailFilter.test(inputvalues)) {
+        $("#EmailId").val("");
+        alert("Invalid Email ID");
+        return emailFilter.test(inputvalues);
+    }
+});
+
+const addAppointment = [];
+addAppointment.map((patientName, mobileNumber, emailID) => {
+    $(".container-1").append('<div class="row"><div class="col-2"><a class="user-img-link" href="#"><img src="../images/ava3.jfif" class="user-img-second" id="dvUserImage" /></a></div><div class="col-10"><h5>' + patientName + '</h5><div class="row"><div class="col"> 25Y 2M Old</div><div class="col"><span class="spanGender"><i class="fa fa-mars" aria-hidden="true"></i></span><span>Male</span></div></div><div class="row"><div class="col"><span class="spanWeight"><i class="fa fa-line-chart" aria-hidden="true"></i></span> 25 kg</div><div class="col"><span class="spanBloodGroup"><i class="fa fa-tint" aria-hidden="true"></i></span><span>B+</span></div></div></div><div class="row my-2"><div class="col"><i class="fa fa-phone" aria-hidden="true"></i><span class="spanMobile">' + mobileNumber + '</span></div><div class="col"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="spanEmail">' + emailID + '</span></div></div><div class="row my-2"><div class="col"><img src="../images/insurance.jpg" class="insurance-img" /><span class="spanInsurance">Individual Health Insurance Policy</span></div></div><div class="row my-2"><div class="col">Address - <span class="spanAddress">Mumbai, Maharashtra</span></div></div><div class="row my-2"><div class="col">Language -<span class="spanLanguage">Gujrati, Hindi</span></div></div></div>');
+});
+
+$("#btn-done").click(function () {
+    const getPatientName = $("#PatientNameInput").val().trim();
+    const getMobileNumber = $("#MobileNumberInput").val().trim();
+    const getEmailID = $("#EmailId").val().trim();
+
+    addAppointment.push(getPatientName);
+    addAppointment.push(getMobileNumber);
+    addAppointment.push(getEmailID);
+
+    $(".container-1").append('<div class="row"><div class="col-2"><a class="user-img-link" href="#"><img src="../images/ava3.jfif" class="user-img-second" id="dvUserImage" /></a></div><div class="col-10"><h5>' + getPatientName + '</h5><div class="row"><div class="col"> 25Y 2M Old</div><div class="col"><span class="spanGender"><i class="fa fa-mars" aria-hidden="true"></i></span><span> Male</span></div></div><div class="row"><div class="col"><span class="spanWeight"><i class="fa fa-line-chart" aria-hidden="true"></i></span> 25 kg</div><div class="col"> <span class="spanBloodGroup"><i class="fa fa-tint" aria-hidden="true"></i></span><span>B+</span></div></div></div><div class="row my-2"><div class="col"><i class="fa fa-phone" aria-hidden="true"></i><span class="spanMobile"> ' + getMobileNumber + '</span></div><div class="col"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="spanEmail"> ' + getEmailID + '</span></div></div><div class="row my-2"><div class="col"><img src="../images/insurance.jpg" class="insurance-img" /><span class="spanInsurance">Individual Health Insurance Policy</span></div></div><div class="row my-2"><div class="col">Address - <span class="spanAddress">Mumbai, Maharashtra</span></div></div><div class="row my-2"><div class="col">Language -<span class="spanLanguage">Gujrati, Hindi</span></div></div></div>');
+
+    $("#PatientNameInput").val("");
+    $("#MobileNumberInput").val("");
+    $("#EmailId").val("");
+    return false;
+});
+
+// Code for appointment @anjudewangan2000
+

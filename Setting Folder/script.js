@@ -216,7 +216,31 @@ $(document).ready(function () {
         $("#inputStaffEmail").val("");
         return false;
     });
+
     // Code for Add Staff @anjudewangan
+
+
+    // Code for setting section > calendar > appointment category > add new category @anjudewangan
+    const addNewCategory = [];
+    addNewCategory.map((cate) => {
+        $(".dvAppoin-Category .dvAdd_new_cate .calendar-form").append('<div class="mb-3 row"><div class="col-sm-10"><h6><span class="badge p-2 bg-warning border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span>' + cate + '</h6></div><div class="col-sm-1"><i class="fa fa-trash-o deleteLabel" aria-hidden="true"></i></div></div>');
+    });
+
+    $("#btnAddNewCategory").click(function () {
+        const getAddCategory = $("#input-add-category").val().trim();
+        addNewCategory.push(getAddCategory);
+
+        $(".dvAppoin-Category .dvAdd_new_cate .calendar-form").append('<div class="mb-3 row"><div class="col-sm-10"><h6><span class="badge p-2 bg-warning border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span>' + getAddCategory + '</h6></div><div class="col-sm-1"><i class="fa fa-trash-o deleteLabel" aria-hidden="true"></i></div></div>');
+
+        $("#input-add-category").val("");
+        return false;
+    });
+
+    $(document).on("click", ".deleteLabel", function () {
+        $(this).parent().parent('div').remove();
+    });
+
+    // Code for setting section > calendar > appointment category > add new category @anjudewangan
 
 
     // Code for upload img in banner @anjudewangan
@@ -474,25 +498,6 @@ function clickAbout() {
     $("#branding-link").css("border-bottom", "none");
     $("#branding-link").css("border-radius", "0px");
 }
-
-function changeFontStyle(e) {
-    const text = document.querySelector(".textarea");
-    if (e.target.id === "bold") {
-        e.target.classList.toggle("active-button");
-        text.classList.toggle("bold");
-    }
-    if (e.target.id === "italic") {
-        e.target.classList.toggle("active-button");
-        text.classList.toggle("italic");
-    }
-    if (e.target.id === "underline") {
-        e.target.classList.toggle("active-button");
-        text.classList.toggle("underline");
-    }
-}
-
-const btnAction = document.querySelector(".btn-action");
-btnAction.addEventListener('click', changeFontStyle);
 
 function clickPracticeProfile() {
     $("#details-link").removeClass("active-li");
@@ -1299,3 +1304,14 @@ inputGroupFile04.onchange = evt => {
     }
 }
 // Code for upload img in About Section @anjudewangan
+
+
+//   Code for setting > about > statement @anjudewangan 
+
+editor.document.designMode = "On";
+
+function transform(option, argument) {
+    editor.document.execCommand(option, true, argument);
+};
+
+//   Code for setting > about > statement @anjudewangan 

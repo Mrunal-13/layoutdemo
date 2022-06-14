@@ -301,36 +301,26 @@ sub {
     background-color: #6c757d;
     border-color: #6c757d;
 }
-
-.btn-action {
-    margin: 10px;
+/* Code for setting > about > statement @anjudewangan */
+.text_opt {
+    height: 35px;
+    border-top: 1px solid #8A8484;
+    width: 1008px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
 }
 
-.btn-action button {
-    border: 1px solid teal;
-    border-radius: 50%;
-    padding: 10px;
-    width: 45px;
-    height: 45px;
-    font-weight: bolder;
+.text_opt button {
+    position: relative;
+    left: 45px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
-
-.active-button {
-    background-color: black;
-    color: white;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.underline {
-    text-decoration: underline;
-}
+/* Code for setting > about > statement @anjudewangan */
 
 @media (min-width: 1200px) {
     #container {

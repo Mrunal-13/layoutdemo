@@ -40,6 +40,9 @@
     color: black;
     margin-top: 7px;
     font-size: 15px;
+     /* Code for hospital name @anjudewangan */
+     text-decoration: none;
+     /* Code for hospital name @anjudewangan */
 }
 
 .hospital-name:hover {
@@ -115,7 +118,9 @@
     top: 58px;
     /* Stay at the top */
     left: 0;
-    background-color: #ffffff;
+    /* code for sidenav @anjudewangan */
+    background-color: #FFFCE2 !important;
+     /* code for sidenav @anjudewangan */
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */

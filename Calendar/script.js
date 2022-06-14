@@ -212,7 +212,7 @@ var table3 = document.getElementById("table3");
 
 var selection = document.getElementById("Chooseday");
 
-selection.addEventListener("change", function() {
+selection.addEventListener("change", function () {
 
     if (selection.value == 'Day') {
         table1.style.display = 'table';
@@ -230,7 +230,7 @@ selection.addEventListener("change", function() {
 
 });
 
-$('.print').click(function() {
+$('.print').click(function () {
     $("#printRight").append($(".MainCalender"));
     $("#table1 tbody tr td:first-child").css("color", "white");
     $("#table1 tbody tr td:first-child").css("background-color", "#ACD4F1");
@@ -247,7 +247,7 @@ $('.print').click(function() {
 
 var select = document.getElementById("selectDays");
 
-select.addEventListener("change", function() {
+select.addEventListener("change", function () {
 
     if (select.value == 'day') {
         table1.style.display = 'table';
@@ -267,7 +267,7 @@ select.addEventListener("change", function() {
 
 var selectFontSize = document.getElementById("selectFontSize");
 
-selectFontSize.addEventListener("change", function() {
+selectFontSize.addEventListener("change", function () {
 
     if (selectFontSize.value == 'smallest') {
         $("table thead tr th").css("font-size", "4px");
@@ -302,7 +302,7 @@ selectFontSize.addEventListener("change", function() {
 
 var selectOrientation = document.getElementById("selectOrientation");
 
-selectOrientation.addEventListener("change", function() {
+selectOrientation.addEventListener("change", function () {
 
     if (selectOrientation.value == 'auto') {
         $(".MainCalender").css("padding", "10px");
@@ -317,7 +317,7 @@ selectOrientation.addEventListener("change", function() {
 
 var selectColor = document.getElementById("selectColor");
 
-selectColor.addEventListener("change", function() {
+selectColor.addEventListener("change", function () {
 
     if (selectColor.value == 'outline') {
 
@@ -346,7 +346,7 @@ selectColor.addEventListener("change", function() {
     }
 });
 
-$('#btnCancel').click(function() {
+$('#btnCancel').click(function () {
     $(".RightSideMAin").append($(".MainCalender"));
     $("table tbody tr td").css("color", "black");
     $("table tbody tr td").css("background-color", "white");
@@ -360,17 +360,17 @@ $('#btnCancel').click(function() {
     $("table tbody tr td").css("font-size", "1rem");
 });
 
-$('.MainCalender').on('click', function() {
+$('.MainCalender').on('click', function () {
     $("#exampleModal").modal("show");
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     document.getElementById("Appointment").style.background = "rgba(217, 239, 255, 1)";
     document.getElementById("Reminder").style.background = "white";
     document.getElementById("BlockCalender").style.background = "white";
 });
-$(document).ready(function() {
-    $("#Appointment").click(function() {
+$(document).ready(function () {
+    $("#Appointment").click(function () {
         $("div.ToggleAppointment").show();
         $("div.toggleReminder").hide();
         $("div.toggleBlockCalender").hide();
@@ -381,8 +381,8 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    $("#Reminder").click(function() {
+$(document).ready(function () {
+    $("#Reminder").click(function () {
         $("div.ToggleAppointment").hide();
         $("div.toggleReminder").show();
         $("div.toggleBlockCalender").hide();
@@ -391,8 +391,8 @@ $(document).ready(function() {
         document.getElementById("BlockCalender").style.background = "white";
     });
 });
-$(document).ready(function() {
-    $("#BlockCalender").click(function() {
+$(document).ready(function () {
+    $("#BlockCalender").click(function () {
         $("div.ToggleAppointment").hide();
         $("div.toggleReminder").hide();
         $("div.toggleBlockCalender").show();
@@ -440,7 +440,7 @@ function onAllday2() {
     document.getElementsByClassName('BlockHidediv')[0].style.display = 'none';
 }
 
-$(document).on('change', 'input[type=color]', function() {
+$(document).on('change', 'input[type=color]', function () {
     this.parentNode.style.backgroundColor = this.value;
 });
 
@@ -475,7 +475,7 @@ function printData() {
     }
 }
 
-$('#btnPrint').on('click', function() {
+$('#btnPrint').on('click', function () {
     printData();
 });
 
@@ -625,16 +625,16 @@ function HandleCancel() {
     $("#errorShow").hide();
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     const firstCategory = $("#ddlInfo option:first").val();
     GetControl(firstCategory);
 
-    $("#ddlInfo").change(function(event) {
+    $("#ddlInfo").change(function (event) {
         const selectedCategory = $(this).val();
         GetControl(selectedCategory);
     });
 
-    $("#btnAddMore").click(function() {
+    $("#btnAddMore").click(function () {
         if (isCategoriesShown === false) {
             categoryList.map((category) => {
                 $("#divCategories").append('<input name="category" type="radio" id="' + category + '" value="' + category + '"><label for="' + category + '">' + category + '</label><br />');
@@ -643,7 +643,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#divCategories').on('change', "input[name=category]", function(event) {
+    $('#divCategories').on('change', "input[name=category]", function (event) {
         $("#ddlInfo option:contains(" + event.target.value.trim() + ")").prop('selected', 'selected');
         $('#ddlInfo').trigger('change');
         $("#divCategories").html("");
@@ -651,7 +651,7 @@ $(document).ready(function() {
     });
 });
 
-// Code for appointment @anjudewangan2000
+// Code for appointment @anjudewangan
 
 $("#PatientNameInput").change(function () {
     var inputvalues = $(this).val();
@@ -697,7 +697,7 @@ $("#btn-done").click(function () {
     addAppointment.push(getMobileNumber);
     addAppointment.push(getEmailID);
 
-    $(".container-1").append('<div class="row"><div class="col-2"><a class="user-img-link" href="#"><img src="../images/ava3.jfif" class="user-img-second" id="dvUserImage" /></a></div><div class="col-10"><h5>' + getPatientName + '</h5><div class="row"><div class="col"> 25Y 2M Old</div><div class="col"><span class="spanGender"><i class="fa fa-mars" aria-hidden="true"></i></span><span> Male</span></div></div><div class="row"><div class="col"><span class="spanWeight"><i class="fa fa-line-chart" aria-hidden="true"></i></span> 25 kg</div><div class="col"> <span class="spanBloodGroup"><i class="fa fa-tint" aria-hidden="true"></i></span><span>B+</span></div></div></div><div class="row my-2"><div class="col"><i class="fa fa-phone" aria-hidden="true"></i><span class="spanMobile"> ' + getMobileNumber + '</span></div><div class="col"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="spanEmail"> ' + getEmailID + '</span></div></div><div class="row my-2"><div class="col"><img src="../images/insurance.jpg" class="insurance-img" /><span class="spanInsurance">Individual Health Insurance Policy</span></div></div><div class="row my-2"><div class="col">Address - <span class="spanAddress">Mumbai, Maharashtra</span></div></div><div class="row my-2"><div class="col">Language -<span class="spanLanguage">Gujrati, Hindi</span></div></div></div>');
+    $(".container-1").append('<div class="row"><div class="col-2"><a class="user-img-link" href="#"><img src="../images/ava3.jfif" class="user-img-second" id="dvUserImage" /></a></div><div class="col-10"><h5 id="eventPatientName">' + getPatientName + '</h5><div class="row"><div class="col"> 25Y 2M Old</div><div class="col"><span class="spanGender"><i class="fa fa-mars" aria-hidden="true"></i></span><span> Male</span></div></div><div class="row"><div class="col"><span class="spanWeight"><i class="fa fa-line-chart" aria-hidden="true"></i></span> 25 kg</div><div class="col"> <span class="spanBloodGroup"><i class="fa fa-tint" aria-hidden="true"></i></span><span>B+</span></div></div></div><div class="row my-2"><div class="col"><i class="fa fa-phone" aria-hidden="true"></i><span class="spanMobile" id="eventMobileNumber"> ' + getMobileNumber + '</span></div><div class="col"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="spanEmail" id="eventEmailId"> ' + getEmailID + '</span></div></div><div class="row my-2"><div class="col"><img src="../images/insurance.jpg" class="insurance-img" /><span class="spanInsurance">Individual Health Insurance Policy</span></div></div><div class="row my-2"><div class="col">Address - <span class="spanAddress">Mumbai, Maharashtra</span></div></div><div class="row my-2"><div class="col">Language -<span class="spanLanguage">Gujrati, Hindi</span></div></div></div>');
 
     $("#PatientNameInput").val("");
     $("#MobileNumberInput").val("");
@@ -705,5 +705,27 @@ $("#btn-done").click(function () {
     return false;
 });
 
-// Code for appointment @anjudewangan2000
+// Code for appointment @anjudewangan
+
+
+// Code for calendar popup event @anjudewangan
+
+$(document).on('click', ".MainCalender table tbody tr td", function (e) {
+    $(e.target).css('background-color', '#2196F3');
+    $(e.target).css('border-radius', '10px');
+
+    $("#btnCollectPayment").click(function () {
+        const getPatientName = $("#eventPatientName").html();
+        const getMobileNumber = $("#eventMobileNumber").html();
+        const getEmailID = $("#eventEmailId").html();
+
+        addAppointment.push(getPatientName);
+        addAppointment.push(getMobileNumber);
+        addAppointment.push(getEmailID);
+        $(e.target).append('<div style="padding: 0 10px; color: white;"><h6>' + getPatientName + '</h6><div><i class="fa fa-phone" aria-hidden="true"></i><span class="spanMobile"> ' + getMobileNumber + '</span></div><div><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="spanEmail"> ' + getEmailID + '</span></div></div>');
+    });
+
+});
+
+// Code for calendar popup event @anjudewangan
 

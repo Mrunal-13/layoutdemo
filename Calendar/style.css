@@ -1152,3 +1152,11 @@ select {
 }
 
 /* Code for admin setting box @anjudewangan  */
+
+
+/* Code for sidenav active link @anjudewangan */
+.navbar-sidenav>.nav-item>.active-link {
+    background-color: rgb(236, 236, 11);
+}
+
+/* Code for sidenav active link @anjudewangan */

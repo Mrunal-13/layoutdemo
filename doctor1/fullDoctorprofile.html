@@ -21,6 +21,15 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <!-- Advanced search popup console error solve @anjudewangan -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <!-- Advanced search popup console error solve @anjudewangan -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -65,8 +74,9 @@
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="staticBackdropLabel">Advance Patient Search</h5>
                                             <!-- Code for Advanced Patient Search @anjudewangan -->
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="HandleCancel()"></button>
-                                             <!-- Code for Advanced Patient Search @anjudewangan -->
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close" onclick="HandleCancel()"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="popup-form">
@@ -130,7 +140,9 @@
                                                     </tr>
                                                 </table>
                                             </form>
-                                            <button id="btnAddMore">Add another parameter</button>
+                                            <!-- Code for Advanced search popup reload problem @anjudewangan -->
+                                            <button id="btnAddMore" type="button">Add another parameter</button>
+                                            <!-- Code for Advanced search popup reload problem @anjudewangan -->
                                             <div id="divCategories">
 
                                             </div>
@@ -249,8 +261,14 @@
                 </div>
                 <hr style="margin: 15px 0;">
                 <ul id="settingOptions">
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
+                    <li><a href="../admin profile/admin.html" style="text-decoration: none; color: black;"><span
+                                class="iconify" style="color: gray;" data-icon="akar-icons:pencil" data-width="17"
+                                data-height="17"></span> Edit Profile</a></li>
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
                     <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17"
                             data-height="17"></span> Edit Profile</li>
+
                     <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
                             data-width="17" data-height="17"></span> Account Setting</li>
                     <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
@@ -348,7 +366,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                    <a class="nav-link" href="#doctor">
+                    <a class="nav-link active-link" href="#doctor">
                         <i class="fa fa-fw fa-user-md"></i>
                         <span class="nav-link-text">Doctors</span>
                     </a>
@@ -378,6 +396,14 @@
                         <span class="nav-link-text">Departments</span>
                     </a>
                 </li>
+                <!-- Code for sidenav insurance network @anjudewangan -->
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                    <a class="nav-link" href="tables.html">
+                        <i class="fa fa-fw fa-umbrella" aria-hidden="true"></i>
+                        <span class="nav-link-text">Insurance Network</span>
+                    </a>
+                </li>
+                <!-- Code for sidenav insurance network @anjudewangan -->
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
                     <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
                         data-parent="#exampleAccordion">
@@ -830,6 +856,7 @@
 <script src="./scripts/doctor.js"></script>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/fulldoctorprofile.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>

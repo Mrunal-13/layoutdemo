@@ -1,10 +1,11 @@
-.ivite_main{
+.ivite_main {
     margin-top: 100px;
     margin-left: 50px;
 
     height: max-content;
 }
-.invite_head{
+
+.invite_head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,7 +14,8 @@
     position: relative;
     left: 61px;
 }
-.invite_settingbtn{
+
+.invite_settingbtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,44 +26,52 @@
     height: 41px;
     border-radius: 5px;
 }
-.invite_settingbtn .fa-user-gear{
+
+.invite_settingbtn .fa-user-gear {
     height: 21px;
     width: 21px;
 }
-.email_container{
+
+.email_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     position: relative;
     left: 63px;
     margin-top: 50px;
 }
-.email_container .fa-envelope{
+
+.email_container .fa-envelope {
     font-size: 24px;
 }
-.email_wrap{
+
+.email_wrap {
     display: flex;
     align-items: center;
     gap: 18px;
 }
-.email_input{
+
+.email_input {
     display: flex;
     gap: 13px;
     align-items: center;
     justify-content: center;
 }
-.email_input input{
+
+.email_input input {
     width: 379px;
     height: 37px;
     background: #FFFFFF;
     border: 1px solid #656565;
     border-radius: 5px;
 }
-.email_input input::placeholder{
+
+.email_input input::placeholder {
     position: relative;
     left: 16px;
 }
-.email_input a{
+
+.email_input a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +80,8 @@
     background: #FFA0A0;
     border-radius: 5px;
 }
-.access_level{
+
+.access_level {
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -80,22 +91,26 @@
     left: 100px;
     top: 30px;
 }
-.access_wrap{
+
+.access_wrap {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     gap: 13px;
 }
-.access_input{
+
+.access_input {
     display: flex;
     align-items: center;
     gap: 17px;
 }
-.access_input input{
+
+.access_input input {
     width: 22px;
     height: 22px;
 }
-.group{
+
+.group {
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -104,7 +119,8 @@
     top: 60px;
     width: max-content;
 }
-.group_wrap{
+
+.group_wrap {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -112,21 +128,25 @@
     justify-content: center;
     gap: 12px;
 }
-.group_input input{
+
+.group_input input {
     width: 22px;
     height: 22px;
 }
-.group_input{
+
+.group_input {
     display: flex;
     align-items: center;
     gap: 21px;
 }
-.bottom_sendbtn{
+
+.bottom_sendbtn {
     position: relative;
     top: 113px;
     left: 100px;
 }
-.bottom_sendbtn a{
+
+.bottom_sendbtn a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,18 +155,22 @@
     background: #FFA0A0;
     border-radius: 10px;
 }
-.link a{
+
+.link a {
     /* display: none; */
     visibility: collapse;
 }
-.link p{
+
+.link p {
     /* display: none; */
-        visibility: collapse;
+    visibility: collapse;
 }
-.link .fa-chevron-down{
+
+.link .fa-chevron-down {
     display: none;
 }
-.sidebar{
+
+.sidebar {
     width: 33px;
     display: flex;
     align-items: center;
@@ -156,19 +180,23 @@
     top: 156px;
     height: max-content;
 }
-.sidebar li{
+
+.sidebar li {
     width: 63px;
 }
-aside{
+
+aside {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.main_container{
+
+.main_container {
     height: 740px;
     margin: 0;
     padding: 0%;
     width: fit-content;
 }
+
 .send_modal {
     width: 626px;
     height: 431px;
@@ -177,7 +205,8 @@ aside{
     left: 500px;
     bottom: 530px;
 }
-.send_img{
+
+.send_img {
     background-color: #FFF5E2;
     width: 626px;
     height: 190px;
@@ -185,6 +214,7 @@ aside{
     align-items: center;
     justify-content: center;
 }
+
 .send_img img {
     width: 400px;
     height: 150px;
@@ -192,41 +222,48 @@ aside{
     top: 10px;
     cursor: pointer;
 }
-.fa-xmark{
+
+.fa-xmark {
     color: #838383;
     font-size: 25px;
     position: relative;
     bottom: 70px;
     left: 75px;
 }
-.modal_bottom{
+
+.modal_bottom {
     display: flex;
     flex-direction: column;
     gap: 35px;
     height: 500px;
     /* background-color: #056069; */
 }
-.modal_bottom p{
+
+.modal_bottom p {
     font-size: 20px;
     font-weight: 600;
     position: relative;
     left: 28px;
 }
-.invited{
+
+.invited {
     display: flex;
     align-items: center;
     gap: 190px;
     justify-content: center;
 }
-.invited_item1{
+
+.invited_item1 {
     display: flex;
     align-items: center;
 }
-.invited_item1 p{
+
+.invited_item1 p {
     font-size: 16px;
     font-weight: 600;
 }
-.invited_item1 .icon{
+
+.invited_item1 .icon {
     background-color: #EDEDED;
     width: 39px;
     height: 32px;
@@ -235,30 +272,36 @@ aside{
     justify-content: center;
     border-radius: 5px;
 }
-.icon .material-symbols-outlined{
+
+.icon .material-symbols-outlined {
     transform: rotate(-30deg);
 }
-.invited_item2{
+
+.invited_item2 {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.invited_item2 p{
+
+.invited_item2 p {
     font-size: 16px;
     font-weight: 100;
     color: #848484;
 }
-.invited_item2 .material-symbols-outlined{
+
+.invited_item2 .material-symbols-outlined {
     color: #848484;
 }
-.buttons{
+
+.buttons {
     display: flex;
     gap: 15px;
     justify-content: flex-end;
     position: relative;
     right: 56px;
 }
-#invite_btn{
+
+#invite_btn {
     border: 1px solid #9B9B9B;
     width: 158px;
     height: 36px;
@@ -269,7 +312,8 @@ aside{
     font-size: 16px;
     font-weight: 600;
 }
-#done_btn{
+
+#done_btn {
     background: #056069;
     border-radius: 5px;
     display: flex;
@@ -280,7 +324,8 @@ aside{
     color: #FFFFFF;
     font-size: 16px;
 }
-.restore_modal{
+
+.restore_modal {
     width: 497px;
     height: 276px;
     border: 1px solid #000000;
@@ -291,7 +336,8 @@ aside{
     left: 500px;
     bottom: 500px;
 }
-.sender_info{
+
+.sender_info {
     width: 450px;
     height: 162px;
     font-size: 15px;
@@ -299,7 +345,7 @@ aside{
     left: 17px;
 }
 
-.button_restore{
+.button_restore {
     display: flex;
     gap: 14px;
     justify-content: flex-end;
@@ -308,7 +354,8 @@ aside{
     position: relative;
     top: 41px;
 }
-#cancel{
+
+#cancel {
     width: 82px;
     height: 36px;
     background: #FFFFFF;
@@ -319,18 +366,27 @@ aside{
     justify-content: center;
     font-size: 15px;
 }
-#restore{
+
+#restore {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 87px;
-    height: 36px;    
+    height: 36px;
     background: #056069;
     border-radius: 5px;
     font-style: normal;
     font-size: 15px;
     color: #FFFFFF;
 }
+
+/* Code for sidenav active link @anjudewangan */
+.navbar-sidenav>.nav-item>.active-link {
+    background-color: rgb(236, 236, 11);
+}
+
+/* Code for sidenav active link @anjudewangan */
+
 /* mobile view */
 @media screen and (max-width:428px) {
     /* aside {
@@ -423,3 +479,4 @@ aside{
         top: -60px;
     }
 }
+

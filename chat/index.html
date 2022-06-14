@@ -27,7 +27,13 @@
   <!-- Fontawesome kit link -->
   <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobile.css" />
   <!-- Fontawesome kit link -->
-  <script src="https://kit.fontawesome.com/c096fa5e26.js" crossorigin="anonymous"></script>
+
+  <!-- code for sidenav icons @anjudewangan -->
+  <!-- <script src="https://kit.fontawesome.com/c096fa5e26.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <!-- code for sidenav icons @anjudewangan -->
+
   <!-- iconify cdn link -->
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
   <!-- animate css -->
@@ -345,19 +351,19 @@
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="../pateints/index.html">
-            <i class="fa fa-fw fa fa-wheelchair"></i>
+            <i class="fa fa-fw fa-wheelchair"></i>
             <span class="nav-link-text">Patient</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="../Calendar/calendar.html">
-            <i class="fa fa-fw fa fa-calendar"></i>
+            <i class="fa fa-fw fa-calendar"></i>
             <span class="nav-link-text">Appointment</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="../doctor1/doctor.html">
-            <i class="fa fa-fw fa fa-calendar-check-o"></i>
+            <i class="fa fa-fw fa-calendar-check-o"></i>
             <span class="nav-link-text">Dr.Schedule</span>
           </a>
         </li>
@@ -376,7 +382,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
             data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa fa-user"></i>
+            <i class="fa fa-fw fa-user"></i>
             <span class="nav-link-text">Employee</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
@@ -397,7 +403,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
             data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa fa-book"></i>
+            <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Payroll</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
@@ -408,14 +414,14 @@
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="#">
-            <i class="fa fa-fw fa fa-commenting"></i>
+            <i class="fa fa-commenting" aria-hidden="true"></i>
             <span class="nav-link-text">Chat</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
             data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa fa-video-camera"></i>
+            <i class="fa fa-fw fa-video-camera"></i>
             <span class="nav-link-text">Call</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
@@ -430,7 +436,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail"
             data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa fa-envelope"></i>
+            <i class="fa fa-fw fa-envelope"></i>
             <span class="nav-link-text">email</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseEmail">
@@ -445,7 +451,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog"
             data-parent="#exampleAccordion">
-            <i class="fa fa-fw fas fa-comment"></i>
+            <i class="fa fa-fw fa-comment"></i>
             <span class="nav-link-text">Blog</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseBlog">
@@ -459,7 +465,7 @@
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
           <a class="nav-link" href="#">
-            <i class="fa fa-fw fas fa-object-group"></i>
+            <i class="fa fa-fw fa-object-group"></i>
             <span class="nav-link-text">Assets</span>
           </a>
         </li>
@@ -502,14 +508,14 @@
           <li><a>Setting</a></li>
         </ul>
       </div>
-      <i id="openSideBar" onclick="openNav()" class="fas fa-bars" id="hamburger"></i>
+      <i id="openSideBar" onclick="openNav()" class="fa fa-bars" id="hamburger"></i>
       <p id="logoOfWeb">LOGO</p>
       <div class="mobIcons" id="mobIcons">
-        <i class="fas fa-search" onclick="openSearchBox()"></i>
-        <i class="fas fa-ellipsis-v" onclick="openMobPopUp()"></i>
+        <i class="fa fa-search" onclick="openSearchBox()"></i>
+        <i class="fa fa-ellipsis-v" onclick="openMobPopUp()"></i>
       </div>
       <div class="searchInMob" id="searchInMob">
-        <a type="button" onclick="backToNav()"><i class="fas fa-arrow-left" style="color: #b9b9b9"></i></a>
+        <a type="button" onclick="backToNav()"><i class="fa fa-arrow-left" style="color: #b9b9b9"></i></a>
         <input type="text" name="inputSearchMob" id="inputSearchMob" placeholder="Search..."
           onkeyup="searchCharInMob()" />
       </div>
@@ -633,14 +639,14 @@
         <div class="chatOptions">
           <button id="mobAllbtn">All</button>
           <button id="chatButton">
-            <i class="fas fa-comment-alt"></i> Chat (<span id="numberOfChat">4</span>)
+            <i class="fa fa-commenting" aria-hidden="true"></i> Chat (<span id="numberOfChat">4</span>)
           </button>
           <button id="callButton">
-            <i class="fas fa-phone-alt"></i> All Calls (<span id="numberOfCall">4</span>)
+            <i class="fa fa-phone" aria-hidden="true"></i>All Calls (<span id="numberOfCall">4</span>)
           </button>
         </div>
         <div class="refresh">
-          <button><i class="fas fa-redo"></i></button>
+          <button><i class="fa fa-repeat" aria-hidden="true"></i></button>
         </div>
       </div>
       <!-- showing whole list in chat -->
@@ -649,7 +655,7 @@
         <div class="searchBar">
           <input type="search" name="search" id="searchChatPerson" class="search" placeholder="Enter Name" />
           <button class="searchButton" id="searchButton">
-            <i class="fas fa-search"></i>
+            <i class="fa fa-search"></i>
           </button>
         </div>
         <!-- menu for call methods -->
@@ -663,13 +669,15 @@
               <!-- <label for="starredMsg">starred</label> -->
               <label class="custom-checkbox">
                 <input type="checkbox" name="starredMsg" id="starredMsg" />
-                <i class="fas fa-star-half-alt unchecked"></i>
-                <i class="fas fa-star checked" style="color: #fffb00"></i>
+                <!-- Code for font-osm icons @anjudewangan -->
+                <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                <!-- Code for font-osm icons @anjudewangan -->
+                <i class="fa fa-star checked" style="color: #fffb00"></i>
                 starred
               </label>
             </li>
             <ul class="filterOptionButton">
-              <i class="fas fa-filter"></i>
+              <i class="fa fa-filter"></i>
               Filter
             </ul>
           </ul>
@@ -681,12 +689,12 @@
           <div class="box" id="box1">
             <ul class="names">
               <li class="nameMessenger">Sandip Rajput</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>Yesterday</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
@@ -694,70 +702,76 @@
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
               <hr />
             </ul>
           </div>
           <div class="box" id="box2">
             <ul class="names">
               <li class="nameMessenger">Vijay Bali</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box3">
             <ul class="names">
               <li class="nameMessenger">Vishal</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box4">
             <ul class="names">
               <li class="nameMessenger">Shivaji Dnyanu Mokashi</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
@@ -765,23 +779,25 @@
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box5">
             <ul class="names">
               <li class="nameMessenger">Quresh Badshah</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
@@ -789,23 +805,25 @@
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box6">
             <ul class="names">
               <li class="nameMessenger">Sandip Raut</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i>Welldone connected you with
+                <i class="fa fa-check-double"></i>Welldone connected you with
                 this seller
               </li>
               <ul class="additional">
@@ -813,23 +831,25 @@
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box7">
             <ul class="names">
               <li class="nameMessenger">Vijay Bali</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
@@ -837,23 +857,25 @@
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box8">
             <ul class="names">
               <li class="nameMessenger">Vishal</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
@@ -861,46 +883,50 @@
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box9">
             <ul class="names">
               <li class="nameMessenger">Shivaji Dnyanu Mokashi</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
           <div class="box" id="box10">
             <ul class="names">
               <li class="nameMessenger">Shivaji Dnyanu Mokashi</li>
-              <li class="angleDownDesk"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownDesk"><i class="fa fa-angle-down"></i></li>
               <li class="showMsgDateMob"><span>DD/MM/YYY</span></li>
             </ul>
             <ul class="msgAndInfo">
               <li class="msg">
-                <i class="fas fa-check-double"></i> Welldone connected you
+                <i class="fa fa-check-double"></i> Welldone connected you
                 with this seller
               </li>
               <ul class="additional">
@@ -908,12 +934,14 @@
                 <li class="Starred">
                   <label class="custom-checkbox">
                     <input type="checkbox" name="checkBoxStarred" class="checkBoxStarred" />
-                    <i class="fas fa-star-half-alt unchecked"></i>
-                    <i class="fas fa-star checked" style="color: #fffb00"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star-half-o unchecked" aria-hidden="true"></i>
+                    <!-- Code for font-osm icons @anjudewangan -->
+                    <i class="fa fa-star checked" style="color: #fffb00"></i>
                   </label>
                 </li>
               </ul>
-              <li class="angleDownMob"><i class="fas fa-angle-down"></i></li>
+              <li class="angleDownMob"><i class="fa fa-angle-down"></i></li>
             </ul>
           </div>
         </div>
@@ -926,7 +954,7 @@
           <input type="search" name="searchCall" id="searchCallHistory" class="searchCallHistory"
             placeholder="Name or Mobile" />
           <button class="searchCallButton" onclick="searchCallHistory()">
-            <i class="fas fa-search"></i>
+            <i class="fa fa-search"></i>
           </button>
         </div>
         <!-- menu for call methods -->
@@ -965,7 +993,7 @@
                   <span class="callingTime">12:35 pm</span>
                 </li>
                 <li class="me-3">
-                  <i class="outgoingIcon fas fa-level-up-alt"></i>
+                  <i class="outgoingIcon fa fa-level-up"></i>
                 </li>
               </ul>
             </div>
@@ -987,7 +1015,7 @@
                   <span class="callingTime">12:35 pm</span>
                 </li>
                 <li class="me-3">
-                  <i class="incomingIcon fas fa-level-down-alt"></i>
+                  <i class="incomingIcon fa fa-level-down"></i>
                 </li>
               </ul>
             </div>
@@ -1009,7 +1037,7 @@
                   <span class="callingTime">12:35 pm</span>
                 </li>
                 <li class="me-3">
-                  <i class="missedIcon fas fa-long-arrow-alt-down"></i>
+                  <i class="missedIcon fa fa-long-arrow-down"></i>
                 </li>
               </ul>
             </div>
@@ -1031,7 +1059,7 @@
                   <span class="callingTime">12:35 pm</span>
                 </li>
                 <li class="me-3">
-                  <i class="AttemptedIcon fas fa-arrow-left"></i>
+                  <i class="AttemptedIcon fa fa-arrow-left"></i>
                 </li>
               </ul>
             </div>
@@ -1105,7 +1133,7 @@
             <span id="callerName" style="color: #ffffff; font-size: 12px; width: 93%">scarlett johansson</span>
             <div class="callingOptions" style="width: 7%">
               <a style="color: #ffffff" id="callSettingButton" onclick="openSettingBox()"><i
-                  class="fas fa-ellipsis-h"></i></a>
+                  class="fa fa-ellipsis-h"></i></a>
             </div>
           </div>
           <div class="callerLogoPart">
@@ -1121,23 +1149,23 @@
             <span class="d-none">
               <hr style="border-top: 4px dotted whitesmoke" />
             </span>
-            <span style="color: #0a8609; max-width: 100%"><i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
-              <i class="fas fa-water"></i>
+            <span style="color: #0a8609; max-width: 100%"><i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
+              <i class="fa fa-water"></i>
             </span>
           </div>
           <hr style="border: 0.5px solid white" />
@@ -1145,19 +1173,19 @@
           <div class="callOption">
             <ul class="callBoxesOptions">
               <li class="callOptionBox">
-                <a href=""><i class="fas fa-volume-up"></i></a>
+                <a href=""><i class="fa fa-volume-up"></i></a>
                 <p>speaker</p>
               </li>
               <li class="callOptionBox">
-                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fa fa-user"></i></a>
                 <p>add participant</p>
               </li>
               <li class="callOptionBox">
-                <a href=""><i class="fas fa-microphone-slash"></i></a>
+                <a href=""><i class="fa fa-microphone-slash"></i></a>
                 <p>mute</p>
               </li>
               <li class="callOptionBox" id="callEnd" onclick="callEnd()">
-                <a class="callEndBox"><i class="fas fa-phone-slash"></i></a>
+                <a class="callEndBox"><i class="fa fa-phone-slash"></i></a>
                 <p>End</p>
               </li>
             </ul>
@@ -1165,7 +1193,7 @@
         </div>
         <!-- logo of patients -->
         <div class="patientLogoPart" id="patientLogoPart" data-target="#patientDetailsPart">
-          <a type="button" id="backToCallList" onclick="backToCallList()"><i class="fas fa-arrow-left"></i></a>
+          <a type="button" id="backToCallList" onclick="backToCallList()"><i class="fa fa-arrow-left"></i></a>
           <div class="pateint-logo">
             <p>PV</p>
           </div>
@@ -1182,27 +1210,27 @@
             </div>
             <div class="patientAddress">
               <p id="addressOfPatient">
-                <i class="fas fa-map-marker-alt" style="color: #fe0404"></i>
+                <i class="fa fa-map-marker" style="color: #fe0404"></i>
                 Apsara Sky Line, Navapura, Vadodara,Gujarat, India-390004
               </p>
             </div>
           </div>
           <div class="details2">
             <div id="voiceCall" class="voice-call text-center">
-              <i class="fas fa-phone detIcon" style="color: #0a8609"></i>
+              <i class="fa fa-phone detIcon" style="color: #0a8609"></i>
               <p>voice Call</p>
             </div>
 
             <div id="searchMsg" class="search-msg text-center">
-              <i class="fas fa-search detIcon" style="color: #0997ff" onclick="openMsgsSearch()"></i>
+              <i class="fa fa-search detIcon" style="color: #0997ff" onclick="openMsgsSearch()"></i>
               <p>search</p>
             </div>
             <div id="media" class="media text-center">
-              <i class="fas fa-folder detIcon" style="color: #e4a951" onclick="openMediaBox()"></i>
+              <i class="fa fa-folder detIcon" style="color: #e4a951" onclick="openMediaBox()"></i>
               <p>media</p>
             </div>
             <div id="lastSeen" class="last-seen d-flex">
-              <i class="fas fa-clock detIcon" style="color: #565656"></i>
+              <i class="fa fa-clock detIcon" style="color: #565656"></i>
               <p>
                 &nbsp;last seen at <span id="timeOfLastSeen">4.10 PM</span>
               </p>
@@ -1584,31 +1612,31 @@
             <ul class="chatTagsDisplayBox" id="chatTagsDisplayBox">
 
             </ul>
-            <a type="button" id="editButton" href="#"><i class="fas fa-edit" style="color: #4bc0a4"></i> Add / Edit
+            <a type="button" id="editButton" href="#"><i class="fa fa-edit" style="color: #4bc0a4"></i> Add / Edit
               Contact details</a>
           </div>
           <div class="addDetailPart2">
             <div class="reminderTag text-center">
               <div class="reminderIcon backBlue" id="reminderIcon" onclick="reminderBoxOpen()">
-                <a href="#"><i class="fas fa-clock"></i></a>
+                <a href="#"><i class="fa fa-clock"></i></a>
               </div>
               <p class="iconSetup">Set Reminders</p>
             </div>
             <div class="addTag text-center" onclick="addNotes()">
               <div class="addIcon backBlue" id="addIcon">
-                <a href="#"><i class="fas fa-clipboard"></i></a>
+                <a href="#"><i class="fa fa-clipboard"></i></a>
               </div>
               <p class="iconSetup">add Notes</p>
             </div>
             <div class="onlyTag text-center">
               <div class="tagIcon backBlue" id="tagIcon">
-                <a href="#"><i class="fas fa-tag"></i></a>
+                <a href="#"><i class="fa fa-tag"></i></a>
               </div>
               <p class="iconSetup">add Tags</p>
             </div>
             <div class="moreTag text-center">
               <div class="moreIcon" id="moreIcon">
-                <a href="#"><i class="fas fa-ellipsis-v" style="color: black"></i></a>
+                <a href="#"><i class="fa fa-ellipsis-v" style="color: black"></i></a>
               </div>
               <p class="iconSetup">More</p>
             </div>
@@ -1616,14 +1644,14 @@
         </div>
         <!-- mobile settings -->
         <div class="MobOptionsForMess">
-          <i id="openTagListBoxMob" class="fas fa-tag" style="color: #0085ff"></i>
-          <i id="voiceCallMob" class="fas fa-phone-alt" style="
+          <i id="openTagListBoxMob" class="fa fa-tag" style="color: #0085ff"></i>
+          <i id="voiceCallMob" class="fa fa-phone" style="
                 color: #017800;
                 padding: 5px;
                 border-radius: 50%;
                 background-color: #9aff99;
               "></i>
-          <i class="fas fa-ellipsis-v" id="openMobSetting"></i>
+          <i class="fa fa-ellipsis-v" id="openMobSetting"></i>
         </div>
 
         <!-- tag edition box -->
@@ -1716,7 +1744,7 @@
             <div class="incomingAttempAlert upperBoundBox">
               <!-- iAA (incoming attempt alert) -->
               <div class="alertBox iAAbox">
-                <i class="fas fa-arrow-alt-circle-left" style="color: #0a8609"></i>
+                <i class="fa fa-arrow-circle-left" style="color: #0a8609"></i>
                 <span>Call attempted-Incoming</span>
               </div>
               <span id="showDateiAA" class="showDate">
@@ -1725,7 +1753,7 @@
             </div>
             <div class="missedAlert upperBoundBox">
               <div class="alertBox missedbox">
-                <i class="fas fa-arrow-circle-left" style="color: #fe0404"></i>
+                <i class="fa fa-arrow-circle-left" style="color: #fe0404"></i>
                 <span>Missed call</span>
               </div>
               <span id="showDatemissed" class="showDate">
@@ -1735,7 +1763,7 @@
             <div class="outgoingAttempAlert upperBoundBox">
               <!-- iAA (incoming attempt alert) -->
               <div class="alertBox oAAbox">
-                <i class="fas fa-arrow-alt-circle-right" style="color: #0997ff"></i>
+                <i class="fa fa-arrow-circle-right" style="color: #0997ff"></i>
                 <span>Call attempted-Outgoing</span>
               </div>
               <span id="showDateoAA" class="showDate">
@@ -1770,7 +1798,7 @@
           <div class="reminderAlert">
             <div class="rmBox d-flex">
               <div class="rAlogo">
-                <i class="fas fa-clock" style="color: #0997ff"></i>
+                <i class="fa fa-clock" style="color: #0997ff"></i>
               </div>
               <div class="rmTime ms-1">
                 <p>
@@ -1817,7 +1845,7 @@
                 <option value="7">7:00 PM</option>
               </select>
             </p>
-            <a href="#" id="noteAdds"><i class="fas fa-address-book" style="color: #0997ff"></i> Add
+            <a href="#" id="noteAdds"><i class="fa fa-address-book" style="color: #0997ff"></i> Add
               note</a>
           </div>
         </div>
@@ -1828,18 +1856,18 @@
         <!-- icon for collapsing -->
         <p class="myP m-0 text-center" style="height: 2px">
           <a id="bubble-btn" class="btn bubble-btn" onclick="collapse()"><i id="hideIcon"
-              class="fas fa-chevron-down"></i><i id="showIcon" class="fas fa-angle-up"></i></a>
+              class="fa fa-chevron-down"></i><i id="showIcon" class="fa fa-angle-up"></i></a>
         </p>
         <div class="rplyAndAns" id="rplyAndAns" style="height: 75%; background-color: #ffffff">
           <div class="headSuggest d-flex justify-content-around">
             <a id="suggestionsOption" onclick="gotoSuggest()">
               <p>
-                <i class="fas fa-mobile-alt"></i> Quick Reply Template
+                <i class="fa fa-mobile"></i> Quick Reply Template
               </p>
             </a>
             <a onclick="gotoQA()">
               <p>
-                <i class="fas fa-question"></i> Quick Questions and Answers
+                <i class="fa fa-question"></i> Quick Questions and Answers
               </p>
             </a>
           </div>
@@ -1893,7 +1921,7 @@
           <div class="QAsuggestions" id="QAsuggestions">
             <div id="QAaddbtn" class="QAaddbtn d-flex justify-content-center align-items-end">
               <div class="QAaddicons d-flex justify-content-center align-items-center">
-                <a style="cursor: pointer"><i class="fas fa-plus-circle"></i></a>
+                <a style="cursor: pointer"><i class="fa fa-plus-circle"></i></a>
               </div>
             </div>
 
@@ -1905,7 +1933,7 @@
               <ul id="ulForQA">
                 <li>
                   <p>
-                    <i class="greenIcon fas fa-sign-in-alt"></i>
+                    <i class="greenIcon fa fa-sign-in"></i>
                     <a class="suggestQA">How do I start online consultation with doctors on
                       welldone?
                     </a>
@@ -1913,13 +1941,13 @@
                 </li>
                 <li>
                   <p>
-                    <i class="greenIcon fas fa-sign-in-alt"></i><a class="suggestQA">Are your online doctors qualified?
+                    <i class="greenIcon fa fa-sign-in"></i><a class="suggestQA">Are your online doctors qualified?
                     </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <i class="greenIcon fas fa-sign-in-alt"></i><a class="suggestQA">Is online doctor consultation safe
+                    <i class="greenIcon fa fa-sign-in"></i><a class="suggestQA">Is online doctor consultation safe
                       and secured on
                       welldone?
                     </a>
@@ -1927,14 +1955,14 @@
                 </li>
                 <li>
                   <p>
-                    <i class="greenIcon fas fa-sign-in-alt"></i><a class="suggestQA">What happens if I don’t get a
+                    <i class="greenIcon fa fa-sign-in"></i><a class="suggestQA">What happens if I don’t get a
                       response from a doctor?
                     </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <i class="greenIcon fas fa-sign-in-alt"></i><a class="suggestQA">Can I do a free online doctor
+                    <i class="greenIcon fa fa-sign-in"></i><a class="suggestQA">Can I do a free online doctor
                       consultation on welldone?
                     </a>
                   </p>
@@ -1946,12 +1974,12 @@
 
         <div class="sendingMsgBox" id="sendingMsgBox">
           <!-- attaching file -->
-          <a id="attachFile" onclick="openAttachOptions()"><i class="fas fa-paperclip fa-lg"
+          <a id="attachFile" onclick="openAttachOptions()"><i class="fa fa-paperclip fa-lg"
               style="color: #494949"></i></a>
           <!-- writing messages -->
           <form action="#" class="send-container">
             <input type="text" name="sendingMsg" id="sendingMsg" placeholder="Type your message here...." />
-            <a type="submit" id="submitBtn"><i class="fas fa-paper-plane fa-lg"></i></a>
+            <a type="submit" id="submitBtn"><i class="fa fa-paper-plane fa-lg"></i></a>
           </form>
           <div class="animate__animated animate__fadeInUp attachOptions">
             <div class="openCameraBox">
@@ -2050,9 +2078,9 @@
           <form action="#" class="send-container">
             <div class="inputFileMob">
               <input type="text" name="sendingMsgMob" id="sendingMsgMob" placeholder="Message...." />
-              <a href="#" id="attachFileMob"><i class="fas fa-paperclip fa-lg" style="color: #494949"></i></a>
+              <a href="#" id="attachFileMob"><i class="fa fa-paperclip fa-lg" style="color: #494949"></i></a>
             </div>
-            <a type="submit" id="submitBtnMob"><i class="fas fa-paper-plane fa-lg"></i></a>
+            <a type="submit" id="submitBtnMob"><i class="fa fa-paper-plane fa-lg"></i></a>
           </form>
           <div class="animate__animated animate__fadeInUp attachOptionsMob">
             <div class="openCameraBoxMob">

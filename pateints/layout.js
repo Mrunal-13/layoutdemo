@@ -37,7 +37,7 @@ function openNav() {
         }
     }
     if (document.getElementById("leftright").style.width === "95.5%" || document.getElementById("leftright").style.width === "") {
-        document.getElementById("leftright").style.width = "83.5%"
+        document.getElementById("leftright").style.width = "83.5%";
     } else {
         document.getElementById("leftright").style.width = "95.5%";
     }
@@ -69,11 +69,11 @@ function openNav() {
     if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
         document.getElementById("Appointment").style.marginLeft = "10px";
     } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
-        document.getElementById("Appointment").style.marginLeft = "480px"
+        document.getElementById("Appointment").style.marginLeft = "480px";
     } else if (document.getElementById("Appointment").style.marginLeft === "180px") {
-        document.getElementById("Appointment").style.marginLeft = "10px"
+        document.getElementById("Appointment").style.marginLeft = "10px";
     } else if (document.getElementById("Appointment").style.marginLeft === "10px") {
-        document.getElementById("Appointment").style.marginLeft = "180px"
+        document.getElementById("Appointment").style.marginLeft = "180px";
     }
 }
 
@@ -186,24 +186,6 @@ function makelist1() {
         e.target.parentElement.remove();
     });
 }
-
-
-document.getElementById('inputfordiseases').addEventListener('keypress', function(e) {
-
-    if (e.key == 'Enter') {
-        var text = document.getElementById('inputfordiseases').value;
-        document.getElementById('inputfordiseases').value = null;
-        document.getElementById('inputfordiseases').style.display = 'none';
-        var li = document.createElement('li');
-        li.innerHTML = text + "  " + "<img class='minus' src='https://img.icons8.com/small/16/000000/minus.png'/>";
-        var empyttext = document.getElementById('inputfordiseases').value;
-        if (empyttext != null) {
-            document.getElementById('otherdisease').appendChild(li);
-
-        }
-    }
-});
-
 
 // input for drug section
 function makelist2() {

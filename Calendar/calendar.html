@@ -15,6 +15,9 @@
 
     <!-- Fontawesone js file for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Code for icon @anjudewangan -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- Code for icon @anjudewangan -->
 
     <!-- Google font Files -->
     <link rel="stylesheet" href="css/classic.css">
@@ -77,8 +80,10 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="staticBackdropLabel">Advance Patient Search</h5>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                                aria-label="Close" onclick="HandleCancel()"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="popup-form">
@@ -172,13 +177,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="addPateintButton" href="addpatient.html">
+                    <a class="nav-link mr-lg-2" id="addPateintButton" href="../Addpateints/addpatient.html">
                         <button type="button" class="addpatient">Add Patient</button>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="calenderButton" href="#" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                    <a class="nav-link mr-lg-2" id="calenderButton" href="../Calendar/calendar.html">
                         <i class="fa fa-fw fa-calendar"></i>
                     </a>
                 </li>
@@ -262,8 +266,11 @@
                 </div>
                 <hr style="margin: 15px 0;">
                 <ul id="settingOptions">
-                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17"
-                            data-height="17"></span> Edit Profile</li>
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
+                    <li><a href="../admin profile/admin.html" style="text-decoration: none; color: black;"><span
+                                class="iconify" style="color: gray;" data-icon="akar-icons:pencil" data-width="17"
+                                data-height="17"></span> Edit Profile</a></li>
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
                     <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
                             data-width="17" data-height="17"></span> Account Setting</li>
                     <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
@@ -584,7 +591,7 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="calendar.html">
                     <i class="fa fa-fw fa fa-calendar"></i>
                     <span class="nav-link-text">Appointment</span>
                 </a>
@@ -2914,8 +2921,171 @@
                                 </form>
                             </div>
                             <div class="modal-footer modalend">
-                                <button>Done</button>
+                                <!-- Code for Calendar new popup @anjudewangan-->
+                                <button type="button" class="btn-modalend" data-bs-toggle="modal"
+                                    data-bs-target="#popupBox" id="btn-done">Done</button>
                             </div>
+                            <div class="modal fade" id="popupBox" tabindex="-1" aria-labelledby="popupBoxLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header d-flex justify-content-end">
+                                            <button type="button" class="btn-modal-edit"><i class="fa fa-pencil"
+                                                    aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-modal-copy"><i class="fa fa-clone"
+                                                    aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container container-1">
+                                                <!-- <div class="row">
+                                                    <div class="col-2">
+                                                        <a class="user-img-link" href="#">
+                                                            <img src="../images/ava3.jfif" class="user-img-second"
+                                                                id="dvUserImage" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <h5>Rakesh Nandre</h5>
+                                                        <div class="row">
+                                                            <div class="col"> 25Y 2M Old
+                                                            </div>
+                                                            <div class="col"><span class="spanGender"><i
+                                                                        class="fa fa-mars"
+                                                                        aria-hidden="true"></i></span>
+                                                                <span>Male</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col"><span class="spanWeight"><i
+                                                                        class="fa fa-line-chart"
+                                                                        aria-hidden="true"></i></span> 25 kg</div>
+                                                            <div class="col"> <span class="spanBloodGroup"><i
+                                                                        class="fa fa-tint"
+                                                                        aria-hidden="true"></i></span>
+                                                                <span>B+</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="col"><i class="fa fa-phone"
+                                                                aria-hidden="true"></i><span class="spanMobile">
+                                                                +919130077618
+                                                            </span></div>
+                                                        <div class="col"><i class="fa fa-envelope-o"
+                                                                aria-hidden="true"></i><span class="spanEmail">
+                                                                zxyfg@domin.com</span></div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="col">
+                                                            <img src="../images/insurance.jpg" class="insurance-img" />
+                                                            <span class="spanInsurance">Individual Health Insurance
+                                                                Policy</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="col">
+                                                            Address - <span class="spanAddress">Mumbai,
+                                                                Maharashtra</span></div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="col">
+                                                            Language -
+                                                            <span class="spanLanguage">Gujrati, Hindi</span>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="container container-2 mt-2">
+                                                <div class="row">
+                                                    <div class="col-1">
+                                                        <img src="../images/home.jpg" class="home-img" id="" />
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <ul>
+                                                            <li>In-Office Appointment</li>
+                                                            <li>
+                                                                <h6>Dr.Nayan kanade</h6>
+                                                            </li>
+                                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                                11:28 AM for 15 mins
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-3 d-flex align-items-center"><button
+                                                            class="btn btn-drop-out">Drop Out</button></div>
+                                                </div>
+                                                <div class="row row-border-top">
+                                                    <div class="col-1">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <ul>
+                                                            <li>Office-1</li>
+                                                            <li>Clinic address with pin code</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container container-3 mt-2">
+                                                <ul>
+                                                    <li>Planned Procedures</li>
+                                                    <li>
+                                                        <ul>
+                                                            <li>Eyeball operations</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Notes
+                                                    </li>
+                                                    <li>
+                                                        <ul>
+                                                            <li>No</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Medical History
+                                                    </li>
+                                                    <li>
+                                                        <ul>
+                                                            <li>Heart disease, Diabetes
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Allergic Information
+                                                    </li>
+                                                    <li>
+                                                        <ul>
+                                                            <li>Drug Allergy
+                                                                <ul>
+                                                                    <li>Paracetamol</li>
+                                                                    <li>Aspirin</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Clinical Notes</li>
+                                                    <li>Special Instruction</li>
+                                                    <li>Files</li>
+                                                    <li>Lab Test Advice</li>
+                                                    <li>Prescriptions</li>
+                                                    <li>Completed Procedures</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="button" class="btn btn-collect-payment">Collect
+                                                Payment</button>
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <img src="../images/light.jpg" alt="" class="light-img">
+                                                    Collect online payments from patients.<a href="">How ?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Code for Calendar new popup @anjudewangan-->
                         </div>
                     </div>
                 </div>

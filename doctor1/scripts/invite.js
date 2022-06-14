@@ -89,7 +89,7 @@ dropbtnMyfunction.addEventListener("click", () => {
 })
 
 
-// Advanced Patient Search
+// Code for Advanced Patient Search @anjudewangan
 const optionMap = new Map();
 optionMap.set("patient_name", '<input type="text" placeholder="Contains"/>');
 optionMap.set("has_contact_number", '<select><option value="has_contact_number">Yes</option><option value="no">No</option></select>');
@@ -129,7 +129,7 @@ function GetControl(selectedCategory) {
     if (getControl === undefined) {
         $("#divControl").html("No Corrosponding Control Found.");
     } else {
-        $("#divControl").html(getControl + '<i class="fa fa-times-circle" style="display:none;" id="errorShow"></i>');
+        $("#divControl").html(getControl + '<i class="fa fa-times-circle" style="display:none;" id="errorShow" onclick="HandleCancel()"></i>');
     }
 }
 

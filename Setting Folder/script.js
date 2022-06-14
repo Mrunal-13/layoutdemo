@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $("#profile-link").addClass("active-li");
     $("#active-manage").addClass("active");
     $(".dvAddDoctorButton").css("display", "none");
@@ -9,87 +9,231 @@ $(document).ready(function() {
     $(".dvCommunication").css("display", "none");
     $(".dvAddBranch").css("display", "none");
 
-    $("#about-link").click(function() {
+    $("#about-link").click(function () {
         clickAbout();
     });
-    $("#branding-link").click(function() {
+    $("#branding-link").click(function () {
         clickBranding();
     });
-    $("#profile-link").click(function() {
+    $("#profile-link").click(function () {
         clickPracticeProfile();
     });
-    $("#details-link").click(function() {
+    $("#details-link").click(function () {
         clickPracticeDetails();
     });
-    $("#practice-staff").click(function() {
+    $("#practice-staff").click(function () {
         manageStaffTable();
     });
-    $("#active-manage").click(function() {
+    $("#active-manage").click(function () {
         manageStaffTable();
     });
-    $("#active-noti").click(function() {
+    $("#active-noti").click(function () {
         staffNotiTable();
     });
-    $("#active-doctor").click(function() {
+    $("#active-doctor").click(function () {
         doctorVisitTable();
     });
-    $("#btn-other-staff").click(function() {
+    $("#btn-other-staff").click(function () {
         clickOtherStaff();
     });
-    $("#btn-doctor").click(function() {
+    $("#btn-doctor").click(function () {
         clickDoctor();
     });
-    $("#btn-other-staff").click(function() {
+    $("#btn-other-staff").click(function () {
         clickOtherStaff();
     });
-    $("#btn-other-doctor").click(function() {
+    $("#btn-other-doctor").click(function () {
         clickDoctor();
     });
-    $("#btn-add-doctor").click(function() {
+    $("#btn-add-doctor").click(function () {
         clickAddDoctor();
     });
-    $("#btn-add-staff").click(function() {
+    $("#btn-add-staff").click(function () {
         clickAddStaff();
     });
-    $("#btnTimeEdit").click(function() {
+    $("#btnTimeEdit").click(function () {
         doctorOfficeAppoin();
     });
-    $("#calendar-link").click(function() {
+    $("#calendar-link").click(function () {
         clickCalendar();
     });
-    $("#active-general").click(function() {
+    $("#active-general").click(function () {
         clickGeneral();
     });
-    $("#active-practice-time").click(function() {
+    $("#active-practice-time").click(function () {
         clickPracticeTime();
     });
-    $("#active-appoin-category").click(function() {
+    $("#active-appoin-category").click(function () {
         clickAppoinCate();
     });
-    $("#active-notification").click(function() {
+    $("#active-notification").click(function () {
         clickNotification();
     });
-    $("#active-subscription").click(function() {
+    $("#active-subscription").click(function () {
         clickSubscription();
     });
-    $("#active-trash-bin").click(function() {
+    $("#active-trash-bin").click(function () {
         clickTrashBin();
     });
-    $("#communication-link").click(function() {
+    $("#communication-link").click(function () {
         clickCommunication();
     });
-    $("#active-appoin-follow").click(function() {
+    $("#active-appoin-follow").click(function () {
         clickAppoinFollow();
     });
-    $("#active-comm-detail").click(function() {
+    $("#active-comm-detail").click(function () {
         clickCommDetail();
     });
-    $(".branchCard").click(function() {
+    $(".branchCard").click(function () {
         clickAddBranch();
     });
 
+    // Code for Add Doctor @anjudewangan
+    $("#btn-cancel").click(function () {
+        clickbtnCancelDoctor();
+    });
+
+    $("#inputDoctorName").change(function () {
+        var inputvalues = $(this).val();
+        var nameFilter = /^[a-zA-Z ]+$/;
+        if (!nameFilter.test(inputvalues)) {
+            $("#inputDoctorName").val("");
+            alert("Invalid Name");
+            return nameFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputMobileNumber").change(function () {
+        var inputvalues = $(this).val();
+        var mobNumberFilter = /^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/;
+        if (!mobNumberFilter.test(inputvalues)) {
+            $("#inputMobileNumber").val("");
+            alert("Invalid Mobile Number");
+            return mobNumberFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputEmail").change(function () {
+        var inputvalues = $(this).val();
+        var emailFilter = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+        if (!emailFilter.test(inputvalues)) {
+            $("#inputEmail").val("");
+            alert("Invalid Email ID");
+            return emailFilter.test(inputvalues);
+        }
+    });
+
+    const addDoctorList = [];
+    addDoctorList.map((doctorName, mobileNumber, emailID, regNumber) => {
+        $(".table-manage-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + doctorName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + doctorName + '</td><td>' + mobileNumber + '</td><td>' + emailID + '</td><td>' + regNumber + '</td><td><a href="">Edit/Delete</a></td></tr>');
+    });
+
+    $("#btnAddDoctor").click(function () {
+        $(".dvPracticeStaff").css("display", "block");
+        $(".table-manage-staff").css("display", "block");
+        $(".dvButttons").css("display", "block");
+        $(".dvAddDoctorButton").css("display", "none");
+
+        const getDoctorName = $("#inputDoctorName").val().trim();
+        const getMobileNumber = $("#inputMobileNumber").val().trim();
+        const getEmailID = $("#inputEmail").val().trim();
+        const getRegNumber = $("#inputRegNumber").val().trim();
+
+        addDoctorList.push(getDoctorName);
+        addDoctorList.push(getMobileNumber);
+        addDoctorList.push(getEmailID);
+        addDoctorList.push(getRegNumber);
+
+        $(".table-manage-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + getDoctorName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + getDoctorName + '</td><td>' + getMobileNumber + '</td><td>' + getEmailID + '</td><td>' + getRegNumber + '</td><td><a href="">Edit/Delete</a></td></tr>');
+
+        $("#inputDoctorName").val("");
+        $("#inputMobileNumber").val("");
+        $("#inputEmail").val("");
+        $("#inputRegNumber").val("");
+        return false;
+    });
+    // Code for Add Doctor @anjudewangan
+
+
+    // Code for Add Staff @anjudewangan
+    $("#btn-staff-cancel").click(function () {
+        clickbtnCancelStaff();
+    });
+
+    $("#inputStaffName").change(function () {
+        var inputvalues = $(this).val();
+        var nameFilter = /^[a-zA-Z ]+$/;
+        if (!nameFilter.test(inputvalues)) {
+            $("#inputStaffName").val("");
+            alert("Invalid Name");
+            return nameFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputStaffMobNumber").change(function () {
+        var inputvalues = $(this).val();
+        var mobNumberFilter = /^(0|\+91)?[789]\d{9}$/;
+        if (!mobNumberFilter.test(inputvalues)) {
+            $("#inputStaffMobNumber").val("");
+            alert("Invalid Mobile Number");
+            return mobNumberFilter.test(inputvalues);
+        }
+    });
+
+    $("#inputStaffEmail").change(function () {
+        var inputvalues = $(this).val();
+        var emailFilter = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+        if (!emailFilter.test(inputvalues)) {
+            $("#inputStaffEmail").val("");
+            alert("Invalid Email ID");
+            return emailFilter.test(inputvalues);
+        }
+    });
+
+    const addStaffList = [];
+    addStaffList.map((staffName, staffMobNumber, staffEmail) => {
+        $(".table-other-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + staffName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + staffName + '</td><td>' + staffMobNumber + '</td><td>' + staffEmail + '</td><td><a href="">Edit/Delete</a></td></tr>');
+    });
+
+    $("#btnAddStaff").click(function () {
+        $(".dvPracticeStaff").css("display", "block");
+        $(".dvOtherStaffButtton").css("display", "block");
+        $(".table-other-staff").css("display", "block");
+        $(".dvAddStaffButton").css("display", "none");
+
+        const getStaffName = $("#inputStaffName").val().trim();
+        const getStaffMobNumber = $("#inputStaffMobNumber").val().trim();
+        const getStaffEmailID = $("#inputStaffEmail").val().trim();
+
+        addStaffList.push(getStaffName);
+        addStaffList.push(getStaffMobNumber);
+        addStaffList.push(getStaffEmailID);
+
+        $(".table-other-staff tbody").append('<tr><td><button type="button" class="btn btn-success position-relative rounded-circle text-light">' + getStaffName.charAt(0).toUpperCase() + '<span class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>' + getStaffName + '</td><td>' + getStaffMobNumber + '</td><td>' + getStaffEmailID + '</td><td><a href="">Edit/Delete</a></td></tr>');
+
+        $("#inputStaffName").val("");
+        $("#inputStaffMobNumber").val("");
+        $("#inputStaffEmail").val("");
+        return false;
+    });
+    // Code for Add Staff @anjudewangan
+
+
+    // Code for upload img in banner @anjudewangan
+    $("label[for='inputGroupFile01']").click(function () {
+        uploadBtnHide();
+    });
+    // Code for upload img in banner @anjudewangan
+
+
+    // Code for upload img in About Section @anjudewangan
+    $("label[for='inputGroupFile02']").click(function () {
+        uploadBtnHideAboutSec();
+    });
+    // Code for upload img in About Section @anjudewangan
+
     // Doctor's Practice Timings- Office Appointments
-    $("#showTable-2").click(function() {
+    $("#showTable-2").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $(this).parents(".inner_wrap").find("#tableHead").show();
@@ -105,46 +249,46 @@ $(document).ready(function() {
         }
     });
 
-    $("#addBreak-1").click(function() {
+    $("#addBreak-1").click(function () {
         $("#trLunch-1").show();
         $("#addBreak-1").hide();
     });
-    $("#addBreak-M").click(function() {
+    $("#addBreak-M").click(function () {
         $("#trLunch-M").show();
         $("#addBreak-M").hide();
         $(".dvtiming").css("height", "910px");
     });
-    $("#addBreak-Tue").click(function() {
+    $("#addBreak-Tue").click(function () {
         $("#trLunch-Tue").show();
         $("#addBreak-Tue").hide();
         $(".dvtiming").css("height", "970px");
     });
-    $("#addBreak-Wed").click(function() {
+    $("#addBreak-Wed").click(function () {
         $("#trLunch-Wed").show();
         $("#addBreak-Wed").hide();
         $(".dvtiming").css("height", "1010px");
     });
-    $("#addBreak-Thus").click(function() {
+    $("#addBreak-Thus").click(function () {
         $("#trLunch-Thus").show();
         $("#addBreak-Thus").hide();
         $(".dvtiming").css("height", "1140px");
     });
-    $("#addBreak-F").click(function() {
+    $("#addBreak-F").click(function () {
         $("#trLunch-F").show();
         $("#addBreak-F").hide();
         $(".dvtiming").css("height", "1180px");
     });
-    $("#addBreak-Sat").click(function() {
+    $("#addBreak-Sat").click(function () {
         $("#trLunch-Sat").show();
         $("#addBreak-Sat").hide();
         $(".dvtiming").css("height", "1220px");
     });
-    $("#addBreak-Sun").click(function() {
+    $("#addBreak-Sun").click(function () {
         $("#trLunch-Sun").show();
         $("#addBreak-Sun").hide();
         $(".dvtiming").css("height", "1270px");
     });
-    $("#check-M").click(function() {
+    $("#check-M").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $("#monday").css("background-color", "#bfeff5");
@@ -153,7 +297,7 @@ $(document).ready(function() {
             $("#monday").css("background-color", "#ffffff");
         }
     });
-    $("#check-Tue").click(function() {
+    $("#check-Tue").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $("#tuesday").css("background-color", "#bfeff5");
@@ -163,7 +307,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#check-Wed").click(function() {
+    $("#check-Wed").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $("#wednesday").css("background-color", "#bfeff5");
@@ -172,7 +316,7 @@ $(document).ready(function() {
             $("#wednesday").css("background-color", "#ffffff");
         }
     });
-    $("#check-Thus").click(function() {
+    $("#check-Thus").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $("#thuesday").css("background-color", "#bfeff5");
@@ -182,7 +326,7 @@ $(document).ready(function() {
         }
 
     });
-    $("#check-F").click(function() {
+    $("#check-F").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $("#friday").css("background-color", "#bfeff5");
@@ -193,7 +337,7 @@ $(document).ready(function() {
         $("#friday").css("background-color", "#bfeff5");
 
     });
-    $("#check-Sat").click(function() {
+    $("#check-Sat").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $("#saturday").css("background-color", "#bfeff5");
@@ -203,7 +347,7 @@ $(document).ready(function() {
         }
 
     });
-    $("#check-Sun").click(function() {
+    $("#check-Sun").click(function () {
         const x = $(this).is(":checked");
         if (x == true) {
             $("#sunday").css("background-color", "#bfeff5");
@@ -526,6 +670,25 @@ function clickAddDoctor() {
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
 }
+
+// Code for Add Doctor @anjudewangan
+function clickbtnCancelDoctor() {
+    $(".dvPracticeStaff").css("display", "block");
+    $(".table-manage-staff").css("display", "block");
+    $(".dvButttons").css("display", "block");
+    $(".dvAddDoctorButton").css("display", "none");
+}
+// Code for Add Doctor @anjudewangan
+
+
+// Code for Add Staff @anjudewangan
+function clickbtnCancelStaff() {
+    $(".dvPracticeStaff").css("display", "block");
+    $(".dvOtherStaffButtton").css("display", "block");
+    $(".table-other-staff").css("display", "block");
+    $(".dvAddStaffButton").css("display", "none");
+}
+// Code for Add Staff @anjudewangan
 
 function clickAddStaff() {
     $(".dvButttons").css("display", "none");
@@ -870,7 +1033,7 @@ function initialize() {
             " | Longitude:" + position[1]
     });
 
-    google.maps.event.addListener(map, "click", function(event) {
+    google.maps.event.addListener(map, "click", function (event) {
         var result = [event.latLng.lat(), event.latLng.lng()];
         transition(result);
     });
@@ -997,7 +1160,7 @@ function openNav() {
 }
 
 
-// Advanced Patient Search
+// Code for Advanced Patient Search @anjudewangan
 const optionMap = new Map();
 optionMap.set("patient_name", '<input type="text" placeholder="Contains"/>');
 optionMap.set("has_contact_number", '<select><option value="has_contact_number">Yes</option><option value="no">No</option></select>');
@@ -1037,7 +1200,7 @@ function GetControl(selectedCategory) {
     if (getControl === undefined) {
         $("#divControl").html("No Corrosponding Control Found.");
     } else {
-        $("#divControl").html(getControl + '<i class="fa fa-times-circle" style="display:none;" id="errorShow"></i>');
+        $("#divControl").html(getControl + '<i class="fa fa-times-circle" style="display:none;" id="errorShow" onclick="HandleCancel()"></i>');
     }
 }
 
@@ -1051,16 +1214,16 @@ function HandleCancel() {
     $("#errorShow").hide();
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     const firstCategory = $("#ddlInfo option:first").val();
     GetControl(firstCategory);
 
-    $("#ddlInfo").change(function(event) {
+    $("#ddlInfo").change(function (event) {
         const selectedCategory = $(this).val();
         GetControl(selectedCategory);
     });
 
-    $("#btnAddMore").click(function() {
+    $("#btnAddMore").click(function () {
         if (isCategoriesShown === false) {
             categoryList.map((category) => {
                 $("#divCategories").append('<input name="category" type="radio" id="' + category + '" value="' + category + '"><label for="' + category + '">' + category + '</label><br />');
@@ -1069,10 +1232,70 @@ $(document).ready(function() {
         }
     });
 
-    $('#divCategories').on('change', "input[name=category]", function(event) {
+    $('#divCategories').on('change', "input[name=category]", function (event) {
         $("#ddlInfo option:contains(" + event.target.value.trim() + ")").prop('selected', 'selected');
         $('#ddlInfo').trigger('change');
         $("#divCategories").html("");
         isCategoriesShown = false;
     });
 });
+
+// Code for upload img in page logo @anjudewangan
+imgInp.onchange = evt => {
+    const [file] = imgInp.files;
+    if (file) {
+        pageLogo.src = URL.createObjectURL(file);
+    }
+}
+
+// Code for upload img in page logo @anjudewangan
+
+
+// Code for upload img in banner @anjudewangan
+inputGroupFile01.onchange = evt => {
+    const [file] = inputGroupFile01.files;
+    if (file) {
+        bannerImg.src = URL.createObjectURL(file);
+    }
+}
+function uploadBtnHide() {
+    $("label[for='inputGroupFile01']").css("display", "none");
+    $("#bannerPara").css("display", "none");
+    $("#banner-img-icon-1 label").css("display", "block");
+    $(".banner-image img").css("width", "100%");
+    $(".banner-image img").css("height", "125px");
+}
+
+inputGroupFile03.onchange = evt => {
+    const [file] = inputGroupFile03.files;
+    if (file) {
+        bannerImg.src = URL.createObjectURL(file);
+    }
+}
+
+// Code for upload img in banner @anjudewangan
+
+
+// Code for upload img in About Section @anjudewangan
+inputGroupFile02.onchange = evt => {
+    const [file] = inputGroupFile02.files;
+    if (file) {
+        uploadImg.src = URL.createObjectURL(file);
+    }
+}
+
+function uploadBtnHideAboutSec() {
+    $("label[for='inputGroupFile02']").css("display", "none");
+    $("#bannerPara").css("display", "none");
+    $("#banner-img-icon-2 label").css("display", "block");
+    $(".dvAbout .dvSubject-4 img").css("width", "100%");
+    $(".dvAbout .dvSubject-4 img").css("height", "100%");
+}
+
+inputGroupFile04.onchange = evt => {
+    const [file] = inputGroupFile04.files;
+    if (file) {
+        uploadImg.src = URL.createObjectURL(file);
+    }
+}
+// Code for upload img in About Section @anjudewangan

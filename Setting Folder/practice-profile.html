@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script async defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script async defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHqO46BDIhQnJpizDLv35o0FUkdAB-vnk"></script>
-    <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+    <script async defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
     <link rel="stylesheet" href="../pateints/layout.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -35,13 +42,19 @@
                     <form class="form-inline">
                         <div class="searchbox">
                             <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
-                            <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal" data-bs-target="#popup">Advanced</button>
-                            <div class="modal fade" id="popup" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true" role="dialog" data-backdrop="false">
+                            <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal"
+                                data-bs-target="#popup">Advanced</button>
+                            <div class="modal fade" id="popup" data-bs-backdrop="false" data-bs-keyboard="false"
+                                tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true" role="dialog"
+                                data-backdrop="false">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="popupLabel">Advance Patient Search</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close" onclick="HandleCancel()"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="popup-form">
@@ -50,35 +63,51 @@
                                                         <td>
                                                             <div class="dvSelect">
                                                                 <select id="ddlInfo">
-                                                                <option value="patient_name">Patient Name</option>
-                                                                <option value="has_contact_number">Has Contact Number</option>
-                                                                <option value="contact_number">Contact Number</option>
-                                                                <option value="age_is">Age is</option>
-                                                                <option value="age_more_than">Age is More Than</option>
-                                                                <option value="age_less_than">Age is Less Than</option>
-                                                                <option value="has_date_of_birth">Has Date of Birth</option>
-                                                                <option value="date_of_birth">Date of Birth Is</option>
-                                                                <option value="date_of_birth_more_than">Date of Birth is More Than</option>
-                                                                <option value="date_of_birth_less_than">Date of Birth is Less Than</option>
-                                                                <option value="birthday_is_in">Birthday is in</option>
-                                                                <option value="has_patient_id">Has Patient ID</option>
-                                                                <option value="patient_id">Patient ID</option>
-                                                                <option value="has_aadhaar_id">Has Aadhaar ID</option>
-                                                                <option value="aadhaar_id">Aadhaar ID</option>
-                                                                <option value="has_email">Has Email</option>
-                                                                <option value="email">Email</option>
-                                                                <option value="has_email">Has Email</option>
-                                                                <option value="has_gender">Has Gender</option>
-                                                                <option value="gender">Gender is</option>
-                                                                <option value="has_pincode">Has Pincode</option>
-                                                                <option value="pincode">Pincode</option>
-                                                                <option value="has_street_address">Has Street Address</option>
-                                                                <option value="street_address">Street Address</option>
-                                                                <option value="has_blood_group">Has Blood Group</option>
-                                                                <option value="blood_group">Blood Group</option>
-                                                                <option value="was_referred_by_someone">Was Referred By Someone</option>
-                                                                <option value="referred_by_someone">Referred By</option>
-                                                            </select>
+                                                                    <option value="patient_name">Patient Name</option>
+                                                                    <option value="has_contact_number">Has Contact
+                                                                        Number</option>
+                                                                    <option value="contact_number">Contact Number
+                                                                    </option>
+                                                                    <option value="age_is">Age is</option>
+                                                                    <option value="age_more_than">Age is More Than
+                                                                    </option>
+                                                                    <option value="age_less_than">Age is Less Than
+                                                                    </option>
+                                                                    <option value="has_date_of_birth">Has Date of Birth
+                                                                    </option>
+                                                                    <option value="date_of_birth">Date of Birth Is
+                                                                    </option>
+                                                                    <option value="date_of_birth_more_than">Date of
+                                                                        Birth is More Than</option>
+                                                                    <option value="date_of_birth_less_than">Date of
+                                                                        Birth is Less Than</option>
+                                                                    <option value="birthday_is_in">Birthday is in
+                                                                    </option>
+                                                                    <option value="has_patient_id">Has Patient ID
+                                                                    </option>
+                                                                    <option value="patient_id">Patient ID</option>
+                                                                    <option value="has_aadhaar_id">Has Aadhaar ID
+                                                                    </option>
+                                                                    <option value="aadhaar_id">Aadhaar ID</option>
+                                                                    <option value="has_email">Has Email</option>
+                                                                    <option value="email">Email</option>
+                                                                    <option value="has_email">Has Email</option>
+                                                                    <option value="has_gender">Has Gender</option>
+                                                                    <option value="gender">Gender is</option>
+                                                                    <option value="has_pincode">Has Pincode</option>
+                                                                    <option value="pincode">Pincode</option>
+                                                                    <option value="has_street_address">Has Street
+                                                                        Address</option>
+                                                                    <option value="street_address">Street Address
+                                                                    </option>
+                                                                    <option value="has_blood_group">Has Blood Group
+                                                                    </option>
+                                                                    <option value="blood_group">Blood Group</option>
+                                                                    <option value="was_referred_by_someone">Was Referred
+                                                                        By Someone</option>
+                                                                    <option value="referred_by_someone">Referred By
+                                                                    </option>
+                                                                </select>
                                                             </div>
                                                         </td>
                                                         <td>
@@ -96,8 +125,10 @@
                                             <div id="divNoData" style="display: none;">No Data Found</div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" id="btnSearch" onclick="ShowNoDataMessage()">Search</button>
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCancel" onclick="HandleCancel()">Cancel</button>
+                                            <button type="button" class="btn btn-primary" id="btnSearch"
+                                                onclick="ShowNoDataMessage()">Search</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                id="btnCancel" onclick="HandleCancel()">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +142,8 @@
                     </form>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="microPhoneChoose" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link mr-lg-2" id="microPhoneChoose" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-microphone"></i>
                     </a>
                 </li>
@@ -121,12 +153,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="calenderButton" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link mr-lg-2" id="calenderButton" href="../Calendar/calendar.html">
                         <i class="fa fa-fw fa-calendar"></i>
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-bell"></i>
                         <span class="d-lg-none">Alerts
                             <span class="badge badge-pill badge-warning">6 New</span>
@@ -162,7 +195,8 @@
                             <span class="MADTime">11:21 AM</span>
                         </div>
                         <div class="MadBodyitemsPart2">
-                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
                         </div>
                     </div>
                     <div class="dropdown-divider"></div>
@@ -172,7 +206,8 @@
                             <span class="MADTime">11:21 AM</span>
                         </div>
                         <div class="MadBodyitemsPart2">
-                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
                         </div>
                     </div>
                     <div class="dropdown-divider"></div>
@@ -182,7 +217,8 @@
                             <span class="MADTime">11:21 AM</span>
                         </div>
                         <div class="MadBodyitemsPart2">
-                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
                         </div>
                     </div>
                 </div>
@@ -200,10 +236,17 @@
                 </div>
                 <hr style="margin: 15px 0;">
                 <ul id="settingOptions">
-                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17" data-height="17"></span> Edit Profile</li>
-                    <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;" data-width="17" data-height="17"></span> Account Setting</li>
-                    <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17" data-height="17"></span> Add User</li>
-                    <li><span class="iconify" data-icon="bx:log-out" style="color: gray;" data-width="17" data-height="17"></span> Log Out</li>
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
+                    <li><a href="../admin profile/admin.html" style="text-decoration: none; color: black;"><span
+                                class="iconify" style="color: gray;" data-icon="akar-icons:pencil" data-width="17"
+                                data-height="17"></span> Edit Profile</a></li>
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
+                    <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
+                            data-width="17" data-height="17"></span> Account Setting</li>
+                    <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
+                            data-height="17"></span> Add User</li>
+                    <li><span class="iconify" data-icon="bx:log-out" style="color: gray;" data-width="17"
+                            data-height="17"></span> Log Out</li>
                 </ul>
             </div>
         </div>
@@ -290,7 +333,8 @@
                     <span class="nav-link-text">Doctors</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" onclick="showpateintTable()">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables"
+                onclick="showpateintTable()">
                 <a class="nav-link" href="../pateints/index.html">
                     <i class="fa fa-fw fa fa-wheelchair"></i>
                     <span class="nav-link-text">Patient</span>
@@ -321,7 +365,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-user"></i>
                     <span class="nav-link-text">Employee</span>
                 </a>
@@ -341,7 +386,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-book"></i>
                     <span class="nav-link-text">Payroll</span>
                 </a>
@@ -358,7 +404,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-video-camera"></i>
                     <span class="nav-link-text">Call</span>
                 </a>
@@ -372,7 +419,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseEmail"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-envelope"></i>
                     <span class="nav-link-text">email</span>
                 </a>
@@ -386,7 +434,8 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseBlog"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fas fa-comment"></i>
                     <span class="nav-link-text">Blog</span>
                 </a>
@@ -412,7 +461,8 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseReport"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-flag"></i>
                     <span class="nav-link-text">Report</span>
                 </a>
@@ -575,26 +625,44 @@
                     <div class="col">
                         <div class="dvPageLogo">Page Logo</div>
                         <div class="page-logo position-relative">
-                            <img src="../images/img13.png" alt="Page Logo">
-                            <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-light text-dark">
-                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <img src="../images/img13.png" alt="Page Logo" id="pageLogo">
+                            <span
+                                class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-light text-dark">
+                                <!-- Code for setting-branding Page Logo @anjudewangan -->
+                                <label for="imgInp">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </label>
+                                <input type="file" accept="image/*" id="imgInp" />
+                                <!-- Code for setting-branding Page Logo @anjudewangan -->
                                 <span class="visually-hidden">unread messages</span>
                             </span>
                         </div>
                         <div class="para my-3">
-                            Your profile picture will appear where your practice will be presented on Welldone Health, as well as next to your videos, blogs and comments.
+                            Your profile picture will appear where your practice will be presented on Welldone Health,
+                            as well as next to your videos, blogs and comments.
                         </div>
                     </div>
                     <div class="col">
                         <div>Banner Image</div>
                         <div class="banner-image">
-                            <div class="d-flex justify-content-center align-items-center p-3">
-                                <img src="../images/img15.jpg" alt="Banner Image">
-                                <!-- <button class="btn-upload">Upload</button> -->
+                            <!-- Code for setting-branding upload image @anjudewangan -->
+                            <div class="d-flex justify-content-center align-items-center p-3 position-relative">
+                                <img src="../images/img15.jpg" alt="Banner Image" id="bannerImg">
                                 <label class="input-group-text" for="inputGroupFile01">Upload</label>
                                 <input type="file" class="form-control choose-file" id="inputGroupFile01">
+                                <span
+                                    class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-light text-dark"
+                                    id="banner-img-icon-1">
+                                    <label for="inputGroupFile03">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </label>
+                                    <input type="file" accept="image/*" id="inputGroupFile03" />
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
                             </div>
-                            <div class="d-flex justify-content-center align-items-center para">For the best results on all devices, use an image that's at least 2048 x 1152 pixels and 6MB or less.</div>
+                            <div class="para" id="bannerPara">For the best results on all devices, use an image that's
+                                at least 2048 x 1152 pixels and 6MB or less.</div>
+                            <!-- Code for setting-branding upload image @anjudewangan -->
                         </div>
                         <div class="para mx-3">This image will appear across the top of your Practice Profile</div>
                     </div>
@@ -643,7 +711,8 @@
             <footer class="footer" id="footer">
                 <div class="d-flex justify-content-center align-items-center footer-para">
                     https://www.welldonehealth.in/Practice Office/</div>
-                <div class="d-flex justify-content-center align-items-center footer-para para-link">Get better visibility by sharing Practice on:
+                <div class="d-flex justify-content-center align-items-center footer-para para-link">Get better
+                    visibility by sharing Practice on:
                     <a class="btn" style="background-color: #55acee;" href="https://twitter.com/" role="button"><i
                             class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a class="btn" style="background-color: #3b5998;" href="https://www.facebook.com/" role="button"><i
@@ -673,7 +742,8 @@
                     </h6>
                     <span class="para-one">Message from the office of Dr.aware hospital and Nursing Home
                     </span>
-                    <p class="para-second">“We will be taking extra precautionary measures to protect the health of both you and our staff. Patients and staff <a href="">show more</a></p>
+                    <p class="para-second">“We will be taking extra precautionary measures to protect the health of both
+                        you and our staff. Patients and staff <a href="">show more</a></p>
                 </div>
                 <h6 class="mt-4">Statement</h6>
                 <div class="dvSubject dvSubject-3">
@@ -685,11 +755,22 @@
                     </div>
                 </div>
                 <h6 class="mt-4">Announcement</h6>
-                <div class="dvSubject dvSubject-4 d-flex align-items-center justify-content-center">
-                    <!-- <button class="btn-upload">Upload</button> -->
+                <!-- Code for upload img in About Section @anjudewangan -->
+                <div class="dvSubject dvSubject-4 d-flex align-items-center justify-content-center position-relative">
+                    <img src="../images/img15.jpg" alt="Upload Image" id="uploadImg">
                     <label class="input-group-text" for="inputGroupFile02">Upload</label>
                     <input type="file" class="form-control choose-file" id="inputGroupFile02">
+                    <span
+                        class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-light text-dark"
+                        id="banner-img-icon-2">
+                        <label for="inputGroupFile04">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </label>
+                        <input type="file" accept="image/*" id="inputGroupFile04" />
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
                 </div>
+                <!-- Code for upload img in About Section @anjudewangan -->
                 <div class="d-flex align-items-center justify-content-center mt-5">
                     <button class="btn btn-secondary btn-save">Save</button>
                 </div>
@@ -754,7 +835,8 @@
                         <div class="row mb-3">
                             <div class="col-2">
                                 <span class="text-warning position-absolute span-input">a)</span>
-                                <input type="checkbox" name="" id="" class="form-check-input position-relative" checked>Inpatient
+                                <input type="checkbox" name="" id="" class="form-check-input position-relative"
+                                    checked>Inpatient
                             </div>
                             <div class="col-2">
                                 <input type="checkbox" name="" id="" class="form-check-input" checked>Outpatient
@@ -769,7 +851,8 @@
                                 <input type="checkbox" name="" id="" class="form-check-input" checked>Centre
                             </div>
                             <div class="col-2">
-                                <input type="checkbox" name="" id="" class="form-check-input" checked>Any other (please specify)
+                                <input type="checkbox" name="" id="" class="form-check-input" checked>Any other (please
+                                specify)
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -790,7 +873,8 @@
                                     <input type="checkbox" name="" id="" class="form-check-input">Primary Health Centre
                                 </div>
                                 <div class="col-3">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Community Health Centre
+                                    <input type="checkbox" name="" id="" class="form-check-input">Community Health
+                                    Centre
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -801,7 +885,8 @@
                                     <input type="checkbox" name="" id="" class="form-check-input">Palliative Care
                                 </div>
                                 <div class="col-3">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please
+                                    specify
                                 </div>
                                 <div class="col-3">
                                     <input class="form-control" type="text" value="" id="">
@@ -818,7 +903,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-2 mb-3">
-                                <span class="text-warning">	b) (iii) Outpatient:</span>
+                                <span class="text-warning"> b) (iii) Outpatient:</span>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-2">
@@ -831,7 +916,8 @@
                                     <input type="checkbox" name="" id="" class="form-check-input">Sub-Centre
                                 </div>
                                 <div class="col-6">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Physiotherapy / Occupational Therapy Clinic
+                                    <input type="checkbox" name="" id="" class="form-check-input">Physiotherapy /
+                                    Occupational Therapy Clinic
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -856,7 +942,8 @@
                                     <input type="checkbox" name="" id="" class="form-check-input">Mobile Clinic
                                 </div>
                                 <div class="col-3">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please
+                                    specify
                                 </div>
                                 <div class="col-3">
                                     <input type="text" name="" id="" class="form-control">
@@ -889,7 +976,8 @@
                                     <input type="checkbox" name="" id="" class="form-check-input">Collection Centre
                                 </div>
                                 <div class="col-3">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please
+                                    specify
                                 </div>
                                 <div class="col-3">
                                     <input type="text" name="" id="" class="form-control">
@@ -905,7 +993,8 @@
                                     <input type="checkbox" name="" id="" class="form-check-input">X-Ray
                                 </div>
                                 <div class="col-3">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Electro Cardio Graph (ECG)
+                                    <input type="checkbox" name="" id="" class="form-check-input">Electro Cardio Graph
+                                    (ECG)
                                 </div>
                                 <div class="col-2">
                                     <input type="checkbox" name="" id="" class="form-check-input">Ultra Sound
@@ -914,12 +1003,14 @@
                                     <input type="checkbox" name="" id="" class="form-check-input">CT Scan
                                 </div>
                                 <div class="col-4">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Magnetic Resonance Imaging (MRI)
+                                    <input type="checkbox" name="" id="" class="form-check-input">Magnetic Resonance
+                                    Imaging (MRI)
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-3">
-                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please specify
+                                    <input type="checkbox" name="" id="" class="form-check-input">Any other, please
+                                    specify
                                 </div>
                                 <div class="col-3">
                                     <input type="text" name="" id="" class="form-control">
@@ -928,7 +1019,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-4">
-                                <span class="text-warning">	b) (vi) Any other (please specify):</span>
+                                <span class="text-warning"> b) (vi) Any other (please specify):</span>
                             </div>
                             <div class="col-3">
                                 <input type="text" name="" id="" class="form-control">
@@ -942,7 +1033,8 @@
                 <div class="dvPractice-Profile-2">
                     <div class="mt-4">
                         <h6>Where are you located?</h6>
-                        <p>Drag and zoom the map and position the marker on the exact spot where your business is located.</p>
+                        <p>Drag and zoom the map and position the marker on the exact spot where your business is
+                            located.</p>
                     </div>
                     <div class="responsive-map d-flex align-items-center justify-content-center">
                         <div id="map"></div>
@@ -956,38 +1048,46 @@
                         <h6>1. Office</h6>
                         <div class="row mb-3">
                             <div class="col-8">
-                                <label for="" class="form-label">Clinic Name/Hospital Name/Practice Establishment Name:<span class="text-danger">*</span></label>
+                                <label for="" class="form-label">Clinic Name/Hospital Name/Practice Establishment
+                                    Name:<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="" placeholder="DR. Jay Kumar">
                                 <div id="" class="form-text">eg. Sai Hospital, Sai Clinic, Sai Nursing Home etc</div>
                             </div>
                             <div class="col-4">
-                                <label for="" class="form-label">Types of Practice Services:<span class="text-danger">*</span></label>
+                                <label for="" class="form-label">Types of Practice Services:<span
+                                        class="text-danger">*</span></label>
                                 <select class="form-select">
                                     <option value="" selected>Select</option>
                                     <option value="">Select</option>
                                     <option value="">Select</option>
-                                  </select>
+                                </select>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-4">
                                 <label for="" class="form-label">Contact Number</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="+919373028151">
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                        placeholder="+919373028151">
                                     <div class="input-group-text">
-                                        <input class="form-check-input mt-0 bg-success" type="checkbox" value="" aria-label="Checkbox for following text input" checked>
+                                        <input class="form-check-input mt-0 bg-success" type="checkbox" value=""
+                                            aria-label="Checkbox for following text input" checked>
                                     </div>
-                                    <span class="badge text-primary d-flex align-items-center justify-content-center"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                    <span class="badge text-primary d-flex align-items-center justify-content-center"><i
+                                            class="fa fa-pencil" aria-hidden="true"></i></span>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <label for="" class="form-label">Email</label>
                                 <div class="input-group">
-                                    <input type="email" class="form-control" aria-label="Text input with checkbox" placeholder="jaysuryawanshi7896@gmail.com">
+                                    <input type="email" class="form-control" aria-label="Text input with checkbox"
+                                        placeholder="jaysuryawanshi7896@gmail.com">
                                     <div class="input-group-text">
-                                        <input class="form-check-input mt-0 bg-success" type="checkbox" value="" aria-label="Checkbox for following text input" checked>
+                                        <input class="form-check-input mt-0 bg-success" type="checkbox" value=""
+                                            aria-label="Checkbox for following text input" checked>
                                     </div>
-                                    <span class="badge text-primary d-flex align-items-center justify-content-center"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                    <span class="badge text-primary d-flex align-items-center justify-content-center"><i
+                                            class="fa fa-pencil" aria-hidden="true"></i></span>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -1002,7 +1102,8 @@
                             </div>
                             <div class="col-4">
                                 <label for="" class="form-label">Alternate Email</label>
-                                <input type="email" class="form-control" id="" placeholder="jaysuryawanshi7896@gmail.com">
+                                <input type="email" class="form-control" id=""
+                                    placeholder="jaysuryawanshi7896@gmail.com">
                             </div>
                         </div>
                     </div>
@@ -1012,7 +1113,8 @@
                             <div class="col-4">
                                 <label for="" class="form-label">Address Line 1 </label>
                                 <input type="text" class="form-control" id="">
-                                <div id="" class="form-text d-flex justify-content-end"><a href="">Add Address Line</a></div>
+                                <div id="" class="form-text d-flex justify-content-end"><a href="">Add Address Line</a>
+                                </div>
                             </div>
                             <div class="col-4">
                                 <label for="" class="form-label">Locality</label>
@@ -1034,7 +1136,7 @@
                                     <option value="" selected>Select</option>
                                     <option value="">Select</option>
                                     <option value="">Select</option>
-                                  </select>
+                                </select>
                             </div>
                             <div class="col-4">
                                 <label for="" class="form-label">Pincode</label>
@@ -1059,14 +1161,16 @@
                     <div class="container mt-4 p-3">
                         <div class="row mb-3">
                             <div class="col-3">
-                                <h6 class="small-head">4. Name of the Person In-Charge:<span class="text-danger">*</span></h6>
+                                <h6 class="small-head">4. Name of the Person In-Charge:<span
+                                        class="text-danger">*</span></h6>
                                 <div id="" class="form-text">(owner of Practice Dashboard)</div>
                             </div>
                             <div class="col-4">
                                 <input type="text" class="form-control" id="">
                             </div>
                             <div class="col-2">
-                                <label for="" class="form-label">Qualification:<span class="text-danger">*</span></label>
+                                <label for="" class="form-label">Qualification:<span
+                                        class="text-danger">*</span></label>
                             </div>
                             <div class="col-3">
                                 <input type="text" class="form-control" id="">
@@ -1110,7 +1214,8 @@
                     <tbody>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                <button type="button"
+                                    class="btn btn-success position-relative rounded-circle text-light">
                                     JS
                                     <span
                                         class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
@@ -1125,7 +1230,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                <button type="button"
+                                    class="btn btn-secondary position-relative rounded-circle text-light">
                                     AP
                                     <span
                                         class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
@@ -1140,7 +1246,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-danger position-relative rounded-circle text-light">
+                                <button type="button"
+                                    class="btn btn-danger position-relative rounded-circle text-light">
                                     AP
                                     <span
                                         class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -1180,7 +1287,8 @@
                     <tbody>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                <button type="button"
+                                    class="btn btn-success position-relative rounded-circle text-light">
                                     JS
                                     <span
                                         class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
@@ -1194,7 +1302,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                <button type="button"
+                                    class="btn btn-secondary position-relative rounded-circle text-light">
                                     AP
                                     <span
                                         class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
@@ -1208,7 +1317,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-danger position-relative rounded-circle text-light">
+                                <button type="button"
+                                    class="btn btn-danger position-relative rounded-circle text-light">
                                     AP
                                     <span
                                         class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -1270,7 +1380,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                    <button type="button"
+                                        class="btn btn-success position-relative rounded-circle text-light">
                                         JS
                                         <span
                                             class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
@@ -1300,7 +1411,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                    <button type="button"
+                                        class="btn btn-secondary position-relative rounded-circle text-light">
                                         AP
                                         <span
                                             class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
@@ -1358,7 +1470,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-success position-relative rounded-circle text-light">
+                                    <button type="button"
+                                        class="btn btn-success position-relative rounded-circle text-light">
                                         JS
                                         <span
                                             class="position-absolute top-100 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
@@ -1382,7 +1495,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-secondary position-relative rounded-circle text-light">
+                                    <button type="button"
+                                        class="btn btn-secondary position-relative rounded-circle text-light">
                                         AP
                                         <span
                                             class="position-absolute top-100 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
@@ -1406,7 +1520,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-danger position-relative rounded-circle text-light">
+                                    <button type="button"
+                                        class="btn btn-danger position-relative rounded-circle text-light">
                                         AP
                                         <span
                                             class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -1448,7 +1563,8 @@
                                         Mon, Fri
                                     </div>
                                     <div class="col-6">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM - 02:00 PM & 06:00 PM - 09:00 PM
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM - 02:00 PM & 06:00 PM
+                                        - 09:00 PM
 
                                     </div>
                                     <div class="col-4">
@@ -1460,7 +1576,8 @@
                                         Tue, Thu, Sat to Sun
                                     </div>
                                     <div class="col-6">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 12:15 am & 12:45 AM - 01:00 AM
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 12:15 am & 12:45 AM
+                                        - 01:00 AM
 
                                     </div>
                                     <div class="col-4">
@@ -1518,7 +1635,8 @@
                                         Mon to Sun
                                     </div>
                                     <div class="col-6">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 12:15 am & 12:45 AM - 01:00 AM
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 12:15 am & 12:45 AM
+                                        - 01:00 AM
                                     </div>
                                     <div class="col-4">
                                         <i class="fa fa-home" aria-hidden="true"></i> Office Appointments
@@ -1539,7 +1657,8 @@
                             </div>
                         </div>
                     </div>
-                    <footer class="footerDVT d-flex align-items-center justify-content-center">Schedule an appointment for a doctor's practice to enable online appointments</footer>
+                    <footer class="footerDVT d-flex align-items-center justify-content-center">Schedule an appointment
+                        for a doctor's practice to enable online appointments</footer>
                 </div>
 
                 <div class="dvDVT-office-appoin">
@@ -1552,7 +1671,8 @@
                             <div class="btn-group">
                                 <button type="button" class="btn btn-light"><i class="fa fa-home"
                                         aria-hidden="true"></i> Office Appointments</button>
-                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="visually-hidden">Toggle Dropdown</span>
                                 </button>
                                 <ul class="dropdown-menu">
@@ -1744,7 +1864,8 @@
                     <div class="mb-3 row">
                         <label for="inputCalendarColour" class="col-sm-4 col-form-label">Calendar Colour</label>
                         <div class="col-sm-2">
-                            <input type="color" class="form-control form-control-color" id="inputCalendarColour" value="#FF8C00" title="Choose your color">
+                            <input type="color" class="form-control form-control-color" id="inputCalendarColour"
+                                value="#FF8C00" title="Choose your color">
                         </div>
                     </div>
                     <div class="mb-3 row">
@@ -1835,10 +1956,10 @@
                     <div class="col-sm-5">
                     </div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-warning">Add Doctor</button>
+                        <button type="button" class="btn btn-warning" id="btnAddDoctor">Add Doctor</button>
                     </div>
                     <div class="col-sm-2">
-                        <button type="button" class="btn btn-outline-dark">Cancel</button>
+                        <button type="button" class="btn btn-outline-dark" id="btn-cancel">Cancel</button>
                     </div>
                     <div class="col-sm-2">
                     </div>
@@ -1856,15 +1977,15 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="inputMobileNumber" class="col-sm-4 col-form-label">Mobile Number</label>
+                        <label for="inputStaffMobNumber" class="col-sm-4 col-form-label">Mobile Number</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="inputMobileNumber">
+                            <input type="text" class="form-control" id="inputStaffMobNumber">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="inputEmail" class="col-sm-4 col-form-label">Email ID</label>
+                        <label for="inputStaffEmail" class="col-sm-4 col-form-label">Email ID</label>
                         <div class="col-sm-8">
-                            <input type="email" class="form-control" id="inputEmail">
+                            <input type="email" class="form-control" id="inputStaffEmail">
                         </div>
                     </div>
                     <div class="mb-3 row">
@@ -1955,10 +2076,10 @@
                     <div class="col-sm-5">
                     </div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-warning">Add Staff</button>
+                        <button type="button" class="btn btn-warning" id="btnAddStaff">Add Staff</button>
                     </div>
                     <div class="col-sm-2">
-                        <button type="button" class="btn btn-outline-dark">Cancel</button>
+                        <button type="button" class="btn btn-outline-dark" id="btn-staff-cancel">Cancel</button>
                     </div>
                     <div class="col-sm-2">
                     </div>
@@ -2091,7 +2212,8 @@
                                 <div class="mb-3 row">
                                     <label for="" class="col-sm-4 col-form-label">Show snoozed</label>
                                     <div class="col-sm-8">
-                                        <select class="form-select form-select-sm position-relative" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm position-relative"
+                                            aria-label=".form-select-sm example">
                                             <option value="">0 minute before Appointment</option>
                                             <option selected>1 minute before Appointment</option>
                                             <option value="">2 minute before Appointment</option>
@@ -2264,7 +2386,8 @@
                                         </tr>
                                     </table>
                                     <div class="dvlabel">
-                                        <input type="checkbox" id="showTable-2"><label for="" class="dvlabel">Appointment hours are not the same for all working days of
+                                        <input type="checkbox" id="showTable-2"><label for=""
+                                            class="dvlabel">Appointment hours are not the same for all working days of
                                             the week</label></td>
                                     </div>
                                     <span class="dvtable" id="tableHead">Choose the day for the open office</span>
@@ -2381,7 +2504,8 @@
                                 </div>
                             </div>
                             <div class="text-center mt-5">Update timing on online profile also</div>
-                            <button type="button" class="btn btn-secondary d-grid gap-2 col-2 mx-auto mt-5">Save</button>
+                            <button type="button"
+                                class="btn btn-secondary d-grid gap-2 col-2 mx-auto mt-5">Save</button>
                         </div>
                     </div>
                 </div>
@@ -2436,7 +2560,8 @@
                         <form action="" class="calendar-form">
                             <div class="mb-3 row">
                                 <div class="col-sm-12">
-                                    <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                    <select class="form-select form-select-sm select-name"
+                                        aria-label=".form-select-sm example">
                                         <option selected>Dr. Jay Suryawanshi</option>
                                         <option value="">Dr. Rakesh Nandre</option>
                                         <option value="">Dr. Ashok Patil</option>
@@ -2445,7 +2570,8 @@
                             </div>
                             <div class="mb-3 row">
                                 <div class="col-sm-12">
-                                    <textarea class="form-control name-description" id="" rows="3" placeholder="Description"></textarea>
+                                    <textarea class="form-control name-description" id="" rows="3"
+                                        placeholder="Description"></textarea>
                                 </div>
                             </div>
                         </form>
@@ -2475,7 +2601,8 @@
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                <label for="" class="form-label small-label">jaysuryawanshi7896@gmail.com</label>
+                                                <label for=""
+                                                    class="form-label small-label">jaysuryawanshi7896@gmail.com</label>
                                             </div>
                                         </div>
                                     </div>
@@ -2486,7 +2613,8 @@
                                     </div>
                                     <label for="" class="col-sm-5 form-label">rakeshnandre433@gmail.com</label>
                                     <div class="col-sm-4">
-                                        <select class="form-select form-select-sm position-relative" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm position-relative"
+                                            aria-label=".form-select-sm example">
                                             <option selected>See all appointment details</option>
                                             <option value="">See only free/busy (hide details)</option>
                                             <option value="">Make changes to appointment</option>
@@ -2500,33 +2628,44 @@
                                 <div class="mb-3 row border-none">
                                     <div class="col-sm-8"></div>
                                     <div class="col-sm-4">
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addPeoplePopup">+ Add People</button>
-                                        <div class="modal fade" id="addPeoplePopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addPeoplePopupLabel" aria-hidden="true">
+                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                            data-bs-target="#addPeoplePopup">+ Add People</button>
+                                        <div class="modal fade" id="addPeoplePopup" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="addPeoplePopupLabel"
+                                            aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="addPeoplePopupLabel">Share with specific people</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <h5 class="modal-title" id="addPeoplePopupLabel">Share with
+                                                            specific people</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form action="">
                                                             <div class="mb-3">
-                                                                <label for="" class="form-label">Add email or name</label>
-                                                                <input type="text" class="form-control" placeholder="Add email or name">
+                                                                <label for="" class="form-label">Add email or
+                                                                    name</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Add email or name">
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label for="" class="form-label">Permissions</label>
-                                                                <select class="form-select form-select-sm modal-select" aria-label=".form-select-sm example">
+                                                                <select class="form-select form-select-sm modal-select"
+                                                                    aria-label=".form-select-sm example">
                                                                     <option selected>See all event details</option>
-                                                                    <option value="">See only free/busy (hide details)</option>
+                                                                    <option value="">See only free/busy (hide details)
+                                                                    </option>
                                                                     <option value="">Make changes to event</option>
-                                                                    <option value="">Make changes and manage sharing</option>
+                                                                    <option value="">Make changes and manage sharing
+                                                                    </option>
                                                                 </select>
                                                             </div>
                                                         </form>
                                                     </div>
                                                     <div class="modal-footer d-flex justify-content-between">
-                                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-outline-secondary"
+                                                            data-bs-dismiss="modal">Cancel</button>
                                                         <button type="button" class="btn btn-primary">Send</button>
                                                     </div>
                                                 </div>
@@ -2546,7 +2685,8 @@
                                 </div>
                                 <div class="mb-3 row border-none">
                                     <div class="col-sm-3">
-                                        <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm select-name"
+                                            aria-label=".form-select-sm example">
                                             <option selected>Notification</option>
                                             <option value="">Email Notification</option>
                                         </select>
@@ -2555,7 +2695,8 @@
                                         <input type="number" name="" id="" class="input-number" value="10">
                                     </div>
                                     <div class="col-sm-3">
-                                        <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm select-name"
+                                            aria-label=".form-select-sm example">
                                             <option selected>Minutes</option>
                                             <option value="">Hours</option>
                                             <option value="">Days</option>
@@ -2579,7 +2720,8 @@
                                 </div>
                                 <div class="mb-3 row border-none">
                                     <div class="col-sm-3">
-                                        <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm select-name"
+                                            aria-label=".form-select-sm example">
                                             <option selected>Notification</option>
                                             <option value="">Email Notification</option>
                                         </select>
@@ -2588,7 +2730,8 @@
                                         <input type="number" name="" id="" class="input-number" value="1">
                                     </div>
                                     <div class="col-sm-2">
-                                        <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm select-name"
+                                            aria-label=".form-select-sm example">
                                             <option selected>Day</option>
                                             <option value="">Weeks</option>
                                         </select>
@@ -2597,7 +2740,8 @@
                                         brfore at
                                     </div>
                                     <div class="col-sm-2">
-                                        <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm select-name"
+                                            aria-label=".form-select-sm example">
                                             <option selected>09:AM</option>
                                             <option value="">09:PM</option>
                                         </select>
@@ -2730,7 +2874,8 @@
                                     </div>
                                 </div>
                             </form>
-                            <button type="button" class="btn btn-secondary d-grid gap-2 col-2 mx-auto mt-5">Save</button>
+                            <button type="button"
+                                class="btn btn-secondary d-grid gap-2 col-2 mx-auto mt-5">Save</button>
                         </div>
                     </div>
                 </div>
@@ -2792,7 +2937,8 @@
                                 <div class="mb-3 row">
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-10">
-                                        <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                        <select class="form-select form-select-sm select-name"
+                                            aria-label=".form-select-sm example">
                                             <option selected>Jay Suryawanshi</option>
                                             <option value="">Rakesh Nandre</option>
                                             <option value="">Ashok Patil</option>
@@ -2837,7 +2983,9 @@
                             </form>
                             <div class="mt-5">
                                 <h6>Unsubscribe calendar</h6>
-                                <p class="footer-para">All Appointment in this calendar will be deleted. If there is a guest (doctor) in the Appointment, it will also be <br> removed from the guest (doctor) calendar.<a href="">Learn more</a></p>
+                                <p class="footer-para">All Appointment in this calendar will be deleted. If there is a
+                                    guest (doctor) in the Appointment, it will also be <br> removed from the guest
+                                    (doctor) calendar.<a href="">Learn more</a></p>
                                 <button type="button" class="btn btn-danger">Unsubscribe</button>
                             </div>
                         </div>
@@ -2914,7 +3062,8 @@
                                 </table>
                             </div>
                         </div>
-                        <footer class="footerDVT d-flex align-items-center justify-content-center">Appointment in Trash are deleted after 100 days</footer>
+                        <footer class="footerDVT d-flex align-items-center justify-content-center">Appointment in Trash
+                            are deleted after 100 days</footer>
                         <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
                     </div>
                 </div>
@@ -2934,24 +3083,28 @@
                 <!-- Communication Details -->
                 <div class="d-flex justify-content-center mt-5">
                     <div class="dvComm_Detail">
-                        <h6><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>To comply with TRAI regulations, you can customize the text, only using options below</h6>
+                        <h6><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>To comply with TRAI
+                            regulations, you can customize the text, only using options below</h6>
                         <form action="" class="mt-5">
                             <div class="row mb-3">
                                 <div class="col-sm-2">Contact Number</div>
-                                <div class="col-sm-3"><input type="text" class="form-control" id="" placeholder="+918805796417"></div>
+                                <div class="col-sm-3"><input type="text" class="form-control" id=""
+                                        placeholder="+918805796417"></div>
                                 <div class="col-sm-7">Maximum 15 characters & represented as {{CLINICCONTACTNUMBER}}
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-2">Email Address</div>
-                                <div class="col-sm-3"><input type="email" class="form-control" id="" placeholder="Email Address"></div>
+                                <div class="col-sm-3"><input type="email" class="form-control" id=""
+                                        placeholder="Email Address"></div>
                                 <div class="col-sm-7">All replies by Patients for emails will be sent to this address
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-2">SMS Language</div>
                                 <div class="col-sm-3">
-                                    <select class="form-select form-select-sm select-name" aria-label=".form-select-sm example">
+                                    <select class="form-select form-select-sm select-name"
+                                        aria-label=".form-select-sm example">
                                         <option selected>English</option>
                                         <option value="">Hindi</option>
                                     </select>
@@ -2973,7 +3126,9 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <!-- <script src="../layout.js"></script> -->
     <script src="./script.js"></script>
 </body>

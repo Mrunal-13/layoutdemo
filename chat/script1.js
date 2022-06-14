@@ -34,8 +34,9 @@ messagesDropdown.addEventListener("click",()=>{
     messageAlertDetails.style.display="none";
   }
 })
+// Code for sidenav toggle @anjudewangan
 function openNav() {
-        if (document.getElementById("mySidenav").style.width === "63px" || document.getElementById("mySidenav").style.width==="") {
+        if (document.getElementById("mySidenav").style.width === "61px" || document.getElementById("mySidenav").style.width==="") {
           document.getElementById("mySidenav").style.width = "250px";
         }
         else{
@@ -43,10 +44,11 @@ function openNav() {
             document.getElementById("mySidenav").style.width = "";
           }
           else{
-            document.getElementById("mySidenav").style.width = "63px";
+            document.getElementById("mySidenav").style.width = "61px";
           }
         }
 }
+// Code for sidenav toggle @anjudewangan
 
 let adminSettingBox=document.getElementById("adminSettingBox");
 adminSettingBox.style.display="none";

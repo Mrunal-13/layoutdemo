@@ -746,14 +746,30 @@
                         you and our staff. Patients and staff <a href="">show more</a></p>
                 </div>
                 <h6 class="mt-4">Statement</h6>
+                <!--  Code for setting > about > statement @anjudewangan -->
                 <div class="dvSubject dvSubject-3">
-                    <textarea id="" name="" class="textarea"></textarea>
-                    <div class="btn-action">
-                        <button id="bold">B</button>
-                        <button id="italic">I</button>
-                        <button id="underline">U</button>
+                    <iframe name="editor" id="editor" cols="30" rows="10" contenteditable="true">
+                    </iframe>
+                    <div class="text_opt">
+                        <button id="b" onClick="transform('bold', null)">
+                            <i class="fa fa-bold"></i>
+                        </button>
+                        <button id="i" onClick="transform('italic', null)">
+                            <i class="fa fa-italic"></i>
+                        </button>
+
+                        <button id="u" onClick="transform('underline', null)">
+                            <i class="fa fa-underline"></i>
+                        </button>
+                        <button id="ul" onClick="transform('insertUnorderedList', null)">
+                            <i class="fa fa-list-ul"></i>
+                        </button>
+                        <button id="ol" onClick="transform('insertOrderedList', null)">
+                            <i class="fa fa-list-ol"></i>
+                        </button>
                     </div>
                 </div>
+                <!--  Code for setting > about > statement @anjudewangan -->
                 <h6 class="mt-4">Announcement</h6>
                 <!-- Code for upload img in About Section @anjudewangan -->
                 <div class="dvSubject dvSubject-4 d-flex align-items-center justify-content-center position-relative">
@@ -2511,23 +2527,24 @@
                 </div>
 
                 <!-- Appointment Category -->
+                 <!-- Code for setting section > calendar > appointment category > add new category @anjudewangan -->
                 <div class="dvAppoin-Category d-flex justify-content-center">
                     <div class="dvAdd_new_cate">
                         <h6>Add New Category</h6>
                         <form action="" class="calendar-form">
                             <div class="mb-3 row">
-                                <input type="text" class="form-control col-sm-10" id="">
+                                <input type="text" class="form-control col-sm-10" id="input-add-category">
                                 <div class="col-sm-2">
-                                    <button class="btn btn-light">Add</button>
+                                    <button class="btn btn-light" id="btnAddNewCategory">Add</button>
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <div class="col-sm-10">
-                                    <h6><span class="badge p-2 bg-warning border border-light rounded-circle"> <span
+                                    <h6><span class="badge p-2 bg-warning border border-light rounded-circle"><span
                                                 class="visually-hidden">New alerts</span></span> Non-categories</h6>
                                 </div>
                                 <div class="col-sm-1">
-                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o deleteLabel" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div class="mb-3 row">
@@ -2536,7 +2553,7 @@
                                                 class="visually-hidden">New alerts</span></span> Non-categories</h6>
                                 </div>
                                 <div class="col-sm-1">
-                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o deleteLabel" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div class="mb-3 row">
@@ -2545,13 +2562,14 @@
                                                 class="visually-hidden">New alerts</span></span> Non-categories</h6>
                                 </div>
                                 <div class="col-sm-1">
-                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o deleteLabel" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </form>
                         <button type="button" class="btn btn-secondary d-grid gap-2 col-2 mx-auto mt-5">Save</button>
                     </div>
                 </div>
+                 <!-- Code for setting section > calendar > appointment category > add new category @anjudewangan -->
 
                 <!-- Notifications -->
                 <div class="dvNotifications d-flex justify-content-center">

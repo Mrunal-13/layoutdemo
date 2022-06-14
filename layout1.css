@@ -68,9 +68,11 @@
 #messagesDropdown {
     padding: 0;
 }
+
 .input-group-append {
     margin-left: -48px;
 }
+
 .advnc-search {
     background: none;
     border: none;
@@ -195,6 +197,12 @@
     background-color: rgb(236, 236, 11);
 }
 
+/* Code for sidenav active link @anjudewangan */
+.navbar-sidenav>.nav-item>.active-link {
+    background-color: rgb(236, 236, 11);
+}
+
+/* Code for sidenav active link @anjudewangan */
 #exampleAccordion .nav-link-text {
     font-size: 11.5px;
     margin-left: 36px;
@@ -306,92 +314,116 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    
-    .navbar-first{
+
+    .navbar-first {
         width: 100px;
     }
+
     .navbar-second {
         width: 69%;
     }
-    .navbar-brand,.buttonForSideNav{
+
+    .navbar-brand,
+    .buttonForSideNav {
         font-size: 12px;
     }
-    .nav-link{
+
+    .nav-link {
         padding: 0;
         margin: 0;
     }
-    .d-lg-none{
+
+    .d-lg-none {
         display: none;
     }
-    #addPateintButton{
+
+    #addPateintButton {
         width: 71px;
     }
-   
-    .addpatient{
+
+    .addpatient {
         font-size: 10px;
     }
-    .hospital-name{
+
+    .hospital-name {
         font-size: 10px;
     }
-    .inputForSearch{
+
+    .inputForSearch {
         width: 93px;
         height: 30px;
         font-size: 12px;
     }
-    .searchbtn1{
+
+    .searchbtn1 {
         height: 30px;
         display: flex;
         align-items: center;
     }
-    #dropbtnMyfunction{
+
+    #dropbtnMyfunction {
         font-size: 10px;
     }
+
     .nav-link-text {
         font-size: 14px;
         margin-left: 25px;
     }
+
     .alertBodyitems {
         font-size: 0.8rem;
     }
-    .MadBodyitems{
+
+    .MadBodyitems {
         font-size: 0.8rem;
     }
+
     .adminSettingBox {
         left: 79%;
         width: 21%;
     }
-    .adminSettingHeader{
+
+    .adminSettingHeader {
         font-size: 13px;
     }
+
     .sidenav {
         height: 91%;
         width: 64px;
         top: 55px;
     }
-    .navForDeskTop{
+
+    .navForDeskTop {
         display: flex;
     }
 
 }
+
 @media only screen and (max-width: 767px) {
+
     .navbar-second,
     .navbar-third {
         display: none;
     }
+
     .sidenav {
         top: 31px;
     }
+
     .navbar-first {
         width: 100%;
     }
+
     .navbar-sidenav>.nav-item>.nav-link {
         font-size: 15px;
     }
+
     #mySidenav {
         width: 0px;
         border: none;
         background-color: #efefef;
     }
+
     .nav-link-text {
         font-size: 14px;
     }
@@ -471,6 +503,7 @@
     /* width: 4rem; */
     margin: 5px;
 }
+
 #divCategories>label {
     display: initial;
 }

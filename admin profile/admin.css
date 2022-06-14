@@ -29,6 +29,9 @@
     color: black;
     margin-top: 7px;
     font-size: 15px;
+    /* Code for hospital name @anjudewangan */
+    text-decoration: none;
+     /* Code for hospital name @anjudewangan */
 }
 
 .hospital-name:hover {

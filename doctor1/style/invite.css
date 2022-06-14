@@ -1,6 +1,8 @@
 .ivite_main {
     margin-top: 100px;
     margin-left: 50px;
+
+    height: max-content;
 }
 
 .invite_head {
@@ -384,3 +386,97 @@ aside {
 }
 
 /* Code for sidenav active link @anjudewangan */
+
+/* mobile view */
+@media screen and (max-width:428px) {
+    /* aside {
+        display: none;
+    } */
+
+    .main_container{
+        width: 428px;
+        height: max-content;
+        
+    }
+    .ivite_main {
+        width: 428px;
+        margin: 0;
+        position: relative;
+        top: 47px;
+    }
+
+    .invite_settingbtn {
+        display: none;
+    }
+
+    .email_wrap i {
+        display: none;
+    }
+
+    .email_input input {
+        width: 306px;
+        height: 30px;
+    }
+
+    .email_input a {
+        width: 78px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .email_info {
+        position: relative;
+        left: 14px;
+    }
+
+    .invite_head {
+        position: relative;
+        left: 10px;
+    }
+
+    .email_container {
+        position: relative;
+        left: -10px;
+    }
+
+    .invite_head p {
+        font-size: 16px;
+    }
+
+    .access_level,
+    .group {
+        position: relative;
+        left: 20px;
+        width: 400px;
+    }
+
+    .group_wrap {
+        display: flex;
+        gap: 5px;
+        width: 400px;
+    }
+
+    .access_input input {
+        width: 18px;
+        height: 18px;
+    }
+
+    .group_input input {
+        width: 18px;
+        height: 18px;
+    }
+
+    .bottom_sendbtn {
+        position: relative;
+        left: 22px;
+    }
+
+    .bottom_sendbtn a {
+        border-radius: 15px;
+        width: 98px;
+        height: 29px;
+        position: relative;
+        top: -60px;
+    }
+}
+

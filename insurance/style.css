@@ -1,529 +1,557 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto";
-  scroll-behavior:auto;
-  width: 100%;
-  height: 100%;
-  font-family: 'Roboto';
-}
+/* Code for nav and sidenav of Insurance @anjudewangan  */
 ::-webkit-scrollbar {
   display: none;
 }
-.nav {
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-  min-width: 1537px;
-  gap: 1rem;
-  list-style: none;
-  border: 1px solid #c8c8c8;
-  box-sizing: border-box;
-  background-color: white;
-  font-family: 'Roboto';
-}
-/* .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-  box-sizing: border-box;
-  border: 1px solid black;
-  min-width: 1535px;
-  background-color: #8a8484;
-} */
 
-.fa-bars {
-  position: relative;
-  left: 320px;
-  font-size: x-large;
-}
-.mobile-nav {
-  display: flex;
-  background-color: transparent;
-  align-items: center;
-  justify-content: center;
-  height: 57px;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  gap: 1rem;
-  position: relative;
-  /* top: 8px; */
-}
-.container-1,
-.profile {
-  display: flex;
-}
-.menu-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 7;
+  border-bottom: 3px solid black;
 }
 
-.btn-1 {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffcd1e;
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-  width: 130px;
-  height: 37px;
-  font-weight: 700;
-  font-size: large;
-  position: relative;
-  border: none;
-  left: 949px;
-}
-.btn-1:hover {
-  background-color: black;
-  color: cadetblue;
-}
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 377px;
-  height: 32px;
-  border-radius: 5px;
-  border: 1px solid #8a8484;
-  box-sizing: border-box;
-  position: relative;
-  right: -356px;
- /* bottom: 5px; */
-}
-
-.search-bar input {
-  width: 280px;
+.buttonForSideNav {
   outline: none;
-  border: none;
-  text-indent: 10px;
-  background-color: transparent;
-  position: relative;
-  right: 9px;
+  border: 1px solid #a4a4a4;
+  margin-right: 10px;
+  border-radius: 9px;
 }
-.search-bar button {
+
+.buttonForSideNav:hover {
+  background-color: #a4a4a4;
+}
+
+.navbar-first {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hospital-name {
+  flex-wrap: nowrap;
+  color: black;
+  margin-top: 7px;
+  font-size: 15px;
+}
+
+.hospital-name:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.navbar-second {
+  width: 97%;
+}
+
+.secondNavUl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-second .nav-item {
+  list-style: none;
+}
+
+.addPateintButton {
+  font-size: 12px;
+  margin: 0;
+}
+
+.nav-item.dropdown>.nav-link .indicator {
+  position: absolute;
+  bottom: 16px;
+  left: 17px;
+  font-size: 10px;
+}
+
+#alertsDropdown,
+#messagesDropdown {
+  padding: 0;
+}
+
+.input-group-append {
+  margin-left: -48px;
+}
+
+.advnc-search {
   background: none;
   border: none;
   color: #435aaa;
   font-size: 14px;
   position: relative;
-  right: 15px;
+  right: 70px;
   width: 61px;
-}
-.search-bar .fa-magnifying-glass {
-  font-size: 20px;
-  position: relative;
-  right: 0px;
-}
-.name-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffdede;
-  text-align: center;
-  height: 57px;
-  width: 345px;
-  position: relative;
-  right: 655px;
-  text-align: center;
-}
-.material-icons {
-  display: none;
-}
-.name-container p {
-  font-size: 19px;
-  /* width: 350px; */
-  /* position: relative; */
-  /* top: 7px; */
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: -550px;
-}
-.logo a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-  font-weight: 400;
-  font-style: normal;
-}
-.menu-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  right: -130px;
-  gap: 2rem;
-}
-.menu-links a .fa-solid {
-  text-decoration: none;
-  color: grey;
-  font-size: 30px;
-}
-a:hover > .fa-calendar-days {
-  color: black;
-}
-a:hover > .fa-bell {
-  color: black;
-}
-a:hover > .fa-message {
-  color: black;
-}
-.fa-microphone {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  background-color: #c8c8c8;
-  font-size: 25px;
-  position: relative;
-  left: 357px;
-  top: 10px;
-}
-.fa-microphone:hover {
-  background-color: black;
-  color: #8a8484;
-}
-.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  right: -155px;
-  gap: 1rem;
-}
-.profile img {
-  border: 50%;
-}
-.profile a {
-  text-decoration: none;
-  color: black;
-}
-.advance-srch {
-  width: 360px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: column;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  position: relative;
-  left: 10px;
-  font-size: 12px;
-  display: none;
-  position: relative;
-  bottom: 920px;
-  left: 400px;
-  overflow-y: scroll;
+  margin-left: -17px;
 }
 
-.advance-srch label,input,select{
-  border-radius:5px ;
-  border: 0.5px solid #7A7A7A;
-  height: 22px;
+.searchbox {
+  display: flex;
 }
-.advance-srch 
-input::placeholder{
-width: 54px;
-background-color: #BFF4D2;
-color: #000000;
-font-size: 12px;
-position: relative;
-left:5px;
+
+.inputForSearch {
+  width: 50px;
 }
-.advance-srch label{
-  background-color: #FFFFFF;
+
+.addpatient {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: orange;
+  border-width: 1px;
+  border-style: solid;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 5px;
 }
-.srch-head,
-.advance-item1,
-.advance-item2{
-  width: 100%;
+
+.navbar-third {
+  width: 15%;
 }
-.srch-head{
-  height: 42px;
-  border-bottom: 1px solid #CCCCCC;
+
+.navbar-fourth {
+  width: 96%;
+  /* position: absolute; */
+  right: 0;
+  margin-top: 78px;
+  border-bottom: 2px solid black;
+  color: black;
+  background-color: white;
+  z-index: 1;
 }
-.srch-head p{
-  position: relative;
-  left: 10px;
-  top: 10px;
+
+.RakeshName {
+  color: #000;
+  font-weight: 500;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: rgb(154, 157, 160);
   font-size: 16px;
-}
-.advance-item1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 24px;
-  height: 159px;
-  border-bottom: 1px solid #CCCCCC;
-}
-.sub-item1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
-  font-size: 12px;
-  
-}
-.sub-item2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
-  font-size: 12px;
-}
-.advance-item1 .sub-item1 :nth-child(1){
-  width: 145px;
-}
-.advance-item1 .sub-item1 :nth-child(2){
-  width: 152px;
-}
-.advance-item1 .sub-item2 :nth-child(1){
-  width: 138px;
-  position: relative;
-  right: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-}
-.advance-item1 .sub-item2 :nth-child(2){
-  width: 136px;
-  position: relative;
-  bottom: 11px;
-}
-.wrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.wrap a{
-  text-decoration: none;
-  color: #0997FF;
-  font-size: 10px;
-  position: relative;
-  top: 1px;
-
-}
-.advance-item2{
-  border-bottom: 1px solid #CCCCCC;
-  height: 877px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-}
-.advance-item2 .sub-item{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.sub-item label{
-  font-size: 12px;
-}
-.sub-item input{
-  width: 142px;
-}
-.sub-item select{
-  width: 142px;
-}
-.one,
-.two{
-  gap: 45px;
+  cursor: pointer;
+  margin-top: 4px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
 }
 
-.one label{
-  width: 114px;
-}
-.two label{
-  width: 114px; 
-  font-size: 12px;
-}
-.three label{
-  width: 124px; 
-}
-.three{
-  gap: 35px;
-}
-.four label{
-  width: 124px;
-}
-.four{
-  gap: 35px;
-}
-.five label{
-  width: 124px;
-}
-.five{
-  gap: 35px;
-}
-.six label{
-  width: 124px;
-}
-.six{
-  gap: 35px;
-}
-.seven label{
-  width: 159px;
-}
-.seven{
-  gap: 6px;
-}
-.eight label{
-  width: 159px;
-}
-.eight{
-  gap: 6px;
-}
-.nine label{
-  width: 159px;
-}
-.nine{
-  gap: 6px;
-}
-.wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-}
-.wrapper label{
-  width: 124px;
-  text-align: left;
-}
-.wrapper .sub-item {
-  gap: 35px;
-}
-.ten label{
-  width: 150px;
-}
-.ten{
-  gap: 9px;
-}
-.eleven label{
-  width: 124px;
-}
-.eleven{
-  gap: 35px;
-}
-.advance-footer{
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 13px;
-}
-.advance-footer button{
-  border-radius: 3px;
-  border: none;
-  position: relative;
-  left: 100px;
-}
-.cancel{
+
+/* The side navigation menu */
+
+.sidenav {
+  height: 91%;
+  /* 100% Full-height */
   width: 63px;
-  height: 22px;
-  background-color: #DFDFDF;
-  font-size: 13px;
-  text-align: center;
-}
-.search{
-  width: 51px;
-  height: 22px;
-  background-color: #FFA000;
-  color: #FFFFFF;
-  font-size: 14px;
-  text-align: center;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 13;
+  /* Stay on top */
+  top: 60px;
+  /* Stay at the top */
+  left: 0;
+  background-color: #FFFCE2;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
 }
 
-.main_container{
+
+/* The navigation menu links */
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#exampleAccordion .nav-item a {
+  color: rgb(14, 14, 14);
   display: flex;
+  flex-wrap: nowrap;
 }
 
-aside{
+.navbar-sidenav>.nav-item>.nav-link:hover {
+  background-color: rgb(236, 236, 11);
+}
+
+.navbar-sidenav>.nav-item>.active-link {
+  background-color: rgb(236, 236, 11);
+}
+
+#exampleAccordion .nav-link-text {
+  font-size: 11.5px;
+  margin-left: 36px;
+}
+
+#exampleAccordion .nav-link i {
+  margin-left: 20px;
+  font-size: 21px;
+}
+
+.sidenav-second-level li a {
+  font-size: 21px;
+}
+
+.alertDetails {
+  position: absolute;
+  top: 100%;
+  background-color: #ffffff;
+  left: 70%;
+  height: auto;
+  width: 30vw;
+  border: 0.01rem solid black;
+  box-shadow: 11px 11px 30px -9px black;
+  border-radius: 5px;
+  z-index: 10;
+  padding: 16px;
+}
+
+.alertBodyitems {
+  background-color: transparent;
+  padding: 5px;
+  z-index: 10;
+}
+
+.alertBodyitems:hover {
+  background-color: #cce7ff;
+  z-index: 10;
+}
+
+.alertBodyitemsPart1 {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.messageAlertDetails {
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  height: auto;
+  width: 30vw;
+  border: 0.01rem solid black;
+  box-shadow: 11px 11px 30px -9px black;
+  border-radius: 5px;
+  z-index: 10;
+  padding: 16px;
+}
+
+.MadBodyitemsPart2 p {
+  font-size: 10px;
+  z-index: 10;
+}
+
+.MADBody {
+  height: 25vh;
+  min-height: 25vh;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.adminSettingBox {
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 84%;
+  height: auto;
+  width: 16%;
+  border: 0.01rem solid black;
+  box-shadow: 11px 11px 30px -9px black;
+  border-radius: 5px;
+  z-index: 4;
+  padding: 16px;
+}
+
+.adminSettingBox p {
+  margin: 0;
+  padding: 0;
+}
+
+#settingOptions {
+  padding: 0;
+}
+
+#settingOptions li {
+  list-style: none;
+  font-size: 12px;
+  margin: 5px 0;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+#settingOptions li:hover {
+  background-color: #cce7ff;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #818181;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .navbar-first {
+    width: 100px;
+  }
+
+  .navbar-second {
+    width: 69%;
+  }
+
+  .navbar-brand,
+  .buttonForSideNav {
+    font-size: 12px;
+  }
+
+  .nav-link {
+    padding: 0;
+    margin: 0;
+  }
+
+  .d-lg-none {
+    display: none;
+  }
+
+  #addPateintButton {
+    width: 71px;
+  }
+
+  .addpatient {
+    font-size: 10px;
+  }
+
+  .hospital-name {
+    font-size: 10px;
+  }
+
+  .inputForSearch {
+    width: 93px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .searchbtn1 {
+    height: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: flex-start; */
-    justify-content: center;
-    list-style: none;
-    width: 200px;
-    padding: 27px;
-    padding-top: 0;
-    font-size: 20px;
-    background-color: #FFFCE2;
-}
-.sidebar li {
-    height: 17px;
-    width: 217px;
-    gap: 20px;
-    padding: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-}
-.sidebar .fa-solid{
-    width: 24px;
-    height: 24px;
-}
-a{
-    text-decoration: none;
-    color: #000000;
-}
-.sub_links{
-    display: flex;
-    flex-direction: column;
+  }
+
+  #dropbtnMyfunction {
+    font-size: 10px;
+  }
+
+  .nav-link-text {
     font-size: 14px;
+    margin-left: 25px;
+  }
+
+  .alertBodyitems {
+    font-size: 0.8rem;
+  }
+
+  .MadBodyitems {
+    font-size: 0.8rem;
+  }
+
+  .adminSettingBox {
+    left: 79%;
+    width: 21%;
+  }
+
+  .adminSettingHeader {
+    font-size: 13px;
+  }
+
+  .sidenav {
+    height: 91%;
+    width: 64px;
+    top: 55px;
+  }
+
+  .navForDeskTop {
+    display: flex;
+  }
 
 }
-.main{
+
+@media only screen and (max-width: 767px) {
+
+  .navbar-second,
+  .navbar-third {
+    display: none;
+  }
+
+  .sidenav {
+    top: 31px;
+  }
+
+  .navbar-first {
+    width: 100%;
+  }
+
+  .navbar-sidenav>.nav-item>.nav-link {
+    font-size: 15px;
+  }
+
+  #mySidenav {
+    width: 0px;
+    border: none;
+    background-color: #efefef;
+  }
+
+  .nav-link-text {
+    font-size: 14px;
+  }
+}
+
+/* USER IMAGE SIZE CSS */
+
+#dvUserImage {
+  width: 60px;
+}
+
+#barcodeimage {
+  width: 100px;
+}
+
+.insurance-img {
+  width: 80px;
+}
+
+.user-img {
+  width: 1.7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+/* Advanced Patient Search */
+
+.popup-form {
+  display: flex;
+  justify-content: center;
+}
+
+.dvSelect>select,
+#divControl>input,
+#divControl>select {
+  width: 12rem;
+  margin: 16px;
+  border: 1px solid black;
+  border-radius: 7px;
+  text-align: initial;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.popup-form>select>option {
+  width: 15rem;
+  font-size: 12px;
+}
+
+.fa-times-circle {
+  font-size: 18px;
+  color: red;
+  margin-top: 14px;
+  margin-left: -5px;
+}
+
+#btnAddMore {
+  color: rgb(0, 162, 255);
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+#divCategories {
+  margin: 10px 27px;
+  box-shadow: 0 0 13px -7px #444444;
+  background-color: white;
+  width: 55%;
+}
+
+#divCategories>input {
+  /* width: 4rem; */
+  margin: 5px;
+}
+
+#divCategories>label {
+  display: initial;
+}
+
+#divCategories>input,
+#divCategories>label {
+  cursor: pointer;
+}
+
+#divCategories>label:hover {
+  background-color: rgb(0, 162, 255);
+  color: white;
+}
+
+#divNoData {
+  color: red;
+  font-size: 14px;
+  margin-left: 36px;
+  display: none;
+}
+
+/* Code for nav and sidenav of Insurance @anjudewangan  */
+
+/* Code for Insurance @anjudewangan */
+.main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   flex-direction: column;
   left: 70px;
+  top: 85px;
 }
-.insurance_settings{
+
+.insurance_settings {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 802px;
 }
-.insurance_settings p{
+
+.insurance_settings p {
   font-size: 25px;
 }
-.insurance_settings a{
-  display:flex;
+
+.insurance_settings a {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -535,10 +563,12 @@ a{
   border-radius: 10px;
   font-size: 20px;
 }
-.insurance_settings .fa-gear{
-  color:#626262;
+
+.insurance_settings .fa-gear {
+  color: #626262;
 }
-.active{
+
+.active {
   background-color: #FFEE54;
 }
 
@@ -554,34 +584,40 @@ a{
   border-bottom: 12px solid transparent;
   border-left: 12px solid transparent;
 }
-.srch_btn{
-position: relative;
-top: 51px;
-display: flex;
-gap: 13px;
-position: relative;
-left: 410px;
+
+.srch_btn {
+  position: relative;
+  top: 51px;
+  display: flex;
+  gap: 13px;
+  position: relative;
+  left: 410px;
 }
-.srch_btn input{
-width: 212px;
-height: 27px;
+
+.srch_btn input {
+  width: 212px;
+  height: 27px;
 }
-.srch_btn input::placeholder{
+
+.srch_btn input::placeholder {
   position: relative;
   left: 5px;
 }
-.srch_btn button{
+
+.srch_btn button {
   width: 59px;
   height: 27px;
   background: #FFA000;
   border: 1px solid #FFA000;
   border-radius: 3px;
 }
+
 .insurance_table {
   position: relative;
   top: 70px;
 }
-table{
+
+.insurance_table table, .plan {
   width: 1138px;
   font-size: 16px;
 }
@@ -591,32 +627,37 @@ table{
   border-bottom: 1px solid #000000;
   height: 45px;
   font-size: 18px;
-  font-weight:normal;
+  font-weight: normal;
   text-align: left;
 }
+
 .insurance_table td {
   border-bottom: 1px solid #D8D8D8;
   height: 68px;
 }
+
 .plan th {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   height: 45px;
   font-size: 18px;
-  font-weight:normal;
+  font-weight: normal;
   text-align: left;
 }
+
 .plan td {
   border-bottom: 1px solid #D8D8D8;
   height: 68px;
 }
-.data{
+
+.data {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
 }
-td a{
+
+.insurance_table td a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -630,11 +671,13 @@ td a{
   border: none;
   text-align: center;
 }
-td img{
+
+.insurance_table td img {
   height: 35px;
   width: 94px;
 }
-.status_active_insurance{
+
+.status_active_insurance {
   width: 49px;
   height: 20px;
   background: #0A65FF;
@@ -645,7 +688,8 @@ td img{
   justify-content: center;
   color: #ffffff;
 }
-.status_inactive_insurance{
+
+.status_inactive_insurance {
   box-sizing: border-box;
   width: 60px;
   height: 20px;
@@ -658,7 +702,8 @@ td img{
   align-items: center;
   justify-content: center;
 }
-.insurance_img{
+
+.insurance_img {
   display: flex;
   gap: 37px;
   justify-content: center;
@@ -669,18 +714,22 @@ td img{
   border-radius: 5px;
   font-size: 22px;
 }
-.insurance_img img{
+
+.insurance_img img {
   height: 50px;
   width: 134px;
 }
-.plan{
+
+.plan {
   position: relative;
   top: 96px;
 }
-.plan th{
+
+.plan th {
   border-top: none;
 }
-.inactive{
+
+.inactive {
   width: 105px;
   height: 27px;
   background: #FABDBD;
@@ -691,7 +740,8 @@ td img{
   justify-content: center;
   gap: 5px;
 }
-.inaactv_circle{
+
+.inaactv_circle {
   width: 18px;
   height: 18px;
   left: 72px;
@@ -700,7 +750,8 @@ td img{
   background: #FF0000;
   font-size: 12px;
 }
-.status_active{
+
+.status_active {
   width: 95px;
   height: 27px;
   background: #C6FFCB;
@@ -711,7 +762,8 @@ td img{
   justify-content: center;
   gap: 6px;
 }
-.aactv_circle{
+
+.aactv_circle {
   width: 18px;
   height: 18px;
   left: 72px;
@@ -720,240 +772,5 @@ td img{
   background: #50E25F;
   font-size: 12px;
 }
-.department_main{
-  position: relative;
-  left: 33px;
-}
-.department_table{
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.department_table_wrap{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.department_head{
-  display: flex;
-  align-items:center;
-  justify-content: space-around;
-  width: 1121px;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  font-size: 18px;
-}
-.department_row1,
-.department_row2,
-.department_row3,
-.department_row4,
-.department_row5,
-.department_row6{
-  display: flex;
-  align-items:flex-start;
-  justify-content: space-around;
-  background-color: #F5F5F5;
-  font-size: 14px;
-}
-.department_row2{
-  background-color: #F0F9FF;
-}
-.department_row3{
-  background-color: #E2FFF8;
-}
-.department_row4{
-  background-color: #F2FDFF;
-}
-.department_row5{
-  background-color: #FFF6F2;
-}
-.department_row6{
-  background-color: #ECFFEE;
-}
-.data_col1,
-.data_col3,
-.data_col3,
-.data_col4{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-.data_col3 p{
-  margin: 0;
-}
-.data_col3,.data_col4{
-  position: relative;
-  top: 10px;
-}
-.department_row2 .data_col3{
-  position: relative;
-  right: 10px;
-} 
-.department_row2 .data_col2{
-  position: relative;
-  right: 12px;
-} 
-.department_row3 .data_col2{
-  position: relative;
-  right: 21px;
-} 
-.department_row3 .data_col3{
-  position: relative;
-  left: 19px;
-} 
-.department_row3 .data_col4{
-  position: relative;
-  left: 10px;
-} 
-.department_row4 .data_col2{
-  position: relative;
-  left: 30px;
-} 
-.department_row4 .data_col3{
-  position: relative;
-  right: 59px;
-} 
-.department_row4 .data_col4{
-  position: relative;
-  right: 18px;
-} 
-.department_row5 .data_col2{
-  position: relative;
-  left: 20px;
-} 
-.department_row5 .data_col3{
-  position: relative;
-  right: 42px;
-} 
-.department_row5 .data_col4{
-  position: relative;
-  right: 13px;
-} 
-.department_row6 .data_col2{
-  position: relative;
-  left: 20px;
-} 
-.department_row6 .data_col3{
-  position: relative;
-  right: 72px;
-} 
-.department_row6 .data_col4{
-  position: relative;
-  right: 23px;
-} 
-.data_col4 a{
-  color: #0897FF;
-}
-.casualty_department{
-  position: relative;
-  left: 34px;
-  top: 34px;
-}
-.casualty_department .insurance_settings p{
-  font-size: 15px;
-}
-.casualty_department .insurance_settings{
-  display: flex;
-  gap: 845px;
-  align-items: center;
-}
-.casualty_dtable{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 49px;
-}
-.casualty_staff_table{
-  width: 994px;
-  text-align: left;
-}
-.casualty_staff_table th{
-  font-size: 18px;
-  font-weight: normal;
-  border-top: 0.5px solid #000000;
-  border-bottom: 0.5px solid #000000;
-  height: 35px;
-}
-.casualty_staff_table td{
-  font-size: 14px;
-  height: 35px;
-}
-.doc_schedule{
-  position: relative;
-  left: 50px;
 
-}
-.schedule_table{
-  position: relative;
-  top: 35px;
-}
-.doc_schedule select{
-  width: 323px;
-  height: 35px;
-}
-.doc_schedule input{
-  width: 212px;
-height: 35px;
-position: relative;
-left: 576px;
-text-indent: 10px;
-}
-.sch_table th,td {
-  border: 1px dashed #000000;
-}
-.sch_table th{
-  height: 42px;
-  font-weight: 100;
-}
-.sch_table a{
-background-color:transparent;
-width: 220px;
-  height: 30px;
-  font-size: 13px;
-}
-.sch_table span{
-  display: flex;
-  background-color: #E3E3E3;
-  border-radius: 15px;
-  align-items: center;
-  font-weight: 400;
-}
-.sch_table .material-symbols-outlined{
-  color: #000000;
-}
-.sch_table .name{
-  color: #032D4B;
-}
-.mon{
-  color: #A40000;
-}
-.wed{
-  color: #DE6A29;
-}
-.sat{
-  color: #09189C;
-}
-.sat_ipd{
-  color: #198000;
-}
-.abr{
-  display: flex;
-  gap: 23px;
-  position: relative;
-  left: 10px;
-}
-.abr p:nth-child(1){
-  color: #A40000;
-}
-.abr p:nth-child(2){
-  color: #DE6A29;
-}
-.abr p:nth-child(3){
-  color: #09189C;
-}
-.abr p:nth-child(4){
-  color: #198000;
-}
+/* Code for Insurance @anjudewangan */

@@ -1,5 +1,12 @@
 /* navbar 1 2 3 */
 
+/* code for scroll @anjudewangan */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* code for scroll @anjudewangan */
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -31,7 +38,7 @@
     font-size: 15px;
     /* Code for hospital name @anjudewangan */
     text-decoration: none;
-     /* Code for hospital name @anjudewangan */
+    /* Code for hospital name @anjudewangan */
 }
 
 .hospital-name:hover {
@@ -71,9 +78,11 @@
 #messagesDropdown {
     padding: 0;
 }
+
 .input-group-append {
     margin-left: -48px;
 }
+
 .advnc-search {
     background: none;
     border: none;
@@ -307,17 +316,20 @@
 .nav-link {
     color: #818181;
 }
+
 /* *************admin dashboard css***************** */
-.adminBasePage{
+.adminBasePage {
     height: 100vh;
     width: 100vw;
 }
-.adminBackgroundPage{
+
+.adminBackgroundPage {
     position: absolute;
     left: 72px;
     top: 72px;
 }
-.adminDetails{
+
+.adminDetails {
     border: 1px solid gray;
     border-radius: 10px;
     margin-left: 15px;
@@ -325,7 +337,8 @@
     width: 92vw;
     display: flex;
 }
-.admin1{
+
+.admin1 {
     width: 10%;
     height: 100%;
     display: flex;
@@ -333,11 +346,13 @@
     flex-direction: column;
     /* border: 1px solid black; */
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
 }
-.box input{
+
+.box input {
     outline: none;
     border: 1px solid gray;
     border-radius: 10px;
@@ -346,171 +361,226 @@
     max-width: 250px;
     font-size: 13px;
 }
-.admin2{
+
+.admin2 {
     width: 90%;
     height: 100%;
     /* border: 1px solid black; */
 }
-.adminsAllDetailsPart1,.adminsAllDetailsPart2,.adminsAllDetailsPart3,.adminsAllDetailsPart5{
+
+.adminsAllDetailsPart1,
+.adminsAllDetailsPart2,
+.adminsAllDetailsPart3,
+.adminsAllDetailsPart5 {
     display: flex;
     justify-content: space-between;
 }
-.adminsAllDetailsPart4,.adminsAllDetailsPart6{
+
+.adminsAllDetailsPart4,
+.adminsAllDetailsPart6 {
     display: flex;
     justify-content: center;
 }
-.adminsAllDetailsPart6 .box{
-    margin:0 30px;
+
+.adminsAllDetailsPart6 .box {
+    margin: 0 30px;
 }
-.box label{
+
+.box label {
     font-weight: 700;
 }
+
 @media only screen and (max-width: 1024px) {
-    .navbar-first{
+    .navbar-first {
         width: 100px;
     }
+
     .navbar-second {
         width: 69%;
     }
-    .navbar-brand,.buttonForSideNav{
+
+    .navbar-brand,
+    .buttonForSideNav {
         font-size: 12px;
     }
-    .nav-link{
+
+    .nav-link {
         padding: 0;
         margin: 0;
     }
-    .d-lg-none{
+
+    .d-lg-none {
         display: none;
     }
-    #addPateintButton{
+
+    #addPateintButton {
         width: 71px;
     }
-   
-    .addpatient{
+
+    .addpatient {
         font-size: 10px;
     }
-    .hospital-name{
+
+    .hospital-name {
         font-size: 10px;
     }
-    .inputForSearch{
+
+    .inputForSearch {
         width: 93px;
         height: 30px;
         font-size: 12px;
     }
-    .searchbtn1{
+
+    .searchbtn1 {
         height: 30px;
         display: flex;
         align-items: center;
     }
-    #dropbtnMyfunction{
+
+    #dropbtnMyfunction {
         font-size: 10px;
     }
+
     .nav-link-text {
         font-size: 14px;
         margin-left: 25px;
     }
+
     .alertBodyitems {
         font-size: 0.8rem;
     }
-    .MadBodyitems{
+
+    .MadBodyitems {
         font-size: 0.8rem;
     }
+
     .adminSettingBox {
         left: 79%;
         width: 21%;
     }
-    .adminSettingHeader{
+
+    .adminSettingHeader {
         font-size: 13px;
     }
+
     .sidenav {
         height: 91%;
         width: 64px;
         top: 55px;
     }
-    .navForDeskTop{
+
+    .navForDeskTop {
         display: flex;
     }
+
     /* admin dashboard media */
-    .box label{
+    .box label {
         font-size: 12px;
         font-weight: 700;
     }
-    .box input{
+
+    .box input {
         width: 15vw;
         font-size: 11px;
     }
-    .box select{
+
+    .box select {
         font-size: 12px;
     }
 }
+
 @media only screen and (max-width: 767px) {
+
     .navbar-second,
     .navbar-third {
         display: none;
     }
+
     .sidenav {
         top: 31px;
     }
+
     .navbar-first {
         width: 100%;
     }
+
     .navbar-sidenav>.nav-item>.nav-link {
         font-size: 15px;
     }
+
     #mySidenav {
         width: 0px;
         border: none;
         background-color: #efefef;
     }
+
     .nav-link-text {
         font-size: 14px;
     }
-    /* admin css */
-.adminBackgroundPage {
-    left: 10px;
-}
-.adminDetails {
-    flex-direction: column;
-}
-.admin1 {
-    width: 100%;
-    justify-content: center;
-}
-.admin2 {
-    width: 100%;
-}
-}
-@media only screen and (max-width: 480px) {
+
     /* admin css */
     .adminBackgroundPage {
         left: 10px;
     }
+
     .adminDetails {
         flex-direction: column;
     }
+
     .admin1 {
         width: 100%;
         justify-content: center;
     }
+
     .admin2 {
         width: 100%;
     }
-    .adminsAllDetailsPart1, .adminsAllDetailsPart2, .adminsAllDetailsPart3, .adminsAllDetailsPart5 {
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* admin css */
+    .adminBackgroundPage {
+        left: 10px;
+    }
+
+    .adminDetails {
         flex-direction: column;
     }
+
+    .admin1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .admin2 {
+        width: 100%;
+    }
+
+    .adminsAllDetailsPart1,
+    .adminsAllDetailsPart2,
+    .adminsAllDetailsPart3,
+    .adminsAllDetailsPart5 {
+        flex-direction: column;
+    }
+
     .box {
         align-items: center;
     }
+
     .box input {
         width: 65vw;
         max-width: 310px;
     }
-    .adminsAllDetailsPart4, .adminsAllDetailsPart6 {
+
+    .adminsAllDetailsPart4,
+    .adminsAllDetailsPart6 {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    #dropdown{
+
+    #dropdown {
         width: 180px !important;
         min-width: 180px !important;
     }
@@ -590,6 +660,7 @@
     /* width: 4rem; */
     margin: 5px;
 }
+
 #divCategories>label {
     display: initial;
 }
@@ -610,4 +681,3 @@
     margin-left: 36px;
     display: none;
 }
-

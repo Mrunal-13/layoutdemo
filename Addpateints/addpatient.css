@@ -7,9 +7,9 @@ body {
   height: 700px;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
 .nav {
   z-index: 1;
   display: flex;
@@ -544,9 +544,9 @@ select {
     align-items: center;
     justify-content: center;
     background-color: #b6f6ff;
-    min-width: 430px;
+    min-width: 428px;
     border: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     box-sizing: border-box;
     height: 70px;
   }
@@ -1176,9 +1176,9 @@ section {
   border: 1px solid #c4c4c4;
   border-radius: 3px;
 }
-#allergy{
+/* #allergy{
   border:1px solid #000000;
-}
+} */
 .medical-hist {
   display: flex;
   align-items: center;
@@ -1215,7 +1215,8 @@ section {
   flex-direction: column;
   position: fixed;
   left: 51px;
-  top: -43px;
+  top: -72px;
+  height: 90px;
 }
 .allergy .allergy_info{
   width: 150px;
@@ -1757,7 +1758,7 @@ section {
 }
 
 .scn_modal {
-  width: 1535px;
+  width: 100%;
   height: 885px;
   display: none;
   align-items: center;
@@ -1766,9 +1767,7 @@ section {
   gap: 15px;
   z-index: 1;
   position: relative;
-  bottom: 995px;
-  left: 1px;
-  border: 1px solid #000000;
+  bottom: 929px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -1893,6 +1892,7 @@ section {
 
 
 @media screen and (max-width: 428px) {
+  
   section {
     display: flex;
     align-items: center;
@@ -2094,7 +2094,14 @@ section {
     position: relative;
     left: -2px;
   }
-
+  .container_6wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .relation_container{
+    position: relative;
+    left:-120px;
+  }
   .item-container7 {
     position: relative;
     width: 400px;
@@ -2129,10 +2136,13 @@ section {
     left: -2px;
     font-weight: 700;
     font-size: 16px;
+    top: 20px;
   }
 
   .container-8 .item {
     width: 399px;
+    position: relative;
+    top: 20px;
   }
 
   .medical-hist label {
@@ -2149,6 +2159,8 @@ section {
     font-size: 12px;
     font-weight: 400;
     color: #000000;
+    position: relative;
+    top: 6px;
   }
 
   .allergy {
@@ -2163,7 +2175,6 @@ section {
   width: 150px;
   height: 150px;
   list-style: none;
-  background-color: #07c160;
 }
   .allergy label {
     width: 399px;
@@ -2424,7 +2435,7 @@ section {
     left: -0px;
   }
 
-  #example-1 {
+  /* #example-1 {
     height: 150px;
     width: 200px;
   }
@@ -2432,7 +2443,7 @@ section {
   #example {
     height: 150px;
     width: 200px;
-  }
+  } */
 
   .modal-1 {
     overflow: hidden;
@@ -2490,13 +2501,13 @@ section {
     justify-content: center;
     z-index: 1;
     position: relative;
-    top: -2515px;
+    top: -2500px;
     left: 0px;
     width: 445px;
     height: 900px;
     border: 1px solid #000000;
     background-color: rgba(0, 0, 0, 0.4);
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   #reader {

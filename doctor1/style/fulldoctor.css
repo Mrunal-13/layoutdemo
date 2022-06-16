@@ -575,7 +575,6 @@ font-size: 12px;
         border: 3px solid #DADADA;
     }
 
-
     .education_head {
         border: none;
         position: relative;
@@ -754,3 +753,49 @@ font-size: 12px;
     }
 
 }
+
+/* Code for images popup @anjudewangan */
+.modal-header .modal-ul .nav-item .nav-link{
+    color: black !important;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 0.02rem solid black;
+    width: 45px;
+    height: 35px;
+    padding: 0px;
+    margin-top: 9px;
+    font-size: 1.2rem;
+}
+.modal-ul {
+    display: contents;
+}
+.modal-header .modal-ul .nav-item{
+    margin-left: 3rem;
+    list-style-type: none;
+}
+.modal-header .modal-ul .nav-item:focus,
+.modal-header .modal-ul .nav-item:hover {
+    color: black;
+}
+
+.btnZoomIn,
+.btnRotateRight {
+    border-bottom-left-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+}
+
+.btnZoomOut,
+.btnRotateLeft {
+    margin-left: -49px !important;
+    border-bottom-right-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.modal-header .modal-ul .nav-item .btnFullScreen {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    margin-top: 8px;
+    border: none !important;
+}
+
+/* Code for images popup @anjudewangan */

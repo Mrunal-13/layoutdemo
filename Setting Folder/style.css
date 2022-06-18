@@ -274,7 +274,9 @@ sub {
     color: #9B9B9B;
 }
 
-.dvSubject-2 .para-second {
+.dvSubject-2 .para-second,
+.dvAppoin_Detail .para-second,
+.dvWish_SMS .para-second {
     font-weight: 400;
     font-size: 12px;
     color: black;
@@ -301,6 +303,7 @@ sub {
     background-color: #6c757d;
     border-color: #6c757d;
 }
+
 /* Code for setting > about > statement @anjudewangan */
 .text_opt {
     height: 35px;
@@ -320,6 +323,7 @@ sub {
     border: none;
     cursor: pointer;
 }
+
 /* Code for setting > about > statement @anjudewangan */
 
 @media (min-width: 1200px) {
@@ -441,33 +445,33 @@ sub {
     color: black;
 }
 
-.table tbody tr td,
-.table thead tr th {
+.dvPracticeStaff .table tbody tr td,
+.dvPracticeStaff .table thead tr th {
     font-size: 15px;
 }
 
-.table tbody tr td:nth-child(2) {
+.dvPracticeStaff .table tbody tr td:nth-child(2) {
     position: relative;
 }
 
-.table tbody tr td span {
+.dvPracticeStaff .table tbody tr td span {
     font-size: 12px;
     position: absolute;
     top: 40px;
     left: 12px;
 }
 
-.table tbody tr td button {
+.dvPracticeStaff .table tbody tr td button {
     opacity: 0.5;
 }
 
-.table thead th {
+.dvPracticeStaff .table thead th {
     vertical-align: top;
     border-bottom: 0.5px solid black;
 }
 
-.table th,
-.table td {
+.dvPracticeStaff .table th,
+.dvPracticeStaff .table td {
     padding: 1.5rem 1.2rem;
     box-sizing: border-box;
 }
@@ -871,3 +875,114 @@ table-2 th td {
 .sidenav-second-level li a {
     font-size: 21px;
 }
+
+/* Code for Communication - appointment and followup sms, Wish sms, Emails, Notifications @anjudewangan*/
+/* Appointment follow and Wish SMS */
+.dvAppoin_Detail .container,
+.dvWish_SMS .container {
+    border-bottom: 1px solid lightgray;
+}
+
+.dvAppoin_Detail .form-label,
+.dvWish_SMS .form-label {
+    font-size: 14px;
+    background-color: #F1F3F4;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.dvAppoin_Detail .form-check .select-time {
+    width: 95px;
+    top: 180px;
+    left: 462px;
+    padding: 0 10px !important;
+    box-sizing: border-box;
+}
+
+.dvAppoin_Detail .form-check .select-months {
+    width: 115px;
+    padding: 0 10px !important;
+    box-sizing: border-box;
+}
+
+/* Emails */
+.dvEmails .container-sender-pre,
+.dvEmails .sender-email .table {
+    border: 2px solid #E5E5E5;
+    border-radius: 6px;
+}
+
+.dvEmails .sender-email,
+.dvEmails .email-insight {
+    border-bottom: 1px solid black;
+}
+
+.dvEmails .sender-email .para-email {
+    color: #8C8C8C;
+}
+
+.dvEmails .sender-email .col-para {
+    font-size: 14px;
+}
+
+.dvEmails .sender-email .div-col-right {
+    background-color: #F3F8FE;
+}
+
+.dvEmails .sender-email .div-col-right a,
+.dvEmails .table tbody tr td i {
+    font-size: 22px;
+}
+
+.dvEmails .sender-email .div-col-right,
+.dvEmails .sender-email .div-col-left {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.dvEmails .email-insight .container-email-insight {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.dvEmails .email-insight .row {
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dvEmails .email-insight .row .col-head {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.dvEmails .email-insight .container-notes {
+    background-color: #F5EC96;
+
+}
+
+.dvEmails .email-insight .container-notes .col-12 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Notifications */
+.divNotifications .table thead tr:first-child,
+.divNotifications .table tbody tr:first-child td,
+.divNotifications .table tbody tr .form-check {
+    text-align: center;
+}
+
+.divNotifications .table tbody tr th {
+    background-color: #E7E9EA;
+}
+
+.divNotifications .table tbody tr td span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Code for Communication - appointment and followup sms, Wish sms, Emails, Notifications @anjudewangan*/

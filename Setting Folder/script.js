@@ -78,12 +78,26 @@ $(document).ready(function () {
     $("#communication-link").click(function () {
         clickCommunication();
     });
-    $("#active-appoin-follow").click(function () {
-        clickAppoinFollow();
-    });
     $("#active-comm-detail").click(function () {
         clickCommDetail();
     });
+    // Code for Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
+
+    $("#active-appoin-follow").click(function () {
+        clickAppoinFollow();
+    });
+    $("#active-wish-sms").click(function () {
+        clickWishSMS();
+    });
+    $("#active-email").click(function () {
+        clickEmails();
+    });
+    $("#active-notifications").click(function () {
+        clickNotifications();
+    });
+
+    // Code for Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
+
     $(".branchCard").click(function () {
         clickAddBranch();
     });
@@ -934,6 +948,8 @@ function clickTrashBin() {
 
 }
 
+// Code for Communication, Comm Details, Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
+
 // Communication
 function clickCommunication() {
     $("#communication-link").addClass("active-li");
@@ -953,16 +969,21 @@ function clickCommunication() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvAppoin_Detail").css("display", "none");
+    $(".dvWish_SMS").css("display", "none");
+    $(".dvEmails").css("display", "none");
+    $(".divNotifications").css("display", "none");
     $(".dvCommunication").css("display", "block");
     $(".dvAddBranch").css("display", "none");
 
 }
 
+// Coomunication Details
 function clickCommDetail() {
     $("#active-comm-detail").addClass("active");
     $("#active-appoin-follow").removeClass("active");
     $("#active-wish-sms").removeClass("active");
     $("#active-email").removeClass("active");
+    $("#active-notifications").removeClass("active");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -975,14 +996,19 @@ function clickCommDetail() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvAppoin_Detail").css("display", "none");
+    $(".dvWish_SMS").css("display", "none");
+    $(".dvEmails").css("display", "none");
+    $(".divNotifications").css("display", "none");
     $(".dvComm_Detail").css("display", "block");
 }
 
+// Appointment Follow
 function clickAppoinFollow() {
     $("#active-appoin-follow").addClass("active");
     $("#active-comm-detail").removeClass("active");
     $("#active-wish-sms").removeClass("active");
     $("#active-email").removeClass("active");
+    $("#active-notifications").removeClass("active");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -995,8 +1021,87 @@ function clickAppoinFollow() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvComm_Detail").css("display", "none");
+    $(".dvWish_SMS").css("display", "none");
+    $(".dvEmails").css("display", "none");
+    $(".divNotifications").css("display", "none");
     $(".dvAppoin_Detail").css("display", "block");
 }
+
+// Wish SMS
+function clickWishSMS() {
+    $("#active-wish-sms").addClass("active");
+    $("#active-appoin-follow").removeClass("active");
+    $("#active-comm-detail").removeClass("active");
+    $("#active-email").removeClass("active");
+    $("#active-notifications").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvComm_Detail").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "none");
+    $(".dvEmails").css("display", "none");
+    $(".divNotifications").css("display", "none");
+    $(".dvWish_SMS").css("display", "block");
+}
+
+// Emails
+function clickEmails() {
+    $("#active-email").addClass("active");
+    $("#active-wish-sms").removeClass("active");
+    $("#active-appoin-follow").removeClass("active");
+    $("#active-comm-detail").removeClass("active");
+    $("#active-notifications").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvComm_Detail").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "none");
+    $(".dvWish_SMS").css("display", "none");
+    $(".divNotifications").css("display", "none");
+    $(".dvEmails").css("display", "block");
+}
+
+// Notifications
+function clickNotifications() {
+    $("#active-notifications").addClass("active");
+    $("#active-email").removeClass("active");
+    $("#active-wish-sms").removeClass("active");
+    $("#active-appoin-follow").removeClass("active");
+    $("#active-comm-detail").removeClass("active");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvComm_Detail").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "none");
+    $(".dvWish_SMS").css("display", "none");
+    $(".dvEmails").css("display", "none");
+    $(".divNotifications").css("display", "block");
+}
+// Code for Communication, Comm Details, Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
 
 // Add Branch
 function clickAddBranch() {

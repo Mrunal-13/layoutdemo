@@ -7,6 +7,8 @@ $(document).ready(function () {
     $(".dvPracticeStaff").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
     $(".dvAddBranch").css("display", "none");
 
     $("#about-link").click(function () {
@@ -81,7 +83,7 @@ $(document).ready(function () {
     $("#active-comm-detail").click(function () {
         clickCommDetail();
     });
-    // Code for Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
+    // Code for Appointment Follow, Wish SMS, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog @anjudewangan
 
     $("#active-appoin-follow").click(function () {
         clickAppoinFollow();
@@ -95,8 +97,32 @@ $(document).ready(function () {
     $("#active-notifications").click(function () {
         clickNotifications();
     });
+    $("#pricing-link").click(function () {
+        clickPricing();
+    });
+    $("#clinical-link").click(function () {
+        clickClinical();
+    });
+    $("#btncreateNew").click(function () {
+        showTemplate();
+    });
+    $("#btnSavePres").click(function () {
+        showPrescription();
+    });
+    $("#btnSaveLabTestAdvise").click(function () {
+        showLabTestAdvise();
+    });
+    $("#btnSaveSpeInstruction").click(function () {
+        showSpeInstruction();
+    });
+    $("#btnSaveReview").click(function () {
+        showReview();
+    });
+    $(".showTemplates").click(function () {
+        showAllTemplate();
+    });
 
-    // Code for Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
+    // Code for Appointment Follow, Wish SMS, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog @anjudewangan
 
     $(".branchCard").click(function () {
         clickAddBranch();
@@ -519,6 +545,8 @@ function clickPracticeProfile() {
     $("#calendar-link").removeClass("active-li");
     $("#profile-link").addClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $("#container").css("display", "flex");
     $("#form-1").css("display", "block");
@@ -531,6 +559,8 @@ function clickPracticeProfile() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
     $(".dvAddBranch").css("display", "none");
 }
 
@@ -540,6 +570,8 @@ function clickPracticeDetails() {
     $("#practice-staff").removeClass("active-li");
     $("#calendar-link").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -552,6 +584,8 @@ function clickPracticeDetails() {
     $(".dvAddStaffButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
     $(".dvAddBranch").css("display", "none");
     $(".dvAddBranch").css("display", "none");
 
@@ -563,6 +597,8 @@ function manageStaffTable() {
     $("#practice-staff").addClass("active-li");
     $("#calendar-link").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $("#active-manage").addClass("active");
     $("#active-noti").removeClass("active");
@@ -586,6 +622,8 @@ function manageStaffTable() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
     $(".dvAddBranch").css("display", "none");
 }
 
@@ -606,6 +644,8 @@ function staffNotiTable() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
 
 }
 
@@ -626,6 +666,8 @@ function doctorVisitTable() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
 
 }
 
@@ -645,6 +687,8 @@ function clickOtherStaff() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
 }
 
 function clickDoctor() {
@@ -659,6 +703,8 @@ function clickDoctor() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
 }
 
 function doctorOfficeAppoin() {
@@ -673,6 +719,8 @@ function doctorOfficeAppoin() {
     $(".dvDVT-office-appoin").css("display", "block");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
 }
 
 function clickAddDoctor() {
@@ -688,6 +736,8 @@ function clickAddDoctor() {
     $(".dvAddDoctorButton").css("display", "block");
     $(".dvCalendar").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
 }
 
 // Code for Add Doctor @anjudewangan
@@ -721,6 +771,8 @@ function clickAddStaff() {
     $(".dvAddDoctorButton").css("display", "none");
     $(".dvAddStaffButton").css("display", "block");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
     $(".dvCalendar").css("display", "none");
 }
 
@@ -731,6 +783,8 @@ function clickCalendar() {
     $("#profile-link").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -746,6 +800,8 @@ function clickCalendar() {
     $(".dvName").css("display", "none");
     $(".dv_Subscription").css("display", "none");
     $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
     $(".dvAdd_new_cate").css("display", "none");
     $(".dvTrash_Bin").css("display", "none");
     $(".dvAddBranch").css("display", "none");
@@ -766,6 +822,7 @@ function clickGeneral() {
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -793,6 +850,8 @@ function clickPracticeTime() {
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $("#active-practice-time").addClass("active");
     $("#active-general").removeClass("active");
@@ -825,6 +884,8 @@ function clickAppoinCate() {
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $("#active-appoin-category").addClass("active");
     $("#active-practice-time").removeClass("active");
@@ -857,6 +918,8 @@ function clickNotification() {
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $("#active-notification").addClass("active");
     $("#active-appoin-category").removeClass("active");
@@ -889,6 +952,8 @@ function clickSubscription() {
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $("#active-subscription").addClass("active");
     $("#active-notification").removeClass("active");
@@ -921,6 +986,8 @@ function clickTrashBin() {
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
     $("#communication-link").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $("#active-trash-bin").addClass("active");
     $("#active-subscription").removeClass("active");
@@ -948,7 +1015,7 @@ function clickTrashBin() {
 
 }
 
-// Code for Communication, Comm Details, Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
+// Code for Communication, Comm Details, Appointment Follow, Wish SMS, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog @anjudewangan
 
 // Communication
 function clickCommunication() {
@@ -957,6 +1024,8 @@ function clickCommunication() {
     $("#details-link").removeClass("active-li");
     $("#profile-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
 
     $(".dvAbout").css("display", "none");
     $(".head-link").css("display", "none");
@@ -973,6 +1042,8 @@ function clickCommunication() {
     $(".dvEmails").css("display", "none");
     $(".divNotifications").css("display", "none");
     $(".dvCommunication").css("display", "block");
+    $(".dvPricing").css("display", "none");
+    $(".dvClinical").css("display", "none");
     $(".dvAddBranch").css("display", "none");
 
 }
@@ -1101,7 +1172,237 @@ function clickNotifications() {
     $(".dvEmails").css("display", "none");
     $(".divNotifications").css("display", "block");
 }
-// Code for Communication, Comm Details, Appointment Follow, Wish SMS, Emails and Notifications @anjudewangan
+
+// Pricing Catalog
+function clickPricing() {
+    $("#pricing-link").addClass("active-li");
+    $("#communication-link").removeClass("active-li");
+    $("#calendar-link").removeClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#profile-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+    $("#clinical-link").removeClass("active-li");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "none");
+    $(".dvWish_SMS").css("display", "none");
+    $(".dvEmails").css("display", "none");
+    $(".divNotifications").css("display", "none");
+    $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "block");
+    $(".dvClinical").css("display", "none");
+    $(".dvAddBranch").css("display", "none");
+
+}
+// Clinical Notes Catalog
+function clickClinical() {
+    $("#clinical-link").addClass("active-li");
+    $("#pricing-link").removeClass("active-li");
+    $("#communication-link").removeClass("active-li");
+    $("#calendar-link").removeClass("active-li");
+    $("#details-link").removeClass("active-li");
+    $("#profile-link").removeClass("active-li");
+    $("#practice-staff").removeClass("active-li");
+
+    $(".dvAbout").css("display", "none");
+    $(".head-link").css("display", "none");
+    $("#container").css("display", "none");
+    $("#form-1").css("display", "none");
+    $("#footer").css("display", "none");
+    $(".dvPracticeStaff").css("display", "none");
+    $(".dvPracticeDetails").css("display", "none");
+    $(".dvAddDoctorButton").css("display", "none");
+    $(".dvAddStaffButton").css("display", "none");
+    $(".dvCalendar").css("display", "none");
+    $(".dvAppoin_Detail").css("display", "none");
+    $(".dvWish_SMS").css("display", "none");
+    $(".dvEmails").css("display", "none");
+    $(".divNotifications").css("display", "none");
+    $(".dvCommunication").css("display", "none");
+    $(".dvPricing").css("display", "none");
+    $(".dvTemplate").css("display", "none");
+    $(".dvClinical").css("display", "block");
+    $(".dvClinical_Notes_Catalog").css("display", "block");
+    $(".dvAddBranch").css("display", "none");
+
+}
+
+// Templates
+function showTemplate(){
+    $(".dvTemplate").css("display", "block");
+    $(".dvClinical").css("display", "block");
+    $(".dvClinical_Notes_Catalog").css("display", "none");
+    $(".dvPrescriptions").css("display", "none");
+    $(".dvLabTestAdvise").css("display", "none");
+    $(".dvSpecialInstruction").css("display", "none");
+    $(".dvReviewAfter").css("display", "none");
+    $(".selectTemplates").css("display", "none");
+    $(".addAllTemplate").css("display", "none");
+    $(".addTemplate").css("display", "block");
+}
+function showPrescription(){
+    $(".dvPrescriptions").css("display", "block");
+    $(".dvLabTestAdvise").css("display", "none");
+    $(".dvSpecialInstruction").css("display", "none");
+    $(".dvReviewAfter").css("display", "none");
+    $("#hidePrescriptions").css("display", "none");
+    $(".dvTemplate").css("width", "1020px");
+    $(".selectTemplates").css("display", "block");
+    $(".addAllTemplate").css("display", "none");
+    $(".addTemplate").css("display", "block");
+}
+function showLabTestAdvise(){
+    $(".dvPrescriptions").css("display", "block");
+    $(".dvLabTestAdvise").css("display", "block");
+    $(".dvSpecialInstruction").css("display", "none");
+    $(".dvReviewAfter").css("display", "none");
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "none");
+    $(".dvTemplate").css("width", "1020px");
+    $(".selectTemplates").css("display", "block");
+    $(".addAllTemplate").css("display", "none");
+    $(".addTemplate").css("display", "block");
+}
+function showSpeInstruction(){
+    $(".dvPrescriptions").css("display", "block");
+    $(".dvLabTestAdvise").css("display", "block");
+    $(".dvSpecialInstruction").css("display", "block");
+    $(".dvReviewAfter").css("display", "none");
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "none");
+    $("#hideSpeInstruction").css("display", "none");
+    $(".dvTemplate").css("width", "1020px");
+    $(".selectTemplates").css("display", "block");
+    $(".addAllTemplate").css("display", "none");
+    $(".addTemplate").css("display", "block");
+}
+function showReview(){
+    $(".dvPrescriptions").css("display", "block");
+    $(".dvLabTestAdvise").css("display", "block");
+    $(".dvSpecialInstruction").css("display", "block");
+    $(".dvReviewAfter").css("display", "block");
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "none");
+    $("#hideSpeInstruction").css("display", "none");
+    $("#hideReview").css("display", "none");
+    $(".dvTemplate").css("width", "1020px");
+    $(".selectTemplates").css("display", "block");
+    $(".addAllTemplate").css("display", "block");
+    $(".addTemplate").css("display", "none");
+
+}
+function editPrescriptions(){
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "block");
+    $("#hideSpeInstruction").css("display", "block");
+    $("#hideReview").css("display", "block");
+}
+function editLabTestAdvise(){
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "none");
+    $("#hideSpeInstruction").css("display", "block");
+    $("#hideReview").css("display", "block");
+}
+function editSpeInstruction(){
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "none");
+    $("#hideSpeInstruction").css("display", "none");
+    $("#hideReview").css("display", "block");
+}
+function editReview(){
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "none");
+    $("#hideSpeInstruction").css("display", "none");
+    $("#hideReview").css("display", "none");
+}
+function showAllTemplate(){
+    $(".dvTemplate").css("display", "block");
+    $(".dvClinical_Notes_Catalog").css("display", "none");
+    $(".addTemplate").css("display", "none");
+    $("#hidePrescriptions").css("display", "none");
+    $("#hideLabTestAdvise").css("display", "none");
+    $("#hideSpeInstruction").css("display", "none");
+    $("#hideReview").css("display", "none");
+    $(".dvTemplate").css("width", "1000px");
+}
+
+const addPrescriptions = [];
+addPrescriptions.map((rout, tablets, intake, days) => {
+    $("#popupPrescriptions .modal-body table").append('<tbody><tr><td>CAP</td><td>Razo-D<div><small>Domperidone (30mg) +</small></div><div><small>Rabeprazole (20mg) SR</small></div></td><td><select class="form-select" aria-label="Default select example"><option selected>' + rout + '</option><option>Oral</option><option>Oral</option><option>Oral</option></select></td><td><div class="row"><div class="col-3"> <input type="number" class="form-control input-number" value="' + tablets + '"></div><div class="col-3"> Tablet(s)</div><div class="col-4"> <button class="btn btn-outline-dark">Add Frequancy</button></div></div><div class="text-primary">Custom</div></td><td><select class="form-select" aria-label="Default select example"> <option selected>' + intake + '</option> <option>After Food</option> <option>Before Food</option></select><div class="text-primary">Add instruction</div></td><td><div class="row"><div class="col-4"><input type="number" class="form-control input-number" value="' + days + '"></div><div class="col-4">Day(s)</div><div class="col-3"><i class="fa fa-times text-danger" aria-hidden="true"></i></div></div></td></tr></tbody>');
+});
+
+$("#btnSavePres").click(function () {
+    const getRout = $("#selectRout").val().trim();
+    const getTablets = $("#selectTablets").val().trim();
+    const getIntake = $("#selectIntake").val().trim();
+    const getDays = $("#selectDays").val().trim();
+
+    addPrescriptions.push(getRout);
+    addPrescriptions.push(getTablets);
+    addPrescriptions.push(getIntake);
+    addPrescriptions.push(getDays);
+
+    $(".dvPrescriptions table tbody").append('<tr><td>CAP</td><td>Razo-D<div><small>Domperidone (30mg) +</small></div><div><small>Rabeprazole (20mg) SR</small></div></td><td>' + getRout + '</td><td>' + getTablets  + `-0-` + getTablets + '</td><td>' + getIntake + '</td><td>' + getDays + ' Day(s)</td></tr>');
+
+    $("#selectRout").val("");
+    $("#selectTablets").val("");
+    $("#selectIntake").val("");
+    $("#selectDays").val("");
+    return false;
+});
+
+const addReviewAfter = [];
+addReviewAfter.map((number, weeks, cons) => {
+    $("#popupReviewAfter .modal-body").append('<div class="row mb-3"><div class="col-4 d-flex justify-content-end">Schedule next visit after</div><div class="col-1"><input type="number" name="" id="selectNumber" value="' + number + '" class="form-control"></div><div class="col-2"><select class="form-select" aria-label="Default select example" id="selectWeeks"><option selected>' + weeks + '</option><option>month(s)</option><option>year(s)</option></select></div></div><div class="row mb-3"><div class="col-4 d-flex justify-content-end">for</div><div class="col-4"><select class="form-select" aria-label="Default select example" id="selectCons"><option selected>' + cons + '</option> <option>follow-up consultation</option></select></div></div>');
+});
+
+$("#btnSaveReview").click(function () {
+    const getNumber = $("#selectNumber").val().trim();
+    const getWeeks = $("#selectWeeks").val().trim();
+    const getCons = $("#selectCons").val().trim();
+
+    addReviewAfter.push(getNumber);
+    addReviewAfter.push(getWeeks);
+    addReviewAfter.push(getCons);
+
+    $(".dvReviewAfter").append('<div class="m-3 row"><div class="col-3">Schedule next visit after</div><div class="col-1"><b>' + getNumber + '</b></div><div class="col-1"><b>' + getWeeks + '</b></div><div class="col-1">for</div><div class="col-3"><b>' + getCons + '</b></div></div>');
+
+    $("#selectNumber").val("");
+    $("#selectWeeks").val("");
+    $("#selectCons").val("");
+    return false;
+});
+const selectClinicalNotes = [];
+selectClinicalNotes.map((cliNotes) => {
+    $(".dvTemplate .container .row .colClinicalNotes").append('<div class="mb-3"><label for="" class="form-label">Clinical Notes</label><select class="form-select" aria-label="Default select example" id="selectClinicalNotes"><option selected>' + cliNotes + '</option><option>Diagnoses</option><option>Complaints</option><option>Observation</option></select></div>');
+});
+
+$("#selectClinicalNotes").click(function () {
+    $(".dvTemplate").css("width", "1000px");
+    const getCliNotes = $("#selectClinicalNotes").val().trim();
+
+    selectClinicalNotes.push(getCliNotes);
+
+    $(".dvTemplate .container .selectTemplates").append('<div class="row"><div class="col-6"></div><div class="col-6"><div class="mb-3 row"><label for="" class="col-sm-2 col-form-label">' + getCliNotes + '<span class="text-danger">*</span></label><div class="col-sm-9"><input type="text" class="form-control" id=""></div><div class="col-sm-1"><i class="fa fa-times text-danger deleteNotes" aria-hidden="true"></i></div><div></div></div>');
+
+    $("#selectClinicalNotes").val("");
+    return false;
+});
+
+$(document).on("click", ".deleteNotes", function () {
+    $(this).parent().parent('div').remove();
+});
+
+// Code for Communication, Comm Details, Appointment Follow, Wish SMS, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog @anjudewangan
 
 // Add Branch
 function clickAddBranch() {
@@ -1110,6 +1411,7 @@ function clickAddBranch() {
     $("#calendar-link").removeClass("active-li");
     $("#details-link").removeClass("active-li");
     $("#practice-staff").removeClass("active-li");
+    $("#pricing-link").removeClass("active-li");
 
     $("#active-practice-profile").addClass("active");
     $("#active-branches").removeClass("active");

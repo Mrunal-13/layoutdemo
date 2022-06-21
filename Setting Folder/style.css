@@ -876,7 +876,7 @@ table-2 th td {
     font-size: 21px;
 }
 
-/* Code for Communication - appointment and followup sms, Wish sms, Emails, Notifications @anjudewangan*/
+/* Code for Communication - appointment and followup sms, Wish sms, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog  @anjudewangan*/
 /* Appointment follow and Wish SMS */
 .dvAppoin_Detail .container,
 .dvWish_SMS .container {
@@ -985,4 +985,58 @@ table-2 th td {
     font-weight: 400;
 }
 
-/* Code for Communication - appointment and followup sms, Wish sms, Emails, Notifications @anjudewangan*/
+/* Pricing Catalog, Clinical Notes Catalog */
+.dvPricing_Catalog .table,
+.dvClinical_Notes_Catalog .table {
+    width: 1000px !important;
+    border: 1px solid #E5E5E5;
+}
+
+.dvPricing_Catalog .table thead tr th,
+.dvPricing_Catalog .table tbody tr td {
+    text-align: center;
+}
+
+/* Clinical Notes Catalog  */
+.dvTemplate .container {
+    border-bottom: 1px solid black;
+}
+
+.dvTemplate .dvAddTemplate .inputTemplate {
+    background-color: #FFEB35;
+}
+
+.dvTemplate .dvAddTemplate .input-group-text {
+    opacity: 0.5;
+    background-color: #FFEB35;
+}
+
+.dvAddTemplate .modal-dialog {
+    max-width: 1140px !important;
+}
+
+.dvAddTemplate .modal-dialog .modal-body .table tbody tr .input-number {
+    width: 60px !important;
+}
+
+.dvAddTemplate .modal-dialog .modal-body .table tbody tr .form-select {
+    width: 100px !important;
+}
+
+.dvAddTemplate .modal-dialog .modal-body .divList {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.dvClinical_Notes_Catalog .table tbody tr td i,
+.dvTemplate .container .row .col-1 .fa-pencil,
+.dvTemplate .container .selectTemplates .deleteNotes {
+    cursor: pointer;
+}
+
+.dvClinical_Notes_Catalog #popupDelete .modal-body i {
+    color: #EF8523;
+    font-size: 45px;
+}
+
+/* Code for Communication - appointment and followup sms, Wish sms, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog  @anjudewangan*/

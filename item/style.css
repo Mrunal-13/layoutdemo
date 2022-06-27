@@ -528,7 +528,7 @@
 
 /* Code for nav and sidenav of Employee @anjudewangan  */
 
-/* Code for Employee @anjudewangan */
+/* Code for item @anjudewangan */
 .main {
     display: flex;
     align-items: center;
@@ -539,18 +539,7 @@
     top: 85px;
 }
 
-.employee_settings {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 802px;
-}
-
-.employee_settings p {
-    font-size: 25px;
-}
-
-.employee_settings a {
+.main .container .row .col .setting-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,49 +553,111 @@
     font-size: 20px;
 }
 
-.tableEmployeeList,
-.tableEmployeeHoliday {
-    width: 1075px !important;
+.main .container .row .col-6 .select-all-items {
+    width: 160px !important;
 }
 
-.tableEmployeeLeave {
-    width: 1315px !important;
+.main .row .col-11 {
+    margin-left: -50px;
 }
 
-.tableEmployeeLeave tbody tr .text-primary {
-    cursor: pointer;
-}
-
-.modal-body .container-fluid .row {
-    border-bottom: 1px solid #dee2e6;
-    padding: 5px;
-}
-
-.tableEmployeeAtten {
-    width: 1350px !important;
-}
-
-.tableEmployeeAtten th,
-.tableEmployeeAtten td {
-    padding: 10px 4px !important;
-}
-
-.card {
-    width: 350px;
-}
-
-.tableEmployee tbody tr td i {
-    font-size: 22px;
-    margin-right: 10px;
-}
-
-.tableEmployee thead tr th,
-.tableEmployee tbody tr td {
+.table thead tr th,
+.table tbody tr td {
     text-align: center;
 }
 
-.employee-link {
-    font-weight: 600;
+.modal-body ul li {
+    list-style-type: none;
 }
 
-/* Code for Employee  @anjudewangan */
+.fa-search {
+    cursor: pointer;
+}
+
+.modal-create-account {
+    max-width: 1000px !important;
+}
+
+.main-allItems {
+    position: relative;
+    top: 76px;
+    left: 14px;
+}
+
+.main-allItems .col-left,
+.main-allItems .select-all-items {
+    background-color: #F5F5F5;
+    font-weight: 500;
+}
+
+.main-allItems .col-left .row {
+    border-bottom: 1px solid black;
+    font-weight: 500;
+}
+
+.main-allItems .col-left {
+    height: 666px;
+}
+
+.main-allItems .col-left .active-item {
+    background-color: rgb(196, 194, 194);
+}
+
+.main-allItems .col-right ul li {
+    list-style-type: none;
+    padding: 0 25px;
+    font-weight: 500;
+}
+
+.main-allItems .col-right ul .active-li {
+    color: rgb(0, 123, 255);
+    border-bottom: 5px solid rgb(0, 123, 255);
+    border-radius: 3px;
+}
+
+.status_active {
+    width: 90px;
+    height: 30px;
+    background: #72F17E;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: white;
+}
+
+.aactv_circle {
+    width: 18px;
+    height: 18px;
+    left: 72px;
+    top: 5px;
+    border-radius: 50%;
+    background: #19BC29;
+    font-size: 12px;
+}
+
+.status_in-active {
+    width: 90px;
+    height: 30px;
+    background: #F47E7E;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: white;
+    display: none;
+}
+
+.in-aactv_circle {
+    width: 18px;
+    height: 18px;
+    left: 72px;
+    top: 5px;
+    border-radius: 50%;
+    background: #E30B0B;
+    font-size: 12px;
+}
+
+/* Code for item  @anjudewangan */

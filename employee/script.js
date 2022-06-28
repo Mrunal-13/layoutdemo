@@ -1,3 +1,6 @@
+// Code for add Employee @anjudewangan 
+// Alert Dropdown
+
 let alertsDropdown = document.getElementById("alertsDropdown");
 let alertDetails = document.getElementById("alertDetails");
 alertDetails.style.display = "none";
@@ -9,11 +12,11 @@ alertsDropdown.addEventListener("click", () => {
     } else {
         alertDetails.style.display = "none";
     }
-})
+});
 
 let messagesDropdown = document.getElementById("messagesDropdown");
 let messageAlertDetails = document.getElementById("messageAlertDetails");
-messageAlertDetails.style.display = "none";
+// messageAlertDetails.style.display = "none";
 
 messagesDropdown.addEventListener("click", () => {
     if (messageAlertDetails.style.display == "none") {
@@ -22,6 +25,17 @@ messagesDropdown.addEventListener("click", () => {
 
     } else {
         messageAlertDetails.style.display = "none";
+    }
+});
+
+let adminSettingBox = document.getElementById("adminSettingBox");
+adminSettingBox.style.display = "none";
+let dropbtnMyfunction = document.getElementById("dropbtnMyfunction");
+dropbtnMyfunction.addEventListener("click", () => {
+    if (adminSettingBox.style.display === "none") {
+        adminSettingBox.style.display = "";
+    } else {
+        adminSettingBox.style.display = "none";
     }
 })
 
@@ -37,7 +51,7 @@ function openNav() {
         }
     }
     if (document.getElementById("leftright").style.width === "95.5%" || document.getElementById("leftright").style.width === "") {
-        document.getElementById("leftright").style.width = "83.5%"
+        document.getElementById("leftright").style.width = "83.5%";
     } else {
         document.getElementById("leftright").style.width = "95.5%";
     }
@@ -53,19 +67,6 @@ function openNav() {
     } else {
         document.getElementById("navbar-fourth").style.width = "96%";
     }
-    // if (document.getElementById("commeddiv").style.marginLeft === "1170px" || document.getElementById("commeddiv").style.marginLeft === ""){
-    //   document.getElementById("commeddiv").style.marginLeft = "980px"
-    // }
-    // else if (document.getElementById("commeddiv").style.marginLeft === "900px" || document.getElementById("commeddiv").style.marginLeft === ""){
-    //   document.getElementById("commeddiv").style.marginLeft = "700px"
-    // }
-    // else if(document.getElementById("commeddiv").style.marginLeft === "980px"){
-    //   document.getElementById("commeddiv").style.marginLeft = "1170px";
-    // }
-    // else if (document.getElementById("commeddiv").style.marginLeft === "700px" || document.getElementById("commeddiv").style.marginLeft === ""){
-    //   document.getElementById("commeddiv").style.marginLeft = "900px";
-    //   console.log("900")
-    // }
     if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
         document.getElementById("Appointment").style.marginLeft = "300px";
     } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
@@ -76,17 +77,6 @@ function openNav() {
         document.getElementById("Appointment").style.marginLeft = "180px"
     }
 }
-
-let adminSettingBox = document.getElementById("adminSettingBox");
-adminSettingBox.style.display = "none";
-let dropbtnMyfunction = document.getElementById("dropbtnMyfunction");
-dropbtnMyfunction.addEventListener("click", () => {
-    if (adminSettingBox.style.display === "none") {
-        adminSettingBox.style.display = "";
-    } else {
-        adminSettingBox.style.display = "none";
-    }
-})
 
 
 // Code for Advanced Patient Search @anjudewangan
@@ -169,60 +159,4 @@ $(document).ready(function () {
     });
 });
 
-
-const sendModal = document.getElementById("send_modal");
-sendModal.style.display = "none";
-const sendInvite = document.getElementById("send_btn");
-sendInvite.addEventListener("click", function () {
-    if (sendModal.style.display != "block") {
-        sendModal.style.display = "block";
-    }
-});
-
-const closeModal = document.getElementById("closed");
-closeModal.addEventListener("click", function () {
-    sendModal.style.display = "none";
-});
-
-const cancelBtn = document.getElementById("cancel");
-cancelBtn.addEventListener("click", function () {
-    const restoreModal = document.getElementById("restore_modal");
-    restoreModal.style.display = "none";
-});
-
-const sendBtn = document.getElementById("send_invite");
-const inviteModal = document.getElementById("restore_modal");
-inviteModal.style.display = "none";
-sendBtn.addEventListener("click", function () {
-    inviteModal.style.display = "block";
-});
-
-//  Code for send mail @anjudewangan
-function sendMail() {
-
-    var email = $('#Sender').val();
-    var Body = 'Email: ' + email;
-    console.log(email);
-
-    Email.send({
-        SecureToken: "7c6fcfe8-c603-4c42-81f1-b36a9523cf19",
-        To: "anju.dewangan.cse@rungtacolleges.com",
-        From: "anjudewangan2000@gmail.com",
-        Subject: "This is the subject",
-        Body: Body
-    }).then(
-        message => {
-            console.log(message);
-            if (message == 'OK') {
-                alert('Your mail has been send. Thank you for connecting.');
-            }
-            else {
-                console.log(message);
-                alert('There is error at sending message. ')
-
-            }
-
-        }
-    )
-}
-//  Code for send mail @anjudewangan
+// Code for add Employee @anjudewangan 

@@ -250,7 +250,6 @@
                 <div class="MADFooter">
                     <a class="viewAllMsgs" href="#">View all messages</a>
                 </div>
-
             </div>
             <!-- admin setting box -->
             <div class="adminSettingBox" id="adminSettingBox">
@@ -266,9 +265,6 @@
                                 class="iconify" style="color: gray;" data-icon="akar-icons:pencil" data-width="17"
                                 data-height="17"></span> Edit Profile</a></li>
                     <!-- Code for edit profile in admin profile @anjudewangan -->
-                    <li><span class="iconify" data-icon="akar-icons:pencil" style="color: gray;" data-width="17"
-                            data-height="17"></span> Edit Profile</li>
-
                     <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
                             data-width="17" data-height="17"></span> Account Setting</li>
                     <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
@@ -291,7 +287,6 @@
                     <p>New Alerts:</p>
                 </div>
                 <div class="dropdown-divider"></div>
-
                 <div class="alertBody">
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
@@ -307,10 +302,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-danger">
@@ -325,10 +318,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
@@ -343,10 +334,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -354,7 +343,6 @@
             </div>
         </div>
     </nav>
-
     </div>
     <div class="main_container">
         <div id="mySidenav" class="sidenav">
@@ -414,20 +402,22 @@
                         <i class="fa fa-fw fa fa-user"></i>
                         <span class="nav-link-text">Employee</span>
                     </a>
-                    <ul class="collapse sidenav-second-level " id="collapseComponents">
-                        <li>
-                            <a href="navbar.html">Employee List</a>
-                        </li>
-                        <li>
-                            <a href="cards.html">Leaves</a>
-                        </li>
-                        <li>
-                            <a href="cards.html">Holidays</a>
-                        </li>
-                        <li>
-                            <a href="cards.html">Attendance</a>
-                        </li>
-                    </ul>
+                     <!-- Code for link Employee Section @anjudewangan -->
+                <ul class="collapse sidenav-second-level" id="collapseComponents">
+                    <li>
+                        <a href="../employee/employeeList.html">Employee List</a>
+                    </li>
+                    <li>
+                        <a href="../employee/leave.html">Leaves</a>
+                    </li>
+                    <li>
+                        <a href="../employee/holiday.html">Holidays</a>
+                    </li>
+                    <li>
+                        <a href="../employee/attendance.html">Attendance</a>
+                    </li>
+                </ul>
+                <!-- Code for link Employee Section @anjudewangan -->
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                     <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
@@ -601,7 +591,6 @@
                     <div class="registration3">
                         <p>(According to the Registration Authority)</p>
                     </div>
-
                 </div>
             </div>
             <div class="about" id="about">
@@ -693,7 +682,6 @@
                     </a>
                     <p>Experience</p>
                     <i class="fa-solid fa-chalkboard-user"></i>
-
                 </div>
                 <div class="education_wrap">
                     <div class="timeline">
@@ -714,7 +702,6 @@
                                 <p>May 2020 - Present (1 year)</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -798,12 +785,243 @@
                 <div class="awards_head">
                     <p>Award</p>
                 </div>
+                <!-- Code for images popup @anjudewangan -->
                 <div class="image_holder">
-                    <img src="../images/image 298.png" alt="">
-                    <img src="../images/image 299.png" alt="">
-                    <img src="../images/image 239.png" alt="">
-                    <img src="../images/image 240.png" alt="">
-                    <img src="../images/image 302.png" alt="">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../images/image 298.png" alt="">
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <ul class="modal-ul">
+                                        <li class="nav-item">
+                                            <button name="zoomIn" class="nav-link btnZoomIn" onclick="zoomInPicture1()">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="zoomOut" class="nav-link btnZoomOut"
+                                                onclick="zoomOutPicture1()">
+                                                <i class="fa fa-search-minus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateRight"
+                                                onclick="rotatePicture1()">
+                                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateLeft"
+                                                onclick="rotatePicture1()">
+                                                <i class="fa fa-undo" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link btnFullScreen" onclick="openFullscreen()">
+                                                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                    <img src="../images/image 298.png" alt="" id="picture1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <img src="../images/image 299.png" alt="">
+                    </button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <ul class="modal-ul">
+                                        <li class="nav-item">
+                                            <button name="zoomIn" class="nav-link btnZoomIn" onclick="zoomInPicture2()">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="zoomOut" class="nav-link btnZoomOut"
+                                                onclick="zoomOutPicture2()">
+                                                <i class="fa fa-search-minus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateRight"
+                                                onclick="rotatePicture2()">
+                                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateLeft"
+                                                onclick="rotatePicture2()">
+                                                <i class="fa fa-undo" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link btnFullScreen" onclick="openFullscreen()">
+                                                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                    <img src="../images/image 299.png" alt="" id="picture2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <img src="../images/image 239.png" alt="">
+                    </button>
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <ul class="modal-ul">
+                                        <li class="nav-item">
+                                            <button name="zoomIn" class="nav-link btnZoomIn" onclick="zoomInPicture3()">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="zoomOut" class="nav-link btnZoomOut"
+                                                onclick="zoomOutPicture3()">
+                                                <i class="fa fa-search-minus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateRight"
+                                                onclick="rotatePicture3()">
+                                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateLeft"
+                                                onclick="rotatePicture3()">
+                                                <i class="fa fa-undo" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link btnFullScreen" onclick="openFullscreen()">
+                                                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                    <img src="../images/image 239.png" alt="" id="picture3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        <img src="../images/image 240.png" alt="">
+                    </button>
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <ul class="modal-ul">
+                                        <li class="nav-item">
+                                            <button name="zoomIn" class="nav-link btnZoomIn" onclick="zoomInPicture4()">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="zoomOut" class="nav-link btnZoomOut"
+                                                onclick="zoomOutPicture4()">
+                                                <i class="fa fa-search-minus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateRight"
+                                                onclick="rotatePicture4()">
+                                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateLeft"
+                                                onclick="rotatePicture4()">
+                                                <i class="fa fa-undo" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link btnFullScreen" onclick="openFullscreen()">
+                                                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                    <img src="../images/image 240.png" alt="" id="picture4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        <img src="../images/image 302.png" alt="">
+                    </button>
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModal5Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <ul class="modal-ul">
+                                        <li class="nav-item">
+                                            <button name="zoomIn" class="nav-link btnZoomIn" onclick="zoomInPicture5()">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="zoomOut" class="nav-link btnZoomOut"
+                                                onclick="zoomOutPicture5()">
+                                                <i class="fa fa-search-minus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateRight"
+                                                onclick="rotatePicture5()">
+                                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button name="rotate" class="nav-link btnRotateLeft"
+                                                onclick="rotatePicture5()">
+                                                <i class="fa fa-undo" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link btnFullScreen" onclick="openFullscreen()">
+                                                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                    <img src="../images/image 302.png" alt="" id="picture5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="special_achievements" id="special_achievements">
@@ -812,7 +1030,54 @@
                         <p>Special Achievements</p>
                     </div>
                     <div class="special_img_holder">
-                        <img src="../images/image 296.png" alt="">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                            <img src="../images/image 296.png" alt="">
+                        </button>
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModal6Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <ul class="modal-ul">
+                                            <li class="nav-item">
+                                                <button name="zoomIn" class="nav-link btnZoomIn"
+                                                    onclick="zoomInPicture6()">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button name="zoomOut" class="nav-link btnZoomOut"
+                                                    onclick="zoomOutPicture6()">
+                                                    <i class="fa fa-search-minus" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button name="rotate" class="nav-link btnRotateRight"
+                                                    onclick="rotatePicture6()">
+                                                    <i class="fa fa-repeat" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button name="rotate" class="nav-link btnRotateLeft"
+                                                    onclick="rotatePicture6()">
+                                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link btnFullScreen" onclick="openFullscreen()">
+                                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex justify-content-center align-items-center">
+                                        <img src="../images/image 296.png" alt="" id="picture6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="special_achievements2">
@@ -820,39 +1085,86 @@
                         <p>Special Achievements</p>
                     </div>
                     <div class="special_img_holder">
-                        <img src="../images/image 297.png" alt="">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                            <img src="../images/image 297.png" alt="">
+                        </button>
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModal7Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <ul class="modal-ul">
+                                            <li class="nav-item">
+                                                <button name="zoomIn" class="nav-link btnZoomIn"
+                                                    onclick="zoomInPicture7()">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button name="zoomOut" class="nav-link btnZoomOut"
+                                                    onclick="zoomOutPicture7()">
+                                                    <i class="fa fa-search-minus" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button name="rotate" class="nav-link btnRotateRight"
+                                                    onclick="rotatePicture7()">
+                                                    <i class="fa fa-repeat" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button name="rotate" class="nav-link btnRotateLeft"
+                                                    onclick="rotatePicture7()">
+                                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link btnFullScreen" onclick="openFullscreen()">
+                                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex justify-content-center align-items-center">
+                                        <img src="../images/image 297.png" alt="" id="picture7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="target_link" id="target_link">
-                <span>
-                    <a href="#education" id="edu" target="_top">Education Informations</a>
-                    <i class="fa-solid fa-caret-right"></i>
-                </span>
-                <span>
-                    <a href="#experience" id="exp">Experience</a>
-                    <i class="fa-solid fa-caret-right"></i>
-                </span>
-                <span>
-                    <a href="#hounor" id="hnr">Honours and Achievements
-                    </a>
-                    <i class="fa-solid fa-caret-right"></i>
-                </span>
-                <span>
-                    <a href="#membership" id="mem">Membership</a>
-                    <i class="fa-solid fa-caret-right"></i>
-                </span>
-                <span>
-                    <a href="#accomplishments" id="acc">Literary Artistic & Scientific Accomplishments</a>
-                    <i class="fa-solid fa-caret-right"></i>
-                </span>
-                <span>
-                    <a href="#about" id="more">More</a>
-                    <i class="fa-solid fa-caret-right"></i>
-                </span>
-            </div>
+            <!-- Code for images popup @anjudewangan -->
         </main>
-
+    </div>
+    <div class="target_link" id="target_link">
+        <span>
+            <a href="#education" id="edu" target="_top">Education Informations</a>
+            <i class="fa-solid fa-caret-right"></i>
+        </span>
+        <span>
+            <a href="#experience" id="exp">Experience</a>
+            <i class="fa-solid fa-caret-right"></i>
+        </span>
+        <span>
+            <a href="#hounor" id="hnr">Honours and Achievements
+            </a>
+            <i class="fa-solid fa-caret-right"></i>
+        </span>
+        <span>
+            <a href="#membership" id="mem">Membership</a>
+            <i class="fa-solid fa-caret-right"></i>
+        </span>
+        <span>
+            <a href="#accomplishments" id="acc">Literary Artistic & Scientific Accomplishments</a>
+            <i class="fa-solid fa-caret-right"></i>
+        </span>
+        <span>
+            <a href="#about" id="more">More</a>
+            <i class="fa-solid fa-caret-right"></i>
+        </span>
     </div>
     <script src="./scripts/script.js"></script>
 

@@ -376,20 +376,22 @@
                     <i class="fa fa-fw fa fa-user"></i>
                     <span class="nav-link-text">Employee</span>
                 </a>
-                <ul class="collapse sidenav-second-level " id="collapseComponents">
+                <!-- Code for link Employee Section @anjudewangan -->
+                <ul class="collapse sidenav-second-level" id="collapseComponents">
                     <li>
-                        <a href="navbar.html">Employee List</a>
+                        <a href="../employee/employeeList.html">Employee List</a>
                     </li>
                     <li>
-                        <a href="cards.html">Leaves</a>
+                        <a href="../employee/leave.html">Leaves</a>
                     </li>
                     <li>
-                        <a href="cards.html">Holidays</a>
+                        <a href="../employee/holiday.html">Holidays</a>
                     </li>
                     <li>
-                        <a href="cards.html">Attendance</a>
+                        <a href="../employee/attendance.html">Attendance</a>
                     </li>
                 </ul>
+                <!-- Code for link Employee Section @anjudewangan -->
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
@@ -531,7 +533,7 @@
                         </a>
                     </li>
                     <li class="nav-item  nav-item-2">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" id="pricing-link">
                             <i class="fa fa-list-alt" aria-hidden="true"></i>
                             <span class="nav-link-text">Pricing Catalog</span>
                         </a>
@@ -549,7 +551,7 @@
                         </a>
                     </li>
                     <li class="nav-item  nav-item-2">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" id="clinical-link">
                             <img src="../images/img3.png" alt="">
                             <span class="nav-link-text">Clinical Notes Catalog</span>
                         </a>
@@ -1587,7 +1589,6 @@
                                     <div class="col-6">
                                         <i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM - 02:00 PM & 06:00 PM
                                         - 09:00 PM
-
                                     </div>
                                     <div class="col-4">
                                         <i class="fa fa-video-camera" aria-hidden="true"></i> Online Appointments
@@ -1600,7 +1601,6 @@
                                     <div class="col-6">
                                         <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 12:15 am & 12:45 AM
                                         - 01:00 AM
-
                                     </div>
                                     <div class="col-4">
                                         <i class="fa fa-home" aria-hidden="true"></i> Office Appointments
@@ -1623,7 +1623,6 @@
                                     </div>
                                     <div class="col-6">
                                         <i class="fa fa-clock-o" aria-hidden="true"></i> 9:00 am - 7:00 pm
-
                                     </div>
                                     <div class="col-4">
                                         <i class="fa fa-video-camera" aria-hidden="true"></i> Online Appointments
@@ -1635,7 +1634,6 @@
                                     </div>
                                     <div class="col-6">
                                         <i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 am - 7:00 pm
-
                                     </div>
                                     <div class="col-4">
                                         <i class="fa fa-home" aria-hidden="true"></i> Office Appointments
@@ -3102,10 +3100,11 @@
                     <li id="active-appoin-follow">Appointment and followup SMS</li>
                     <li id="active-wish-sms">Wish SMS</li>
                     <li id="active-email">Emails</li>
+                    <li id="active-notifications">Notification</li>
                 </ul>
 
                 <!-- Communication Details -->
-                <div class="d-flex justify-content-center mt-5">
+                <div class="d-flex justify-content-center mt-3">
                     <div class="dvComm_Detail">
                         <h6><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>To comply with TRAI
                             regulations, you can customize the text, only using options below</h6>
@@ -3140,13 +3139,1648 @@
                     </div>
                 </div>
 
-                <!-- Appointment and followup SMS  -->
-                <!-- <div class="d-flex justify-content-center mt-5"> -->
-                <div class="dvAppoin_Detail">
+                <!-- Code for Appointment and followup SMS, Wish SMS, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog  @anjudewangan-->
+                <!-- Appointment and followup SMS -->
+                <div class="d-flex justify-content-center mt-3">
+                    <div class="dvAppoin_Detail">
+                        <div class="container pb-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>APPOINTMENT CONFIRMATION SMS</h6>
+                                        </label>
+                                        <p class="para-second">SMS is sent to the Patient on successfully adding an
+                                            appointment
+                                        </p>
+                                        <label for="" class="form-label">*PATIENT*, your appointment has been confirmed
+                                            at *CLINIC* on *DATE*, *TIME*, *CATEGORY*. Any query call
+                                            *CLINICCONTACTNUMBER*. Book your future appointments in a single tap using
+                                            Welldone's free app *APPLINK*
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>Include the following in the SMS</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-patient-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-patient-name">
+                                            Patient Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-clinic-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-clinic-name">
+                                            Clinic Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-appoin-cate"
+                                            checked>
+                                        <label class="form-check-label" for="check-appoin-cate">
+                                            Appointment Category
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-contact-no"
+                                            checked>
+                                        <label class="form-check-label" for="check-contact-no">
+                                            Contact Number
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-online-appoin" checked>
+                                        <label class="form-check-label" for="check-online-appoin">
+                                            Link for online appointment
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-my-doctor">
+                                        <label class="form-check-label" for="check-my-doctor">
+                                            Quick actions for My Doctors
+                                        </label>
+                                        <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 pb-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>APPOINTMENT CANCELLATION SMS</h6>
+                                        </label>
+                                        <p class="para-second">SMS is sent to the Patient when the appointment is
+                                            cancelled
+                                        </p>
+                                        <label for="" class="form-label">*PATIENT*, your appointment has been cancelled
+                                            at *CLINIC* on *DATE*, *TIME*, *CATEGORY*. Any query call
+                                            *CLINICCONTACTNUMBER*.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>Include the following in the SMS</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-patient-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-patient-name">
+                                            Patient Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-clinic-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-clinic-name">
+                                            Clinic Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-appoin-cate"
+                                            checked>
+                                        <label class="form-check-label" for="check-appoin-cate">
+                                            Appointment Category
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-contact-no"
+                                            checked>
+                                        <label class="form-check-label" for="check-contact-no">
+                                            Contact Number
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-online-appoin" checked>
+                                        <label class="form-check-label" for="check-online-appoin">
+                                            Link for online appointment
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 pb-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>APPOINTMENT REMINDER SMS</h6>
+                                        </label>
+                                        <p class="para-second">This SMS is automatically sent to the Patient at selected
+                                            time & date before the appointment.
+                                        </p>
+                                        <label for="" class="form-label">*PATIENT*, you have an appointment at *CLINIC*
+                                            on *DATE* ,*TIME*, *CATEGORY*. Any query call *CLINICCONTACTNUMBER*.
+                                            Download our free app to get turn by turn navigation *APPLINK*.
+                                        </label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="check-patient-name" checked>
+                                            <label class="form-check-label" for="check-patient-name">
+                                                Send reminder SMS on the day of appointment at 07:30 a.m
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="check-patient-name">
+                                            <label class="form-check-label" for="check-patient-name">
+                                                Send reminder SMS on the day before the appointment at
+                                            </label>
+                                        </div>
+                                        <select class="form-select position-absolute select-time"
+                                            aria-label="Default select example">
+                                            <option value="1">9:00 am</option>
+                                            <option value="2">9:15 am</option>
+                                            <option value="3" selected>9:30 am</option>
+                                            <option value="4">9:45 am</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>Include the following in the SMS</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-patient-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-patient-name">
+                                            Patient Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-clinic-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-clinic-name">
+                                            Clinic Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-appoin-cate"
+                                            checked>
+                                        <label class="form-check-label" for="check-appoin-cate">
+                                            Appointment Category
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-contact-no"
+                                            checked>
+                                        <label class="form-check-label" for="check-contact-no">
+                                            Contact Number
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-online-appoin" checked>
+                                        <label class="form-check-label" for="check-online-appoin">
+                                            Link for online appointment
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-my-doctor">
+                                        <label class="form-check-label" for="check-my-doctor">
+                                            Quick actions for My Doctors
+                                        </label>
+                                        <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 pb-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>PREVENTIVE FOLLOW-UP REMINDER SMS</h6>
+                                        </label>
+                                        <p class="para-second">This SMS is sent to the Patient on the morning of the
+                                            followup sms.
+                                        </p>
+                                        <label for="" class="form-label">Dear *PATIENT*, your regular checkup is due at
+                                            *CLINIC*. Call *CLINICCONTACTNUMBER* to make an appointment.
+                                        </label>
+                                        <div class="row">
+                                            <div class="col-4">Send follow-up SMS </div>
+                                            <div class="col-3">
+                                                <select class="form-select select-months"
+                                                    aria-label="Default select example">
+                                                    <option selected>1 Month</option>
+                                                    <option value="2">2 Months</option>
+                                                    <option value="3">3 Months</option>
+                                                    <option value="4">4 Months</option>
+                                                    <option value="5">5 Months</option>
+                                                    <option value="6">6 Months</option>
+                                                    <option value="7">7 Months</option>
+                                                    <option value="8">8 Months</option>
+                                                    <option value="9">9 Months</option>
+                                                    <option value="10">10 Months</option>
+                                                    <option value="11">11 Months</option>
+                                                    <option value="12">12 Months</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-5"> after the last appointment.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>Include the following in the SMS</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-patient-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-patient-name">
+                                            Patient Name
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 pb-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>Payment REMINDER SMS</h6>
+                                        </label>
+                                        <p class="para-second">This SMS is sent to the patient upon receipt of payment.
+                                        </p>
+                                        <label for="" class="form-label">Dear {{PATIENT}}, thank you for your payment of
+                                            INR {{PAYMENT}} at {{CLINIC}}. CALL {{CLINICCONTACTNUMBER}} or VISIT
+                                            http://welldonehealth.com/get-app to book your next appointment
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>There are no customisation options for SMS.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 pb-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>LAB ORDER CONFIRMATION SMS</h6>
+                                        </label>
+                                        <p class="para-second">This SMS is sent to the Patient when he is prescribed a
+                                            lab order.
+                                        </p>
+                                        <label for="" class="form-label">*PATIENT*, *CLINIC* has prescribed a few lab
+                                            tests for you on *DATE*. If you have any queries, please contact the
+                                            practice at *CLINICCONTACTNUMBER*.
+                                        </label>
+                                        <div>
+                                            <h6>LAB ORDER DUE ON SMS</h6>
+                                            <p class="para-second">This SMS is sent to the Patient informing lab order
+                                                due date</p>
+                                        </div>
+                                        <div>
+                                            <h6>LAB ORDER RESULT SMS</h6>
+                                            <p class="para-second">This SMS is sent to the Patient when lab order
+                                                results are ready</p>
+                                        </div>
+                                        <div>
+                                            <h6>LAB ORDER REMINDER SMS</h6>
+                                            <p class="para-second">This reminder SMS is sent to the Patient</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>The following will be included in the SMS</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-patient-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-patient-name">
+                                            Patient Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-clinic-name"
+                                            checked>
+                                        <label class="form-check-label" for="check-clinic-name">
+                                            Clinic Name
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="check-contact-no"
+                                            checked>
+                                        <label class="form-check-label" for="check-contact-no">
+                                            Contact Number
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                    </div>
+                </div>
+
+                <!-- Wish SMS -->
+                <div class="d-flex justify-content-center mt-3">
+                    <div class="dvWish_SMS">
+                        <div class="container pb-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>ANNIVERSARY WISH</h6>
+                                        </label>
+                                        <p class="para-second">SMS is sent to the Patient on successfully adding an
+                                            appointment
+                                        </p>
+                                        <label for="" class="form-label">Dear {{PATIENT}}, {{CLINIC}} wishes you a very
+                                            happy wedding anniversary! Wishing you & your spouse a happy & healthy life.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>To comply with TRAI guidelines, the option to customize an SMS is disabled
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container pb-3 mt-3">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="check-appoin-conf-sms" checked>
+                                        <label class="form-check-label" for="check-appoin-conf-sms">
+                                            <h6>BIRTHDAY WISH</h6>
+                                        </label>
+                                        <p class="para-second">SMS is sent to the Patient when the appointment is
+                                            cancelled
+                                        </p>
+                                        <label for="" class="form-label">{{PATIENT}}, {{CLINIC}} wishes you a very happy
+                                            birthday. Have a happy smile today & forever.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <div>To comply with TRAI guidelines, the option to customize an SMS is disabled
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                    </div>
+                </div>
+
+                <!-- Emails -->
+                <div class="d-flex justify-content-center">
+                    <div class="dvEmails">
+                        <div class="sender-email">
+                            <h6>Sender Email Preferences</h6>
+                            <div class="container container-sender-pre">
+                                <div class="row">
+                                    <div class="col-4 div-col-left">
+                                        <div class="para-email">Emails are sent through</div>
+                                        <b>Email address of Welldone Health</b>
+                                        <div class="para-email">(message-service@ welldonehealth.in)</div>
+                                    </div>
+                                    <div class="col-8 div-col-right">
+                                        <div class="row">
+                                            <div class="col-1"><a href=""><i class="fa fa-info-circle"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="col-11 col-para">If you send an email from a public domain, it
+                                                is likely
+                                                to go to a spam folder. Therefore, emails are sent to sender fields with
+                                                any of the following email addresses, email messages will be sent from
+                                                <b>message-service@ welldonehealth.in.</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-borderless mt-2">
+                                <thead>
+                                    <tr>
+                                        <th>NAME</th>
+                                        <th>EMAIL ADDRESS</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>rakeshnandre433 <button class="btn btn-success">PRIMARY</button></td>
+                                        <td>rakeshnandre433@gmail.com</td>
+                                        <td><i class="fa fa-pencil text-primary" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-trash-o text-danger" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ravi</td>
+                                        <td>ravi@gmail.com <i class="fa fa-question-circle-o text-warning"
+                                                aria-hidden="true"></i> Unverified <a href="">(Resend Email)</a></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="email-insight mt-4 pb-4">
+                            <h6>Email Insights</h6>
+                            <div class="container container-email-insight">
+                                <div class="row">
+                                    <div class="col-11">
+                                        <div class="form-check form-switch">
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">Track the
+                                                emails sent to your customers
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                                checked>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-head">By enabling Email Insights, you can:</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fa fa-check text-success" aria-hidden="true"></i>
+                                        Track the emails sent for Invoices, Estimates and Retainer Invoices.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fa fa-check text-success" aria-hidden="true"></i>
+                                        View the time when the email was opened, in the transaction list and details
+                                        page.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fa fa-check text-success" aria-hidden="true"></i>
+                                        View the list of transactions viewed via email by the customer, when you filter
+                                        by 'Client Viewed'.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-notes">
+                                <div class="row">
+                                    <div class="col-12">Note:</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">- If you enable Email Insights, the emails sent from your
+                                        Welldone health will be tracked to know when your customer has viewed them.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">- If the email you sent has multiple recipients, the
+                                        corresponding transaction will be marked as viewed when any one of them opens
+                                        it.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email-template mt-4">
+                            <h6>Email Templates</h6>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                User Invite
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Timesheet Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Invoice Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Vendor Statement
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Client Portal Invitation
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Customer Statement
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Credit Note Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Payment Made Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Client Portal Link
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Estimate Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Payment Thank-you
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Purchase Order Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Client Review Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Sales Order Notification
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Payment Initiated
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                    </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="divNotifications">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Email</th>
+                                <th scope="col">SMS</th>
+                                <th scope="col">APP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>rakeshnandre433@gmail.com</td>
+                                <td>8806010415</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Continued by Appointment</th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Practice inquiry</h6>
+                                    <span>The patient has sent you.</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckCheckedDisabled" checked disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Answers to your responses</h6>
+                                    <span>Receive notifications of patient responses to your responses.</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Follow-up Reminders</h6>
+                                    <span>Get notifications 10 minutes before incoming reminders.</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Payment”s</th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Cunsult Alerts</h6>
+                                    <span>Latest requirements posted by the Patient’s</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Post Cunsultation</h6>
+                                    <span>Email the patient with details and contact information</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Alerts</h6>
+                                    <span>Recommended Tenders available for your products</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Promotional Communication</th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Welldone’s new offerings</h6>
+                                    <span>To help enhance your practice with newly launched products and
+                                        services.</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckCheckedDisabled" checked disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Third Party Promotional Offers</h6>
+                                    <span>Get special practice offers for Welldone's members only.</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Healthcare Survey</h6>
+                                    <span>To participate in market research conducted by independent third parties to
+                                        understand business/industry trends.</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault"></div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Service Messages</th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Welldone Service Messages</h6>
+                                    <span>Messages about your active services & business promotion on Welldone</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckCheckedDisabled" checked disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Your Buying Activities</th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Buying Alerts</h6>
+                                    <span>Reminders for products/services you may want to buy.</span>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
                 </div>
             </div>
-            <!-- </div> -->
+
+            <!-- Pricing Catalog -->
+            <div class="dvPricing">
+                <div class="dvPricing_Catalog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10">
+                                <h6>Pricing Catalog</h6>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-warning">Add New</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table mt-4">
+                        <thead>
+                            <tr>
+                                <th>Procedures</th>
+                                <th>Notes</th>
+                                <th>Cost (₹) Incl.taxes</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Varada Vati</td>
+                                <td>-</td>
+                                <td>500.00</td>
+                                <td><i class="fa fa-pencil text-primary" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Body pack</td>
+                                <td>-</td>
+                                <td>50.00</td>
+                                <td><i class="fa fa-pencil text-primary" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Panchakarma</td>
+                                <td>-</td>
+                                <td>100.00</td>
+                                <td><i class="fa fa-pencil text-primary" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Thakradhara</td>
+                                <td>-</td>
+                                <td>60.00</td>
+                                <td><i class="fa fa-pencil text-primary" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Abhyangana</td>
+                                <td>-</td>
+                                <td>200.00</td>
+                                <td><i class="fa fa-pencil text-primary" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Root touch up</td>
+                                <td>-</td>
+                                <td>500.00</td>
+                                <td><i class="fa fa-pencil text-primary" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                </div>
+            </div>
+
+            <!-- Clinical Notes Catalog -->
+            <div class="dvClinical">
+                <div class="dvClinical_Notes_Catalog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10">
+                                <h6>Clinical Notes Catalog</h6>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-warning" id="btncreateNew">Create New</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table mt-4">
+                        <thead>
+                            <tr>
+                                <th>Case Name</th>
+                                <th>Clinical Notes </th>
+                                <th>Constituents</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maleria</td>
+                                <td>Diagnoses- <small>Maleria</small>
+                                    <div>Complaints- <small>high Fever</small></div>
+                                </td>
+                                <td>Prescriptions: <small> Calpol-650, Razo-20</small>
+                                    <div>Lab Orders: <small>HbA1c</small>
+                                    </div>
+                                    <div>Follow up after: <small> 30 days.</small></div>
+                                </td>
+                                <td><i class="fa fa-pencil text-primary showTemplates" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDelete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maleria</td>
+                                <td>Diagnoses- <small>Maleria</small>
+                                    <div>Complaints- <small>high Fever</small></div>
+                                </td>
+                                <td>Prescriptions: <small> Calpol-650, Razo-20</small>
+                                    <div>Lab Orders: <small>HbA1c</small>
+                                    </div>
+                                    <div>Follow up after: <small> 30 days.</small></div>
+                                </td>
+                                <td><i class="fa fa-pencil text-primary showTemplates" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDelete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maleria</td>
+                                <td>Diagnoses- <small>Maleria</small>
+                                    <div>Complaints- <small>high Fever</small></div>
+                                </td>
+                                <td>Prescriptions: <small> Calpol-650, Razo-20</small>
+                                    <div>Lab Orders: <small>HbA1c</small>
+                                    </div>
+                                    <div>Follow up after: <small> 30 days.</small></div>
+                                </td>
+                                <td><i class="fa fa-pencil text-primary showTemplates" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDelete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maleria</td>
+                                <td>Diagnoses- <small>Maleria</small>
+                                    <div>Complaints- <small>high Fever</small></div>
+                                </td>
+                                <td>Prescriptions: <small> Calpol-650, Razo-20</small>
+                                    <div>Lab Orders: <small>HbA1c</small>
+                                    </div>
+                                    <div>Follow up after: <small> 30 days.</small></div>
+                                </td>
+                                <td><i class="fa fa-pencil text-primary showTemplates" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDelete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maleria</td>
+                                <td>Diagnoses- <small>Maleria</small>
+                                    <div>Complaints- <small>high Fever</small></div>
+                                </td>
+                                <td>Prescriptions: <small> Calpol-650, Razo-20</small>
+                                    <div>Lab Orders: <small>HbA1c</small>
+                                    </div>
+                                    <div>Follow up after: <small> 30 days.</small></div>
+                                </td>
+                                <td><i class="fa fa-pencil text-primary showTemplates" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDelete"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maleria</td>
+                                <td>Diagnoses- <small>Maleria</small>
+                                    <div>Complaints- <small>high Fever</small></div>
+                                </td>
+                                <td>Prescriptions: <small> Calpol-650, Razo-20</small>
+                                    <div>Lab Orders: <small>HbA1c</small>
+                                    </div>
+                                    <div>Follow up after: <small> 30 days.</small></div>
+                                </td>
+                                <td><i class="fa fa-pencil text-primary showTemplates" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o text-danger" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDelete"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center mb-4">
+                                        <h5>Are you sure?</h5>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center mb-4">
+                                        <p>Clinical notes cannot be undone once deleted</p>
+                                    </div>
+                                    <div class="d-flex justify-content-around mb-4">
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Delete</button>
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                </div>
+
+                <!-- Template -->
+                <div class="dvTemplate">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Template Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                            </div>
+                            <div class="col-6 colClinicalNotes">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Clinical Notes</label>
+                                    <select class="form-select" aria-label="Default select example" id="selectClinicalNotes">
+                                        <option selected>Select</option>
+                                        <option>Diagnoses</option>
+                                        <option>Complaints</option>
+                                        <option>Observation</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selectTemplates">
+                            <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col-6">
+                                    <div class="mb-3 row">
+                                        <label for="" class="col-sm-2 col-form-label">Diagnoses<span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <i class="fa fa-times text-danger deleteNotes" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col-6">
+                                    <div class="mb-3 row">
+                                        <label for="" class="col-sm-2 col-form-label">Complaints</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <i class="fa fa-times text-danger deleteNotes" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col-6">
+                                    <div class="mb-3 row">
+                                        <label for="" class="col-sm-2 col-form-label">Observation</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <i class="fa fa-times text-danger deleteNotes" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-3 dvAddTemplate">
+                        <div class="mb-3">
+                            <label for="" class="form-label addTemplate">Add to Template</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label addAllTemplate">Added everything to the template</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-3" id="hidePrescriptions">
+                                <button type="button" class="btn" data-bs-toggle="modal"
+                                    data-bs-target="#popupPrescriptions">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text text-primary" id="basic-addon1">+</span>
+                                        <input type="text" class="form-control inputTemplate"
+                                            placeholder="Prescriptions" aria-label="" aria-describedby="basic-addon1">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="popupPrescriptions" tabindex="-1"
+                                aria-labelledby="popupPrescriptionsLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="popupPrescriptionsLabel">Prescriptions</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-borderless">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Type</th>
+                                                        <th>Drug Name and Composition</th>
+                                                        <th>Rout of Administration</th>
+                                                        <th>Dosage Frequency</th>
+                                                        <th>Intake</th>
+                                                        <th>Duration</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>CAP</td>
+                                                        <td>Razo-D
+                                                            <div><small>Domperidone (30mg) +</small></div>
+                                                            <div><small>Rabeprazole (20mg) SR</small></div>
+                                                        </td>
+                                                        <td><select class="form-select"
+                                                                aria-label="Default select example" id="selectRout">
+                                                                <option selected>Oral</option>
+                                                                <option>Oral</option>
+                                                                <option>Oral</option>
+                                                                <option>Oral</option>
+                                                            </select></td>
+                                                        <td>
+                                                            <div class="row">
+                                                                <div class="col-3"> <input type="number"
+                                                                        class="form-control input-number" value="1" id="selectTablets">
+                                                                </div>
+                                                                <div class="col-3"> Tablet(s)</div>
+                                                                <div class="col-4"> <button
+                                                                        class="btn btn-outline-dark">Add
+                                                                        Frequancy</button></div>
+                                                            </div>
+                                                            <div class="text-primary">Custom</div>
+                                                        </td>
+                                                        <td><select class="form-select"
+                                                                aria-label="Default select example" id="selectIntake">
+                                                                <option selected>Select</option>
+                                                                <option>After Food</option>
+                                                                <option>Before Food</option>
+                                                            </select>
+                                                            <div class="text-primary">Add instruction</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="row">
+                                                                <div class="col-4"><input type="number"
+                                                                        class="form-control input-number" value="30" id="selectDays"> 
+                                                                </div>
+                                                                <div class="col-4">Day(s)</div>
+                                                                <div class="col-3"><i class="fa fa-times text-danger"
+                                                                        aria-hidden="true"></i></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <button class="btn btn-outline-secondary">Search Drug and
+                                                Composition</button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-warning" id="btnSavePres">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" id="hideLabTestAdvise">
+                                <button type="button" class="btn" data-bs-toggle="modal"
+                                    data-bs-target="#popupLabTestAdvise">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text text-primary" id="basic-addon2">+</span>
+                                        <input type="text" class="form-control inputTemplate"
+                                            placeholder="Lab test Advise" aria-label="" aria-describedby="basic-addon2">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="popupLabTestAdvise" tabindex="-1"
+                                aria-labelledby="popupLabTestAdviseLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="popupLabTestAdviseLabel">Lab test Advise</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Lab Test:
+                                                            <small>(Current)</small></label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="Search Lab Test">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Tests For Next Visit:</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="Search Lab Test">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 d-flex justify-content-end">
+                                                    <a href="">Add Instruction</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-control" id=""
+                                                        placeholder="Add Instruction">
+                                                </div>
+                                            </div>
+                                            <div class="row my-2">
+                                                <div class="col-6">
+                                                    <span class="badge rounded-pill bg-light text-dark">ESR<span
+                                                            class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span>
+                                                    <small>The test is performed on an empty stomach</small>
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="badge rounded-pill bg-light text-dark">ESR<span
+                                                            class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-2">
+                                                <div class="col-6"> <span
+                                                        class="badge rounded-pill bg-light text-dark">CBC<span
+                                                            class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span></div>
+                                                <div class="col-6"><span
+                                                        class="badge rounded-pill bg-light text-dark">CBC<span
+                                                            class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span></div>
+                                            </div>
+                                            <div class="row my-2">
+                                                <div class="col-6"> <span
+                                                        class="badge rounded-pill bg-light text-dark">Sedimentatio
+                                                        Rate<span class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span></div>
+                                                <div class="col-6"><span
+                                                        class="badge rounded-pill bg-light text-dark">Sedimentatio
+                                                        Rate<span class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span></div>
+                                            </div>
+                                            <div class="row my-2">
+                                                <div class="col-6"> <span
+                                                        class="badge rounded-pill bg-light text-dark">SGPT<span
+                                                            class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span></div>
+                                                <div class="col-6"><span
+                                                        class="badge rounded-pill bg-light text-dark">SGPT<span
+                                                            class="badge text-dark ml-4"><i class="fa fa-times"
+                                                                aria-hidden="true"></i></span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-warning"
+                                                id="btnSaveLabTestAdvise">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" id="hideSpeInstruction">
+                                <button type="button" class="btn" data-bs-toggle="modal"
+                                    data-bs-target="#popupSpecialInstruction">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text text-primary" id="basic-addon3">+</span>
+                                        <input type="text" class="form-control inputTemplate"
+                                            placeholder="Special Instruction" aria-label=""
+                                            aria-describedby="basic-addon3">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="popupSpecialInstruction" tabindex="-1"
+                                aria-labelledby="popupSpecialInstructionLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="popupSpecialInstructionLabel">Special
+                                                Instruction
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="divList">
+                                                <ul>
+                                                    <li>NUTURE OF DISEASE & PROGNOSIS Explained IN DETAIL , EXERCISE AS
+                                                        EXPLAINED</li>
+                                                    <li>MEDITaTION, DO CXR PA VIEW, REFER TO PHYSIo, CHaRir COMMODE</li>
+                                                </ul>
+                                            </div>
+                                            <small class="text-secondary">! Press Enter for the next line</small>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-warning"
+                                                id="btnSaveSpeInstruction">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" id="hideReview">
+                                <button type="button" class="btn" data-bs-toggle="modal"
+                                    data-bs-target="#popupReviewAfter">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text text-primary" id="basic-addon4">+</span>
+                                        <input type="text" class="form-control inputTemplate" placeholder="Review After"
+                                            aria-label="" aria-describedby="basic-addon4">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="popupReviewAfter" tabindex="-1"
+                                aria-labelledby="popupReviewAfterLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="popupReviewAfterLabel">Review After
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row mb-3">
+                                                <div class="col-4 d-flex justify-content-end">Schedule next visit after
+                                                </div>
+                                                <div class="col-1"><input type="number" name="" id="selectNumber" value="2"
+                                                        class="form-control"></div>
+                                                <div class="col-2">
+                                                    <select class="form-select" aria-label="Default select example" id="selectWeeks">
+                                                        <option selected>week(s)</option>
+                                                        <option>month(s)</option>
+                                                        <option>year(s)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-4 d-flex justify-content-end">for</div>
+                                                <div class="col-4"> <select class="form-select"
+                                                        aria-label="Default select example" id="selectCons">
+                                                        <option selected>follow-up consultation</option>
+                                                        <option>follow-up consultation</option>
+                                                        <option>follow-up consultation</option>
+                                                    </select></div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-warning"
+                                                id="btnSaveReview">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container dvPrescriptions mt-3">
+                        <div class="row">
+                            <div class="col-11">
+                                <h6>Prescriptions</h6>
+                            </div>
+                            <div class="col-1"><i class="fa fa-pencil text-primary" data-bs-toggle="modal"
+                                    data-bs-target="#popupPrescriptions" aria-hidden="true"
+                                    onclick="editPrescriptions()"></i></div>
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Drug Name and Composition</th>
+                                    <th>Rout of Administration</th>
+                                    <th>Dosage Frequency</th>
+                                    <th>Intake</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CAP</td>
+                                    <td>Razo-D
+                                        <div><small>Domperidone (30mg) +</small></div>
+                                        <div><small>Rabeprazole (20mg) SR</small></div>
+                                    </td>
+                                    <td>Oral</td>
+                                    <td>1-0-1</td>
+                                    <td>After Food</td>
+                                    <td>30 Day(s)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="container dvLabTestAdvise mt-3">
+                        <div class="row">
+                            <div class="col-11">
+                                <h6>Lab Test Advise</h6>
+                            </div>
+                            <div class="col-1"><i class="fa fa-pencil text-primary" data-bs-toggle="modal"
+                                    data-bs-target="#popupLabTestAdvise" aria-hidden="true"
+                                    onclick="editLabTestAdvise()"></i></div>
+                        </div>
+                        <div class="m-3">
+                            <div><b>Lab Test:</b>ESR <small>(The test is performed on an empty stomach),</small> CBC,
+                                Sedimentatio Rate, SGPT</div>
+                            <div><b>Tests For Next Visit:</b>ESR <small>(The test is performed on an empty
+                                    stomach),</small> CBC, Sedimentatio Rate, SGPT</div>
+                        </div>
+                    </div>
+                    <div class="container dvSpecialInstruction mt-3">
+                        <div class="row">
+                            <div class="col-11">
+                                <h6>Special Instruction</h6>
+                            </div>
+                            <div class="col-1"><i class="fa fa-pencil text-primary" data-bs-toggle="modal"
+                                    data-bs-target="#popupSpecialInstruction" aria-hidden="true"
+                                    onclick="editSpeInstruction()"></i></div>
+                        </div>
+                        <div class="m-3">
+                            <ul>
+                                <li>NUTURE OF DISEASE & PROGNOSIS Explained IN DETAIL , EXERCISE AS EXPLAINED</li>
+                                <li>MEDITaTION, DO CXR PA VIEW, REFER TO PHYSIo, CHaRir COMMODE</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container dvReviewAfter mt-3">
+                        <div class="row">
+                            <div class="col-11">
+                                <h6>Review After</h6>
+                            </div>
+                            <div class="col-1"><i class="fa fa-pencil text-primary" data-bs-toggle="modal"
+                                    data-bs-target="#popupReviewAfter" aria-hidden="true" onclick="editReview()"></i>
+                            </div>
+                        </div>
+                        <div class="m-3 row">
+                            <div class="col-3">Schedule next visit after</div>
+                            <div class="col-1"><b>2</b></div>
+                            <div class="col-1"><b>week(s)</b></div>
+                            <div class="col-1">for</div>
+                            <div class="col-3"><b>follow-up consultation</b></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary d-grid gap-2 col-1 mx-auto mt-5">Save</button>
+                </div>
+            </div>
+            <!-- Code for Appointment and followup SMS, Wish SMS, Emails, Notifications, Pricing Catalog, Clinical Notes Catalog  @anjudewangan-->
         </div>
     </div>
 

@@ -12,8 +12,6 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -21,13 +19,17 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+        
+    <!-- Advanced search popup console error solve @anjudewangan -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <!-- Advanced search popup console error solve @anjudewangan -->
 
     <!-- Code for sidenav icons @anjudewangan -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -172,8 +174,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="calenderButton" href="#" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                    <a class="nav-link mr-lg-2" id="calenderButton" href="../Calendar/calendar.html">
                         <i class="fa fa-fw fa-calendar"></i>
                     </a>
                 </li>
@@ -246,7 +247,6 @@
                 <div class="MADFooter">
                     <a class="viewAllMsgs" href="#">View all messages</a>
                 </div>
-
             </div>
             <!-- admin setting box -->
             <div class="adminSettingBox" id="adminSettingBox">
@@ -284,7 +284,6 @@
                     <p>New Alerts:</p>
                 </div>
                 <div class="dropdown-divider"></div>
-
                 <div class="alertBody">
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
@@ -300,10 +299,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-danger">
@@ -318,10 +315,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
@@ -336,10 +331,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -403,20 +396,22 @@
                     <i class="fa fa-fw fa fa-user"></i>
                     <span class="nav-link-text">Employee</span>
                 </a>
-                <ul class="collapse sidenav-second-level " id="collapseComponents">
+                <!-- Code for link Employee Section @anjudewangan -->
+                <ul class="collapse sidenav-second-level" id="collapseComponents">
                     <li>
-                        <a href="navbar.html">Employee List</a>
+                        <a href="../employee/employeeList.html">Employee List</a>
                     </li>
                     <li>
-                        <a href="cards.html">Leaves</a>
+                        <a href="../employee/leave.html">Leaves</a>
                     </li>
                     <li>
-                        <a href="cards.html">Holidays</a>
+                        <a href="../employee/holiday.html">Holidays</a>
                     </li>
                     <li>
-                        <a href="cards.html">Attendance</a>
+                        <a href="../employee/attendance.html">Attendance</a>
                     </li>
                 </ul>
+                <!-- Code for link Employee Section @anjudewangan -->
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
@@ -529,12 +524,16 @@
                 <div class="email_wrap">
                     <i class="fa-regular fa-envelope"></i>
                     <div class="email_show">
-
                     </div>
-                    <div class="email_input">
-                        <input type="email" name="" id="" placeholder="Type email addresses here">
+                    <!-- Code for send mail @anjudewangan -->
+                    <form class="email_input" action="javascript:sendMail()" method="post">
+                        <input type="email" name="Sender" id="Sender" placeholder="Type email addresses here"
+                            required="">
                         <a href="#" id="send_invite">Send Invite</a>
-                    </div>
+                        <button type="submit" class="btn btn-contact">Send Mail</button>
+                        <!-- <input type="button" class="btn btn-contact" onclick="sendMail()" value="Send Mail"> -->
+                    </form>
+                    <!-- Code for send mail @anjudewangan -->
                 </div>
                 <div class="email_info">
                     <p>Separate emails with commas to invite multiple people ","
@@ -568,7 +567,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="group">
                 <div class="group_head">
                     <p>The groups they belong to</p>
@@ -606,7 +604,7 @@
     </div>
     <div class="send_modal" id="send_modal">
         <div class="send_img">
-            <img src="./images/image 305.png" alt="">
+            <img src="../images/image 305.png" alt="">
             <i class="fa-solid fa-xmark" id="closed"></i>
         </div>
         <div class="modal_bottom">
@@ -646,6 +644,9 @@
             <a href="#" id="restore">Restore</a>
         </div>
     </div>
+    <!-- Code for send mail @anjudewangan -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Code for send mail @anjudewangan -->
     <script src="./scripts/script.js"></script>
     <script src="./scripts/invite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

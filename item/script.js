@@ -163,6 +163,7 @@ $(document).ready(function () {
     $(".row-SAC").hide();
     $(".row-Exemption").hide();
     $(".div-dig-ser").hide();
+    $(".inactive").hide();
     $("#flexRadioDefault1").click(function () {
         $(".row-HSN").show();
         $(".row-SAC").hide();
@@ -194,6 +195,14 @@ $(document).ready(function () {
         $(".div-dig-ser").show();
         $("input[name='flexRadioDefault'][value='2']").prop('checked', true);
 
+    });
+    $(".active").click(function () {
+        $(".inactive").toggle();
+        $(".active").toggle();
+    });
+    $(".inactive").click(function () {
+        $(".active").toggle();
+        $(".inactive").toggle();
     });
 });
 // Code for add item @anjudewangan 

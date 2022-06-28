@@ -561,21 +561,35 @@
     margin-left: -50px;
 }
 
-.table thead tr th,
-.table tbody tr td {
+.table-item thead tr th,
+.table-item tbody tr td {
     text-align: center;
+}
+
+.table-item tbody tr td a,
+.justify-content-start li a {
+    text-decoration: none;
 }
 
 .modal-body ul li {
     list-style-type: none;
 }
-
-.fa-search {
-    cursor: pointer;
+.modal-select-file .col-6 ul li{
+    list-style: disc;
 }
 
-.modal-create-account {
+.modal-create-account,
+.modal-select-file {
     max-width: 1000px !important;
+}
+
+.modal-select-file .divFile,
+.modal-select-file .divRecordFile,
+.modal-select-file .divFile input {
+    background-color: #E9F2FF;
+}
+.modal-select-file .divFile input{
+    border: 1px solid #E9F2FF;
 }
 
 .main-allItems {
@@ -647,7 +661,6 @@
     justify-content: center;
     gap: 6px;
     color: white;
-    display: none;
 }
 
 .in-aactv_circle {

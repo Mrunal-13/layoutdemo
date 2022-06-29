@@ -574,8 +574,8 @@
 .modal-body ul li {
     list-style-type: none;
 }
-.modal-select-file .col-6 ul li{
-    list-style: disc;
+.modal-select-file .col-6 ul li, .import-ul li{
+    list-style: disc !important;
 }
 
 .modal-create-account,
@@ -672,5 +672,8 @@
     background: #E30B0B;
     font-size: 12px;
 }
-
+.sample{
+    color: #D26478;
+    background-color: rgba(210, 100, 120, 0.1);
+}
 /* Code for item  @anjudewangan */

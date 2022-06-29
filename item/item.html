@@ -593,7 +593,8 @@
                                                     <i class="fa fa-download text-secondary" aria-hidden="true"></i>
                                                     Import Items
                                                 </li>
-                                                <li class="fs-5">
+                                                <li class="fs-5" data-bs-toggle="modal"
+                                                    data-bs-target="#popupExportItem">
                                                     <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
                                                     Export Items
                                                 </li>
@@ -619,7 +620,7 @@
                                 aria-labelledby="popupImportItemLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-header bg-light">
                                             <h5 class="modal-title" id="popupImportItemLabel">Select File</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
@@ -640,7 +641,7 @@
                                             </div>
                                             <div class="progress">
                                                 <div class="progress-bar bg-success" role="progressbar"
-                                                    style="width: 35%" aria-valuenow="25" aria-valuemin="0"
+                                                    style="width: 0%" aria-valuenow="25" aria-valuemin="0"
                                                     aria-valuemax="100">
                                                 </div>
                                             </div>
@@ -722,9 +723,567 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Next</button>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#popupImportItem2">Next</button>
                                             <button type="button" class="btn btn-outline-secondary"
                                                 data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupExportItem" tabindex="-1"
+                                aria-labelledby="popupExportItemLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupExportItemLabel">Export</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body m-4">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h6>Select Module<span class="text-danger">*</span></h6>
+                                                        <select class="form-select mb-3"
+                                                            aria-label="Default select example">
+                                                            <option>Estimates</option>
+                                                            <option>Sales Orders</option>
+                                                            <option>Invoices</option>
+                                                            <option>Invoice Payments</option>
+                                                            <option>Recurring Invoices</option>
+                                                            <option>Credit Notes</option>
+                                                            <option>Credit Notes Applied to Invoices</option>
+                                                            <option>Refunds</option>
+                                                            <option>Purchase Orders</option>
+                                                            <option>Bills</option>
+                                                            <option>Bill of Entry</option>
+                                                            <option>Bill Payments</option>
+                                                            <option>Vendor Credits</option>
+                                                            <option>Vendor Credit Refunds</option>
+                                                            <option>Projects</option>
+                                                            <option>Timesheet</option>
+                                                            <option>Project Tasks</option>
+                                                            <option>Customers</option>
+                                                            <option>Vendors</option>
+                                                            <option selected>Items</option>
+                                                            <option>Exchange Rates</option>
+                                                            <option>Users</option>
+                                                            <option>Chart of Accounts</option>
+                                                            <option>Manual Journals</option>
+                                                        </select>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioAllItem" id="radioAllItem">
+                                                            <label class="form-check-label" for="radioAllItem">
+                                                                All Items
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioAllItem" id="radioSpePeriod" checked>
+                                                            <label class="form-check-label" for="radioSpePeriod">
+                                                                Specific Period
+                                                            </label>
+                                                        </div>
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-5">
+                                                                    <input type="date" class="form-control" name=""
+                                                                        id="">
+                                                                </div>
+                                                                <div class="col-1 d-flex align-items-center">To</div>
+                                                                <div class="col-5">
+                                                                    <input type="date" class="form-control" name=""
+                                                                        id="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 mt-5">
+                                                            <label for="" class="form-label">Fields in Export File
+                                                            </label>
+                                                            <select class="form-select"
+                                                                aria-label="Default select example"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#popupExportAddNew">
+                                                                <option selected>Select the export template</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border-left">
+                                                        <h6>Export As <span class="text-danger">*</span></h6>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioFlexCSV" id="radioFlexCSV" checked>
+                                                            <label class="form-check-label" for="radioFlexCSV">
+                                                                CSV (Comma Separated Value)
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioFlexCSV" id="radioFlexXLX">
+                                                            <label class="form-check-label" for="radioFlexXLX">
+                                                                XLS (Microsoft Excel 1997-2004 Compatible)
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioFlexCSV" id="radioFlexXLSX">
+                                                            <label class="form-check-label" for="radioFlexXLSX">
+                                                                XLSX (Microsoft Excel)
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check mt-5 mb-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">
+                                                    Include Sensitive Personally Identifiable Information (PII) while
+                                                    exporting.
+                                                </label>
+                                            </div>
+                                            <div class="mb-3 px-4">
+                                                <label for="" class="form-label">Protect file with password
+                                                </label>
+                                                <input type="text" class="form-control" id="" style="width:50%">
+                                            </div>
+                                            <div><b>Note:</b> <small>You can only export the first 25,000 rows. If you
+                                                    have more rows,
+                                                    please back up the data in your Welldone Cloud and download
+                                                    it.</small> <a href="#">Back up
+                                                    your data</a></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Export</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupExportAddNew" tabindex="-1"
+                                aria-labelledby="popupExportAddNewLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="modal-body">
+                                            No results found
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-start">
+                                            <a href="#popupExportNewTemplate" data-bs-toggle="modal"
+                                                data-bs-target="#popupExportNewTemplate">+ Add New</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupExportNewTemplate" tabindex="-1"
+                                aria-labelledby="popupExportNewTemplateLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupExportNewTemplateLabel">New Export Template
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mx-5 mb-3">
+                                                <h6>Template Name<span class="text-danger">*</span></h6>
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                            <div class="container border-top">
+                                                <div class="row mt-2">
+                                                    <div class="col-1 d-flex align-items-center">
+                                                        <i class="fa fa-th text-primary fs-5" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Name of field in
+                                                                Welldone</label>
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option></option>
+                                                                <option>Item ID</option>
+                                                                <option>HSN/SAC</option>
+                                                                <option>Description</option>
+                                                                <option>Rate</option>
+                                                                <option>Account</option>
+                                                                <option>Account Code</option>
+                                                                <option>Product Type</option>
+                                                                <option>Source</option>
+                                                                <option>Reference ID</option>
+                                                                <option>Last Sync Time</option>
+                                                                <option>Status</option>
+                                                                <option>Usage unit</option>
+                                                                <option>Purchase Rate</option>
+                                                                <option>Purchase Account</option>
+                                                                <option>Purchase Account Code</option>
+                                                                <option>Purchase Description</option>
+                                                                <option>Vendor</option>
+                                                                <option>Item Type</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Name of field in Export
+                                                                file</label>
+                                                            <input type="text" class="form-control" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-4"><a href="#">Add a New Field</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save and Select</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupImportItem2" tabindex="-1"
+                                aria-labelledby="popupImportItem2Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupImportItem2Label">Select File</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body m-2 p-3">
+                                            <div class="container text-center mb-2">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6>Configure</h6>
+                                                    </div>
+                                                    <div class="col-4 text-secondary">
+                                                        <h6>Map Fields</h6>
+                                                    </div>
+                                                    <div class="col-4 text-secondary">
+                                                        <h6>Preview</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar"
+                                                    style="width: 35%" aria-valuenow="25" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                            <div class="container mt-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div>Your Selected File : <span
+                                                                class="sample px-2 py-1">sample_items2 (1).csv</span>
+                                                        </div>
+                                                        <h6 class="mt-4">Item Details</h6>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Welldone
+                                                                Field</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id=""
+                                                                    value="Imported file header">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Item Name<span
+                                                                    class="text-danger">*</span></label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Item Name</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for=""
+                                                                class="col-sm-5 col-form-label">HSN/SAC</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for=""
+                                                                class="col-sm-5 col-form-label">Description</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Description</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Rate</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Rate</option>
+                                                                </select>
+                                                                <div class="text-end"><small>eg.1234567.89</small></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Status</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Product
+                                                                Type</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Product Type</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for=""
+                                                                class="col-sm-5 col-form-label">Account</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Account</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Usage
+                                                                unit</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Usage unit</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Purchase
+                                                                Description</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Purchase Description</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Purchase
+                                                                Rate</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Purchase Rate</option>
+                                                                </select>
+                                                                <div class="text-end"><small>eg.1234567.89</small></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Item
+                                                                Type</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Item Type</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Purchase
+                                                                Account</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Purchase Account</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-check mt-5">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckChecked" checked>
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                                Save these choices for use during future imports.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>The best match is automatically selected for each field on
+                                                            the selected file.</div>
+                                                        <h6 class="mt-4">Tax Details</h6>
+                                                        <div class="mb-3 mx-4 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Welldone
+                                                                Field</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id=""
+                                                                    value="Imported file header">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3 mx-4 row">
+                                                            <label for="" class="col-sm-5 col-form-label">Exemption
+                                                                Reason</label>
+                                                            <div class="col-sm-7">
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select</option>
+                                                                    <option>Account</option>
+                                                                    <option>Description</option>
+                                                                    <option>Initial Stock</option>
+                                                                    <option>Initial Stock Rate</option>
+                                                                    <option>Inter State Tax</option>
+                                                                    <option>Name</option>
+                                                                    <option>Inter State Tax Rate</option>
+                                                                    <option>Inter State Tax</option>
+                                                                    <option>Type</option>
+                                                                    <option>Inventory Account</option>
+                                                                    <option>Item Name</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Purchase Account</option>
+                                                                    <option>Purchase</option>
+                                                                    <option>Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Reorder Point</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Vendor</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-toggle="modal" data-bs-target="#popupImportItem">
+                                                < Previous</button>
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#popupImportItem3">Next</button>
+                                                    <button type="button" class="btn btn-outline-secondary"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupImportItem3" tabindex="-1"
+                                aria-labelledby="popupImportItem3Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupImportItem3Label">Select File</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body m-2 p-3">
+                                            <div class="container text-center mb-2">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6>Configure</h6>
+                                                    </div>
+                                                    <div class="col-4 text-secondary">
+                                                        <h6>Map Fields</h6>
+                                                    </div>
+                                                    <div class="col-4 text-secondary">
+                                                        <h6>Preview</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar"
+                                                    style="width: 65%" aria-valuenow="25" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                            <div class="container mt-5">
+                                                <div style="color: #435AAA;">5 out of 7 items in your file are ready to
+                                                    be imported.</div>
+                                                <h6 class="my-4">
+                                                    Items that are ready to be imported <span
+                                                        class="text-success">(5)</span>
+                                                </h6>
+                                                <ul class="import-ul">
+                                                    <li>Items to be created (5)</li>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <li>Items waiting to be overwritten (0)</li>
+                                                        </div>
+                                                        <div class="col-4"><small>Inventory tracking is disabled</small>
+                                                        </div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                </ul>
+                                                <h6 class="my-4">
+                                                    No. of entries Omitted <span class="text-danger">(2)</span>
+                                                </h6>
+                                                <ul>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <li>6 Recliner Chair</li>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <small>Inventory tracking is disabled!</small>
+                                                        </div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <li>7 Smartphone</li>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <small>Inventory tracking is disabled!</small>
+                                                        </div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                </ul>
+                                                <h6 class="mt-4">
+                                                    Unmapped Fields <span class="text-danger">(11)</span>
+                                                </h6>
+                                                <div>The following fields in your import file are not mapped to any
+                                                    <b>Welldone</b> field. Data in this area will be ignored when
+                                                    importing.
+                                                </div>
+                                                <ul class="import-ul">
+                                                    <li>Initial Stock</li>
+                                                    <li>Initial Stock Rate</li>
+                                                    <li>Inter State Tax Name</li>
+                                                    <li>Inter State Tax Rate</li>
+                                                    <li>Inter State Tax Type</li>
+                                                    <li>Intra State Tax Name</li>
+                                                    <li>Intra State Tax Rate</li>
+                                                    <li>Intra State Tax Type</li>
+                                                    <li>Inventory Account</li>
+                                                    <li>Reorder Point</li>
+                                                    <li>Vendor</li>
+                                                </ul>
+                                                <div class="mt-4"><b>Note-</b><small> If you want to match the column
+                                                        header above, click the previous button or click the Import
+                                                        button to continue importing.</small></div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-toggle="modal" data-bs-target="#popupImportItem2">
+                                                < Previous</button>
+                                                    <button type="button" class="btn btn-primary">Import</button>
+                                                    <button type="button" class="btn btn-outline-secondary"
+                                                        data-bs-dismiss="modal">Cancel</button>
                                         </div>
                                     </div>
                                 </div>

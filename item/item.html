@@ -746,31 +746,9 @@
                                                     <div class="col-6">
                                                         <h6>Select Module<span class="text-danger">*</span></h6>
                                                         <select class="form-select mb-3"
-                                                            aria-label="Default select example">
-                                                            <option>Estimates</option>
-                                                            <option>Sales Orders</option>
-                                                            <option>Invoices</option>
-                                                            <option>Invoice Payments</option>
-                                                            <option>Recurring Invoices</option>
-                                                            <option>Credit Notes</option>
-                                                            <option>Credit Notes Applied to Invoices</option>
-                                                            <option>Refunds</option>
-                                                            <option>Purchase Orders</option>
-                                                            <option>Bills</option>
-                                                            <option>Bill of Entry</option>
-                                                            <option>Bill Payments</option>
-                                                            <option>Vendor Credits</option>
-                                                            <option>Vendor Credit Refunds</option>
-                                                            <option>Projects</option>
-                                                            <option>Timesheet</option>
-                                                            <option>Project Tasks</option>
-                                                            <option>Customers</option>
-                                                            <option>Vendors</option>
+                                                            aria-label="Default select example" data-bs-toggle="modal"
+                                                            data-bs-target="#popupSelectModule">
                                                             <option selected>Items</option>
-                                                            <option>Exchange Rates</option>
-                                                            <option>Users</option>
-                                                            <option>Chart of Accounts</option>
-                                                            <option>Manual Journals</option>
                                                         </select>
                                                         <div class="form-check mb-3">
                                                             <input class="form-check-input" type="radio"
@@ -862,6 +840,55 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="modal fade" id="popupSelectModule" tabindex="-1"
+                                aria-labelledby="popupSelectModuleLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="text-secondary">Sales</h6>
+                                            <ul>
+                                                <li>Estimates</li>
+                                                <li>Sales Orders</li>
+                                                <li>Sales Orders</li>
+                                                <li>Invoices</li>
+                                                <li>Invoice Payments</li>
+                                                <li>Recurring Invoices</li>
+                                                <li>Credit Notes</li>
+                                                <li>Credit Notes Applied to Invoices</li>
+                                                <li>Refunds</li>
+                                            </ul>
+                                            <h6 class="text-secondary">Purchase</h6>
+                                            <ul>
+                                                <li>Purchase Orders</li>
+                                                <li>Bills</li>
+                                                <li>Bill of Entry</li>
+                                                <li>Bill Payments</li>
+                                                <li>Vendor Credits</li>
+                                                <li>Vendor Credit Refunds</li>
+                                            </ul>
+                                            <h6 class="text-secondary">Timesheet</h6>
+                                            <ul>
+                                                <li>Projects</li>
+                                                <li>Timesheet</li>
+                                                <li>Project Tasks</li>
+                                            </ul>
+                                            <h6 class="text-secondary">Others</h6>
+                                            <ul>
+                                                <li>Customers</li>
+                                                <li>Vendors</li>
+                                                <li data-bs-toggle="modal" data-bs-target="#popupExportItem">Items</li>
+                                                <li>Exchange Rates</li>
+                                                <li>Users</li>
+                                                <li>Chart of Accounts</li>
+                                                <li>Manual Journals</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal fade" id="popupExportAddNew" tabindex="-1"
                                 aria-labelledby="popupExportAddNewLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-sm">
@@ -942,9 +969,11 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Save and Select</button>
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-target="#popupExportAddNew" data-bs-toggle="modal">Save and
+                                                Select</button>
                                             <button type="button" class="btn btn-outline-secondary"
-                                                data-bs-dismiss="modal">Cancel</button>
+                                            data-bs-target="#popupExportItem" data-bs-toggle="modal">Cancel</button>
                                         </div>
                                     </div>
                                 </div>

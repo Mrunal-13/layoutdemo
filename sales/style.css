@@ -1,4 +1,4 @@
-/* Code for nav and sidenav of Employee @anjudewangan  */
+/* Code for nav and sidenav of Sales @anjudewangan  */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -526,9 +526,13 @@
     display: none;
 }
 
-/* Code for nav and sidenav of Employee @anjudewangan  */
+/* Code for nav and sidenav of Sales @anjudewangan  */
 
-/* Code for Employee @anjudewangan */
+/* Code for Sales @anjudewangan */
+.sales-link {
+    font-weight: 600;
+}
+
 .main {
     display: flex;
     align-items: center;
@@ -539,18 +543,7 @@
     top: 85px;
 }
 
-.employee_settings {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 802px;
-}
-
-.employee_settings p {
-    font-size: 25px;
-}
-
-.employee_settings a {
+.main .container .row .col .setting-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,49 +557,305 @@
     font-size: 20px;
 }
 
-.tableEmployeeList,
-.tableEmployeeHoliday {
-    width: 1075px !important;
+.main .container .row .col-6 .select-all-items {
+    width: 160px !important;
 }
 
-.tableEmployeeLeave {
-    width: 1315px !important;
+.table-customer {
+    width: 1400px !important;
 }
 
-.tableEmployeeLeave tbody tr .text-primary {
-    cursor: pointer;
+.modal-body ul li {
+    list-style-type: none;
 }
 
-.modal-body .container-fluid .row {
-    border-bottom: 1px solid #dee2e6;
-    padding: 5px;
+.modal-body .ulBilling li {
+    list-style-type: disc !important;
 }
 
-.tableEmployeeAtten {
-    width: 1350px !important;
+.modalCheck,
+.modalManageTaxInfo {
+    max-width: 1200px !important;
 }
 
-.tableEmployeeAtten th,
-.tableEmployeeAtten td {
-    padding: 10px 4px !important;
+main .active-item {
+    background-color: rgb(196, 194, 194);
 }
 
-.card {
-    width: 350px;
+#popupDelete .modal-body i {
+    color: #EF8523;
+    font-size: 45px;
 }
 
-.tableEmployee tbody tr td i {
-    font-size: 22px;
-    margin-right: 10px;
+.timeline {
+    position: relative;
+    background-color: #00A3FF;
+    width: 2px;
+    left: 100px;
+    height: 850px;
+    top: 0px;
 }
 
-.tableEmployee thead tr th,
-.tableEmployee tbody tr td {
-    text-align: center;
+.point1 i {
+    position: absolute;
+    top: 100px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
 }
 
-.employee-link {
-    font-weight: 600;
+.point2 i {
+    position: absolute;
+    top: 250px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
 }
 
-/* Code for Employee  @anjudewangan */
+.point3 i {
+    position: absolute;
+    top: 400px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.point4 i {
+    position: absolute;
+    top: 550px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.point5 i {
+    position: absolute;
+    top: 700px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.pointDate1 {
+    position: absolute;
+    left: -95px;
+    top: 100px;
+}
+
+.pointDate2 {
+    position: absolute;
+    left: -95px;
+    top: 250px;
+}
+
+.pointDate3 {
+    position: absolute;
+    left: -95px;
+    top: 400px;
+}
+
+.pointDate4 {
+    position: absolute;
+    left: -95px;
+    top: 550px;
+}
+
+.pointDate5 {
+    position: absolute;
+    left: -95px;
+    top: 700px;
+}
+
+.divBillContainer1 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 100px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer2 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 250px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer3 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 400px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer4 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 550px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer5 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 700px;
+    position: absolute;
+    left: 35px;
+}
+
+.commPoint1 {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: -5px;
+    background-color: #00A3FF;
+    z-index: 1;
+}
+
+.commPoint2 {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    position: relative;
+    top: 350px;
+    left: -5px;
+    background-color: #00A3FF;
+    z-index: 1;
+}
+
+.commPoint3 {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    position: relative;
+    top: 500px;
+    left: -5px;
+    background-color: #00A3FF;
+    z-index: 1;
+}
+
+.divComm1 {
+    position: absolute;
+    width: 608px;
+    padding: 20px;
+    height: 215px;
+    left: 35px;
+    top: 100px;
+}
+
+.divComm2 {
+    position: absolute;
+    width: 608px;
+    padding: 20px;
+    height: 119px;
+    left: 35px;
+    top: 350px;
+}
+
+.divComm3 {
+    position: absolute;
+    width: 608px;
+    padding: 20px;
+    height: 119px;
+    left: 35px;
+    top: 500px;
+}
+
+.commDate1 {
+    position: absolute;
+    left: -85px;
+    top: 350px;
+}
+
+.commDate2 {
+    position: absolute;
+    left: -85px;
+    top: 500px;
+}
+
+.statement-heading {
+    border-bottom: 2px solid black;
+}
+
+.divSendEmailHead {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.spanBcc {
+    top: 5px;
+    left: 1040px;
+}
+
+.modal-select-file .col-6 .divRecordFile  ul li,
+.import-ul li {
+    list-style: disc !important;
+}
+
+.modal-create-account,
+.modal-select-file {
+    max-width: 1000px !important;
+}
+
+.modal-select-file .divFile,
+.modal-select-file .divRecordFile,
+.modal-select-file .divFile input {
+    background-color: #E9F2FF;
+}
+
+.modal-select-file .divFile input {
+    border: 1px solid #E9F2FF;
+}
+.sample {
+    color: #D26478;
+    background-color: rgba(210, 100, 120, 0.1);
+}
+/* .dvSubject {
+    border: 1px solid #8A8484;
+    border-radius: 3px;
+    height: 145px;
+    width: 1007px;
+}
+
+.dvSubject-3 {
+    height: 190px;
+    width: 1010px;
+}
+
+.dvSubject-3 textarea {
+    width: 98%;
+    margin: 10px;
+    border: none;
+    height: 100px;
+} */
+
+.divAttachFile{
+    background: rgba(0, 163, 255, 0.075);
+}
+
+/* Code for Sales @anjudewangan */

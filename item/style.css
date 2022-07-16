@@ -535,7 +535,7 @@
     justify-content: flex-start;
     position: relative;
     flex-direction: column;
-    left: 70px;
+    /* left: 70px; */
     top: 85px;
 }
 
@@ -558,7 +558,7 @@
 }
 
 .main .row .col-11 {
-    margin-left: -50px;
+    margin-right: -100px;
 }
 
 .table-item thead tr th,
@@ -574,7 +574,9 @@
 .modal-body ul li {
     list-style-type: none;
 }
-.modal-select-file .col-6 ul li, .import-ul li{
+
+.modal-select-file .col-6 ul li,
+.import-ul li {
     list-style: disc !important;
 }
 
@@ -588,7 +590,8 @@
 .modal-select-file .divFile input {
     background-color: #E9F2FF;
 }
-.modal-select-file .divFile input{
+
+.modal-select-file .divFile input {
     border: 1px solid #E9F2FF;
 }
 
@@ -672,8 +675,10 @@
     background: #E30B0B;
     font-size: 12px;
 }
-.sample{
+
+.sample {
     color: #D26478;
     background-color: rgba(210, 100, 120, 0.1);
 }
+
 /* Code for item  @anjudewangan */

@@ -343,6 +343,41 @@
                     <span class="nav-link-text">Item</span>
                 </a>
             </li>
+            <!-- Code for link Sales @anjudewangan -->
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                    data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa fa-shopping-cart"></i>
+                    <span class="nav-link-text">Sales</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                    <li>
+                        <a href="../sales/customers/customers.html">Customers</a>
+                    </li>
+                    <li>
+                        <a href="../sales/estimates/estimates.html">Estimates</a>
+                    </li>
+                    <li>
+                        <a href="">Sales Orders</a>
+                    </li>
+                    <li>
+                        <a href="">Delivery Challans</a>
+                    </li>
+                    <li>
+                        <a href="">Invoices</a>
+                    </li>
+                    <li>
+                        <a href="">Received Payments</a>
+                    </li>
+                    <li>
+                        <a href="">Recurring Invoices</a>
+                    </li>
+                    <li>
+                        <a href="">Credit Notes</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Code for link Sales @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
                     data-parent="#exampleAccordion">
@@ -456,7 +491,7 @@
                         <option>Sales</option>
                         <option>Purcheses</option>
                         <option>Services</option>
-                        <option>+ New Custum View</option>
+                        <option class="text-primary">+ New Custum View</option>
                     </select>
                 </div>
                 <div class="col-6">
@@ -499,7 +534,8 @@
                                                     <div class="mb-3 row">
                                                         <label for="" class="col-sm-4 col-form-label">Rate</label>
                                                         <div class="col-sm-8">
-                                                            <input type="text" class="form-control" id="">
+                                                            <input type="text" class="form-control" id=""
+                                                                data-bs-toggle="modal" data-bs-target="#popupRate">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -508,11 +544,9 @@
                                                         <label for="" class="col-sm-4 col-form-label">Status</label>
                                                         <div class="col-sm-8">
                                                             <select class="form-select"
-                                                                aria-label="Default select example">
+                                                                aria-label="Default select example"
+                                                                data-bs-toggle="modal" data-bs-target="#popupStatus">
                                                                 <option selected>All</option>
-                                                                <option>All</option>
-                                                                <option>All</option>
-                                                                <option>All</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -525,11 +559,10 @@
                                                             Account</label>
                                                         <div class="col-sm-8">
                                                             <select class="form-select"
-                                                                aria-label="Default select example">
+                                                                aria-label="Default select example"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#popupSalesAccount">
                                                                 <option selected></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -540,11 +573,10 @@
                                                             Account</label>
                                                         <div class="col-sm-7">
                                                             <select class="form-select"
-                                                                aria-label="Default select example">
+                                                                aria-label="Default select example"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#popupPurchaseAccount">
                                                                 <option selected></option>
-                                                                <option></option>
-                                                                <option></option>
-                                                                <option></option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -555,6 +587,97 @@
                                             <button type="button" class="btn btn-outline-secondary"
                                                 data-bs-dismiss="modal">Cancel</button>
                                             <button type="button" class="btn btn-success">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupRate" tabindex="-1" aria-labelledby="popupRateLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="modal-body text-start">
+                                            <div>Draft</div>
+                                            <div>Published</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupStatus" tabindex="-1" aria-labelledby="popupStatusLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="modal-body text-start">
+                                            <div>Active</div>
+                                            <div>Inactive</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupSalesAccount" tabindex="-1"
+                                aria-labelledby="popupSalesAccountLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="modal-body text-start">
+                                            <div>Discount</div>
+                                            <div>General Income</div>
+                                            <div>Interest Income</div>
+                                            <div>Late Fee Income</div>
+                                            <div>Other Charges</div>
+                                            <div>Sales</div>
+                                            <div>Shipping Charges</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupPurchaseAccount" tabindex="-1"
+                                aria-labelledby="popupPurchaseAccountLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="modal-body text-start">
+                                            <div>Advertising And Marketing</div>
+                                            <div>Automobile Expense</div>
+                                            <div>Bad Debt</div>
+                                            <div>Bank Fees and Charges</div>
+                                            <div>Consultant Expense</div>
+                                            <div>Contract Assets</div>
+                                            <div>Credit Card Charges</div>
+                                            <div>Other Expenses</div>
+                                            <div>Postage</div>
+                                            <div>Printing and Stationery</div>
+                                            <div>Purchase Discounts</div>
+                                            <div>Raw Materials And Consumables</div>
+                                            <div>Rent Expense</div>
+                                            <div>Repairs and Maintenance</div>
+                                            <div>Depreciation And Amortisation</div>
+                                            <div>Depreciation Expense</div>
+                                            <div>IT and Internet Expenses</div>
+                                            <div>Janitorial Expense</div>
+                                            <div>Lodging</div>
+                                            <div>Meals and Entertainment</div>
+                                            <div>Merchandise</div>
+                                            <div>Offer Supplies</div>
+                                            <div>Salaries and Employee Wages</div>
+                                            <div>Telephone Expense</div>
+                                            <div>Transportation Expense</div>
+                                            <div>Travel Expense</div>
+                                            <div>Uncategorized</div>
+                                            <div>Cost of Goods Sold</div>
+                                            <div>Job Costing</div>
+                                            <div>Labor</div>
+                                            <div>Materials</div>
+                                            <div>Subcontractor</div>
                                         </div>
                                     </div>
                                 </div>
@@ -621,7 +744,7 @@
                                 <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupImportItemLabel">Select File</h5>
+                                            <h5 class="modal-title" id="popupImportItemLabel">Items - Select File</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -973,7 +1096,7 @@
                                                 data-bs-target="#popupExportAddNew" data-bs-toggle="modal">Save and
                                                 Select</button>
                                             <button type="button" class="btn btn-outline-secondary"
-                                            data-bs-target="#popupExportItem" data-bs-toggle="modal">Cancel</button>
+                                                data-bs-target="#popupExportItem" data-bs-toggle="modal">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -983,7 +1106,7 @@
                                 <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupImportItem2Label">Select File</h5>
+                                            <h5 class="modal-title" id="popupImportItem2Label">Items - Select File</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -1030,6 +1153,17 @@
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
                                                                     <option selected>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1039,7 +1173,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected>Select</option>
+                                                                    <option>Item Name</option>
+                                                                    <option selected>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1049,7 +1194,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
                                                                     <option selected>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1058,7 +1214,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
                                                                     <option selected>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                                 <div class="text-end"><small>eg.1234567.89</small></div>
                                                             </div>
@@ -1068,7 +1235,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected>Select</option>
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option selected>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1078,7 +1256,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
                                                                     <option selected>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1088,7 +1277,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
                                                                     <option selected>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1098,7 +1298,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
                                                                     <option selected>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1108,7 +1319,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
                                                                     <option selected>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1118,7 +1340,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
                                                                     <option selected>Purchase Rate</option>
+                                                                    <option>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                                 <div class="text-end"><small>eg.1234567.89</small></div>
                                                             </div>
@@ -1129,7 +1362,18 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
                                                                     <option selected>Item Type</option>
+                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1139,6 +1383,17 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option>Item Name</option>
+                                                                    <option>HSN/SAC</option>
+                                                                    <option>Description</option>
+                                                                    <option>Rate</option>
+                                                                    <option>Status</option>
+                                                                    <option>Product Type</option>
+                                                                    <option>Account</option>
+                                                                    <option>Usage unit</option>
+                                                                    <option>Purchase Description</option>
+                                                                    <option>Purchase Rate</option>
+                                                                    <option>Item Type</option>
                                                                     <option selected>Purchase Account</option>
                                                                 </select>
                                                             </div>
@@ -1216,7 +1471,7 @@
                                 <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupImportItem3Label">Select File</h5>
+                                            <h5 class="modal-title" id="popupImportItem3Label">Items - Select File</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -1472,7 +1727,7 @@
                 <table class="table table-item">
                     <thead>
                         <tr>
-                            <th>Name</th>
+                            <th><input class="form-check-input" type="checkbox" value="" id=""> Name</th>
                             <th>Description</th>
                             <th>Rate</th>
                             <th>HSN/SAC</th>
@@ -1488,7 +1743,10 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-primary"><a href="./allItems.html">Varada Vati</a></td>
+                            <td class="text-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                <a href="./allItems.html">Varada Vati</a>
+                            </td>
                             <td></td>
                             <td>500.00</td>
                             <td>988313</td>
@@ -1502,7 +1760,10 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-primary">Body pack</td>
+                            <td class="text-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                Body pack
+                            </td>
                             <td></td>
                             <td>50.00</td>
                             <td>625313</td>
@@ -1516,7 +1777,10 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-primary">Panchakarma</td>
+                            <td class="text-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                Panchakarma
+                            </td>
                             <td></td>
                             <td>100.00</td>
                             <td>789313</td>
@@ -1530,7 +1794,10 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-primary">Thakradhara</td>
+                            <td class="text-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                Thakradhara
+                            </td>
                             <td></td>
                             <td>60.00</td>
                             <td>558313</td>
@@ -1544,7 +1811,10 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-primary">Abhyangana</td>
+                            <td class="text-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                Abhyangana
+                            </td>
                             <td></td>
                             <td>200.00</td>
                             <td>998324</td>
@@ -1558,7 +1828,10 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-primary">Root touch up</td>
+                            <td class="text-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                Root touch up
+                            </td>
                             <td></td>
                             <td>500.00</td>
                             <td>998324</td>

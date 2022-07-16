@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 7;
     border-bottom: 3px solid black;
@@ -527,3 +527,164 @@
     margin-left: 36px;
     display: none;
 }
+/* css for center contents */
+/* @mrunal nimbalkar */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    left: 30px;
+    top: 0px;
+}
+
+.main .container .row .col .setting-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFEA97;
+    height: 32px;
+    width: 119px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.main .container .row .col-6 .select-all-items {
+    width: 160px !important;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.main .row .col-11 {
+    margin-left: -50px;
+}
+
+.table-item thead tr th,
+.table-item tbody tr td {
+    text-align: center;
+}
+
+.table-item tbody tr td a,
+.justify-content-start li a {
+    text-decoration: none;
+}
+
+.modal-body ul li {
+    list-style-type: none;
+}
+.modal-select-file .col-6 ul li, .import-ul li{
+    list-style: disc !important;
+}
+
+.modal-create-account,
+.modal-select-file {
+    max-width: 1000px !important;
+}
+
+.modal-select-file .divFile,
+.modal-select-file .divRecordFile,
+.modal-select-file .divFile input {
+    background-color: #E9F2FF;
+}
+.modal-select-file .divFile input{
+    border: 1px solid #E9F2FF;
+}
+
+.main-allItems {
+    position: relative;
+    top: 76px;
+    left: 14px;
+}
+
+.main-allItems .col-left,
+.main-allItems .select-all-items {
+    background-color: #F5F5F5;
+    font-weight: 500;
+}
+
+.main-allItems .col-left .row {
+    border-bottom: 1px solid black;
+    font-weight: 500;
+}
+
+.main-allItems .col-left {
+    height: 666px;
+}
+
+.main-allItems .col-left .active-item {
+    background-color: rgb(196, 194, 194);
+}
+
+.main-allItems .col-right ul li {
+    list-style-type: none;
+    padding: 0 25px;
+    font-weight: 500;
+}
+
+.main-allItems .col-right ul .active-li {
+    color: rgb(0, 123, 255);
+    border-bottom: 5px solid rgb(0, 123, 255);
+    border-radius: 3px;
+}
+
+.status_active {
+    width: 90px;
+    height: 30px;
+    background: #72F17E;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: white;
+}
+
+.aactv_circle {
+    width: 18px;
+    height: 18px;
+    left: 72px;
+    top: 5px;
+    border-radius: 50%;
+    background: #19BC29;
+    font-size: 12px;
+}
+
+.status_in-active {
+    width: 90px;
+    height: 30px;
+    background: #F47E7E;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: white;
+}
+
+.in-aactv_circle {
+    width: 18px;
+    height: 18px;
+    left: 72px;
+    top: 5px;
+    border-radius: 50%;
+    background: #E30B0B;
+    font-size: 12px;
+}
+.sample{
+    color: #D26478;
+    background-color: rgba(210, 100, 120, 0.1);
+}
+.dater{
+    display: flex;
+}
+.auto-generate{
+    margin-left: 15px;
+}
+.auto-generatetop{
+    margin-top: 110px;
+}
+/* Code for sales  @Mrunal */

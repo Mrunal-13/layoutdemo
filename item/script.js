@@ -158,6 +158,7 @@ $(document).ready(function () {
         isCategoriesShown = false;
     });
 });
+//code to add item 
 
 $(document).ready(function () {
     $(".row-SAC").hide();

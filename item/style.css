@@ -561,10 +561,10 @@
     margin-right: -100px;
 }
 
-.table-item thead tr th,
+/* .table-item thead tr th,
 .table-item tbody tr td {
     text-align: center;
-}
+} */
 
 .table-item tbody tr td a,
 .justify-content-start li a {

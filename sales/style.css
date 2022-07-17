@@ -812,7 +812,7 @@ main .active-item {
     left: 1040px;
 }
 
-.modal-select-file .col-6 .divRecordFile  ul li,
+.modal-select-file .col-6 .divRecordFile ul li,
 .import-ul li {
     list-style: disc !important;
 }
@@ -831,10 +831,12 @@ main .active-item {
 .modal-select-file .divFile input {
     border: 1px solid #E9F2FF;
 }
+
 .sample {
     color: #D26478;
     background-color: rgba(210, 100, 120, 0.1);
 }
+
 /* .dvSubject {
     border: 1px solid #8A8484;
     border-radius: 3px;
@@ -854,8 +856,163 @@ main .active-item {
     height: 100px;
 } */
 
-.divAttachFile{
+.divAttachFile {
     background: rgba(0, 163, 255, 0.075);
+}
+
+.col-3 .py-3 {
+    margin-left: 1px;
+}
+
+.div-send-text {
+    margin-left: -41px;
+}
+
+.banner-send {
+    transform: rotate(1400deg);
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    top: 227px;
+    left: 15px;
+    margin-left: 6px;
+    margin-top: 33px;
+    z-index: 1000;
+    padding: 5px 48px;
+}
+
+.comment {
+    position: relative;
+    background-color: #CCCCCC;
+    width: 2px;
+    left: 100px;
+    height: 850px;
+    top: 0px;
+}
+
+.comment1 i {
+    position: absolute;
+    top: 100px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment2 i {
+    position: absolute;
+    top: 250px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment3 i {
+    position: absolute;
+    top: 400px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment4 i {
+    position: absolute;
+    top: 550px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment5 i {
+    position: absolute;
+    top: 700px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.commentDate1 {
+    position: absolute;
+    left: 535px;
+    top: 150px;
+}
+
+.commentDate2 {
+    position: absolute;
+    left: 535px;
+    top: 300px;
+}
+
+.commentDate3 {
+    position: absolute;
+    left: 535px;
+    top: 450px;
+}
+
+.commentDate4 {
+    position: absolute;
+    left: 535px;
+    top: 600px;
+}
+
+.commentDate5 {
+    position: absolute;
+    left: 535px;
+    top: 750px;
+}
+
+.divcomment1 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 100px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment2 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 250px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment3 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 400px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment4 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 550px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment5 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 700px;
+    position: absolute;
+    left: 35px;
 }
 
 /* Code for Sales @anjudewangan */

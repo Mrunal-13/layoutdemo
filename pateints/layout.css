@@ -1097,18 +1097,22 @@
         display: none;
     }
     .pateintul{
-        background-color: #ffffff;
         display: flex;
         gap: 15px;
-        width: 428px;
+        width: 410px;
         position: relative;
         /* bottom: 70px;
         right: 17.9px; */
+        /* left: 22px; */
+        margin: 0;
+        padding: 0;
+        left: 10px;
+        top: 10px;
     }
     
     .e-queque{
         position: relative;
-        left: 10px;
+        left: 30px;
     }
     .e-queque div{
         width: 148px;
@@ -1120,31 +1124,38 @@
     }
     .nav-link{
         display: flex;
+        position: relative;
+        left: 20px;
+        width: max-content;
     }
     .carousel{
         width: 428px;
         position: relative;
         /* right: 17px;
         bottom: 50px; */
-        z-index: 0;
+        /* z-index: 0; */
+        overflow-x: hidden;
     }
     .pateintnamelist{
         background-color: #ffffff;
         position: relative;
-        width: auto;
+        width: 420px;
         display: flex;
         flex-direction: column;
         position: relative;
-        left: 1px;
+        left: 5px;
+        overflow-x: hidden;
+        border-radius: 0;
+        top: 10px;
     }
     .pateintnamelist div{
         width: 400px;
         position: relative;
-        left: 27px;
+        left: 10px;
     }
     #visitoptions{
         position: relative;
-        left: 15px;
+        left: 30px;
         outline: none;
         border: none;
     }
@@ -1152,7 +1163,13 @@
         background-color: #ffffff;
         width: 428px;
         position: relative;
-        right: 18px;
+        /* right: 18px; */
+        /* background-color: #007185; */
+        padding: 0;
+        border-radius: 0;
+        margin: 0;
+        top: 0;
+        height: max-content;
     }
     .pateintTableTitle{
         font-size: 16px;
@@ -1162,6 +1179,8 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        height: auto;
+        top: 29px;
     }
     .Appointment{
         display: none;
@@ -1171,6 +1190,10 @@
     } 
     .navbar-fourth{
         display: none;
+    }
+    .navbar{
+        position: relative;
+        width: 428px;
     }
 }
 @media screen and (max-width:428px) {
@@ -1191,23 +1214,27 @@
         justify-content: center;
         width: 428px;
         gap: 0px;
-
+        overflow-x: hidden;
+        z-index: 0;
+        height: max-content;
     }
     .Appointment{
-        width:  429px;
+        width:  428px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         position: relative;
         right: 90px;
         /* top: 450px; */
-        bottom: 240px;
+        bottom: 220px;
     }
     .Appointment > div{
-        width: 428px;
+        width: 400px;
         position: relative;
-        /* left: 10px; */
+        left: 16px;
+        display: flex;
     }
+
     .commeddiv{
         display: flex;
         flex-direction: column;

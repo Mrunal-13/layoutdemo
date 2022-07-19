@@ -1015,4 +1015,24 @@ main .active-item {
     left: 35px;
 }
 
+.copy-delete1 {
+    right: 170px;
+    bottom: 800px;
+}
+
+.copy-delete2 {
+    right: 170px;
+    bottom: 650px;
+}
+
+.icon-th1 {
+    left: 187px;
+    bottom: 800px;
+}
+
+.icon-th2 {
+    left: 187px;
+    bottom: 650px;
+}
+
 /* Code for Sales @anjudewangan */

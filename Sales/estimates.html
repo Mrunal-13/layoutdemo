@@ -550,10 +550,10 @@
         </ul>
     </div>
     <main class="main">
-        <div class="container mt-3">
+        <div class="container mt-3" id="topheading">
             <div class="row">
-                <div class="col-6 gap-3">
-                    <select class="form-select select-all-items" aria-label="Default select example">
+                <div class="col-6 gap-3 ">
+                    <select class="form-select select-all-items allestimate" aria-label="Default select example">
                         <option selected>All Estimates</option>
                         <option class="text-secondary">Default Filters</option>
                         <option>All</option>
@@ -1509,7 +1509,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5" id="bottomtable">
             <div class="col-1 text-center mt-3">
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#popupItem">
                     <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
@@ -1620,7 +1620,7 @@
                         <tr>
                             <td><input type="checkbox"></td>
                             <td>26/07/2017</td>
-                            <td style="color:rgb(34, 136, 136)" onclick="">EST-000001</td>
+                            <td style="color:rgb(34, 136, 136)" onclick="changelayout()">EST-000001</td>
                             <td>9875621645</td>
                             <td>Mr.Badshah Khan</td>
                             <td style="color:rgb(34, 136, 136)"><i class="bi bi-envelope-open"></i>Sent</td>
@@ -1639,8 +1639,103 @@
                 </table>
             </div>
         </div>
-        <div>
-
+        <div id="seconddivestimate" class="container">
+            <div class="row mt-3">
+                <div class="col-3" style="border-left: 2px solid black;border-right:2px solid black;border: height 1000px;">
+                    <div class="topbar">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               All Estimate
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">All Customers</a>
+                              <a class="dropdown-item" href="#">Active Customers</a>
+                              <a class="dropdown-item" href="#">CRM Customers</a>
+                              <a class="dropdown-item" href="#">Duplicate Customers</a>
+                              <a class="dropdown-item" href="#">Inactive Customers</a>
+                              <a class="dropdown-item" href="#">Client portal enabled</a>
+                              <a class="dropdown-item" href="#">Client portal Disabled</a>
+                              <a class="dropdown-item" href="#">Overdue Customer</a>
+                              <a class="dropdown-item" href="#">Unpaid Customer</a>
+                              <a class="dropdown-item" href="#" style="color: blue;">+ New  Custom Veiw</a>
+                            </div>
+                          </div>
+                        <button class="btn btn-warning allestimate"><i class="bi bi-plus-lg"></i></button>
+                        <button class="btn btn-secondary allestimate" data-bs-toggle="modal" data-bs-target="#popupShort"><i
+                            class="fa fa-align-left" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="namerow">
+                        <div class="names"><p class="leftp">Mr.Badshah Khan</p><p class="rightp">26/06/2017</p></div>
+                        <div class="names"><p class="leftp"><i class="bi bi-envelope-open"></i>Sent</p><p class="rightp">Rs.800.00    EST-000001</p></div>
+                        
+                    </div>
+                    <hr>
+                    <div class="namerow">
+                        <div class="names"><p class="leftp">Mr.sanole baba</p><p class="rightp">29/06/2017</p></div>
+                        <div class="names"><p class="leftp"><i class="bi bi-envelope-open"></i>Sent</p><p class="rightp">Rs.2800.00    EST-000002</p></div>
+                        
+                    </div>
+                    <hr>
+                    <div class="namerow">
+                        <div class="names"><p class="leftp">Sample baba</p><p class="rightp">26/06/2017</p></div>
+                        <div class="names"><p class="leftp"><i class="bi bi-envelope-open"></i>Sent</p><p class="rightp">Rs.200.00    EST-000003</p></div>
+                        
+                    </div>
+                    <hr>
+                </div><!--all estimates select statement-->
+                
+                <div class="col-9">
+                    <div class="topbar">
+                        <p class="parafont">EST-000001</p>
+                        <button class="btn btn-secondary btn-sm topbarbuttonsedit">Edit</button>
+                        <button class="btn btn-secondary btn-sm topbarbuttoncopy"><i class="bi bi-paperclip"></i></button>
+                        <button class="btn btn-secondary btn-sm topbarbuttoncopy"><i class="bi bi-clipboard2"></i></button>
+                        <button class="btn btn-secondary btn-sm topbarbuttoncopy"><i class="bi bi-printer"></i></button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Create Project</a>
+                              <a class="dropdown-item" href="#">Mark As Accepted</a>
+                              <a class="dropdown-item" href="#">Mark As Declined</a>
+                              <a class="dropdown-item" href="#">Clone</a>
+                              <a class="dropdown-item" href="#">Delete</a>
+                              <a class="dropdown-item" href="#">Estimate Preferences</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary topbarbuttoncopy"><i class="bi bi-gear-fill"></i></button>
+                        <button class="btn btn-secondary topbarbuttonshare"><i class="bi bi-share-fill"></i>Share</button>
+                        <button class="btn btn-secondary topbarbuttoncopy"><i class="bi bi-chat-left"></i>Comment</button>
+                        <i class="bi bi-x closingcross"></i>
+                    </div>
+                    <hr>
+                    <div class="Convert">
+                        <div class="clip-icon"><i class="bi bi-card-text"></i></div>
+                        <div class="convertp"><p>Convert the Estimate</p>
+                            <p>Create an invoice or Sales order for this estimate to confirm the sales and bill your customer</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Convert
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Convert to bill of supply</a>
+                              <a class="dropdown-item" href="#">convert to sales order</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary createproject">Create Project</button>
+                    </div>
+                    <div class="pdf">
+                        <div class="sent"><p>Sent</p></div>
+                        <div class="pdf2">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./estimate.js"></script>

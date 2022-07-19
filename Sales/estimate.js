@@ -219,3 +219,10 @@ $(document).ready(function () {
         $(".inactive").toggle();
     });
 });
+
+// code by @mrunal nimbalkar for estimate number functiion
+function changelayout(){
+    document.getElementById("topheading").style.display = "none";
+    document.getElementById("bottomtable").style.display = "none";
+    document.getElementById("seconddivestimate").style.display = "block";
+}

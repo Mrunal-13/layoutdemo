@@ -3140,25 +3140,27 @@
                     <div class="timeline">
                         <div class="commPoint1"></div>
                         <div class="bg-light rounded border border-secondary divComm1">
-                            <textarea class="form-control" id="" rows="3"></textarea>
+                            <textarea class="form-control" id="addComment" rows="3"></textarea>
                             <small>(For Internal Use)</small>
                             <div class="mt-4">
-                                <button class="btn btn-secondary">Add Comment</button>
+                                <button class="btn btn-secondary" id="btnAddComment">Add Comment</button>
                             </div>
                         </div>
-                        <div class="commDate1"><small>08:49 AM</small>
-                            <small class="text-secondary">24/06/2022</small>
-                        </div>
-                        <div class="commPoint2"></div>
-                        <div class="bg-light rounded border border-secondary divComm2">
-                            <div class="d-flex justify-content-between">
-                                <div>huh</div>
-                                <i class="fa fa-trash" aria-hidden="true" data-bs-toggle="modal"
-                                    data-bs-target="#popupDelete"></i>
+                        <div class="divComment">
+                            <div class="commDate1"><small>08:49 AM</small>
+                                <small class="text-secondary">24/06/2022</small>
                             </div>
-                            <div class="mt-4"><small>by rakeshnandre433</small></div>
+                            <div class="commPoint2"></div>
+                            <div class="bg-light rounded border border-secondary divComm2">
+                                <div class="d-flex justify-content-between">
+                                    <div>huh</div>
+                                    <i class="fa fa-trash deleteComment" aria-hidden="true"></i>
+                                </div>
+                                <div class="mt-4"><small>by rakeshnandre433</small></div>
+                            </div>
                         </div>
-                        <div class="commDate2"><small>08:49 AM</small>
+                       <div class="divComment">
+                         <div class="commDate2"><small>08:49 AM</small>
                             <small class="text-secondary">24/06/2022</small>
                         </div>
                         <div class="commPoint3"></div>
@@ -3170,6 +3172,7 @@
                             </div>
                             <div class="mt-4"><small>by rakeshnandre433</small></div>
                         </div>
+                       </div>
                     </div>
                     <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
                         aria-hidden="true">
@@ -3186,7 +3189,7 @@
                                         <p>Once deleted, they cannot be undone</p>
                                     </div>
                                     <div class="d-flex justify-content-around mb-4">
-                                        <button type="button" class="btn btn-light"
+                                        <button type="button" class="btn btn-light deleteComment"
                                             data-bs-dismiss="modal">Delete</button>
                                         <button type="button" class="btn btn-primary"
                                             data-bs-dismiss="modal">No</button>

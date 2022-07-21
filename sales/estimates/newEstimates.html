@@ -558,11 +558,341 @@
                             <div class="col-sm-7">
                                 <select class="form-select mt-4" aria-label="Default select example">
                                     <option selected>Select Customer</option>
+                                    <option>Customer Name</option>
+                                    <option>Customer Type</option>
+                                    <option>First Name</option>
+                                    <option>Status</option>
+                                    <option>Address</option>
+                                    <option>GSTIN</option>
+                                    <option>GST Treatment</option>
+                                    <option>Company Name</option>
+                                    <option>Last Name</option>
+                                    <option>Email</option>
+                                    <option>Mobile</option>
+                                    <option>Place of Supply</option>
                                 </select>
-                                <a href=""><i class="fa fa-user" aria-hidden="true"></i> View Customer Details</a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#popupCustomerDetails"><i
+                                        class="fa fa-user" aria-hidden="true"></i> View Customer Details</a>
+                                <div class="modal fade" id="popupCustomerDetails" tabindex="-1"
+                                    aria-labelledby="popupCustomerDetailsLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupCustomerDetailsLabel">Customer Details
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start divCustomer">
+                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                        aria-hidden="true"></i>
+                                                    <h6 class="ml-4">Mr. Badshah khan <i
+                                                            class="fa fa-caret-square-o-right text-primary fs-5"
+                                                            aria-hidden="true"></i></h6>
+                                                </div>
+                                                <div class="container my-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="mb-3">Outstanding Receivables</div>
+                                                            <div>₹200.00</div>
+                                                        </div>
+                                                        <div class="col-6 border-left text-end">
+                                                            <div class="mb-3">Unused Credits</div>
+                                                            <div>₹0.00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container my-5">
+                                                    <div class="row border-bottom mb-2">
+                                                        <div class="col-4">Other Details</div>
+                                                        <div class="col-7"></div>
+                                                        <div class="col-1"><i class="fa fa-angle-down"
+                                                                aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Customer Type</div>
+                                                        <div class="col-4">Individual</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Payment Terms</div>
+                                                        <div class="col-4">Due on Receipt</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Template Language</div>
+                                                        <div class="col-4">English</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GST Treatment</div>
+                                                        <div class="col-4">Consumer</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Place Of Supply</div>
+                                                        <div class="col-4">Maharashtra</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GSTIN</div>
+                                                        <div class="col-4">27AABFB2177L1ZD</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row border-bottom mb-3">
+                                                        <div class="col-6 text-center"><a href="" class="text-dark"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#popupCustomerDetails2">Address</a>
+                                                        </div>
+                                                        <div class="col-6 text-center"><a href="">Activity</a></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li><i class="fa fa-file-text-o text-success"
+                                                                aria-hidden="true"></i> Billing Address
+                                                            <ul>
+                                                                <li><b>bashah</b></li>
+                                                                <li><small>dd</small></li>
+                                                                <li><small>sakri</small></li>
+                                                                <li><small>Maharashtra 424304</small></li>
+                                                                <li><small>India</small></li>
+                                                                <li><small>Phone: 9876543210</small></li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                    <ul>
+                                                        <li><i class="fa fa-truck text-warning" aria-hidden="true"></i>
+                                                            Shipping Address
+                                                            <ul>
+                                                                <li><b>bashah</b></li>
+                                                                <li><small>dd</small></li>
+                                                                <li><small>sakri</small></li>
+                                                                <li><small>Maharashtra 424304</small></li>
+                                                                <li><small>India</small></li>
+                                                                <li><small>Phone: 9876543210</small></li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupCustomerDetails2" tabindex="-1"
+                                    aria-labelledby="popupCustomerDetails2Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupCustomerDetails2Label">Customer Details
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start divCustomer">
+                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                        aria-hidden="true"></i>
+                                                    <h6 class="ml-4">Mr. Badshah khan <i
+                                                            class="fa fa-caret-square-o-right text-primary fs-5"
+                                                            aria-hidden="true"></i></h6>
+                                                </div>
+                                                <div class="container my-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="mb-3">Outstanding Receivables</div>
+                                                            <div>₹200.00</div>
+                                                        </div>
+                                                        <div class="col-6 border-left text-end">
+                                                            <div class="mb-3">Unused Credits</div>
+                                                            <div>₹0.00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container my-5">
+                                                    <div class="row border-bottom mb-2">
+                                                        <div class="col-4">Other Details</div>
+                                                        <div class="col-7"></div>
+                                                        <div class="col-1"><i class="fa fa-angle-down"
+                                                                aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Customer Type</div>
+                                                        <div class="col-4">Individual</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Payment Terms</div>
+                                                        <div class="col-4">Due on Receipt</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Template Language</div>
+                                                        <div class="col-4">English</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GST Treatment</div>
+                                                        <div class="col-4">Consumer</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Place Of Supply</div>
+                                                        <div class="col-4">Maharashtra</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GSTIN</div>
+                                                        <div class="col-4">27AABFB2177L1ZD</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-6 text-center"><a href="">Address</a></div>
+                                                        <div class="col-6 text-center"><a href="" class="text-dark"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#popupCustomerDetails">Activity</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container border-top mb-5">
+                                                    <div class="timeline">
+                                                        <div class="point1">
+                                                            <div class="commentDate1"><small>11:06 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer1">
+                                                                <div>Bill Of Supply added</div>
+                                                                <div>Bill Of Supply BOS-000002 of amount ₹600.00 created
+                                                                    <b>by
+                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point2">
+                                                            <div class="commentDate2"><small>11:06 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer2">
+                                                                <div>Payments Received added</div>
+                                                                <div>Payment of amount ₹49.00 received and applied for
+                                                                    BOS-000001 <b>by
+                                                                        rakeshnandre433</b></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point3">
+                                                            <div class="commentDate3"><small>11:02 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer3">
+                                                                <div>Bill Of Supply updated</div>
+                                                                <div>Bill Of Supply BOS-000001 emailed <b>by
+                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point4">
+                                                            <div class="commentDate4"><small>10:58 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer4">
+                                                                <div>Bill Of Supply added</div>
+                                                                <div>Bill Of Supply BOS-000001 of amount ₹49.00 created
+                                                                    <b>by
+                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point5">
+                                                            <div class="commentDate5"><small>10:57 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer5">
+                                                                <div>Contact added</div>
+                                                                <div>Contact created with GST Treatment 'Consumer'.
+                                                                    State updated to MH.
+                                                                    <b>by rakeshnandre433</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-sm-2">
-                                <button class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#popupAdvSearCustomer"><i class="fa fa-search"
+                                        aria-hidden="true"></i></button>
+                                <div class="modal fade" id="popupAdvSearCustomer" tabindex="-1"
+                                    aria-labelledby="popupAdvSearCustomerLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupAdvSearCustomerLabel">Advanced Search
+                                                    Customers
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="my-4 row">
+                                                    <div class="col-10">
+                                                        <div class="dropdown border rounded">
+                                                            <button class="btn btn-light dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Customer Type
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2"><button type="button"
+                                                            class="btn btn-primary">Done</button></div>
+                                                </div>
+                                                <table class="table">
+                                                    <thead class="bg-light">
+                                                        <tr>
+                                                            <th>Customer Name</th>
+                                                            <th>Customer Type</th>
+                                                            <th>Mobile</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>sample baba
+                                                                <div>xyz@gmail.com</div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-3 row d-flex align-items-center">
@@ -572,7 +902,59 @@
                                 <input type="text" class="form-control" id="" placeholder="EST-000001">
                             </div>
                             <div class="col-sm-2">
-                                <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
+                                        class="fa fa-cog fs-5" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
+                                aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupEstimateNumberLabel">Estimate Number</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="my-3">To save you time, your Estimate numbers are set to
+                                                auto-generate mode. Are you sure you want to change this setting?</div>
+                                            <div class="form-check mb-3 mt-5">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Continue auto-generating sales order numbers
+                                                </label>
+                                                <div class="row ml-3">
+                                                    <div class="col-3">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Prefix</label>
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="EST-">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Next Number</label>
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="00001">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    I will add them manually each time
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-outline-dark"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-3 row d-flex align-items-center">
@@ -610,18 +992,325 @@
                         <div class="mb-3 row d-flex align-items-center">
                             <label for="" class="col-sm-3 col-form-label">Salesperson</label>
                             <div class="col-sm-6">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" data-bs-toggle="modal"
+                                    data-bs-target="#popupSalesPerson">
                                     <option selected>Select or Add Salesperson</option>
                                 </select>
+                            </div>
+                            <div class="modal fade" id="popupSalesPerson" tabindex="-1"
+                                aria-labelledby="popupSalesPersonLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="modal-body">
+                                            no results found
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-start">
+                                            <a href="" data-bs-toggle="modal"
+                                                data-bs-target="#popupManageSalesPerson"><i class="fa fa-cog fs-5"
+                                                    aria-hidden="true"></i> Manage Salesperson</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupManageSalesPerson" tabindex="-1"
+                                aria-labelledby="popupManageSalesPersonLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupManageSalesPersonLabel">Manage Salespersons
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="my-4 row">
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control input-sales-person" id=""
+                                                        placeholder="Search Salespersons">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <button type="submit" class="btn btn-primary mb-3"
+                                                        data-bs-toggle="modal" data-bs-target="#popupNewSalesPerson">+
+                                                        New
+                                                        Salesperson</button>
+                                                </div>
+                                            </div>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Salespersons Name</th>
+                                                        <th></th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td class="text-secondary">No salespersons found.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-outline-dark"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupNewSalesPerson" tabindex="-1"
+                                aria-labelledby="popupNewSalesPersonLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupNewSalesPersonLabel">Manage Salespersons
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="my-4 row mx-5 bg-light p-3">
+                                                <div class="col-6">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Name<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Email<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3"> <button type="button"
+                                                            class="btn btn-primary">Save
+                                                            and Send</button>
+                                                    </div>
+                                                    <div class="col-2"><button type="button"
+                                                            class="btn btn-outline-dark">Cancel</button></div>
+                                                </div>
+                                            </div>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Salespersons Name</th>
+                                                        <th></th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td class="text-secondary">No salespersons found.</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-3 row d-flex align-items-center">
                             <label for="" class="col-sm-3 col-form-label">Project Name</label>
                             <div class="col-sm-6">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" data-bs-toggle="modal"
+                                    data-bs-target="#popupProject">
                                     <option selected>Select a Project</option>
                                 </select>
                                 <div><small>Select a customer to associate a project.</small></div>
+                            </div>
+                            <div class="modal fade" id="popupProject" tabindex="-1" aria-labelledby="popupProjectLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="popupProjectLabel">New Project</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container border-bottom">
+                                                <div class="mb-3 row">
+                                                    <label for="" class="col-sm-3 col-form-label">Project Name<span
+                                                            class="text-danger">*</span></label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label for="" class="col-sm-3 col-form-label">Description</label>
+                                                    <div class="col-sm-6">
+                                                        <textarea class="form-control"
+                                                            placeholder="Max. 2000 characters" id=""></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label for="" class="col-sm-3 col-form-label">Customer Name<span
+                                                            class="text-danger">*</span></label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select customer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-1 d-flex align-items-center"><i
+                                                            class="fa fa-search text-primary fs-5"
+                                                            aria-hidden="true"></i> </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label for="" class="col-sm-3 col-form-label">Billing Method<span
+                                                            class="text-danger">*</span></label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected></option>
+                                                            <option>Fixed Cost for Project</option>
+                                                            <option>Based on Project Hours</option>
+                                                            <option>Based on Task Hours</option>
+                                                            <option>Based on Staff Hours</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container border-bottom mt-3">
+                                                <h6>Users</h6>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">User</label>
+                                                            <input type="text" class="form-control bg-light mb-3" id=""
+                                                                placeholder="rakeshnandre433">
+                                                            <div class="dropdown mb-3">
+                                                                <button
+                                                                    class="btn btn-white border rounded dropdown-toggle"
+                                                                    type="button" id="dropdownMenuButton1"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Select User
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                    <li><a class="dropdown-item" href="#"><select
+                                                                                class="form-select"
+                                                                                aria-label="Default select example">
+                                                                                <option selected>Select User</option>
+                                                                            </select></a></li>
+                                                                    <li><a class="dropdown-item"
+                                                                            href="#">rakeshnandre433</a></li>
+                                                                    <li><a class="dropdown-item text-primary" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#popupInviteUser">+
+                                                                            Invite User</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div><a href="#">+ Add User</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Email</label>
+                                                            <input type="email" class="form-control bg-light mb-3" id=""
+                                                                placeholder="rakeshnandre433@gmail.com">
+                                                            <input type="email" class="form-control" id=""
+                                                                placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <i class="fa fa-minus-circle text-danger mt-5"
+                                                            aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container mt-3">
+                                                <h6>Project Tasks</h6>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Task Name</label>
+                                                            <input type="text" class="form-control mb-3" id=""
+                                                                placeholder="Task Name">
+                                                            <div><a href="#">+ Add Project Task</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Description</label>
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="Description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="form-check mt-4">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="" checked>
+                                                            <label class="form-check-label" for="">
+                                                                Billable <i class="fa fa-minus-circle text-danger"
+                                                                    aria-hidden="true"></i>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id=""
+                                                        checked>
+                                                    <label class="form-check-label" for="">
+                                                        Add to the watchlist on my dashboard
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-start">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupInviteUser" tabindex="-1"
+                                aria-labelledby="popupInviteUserLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupInviteUserLabel">Invite User</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body mx-5">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Email Address<span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Name<span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Role<span
+                                                        class="text-danger">*</span></label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Admin</option>
+                                                    <option>Staff</option>
+                                                    <option>Staff - Assigned Only</option>
+                                                    <option>TimesheetStaff</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-start">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -643,7 +1332,171 @@
                     </div>
                 </div>
                 <div class="mt-4">
-                    <div class="position-absolute icon-th1"><i class="fa fa-th text-secondary" aria-hidden="true"></i>
+                    <div class="position-absolute icon-th1"><i class="fa fa-th text-secondary" aria-hidden="true"
+                            aria-hidden="true" data-bs-toggle="modal" data-bs-target="#popupItemDetails"></i>
+                    </div>
+                    <div class="modal fade" id="popupItemDetails" tabindex="-1" aria-labelledby="popupItemDetailsLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header bg-light">
+                                    <h5 class="modal-title" id="popupItemDetailsLabel">Item Details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex align-items-center justify-content-start divItem">
+                                        <i
+                                            class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
+                                        <div class="ml-4">
+                                            <div>Sales and Purchase Items (Service)</div>
+                                            <h6 class="ml-2">AK <i class="fa fa-caret-square-o-right text-primary fs-5"
+                                                    aria-hidden="true"></i>
+                                                <div>
+                                                    <small>pcs</small>
+                                                </div>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="container my-4">
+                                        <div class="row border-bottom mb-3">
+                                            <div class="col-6 text-center">
+                                                <h6><a href="">Address</a></h6>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <h6><a href="" class="text-dark" data-bs-toggle="modal"
+                                                        data-bs-target="#popupItemDetails2">Activity</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container mb-5">
+                                        <div class="row mb-2">
+                                            <div class="col"><b>Sales Information</b></div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-3 text-secondary">Selling Price</div>
+                                            <div class="col-3">₹200.00</div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-3 text-secondary">Sales Account</div>
+                                            <div class="col-3">Sales</div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row mb-2">
+                                            <div class="col"><b>Purchase Information</b></div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-3 text-secondary">Purchase Price</div>
+                                            <div class="col-3">₹100.00</div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-3 text-secondary">Sales Account</div>
+                                            <div class="col-3">Cost of Goods Sold</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="popupItemDetails2" tabindex="-1"
+                        aria-labelledby="popupItemDetails2Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header bg-light">
+                                    <h5 class="modal-title" id="popupItemDetails2Label">Item Details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex align-items-center justify-content-start divItem">
+                                        <i
+                                            class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
+                                        <div class="ml-4">
+                                            <div>Sales and Purchase Items (Service)</div>
+                                            <h6 class="ml-2">AK <i class="fa fa-caret-square-o-right text-primary fs-5"
+                                                    aria-hidden="true"></i>
+                                                <div>
+                                                    <small>pcs</small>
+                                                </div>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="container my-4">
+                                        <div class="row border-bottom mb-3">
+                                            <div class="col-6 text-center">
+                                                <h6><a href="" class="text-dark" data-bs-toggle="modal"
+                                                        data-bs-target="#popupItemDetails">Address</a></h6>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <h6><a href="">Activity</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row mb-3">
+                                            <div class="col-6 text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-white dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        All Estimates
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item text-secondary" href="#">Default
+                                                                Filters</a></li>
+                                                        <li><a class="dropdown-item" href="#">All</a></li>
+                                                        <li><a class="dropdown-item" href="#">Pending Approval</a></li>
+                                                        <li><a class="dropdown-item" href="#">Approved</a></li>
+                                                        <li><a class="dropdown-item" href="#">Sent</a></li>
+                                                        <li><a class="dropdown-item" href="#">Client Viewed</a></li>
+                                                        <li><a class="dropdown-item" href="#">Accepted</a></li>
+                                                        <li><a class="dropdown-item" href="#">Invoiced</a></li>
+                                                        <li><a class="dropdown-item" href="#">Declined</a></li>
+                                                        <li><a class="dropdown-item" href="#">Expired</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-white dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Status: All
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3 bg-light text-center p-3">
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Show only Dr.aware hospital and Nursing Home's transactions
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col"><b>Dr.aware hospital and Nursing Home</b></div>
+                                        </div>
+                                        <div class="row mb-3 text-center">
+                                            <div class="col-4">EST-000002</div>
+                                            <div class="col-4"><a href="">Sent</a></div>
+                                            <div class="col-4">Item Price: <b>₹629.99</b></div>
+                                        </div>
+                                        <div class="row mb-3 border-bottom text-center">
+                                            <div class="col-4">10/07/2022</div>
+                                            <div class="col-4"></div>
+                                            <div class="col-4">Quantity Sold: <b>1.00</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="position-absolute icon-th2"><i class="fa fa-th text-secondary" aria-hidden="true"></i>
                     </div>
@@ -667,7 +1520,8 @@
                             <tr>
                                 <td>
                                     <div class="d-flex justify-content-between">
-                                        <div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true"></i> AK
+                                        <div><i class="fa fa-picture-o text-secondary fs-3" style="opacity: 0.7;"></i>
+                                            AK
                                         </div>
                                         <div class="text-secondary"><i class="fa fa-dot-circle-o"
                                                 aria-hidden="true"></i> <i class="fa fa-times-circle-o"
@@ -678,8 +1532,110 @@
                                             id="floatingTextarea3"></textarea>
                                     </div>
                                     <div class="ml-5">
-                                        <span class="bg-success">SERVICE</span> SAC: <a href="">998313 <i
-                                                class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        <span class="bg-success">SERVICE</span> SAC: <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#popupSAC">998313 <i class="fa fa-pencil"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="modal fade" id="popupSAC" tabindex="-1" aria-labelledby="popupSACLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="popupSACLabel">SAC</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row d-flex align-items-center">
+                                                        <div class="col-10">
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="998313">
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <i class="fa fa-search text-primary fs-3" aria-hidden="true"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#popupFindSAC"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-outline-dark"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="popupFindSAC" tabindex="-1"
+                                        aria-labelledby="popupFindSACLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="popupFindSACLabel">Find SAC Code</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body mx-5">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Search HSN code for your
+                                                            item</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            data-bs-toggle="modal" data-bs-target="#popupFindHSNCode">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        Could not find SAC code for item. Please provide the correct
+                                                        description.
+                                                        <div class="text-center">Or, <a href="#">Contact Support</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="popupFindHSNCode" tabindex="-1"
+                                        aria-labelledby="popupFindHSNCodeLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light">
+                                                    <h5 class="modal-title" id="popupFindHSNCodeLabel">Find HSN
+                                                        Code
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body mx-5">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Search HSN for your
+                                                            service</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="Clinical">
+                                                    </div>
+                                                    <div class="container border text-center rounded p-3">
+                                                        <div class="mb-3 row border-bottom">
+                                                            <div class="col-3">
+                                                                <h6>HSN</h6>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h6>Description</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-3">
+                                                                <div class="text-primary">38253000</div>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="text-start">Residual products of chemical or
+                                                                    related
+                                                                    industries,
+                                                                    not specified or included elsewhere; Municipal
+                                                                    waste; Sewage
+                                                                    sludge;
+                                                                    Other waste mentioned in Note 6 in this case - <span
+                                                                        class="bg-warning">Clinical</span> waste</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                                 <td class="text-end">1.00</td>
@@ -697,7 +1653,8 @@
                             <tr>
                                 <td>
                                     <div class="d-flex justify-content-between">
-                                        <div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true"></i>
+                                        <div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true"
+                                                style="opacity: 0.7;"></i>
                                             <span class="text-secondary">Type or click to select an item</span>
                                         </div>
                                     </div>

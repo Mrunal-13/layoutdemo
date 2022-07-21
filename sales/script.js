@@ -140,6 +140,27 @@ $(document).ready(function () {
         $("#showCredit").show();
     });
 
+    // Code for add comment @anjudewangan
+    // const addCommentList = [];
+    // addCommentList.map((comment) => {
+    //     $(".timeline").append('<div class="commPoint1"></div><div class="bg-light rounded border border-secondary divComm1"><textarea class="form-control" id="addComment" rows="3">' + comment + '</textarea></div>');
+    // });
+
+    // $("#btnAddComment").click(function () {
+    //     const getComment = $("#addComment").val().trim();
+    //     addCommentList.push(getComment);
+
+    //     $(".divComment").append('<div class="commDate2"><small>08:49 AM</small><small class="text-secondary">24/06/2022</small></div><div class="commPoint3"></div><div class="bg-light rounded border border-secondary divComm3"><div class="d-flex justify-content-between"><div>' + getComment + '</div><i class="fa fa-trash deleteComment" aria-hidden="true"></i></div><div class="mt-4"><small>by rakeshnandre433</small></div></div>');
+
+    //     $("#addComment").val("");
+    //     return false;
+    // });
+
+    // $(document).on("click", ".deleteComment", function () {
+    //     $(this).parent().parent('div').remove();
+    // });
+    // Code for add comment @anjudewangan
+
 });
 
 // Alert Dropdown
@@ -333,4 +354,6 @@ new Chart("myChart", {
 // function transform(option, argument) {
 //     editor.document.execCommand(option, true, argument);
 // };
+
+
 // Code for add Sales @anjudewangan

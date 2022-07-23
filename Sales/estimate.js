@@ -1,6 +1,3 @@
-// Code for add item @anjudewangan 
-// Alert Dropdown
-
 let alertsDropdown = document.getElementById("alertsDropdown");
 let alertDetails = document.getElementById("alertDetails");
 alertDetails.style.display = "none";
@@ -12,11 +9,12 @@ alertsDropdown.addEventListener("click", () => {
     } else {
         alertDetails.style.display = "none";
     }
-});
+})
+
 
 let messagesDropdown = document.getElementById("messagesDropdown");
 let messageAlertDetails = document.getElementById("messageAlertDetails");
-// messageAlertDetails.style.display = "none";
+messageAlertDetails.style.display = "none";
 
 messagesDropdown.addEventListener("click", () => {
     if (messageAlertDetails.style.display == "none") {
@@ -26,18 +24,8 @@ messagesDropdown.addEventListener("click", () => {
     } else {
         messageAlertDetails.style.display = "none";
     }
-});
-
-let adminSettingBox = document.getElementById("adminSettingBox");
-adminSettingBox.style.display = "none";
-let dropbtnMyfunction = document.getElementById("dropbtnMyfunction");
-dropbtnMyfunction.addEventListener("click", () => {
-    if (adminSettingBox.style.display === "none") {
-        adminSettingBox.style.display = "";
-    } else {
-        adminSettingBox.style.display = "none";
-    }
 })
+
 
 // collapse button function to toggle sidenav barr
 function openNav() {
@@ -50,33 +38,57 @@ function openNav() {
             document.getElementById("mySidenav").style.width = "63px";
         }
     }
-    if (document.getElementById("leftright").style.width === "95.5%" || document.getElementById("leftright").style.width === "") {
-        document.getElementById("leftright").style.width = "83.5%";
-    } else {
-        document.getElementById("leftright").style.width = "95.5%";
-    }
-    if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === "") {
-        document.getElementById("navbar-fourth").style.width = "83.5%";
-        console.log("83")
-    } else if (document.getElementById("navbar-fourth").style.width === "78%") {
-        document.getElementById("navbar-fourth").style.width = "65%";
-        console.log("65")
-    } else if (document.getElementById("navbar-fourth").style.width === "65%") {
-        document.getElementById("navbar-fourth").style.width = "78%";
-        console.log("78")
-    } else {
-        document.getElementById("navbar-fourth").style.width = "96%";
-    }
-    if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
-        document.getElementById("Appointment").style.marginLeft = "300px";
-    } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
-        document.getElementById("Appointment").style.marginLeft = "480px"
-    } else if (document.getElementById("Appointment").style.marginLeft === "180px") {
-        document.getElementById("Appointment").style.marginLeft = "10px"
-    } else if (document.getElementById("Appointment").style.marginLeft === "10px") {
-        document.getElementById("Appointment").style.marginLeft = "180px"
-    }
+    // if (document.getElementById("leftright").style.width === "95.5%" || document.getElementById("leftright").style.width === "") {
+    //     document.getElementById("leftright").style.width = "83.5%"
+    // } else {
+    //     document.getElementById("leftright").style.width = "95.5%";
+    // }
+    // if (document.getElementById("navbar-fourth").style.width === "96%" || document.getElementById("navbar-fourth").style.width === "") {
+    //     document.getElementById("navbar-fourth").style.width = "83.5%";
+    //     console.log("83")
+    // } else if (document.getElementById("navbar-fourth").style.width === "78%") {
+    //     document.getElementById("navbar-fourth").style.width = "65%";
+    //     console.log("65")
+    // } else if (document.getElementById("navbar-fourth").style.width === "65%") {
+    //     document.getElementById("navbar-fourth").style.width = "78%";
+    //     console.log("78")
+    // } else {
+    //     document.getElementById("navbar-fourth").style.width = "96%";
+    // }
+    // if (document.getElementById("commeddiv").style.marginLeft === "1170px" || document.getElementById("commeddiv").style.marginLeft === ""){
+    //   document.getElementById("commeddiv").style.marginLeft = "980px"
+    // }
+    // else if (document.getElementById("commeddiv").style.marginLeft === "900px" || document.getElementById("commeddiv").style.marginLeft === ""){
+    //   document.getElementById("commeddiv").style.marginLeft = "700px"
+    // }
+    // else if(document.getElementById("commeddiv").style.marginLeft === "980px"){
+    //   document.getElementById("commeddiv").style.marginLeft = "1170px";
+    // }
+    // else if (document.getElementById("commeddiv").style.marginLeft === "700px" || document.getElementById("commeddiv").style.marginLeft === ""){
+    //   document.getElementById("commeddiv").style.marginLeft = "900px";
+    //   console.log("900")
+    // }
+    // if (document.getElementById("Appointment").style.marginLeft === "480px" || document.getElementById("Appointment").style.marginLeft === "") {
+    //     document.getElementById("Appointment").style.marginLeft = "300px";
+    // } else if (document.getElementById("Appointment").style.marginLeft === "300px") {
+    //     document.getElementById("Appointment").style.marginLeft = "480px"
+    // } else if (document.getElementById("Appointment").style.marginLeft === "180px") {
+    //     document.getElementById("Appointment").style.marginLeft = "10px"
+    // } else if (document.getElementById("Appointment").style.marginLeft === "10px") {
+    //     document.getElementById("Appointment").style.marginLeft = "180px"
+    // }
 }
+
+let adminSettingBox = document.getElementById("adminSettingBox");
+adminSettingBox.style.display = "none";
+let dropbtnMyfunction = document.getElementById("dropbtnMyfunction");
+dropbtnMyfunction.addEventListener("click", () => {
+    if (adminSettingBox.style.display === "none") {
+        adminSettingBox.style.display = "";
+    } else {
+        adminSettingBox.style.display = "none";
+    }
+})
 
 
 // Code for Advanced Patient Search @anjudewangan
@@ -133,16 +145,16 @@ function HandleCancel() {
     $("#errorShow").hide();
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     const firstCategory = $("#ddlInfo option:first").val();
     GetControl(firstCategory);
 
-    $("#ddlInfo").change(function (event) {
+    $("#ddlInfo").change(function(event) {
         const selectedCategory = $(this).val();
         GetControl(selectedCategory);
     });
 
-    $("#btnAddMore").click(function () {
+    $("#btnAddMore").click(function() {
         if (isCategoriesShown === false) {
             categoryList.map((category) => {
                 $("#divCategories").append('<input name="category" type="radio" id="' + category + '" value="' + category + '"><label for="' + category + '">' + category + '</label><br />');
@@ -151,14 +163,15 @@ $(document).ready(function () {
         }
     });
 
-    $('#divCategories').on('change', "input[name=category]", function (event) {
+    $('#divCategories').on('change', "input[name=category]", function(event) {
         $("#ddlInfo option:contains(" + event.target.value.trim() + ")").prop('selected', 'selected');
         $('#ddlInfo').trigger('change');
         $("#divCategories").html("");
         isCategoriesShown = false;
     });
 });
-//code to add item 
+
+// code to new item add by @mrunal
 
 $(document).ready(function () {
     $(".row-SAC").hide();
@@ -207,55 +220,14 @@ $(document).ready(function () {
     });
 });
 
-// Add new item in table @anjudewangan
+// code by @mrunal nimbalkar for estimate number functiion
+function changelayout(){
+    document.getElementById("topheading").style.display = "none";
+    document.getElementById("bottomtable").style.display = "none";
+    document.getElementById("seconddivestimate").style.display = "block";
+}
 
-const addNewItem = [];
-addNewItem.map((name, des, rate, hs, usage, purchaseAcco, account, purchaseDes, purchaseRate, sku, showInStore, stockOnHand) => {
-    $(".container-add-new-item .div-add-item").append('<input type="text" class="form-control" id="inputName" value="' + name + '"><select class="form-select" aria-label="Default select example" id="inputUnit"><option selected>' + usage + '</option></select> <input type="text" class="form-control" id="inputHSN" value="' + hs + '"><input type="text" class="form-control" id="inputSAC" value="' + hs + '"><input type="text" class="form-control" id="inputSelling" value="' + rate + '"><select class="form-select" aria-label="Default select example" id="inputAccount"><option selected>' + account + '</option></select><select class="form-select" aria-label="Default select example" id="inputAccountGoods"><option selected>' + purchaseAcco + '</option></select><input type="text" class="form-control" id="inputCost" value="' + purchaseRate + '"><textarea class="form-control" id="inputDes2">' + purchaseDes + '</textarea><textarea class="form-control" id="inputDes1">' + des + '</textarea>');
-});
-
-$("#btnAddNewItem").click(function () {
-
-    const getName = $("#inputName").val().trim();
-    const getDes = $("#inputDes1").val().trim();
-    const getRate = $("#inputSelling").val().trim();
-    const getHS = $("#inputHSN").val().trim();
-    const getUsage = $("#inputUnit").val().trim();
-    const getPurchaseDes = $("#inputDes2").val().trim();
-    const getPurchaseRate = $("#inputCost").val().trim();
-    const getPurchaseAcco = $("#inputAccountGoods").val().trim();
-    const getAccount = $("#inputAccount").val().trim();
-    // const getSKU = $("#inputUnit").val().trim();
-    // const getShowInStore = $("#inputUnit").val().trim();
-    // const getStockOnhand = $("#inputUnit").val().trim();
-
-    addNewItem.push(getName);
-    addNewItem.push(getDes);
-    addNewItem.push(getRate);
-    addNewItem.push(getHS);
-    addNewItem.push(getUsage);
-    addNewItem.push(getPurchaseDes);
-    addNewItem.push(getPurchaseRate);
-    addNewItem.push(getPurchaseAcco);
-    addNewItem.push(getAccount);
-    // addNewItem.push(getSKU);
-    // addNewItem.push(getShowInStore);
-    // addNewItem.push(getStockOnhand);
-
-    $(".table-item tbody").append('<tr><td class="text-primary"><input class="form-check-input" type="checkbox" value="" id="">' + getName + '</td><td>' + getDes + '</td><td>' + getRate + '</td><td>' + getHS + '</td><td>' + getUsage + '</td><td>' + getPurchaseAcco + '</td><td>' + getAccount + '</td><td>' + getPurchaseDes + '</td><td>' + getPurchaseRate + '</td></tr>');
-
-    $("#inputName").val("");
-    $("#inputDes1").val("");
-    $("#inputSelling").val("");
-    $("#inputHSN").val("");
-    $("#inputUnit").val("");
-    $("#inputDes2").val("");
-    $("#inputCost").val("");
-    $("#inputAccountGoods").val("");
-    $("#inputAccount").val("");
-    return false;
-});
-
-// Add new item in table @anjudewangan
-
-// Code for add item @anjudewangan 
+// edit btn code 
+document.getElementById("editbtn").onclick = function(){
+    location.href="edit.html";
+};

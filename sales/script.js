@@ -1,4 +1,168 @@
-// Code for add item @anjudewangan 
+// Code for add Sales @anjudewangan 
+$(document).ready(function () {
+    $(".showEastimateTable").hide();
+    $("#hideEastimate").hide();
+
+    $(".showSalesOrderTable").hide();
+    $("#hideSalesOrder").hide();
+
+    $(".showSalesOrderTable2").hide();
+    $("#hideSalesOrder2").hide();
+
+    $(".showDeliveryChallanTable").hide();
+    $("#hideDeliveryChallan").hide();
+
+    $(".showRecurringTable").hide();
+    $("#hideRecurring").hide();
+
+    $(".showExpenseTable").hide();
+    $("#hideExpense").hide();
+
+    $(".showProjectTable").hide();
+    $("#hideProject").hide();
+
+    $(".showJournalsTable").hide();
+    $("#hideJournals").hide();
+
+    $(".showBillTable").hide();
+    $("#hideBill").hide();
+
+    $(".showCreditTable").hide();
+    $("#hideCredit").hide();
+
+    $("#showEastimate").click(function () {
+        $(".showEastimateTable").show();
+        $("#hideEastimate").show();
+        $("#showEastimate").hide();
+    });
+    $("#hideEastimate").click(function () {
+        $(".showEastimateTable").hide();
+        $("#hideEastimate").hide();
+        $("#showEastimate").show();
+    });
+
+    $("#showSalesOrder").click(function () {
+        $(".showSalesOrderTable").show();
+        $("#hideSalesOrder").show();
+        $("#showSalesOrder").hide();
+    });
+    $("#hideSalesOrder").click(function () {
+        $(".showSalesOrderTable").hide();
+        $("#hideSalesOrder").hide();
+        $("#showSalesOrder").show();
+    });
+
+    $("#showSalesOrder2").click(function () {
+        $(".showSalesOrderTable2").show();
+        $("#hideSalesOrder2").show();
+        $("#showSalesOrder2").hide();
+    });
+    $("#hideSalesOrder2").click(function () {
+        $(".showSalesOrderTable2").hide();
+        $("#hideSalesOrder2").hide();
+        $("#showSalesOrder2").show();
+    });
+
+    $("#showDeliveryChallan").click(function () {
+        $(".showDeliveryChallanTable").show();
+        $("#hideDeliveryChallan").show();
+        $("#showDeliveryChallan").hide();
+    });
+    $("#hideDeliveryChallan").click(function () {
+        $(".showDeliveryChallanTable").hide();
+        $("#hideDeliveryChallan").hide();
+        $("#showDeliveryChallan").show();
+    });
+
+    $("#showRecurring").click(function () {
+        $(".showRecurringTable").show();
+        $("#hideRecurring").show();
+        $("#showRecurring").hide();
+    });
+    $("#hideRecurring").click(function () {
+        $(".showRecurringTable").hide();
+        $("#hideRecurring").hide();
+        $("#showRecurring").show();
+    });
+
+    $("#showExpense").click(function () {
+        $(".showExpenseTable").show();
+        $("#hideExpense").show();
+        $("#showExpense").hide();
+    });
+    $("#hideExpense").click(function () {
+        $(".showExpenseTable").hide();
+        $("#hideExpense").hide();
+        $("#showExpense").show();
+    });
+
+    $("#showProject").click(function () {
+        $(".showProjectTable").show();
+        $("#hideProject").show();
+        $("#showProject").hide();
+    });
+    $("#hideProject").click(function () {
+        $(".showProjectTable").hide();
+        $("#hideProject").hide();
+        $("#showProject").show();
+    });
+
+    $("#showJournals").click(function () {
+        $(".showJournalsTable").show();
+        $("#hideJournals").show();
+        $("#showJournals").hide();
+    });
+    $("#hideJournals").click(function () {
+        $(".showJournalsTable").hide();
+        $("#hideJournals").hide();
+        $("#showJournals").show();
+    });
+
+    $("#showBill").click(function () {
+        $(".showBillTable").show();
+        $("#hideBill").show();
+        $("#showBill").hide();
+    });
+    $("#hideBill").click(function () {
+        $(".showBillTable").hide();
+        $("#hideBill").hide();
+        $("#showBill").show();
+    });
+
+    $("#showCredit").click(function () {
+        $(".showCreditTable").show();
+        $("#hideCredit").show();
+        $("#showCredit").hide();
+    });
+    $("#hideCredit").click(function () {
+        $(".showCreditTable").hide();
+        $("#hideCredit").hide();
+        $("#showCredit").show();
+    });
+
+    // Code for add comment @anjudewangan
+    // const addCommentList = [];
+    // addCommentList.map((comment) => {
+    //     $(".timeline").append('<div class="commPoint1"></div><div class="bg-light rounded border border-secondary divComm1"><textarea class="form-control" id="addComment" rows="3">' + comment + '</textarea></div>');
+    // });
+
+    // $("#btnAddComment").click(function () {
+    //     const getComment = $("#addComment").val().trim();
+    //     addCommentList.push(getComment);
+
+    //     $(".divComment").append('<div class="commDate2"><small>08:49 AM</small><small class="text-secondary">24/06/2022</small></div><div class="commPoint3"></div><div class="bg-light rounded border border-secondary divComm3"><div class="d-flex justify-content-between"><div>' + getComment + '</div><i class="fa fa-trash deleteComment" aria-hidden="true"></i></div><div class="mt-4"><small>by rakeshnandre433</small></div></div>');
+
+    //     $("#addComment").val("");
+    //     return false;
+    // });
+
+    // $(document).on("click", ".deleteComment", function () {
+    //     $(this).parent().parent('div').remove();
+    // });
+    // Code for add comment @anjudewangan
+
+});
+
 // Alert Dropdown
 
 let alertsDropdown = document.getElementById("alertsDropdown");
@@ -158,104 +322,38 @@ $(document).ready(function () {
         isCategoriesShown = false;
     });
 });
-//code to add item 
 
-$(document).ready(function () {
-    $(".row-SAC").hide();
-    $(".row-Exemption").hide();
-    $(".div-dig-ser").hide();
-    $(".inactive").hide();
-    $("#flexRadioDefault1").click(function () {
-        $(".row-HSN").show();
-        $(".row-SAC").hide();
-        $(".row-Exemption").hide();
-        $(".div-dig-ser").hide();
-        $("input[name='flexRadioDefault1'][value='3']").prop('checked', true);
+// Code for Chart @anjudewangan
 
-    });
-    $("#flexRadioDefault2").click(function () {
-        $(".row-SAC").show();
-        $(".row-HSN").hide();
-        $(".row-Exemption").show();
-        $(".div-dig-ser").show();
-        $("input[name='flexRadioDefault1'][value='4']").prop('checked', true);
+var xValues = ["Dec 2022", "Jan 2022", "Feb 2022", "Mar 2022", "Apr 2022", "May 2022", "Jun 2022"];
+var yValues = [0, 0, 0, 0, 0, 0, 40];
+var barColors = ["", "", "", "", "", "", "green"];
 
-    });
-    $("#flexRadioDefault3").click(function () {
-        $(".row-HSN").show();
-        $(".row-SAC").hide();
-        $(".row-Exemption").hide();
-        $(".div-dig-ser").hide();
-        $("input[name='flexRadioDefault'][value='1']").prop('checked', true);
-
-    });
-    $("#flexRadioDefault4").click(function () {
-        $(".row-SAC").show();
-        $(".row-HSN").hide();
-        $(".row-Exemption").show();
-        $(".div-dig-ser").show();
-        $("input[name='flexRadioDefault'][value='2']").prop('checked', true);
-
-    });
-    $(".active").click(function () {
-        $(".inactive").toggle();
-        $(".active").toggle();
-    });
-    $(".inactive").click(function () {
-        $(".active").toggle();
-        $(".inactive").toggle();
-    });
+new Chart("myChart", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+        }]
+    },
+    options: {
+        legend: { display: false },
+        title: {
+            display: true,
+            text: "Total Income ( Last 6 Months ) - ₹49.00"
+        }
+    }
 });
 
-// Add new item in table @anjudewangan
+// Code for Chart @anjudewangan
 
-const addNewItem = [];
-addNewItem.map((name, des, rate, hs, usage, purchaseAcco, account, purchaseDes, purchaseRate, sku, showInStore, stockOnHand) => {
-    $(".container-add-new-item .div-add-item").append('<input type="text" class="form-control" id="inputName" value="' + name + '"><select class="form-select" aria-label="Default select example" id="inputUnit"><option selected>' + usage + '</option></select> <input type="text" class="form-control" id="inputHSN" value="' + hs + '"><input type="text" class="form-control" id="inputSAC" value="' + hs + '"><input type="text" class="form-control" id="inputSelling" value="' + rate + '"><select class="form-select" aria-label="Default select example" id="inputAccount"><option selected>' + account + '</option></select><select class="form-select" aria-label="Default select example" id="inputAccountGoods"><option selected>' + purchaseAcco + '</option></select><input type="text" class="form-control" id="inputCost" value="' + purchaseRate + '"><textarea class="form-control" id="inputDes2">' + purchaseDes + '</textarea><textarea class="form-control" id="inputDes1">' + des + '</textarea>');
-});
+// editor.document.designMode = "On";
 
-$("#btnAddNewItem").click(function () {
+// function transform(option, argument) {
+//     editor.document.execCommand(option, true, argument);
+// };
 
-    const getName = $("#inputName").val().trim();
-    const getDes = $("#inputDes1").val().trim();
-    const getRate = $("#inputSelling").val().trim();
-    const getHS = $("#inputHSN").val().trim();
-    const getUsage = $("#inputUnit").val().trim();
-    const getPurchaseDes = $("#inputDes2").val().trim();
-    const getPurchaseRate = $("#inputCost").val().trim();
-    const getPurchaseAcco = $("#inputAccountGoods").val().trim();
-    const getAccount = $("#inputAccount").val().trim();
-    // const getSKU = $("#inputUnit").val().trim();
-    // const getShowInStore = $("#inputUnit").val().trim();
-    // const getStockOnhand = $("#inputUnit").val().trim();
 
-    addNewItem.push(getName);
-    addNewItem.push(getDes);
-    addNewItem.push(getRate);
-    addNewItem.push(getHS);
-    addNewItem.push(getUsage);
-    addNewItem.push(getPurchaseDes);
-    addNewItem.push(getPurchaseRate);
-    addNewItem.push(getPurchaseAcco);
-    addNewItem.push(getAccount);
-    // addNewItem.push(getSKU);
-    // addNewItem.push(getShowInStore);
-    // addNewItem.push(getStockOnhand);
-
-    $(".table-item tbody").append('<tr><td class="text-primary"><input class="form-check-input" type="checkbox" value="" id="">' + getName + '</td><td>' + getDes + '</td><td>' + getRate + '</td><td>' + getHS + '</td><td>' + getUsage + '</td><td>' + getPurchaseAcco + '</td><td>' + getAccount + '</td><td>' + getPurchaseDes + '</td><td>' + getPurchaseRate + '</td></tr>');
-
-    $("#inputName").val("");
-    $("#inputDes1").val("");
-    $("#inputSelling").val("");
-    $("#inputHSN").val("");
-    $("#inputUnit").val("");
-    $("#inputDes2").val("");
-    $("#inputCost").val("");
-    $("#inputAccountGoods").val("");
-    $("#inputAccount").val("");
-    return false;
-});
-
-// Add new item in table @anjudewangan
-
-// Code for add item @anjudewangan 
+// Code for add Sales @anjudewangan

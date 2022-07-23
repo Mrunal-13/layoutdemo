@@ -1,4 +1,4 @@
-/* Code for nav and sidenav of Employee @anjudewangan  */
+/* Code for nav and sidenav of Sales @anjudewangan  */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -51,7 +51,7 @@
     align-items: center;
 }
 
-.navbar-second .nav-item {
+.navbar-second .nav-item, .ulBilling li  {
     list-style: none;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .sidenav-second-level li a {
-    font-size: 10px;
+    font-size: 21px;
 }
 
 .alertDetails {
@@ -526,9 +526,13 @@
     display: none;
 }
 
-/* Code for nav and sidenav of Employee @anjudewangan  */
+/* Code for nav and sidenav of Sales @anjudewangan  */
 
-/* Code for item @anjudewangan */
+/* Code for Sales @anjudewangan */
+.sales-link {
+    font-weight: 600;
+}
+
 .main {
     display: flex;
     align-items: center;
@@ -539,7 +543,7 @@
     top: 85px;
 }
 
-.main .container .row .col .setting-link {
+.main .container .row .setting-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -557,26 +561,259 @@
     width: 160px !important;
 }
 
-.main .row .col-11 {
-    margin-right: -100px;
-}
-
-/* .table-item thead tr th,
-.table-item tbody tr td {
-    text-align: center;
-} */
-
-.table-item tbody tr td a,
-.justify-content-start li a {
-    text-decoration: none;
+.table-customer {
+    width: 1400px !important;
 }
 
 .modal-body ul li {
     list-style-type: none;
 }
 
-.modal-select-file .col-6 ul li,
-.import-ul li {
+.modal-body .ulBilling li {
+    list-style-type: disc !important;
+}
+
+.modalCheck,
+.modalManageTaxInfo {
+    max-width: 1200px !important;
+}
+
+main .active-item {
+    background-color: rgb(196, 194, 194);
+}
+
+#popupDelete .modal-body i {
+    color: #EF8523;
+    font-size: 45px;
+}
+
+.timeline {
+    position: relative;
+    background-color: #00A3FF;
+    width: 2px;
+    left: 100px;
+    height: 850px;
+    top: 0px;
+}
+
+.point1 i {
+    position: absolute;
+    top: 100px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.point2 i {
+    position: absolute;
+    top: 250px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.point3 i {
+    position: absolute;
+    top: 400px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.point4 i {
+    position: absolute;
+    top: 550px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.point5 i {
+    position: absolute;
+    top: 700px;
+    font-size: 25px;
+    left: -18px;
+    border: 1px solid #00A3FF;
+    color: #00A3FF;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.pointDate1 {
+    position: absolute;
+    left: -95px;
+    top: 100px;
+}
+
+.pointDate2 {
+    position: absolute;
+    left: -95px;
+    top: 250px;
+}
+
+.pointDate3 {
+    position: absolute;
+    left: -95px;
+    top: 400px;
+}
+
+.pointDate4 {
+    position: absolute;
+    left: -95px;
+    top: 550px;
+}
+
+.pointDate5 {
+    position: absolute;
+    left: -95px;
+    top: 700px;
+}
+
+.divBillContainer1 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 100px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer2 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 250px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer3 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 400px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer4 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 550px;
+    position: absolute;
+    left: 35px;
+}
+
+.divBillContainer5 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 700px;
+    position: absolute;
+    left: 35px;
+}
+
+.commPoint1 {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: -5px;
+    background-color: #00A3FF;
+    z-index: 1;
+}
+
+.commPoint2 {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    position: relative;
+    top: 350px;
+    left: -5px;
+    background-color: #00A3FF;
+    z-index: 1;
+}
+
+.commPoint3 {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    position: relative;
+    top: 500px;
+    left: -5px;
+    background-color: #00A3FF;
+    z-index: 1;
+}
+
+.divComm1 {
+    position: absolute;
+    width: 608px;
+    padding: 20px;
+    height: 215px;
+    left: 35px;
+    top: 100px;
+}
+
+.divComm2 {
+    position: absolute;
+    width: 608px;
+    padding: 20px;
+    height: 119px;
+    left: 35px;
+    top: 350px;
+}
+
+.divComm3 {
+    position: absolute;
+    width: 608px;
+    padding: 20px;
+    height: 119px;
+    left: 35px;
+    top: 500px;
+}
+
+.commDate1 {
+    position: absolute;
+    left: -85px;
+    top: 350px;
+}
+
+.commDate2 {
+    position: absolute;
+    left: -85px;
+    top: 500px;
+}
+
+.statement-heading {
+    border-bottom: 2px solid black;
+}
+
+.divSendEmailHead {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.spanBcc {
+    top: 5px;
+    left: 1040px;
+}
+
+.modal-select-file .col-6 .divRecordFile ul li,
+.import-ul li{
     list-style: disc !important;
 }
 
@@ -595,90 +832,236 @@
     border: 1px solid #E9F2FF;
 }
 
-.main-allItems {
-    position: relative;
-    top: 76px;
-    left: 14px;
-}
-
-.main-allItems .col-left,
-.main-allItems .select-all-items {
-    background-color: #F5F5F5;
-    font-weight: 500;
-}
-
-.main-allItems .col-left .row {
-    border-bottom: 1px solid black;
-    font-weight: 500;
-}
-
-.main-allItems .col-left {
-    height: 666px;
-}
-
-.main-allItems .col-left .active-item {
-    background-color: rgb(196, 194, 194);
-}
-
-.main-allItems .col-right ul li {
-    list-style-type: none;
-    padding: 0 25px;
-    font-weight: 500;
-}
-
-.main-allItems .col-right ul .active-li {
-    color: rgb(0, 123, 255);
-    border-bottom: 5px solid rgb(0, 123, 255);
-    border-radius: 3px;
-}
-
-.status_active {
-    width: 90px;
-    height: 30px;
-    background: #72F17E;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    color: white;
-}
-
-.aactv_circle {
-    width: 18px;
-    height: 18px;
-    left: 72px;
-    top: 5px;
-    border-radius: 50%;
-    background: #19BC29;
-    font-size: 12px;
-}
-
-.status_in-active {
-    width: 90px;
-    height: 30px;
-    background: #F47E7E;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    color: white;
-}
-
-.in-aactv_circle {
-    width: 18px;
-    height: 18px;
-    left: 72px;
-    top: 5px;
-    border-radius: 50%;
-    background: #E30B0B;
-    font-size: 12px;
-}
-
 .sample {
     color: #D26478;
     background-color: rgba(210, 100, 120, 0.1);
 }
 
-/* Code for item  @anjudewangan */
+/* .dvSubject {
+    border: 1px solid #8A8484;
+    border-radius: 3px;
+    height: 145px;
+    width: 1007px;
+}
+
+.dvSubject-3 {
+    height: 190px;
+    width: 1010px;
+}
+
+.dvSubject-3 textarea {
+    width: 98%;
+    margin: 10px;
+    border: none;
+    height: 100px;
+} */
+
+.divAttachFile {
+    background: rgba(0, 163, 255, 0.075);
+}
+
+.col-3 .py-3 {
+    margin-left: 1px;
+}
+
+.div-send-text {
+    margin-left: -41px;
+}
+
+.banner-send {
+    transform: rotate(1400deg);
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    top: 227px;
+    left: 15px;
+    margin-left: 6px;
+    margin-top: 33px;
+    z-index: 1000;
+    padding: 5px 48px;
+}
+
+.comment {
+    position: relative;
+    background-color: #CCCCCC;
+    width: 2px;
+    left: 100px;
+    height: 850px;
+    top: 0px;
+}
+
+.comment1 i {
+    position: absolute;
+    top: 100px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment2 i {
+    position: absolute;
+    top: 250px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment3 i {
+    position: absolute;
+    top: 400px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment4 i {
+    position: absolute;
+    top: 550px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.comment5 i {
+    position: absolute;
+    top: 700px;
+    font-size: 25px;
+    left: -20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.commentDate1 {
+    position: absolute;
+    left: 535px;
+    top: 150px;
+}
+
+.commentDate2 {
+    position: absolute;
+    left: 535px;
+    top: 300px;
+}
+
+.commentDate3 {
+    position: absolute;
+    left: 535px;
+    top: 450px;
+}
+
+.commentDate4 {
+    position: absolute;
+    left: 535px;
+    top: 600px;
+}
+
+.commentDate5 {
+    position: absolute;
+    left: 535px;
+    top: 750px;
+}
+
+.divcomment1 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 100px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment2 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 250px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment3 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 400px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment4 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 550px;
+    position: absolute;
+    left: 35px;
+}
+
+.divcomment5 {
+    width: 480px;
+    height: 101px;
+    padding: 15px;
+    top: 700px;
+    position: absolute;
+    left: 35px;
+}
+
+.copy-delete1 {
+    right: 170px;
+    bottom: 800px;
+}
+
+.copy-delete2 {
+    right: 170px;
+    bottom: 650px;
+}
+
+.icon-th1 {
+    left: 187px;
+    bottom: 800px;
+}
+
+.icon-th2 {
+    left: 187px;
+    bottom: 650px;
+}
+
+.customer-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    padding-top: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.item-icon {
+    width: 80px;
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.divCustomer,
+.divItem {
+    background-color: #EDF8FF;
+    margin: 0 -16px;
+    padding: 12px 30px;
+}
+
+.input-sales-person {
+    border-radius: 30px;
+}
+
+/* Code for Sales @anjudewangan */

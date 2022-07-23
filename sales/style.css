@@ -51,7 +51,7 @@
     align-items: center;
 }
 
-.navbar-second .nav-item {
+.navbar-second .nav-item, .ulBilling li  {
     list-style: none;
 }
 
@@ -543,7 +543,7 @@
     top: 85px;
 }
 
-.main .container .row .col .setting-link {
+.main .container .row .setting-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -813,7 +813,7 @@ main .active-item {
 }
 
 .modal-select-file .col-6 .divRecordFile ul li,
-.import-ul li {
+.import-ul li{
     list-style: disc !important;
 }
 

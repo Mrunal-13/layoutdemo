@@ -528,310 +528,153 @@
     margin-left: 36px;
     display: none;
 }
-/* css for center contents */
-/* @mrunal nimbalkar */
 .main {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     justify-content: flex-start;
     position: relative;
-    flex-direction: column;
-    left: 30px;
+    /* flex-direction: column; */
+    left: 250px;
     top: 75px;
 }
-
-.main .container .row .col .setting-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    text-decoration: none;
-    color: #000000;
-    background-color: #FFEA97;
-    height: 32px;
-    width: 119px;
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-.main .container .row .col-6 .select-all-items {
-    width: 160px !important;
-    
-}
-
-.main .row .col-11 {
-    margin-left: -50px;
-}
-
-.table-item thead tr th,
-.table-item tbody tr td {
-    text-align: center;
-}
-
-.table-item tbody tr td a,
-.justify-content-start li a {
-    text-decoration: none;
-}
-
-.modal-body ul li {
-    list-style-type: none;
-}
-.modal-select-file .col-6 ul li, .import-ul li{
-    list-style: disc !important;
-}
-
-.modal-create-account,
-.modal-select-file {
-    max-width: 1000px !important;
-}
-
-.modal-select-file .divFile,
-.modal-select-file .divRecordFile,
-.modal-select-file .divFile input {
-    background-color: #E9F2FF;
-}
-.modal-select-file .divFile input{
-    border: 1px solid #E9F2FF;
-}
-
-.main-allItems {
-    position: relative;
-    top: 76px;
-    left: 14px;
-}
-
-.main-allItems .col-left,
-.main-allItems .select-all-items {
-    background-color: #F5F5F5;
-    font-weight: 500;
-}
-
-.main-allItems .col-left .row {
-    border-bottom: 1px solid black;
-    font-weight: 500;
-}
-
-.main-allItems .col-left {
-    height: 666px;
-}
-
-.main-allItems .col-left .active-item {
-    background-color: rgb(196, 194, 194);
-}
-
-.main-allItems .col-right ul li {
-    list-style-type: none;
-    padding: 0 25px;
-    font-weight: 500;
-}
-
-.main-allItems .col-right ul .active-li {
-    color: rgb(0, 123, 255);
-    border-bottom: 5px solid rgb(0, 123, 255);
-    border-radius: 3px;
-}
-
-.status_active {
-    width: 90px;
-    height: 30px;
-    background: #72F17E;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    color: white;
-}
-
-.aactv_circle {
-    width: 18px;
-    height: 18px;
-    left: 72px;
-    top: 5px;
-    border-radius: 50%;
-    background: #19BC29;
-    font-size: 12px;
-}
-
-.status_in-active {
-    width: 90px;
-    height: 30px;
-    background: #F47E7E;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    color: white;
-}
-
-.in-aactv_circle {
-    width: 18px;
-    height: 18px;
-    left: 72px;
-    top: 5px;
-    border-radius: 50%;
-    background: #E30B0B;
-    font-size: 12px;
-}
-.sample{
-    color: #D26478;
-    background-color: rgba(210, 100, 120, 0.1);
-}
-.dater{
-    display: flex;
-}
-.auto-generate{
-    margin-left: 15px;
-}
-.auto-generatetop{
-    margin-top: 110px;
-}
-.allestimate
-{
+.main p{
     font-size: 21px;
-    font-weight: 600;
-    margin-left: 15px;
-}
-
-#seconddivestimate{
-    display: none;
-    max-width: 2000px;
-    margin-left: 220px;
-}
-.topbar{
-    display: flex;
-}
-.parafont{
-    font-size: large;
-    font-weight: 500;
-    word-spacing: normal;
-    margin-top: 5px;
-}
-.topbarbuttonsedit{
-    margin-left: 50px;
-    margin-right: 20px;
-    width: fit-content;
-    height: 35px;
-}
-.topbarbuttoncopy{
-    margin-left: 20px;
-    margin-right: 5px;
-    height: 35px;
-}
-.topbarbuttonshare{
-    margin-left: 70px;
-    height: 35px;
 }
 .closingcross{
-    font-size: 35px;
-    font-weight: 800;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-left: 1000px;
 }
-.namerow:hover {
-    background-color: grey;
-}
-.names{
- display: flex;
-}
-.rightp{
-    margin-left: 100px;
-}
-.Convert{
-    position:relative;
-    border: 2px solid rgb(57, 54, 54);
+.block1{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 80%;
     border-radius: 5px;
-    width:75%;
-    padding: 5px;
-    display: flex;
-}
-.clip-icon{
-    border: 2px solid grey;
-    padding: 5px;
-    width: 4%;
-}
-.convertp{
-    line-height: 0%;
-    padding-top: 8px;
-    font-size: 12px;
-    margin-right: 35px;
-}
-.createproject{
-    margin-left: 25px;
-}
-.pdf{
-    border: 2px solid rgb(161, 145, 145);
-    width: 75%;
-    margin-top: 10px;
-    background-color: whitesmoke;
-    overflow: hidden;
-}
-.pdf img{
-    width: 100%;
-}
-.sent{
-    position: relative;
-    background-color: #00A3FF;
-    transform: rotate(-42.49deg);
-    color: white;
-    width: 15%;
-    margin-left: -18px;
-    margin-top: 10px;
-}
-.sent p{
-    margin-left: 15px;
-}
-.pdf2{
-    border: 2px solid rgb(161, 145, 145);
-    width: 93%;
-    padding: 5px;
-    margin-left: 25px;
-    
-}
-.nameNaddress{
-    display: flex;
-}
-.pdf2 p{
-    line-height: 0%;
-}
-.head4{
-    margin-top: 80px;
-    margin-left: 50%;
-}
-.Total{
-    padding-top: 10px;
-}
-.Terms{
-    padding-top: 30px;
-}
-.Amount{
     padding-top: 20px;
-    padding-left: 50%;
+    padding-bottom: 20px;
 }
-.sign{
-    padding-top: 85px;
-    padding-left: 50%;
-    
-}
-.bd{
-    border-left: 1px solid grey;
-    
-}
-.bdbottom{
-    border-bottom: 1px solid grey;
-}
-.col-6{
-    max-width: 49%;
-}
-.asign{
-    margin-left: -13px;
-}
-.bottomrow{
-    padding-bottom: 100px;
-}
-.moreinfo{
+.CustomerName{
     display: flex;
 }
-.Template{
-    margin-left: 400px;
+.custn:after {
+    content:"*";
+    color: red;
 }
-/* Code for sales  @Mrunal */
+.custn{
+    margin-left: 20px;
+}
+.selectname{
+    margin-left: 20px;
+    width: 500px;
+    color: grey;
+    border-color: grey;
+    height: 30px;
+}
+.veiwcustomer{
+    color: rgb(70, 171, 211);
+    font-size: 15px !important;
+    margin-left: 20px;
+
+}
+.searchbtn2{
+    height: 30px;
+    margin-left: 10px;
+}
+.Reference{
+    padding-bottom: 40px;
+}
+.Estimate{
+    padding-bottom: 40px;
+}
+.block1input{
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+}
+.settingicon i{
+    color: rgb(70, 171, 211);
+}
+.Estimateno{
+    display: flex;
+}
+.manage{
+    color: blue;
+}
+.dropdown{
+    margin-left: 20px;
+}
+.block3{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 5px;
+}
+.block4{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 75%;
+    border-radius: 5px;
+}
+.row1{
+    background-color: rgb(203, 201, 201);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+.bi-image-fill{
+    font-size: larger;
+    margin-right: 10px;
+}
+.dots{
+    margin-left: 260px;
+    color: black;
+}
+.itemdescription{
+    width: 300px;
+    height: 70px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+.service{
+    display: flex;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.service p{
+    font-size: small;
+    color: blue;
+}
+.row2{
+    border-bottom: 2px solid rgb(81, 79, 79);
+    width: 100%;
+    margin-left: 0px;
+}
+.clickitem{
+    display: flex;
+    color: #444444;
+}
+.clickitem p{
+    font-size: 15px;
+    margin-top: 5px;
+    /* margin-left: 2px; */
+    width: 80%;
+}
+.addline{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.block5{
+    display:flex;
+}
+.custnotes{
+    border: 2px solid grey;
+}
+.custnotesinp{
+    width: 500px;
+    height: 40px;
+}

@@ -1087,3 +1087,179 @@
     background-color: #6c757d;
     border-color: #6c757d;
 }
+
+/* mobile view */
+@media screen and (max-width:428px) {
+    .vl{
+        display: none;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .pateintul{
+        display: flex;
+        gap: 15px;
+        width: 410px;
+        position: relative;
+        /* bottom: 70px;
+        right: 17.9px; */
+        /* left: 22px; */
+        margin: 0;
+        padding: 0;
+        left: 10px;
+        top: 10px;
+    }
+    
+    .e-queque{
+        position: relative;
+        left: 30px;
+    }
+    .e-queque div{
+        width: 148px;
+       height: 30px;
+    }
+    .e-queque label{
+        display: flex;
+        align-items: center;
+    }
+    .nav-link{
+        display: flex;
+        position: relative;
+        left: 20px;
+        width: max-content;
+    }
+    .carousel{
+        width: 428px;
+        position: relative;
+        /* right: 17px;
+        bottom: 50px; */
+        /* z-index: 0; */
+        overflow-x: hidden;
+    }
+    .pateintnamelist{
+        background-color: #ffffff;
+        position: relative;
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 5px;
+        overflow-x: hidden;
+        border-radius: 0;
+        top: 10px;
+    }
+    .pateintnamelist div{
+        width: 400px;
+        position: relative;
+        left: 10px;
+    }
+    #visitoptions{
+        position: relative;
+        left: 30px;
+        outline: none;
+        border: none;
+    }
+    .pateintTable{
+        background-color: #ffffff;
+        width: 428px;
+        position: relative;
+        /* right: 18px; */
+        /* background-color: #007185; */
+        padding: 0;
+        border-radius: 0;
+        margin: 0;
+        top: 0;
+        height: max-content;
+    }
+    .pateintTableTitle{
+        font-size: 16px;
+        width: 428px;
+        position: relative;
+        left: -140px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        height: auto;
+        top: 29px;
+    }
+    .Appointment{
+        display: none;
+     }
+    .commeddiv{
+        display: none;
+    } 
+    .navbar-fourth{
+        display: none;
+    }
+    .navbar{
+        position: relative;
+        width: 428px;
+    }
+}
+@media screen and (max-width:428px) {
+    
+    /* .pateintnamelist{
+        display: none;
+    }
+    .pateintTableTitle{
+        display: none;
+    }
+    .pateintul{
+        display: none;
+    } */
+    .leftright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 428px;
+        gap: 0px;
+        overflow-x: hidden;
+        z-index: 0;
+        height: max-content;
+    }
+    .Appointment{
+        width:  428px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        right: 90px;
+        /* top: 450px; */
+        bottom: 220px;
+    }
+    .Appointment > div{
+        width: 400px;
+        position: relative;
+        left: 16px;
+        display: flex;
+    }
+
+    .commeddiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 428px;
+        position: relative;
+        top: -200px;
+    }
+    .commeddiv > div{
+        width: 384px;
+    }
+    .MedicalHistorydiv{
+        width: 384px;
+    }
+    .hrline{
+        width: 384px;
+        background-color: #CACACA;
+    }
+    .commeddiv div:nth-child(2)>div img{
+        display: none;
+    }
+    .Communicationdiv{
+        position: relative;
+        right: 15px;
+    }
+    
+}

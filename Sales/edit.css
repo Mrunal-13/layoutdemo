@@ -1,4 +1,5 @@
 /* navbar 1 2 3 */
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -526,4 +527,154 @@
     font-size: 14px;
     margin-left: 36px;
     display: none;
+}
+.main {
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: flex-start;
+    position: relative;
+    /* flex-direction: column; */
+    left: 250px;
+    top: 75px;
+}
+.main p{
+    font-size: 21px;
+}
+.closingcross{
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-left: 1000px;
+}
+.block1{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.CustomerName{
+    display: flex;
+}
+.custn:after {
+    content:"*";
+    color: red;
+}
+.custn{
+    margin-left: 20px;
+}
+.selectname{
+    margin-left: 20px;
+    width: 500px;
+    color: grey;
+    border-color: grey;
+    height: 30px;
+}
+.veiwcustomer{
+    color: rgb(70, 171, 211);
+    font-size: 15px !important;
+    margin-left: 20px;
+
+}
+.searchbtn2{
+    height: 30px;
+    margin-left: 10px;
+}
+.Reference{
+    padding-bottom: 40px;
+}
+.Estimate{
+    padding-bottom: 40px;
+}
+.block1input{
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+}
+.settingicon i{
+    color: rgb(70, 171, 211);
+}
+.Estimateno{
+    display: flex;
+}
+.manage{
+    color: blue;
+}
+.dropdown{
+    margin-left: 20px;
+}
+.block3{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 5px;
+}
+.block4{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 75%;
+    border-radius: 5px;
+}
+.row1{
+    background-color: rgb(203, 201, 201);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+.bi-image-fill{
+    font-size: larger;
+    margin-right: 10px;
+}
+.dots{
+    margin-left: 260px;
+    color: black;
+}
+.itemdescription{
+    width: 300px;
+    height: 70px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+.service{
+    display: flex;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.service p{
+    font-size: small;
+    color: blue;
+}
+.row2{
+    border-bottom: 2px solid rgb(81, 79, 79);
+    width: 100%;
+    margin-left: 0px;
+}
+.clickitem{
+    display: flex;
+    color: #444444;
+}
+.clickitem p{
+    font-size: 15px;
+    margin-top: 5px;
+    /* margin-left: 2px; */
+    width: 80%;
+}
+.addline{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.block5{
+    display:flex;
+}
+.custnotes{
+    border: 2px solid grey;
+}
+.custnotesinp{
+    width: 500px;
+    height: 40px;
 }

@@ -25,7 +25,7 @@ function openNav() {
         }
     }
     if (document.getElementById("leftright").style.width === "95.5%" || document.getElementById("leftright").style.width === "") {
-        document.getElementById("leftright").style.width = "83.5%"
+        document.getElementById("leftright").style.width = "83.5%";
     } else {
         document.getElementById("leftright").style.width = "95.5%";
     }
@@ -353,7 +353,7 @@ var countries = [
     { "text": "Sao Tome and Principe", "value": "ST" },
     { "text": "Saudi Arabia", "value": "SA" },
     { "text": "Senegal", "value": "SN" },
-    { "text": "Serbia and Montenegro", "value": "CS" },
+    // { "text": "Serbia and Montenegro", "value": "CS" },
     { "text": "Seychelles", "value": "SC" },
     { "text": "Sierra Leone", "value": "SL" },
     { "text": "Singapore", "value": "SG" },

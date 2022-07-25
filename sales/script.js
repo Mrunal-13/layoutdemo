@@ -323,6 +323,61 @@ $(document).ready(function () {
     });
 });
 
+// editor.document.designMode = "On";
+
+// function transform(option, argument) {
+//     editor.document.execCommand(option, true, argument);
+// };
+
+//code to edit item 
+
+$(document).ready(function () {
+    $(".row-SAC").hide();
+    $(".row-Exemption").hide();
+    $(".div-dig-ser").hide();
+    $(".inactive").hide();
+    $("#flexRadioDefault1").click(function () {
+        $(".row-HSN").show();
+        $(".row-SAC").hide();
+        $(".row-Exemption").hide();
+        $(".div-dig-ser").hide();
+        $("input[name='flexRadioDefault1'][value='3']").prop('checked', true);
+
+    });
+    $("#flexRadioDefault2").click(function () {
+        $(".row-SAC").show();
+        $(".row-HSN").hide();
+        $(".row-Exemption").show();
+        $(".div-dig-ser").show();
+        $("input[name='flexRadioDefault1'][value='4']").prop('checked', true);
+
+    });
+    $("#flexRadioDefault3").click(function () {
+        $(".row-HSN").show();
+        $(".row-SAC").hide();
+        $(".row-Exemption").hide();
+        $(".div-dig-ser").hide();
+        $("input[name='flexRadioDefault'][value='1']").prop('checked', true);
+
+    });
+    $("#flexRadioDefault4").click(function () {
+        $(".row-SAC").show();
+        $(".row-HSN").hide();
+        $(".row-Exemption").show();
+        $(".div-dig-ser").show();
+        $("input[name='flexRadioDefault'][value='2']").prop('checked', true);
+
+    });
+    $(".active").click(function () {
+        $(".inactive").toggle();
+        $(".active").toggle();
+    });
+    $(".inactive").click(function () {
+        $(".active").toggle();
+        $(".inactive").toggle();
+    });
+});
+
 // Code for Chart @anjudewangan
 
 var xValues = ["Dec 2022", "Jan 2022", "Feb 2022", "Mar 2022", "Apr 2022", "May 2022", "Jun 2022"];
@@ -348,12 +403,5 @@ new Chart("myChart", {
 });
 
 // Code for Chart @anjudewangan
-
-// editor.document.designMode = "On";
-
-// function transform(option, argument) {
-//     editor.document.execCommand(option, true, argument);
-// };
-
 
 // Code for add Sales @anjudewangan

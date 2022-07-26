@@ -345,8 +345,8 @@
             </li>
             <!-- Code for link Sales @anjudewangan && @mrunal -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse" href="#collapseExamplePages"
-                    data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
+                    href="#collapseExamplePages" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-shopping-cart"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
@@ -355,10 +355,10 @@
                         <a href="../customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="./estimates.html" class="sales-link">Estimates</a>
+                        <a href="../estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="./salesOrders.html" class="sales-link">Sales Orders</a>
                     </li>
                     <li>
                         <a href="">Delivery Challans</a>
@@ -482,7 +482,7 @@
         <div class="container mt-5 border border-dark p-3 container-add-new-item">
             <div class="border-bottom border-dark pb-3 d-flex justify-content-between">
                 <h5>Edit Item</h5>
-                <a href="./newEstimates.html" class="text-dark fs-5"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="./newSalesOrder.html" class="text-dark fs-5"><i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
             <div class="container border-bottom border-dark px-5 py-3 div-add-item">
                 <div class="row">
@@ -701,7 +701,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container border-bottom border-dark px-5 py-3 div-add-item">
+            <div class="container border-bottom border-secondary px-5 py-3 div-add-item">
                 <div class="row">
                     <div class="col-6">
                         <div class="form-check">
@@ -923,13 +923,32 @@
                         </div>
                     </div>
                 </div>
-                <div>Do you want to keep track of this item? Enable inventory to view
-                    stock based on the sales and purchase transactions you reported.
+            </div>
+            <div class="container border-bottom border-dark px-5 py-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" disabled>
+                    <label class="form-check-label" for="">
+                        Track Inventory for this item
+                        <br>You cannot enable / disable inventory tracking once you have created a transaction for this
+                        item
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <div>Note: 1) You can configure opening stock and stock tracking for this item under the Item module
+                    </div>
+                    <ul class="ulBilling">
+                        <li>2) Changing field values will only affect new transactions and not existing transactions.
+                            You have modified the following fields:
+                            <ul class="import-ul">
+                                <li>Item Type</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="container border-bottom border-dark px-5 py-3">
                 <button class="btn btn-primary" id="btnAddNewItem">Save</button>
-                <a href="./newEstimates.html">
+                <a href="./newSalesOrder.html">
                     <button class="btn btn-outline-secondary">Cancel</button>
                 </a>
             </div>

@@ -1018,20 +1018,28 @@ main .active-item {
 
 .copy-delete1 {
     right: 170px;
-    bottom: 800px;
+    bottom: 950px;
 }
 
 .copy-delete2 {
+    right: 170px;
+    bottom: 800px;
+}
+.copy-delete3 {
     right: 170px;
     bottom: 650px;
 }
 
 .icon-th1 {
     left: 187px;
-    bottom: 800px;
+    bottom: 950px;
 }
 
 .icon-th2 {
+    left: 187px;
+    bottom: 800px;
+}
+.icon-th3 {
     left: 187px;
     bottom: 650px;
 }

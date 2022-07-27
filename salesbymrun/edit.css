@@ -1,4 +1,5 @@
-/* Code for nav and sidenav of Employee @anjudewangan  */
+/* navbar 1 2 3 */
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -200,10 +201,12 @@
     background-color: rgb(236, 236, 11);
 }
 
+/* Code for sidenav active link @anjudewangan */
 .navbar-sidenav>.nav-item>.active-link {
     background-color: rgb(236, 236, 11);
 }
 
+/* Code for sidenav active link @anjudewangan */
 #exampleAccordion .nav-link-text {
     font-size: 11.5px;
     margin-left: 36px;
@@ -525,88 +528,153 @@
     margin-left: 36px;
     display: none;
 }
-
-/* Code for nav and sidenav of Employee @anjudewangan  */
-
-/* Code for Employee @anjudewangan */
 .main {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     justify-content: flex-start;
     position: relative;
-    flex-direction: column;
-    /* left: 70px; */
-    top: 85px;
+    /* flex-direction: column; */
+    left: 250px;
+    top: 75px;
 }
-
-.employee_settings {
+.main p{
+    font-size: 21px;
+}
+.closingcross{
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-left: 1000px;
+}
+.block1{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.CustomerName{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 802px;
 }
-
-.employee_settings p {
-    font-size: 25px;
+.custn:after {
+    content:"*";
+    color: red;
 }
+.custn{
+    margin-left: 20px;
+}
+.selectname{
+    margin-left: 20px;
+    width: 500px;
+    color: grey;
+    border-color: grey;
+    height: 30px;
+}
+.veiwcustomer{
+    color: rgb(70, 171, 211);
+    font-size: 15px !important;
+    margin-left: 20px;
 
-.employee_settings a {
+}
+.searchbtn2{
+    height: 30px;
+    margin-left: 10px;
+}
+.Reference{
+    padding-bottom: 40px;
+}
+.Estimate{
+    padding-bottom: 40px;
+}
+.block1input{
+    margin-left: 80px;
+    width: 300px;
+    height: 30px;
+}
+.settingicon i{
+    color: rgb(70, 171, 211);
+}
+.Estimateno{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    text-decoration: none;
-    color: #000000;
-    background-color: #FFEA97;
-    height: 32px;
-    width: 119px;
-    border-radius: 10px;
-    font-size: 20px;
 }
-
-.tableEmployeeList,
-.tableEmployeeHoliday {
-    width: 1075px !important;
+.manage{
+    color: blue;
 }
-
-.tableEmployeeLeave {
-    width: 1315px !important;
+.dropdown{
+    margin-left: 20px;
 }
-
-.tableEmployeeLeave tbody tr .text-primary {
-    cursor: pointer;
+.block3{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 5px;
 }
-
-.modal-body .container-fluid .row {
-    border-bottom: 1px solid #dee2e6;
-    padding: 5px;
+.block4{
+    border: 2px solid rgb(63, 61, 61);
+    margin-top: 50px;
+    width: 75%;
+    border-radius: 5px;
 }
-
-.tableEmployeeAtten {
-    width: 1350px !important;
+.row1{
+    background-color: rgb(203, 201, 201);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 5px;
 }
-
-.tableEmployeeAtten th,
-.tableEmployeeAtten td {
-    padding: 10px 4px !important;
-}
-
-.card {
-    width: 350px;
-}
-
-.tableEmployee tbody tr td i {
-    font-size: 22px;
+.bi-image-fill{
+    font-size: larger;
     margin-right: 10px;
 }
-
-.tableEmployee thead tr th,
-.tableEmployee tbody tr td {
-    text-align: center;
+.dots{
+    margin-left: 260px;
+    color: black;
 }
-
-.employee-link {
-    font-weight: 600;
+.itemdescription{
+    width: 300px;
+    height: 70px;
+    margin-left: 40px;
+    border-radius: 5px;
 }
-
-/* Code for Employee  @anjudewangan */
+.service{
+    display: flex;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.service p{
+    font-size: small;
+    color: blue;
+}
+.row2{
+    border-bottom: 2px solid rgb(81, 79, 79);
+    width: 100%;
+    margin-left: 0px;
+}
+.clickitem{
+    display: flex;
+    color: #444444;
+}
+.clickitem p{
+    font-size: 15px;
+    margin-top: 5px;
+    /* margin-left: 2px; */
+    width: 80%;
+}
+.addline{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.block5{
+    display:flex;
+}
+.custnotes{
+    border: 2px solid grey;
+}
+.custnotesinp{
+    width: 500px;
+    height: 40px;
+}

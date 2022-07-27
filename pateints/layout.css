@@ -1,5 +1,7 @@
 /* navbar 1 2 3 */
-
+::-webkit-scrollbar {
+    display: none;
+}
 .navbar {
     position: fixed;
     width: 100%;

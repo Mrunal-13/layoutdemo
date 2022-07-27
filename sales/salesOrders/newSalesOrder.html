@@ -411,7 +411,7 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
                     href="#collapseExamplePages" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
+                    <i class="fa fa-fw fa fa-shopping-cart"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
@@ -419,10 +419,10 @@
                         <a href="../customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="./newEstimates.html" class="sales-link">Estimates</a>
+                        <a href="../estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="./salesOrders.html" class="sales-link">Sales Orders</a>
                     </li>
                     <li>
                         <a href="">Delivery Challans</a>
@@ -545,8 +545,8 @@
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
             <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
-                <h6><i class="fa fa-file-text-o" aria-hidden="true"></i> New Estimate</h6>
-                <div><a href="./estimates.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <h6><i class="fa fa-shopping-cart" aria-hidden="true"></i> New Sales Order</h6>
+                <div><a href="./salesOrders.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="container mt-3">
@@ -1556,10 +1556,15 @@
                     </div>
                     <div class="position-absolute icon-th2"><i class="fa fa-th text-secondary" aria-hidden="true"></i>
                     </div>
+                    <div class="position-absolute icon-th3"><i class="fa fa-th text-secondary" aria-hidden="true"></i>
+                    </div>
                     <div class="position-absolute copy-delete1"><i class="fa fa-clone text-primary"
                             aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger" aria-hidden="true"></i>
                     </div>
                     <div class="position-absolute copy-delete2"><i class="fa fa-clone text-primary"
+                            aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="position-absolute copy-delete3"><i class="fa fa-clone text-primary"
                             aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger" aria-hidden="true"></i>
                     </div>
                     <table class="table table-bordered position-relative">
@@ -1724,6 +1729,158 @@
                             <tr>
                                 <td>
                                     <div class="d-flex justify-content-between">
+                                        <div><i class="fa fa-picture-o text-secondary fs-3" style="opacity: 0.7;"></i>
+                                            BK
+                                        </div>
+                                        <div class="text-secondary">
+                                            <div class="dropdown">
+                                                <button class="btn btn-white text-secondary btn-sm" type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="./editItem.html">Edit Item</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#popupItemDetails">View Item Details</a>
+                                                    </li>
+                                                </ul>
+                                                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-5 mb-2">
+                                        <textarea class="form-control" placeholder="Add a description to your item"
+                                            id="floatingTextarea3"></textarea>
+                                    </div>
+                                    <div class="ml-5">
+                                        <span class="bg-info">GOODS</span> HSN: <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#popupSAC">84716040 <i class="fa fa-pencil"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="modal fade" id="popupSAC" tabindex="-1" aria-labelledby="popupSACLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="popupSACLabel">SAC</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row d-flex align-items-center">
+                                                        <div class="col-10">
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="998313">
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <i class="fa fa-search text-primary fs-3" aria-hidden="true"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#popupFindSAC"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-outline-dark"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="popupFindSAC" tabindex="-1"
+                                        aria-labelledby="popupFindSACLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="popupFindSACLabel">Find SAC Code</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body mx-5">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Search HSN code for your
+                                                            item</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            data-bs-toggle="modal" data-bs-target="#popupFindHSNCode">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        Could not find SAC code for item. Please provide the correct
+                                                        description.
+                                                        <div class="text-center">Or, <a href="#">Contact Support</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="popupFindHSNCode" tabindex="-1"
+                                        aria-labelledby="popupFindHSNCodeLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light">
+                                                    <h5 class="modal-title" id="popupFindHSNCodeLabel">Find HSN
+                                                        Code
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body mx-5">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Search HSN for your
+                                                            service</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="Clinical">
+                                                    </div>
+                                                    <div class="container border text-center rounded p-3">
+                                                        <div class="mb-3 row border-bottom">
+                                                            <div class="col-3">
+                                                                <h6>HSN</h6>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h6>Description</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-3">
+                                                                <div class="text-primary">38253000</div>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="text-start">Residual products of chemical or
+                                                                    related
+                                                                    industries,
+                                                                    not specified or included elsewhere; Municipal
+                                                                    waste; Sewage
+                                                                    sludge;
+                                                                    Other waste mentioned in Note 6 in this case - <span
+                                                                        class="bg-warning">Clinical</span> waste</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end">1.00
+                                    <div><small>Stock on Hand:</small></div>
+                                    <div><small>50.00 pcs <i class="fa fa-arrow-circle-o-down text-primary"
+                                                aria-hidden="true"></i></small></div>
+                                </td>
+                                <td class="text-end">200.00 <div><a href="" data-bs-toggle="modal"
+                                            data-bs-target="#popupItemDetails">Recent Transaction</a></div>
+                                </td>
+                                <td class="d-flex justify-content-between">
+                                    <div>0</div> <select class="form-select" aria-label="Default select example"
+                                        style="width: 64px;">
+                                        <option selected>%</option>
+                                        <option>₹</option>
+                                    </select>
+                                </td>
+                                <td class="text-end">₹200.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-between">
                                         <div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true"
                                                 style="opacity: 0.7;"></i>
                                             <span class="text-secondary">Type or click to select an item</span>
@@ -1731,138 +1888,139 @@
                                     </div>
                                 </td>
                                 <td></td>
-                                <td>
+                                <td class="d-flex justify-content-between">
+                                    <div>0</div> <select class="form-select" aria-label="Default select example"
+                                        style="width: 64px;">
+                                        <option selected>₹</option>
+                                        <option>%</option>
+                                    </select>
+                                </td>
+                                <td class="text-end">₹0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-plus-circle-o text-primary" aria-hidden="true"></i> Add another line
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
                 </div>
-                </td>
-                <td class="d-flex justify-content-between">
-                    <div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;">
-                        <option selected>₹</option>
-                        <option>%</option>
-                    </select>
-                </td>
-                <td class="text-end">₹0.00</td>
-                </tr>
-                </tbody>
-                </table>
-                <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-plus-circle-o text-primary" aria-hidden="true"></i> Add another line
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-4">
-                <div class="container">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-5 border border-secondary rounded">
-                            <div class="p-3">
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Customer Notes</label>
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            id="floatingTextarea2"></textarea>
-                                        <label for="floatingTextarea2">Enter any notes to be displayed in your
-                                            transaction</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="checkChecked"
-                                            checked>
-                                        <label class="form-check-label" for="checkChecked">
-                                            Use this in future for all estimates of all customers.
-                                        </label>
+                <div class="mt-4">
+                    <div class="container">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-5 border border-secondary rounded">
+                                <div class="p-3">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Customer Notes</label>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea2"></textarea>
+                                            <label for="floatingTextarea2">Enter any notes to be displayed in your
+                                                transaction</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked"
+                                                checked>
+                                            <label class="form-check-label" for="checkChecked">
+                                                Use this in future for all estimates of all customers.
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-5 border border-secondary rounded bg-light">
-                            <div class="p-3">
-                                <div class="row mb-3">
-                                    <div class="col-6">Sub Total</div>
-                                    <div class="col-6 text-end">0.00</div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-4"><input type="text" class="form-control" id=""
-                                            placeholder="Adjustment" style="border: dotted;"></div>
-                                    <div class="col-4"><input type="text" class="form-control" id=""></div>
-                                    <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
-                                            aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Add any + ve or -ve charges that need to be applied to adjust the total transaction amount e.g. +10 or -10.">
-                                        </i></div>
-                                    <div class="col-3 text-end">0.00</div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-4">TCS</div>
-                                    <div class="col-5"><select class="form-select" aria-label="Default select example">
-                                            <option selected>Select Tax</option>
-                                            <option>%</option>
-                                            <option>₹</option>
-                                        </select>
+                            <div class="col-5 border border-secondary rounded bg-light">
+                                <div class="p-3">
+                                    <div class="row mb-3">
+                                        <div class="col-6">Sub Total</div>
+                                        <div class="col-6 text-end">0.00</div>
                                     </div>
-                                    <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
-                                            aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="TCS is calculated on the total amount which includes taxes, shipping charges, discounts and adjustments.">
-                                        </i></div>
-                                    <div class="col-2 text-end">0.00</div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-6 fw-bold fs-5">Total ( ₹ )</div>
-                                    <div class="col-6 text-end fw-bold fs-5">0.00</div>
+                                    <div class="row mb-3">
+                                        <div class="col-4"><input type="text" class="form-control" id=""
+                                                placeholder="Adjustment" style="border: dotted;"></div>
+                                        <div class="col-4"><input type="text" class="form-control" id=""></div>
+                                        <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
+                                                aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                title="Add any + ve or -ve charges that need to be applied to adjust the total transaction amount e.g. +10 or -10.">
+                                            </i></div>
+                                        <div class="col-3 text-end">0.00</div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-4">TCS</div>
+                                        <div class="col-5"><select class="form-select"
+                                                aria-label="Default select example">
+                                                <option selected>Select Tax</option>
+                                                <option>%</option>
+                                                <option>₹</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
+                                                aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                title="TCS is calculated on the total amount which includes taxes, shipping charges, discounts and adjustments.">
+                                            </i></div>
+                                        <div class="col-2 text-end">0.00</div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6 fw-bold fs-5">Total ( ₹ )</div>
+                                        <div class="col-6 text-end fw-bold fs-5">0.00</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mt-4 border border-secondary rounded pb-3 bg-light">
-                <div class="row p-3">
-                    <div class="col-8">
-                        <label for="" class="form-label">Terms & Conditions</label>
-                        <div class="form-floating">
-                            <textarea class="form-control" id="floatingTextarea4"></textarea>
-                            <label for="floatingTextarea4">Enter the terms and condition and business to be displayed in
-                                your transaction</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkChecked2" checked>
-                            <label class="form-check-label" for="checkChecked2">
-                                Use this in future for all estimates of all customers.
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-4 border-left">
-                        <label for="" class="form-label">Attach File(s) to Delivery Challan</label>
-                        <div class="input-group mb-3">
-                            <button class="btn btn-light mr-1" style="border: dotted;"><i class="fa fa-upload"
-                                    aria-hidden="true"></i></button>
-                            <div class="dropdown">
-                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false" style="border: dotted;">
-                                    Upload Files
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Attach from Desktop</a></li>
-                                    <li><a class="dropdown-item" href="#">Attach from Cloud</a></li>
-                                    <li><a class="dropdown-item" href="#">Attach from Documents</a></li>
-                                </ul>
+                <div class="mt-4 border border-secondary rounded pb-3 bg-light">
+                    <div class="row p-3">
+                        <div class="col-8">
+                            <label for="" class="form-label">Terms & Conditions</label>
+                            <div class="form-floating">
+                                <textarea class="form-control" id="floatingTextarea4"></textarea>
+                                <label for="floatingTextarea4">Enter the terms and condition and business to be
+                                    displayed in
+                                    your transaction</label>
                             </div>
-                            <input type="file" class="form-control" id="inputGroupFile01" style="visibility: hidden;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkChecked2" checked>
+                                <label class="form-check-label" for="checkChecked2">
+                                    Use this in future for all estimates of all customers.
+                                </label>
+                            </div>
                         </div>
-                        <div>You can upload a maximum of 5 files, 5MB each</div>
+                        <div class="col-4 border-left">
+                            <label for="" class="form-label">Attach File(s) to Delivery Challan</label>
+                            <div class="input-group mb-3">
+                                <button class="btn btn-light mr-1" style="border: dotted;"><i class="fa fa-upload"
+                                        aria-hidden="true"></i></button>
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="border: dotted;">
+                                        Upload Files
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Attach from Desktop</a></li>
+                                        <li><a class="dropdown-item" href="#">Attach from Cloud</a></li>
+                                        <li><a class="dropdown-item" href="#">Attach from Documents</a></li>
+                                    </ul>
+                                </div>
+                                <input type="file" class="form-control" id="inputGroupFile01"
+                                    style="visibility: hidden;">
+                            </div>
+                            <div>You can upload a maximum of 5 files, 5MB each</div>
+                        </div>
                     </div>
                 </div>
+                <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
+                <div class="my-3">
+                    <button class="btn btn-outline-secondary">Save as Draft</button>
+                    <button class="btn btn-primary">Save and Send</button>
+                    <a href="./salesOrders.html"><button class="btn btn-outline-secondary">Cancel</button></a>
+                </div>
             </div>
-            <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
-            <div class="my-3">
-                <button class="btn btn-outline-secondary">Save as Draft</button>
-                <button class="btn btn-primary">Save and Send</button>
-                <a href="./estimates.html"><button class="btn btn-outline-secondary">Cancel</button></a>
-            </div>
-        </div>
         </div>
     </main>
 

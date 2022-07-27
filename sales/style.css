@@ -51,7 +51,8 @@
     align-items: center;
 }
 
-.navbar-second .nav-item, .ulBilling li  {
+.navbar-second .nav-item,
+.ulBilling li {
     list-style: none;
 }
 
@@ -813,7 +814,7 @@ main .active-item {
 }
 
 .modal-select-file .col-6 .divRecordFile ul li,
-.import-ul li{
+.import-ul li {
     list-style: disc !important;
 }
 
@@ -1017,20 +1018,28 @@ main .active-item {
 
 .copy-delete1 {
     right: 170px;
-    bottom: 800px;
+    bottom: 950px;
 }
 
 .copy-delete2 {
+    right: 170px;
+    bottom: 800px;
+}
+.copy-delete3 {
     right: 170px;
     bottom: 650px;
 }
 
 .icon-th1 {
     left: 187px;
-    bottom: 800px;
+    bottom: 950px;
 }
 
 .icon-th2 {
+    left: 187px;
+    bottom: 800px;
+}
+.icon-th3 {
     left: 187px;
     bottom: 650px;
 }

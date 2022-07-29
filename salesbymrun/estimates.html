@@ -1,7 +1,6 @@
-<!-- Code for add item @anjudewangan -->
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- page modified and created by @mrunal -->
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,23 +8,21 @@
     <title>Dashboard</title>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!-- Advanced search popup console error solve @anjudewangan -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  Advanced search popup console error solve @anjudewangan -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -33,7 +30,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estimate.css">
 </head>
 
 <body>
@@ -45,23 +43,25 @@
             </button>
         </div>
         <div class="navbar-second">
-            <ul class="ml-auto secondNavUl">
+            <ul class=" ml-auto secondNavUl">
                 <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
                 <li class="nav-item">
                     <form class="form-inline">
                         <div class="searchbox">
                             <input class="form-control inputForSearch" type="text" placeholder="Search for..." />
                             <button type="button" class="advnc-search" id="advnc-search" data-bs-toggle="modal"
-                                data-bs-target="#dashboardPopup">Advanced</button>
-                            <div class="modal fade" id="dashboardPopup" data-bs-backdrop="false"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="dashboardPopupLabel"
-                                aria-hidden="true" role="dialog" data-backdrop="false">
+                                data-bs-target="#patientsPopup">Advanced</button>
+                            <div class="modal fade" id="patientsPopup" data-bs-backdrop="false" data-bs-keyboard="false"
+                                tabindex="-1" aria-labelledby="patientsPopupLabel" aria-hidden="true" role="dialog"
+                                data-backdrop="false">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="dashboardPopupLabel">Advance Patient Search</h5>
+                                            <h5 class="modal-title" id="patientsPopupLabel">Advance Patient Search</h5>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close" onclick="HandleCancel()"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="popup-form">
@@ -134,8 +134,9 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary" id="btnSearch"
                                                 onclick="ShowNoDataMessage()">Search</button>
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                                                id="btnCancel" onclick="HandleCancel()">Cancel</button>
+                                            <button type="button" class="btn btn-secondary btn-sec-popup"
+                                                data-bs-dismiss="modal" id="btnCancel"
+                                                onclick="HandleCancel()">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -177,11 +178,65 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="../chat/index.html">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#">
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <span class="d-lg-none">Messages
+                            <span class="badge badge-pill badge-primary">12 New</span>
+                        </span>
+                        <span class="indicator text-primary d-none d-lg-block">
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span>
                     </a>
                 </li>
             </ul>
+
+            <!-- message shortcut -->
+            <div class="messageAlertDetails" id="messageAlertDetails">
+                <div class="MADHeader">
+                    <h6 class="MADHeader-info">New Messages:</h6>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="MADBody">
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>David Miller</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>Jane Smith</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>John Doe</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when
+                                they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="MADFooter">
+                    <a class="viewAllMsgs" href="#">View all messages</a>
+                </div>
+
+            </div>
+            <!-- admin setting box -->
             <div class="adminSettingBox" id="adminSettingBox">
                 <div class="adminSettingHeader">
                     <strong id="nameofAdmin">Rakesh Nandre</strong>
@@ -190,9 +245,11 @@
                 </div>
                 <hr style="margin: 15px 0;">
                 <ul id="settingOptions">
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
                     <li><a href="../admin profile/admin.html" style="text-decoration: none; color: black;"><span
                                 class="iconify" style="color: gray;" data-icon="akar-icons:pencil" data-width="17"
                                 data-height="17"></span> Edit Profile</a></li>
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
                     <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
                             data-width="17" data-height="17"></span> Account Setting</li>
                     <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
@@ -215,6 +272,7 @@
                     <p>New Alerts:</p>
                 </div>
                 <div class="dropdown-divider"></div>
+
                 <div class="alertBody">
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
@@ -230,8 +288,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-danger">
@@ -246,8 +306,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
@@ -262,8 +324,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -285,9 +349,8 @@
                     <span class="nav-link-text">Doctors</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables"
-                onclick="showpateintTable()">
-                <a class="nav-link" href="../pateints/index.html">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link active-link" href="../pateints/index.html">
                     <i class="fa fa-fw fa fa-wheelchair"></i>
                     <span class="nav-link-text">Patient</span>
                 </a>
@@ -299,19 +362,25 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <!-- Code for add Doctor Schedule @anjudewangan -->
                 <a class="nav-link" href="../doctorschedule/doctorSchedule.html">
+                    <!-- Code for add Doctor Schedule @anjudewangan -->
                     <i class="fa fa-fw fa fa-calendar-check-o"></i>
-                    <span class="nav-link-text">Dr. Schedule</span>
+                    <span class="nav-link-text">Doctor Schedule</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <!-- Code for add Department @anjudewangan -->
                 <a class="nav-link" href="../department/department.html">
+                    <!-- Code for add Department @anjudewangan -->
                     <i class="fa fa-fw fa-building-o"></i>
                     <span class="nav-link-text">Departments</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <!-- Code for add Insurance @anjudewangan -->
                 <a class="nav-link" href="../insurance/insurance.html">
+                    <!-- Code for add Insurance @anjudewangan -->
                     <i class="fa fa-fw fa-umbrella" aria-hidden="true"></i>
                     <span class="nav-link-text">Insurance Network</span>
                 </a>
@@ -322,6 +391,7 @@
                     <i class="fa fa-fw fa fa-user"></i>
                     <span class="nav-link-text">Employee</span>
                 </a>
+                <!-- Code for link Employee Section @anjudewangan -->
                 <ul class="collapse sidenav-second-level" id="collapseComponents">
                     <li>
                         <a href="../employee/employeeList.html">Employee List</a>
@@ -333,32 +403,34 @@
                         <a href="../employee/holiday.html">Holidays</a>
                     </li>
                     <li>
-                        <a href="../employee/attendance.html" class="employee-link">Attendance</a>
+                        <a href="../employee/attendance.html">Attendance</a>
                     </li>
                 </ul>
+                <!-- Code for link Employee Section @anjudewangan -->
             </li>
+            <!-- Code for link item @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link active-link" href="./item.html">
+                <a class="nav-link" href="../item/item.html">
                     <i class="fa fa-fw fa-sitemap" aria-hidden="true"></i>
                     <span class="nav-link-text">Item</span>
                 </a>
             </li>
-            <!-- Code for link Sales @anjudewangan @mrunal -->
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
-                    data-parent="#exampleAccordion">
+            <!-- Code for link item @anjudewangan -->
+            <!--Code by @Mrunal for link sales-->
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sales">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSales" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
-                <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                <ul class="sidenav-second-level collapse" id="collapseSales">
                     <li>
-                        <a href="../sales/customers/customers.html">Customers</a>
+                        <a href="">Customers</a>
                     </li>
                     <li>
-                        <a href="../sales/estimates/estimates.html">Estimates</a>
+                        <a href="../Sales/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../sales/salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="">Sales Orders</a>
                     </li>
                     <li>
                         <a href="">Delivery Challans</a>
@@ -376,8 +448,9 @@
                         <a href="">Credit Notes</a>
                     </li>
                 </ul>
+                
             </li>
-            <!-- Code for link Sales @anjudewangan -->
+            <!--Code by @Mrunal for link sales end-->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
                     data-parent="#exampleAccordion">
@@ -476,36 +549,36 @@
             </li>
         </ul>
     </div>
-
-    <!-- Item -->
     <main class="main">
-        <div class="container mt-3">
+        <div class="container mt-3" id="topheading">
             <div class="row">
-                <div class="col-6 gap-3">
-                    <select class="form-select select-all-items" aria-label="Default select example">
-                        <option selected>All Items</option>
+                <div class="col-6 gap-3 ">
+                    <select class="form-select select-all-items allestimate" aria-label="Default select example">
+                        <option selected>All Estimates</option>
                         <option class="text-secondary">Default Filters</option>
                         <option>All</option>
-                        <option>Active</option>
-                        <option>Inactive</option>
-                        <option>Sales</option>
-                        <option>Purcheses</option>
-                        <option>Services</option>
-                        <option class="text-primary">+ New Custum View</option>
+                        <option>Pending Approval</option>
+                        <option>Approved</option>
+                        <option>Sent</option>
+                        <option>Client Veiwed</option>
+                        <option>Accepted</option>
+                        <option>Invoiced</option>
+                        <option>Declined</option>
+                        <option>Expired</option>
                     </select>
-                </div>
+                </div><!--all estimates select statement-->
                 <div class="col-6">
                     <div class="row">
                         <div class="col text-end">
                             <button class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#popupItemSearch"><i class="fa fa-search"
+                                data-bs-target="#popupestimateSearch"><i class="fa fa-search"
                                     aria-hidden="true"></i></button>
-                            <div class="modal fade" id="popupItemSearch" tabindex="-1"
-                                aria-labelledby="popupItemSearchLabel" aria-hidden="true">
+                            <div class="modal fade" id="popupestimateSearch" tabindex="-1"
+                                aria-labelledby="popupestimateSearchLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title mr-4" id="popupItemSearchLabel">Search Items</h5>
+                                            <h5 class="modal-title mr-4" id="popupestimateSearchLabel">Search Estimates</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -513,7 +586,7 @@
                                             <div class="row">
                                                 <div class="col-6">
                                                     <div class="mb-3 row">
-                                                        <label for="" class="col-sm-4 col-form-label">Item Name</label>
+                                                        <label for="" class="col-sm-4 col-form-label">Estimates#</label>
                                                         <div class="col-sm-8">
                                                             <input type="text" class="form-control" id="">
                                                         </div>
@@ -522,7 +595,7 @@
                                                 <div class="col-6">
                                                     <div class="mb-3 row">
                                                         <label for=""
-                                                            class="col-sm-4 col-form-label">Description</label>
+                                                            class="col-sm-4 col-form-label">References#</label>
                                                         <div class="col-sm-8">
                                                             <input type="text" class="form-control" id="">
                                                         </div>
@@ -532,21 +605,21 @@
                                             <div class="row">
                                                 <div class="col-6">
                                                     <div class="mb-3 row">
-                                                        <label for="" class="col-sm-4 col-form-label">Rate</label>
-                                                        <div class="col-sm-8">
-                                                            <input type="text" class="form-control" id=""
-                                                                data-bs-toggle="modal" data-bs-target="#popupRate">
+                                                        <label for="" class="col-sm-4 col-form-label">Date Range</label>
+                                                        <div class="col-sm-4 dater">
+                                                            <input type="date" class="form-control" id="">-<input type="date" class="form-control" id="">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="mb-3 row">
-                                                        <label for="" class="col-sm-4 col-form-label">Status</label>
+                                                        <label for="" class="col-sm-4 col-form-label">Item Name</label>
                                                         <div class="col-sm-8">
                                                             <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal" data-bs-target="#popupStatus">
-                                                                <option selected>All</option>
+                                                                aria-label="Default select example">
+                                                                <option selected></option>
+                                                                <option>Ak</option>
+                                                                <option>Sample Service</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -555,29 +628,71 @@
                                             <div class="row">
                                                 <div class="col-6">
                                                     <div class="mb-3 row">
-                                                        <label for="" class="col-sm-4 col-form-label">Sales
-                                                            Account</label>
+                                                        <label for="" class="col-sm-5 col-form-label">Item Description</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-4 col-form-label">Total
+                                                            Range</label>
+                                                        <div class="col-sm-7 dater">
+                                                            <input type="text" class="form-control" id="">-<input type="text" class="form-control" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Customer Name</label>
+                                                        <div class="col-sm-6"><select class="form-select" name="" id="">
+                                                            <option value=""></option>
+                                                            <option value="">no results found</option>
+                                                        </select></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-4 col-form-label">Project Name</label>
+                                                        <div class="col-sm-8"><select name="" id="" class="form-select">
+                                                            <option value=""></option>
+                                                            <option value="">no results found</option>
+                                                        </select></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-4 col-form-label">Tax</label>
                                                         <div class="col-sm-8">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupSalesAccount">
-                                                                <option selected></option>
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">GST0[0%]</option>
+                                                                <option value="">GST12[12%]</option>
+                                                                <option value="">GST18[18%]</option>
+                                                                <option value="">GST28[28%]</option>
+                                                                <option value="">GST5[5%]</option>
+                                                                <option value="">IGST0[0%]</option>
+                                                                <option value="">IGST12[12%]</option>
+                                                                <option value="">IGST18[18%]</option>
+                                                                <option value="">IGST28[28%]</option>
+                                                                <option value="">IGST5[5%]</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Purchase
-                                                            Account</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupPurchaseAccount">
-                                                                <option selected></option>
+                                                        <label for="" class="col-sm-4 col-form-label">SalesPerson</label>
+                                                        <div class="col-sm-8">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value=""></option>
+                                                                <option value="">no results found</option>
                                                             </select>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -590,109 +705,26 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal fade" id="popupRate" tabindex="-1" aria-labelledby="popupRateLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Draft</div>
-                                            <div>Published</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupStatus" tabindex="-1" aria-labelledby="popupStatusLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Active</div>
-                                            <div>Inactive</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupSalesAccount" tabindex="-1"
-                                aria-labelledby="popupSalesAccountLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Discount</div>
-                                            <div>General Income</div>
-                                            <div>Interest Income</div>
-                                            <div>Late Fee Income</div>
-                                            <div>Other Charges</div>
-                                            <div>Sales</div>
-                                            <div>Shipping Charges</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupPurchaseAccount" tabindex="-1"
-                                aria-labelledby="popupPurchaseAccountLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Advertising And Marketing</div>
-                                            <div>Automobile Expense</div>
-                                            <div>Bad Debt</div>
-                                            <div>Bank Fees and Charges</div>
-                                            <div>Consultant Expense</div>
-                                            <div>Contract Assets</div>
-                                            <div>Credit Card Charges</div>
-                                            <div>Other Expenses</div>
-                                            <div>Postage</div>
-                                            <div>Printing and Stationery</div>
-                                            <div>Purchase Discounts</div>
-                                            <div>Raw Materials And Consumables</div>
-                                            <div>Rent Expense</div>
-                                            <div>Repairs and Maintenance</div>
-                                            <div>Depreciation And Amortisation</div>
-                                            <div>Depreciation Expense</div>
-                                            <div>IT and Internet Expenses</div>
-                                            <div>Janitorial Expense</div>
-                                            <div>Lodging</div>
-                                            <div>Meals and Entertainment</div>
-                                            <div>Merchandise</div>
-                                            <div>Offer Supplies</div>
-                                            <div>Salaries and Employee Wages</div>
-                                            <div>Telephone Expense</div>
-                                            <div>Transportation Expense</div>
-                                            <div>Travel Expense</div>
-                                            <div>Uncategorized</div>
-                                            <div>Cost of Goods Sold</div>
-                                            <div>Job Costing</div>
-                                            <div>Labor</div>
-                                            <div>Materials</div>
-                                            <div>Subcontractor</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <a href="./addItem.html">
+                            </div><!--modal popup of search ends -->
+                        </div><!--colum of search ends-->
+                        <div class="col d-flex">
+                            <a href="./addestimatepage.html">
                                 <button class="btn btn-warning">Add
                                     New</button>
                             </a>
-                        </div>
+                            <!-- Example single danger button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Create Estimate</a>
+                                    <a class="dropdown-item" href="#">Create Estimate(pregst)</a>
+                                </div>
+                            </div>
+                        </div><!--add new button ends-->
                         <div class="col">
                             <a href="#" class="setting-link"><i class="fa fa-fw fa-cog"></i>Settings</a>
-                        </div>
-                        <div class="col">
+                        </div><!--settings button ends-->
+                        <div class="col"><!--popup of exports starts-->
                             <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#popupShort"><i
                                     class="fa fa-align-left" aria-hidden="true"></i>
                             </button>
@@ -705,10 +737,12 @@
                                         </div>
                                         <div class="modal-body">
                                             <ul class="border-bottom pb-3 pl-5">
-                                                <li>Name</li>
-                                                <li>Rate</li>
-                                                <li>HSN/SAC</li>
+                                                <li>Created Time</li>
                                                 <li>Last Modified Time</li>
+                                                <li>Date</li>
+                                                <li>Estimate Number</li>
+                                                <li>Customer Name</li>
+                                                <li>Amount</li>
                                             </ul>
                                             <ul class="border-bottom pb-3">
                                                 <li class="fs-5" data-bs-toggle="modal"
@@ -744,7 +778,7 @@
                                 <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupImportItemLabel">Items - Select File</h5>
+                                            <h5 class="modal-title" id="popupImportItemLabel">Estimates- Select File</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -779,27 +813,6 @@
                                                             <small>Maximum File Size: 5 MB </small>
                                                             <small>File Format: CSV or TSV or XLS</small>
                                                         </div>
-                                                        <h6 class="mt-4">Duplicate Handling<span class="text-danger">*
-                                                            </span><i class="fa fa-question-circle-o text-secondary"
-                                                                aria-hidden="true"></i></h6>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="radioSkip" id="radioSkip" checked>
-                                                            <label class="form-check-label" for="radioSkip">
-                                                                Skip
-                                                            </label>
-                                                            <p>Keep records in <b>Welldone</b> and do not sync identical
-                                                                records from the import file.</p>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="radioSkip" id="radioOverwrite">
-                                                            <label class="form-check-label" for="radioOverwrite">
-                                                                Overwrite
-                                                            </label>
-                                                            <p>Overwrite existing records in <b>Welldone</b> with the
-                                                                same records in the import file.</p>
-                                                        </div>
                                                         <h6 class="mt-4">Character Encoding<span
                                                                 class="text-danger">*</span></h6>
                                                         <select class="form-select" aria-label="Default select example">
@@ -812,12 +825,10 @@
                                                             <option>Big5 (Traditional Chinese)</option>
                                                             <option>Shift_JIS (Japanese)</option>
                                                         </select>
-                                                        <h6 class="mt-4">File Delimiter<span
-                                                                class="text-danger">*</span></h6>
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>Comma (,)</option>
-                                                            <option>Semi-Colon (;)</option>
-                                                        </select>
+                                                        <div class="auto-generatetop">
+                                                            <div class="d-flex"><input type="checkbox"><h6>Auto-generate estimate number</h6></div>
+                                                            <p class="auto-generate">if you enable the option ,the estimate number in the import file will be ignored and it will be auto-generate in the import</p>
+                                                        </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="mt-3">Download the <a href="#">Sample file</a> and
@@ -829,6 +840,9 @@
                                                                 <li class="mb-3">Import data with details of GST
                                                                     treatment by
                                                                     referring to these accepted formats.
+                                                                </li>
+                                                                <li class="mb-3">You can download the sample files to get detailed
+                                                                    information about the data feilds used during the import.
                                                                 </li>
                                                                 <li class="mb-3">If you have files in other formats, you
                                                                     can convert
@@ -873,18 +887,15 @@
                                                             data-bs-target="#popupSelectModule">
                                                             <option selected>Items</option>
                                                         </select>
-                                                        <div class="form-check mb-3">
-                                                            <input class="form-check-input" type="radio"
-                                                                name="radioAllItem" id="radioAllItem">
-                                                            <label class="form-check-label" for="radioAllItem">
-                                                                All Items
-                                                            </label>
-                                                        </div>
+                                                        <h6>Select Status<span class="text-danger">*</span></h6>
+                                                        <select class="form-select mb-3">
+                                                            <option selected>All</option>
+                                                        </select>
                                                         <div class="form-check mb-3">
                                                             <input class="form-check-input" type="radio"
                                                                 name="radioAllItem" id="radioSpePeriod" checked>
                                                             <label class="form-check-label" for="radioSpePeriod">
-                                                                Specific Period
+                                                                Date Range
                                                             </label>
                                                         </div>
                                                         <div class="container">
@@ -1012,8 +1023,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="popupExportAddNew" tabindex="-1" aria-labelledby="popupExportAddNewLabel"
-                                aria-hidden="true">
+                            <div class="modal fade" id="popupExportAddNew" tabindex="-1"
+                                aria-labelledby="popupExportAddNewLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-sm">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -1023,20 +1034,21 @@
                                             No results found
                                         </div>
                                         <div class="modal-footer d-flex justify-content-start">
-                                            <a href="#popupExportNewTemplate" data-bs-toggle="modal" data-bs-target="#popupExportNewTemplate">+ Add
-                                                New</a>
+                                            <a href="#popupExportNewTemplate" data-bs-toggle="modal"
+                                                data-bs-target="#popupExportNewTemplate">+ Add New</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="popupExportNewTemplate" tabindex="-1" aria-labelledby="popupExportNewTemplateLabel"
-                                aria-hidden="true">
+                            <div class="modal fade" id="popupExportNewTemplate" tabindex="-1"
+                                aria-labelledby="popupExportNewTemplateLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
                                             <h5 class="modal-title" id="popupExportNewTemplateLabel">New Export Template
                                             </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="mx-5 mb-3">
@@ -1052,7 +1064,8 @@
                                                         <div class="mb-3">
                                                             <label for="" class="form-label">Name of field in
                                                                 Welldone</label>
-                                                            <select class="form-select" aria-label="Default select example">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
                                                                 <option></option>
                                                                 <option>Item ID</option>
                                                                 <option>HSN/SAC</option>
@@ -1090,11 +1103,11 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-bs-target="#popupExportAddNew"
-                                                data-bs-toggle="modal">Save and
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-target="#popupExportAddNew" data-bs-toggle="modal">Save and
                                                 Select</button>
-                                            <button type="button" class="btn btn-outline-secondary" data-bs-target="#popupExportItem"
-                                                data-bs-toggle="modal">Cancel</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-target="#popupExportItem" data-bs-toggle="modal">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1104,7 +1117,7 @@
                                 <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupImportItem2Label">Items - Select File</h5>
+                                            <h5 class="modal-title" id="popupImportItem2Label">Select File</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -1151,17 +1164,6 @@
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
                                                                     <option selected>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1171,18 +1173,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option selected>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
+                                                                    <option selected>Select</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1192,18 +1183,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
                                                                     <option selected>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1212,18 +1192,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
                                                                     <option selected>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                                 <div class="text-end"><small>eg.1234567.89</small></div>
                                                             </div>
@@ -1233,18 +1202,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option selected>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
+                                                                    <option selected>Select</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1254,18 +1212,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
                                                                     <option selected>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1275,18 +1222,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
                                                                     <option selected>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1296,18 +1232,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
                                                                     <option selected>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1317,18 +1242,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
                                                                     <option selected>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1338,18 +1252,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
                                                                     <option selected>Purchase Rate</option>
-                                                                    <option>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                                 <div class="text-end"><small>eg.1234567.89</small></div>
                                                             </div>
@@ -1360,18 +1263,7 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
                                                                     <option selected>Item Type</option>
-                                                                    <option>Purchase Account</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1381,17 +1273,6 @@
                                                             <div class="col-sm-7">
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option>Item Name</option>
-                                                                    <option>HSN/SAC</option>
-                                                                    <option>Description</option>
-                                                                    <option>Rate</option>
-                                                                    <option>Status</option>
-                                                                    <option>Product Type</option>
-                                                                    <option>Account</option>
-                                                                    <option>Usage unit</option>
-                                                                    <option>Purchase Description</option>
-                                                                    <option>Purchase Rate</option>
-                                                                    <option>Item Type</option>
                                                                     <option selected>Purchase Account</option>
                                                                 </select>
                                                             </div>
@@ -1469,7 +1350,7 @@
                                 <div class="modal-dialog modal-lg modal-select-file modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupImportItem3Label">Items - Select File</h5>
+                                            <h5 class="modal-title" id="popupImportItem3Label">Select File</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -1628,7 +1509,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5" id="bottomtable">
             <div class="col-1 text-center mt-3">
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#popupItem">
                     <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
@@ -1638,77 +1519,77 @@
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
                             <div class="modal-body text-start">
-                                <label for="" class="form-label text-secondary">Custamize colums</label>
+                                <label for="" class="form-label text-secondary">Customize columns</label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="" checked>
                                     <label class="form-check-label" for="">
-                                        Name
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Description
+                                        Date
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="" checked>
                                     <label class="form-check-label" for="">
-                                        Rate
+                                        Estimate number
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="" checked>
                                     <label class="form-check-label" for="">
-                                        HSN/SAC
+                                        Reference number
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="" checked>
                                     <label class="form-check-label" for="">
-                                        Usage Unit
+                                        Customer number
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                    <label class="form-check-label" for="">
+                                        Status
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="">
                                     <label class="form-check-label" for="">
-                                        Stock On Hand
+                                        Amount
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="">
                                     <label class="form-check-label" for="">
-                                        Account Name
+                                        Date accepted
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="">
                                     <label class="form-check-label" for="">
-                                        Purchase Rate
+                                        Company name
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="">
                                     <label class="form-check-label" for="">
-                                        Show In Store
+                                        Date denied
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="">
                                     <label class="form-check-label" for="">
-                                        Purchase Account Name
+                                        Expiration date
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="">
                                     <label class="form-check-label" for="">
-                                        Purchase Description
+                                        Sales Person
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="">
                                     <label class="form-check-label" for="">
-                                        SKU (Stock Keeping Unit)
+                                        Sub Total
                                     </label>
                                 </div>
                             </div>
@@ -1721,138 +1602,298 @@
                     </div>
                 </div>
             </div>
-            <div class="col-11">
+            <div class="col-12">
                 <table class="table table-item">
                     <thead>
                         <tr>
-                            <th><input class="form-check-input" type="checkbox" value="" id=""> Name</th>
-                            <th>Description</th>
-                            <th>Rate</th>
-                            <th>HSN/SAC</th>
-                            <th>Usage Unit</th>
-                            <th>Purchase Account Name</th>
-                            <th>Account Name</th>
-                            <th>Purchase Description</th>
-                            <th>Purchase Rate</th>
-                            <th>SKU</th>
-                            <th>Show In Store</th>
-                            <th>Stock On Hand</th>
+                            <th><input type="checkbox"></th>
+                            <th>Date</th>
+                            <th>Estimate number</th>
+                            <th>Reference Number</th>
+                            <th>Customer Name</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
-                                <a href="./allItems.html">Varada Vati</a>
-                            </td>
-                            <td></td>
-                            <td>500.00</td>
-                            <td>988313</td>
-                            <td>box</td>
-                            <td>Cost of Goods Sold</td>
-                            <td>sales</td>
-                            <td></td>
-                            <td>400</td>
-                            <td></td>
-                            <td>False</td>
-                            <td></td>
+                            <td><input type="checkbox"></td>
+                            <td>26/07/2017</td>
+                            <td style="color:rgb(34, 136, 136)" onclick="changelayout()">EST-000001</td>
+                            <td>9875621645</td>
+                            <td>Mr.Badshah Khan</td>
+                            <td style="color:rgb(34, 136, 136)"><i class="bi bi-envelope-open"></i>Sent</td>
+                            <td>800.0</td>
                         </tr>
                         <tr>
-                            <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
-                                Body pack
-                            </td>
+                            <td><input type="checkbox"></td>
+                            <td>26/07/2017</td>
+                            <td style="color:rgb(34, 136, 136)">EST-000002</td>
                             <td></td>
-                            <td>50.00</td>
-                            <td>625313</td>
-                            <td>pcs</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
-                                Panchakarma
-                            </td>
-                            <td></td>
-                            <td>100.00</td>
-                            <td>789313</td>
-                            <td>pcs</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
-                                Thakradhara
-                            </td>
-                            <td></td>
-                            <td>60.00</td>
-                            <td>558313</td>
-                            <td>pcs</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
-                                Abhyangana
-                            </td>
-                            <td></td>
+                            <td>Mr.Badshah Khan</td>
+                            <td style="color:rgb(34, 136, 136)"><i class="bi bi-envelope-open"></i>sent</td>
                             <td>200.00</td>
-                            <td>998324</td>
-                            <td>pcs</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
-                                Root touch up
-                            </td>
-                            <td></td>
-                            <td>500.00</td>
-                            <td>998324</td>
-                            <td>pcs</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+        <div id="seconddivestimate" class="container">
+            <div class="row mt-3">
+                <div class="col-3" style="border-left: 2px solid black;border-right:2px solid black;border: height 1000px;">
+                    <div class="topbar">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               All Estimate
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">All Customers</a>
+                              <a class="dropdown-item" href="#">Active Customers</a>
+                              <a class="dropdown-item" href="#">CRM Customers</a>
+                              <a class="dropdown-item" href="#">Duplicate Customers</a>
+                              <a class="dropdown-item" href="#">Inactive Customers</a>
+                              <a class="dropdown-item" href="#">Client portal enabled</a>
+                              <a class="dropdown-item" href="#">Client portal Disabled</a>
+                              <a class="dropdown-item" href="#">Overdue Customer</a>
+                              <a class="dropdown-item" href="#">Unpaid Customer</a>
+                              <a class="dropdown-item" href="#" style="color: blue;">+ New  Custom Veiw</a>
+                            </div>
+                          </div>
+                        <button class="btn btn-warning allestimate"><i class="bi bi-plus-lg"></i></button>
+                        <button class="btn btn-secondary allestimate" data-bs-toggle="modal" data-bs-target="#popupShort"><i
+                            class="fa fa-align-left" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="namerow">
+                        <div class="names"><p class="leftp">Mr.Badshah Khan</p><p class="rightp">26/06/2017</p></div>
+                        <div class="names"><p class="leftp"><i class="bi bi-envelope-open"></i>Sent</p><p class="rightp">Rs.800.00    EST-000001</p></div>
+                        
+                    </div>
+                    <hr>
+                    <div class="namerow">
+                        <div class="names"><p class="leftp">Mr.sanole baba</p><p class="rightp">29/06/2017</p></div>
+                        <div class="names"><p class="leftp"><i class="bi bi-envelope-open"></i>Sent</p><p class="rightp">Rs.2800.00    EST-000002</p></div>
+                        
+                    </div>
+                    <hr>
+                    <div class="namerow">
+                        <div class="names"><p class="leftp">Sample baba</p><p class="rightp">26/06/2017</p></div>
+                        <div class="names"><p class="leftp"><i class="bi bi-envelope-open"></i>Sent</p><p class="rightp">Rs.200.00    EST-000003</p></div>
+                    </div>
+                    <hr>
+                </div><!--all estimates select statement-->
+                
+                <div class="col-9">
+                    <div class="topbar">
+                        <p class="parafont">EST-000001</p>
+                        <button class="btn btn-secondary btn-sm topbarbuttonsedit" id="editbtn">Edit</button>
+                        <button class="btn btn-secondary btn-sm topbarbuttoncopy"><i class="bi bi-paperclip"></i></button>
+                        <button class="btn btn-secondary btn-sm topbarbuttoncopy"><i class="bi bi-clipboard2"></i></button>
+                        <button class="btn btn-secondary btn-sm topbarbuttoncopy"><i class="bi bi-printer"></i></button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Create Project</a>
+                              <a class="dropdown-item" href="#">Mark As Accepted</a>
+                              <a class="dropdown-item" href="#">Mark As Declined</a>
+                              <a class="dropdown-item" href="#">Clone</a>
+                              <a class="dropdown-item" href="#">Delete</a>
+                              <a class="dropdown-item" href="#">Estimate Preferences</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary topbarbuttoncopy"><i class="bi bi-gear-fill"></i></button>
+                        <button class="btn btn-secondary topbarbuttonshare"><i class="bi bi-share-fill"></i>Share</button>
+                        <button class="btn btn-secondary topbarbuttoncopy"><i class="bi bi-chat-left"></i>Comment</button>
+                        <i class="bi bi-x closingcross"></i>
+                    </div>
+                    <hr>
+                    <div class="Convert">
+                        <div class="clip-icon"><i class="bi bi-card-text"></i></div>
+                        <div class="convertp"><p>Convert the Estimate</p>
+                            <p>Create an invoice or Sales order for this estimate to confirm the sales and bill your customer</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Convert
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Convert to bill of supply</a>
+                              <a class="dropdown-item" href="#">convert to sales order</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary createproject">Create Project</button>
+                    </div>
+                    <div class="pdf">
+                        <div class="sent"><p>Sent</p></div>
+                        <div class="pdf2">
+                            <div class="nameNaddress">
+                                <div>
+                                    <h6>Dr.Aware hospital and Nursing Home</h6>
+                                    <p>26pb panja bazar</p>
+                                    <p>fulabsheth</p>
+                                    <p>Bahubali Maharshtra-475123</p>
+                                    <p>India</p>
+                                    <p>GSTIN-27AAICA5564D1Z0</p>
+                                </div>
+                                <div class="head4">
+                                    <h4>Estimate</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            #
+                                        </div>
+                                        <div class="col-4">
+                                            :EST-000001
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            Estimate Date
+                                        </div>
+                                        <div class="col-4">
+                                            :26/07/2017
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Place of Supply
+                                        </div>
+                                        <div class="col-6">
+                                            :Maharshtra(27)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">Bill To</div>
+                                <div class="col-6">Ship To</div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">Mr.Badshah Khan</div>
+                                <div class="col-6">Mr.Badshah Khan</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">dd</div>
+                                <div class="col-6">dd</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">sakri</div>
+                                <div class="col-6">sakri</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">424304-Maharashtra</div>
+                                <div class="col-6">424304-Maharashtra</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">India</div>
+                                <div class="col-6">India</div>
+                            </div>
+                            <hr>
+                            <div>
+                                Subject: I will add them
+                            </div>
+                            <hr>
+                            <div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h6>Items&Description</h6>
+                                    </div>
+                                    <div class="col-2"><b>Qty</b></div>
+                                    <div class="col-2"><b>Rate</b></div>
+                                    <div class="col-2"><b>Amount</b></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>AK</h6>
+                                    <p>Description of item</p>
+                                    <p>SAC:998313</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>1.0</p>
+                                    <p>Pcs</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>600.00</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>600.00</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>sample Service</h6>
+                                    <p>SAC: 998514</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>1.0</p>
+                                    <p>Pcs</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>200.00</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>200.00</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row bottomrow">
+                                <div class="col-5">
+                                    <p class="Total">Items in Total-2.0</p>
+                                    <p class="Total">Total in Words(Indian Rupee)</p>
+                                    <p class="Total"><b><i>Eight Hundred only</i></b></p>
+                                    <p class="Terms">Looking forward for you business</p>
+                                    <p class="Terms"><b>Terms & Conditions</b></p>
+                                </div>
+                                <div class="col-7">
+                                    <div class="row">
+                                        <div class="col-6 bd">
+                                            <p class="Amount">Sub Total</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="Amount">800.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 bdbottom bd">
+                                            <p class="Amount"><b>Total</b></p>
+                                        </div>
+                                        <div class="col-6 bdbottom">
+                                            <p class="Amount"><b>800.00</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="bd bdbottom asign">
+                                        <p class="sign">Authorised Signature</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div><!--pdf2 ends-->
+
+                        <img src="../images/footer_bg 1.png" alt="">
+                    </div><!--pdf div ends-->
+                    <div class="moreinfo">
+                        <p><b>More Information</b></p>
+                        <div class="Template"><p>Template:'Spreadsheet Template'Change</p></div>
+                    </div>
+                    <p>SalesPerson: Jay</p>
+                </div>
+            </div>
+        </div>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-    <!-- Code for add item @anjudewangan -->
+    <script src="./estimate.js"></script>
 </body>
-
-</html>

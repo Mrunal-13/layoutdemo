@@ -177,7 +177,6 @@
     transition: 0.3s;
 }
 
-
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover {
@@ -228,7 +227,7 @@
 }
 
 .sidenav-second-level li a {
-    font-size: 21px;
+    font-size: 10px;
 }
 
 .alertDetails {

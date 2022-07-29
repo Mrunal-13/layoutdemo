@@ -545,8 +545,9 @@
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
             <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
-                <h6><i class="fa fa-shopping-cart" aria-hidden="true"></i> New Sales Order</h6>
-                <div><a href="./salesOrders.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <h6><i class="fa fa-file-text" aria-hidden="true"></i> New Bill Of Supply</h6>
+                <div><a href="./allSalesOrders.html" class="text-dark"><i class="fa fa-times"
+                            aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="container mt-3">
@@ -920,10 +921,10 @@
                             </div>
                         </div>
                         <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Estimate<span
-                                    class="text-danger">#</span><span class="text-danger">*</span></label>
+                            <label for="" class="col-sm-3 col-form-label">Bill Of Supply Number<span
+                                    class="text-danger">*</span></label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="" placeholder="EST-000001">
+                                <input type="text" class="form-control" id="" placeholder="BOS-000004">
                             </div>
                             <div class="col-sm-2">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
@@ -982,34 +983,58 @@
                             </div>
                         </div>
                         <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Reference#</label>
+                            <label for="" class="col-sm-3 col-form-label">Order Number</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="">
-                            </div>
-                        </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Sales Order Date*</label>
-                            <div class="col-sm-3">
-                                <input type="text" class="form-control" id="" placeholder="21/03/2022">
-                                <div><small>To create transaction dated before 01/07/2017, <a href="">click
-                                    here</a></small>
-                        </div>
+                                <input type="text" class="form-control" id="" placeholder="SO-00008">
                             </div>
                         </div>
                         <div class="mb-3 row d-flex align-items-center">
                             <div class="col-6">
                                 <div class="row">
-                                    <label for="" class="col-sm-6 col-form-label">Expected Shipment Date</label>
+                                    <label for="" class="col-sm-6 col-form-label">Bill Of Supply Date<span
+                                            class="text-danger">*</span></label>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control" id="" placeholder="dd/mm/yyyy">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-3">
                                 <div class="row">
-                                    <label for="" class="col-sm-4 col-form-label">Payment Terms</label>
+                                    <label for="" class="col-sm-6 col-form-label">Payment Terms</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="" placeholder="Due on Receipt">
+                                        <select class="form-select" aria-label="Default select example"
+                                            data-bs-toggle="modal" data-bs-target="#popupDue">
+                                            <option selected>Due on Receipt</option>
+                                        </select>
+                                        <div class="modal fade" id="popupDue" tabindex="-1"
+                                            aria-labelledby="popupDueLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-sm">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div>Net 15</div>
+                                                        <div>Net 30</div>
+                                                        <div>Net 45</div>
+                                                        <div>Net 60</div>
+                                                        <div>Due end of the month </div>
+                                                        <div>Due end of next month </div>
+                                                        <div>Due on Receipt</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <label for="" class="col-sm-6 col-form-label">Due Date</label>
+                                    <div class="col-sm-6">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>22/03/2022</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -1743,14 +1768,273 @@
                                         <div class="col-6 text-end">0.00</div>
                                     </div>
                                     <div class="row mb-3">
-                                        <div class="col-5">Shipping Charges</div>
-                                        <div class="col-4">
-                                            <input type="text" class="form-control" id="">
+                                        <div class="col-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1" checked>
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    TDS
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
-                                                aria-hidden="true">
-                                            </i></div>
-                                        <div class="col-2 text-end">0.00</div>
+                                        <div class="col-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2" data-bs-toggle="modal"
+                                                    data-bs-target="#popupTCS">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    TCS
+                                                </label>
+                                            </div>
+                                            <div class="modal fade" id="popupTCS" tabindex="-1"
+                                                aria-labelledby="popupTCSLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body bg-light">
+                                                            <div class="row mb-3">
+                                                                <div class="col-6">Sub Total</div>
+                                                                <div class="col-6 text-end">0.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="flexRadioDefault1"
+                                                                            id="flexRadioDefault3">
+                                                                        <label class="form-check-label"
+                                                                            for="flexRadioDefault3">
+                                                                            TDS
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="flexRadioDefault1"
+                                                                            id="flexRadioDefault4" checked>
+                                                                        <label class="form-check-label"
+                                                                            for="flexRadioDefault4">
+                                                                            TCS
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#popupManageTCS">
+                                                                        <option selected>Select Tax</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-2 text-end">+0.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-4"><input type="text"
+                                                                        class="form-control" id=""
+                                                                        placeholder="Adjustment"
+                                                                        style="border: dotted;"></div>
+                                                                <div class="col-4"><input type="text"
+                                                                        class="form-control" id=""></div>
+                                                                <div class="col-1"> <i
+                                                                        class="fa fa-question-circle-o text-secondary"
+                                                                        aria-hidden="true" data-bs-toggle="tooltip"
+                                                                        data-bs-placement="bottom"
+                                                                        title="Add any + ve or -ve charges that need to be applied to adjust the total transaction amount e.g. +10 or -10.">
+                                                                    </i></div>
+                                                                <div class="col-3 text-end">0.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 fw-bold fs-5">Total ( ₹ )</div>
+                                                                <div class="col-6 text-end fw-bold fs-5">0.00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="popupManageTCS" tabindex="-1"
+                                                aria-labelledby="popupManageTCSLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-sm">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <input type="text" class="form-control" id="">
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div>no result found</div>
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-start">
+                                                            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+                                                                Manage TCS</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6"><select class="form-select"
+                                                aria-label="Default select example" data-bs-toggle="modal"
+                                                data-bs-target="#popupSelectTax">
+                                                <option selected>Select Tax</option>
+                                            </select>
+                                            <div class="modal fade" id="popupSelectTax" tabindex="-1"
+                                                aria-labelledby="popupSelectTaxLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-sm">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <div class="mb-2">Commission or Brokerage - [5 %]</div>
+                                                            <div class="mb-2">Commission or Brokerage (Reduced) - [3.75
+                                                                %]</div>
+                                                            <div class="mb-2">Dividend - [10 %]</div>
+                                                            <div class="mb-2">Dividend (Reduced) - [7.5 %]</div>
+                                                            <div class="mb-2">Other Interest than securities - [10 %]
+                                                            </div>
+                                                            <div class="mb-2">Other Interest than securities (Reduced) -
+                                                                [7.5 %]</div>
+                                                            <div class="mb-2">Payment of contractors for Others - [2 %]
+                                                            </div>
+                                                            <div class="mb-2">Payment of contractors for Others
+                                                                (Reduced) - [1.5 %]</div>
+                                                            <div class="mb-2">Payment of contractors HUF/Indiv - [1 %]
+                                                            </div>
+                                                            <div class="mb-2">Payment of contractors HUF/Indiv (Reduced)
+                                                                - [0.75 %]</div>
+                                                            <div class="mb-2">Professional Fees - [10 %)</div>
+                                                            <div class="mb-2">Professional Fees (Reduced) - [7.5 %]
+                                                            </div>
+                                                            <div class="mb-2">Rent on land or furniture etc - [10 %]
+                                                            </div>
+                                                            <div class="mb-2">Rent on land or furniture etc (Reduced) -
+                                                                [7.5%]</div>
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-start">
+                                                            <a href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#popupManageTDS"><i class="fa fa-cog"
+                                                                    aria-hidden="true"></i> Manage TDS</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="popupManageTDS" tabindex="-1"
+                                                aria-labelledby="popupManageTDSLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-light">
+                                                            <h5 class="modal-title" id="popupManageTDSLabel">Add New TDS
+                                                            </h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Tax Name<span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" class="form-control" id="">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Rate (%)<span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" class="form-control" id="">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Section<span
+                                                                        class="text-danger">*</span></label>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select a Tax Type</option>
+                                                                    <option>193 - Interest on securities</option>
+                                                                    <option>194- Dividend</option>
+                                                                    <option>194A - Other Interest than securities
+                                                                    </option>
+                                                                    <option>194B- Lotteries Winnings</option>
+                                                                    <option>194BB- Horse Race</option>
+                                                                    <option>194C- Payment of contractors HUF/Indiv and
+                                                                        Payment of contractors for Others</option>
+                                                                    <option>194D- Insurance Commission</option>
+                                                                    <option>194DA- Insurance Commission</option>
+                                                                    <option>194EE- Deposits in NSS</option>
+                                                                    <option>194F- Re-purchase By Mutual Funds</option>
+                                                                    <option>194G- Commission - prize on lottery</option>
+                                                                    <option>194H- Commission or Brokerage</option>
+                                                                    <option>194IA- Payments under 1941A</option>
+                                                                    <option>194IB- Rent not covered under 1941</option>
+                                                                    <option>194I- Rent on land or furniture etc and Rent
+                                                                        on plant and machinery</option>
+                                                                    <option>194J- Professional Fees</option>
+                                                                    <option>194LA - Compensation on acquisition</option>
+                                                                    <option>192- Salaries</option>
+                                                                    <option>194O- e-commerce participant</option>
+                                                                    <option>194Q- Payment of purchase of goods</option>
+                                                                    <option>195- Other sums payable to a non-resident
+                                                                    </option>
+                                                                    <option>194R- Benefit or perquisite</option>
+                                                                    <option>194S - Transfer of a virtual digital asset
+                                                                    </option>
+                                                                    <option>Others - Others</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">TDS Payable
+                                                                    Account</label>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select Account</option>
+                                                                    <option class="text-secondary">Other Current
+                                                                        Liability</option>
+                                                                    <option>TCS Payable</option>
+                                                                    <option>TDS Payable</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">TDS Receivable
+                                                                    Account</label>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select Account</option>
+                                                                    <option class="text-secondary">Other Current Asset
+                                                                    </option>
+                                                                    <option>Advance Tax</option>
+                                                                    <option>Prepaid Expenses</option>
+                                                                    <option>TCS Receivable</option>
+                                                                    <option>TDS Receivable</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckChecked">
+                                                                        This is a Higher TDS Rate <i
+                                                                            class="fa fa-question-circle-o"
+                                                                            aria-hidden="true" data-bs-toggle="tooltip"
+                                                                            data-bs-placement="bottom"
+                                                                            title="Mark this option if the TDS you are adding is at a higher TDS rate as mentioned under Section 206AB of the Income Tax Act, 1961 (effective from 1 July 2021). If you are preparing a transaction for a non-filer of income tax return, you will have to deduct a higher TDS rate."></i>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="" class="form-label">Reason for Higher TDS
+                                                                    Rate*</label>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected></option>
+                                                                    <option>Non-furnishing of PAN Deduction is on higher
+                                                                        rate under section 206AA on account of
+                                                                        non-furnishing of PAN</option>
+                                                                    <option>Non-filing of return of income Deduction is
+                                                                        on higher rate in view of section 206AB for
+                                                                        non-filing of return of income</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Save</button>
+                                                            <button type="button" class="btn btn-outline-secondary"
+                                                                data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 text-end">-0.00</div>
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col-4"><input type="text" class="form-control" id=""
@@ -1813,9 +2097,9 @@
                 </div>
                 <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
                 <div class="my-3">
-                        <a href="./draftSalesOrder.html"><button class="btn btn-outline-secondary">Save as Draft</button></a>
-                    <a href="./allSalesOrders.html"><button class="btn btn-primary">Save and Send</button></a>
-                    <a href="./salesOrders.html"><button class="btn btn-outline-secondary">Cancel</button></a>
+                    <a href="./draftBOS.html"> <button class="btn btn-outline-secondary">Save as Draft</button></a>
+                    <a href="./sentBOS.html"> <button class="btn btn-primary">Save and Send</button></a>
+                    <a href="./allSalesOrders.html"><button class="btn btn-outline-secondary">Cancel</button></a>
                 </div>
             </div>
         </div>

@@ -4199,9 +4199,9 @@
                 <div class="col-9 border-left">
                     <div class="row mb-4 border-bottom py-2 pb-3">
                         <div class="col-2">
+                            <small class="text-secondary">From sales order: SO-00004</small>
                             <h5>SO-00003</h5>
                         </div>
-                        <div class="col"></div>
                         <div class="col">
                             <a href="./newSalesOrder.html">
                                 <button class="btn btn-light border">Edit</button>
@@ -4302,17 +4302,9 @@
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                             </button>
                         </div>
-                        <div class="col"></div>
                         <div class="col">
-                            <div class="dropdown">
-                                <button class="btn btn-light border" type="button" id="dropdownMenuButton2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Create
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item" href="#">Instant Invoice</a></li>
-                                </ul>
-                            </div>
+                            <a href="#"><button class="btn btn-light border"><i class="fa fa-inr"
+                                        aria-hidden="true"></i> Record Payment</button></a>
                         </div>
                         <div class="col">
                             <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
@@ -4582,38 +4574,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-1">
-                            <a href="./salesOrders.html" class="text-dark"><i class="fa fa-times"
+                        <div class="col mt-1 delete-link position-absolute">
+                            <a href="./newBillOfSupply.html" class="text-dark"><i class="fa fa-times"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div style="margin-top: -25px;">
-                        <button class="btn btn-light border text-primary">
-                            <i class="fa fa-file-text-o" aria-hidden="true"></i> Invoices ( 1 )
-                        </button>
-                        <button class="btn btn-light border text-primary">
-                            <i class="fa fa-archive" aria-hidden="true"></i> Packages
-                        </button>
-                    </div>
                     <div class="row rounded p-2 m-2 d-flex align-items-center" style="background-color: #E7F6FF;">
                         <div class="col">
-                            <i class="fa fa-arrow-circle-right fs-3" aria-hidden="true"></i>
+                            <i class="fa fa-envelope-open-o fs-3" aria-hidden="true"></i>
                         </div>
                         <div class="col-7">
-                            <h6><i>Fulfill the Sales Order</i></h6>
-                            <div>You can create a package, shipment, or invoice (in any order) to fulfill this sales
-                                order.</div>
+                            <h6><i>Send the bill of supply</i></h6>
+                            <div>A bill of supply is prepared. You can email it to your customer or mark it as sent
+                            </div>
                         </div>
                         <div class="col"></div>
                         <div class="col">
-                            <a href="./newBillOfSupply.html">
-                                <button class="btn btn-secondary">
-                                    Convert to Bill of Supply
-                                </button>
-                            </a>
+                            <a href="#"> <button class="btn btn-secondary">
+                                    Send Bill Of Supply
+                                </button></a>
                         </div>
                     </div>
-                    <div class="border rounded mx-2 my-4">
+                    <div class="border rounded mx-2">
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -4628,355 +4610,172 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="position-absolute badge-primary banner-send" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom"
-                            title="Confirmed status indicates that the sales order has been shipped to the customer.">
-                            CONFIRMED</div>
+                        <div class="position-absolute bg-secondary banner-send draft-banner">Draft</div>
                         <div class="border mx-5 my-3 mb-5 p-4 position-relative">
-                            <div class="row pb-3">
-                                <div class="col-6 my-3 px-5">
-                                    <h4>SALES ORDER</h4>
-                                    <div>Sales Order# SO-00004</div>
-                                </div>
-                                <div class="col-6 text-end">
-                                    <h5>Dr.aware hospital and Nursing Home</h5>
-                                    <div>26b panja bazar</div>
-                                    <div>fulasheth</div>
-                                    <div>bahubali Maharashtra 425160</div>
-                                    <div>India</div>
-                                    <div>GSTIN: 27AAICA5564D1ZO</div>
+                            <div class="">
+                                <h5>Dr.aware hospital and Nursing Home</h5>
+                                <div>26b panja bazar</div>
+                                <div>fulasheth</div>
+                                <div>bahubali Maharashtra 425160</div>
+                                <div>India</div>
+                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Bill Of Supply
+                                    </h3>
                                 </div>
                             </div>
-                            <div class="border-top row p-3">
+                            <div class="border-bottom border-top row p-2">
                                 <div class="col-6">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <b>Status</b>
-                                            <div class="mb-3">Order</div>
-                                            <div class="mb-3">Invoice</div>
-                                            <div class="mb-3">Payment</div>
-                                            <div class="mb-5">Shipment</div>
-                                            <div class="mb-2">Sales Order#</div>
-                                            <div class="mb-2">Order Date</div>
-                                            <div class="mb-2">Expected Shipment Date</div>
-                                            <div class="mb-2">Payment Terms</div>
-                                            <div class="mb-2">Sales Person</div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mb-3 mt-4"><button class="btn btn-primary"
-                                                    data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                    title="Confirmed status indicates that the sales order has been shipped to the customer.">CONFIRMED</button>
-                                            </div>
-                                            <div class="mb-3 text-danger">Not Invoiced</div>
-                                            <div class="mb-3 text-danger">Unpaid</div>
-                                            <div class="mb-4 text-success">Pending</div>
-                                            <div class="mb-2">SO-00004</div>
-                                            <div class="mb-2">12/07/2022</div>
-                                            <div class="mb-2">13/07/2022</div>
-                                            <div class="mb-2">Due on Receipt</div>
-                                            <div class="mb-2">jay</div>
-                                        </div>
+                                        <div class="col-6">#</div>
+                                        <div class="col-6 fw-bold">: BOS-000011</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Bill Of Supply Date</div>
+                                        <div class="col-6 fw-bold">: 26/06/2017</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Terms</div>
+                                        <div class="col-6 fw-bold">: Due on Receipt</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Due Date</div>
+                                        <div class="col-6 fw-bold">: 26/06/2017</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">P.O.#</div>
+                                        <div class="col-6 fw-bold">: SO-00004</div>
+                                    </div>
+                                    <div class="row bg-light border-bottom border-top mb-3">
+                                        <div class="col fw-bold">Bill To</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col fw-bold"><a href="../customers/allCustomers.html">Mr. Badshah
+                                                khan</a></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">dd</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">sakri</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">424304 Maharashtra</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">India</div>
                                     </div>
                                 </div>
-                                <div class="col-2"></div>
-                                <div class="col-4">
-                                    <ul class="ulBilling mb-5">
-                                        <li><b>Bill To</b>
-                                            <ul>
-                                                <li><a href="../customers/allCustomers.html"><b>Mr. Badshah khan</b></a>
-                                                </li>
-                                                <li>dd</li>
-                                                <li>sakri</li>
-                                                <li>424304 Maharashtra</li>
-                                                <li>India</li>
-                                                <li>9876543210</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <ul class="ulBilling">
-                                        <li><b>Ship To</b>
-                                            <ul>
-                                                <li><b>Mr. Badshah khan</b></li>
-                                                <li>dd</li>
-                                                <li>sakri</li>
-                                                <li>424304 Maharashtra</li>
-                                                <li>India</li>
-                                                <li>9876543210</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <div class="col-6 border-left">
+                                    <div class="row">
+                                        <div class="col-6">Place Of Supply</div>
+                                        <div class="col-6 fw-bold">: Maharashtra (27)</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">Sales person</div>
+                                        <div class="col-6 fw-bold">: Jay</div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row bg-light border-bottom border-top mb-3">
+                                        <div class="col fw-bold">Ship To</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col fw-bold">Mr. Badshah khan</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">dd</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">sakri</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">424304 Maharashtra</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">India</div>
+                                    </div>
                                 </div>
                             </div>
-                            <table class="table">
+                            <table class="table table-bordered">
                                 <thead class="bg-light">
                                     <tr>
                                         <th>Item & Description</th>
                                         <th>HSN/SAC</th>
-                                        <th>Ordered</th>
+                                        <th>Qty</th>
                                         <th>Rate</th>
-                                        <th>Discount</th>
                                         <th>Amount</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            <div><i class="fa fa-picture-o text-secondary fs-3"
-                                                    style="opacity: 0.7;"></i>
-                                                <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#popupItemDetails">AK</a>
-                                            </div>
-                                            <div class="ml-5"><small>ABC</small></div>
+                                        <td><span class="fw-bold">AK</span>
+                                            <div>Description of item</div>
                                         </td>
-                                        <div class="modal fade" id="popupItemDetails" tabindex="-1"
-                                            aria-labelledby="popupItemDetailsLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header bg-light">
-                                                        <h5 class="modal-title" id="popupItemDetailsLabel">Item Details
-                                                        </h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-start divItem">
-                                                            <i
-                                                                class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
-                                                            <div class="ml-4">
-                                                                <div>Sales and Purchase Items (Service)</div>
-                                                                <h6 class="ml-2">AK <a
-                                                                        href="../../item/allItems.html"><i
-                                                                            class="fa fa-caret-square-o-right fs-5"
-                                                                            aria-hidden="true"></i></a>
-                                                                    <div>
-                                                                        <small>pcs</small>
-                                                                    </div>
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="container my-4">
-                                                            <div class="row border-bottom mb-3">
-                                                                <div class="col-6 text-center">
-                                                                    <h6><a href="">Address</a></h6>
-                                                                </div>
-                                                                <div class="col-6 text-center">
-                                                                    <h6><a href="" class="text-dark"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#popupItemDetails2">Activity</a>
-                                                                    </h6>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="container mb-5">
-                                                            <div class="row mb-2">
-                                                                <div class="col"><b>Sales Information</b></div>
-                                                            </div>
-                                                            <div class="row mb-2 ml-2">
-                                                                <div class="col-3 text-secondary">Selling Price</div>
-                                                                <div class="col-3">₹200.00</div>
-                                                            </div>
-                                                            <div class="row mb-2 ml-2">
-                                                                <div class="col-3 text-secondary">Sales Account</div>
-                                                                <div class="col-3">Sales</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="container">
-                                                            <div class="row mb-2">
-                                                                <div class="col"><b>Purchase Information</b></div>
-                                                            </div>
-                                                            <div class="row mb-2 ml-2">
-                                                                <div class="col-3 text-secondary">Purchase Price</div>
-                                                                <div class="col-3">₹100.00</div>
-                                                            </div>
-                                                            <div class="row mb-2 ml-2">
-                                                                <div class="col-3 text-secondary">Sales Account</div>
-                                                                <div class="col-3">Cost of Goods Sold</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal fade" id="popupItemDetails2" tabindex="-1"
-                                            aria-labelledby="popupItemDetails2Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header bg-light">
-                                                        <h5 class="modal-title" id="popupItemDetails2Label">Item Details
-                                                        </h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-start divItem">
-                                                            <i
-                                                                class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
-                                                            <div class="ml-4">
-                                                                <div>Sales and Purchase Items (Service)</div>
-                                                                <h6 class="ml-2">AK <a
-                                                                        href="../../item/allItems.html"><i
-                                                                            class="fa fa-caret-square-o-right fs-5"
-                                                                            aria-hidden="true"></i></a>
-                                                                    <div>
-                                                                        <small>pcs</small>
-                                                                    </div>
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="container my-4">
-                                                            <div class="row border-bottom mb-3">
-                                                                <div class="col-6 text-center">
-                                                                    <h6><a href="" class="text-dark"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#popupItemDetails">Address</a>
-                                                                    </h6>
-                                                                </div>
-                                                                <div class="col-6 text-center">
-                                                                    <h6><a href="">Activity</a></h6>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="container">
-                                                            <div class="row mb-3">
-                                                                <div class="col-6 text-center">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn btn-white dropdown-toggle"
-                                                                            type="button" id="dropdownMenuButton1"
-                                                                            data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            All Estimates
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton1">
-                                                                            <li><a class="dropdown-item text-secondary"
-                                                                                    href="#">Default
-                                                                                    Filters</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">All</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Pending Approval</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Approved</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Sent</a></li>
-                                                                            <li><a class="dropdown-item" href="#">Client
-                                                                                    Viewed</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Accepted</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Invoiced</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Declined</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Expired</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6 text-center">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn btn-white dropdown-toggle"
-                                                                            type="button" id="dropdownMenuButton2"
-                                                                            data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            Status: All
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton2">
-                                                                            <li><a class="dropdown-item text-secondary"
-                                                                                    href="#">Default
-                                                                                    Filters</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">All</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Pending Approval</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Approved</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Sent</a></li>
-                                                                            <li><a class="dropdown-item" href="#">Client
-                                                                                    Viewed</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Accepted</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Invoiced</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Declined</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                    href="#">Expired</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mb-3 bg-light text-center p-3">
-                                                                <div class="col">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox"
-                                                                            value="" id="flexCheckChecked" checked>
-                                                                        <label class="form-check-label"
-                                                                            for="flexCheckChecked">
-                                                                            Show only Dr.aware hospital and Nursing
-                                                                            Home's transactions
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col"><b>Dr.aware hospital and Nursing
-                                                                        Home</b></div>
-                                                            </div>
-                                                            <div class="row mb-3 text-center">
-                                                                <div class="col-4">EST-000002</div>
-                                                                <div class="col-4"><a href="">Sent</a></div>
-                                                                <div class="col-4">Item Price: <b>₹629.99</b></div>
-                                                            </div>
-                                                            <div class="row mb-3 border-bottom text-center">
-                                                                <div class="col-4">10/07/2022</div>
-                                                                <div class="col-4"></div>
-                                                                <div class="col-4">Quantity Sold: <b>1.00</b></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <td>998313</td>
-                                        <td>1 box</td>
-                                        <td>₹50.00</td>
-                                        <td>0</td>
-                                        <td>₹50.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Notes</td>
-                                        <td>997156</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Terms & Conditions</b></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                            <div class="mb-3">
-                                                <h5>Sub Total</h5>
-                                                <div><small>Total Quantity : 1</small></div>
-                                            </div>
-                                            <div class="mb-3 border-bottom">
-                                                <h5>Adjustment</h5>
-                                            </div>
-                                            <div>
-                                                <h5>Total</h5>
-                                            </div>
+                                        <td>1.0
+                                            <div>pcs</div>
                                         </td>
+                                        <td>600.00</td>
+                                        <td>600.00</td>
+                                    </tr>
+                                    <tr>
                                         <td>
-                                            <div class="mb-5">
-                                                <h5>₹50.00</h5>
+                                            <span class="fw-bold">sample service
+                                            </span>
+                                        </td>
+                                        <td>997156</td>
+                                        <td>1.0
+                                            <div>pcs</div>
+                                        </td>
+                                        <td>200.00</td>
+                                        <td>200.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>Total In Words (Indian Rupee)</div>
+                                            <div class="mb-3"><i>Nine Hundred Six Only</i></div>
+                                            <div class="mb-3">Thanks for your business.</div>
+                                        </td>
+                                        <td colspan="4">
+                                            <div class="d-flex justify-content-around">
+                                                <div>
+                                                    Sub Total
+                                                </div>
+                                                <div>800.00</div>
                                             </div>
-                                            <div class="mb-3 border-bottom">
-                                                <h5>₹5.00</h5>
+                                            <div class="d-flex justify-content-around">
+                                                <div>
+                                                    Adjustment
+                                                </div>
+                                                <div>6.00</div>
                                             </div>
-                                            <div>
-                                                <h5>₹55.00</h5>
+                                            <div class="d-flex justify-content-around fw-bold">
+                                                <div>
+                                                    Total
+                                                </div>
+                                                <div>₹806.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
+                                                <div>
+                                                    Balance Due
+                                                </div>
+                                                <div>₹806.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <div>Authorized Signature</div>
                                             </div>
                                         </td>
                                     </tr>
@@ -4987,6 +4786,25 @@
                     <div class="d-flex justify-content-end mx-3 mt-2 mb-5">
                         <div>Template : 'Spreadsheet Template' <a href="#">Change</a></div>
                     </div>
+                    <div class="text-secondary">Associated Sales Orders ( 1 )</div>
+                    <table class="table mb-5">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Sales Order#</th>
+                                <th>Status</th>
+                                <th>Shipment Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>19/07/2022</td>
+                                <td class="text-primary">SO-00004</td>
+                                <td class="text-success">CLOSED</td>
+                                <td>20/07/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

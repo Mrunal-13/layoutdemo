@@ -4199,7 +4199,7 @@
                 <div class="col-9 border-left">
                     <div class="row mb-4 border-bottom py-2 pb-3">
                         <div class="col-2">
-                            <h5>SO-00003</h5>
+                            <h5>SO-00004</h5>
                         </div>
                         <div class="col"></div>
                         <div class="col">
@@ -4600,17 +4600,19 @@
                             <i class="fa fa-arrow-circle-right fs-3" aria-hidden="true"></i>
                         </div>
                         <div class="col-7">
-                            <h6><i>Fulfill the Sales Order</i></h6>
-                            <div>You can create a package, shipment, or invoice (in any order) to fulfill this sales
-                                order.</div>
+                            <h6><i>Send the Sales Order</i></h6>
+                            <div>Sales order has been created. You can email the Sales Order to your customer or mark it
+                                as Confirmed.</div>
                         </div>
-                        <div class="col"></div>
                         <div class="col">
-                            <a href="./newBillOfSupply.html">
-                                <button class="btn btn-secondary">
-                                    Convert to Bill of Supply
-                                </button>
-                            </a>
+                            <a href="./allSalesOrders.html"><button class="btn btn-light border">
+                                    Mark as Confirmed
+                                </button></a>
+                        </div>
+                        <div class="col">
+                            <a href="./allSalesOrders.html"> <button class="btn btn-secondary">
+                                    Send Sales Order
+                                </button></a>
                         </div>
                     </div>
                     <div class="border rounded mx-2 my-4">
@@ -4628,13 +4630,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="position-absolute badge-primary banner-send" data-bs-toggle="tooltip"
+                        <div class="position-absolute bg-secondary banner-send" data-bs-toggle="tooltip"
                             data-bs-placement="bottom"
-                            title="Confirmed status indicates that the sales order has been shipped to the customer.">
-                            CONFIRMED</div>
+                            title="Draft status indicates that this sales order can be modified.">Draft</div>
                         <div class="border mx-5 my-3 mb-5 p-4 position-relative">
                             <div class="row pb-3">
-                                <div class="col-6 my-3 px-5">
+                                <div class="col-6 my-3">
                                     <h4>SALES ORDER</h4>
                                     <div>Sales Order# SO-00004</div>
                                 </div>
@@ -4651,26 +4652,17 @@
                                 <div class="col-6">
                                     <div class="row">
                                         <div class="col-6">
-                                            <b>Status</b>
-                                            <div class="mb-3">Order</div>
-                                            <div class="mb-3">Invoice</div>
-                                            <div class="mb-3">Payment</div>
-                                            <div class="mb-5">Shipment</div>
-                                            <div class="mb-2">Sales Order#</div>
+                                            <button class="btn btn-secondary mb-2" data-bs-toggle="tooltip"
+                                                data-bs-placement="bottom"
+                                                title="Draft status indicates that this sales order can be modified.">Draft</button>
+                                            <div class="mb-2">Reference#</div>
                                             <div class="mb-2">Order Date</div>
                                             <div class="mb-2">Expected Shipment Date</div>
                                             <div class="mb-2">Payment Terms</div>
                                             <div class="mb-2">Sales Person</div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="mb-3 mt-4"><button class="btn btn-primary"
-                                                    data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                    title="Confirmed status indicates that the sales order has been shipped to the customer.">CONFIRMED</button>
-                                            </div>
-                                            <div class="mb-3 text-danger">Not Invoiced</div>
-                                            <div class="mb-3 text-danger">Unpaid</div>
-                                            <div class="mb-4 text-success">Pending</div>
-                                            <div class="mb-2">SO-00004</div>
+                                            <div class="mb-2 mt-5">00001</div>
                                             <div class="mb-2">12/07/2022</div>
                                             <div class="mb-2">13/07/2022</div>
                                             <div class="mb-2">Due on Receipt</div>
@@ -4711,7 +4703,6 @@
                                 <thead class="bg-light">
                                     <tr>
                                         <th>Item & Description</th>
-                                        <th>HSN/SAC</th>
                                         <th>Ordered</th>
                                         <th>Rate</th>
                                         <th>Discount</th>
@@ -4941,19 +4932,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <td>998313</td>
                                         <td>1 box</td>
                                         <td>₹50.00</td>
                                         <td>0</td>
                                         <td>₹50.00</td>
                                     </tr>
                                     <tr>
-                                        <td>Notes</td>
-                                        <td>997156</td>
-                                    </tr>
-                                    <tr>
                                         <td><b>Terms & Conditions</b></td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <section>
+        <div class="layer1">
+            <div class="dropDown1">
+                <select name="patient" id="patient">
+                    <option value="">All Patient</option>
+                </select>
+            </div>
+            <div class="selectGraphs">
+                <a onclick="showGraph()" class="icon"><span class="iconify" data-icon="entypo:bar-graph"  data-width="25" data-height="25"></span></a>
+                <a onclick="showLine()" class="icon"><span class="iconify" data-icon="bi:graph-up" data-width="25" data-height="25"></span></a>
+                <div class="showDate" style="margin-left:35px">
+                    <span class="iconify" data-icon="simple-line-icons:calender" style="color: #323232;" data-width="10" data-height="10"></span>
+                    <span>Today</span>
+                    <span class="iconify" data-icon="bxs:down-arrow" style="color: #323232;" data-width="10" data-height="10"></span>
+                </div>
+            </div>
+        </div>
+        <div class="chartDiv" style="display: flex;">
+             <div class="chartCanvas">
+                <canvas id="mixed-chart"></canvas>
+            </div>
+            <div class="vl" ></div>
+            <div class="details1">
+                <div class="Bar">
+                    <span class="dot1 green"></span><span>Patient Total</span>
+                </div>
+                <div class="Bar">
+                    <span class="dot1 red"></span><span>OPD</span>
+                </div>
+                <div class="Bar">
+                    <span class="dot1 blue"></span><span>IPD</span>
+                </div>
+                <div class="Bar">
+                    <span class="dot1 skyblue"></span><span>Average</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="activities">
+            <div class="activityBox">
+                <h2>Sales Activity</h2>
+                <div class="boxes">
+                    <div class="box blueBox">
+                        <div class="qty">
+                            <h1>0</h1>
+                            <p>Qty</p>
+                        </div>
+                        <p><span class="iconify" data-icon="akar-icons:circle-check" data-width="15" data-height="15"></span> &nbsp; TO BE PACKED</p>
+                    </div>
+                    <div class="box redBox">
+                        <div class="qty">
+                            <h1>0</h1>
+                            <p>Pkgs</p>
+                        </div>
+                        <p><span class="iconify" data-icon="akar-icons:shipping-box-01" data-width="15" data-height="15"></span> &nbsp; TO BE SHIPPED</p>
+                    </div>
+                    <div class="box greenBox">
+                        <div class="qty">
+                            <h1>0</h1>
+                            <p>Pkgs</p>
+                        </div>
+                        <p><span class="iconify" data-icon="ic:outline-delivery-dining" data-width="15" data-height="15"></span> &nbsp; TO BE DELIVERED</p>
+                    </div>
+                    <div class="box yellowBox">
+                        <div class="qty">
+                            <h1>2</h1>
+                            <p>Qty</p>
+                        </div>
+                        <p><span class="iconify" data-icon="teenyicons:invoice-outline" data-width="15" data-height="15"></span> &nbsp; TO BE INVOICED</p>
+                    </div>
+                </div>
+            </div>
+            <div class="summaryBox">
+                <h1>Inventory Summary</h1>
+                <div class="qtyInfo">
+                    <div class="infoBox">
+                        <p>QUANTITY IN HAND</p>
+                        <h1 class="num">0</h1>
+                    </div>
+                    <div class="infoBox">
+                        <p>QUANTITY IN HAND</p>
+                        <h1 class="num">0</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="productsInfo">
+            <div class="product_details">
+                <div class="head_of_proDetails">
+                    <p>PRODUCT DETAILS</p>
+                </div>
+                <div class="details">
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <span class="dot greenDot"></span>
+                                <p>Active Items</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <span class="dot redDot"></span>
+                                <p>Low Stock Items</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <span class="dot purpleDot"></span>
+                                <p>All Item Groups</p>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <span class="dot blueDot"></span>
+                                <p>All Items</p>
+                                <p>4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <canvas id="myChart1" ></canvas>
+                </div>
+                
+            </div>
+            <div class="sellingItems">
+                <div class="headofSellItems">
+                    <div>
+                        <p>TOP SELLING ITEMS</p>
+                    </div>
+                    <div>
+                        <span class="iconify" data-icon="simple-line-icons:calender" data-width="15" data-height="15"></span>
+                        <span>This month</span>
+                        <span class="iconify" data-icon="bxs:down-arrow" data-width="15" data-height="15"></span>
+                    </div>
+                </div>
+                <div >
+                    <ul class="itemLists">
+                        <li>
+                            <img src="./image 312.png" alt="productImage">
+                            <p>Dettol Antiseptic Liquid Bottle Of 550 Ml</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

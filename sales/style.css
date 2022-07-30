@@ -1025,6 +1025,7 @@ main .active-item {
     right: 170px;
     bottom: 800px;
 }
+
 .copy-delete3 {
     right: 170px;
     bottom: 650px;
@@ -1039,6 +1040,7 @@ main .active-item {
     left: 187px;
     bottom: 800px;
 }
+
 .icon-th3 {
     left: 187px;
     bottom: 650px;
@@ -1071,6 +1073,23 @@ main .active-item {
 
 .input-sales-person {
     border-radius: 30px;
+}
+
+.delete-link {
+    left: 1120px;
+}
+
+.sent-banner {
+    left: 14px;
+    top: 215px;
+}
+
+.draft-banner {
+    top: 189px;
+}
+
+.paid-banner {
+    top: 111px;
 }
 
 /* Code for Sales @anjudewangan */

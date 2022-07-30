@@ -3284,26 +3284,27 @@
                                         <div class="modal-body m-2">
                                             <div class="mb-3">Only the current view will be exported from
                                                 <b>Welldone</b> in
-                                                CSV or XLS format, along with its visible columns.</div>
+                                                CSV or XLS format, along with its visible columns.
+                                            </div>
                                             <div>Export As<span class="text-danger">*</span></div>
                                             <div class="my-4">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                                        id="radioCSV" checked>
+                                                    <input class="form-check-input" type="radio"
+                                                        name="flexRadioDefault1" id="radioCSV" checked>
                                                     <label class="form-check-label" for="radioCSV">
                                                         CSV (Comma Separated Value)
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                                        id="radioXLX">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="flexRadioDefault1" id="radioXLX">
                                                     <label class="form-check-label" for="radioXLX">
                                                         XLS (Microsoft Excel 1997-2004 Compatible)
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                                        id="radioXLSX">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="flexRadioDefault1" id="radioXLSX">
                                                     <label class="form-check-label" for="radioXLSX">
                                                         XLSX (Microsoft Excel)
                                                     </label>
@@ -3404,9 +3405,22 @@
                     <thead>
                         <tr>
                             <th>
-                                <input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck">Name
+                                <input class="form-check-input" type="checkbox" value="" id="">Name
                             </th>
+                            <th>City</th>
+                            <th>Mobile</th>
+                            <th>GST Treatment</th>
+                            <th>Place of Supply</th>
+                            <th>Receivables</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
+                                    data-bs-target="#popupCheck">
+                                <a href="./allCustomers.html">Mr. Badshah khan</a>
+                            </td>
                             <div class="modal fade" id="popupCheck" tabindex="-1" aria-labelledby="popupCheckLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modalCheck">
@@ -3640,19 +3654,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <th>City</th>
-                            <th>Mobile</th>
-                            <th>GST Treatment</th>
-                            <th>Place of Supply</th>
-                            <th>Receivables</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
-                                <a href="./allCustomers.html">Mr. Badshah khan</a>
-                            </td>
                             <td>Pune</td>
                             <td>9876543210</td>
                             <td>Consumer</td>
@@ -3661,7 +3662,8 @@
                         </tr>
                         <tr>
                             <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="">
+                                <input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
+                                    data-bs-target="#popupCheck">
                                 <a href="#">sample baba</a>
                             </td>
                             <td></td>

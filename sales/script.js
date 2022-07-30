@@ -376,6 +376,18 @@ $(document).ready(function () {
         $(".active").toggle();
         $(".inactive").toggle();
     });
+
+    // Code for Record Payment @anjudewangan
+    $(".checkTDS").hide();
+    $("#checkTDS").click(function () {
+        $(".checkTDS").show();
+        $("input[name='checkTax'][value='1']").prop('checked', true);
+    });
+    $("#checkTax").click(function () {
+        $(".checkTDS").hide();
+        $("input[name='checkTax'][value='2']").prop('checked', true);
+    });
+    // Code for Record Payment @anjudewangan
 });
 
 // Code for Chart @anjudewangan

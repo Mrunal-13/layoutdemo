@@ -4198,603 +4198,520 @@
                 </div>
                 <div class="col-9 border-left">
                     <div class="row mb-4 border-bottom py-2 pb-3">
-                        <div class="col-2">
-                            <small class="text-secondary">From sales order: SO-00003</small>
-                            <h5>BOS-00001</h5>
-                        </div>
-                        <div class="col">
-                            <a href="./newSalesOrder.html">
-                                <button class="btn btn-light border">Edit</button>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupFiles">
-                                <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-                            </button>
-                            <div class="modal fade" id="popupFiles" tabindex="-1" aria-labelledby="popupFilesLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-body p-4">
-                                            <h6 class="text-secondary text-center">You can upload a maximum of 10 files,
-                                                5MB each</h6>
-                                            <div class="container mt-3">
-                                                <div class="row">
-                                                    <div
-                                                        class="col text-center rounded bg-light border border-secondary py-2">
-                                                        <i class="fa fa-upload text-primary mb-2 fs-5"
-                                                            aria-hidden="true"></i>
-                                                        <h6>Drag & drop</h6>
-                                                    </div>
-                                                    <div class="col"></div>
-                                                    <div
-                                                        class="col text-center rounded bg-light border border-secondary py-2">
-                                                        <i class="fa fa-cloud-upload text-primary mb-2 fs-5"
-                                                            aria-hidden="true"></i>
-                                                        <h6>Cloud</h6>
-                                                    </div>
-                                                    <div class="col"></div>
-                                                    <div
-                                                        class="col text-center rounded bg-light border border-secondary py-2">
-                                                        <i class="fa fa-file text-primary mb-2 fs-5"
-                                                            aria-hidden="true"></i>
-                                                        <h6>Documents</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border">
-                                <i class="fa fa-files-o" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border">
-                                <i class="fa fa-print" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="col">
-                            <div class="dropdown">
-                                <button class="btn btn-light border dropdown-toggle" type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    More
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Create Credit Note</a></li>
-                                    <li><a class="dropdown-item" href="#">Clone</a></li>
-                                    <li><a class="dropdown-item" href="#">Void</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                        data-bs-target="#popupDelete">Delete</a></li>
-                                        <li><a class="dropdown-item" href="#">Invoice Preferences</a></li>
-                                </ul>
-                                <div class="modal fade" id="popupDelete" tabindex="-1"
-                                    aria-labelledby="popupDeleteLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                                    <h5>Are you sure?</h5>
-                                                </div>
-                                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                                    <p>Once deleted, they cannot be undone</p>
-                                                </div>
-                                                <div class="d-flex justify-content-around mb-4">
-                                                    <a href="./salesOrders.html"><button type="button" class="btn btn-light">Delete</button></a>
-                                                    <button type="button" class="btn btn-primary"
-                                                        data-bs-dismiss="modal">No</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="col">
-                            <a href="./sentBOS.html"> <button class="btn btn-light border"><i class="fa fa-pencil"
-                                        aria-hidden="true"></i> Cancel
-                                    Write Off</button></a>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
-                                <i class="fa fa-share-alt" aria-hidden="true"></i> Share
-                            </button>
-                            <div class="modal fade" id="popupShare" tabindex="-1" aria-labelledby="popupShareLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupShareLabel">Share Estimate Link</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3 row">
-                                                <label for="" class="col-sm-2 col-form-label">Visibility: </label>
-                                                <div class="col-sm-10">
-                                                    <div class="dropdown">
-                                                        <button class="btn text-primary border-0 dropdown-toggle"
-                                                            type="button" id="dropdownMenuButton5"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            Public
-                                                        </button>
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                                                            <li class="border-bottom pb-3"><a
-                                                                    class="dropdown-item fw-bold" href="#"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#popupShare">Public</a>
-                                                                <div>Anyone with the link can access the full forecast
-                                                                    before its expiration date.</div>
-                                                            </li>
-                                                            <li><a class="dropdown-item fw-bold" href="#"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#popupShare3">Private &
-                                                                    Secure</a>
-                                                                <div>Your client can only access estimates from the
-                                                                    client portal.</div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-5">Select an expiration date and generate a link to share it
-                                                with your customers. Note that anyone with access to this link can view,
-                                                print, or download it.</div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Link Expiration Date <span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" id="" placeholder="08/10/2022">
-                                                <small class="text-secondary"><i class="fa fa-info-circle"
-                                                        aria-hidden="true"></i> By default, the link is set to expire 30
-                                                    days from today.</small>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#popupShare2">Generate Link</button>
-                                            <button type="button" class="btn btn-outline-secondary"
-                                                data-bs-dismiss="modal">Disable All Active Links</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupShare2" tabindex="-1" aria-labelledby="popupShare2Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupShare2Label">Share Estimate Link</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3 row">
-                                                <label for="" class="col-sm-2 col-form-label">Visibility: </label>
-                                                <div class="col-sm-10">
-                                                    <div class="dropdown">
-                                                        <button class="btn text-primary border-0 dropdown-toggle"
-                                                            type="button" id="dropdownMenuButton5"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            Public
-                                                        </button>
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                                                            <li class="border-bottom pb-3"><a
-                                                                    class="dropdown-item fw-bold" href="#"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#popupShare">Public</a>
-                                                                <div>Anyone with the link can access the full forecast
-                                                                    before its expiration date.</div>
-                                                            </li>
-                                                            <li><a class="dropdown-item fw-bold" href="#"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#popupShare3">Private &
-                                                                    Secure</a>
-                                                                <div>Your client can only access estimates from the
-                                                                    client portal.</div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-5">Select an expiration date and generate a link to share it
-                                                with your customers. Note that anyone with access to this link can view,
-                                                print, or download it.</div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Link Expiration Date <span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" class="form-control bg-light" id=""
-                                                    placeholder="08/10/2022">
-                                                <small class="text-secondary"><i class="fa fa-info-circle"
-                                                        aria-hidden="true"></i> By default, the link is set to expire 30
-                                                    days from today.</small>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" id=""
-                                                        placeholder="https://welldonehealth.in/samplebaba/secure?CEstimateID=2-ee5b99cb308863d032af83f8bb99c2f6cc10cf6579fb60a69ffe9870c31f813e480af0059f428077c0faa63d3d578f32e109bcc5dd06cc56c0a8faa5a29253b288e74ab6e90d6e51 ">
-                                                </div>
-                                                <div class="col-sm-2">
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#popupShare3">Copy Link</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupShare3" tabindex="-1" aria-labelledby="popupShare3Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupShare3Label">Share Estimate Link</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3 row">
-                                                <label for="" class="col-sm-2 col-form-label">Visibility: </label>
-                                                <div class="col-sm-10">
-                                                    <div class="dropdown">
-                                                        <button class="btn text-primary border-0 dropdown-toggle"
-                                                            type="button" id="dropdownMenuButton5"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            Private & Secure
-                                                        </button>
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                                                            <li class="border-bottom pb-3"><a
-                                                                    class="dropdown-item fw-bold" href="#"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#popupShare">Public</a>
-                                                                <div>Anyone with the link can access the full forecast
-                                                                    before its expiration date.</div>
-                                                            </li>
-                                                            <li><a class="dropdown-item fw-bold" href="#"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#popupShare3">Private &
-                                                                    Secure</a>
-                                                                <div>Your client can only access estimates from the
-                                                                    client portal.</div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3">You can only share estimates privately through the client
-                                                portal.</div>
-                                            <div class="mb-3">A client portal is enabled for these customers or their
-                                                contact persons and estimates will be available on their customer
-                                                portal. They can view, download or print it from the client portal.
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Okay, Got it</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupComment">
-                                <i class="fa fa-comment-o" aria-hidden="true"></i> Comments
-                            </button>
-                            <div class="modal fade" id="popupComment" tabindex="-1" aria-labelledby="popupCommentLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupCommentLabel">Comments & History</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="form-floating">
-                                                <textarea class="form-control" placeholder="Leave a comment here" id=""
-                                                    style="height: 100px"></textarea>
-                                            </div>
-                                            <button type="button" class="btn btn-primary m-3">Add
-                                                Comment</button>
-                                            <div class="container border-top mb-5">
-                                                <div class="comment">
-                                                    <div class="comment1">
-                                                        <i class="fa fa-file-text-o text-warning"
-                                                            aria-hidden="true"></i>
-                                                        <div
-                                                            class="bg-light rounded border border-secondary divcomment1">
-                                                            <div class="mb-3">Template has been updated</div>
-                                                            <div class="fw-bold">by rakeshnandre433</div>
-                                                        </div>
-                                                        <div class="commentDate1"><small>11:06 AM</small>
-                                                            <small class="text-secondary">24/06/2022</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment2">
-                                                        <i class="fa fa-file-text-o text-warning"
-                                                            aria-hidden="true"></i>
-                                                        <div
-                                                            class="bg-light rounded border border-secondary divcomment2">
-                                                            <div class="mb-3">Template has been updated</div>
-                                                            <div class="fw-bold">by rakeshnandre433</div>
-                                                        </div>
-                                                        <div class="commentDate2"><small>11:06 AM</small>
-                                                            <small class="text-secondary">24/06/2022</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment3">
-                                                        <i class="fa fa-envelope-o text-success" aria-hidden="true"></i>
-                                                        <div
-                                                            class="bg-light rounded border border-secondary divcomment3">
-                                                            <div class="mb-3">Customer has viewed the estimate in the
-                                                                email.</div>
-                                                            <div class="fw-bold">by Welldone</div>
-                                                        </div>
-                                                        <div class="commentDate3"><small>11:02 AM</small>
-                                                            <small class="text-secondary">24/06/2022</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment4">
-                                                        <i class="fa fa-envelope-o text-success" aria-hidden="true"></i>
-                                                        <div
-                                                            class="bg-light rounded border border-secondary divcomment4">
-                                                            <div class="mb-3">Estimate emailed to visaldeore@gmail.com
-                                                            </div>
-                                                            <div class="fw-bold">by rakeshnandre433</div>
-                                                        </div>
-                                                        <div class="commentDate4"><small>10:58 AM</small>
-                                                            <small class="text-secondary">24/06/2022</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="comment5">
-                                                        <i class="fa fa-file-text-o text-warning"
-                                                            aria-hidden="true"></i>
-                                                        <div
-                                                            class="bg-light rounded border border-secondary divcomment5">
-                                                            <div class="mb-3">Estimate created for ₹800.00</div>
-                                                            <div class="fw-bold">by rakeshnandre433</div>
-                                                        </div>
-                                                        <div class="commentDate5"><small>10:57 AM</small>
-                                                            <small class="text-secondary">24/06/2022</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mt-1 delete-link position-absolute">
-                            <a href="./salesOrders.html" class="text-dark"><i class="fa fa-times"
+                        <div class="col-1 d-flex align-items-center">
+                            <a href="./sentBOS.html"> <i class="fa fa-arrow-circle-o-left fs-3 text-secondary"
                                     aria-hidden="true"></i></a>
                         </div>
+                        <div class="col-3">
+                            <small class="text-primary">SO-00003/BOS-00001</small>
+                            <h5>Payment for BOS-00001</h5>
+                        </div>
                     </div>
-                    <div class="border rounded mx-2">
-                        <div class="d-flex justify-content-end">
+                    <div class="container border-bottom p-4">
+                        <div class="mb-3 row d-flex align-items-center">
+                            <label for="" class="col-sm-3 col-form-label">Customer Name <span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control bg-light" id="" placeholder="Mr. Badshah khan"
+                                    data-bs-toggle="modal" data-bs-target="#popupSelectCustomer">
+                                <div class="modal fade" id="popupSelectCustomer" tabindex="-1"
+                                    aria-labelledby="popupSelectCustomerLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="border-bottom mb-3">Mr. Badshah khan</div>
+                                                <div class="border-bottom mb-3">sample baba</div>
+                                                <div><a href="./newCustomer.html">+ New Customers</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#popupCustomerDetails"><i
+                                        class="fa fa-user" aria-hidden="true"></i> View Customer Details</a>
+                                <div class="modal fade" id="popupCustomerDetails" tabindex="-1"
+                                    aria-labelledby="popupCustomerDetailsLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupCustomerDetailsLabel">Customer Details
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start divCustomer">
+                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                        aria-hidden="true"></i>
+                                                    <h6 class="ml-4">Mr. Badshah khan <a
+                                                            href="../customers/allCustomers.html"><i
+                                                                class="fa fa-caret-square-o-right fs-5"
+                                                                aria-hidden="true"></i></a></h6>
+                                                </div>
+                                                <div class="container my-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="mb-3">Outstanding Receivables</div>
+                                                            <div>₹200.00</div>
+                                                        </div>
+                                                        <div class="col-6 border-left text-end">
+                                                            <div class="mb-3">Unused Credits</div>
+                                                            <div>₹0.00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container my-5">
+                                                    <div class="row border-bottom mb-2">
+                                                        <div class="col-4">Other Details</div>
+                                                        <div class="col-7"></div>
+                                                        <div class="col-1"><i class="fa fa-angle-down"
+                                                                aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Customer Type</div>
+                                                        <div class="col-4">Individual</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Payment Terms</div>
+                                                        <div class="col-4">Due on Receipt</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Template Language</div>
+                                                        <div class="col-4">English</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GST Treatment</div>
+                                                        <div class="col-4">Consumer</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Place Of Supply</div>
+                                                        <div class="col-4">Maharashtra</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GSTIN</div>
+                                                        <div class="col-4">27AABFB2177L1ZD</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row border-bottom mb-3">
+                                                        <div class="col-6 text-center"><a href=""
+                                                                class="text-dark">Address</a>
+                                                        </div>
+                                                        <div class="col-6 text-center"><a href="" data-bs-toggle="modal"
+                                                                data-bs-target="#popupCustomerDetails2">Activity</a>
+                                                        </div>
+                                                    </div>
+                                                    <ul>
+                                                        <li><i class="fa fa-file-text-o text-success"
+                                                                aria-hidden="true"></i> Billing Address
+                                                            <ul>
+                                                                <li><b>bashah</b></li>
+                                                                <li><small>dd</small></li>
+                                                                <li><small>sakri</small></li>
+                                                                <li><small>Maharashtra 424304</small></li>
+                                                                <li><small>India</small></li>
+                                                                <li><small>Phone: 9876543210</small></li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                    <ul>
+                                                        <li><i class="fa fa-truck text-warning" aria-hidden="true"></i>
+                                                            Shipping Address
+                                                            <ul>
+                                                                <li><b>bashah</b></li>
+                                                                <li><small>dd</small></li>
+                                                                <li><small>sakri</small></li>
+                                                                <li><small>Maharashtra 424304</small></li>
+                                                                <li><small>India</small></li>
+                                                                <li><small>Phone: 9876543210</small></li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupCustomerDetails2" tabindex="-1"
+                                    aria-labelledby="popupCustomerDetails2Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupCustomerDetails2Label">Customer Details
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-start divCustomer">
+                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                        aria-hidden="true"></i>
+                                                    <h6 class="ml-4">Mr. Badshah khan <a
+                                                            href="../customers/allCustomers.html"><i
+                                                                class="fa fa-caret-square-o-right fs-5"
+                                                                aria-hidden="true"></i></a></h6>
+                                                </div>
+                                                <div class="container my-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="mb-3">Outstanding Receivables</div>
+                                                            <div>₹200.00</div>
+                                                        </div>
+                                                        <div class="col-6 border-left text-end">
+                                                            <div class="mb-3">Unused Credits</div>
+                                                            <div>₹0.00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container my-5">
+                                                    <div class="row border-bottom mb-2">
+                                                        <div class="col-4">Other Details</div>
+                                                        <div class="col-7"></div>
+                                                        <div class="col-1"><i class="fa fa-angle-down"
+                                                                aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Customer Type</div>
+                                                        <div class="col-4">Individual</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Payment Terms</div>
+                                                        <div class="col-4">Due on Receipt</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Template Language</div>
+                                                        <div class="col-4">English</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GST Treatment</div>
+                                                        <div class="col-4">Consumer</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">Place Of Supply</div>
+                                                        <div class="col-4">Maharashtra</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">GSTIN</div>
+                                                        <div class="col-4">27AABFB2177L1ZD</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-6 text-center"><a href="" data-bs-toggle="modal"
+                                                                data-bs-target="#popupCustomerDetails">Address</a></div>
+                                                        <div class="col-6 text-center"><a href=""
+                                                                class="text-dark">Activity</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container border-top mb-5">
+                                                    <div class="timeline">
+                                                        <div class="point1">
+                                                            <div class="commentDate1"><small>11:06 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer1">
+                                                                <div>Bill Of Supply added</div>
+                                                                <div>Bill Of Supply BOS-000002 of amount ₹600.00 created
+                                                                    <b>by
+                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point2">
+                                                            <div class="commentDate2"><small>11:06 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer2">
+                                                                <div>Payments Received added</div>
+                                                                <div>Payment of amount ₹49.00 received and applied for
+                                                                    BOS-000001 <b>by
+                                                                        rakeshnandre433</b></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point3">
+                                                            <div class="commentDate3"><small>11:02 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer3">
+                                                                <div>Bill Of Supply updated</div>
+                                                                <div>Bill Of Supply BOS-000001 emailed <b>by
+                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point4">
+                                                            <div class="commentDate4"><small>10:58 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer4">
+                                                                <div>Bill Of Supply added</div>
+                                                                <div>Bill Of Supply BOS-000001 of amount ₹49.00 created
+                                                                    <b>by
+                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="point5">
+                                                            <div class="commentDate5"><small>10:57 AM</small>
+                                                                <small class="text-secondary">24/06/2022</small>
+                                                            </div>
+                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                            <div
+                                                                class="bg-light rounded border border-secondary divBillContainer5">
+                                                                <div>Contact added</div>
+                                                                <div>Contact created with GST Treatment 'Consumer'.
+                                                                    State updated to MH.
+                                                                    <b>by rakeshnandre433</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 row d-flex align-items-center">
+                            <label for="" class="col-sm-3 col-form-label">Payment#<span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control bg-light" id="" placeholder="3">
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
+                                        class="fa fa-cog fs-5" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
+                                aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupEstimateNumberLabel">Estimate Number</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="my-3">To save you time, your Estimate numbers are set to
+                                                auto-generate mode. Are you sure you want to change this setting?</div>
+                                            <div class="form-check mb-3 mt-5">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Continue auto-generating sales order numbers
+                                                </label>
+                                                <div class="row ml-3">
+                                                    <div class="col-3">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Prefix</label>
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="EST-">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Next Number</label>
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="00001">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    I will add them manually each time
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-outline-dark"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 row d-flex border rounded align-items-center p-3">
+                            <div class="row mb-3">
+                                <label for="" class="col-sm-3 col-form-label">Amount Received (INR)<span
+                                        class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control text-end" id="" placeholder="55">
+                                    <div>PAN: <a href="#" data-bs-toggle="modal" data-bs-target="#popupPAN">Add PAN</a>
+                                    </div>
+                                    <div class="modal fade" id="popupPAN" tabindex="-1" aria-labelledby="popupPANLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light">
+                                                    <h5 class="modal-title" id="popupPANLabel">PAN</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <input type="text" class="form-control mb-3" id="">
+                                                    <div>This PAN will be updated in contacts and further transactions.
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer d-flex justify-content-start">
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3 border-bottom pb-5">
+                                <label for="" class="col-sm-3 col-form-label">Bank Charges (if any)</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="mb-3">Tax deducted?</div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="checkTax"
+                                            id="checkTax" checked>
+                                        <label class="form-check-label" for="checkTax">
+                                            No Tax deducted
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="checkTax"
+                                            id="checkTDS">
+                                        <label class="form-check-label" for="checkTDS">
+                                            Yes, TDS (Income Tax)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3 checkTDS">
+                                <label for="" class="col-sm-3 col-form-label">TDS Tax Account<span
+                                        class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option>Advance Tax</option>
+                                        <option>Employee Advance</option>
+                                        <option>Input Tax Credits</option>
+                                        <option>Input CGST</option>
+                                        <option>Input IGST</option>
+                                        <option>Input SGST</option>
+                                        <option>Prepaid Expenses</option>
+                                        <option>Reverse Charge Tax Input but not due</option>
+                                        <option>TCS Receivable</option>
+                                        <option>TDS Receivable</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3 checkTDS">
+                                <label for="" class="col-sm-3 col-form-label">Amount Withheld<span
+                                        class="text-danger">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row d-flex align-items-center">
+                            <label for="" class="col-sm-3 col-form-label">Reference#</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="">
+                            </div>
+                        </div>
+                        <div class="mb-3 row d-flex align-items-center">
+                            <div class="col-3">
+                                <label for="" class="form-label">Payment Date<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="" placeholder="18/07/2022">
+                            </div>
+                            <div class="col-3">
+                                <label for="" class="form-label">Payment Mode</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Cash</option>
+                                    <option>UPI</option>
+                                    <option>Banking cards</option>
+                                    <option>Bank Remittance</option>
+                                    <option>Bank Transfer</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label for="" class="form-label">Deposit To<span class="text-danger">*</span></label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Petty Cash</option>
+                                    <option>Undeposited Funds</option>
+                                    <option>[ 747485 ] Assets</option>
+                                    <option>Employee Reimbursements</option>
+                                    <option>Opening balance Adjustment</option>
+                                    <option>TCS Payable</option>
+                                    <option>TDS Payable</option>
+                                    <option>Payment Clearing Account</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row d-flex align-items-center">
+                            <label for="" class="col-sm-3 col-form-label">Notes</label>
+                            <div class="col-sm-7">
+                                <textarea class="form-control" id=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container border-bottom p-4">
+                        <label for="" class="form-label">Attach File(s)</label>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-light mr-1" style="border: dotted;"><i class="fa fa-upload"
+                                    aria-hidden="true"></i></button>
                             <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa fa-cog" aria-hidden="true"></i> Customize
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="border: dotted;">
+                                    Upload Files
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                                    <li><a class="dropdown-item" href="#">Change Template</a></li>
-                                    <li><a class="dropdown-item" href="#">Edit Template</a></li>
-                                    <li><a class="dropdown-item" href="#">Update Logo & Address</a></li>
-                                    <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Attach from Desktop</a></li>
+                                    <li><a class="dropdown-item" href="#">Attach from Cloud</a></li>
+                                    <li><a class="dropdown-item" href="#">Attach from Documents</a></li>
                                 </ul>
                             </div>
+                            <input type="file" class="form-control" id="inputGroupFile01" style="visibility: hidden;">
                         </div>
-                        <div class="position-absolute bg-success banner-send paid-banner">Paid</div>
-                        <div class="border mx-5 my-3 mb-5 p-4 position-relative">
-                            <div class="">
-                                <h5>Dr.aware hospital and Nursing Home</h5>
-                                <div>26b panja bazar</div>
-                                <div>fulasheth</div>
-                                <div>bahubali Maharashtra 425160</div>
-                                <div>India</div>
-                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Bill Of Supply
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="border-bottom border-top row p-2">
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-6">#</div>
-                                        <div class="col-6 fw-bold">: BOS-000011</div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-6">Bill Of Supply Date</div>
-                                        <div class="col-6 fw-bold">: 26/06/2017</div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-6">Terms</div>
-                                        <div class="col-6 fw-bold">: Due on Receipt</div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-6">Due Date</div>
-                                        <div class="col-6 fw-bold">: 26/06/2017</div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-6">P.O.#</div>
-                                        <div class="col-6 fw-bold">: SO-00004</div>
-                                    </div>
-                                    <div class="row bg-light border-bottom border-top mb-3">
-                                        <div class="col fw-bold">Bill To</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col fw-bold"><a href="../customers/allCustomers.html">Mr. Badshah
-                                                khan</a></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">dd</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">sakri</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">424304 Maharashtra</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">India</div>
-                                    </div>
-                                </div>
-                                <div class="col-6 border-left">
-                                    <div class="row">
-                                        <div class="col-6">Place Of Supply</div>
-                                        <div class="col-6 fw-bold">: Maharashtra (27)</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">Sales person</div>
-                                        <div class="col-6 fw-bold">: Jay</div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
-                                    </div>
-                                    <div class="row bg-light border-bottom border-top mb-3">
-                                        <div class="col fw-bold">Ship To</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col fw-bold">Mr. Badshah khan</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">dd</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">sakri</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">424304 Maharashtra</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">India</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table table-bordered">
-                                <thead class="bg-light">
-                                    <tr>
-                                        <th>Item & Description</th>
-                                        <th>HSN/SAC</th>
-                                        <th>Qty</th>
-                                        <th>Rate</th>
-                                        <th>Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><span class="fw-bold">AK</span>
-                                            <div>Description of item</div>
-                                        </td>
-                                        <td>998313</td>
-                                        <td>1.0
-                                            <div>pcs</div>
-                                        </td>
-                                        <td>600.00</td>
-                                        <td>600.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="fw-bold">sample service
-                                            </span>
-                                        </td>
-                                        <td>997156</td>
-                                        <td>1.0
-                                            <div>pcs</div>
-                                        </td>
-                                        <td>200.00</td>
-                                        <td>200.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div>Total In Words (Indian Rupee)</div>
-                                            <div class="mb-3"><i>Nine Hundred Six Only</i></div>
-                                            <div class="mb-3">Thanks for your business.</div>
-                                        </td>
-                                        <td colspan="4">
-                                            <div class="d-flex justify-content-around">
-                                                <div>
-                                                    Sub Total
-                                                </div>
-                                                <div>800.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-around">
-                                                <div>
-                                                    Adjustment
-                                                </div>
-                                                <div>6.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-around fw-bold">
-                                                <div>
-                                                    Total
-                                                </div>
-                                                <div>₹806.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-around">
-                                                <div>
-                                                    Write Off Amount
-                                                </div>
-                                                <div class="text-danger text-end">(-)906.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
-                                                <div>
-                                                    Balance Due
-                                                </div>
-                                                <div>₹0.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div>Authorized Signature</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <div>You can upload a maximum of 5 files, 5MB each</div>
                     </div>
-                    <div class="d-flex justify-content-end mx-3 mt-2 mb-5">
-                        <div>Template : 'Spreadsheet Template' <a href="#">Change</a></div>
+                    <div class="container p-4 mb-5">
+                        <a href="./paidRecPay.html"><button class="btn btn-primary">Record Payment</button></a>
+                        <a href="./sentBOS.html"><button class="btn btn-outline-dark">Cancel</button></a>
                     </div>
-                    <div class="text-secondary">Associated Sales Orders ( 1 )</div>
-                    <table class="table mb-5">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Sales Order#</th>
-                                <th>Status</th>
-                                <th>Shipment Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>19/07/2022</td>
-                                <td><a href="./allSalesOrders.html">SO-00014</a></td>
-                                <td class="text-success">CLOSED</td>
-                                <td>20/07/2022</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>

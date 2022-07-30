@@ -550,7 +550,6 @@
                 </div>
             </div>
             <div class="container mt-3">
-                <div>
                     <div class="container border border-secondary rounded p-4">
                         <div class="mb-3 row d-flex align-items-center">
                             <label for="" class="col-sm-3 col-form-label">Customer Name <span
@@ -1009,13 +1008,31 @@
                                 <div class="row">
                                     <label for="" class="col-sm-4 col-form-label">Payment Terms</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="" placeholder="Due on Receipt">
+                                        <input type="text" class="form-control" id="" placeholder="Due on Receipt" data-bs-toggle="modal" data-bs-target="#popupDue">
+                                        <div class="modal fade" id="popupDue" tabindex="-1"
+                                        aria-labelledby="popupDueLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <input type="text" class="form-control" id="">
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div>Net 15</div>
+                                                    <div>Net 30</div>
+                                                    <div>Net 45</div>
+                                                    <div>Net 60</div>
+                                                    <div>Due end of the month </div>
+                                                    <div>Due end of next month </div>
+                                                    <div>Due on Receipt</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <div class="mt-4">
                     <div class="container border border-secondary rounded p-4">
                         <div class="mb-3 row d-flex align-items-center">

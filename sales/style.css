@@ -216,7 +216,7 @@
 }
 
 .sidenav-second-level li a {
-    font-size: 10px;
+    font-size: 21px;
 }
 
 .alertDetails {
@@ -1090,6 +1090,10 @@ main .active-item {
 
 .paid-banner {
     top: 111px;
+}
+
+.paid-banner-2 {
+    top: 323px;
 }
 
 /* Code for Sales @anjudewangan */

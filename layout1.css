@@ -527,3 +527,136 @@
     margin-left: 36px;
     display: none;
 }
+/* Css coding for dashboard work */
+.maintograph{
+        position: absolute;
+        left: 75px;
+        display: flex;
+        flex-direction: column;
+        width: 1377px;
+        margin-top: 80px;
+        margin-left: 50px;
+        height: max-content;
+        border-left: 2px solid black;
+}
+.topbar{
+    display: flex;
+    font-size: 21px;
+    margin-left: 80px;
+}
+.topbar p {
+    margin-left: 50px;
+}
+.SA{
+    color: blue;
+}
+.PA{
+    background-color: #ECF8FF;
+    display: flex;
+    padding-bottom: 20px;
+}
+hr{
+    margin: 0;
+}
+.pam{
+    display: flex;
+}
+.PAPD{
+    background-color:white;
+    border: 2px solid skyblue;   
+    width: 150px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 137px;
+}
+.Psummary{
+    border-left: 2px solid grey;
+
+}
+.PA h6{
+    padding: 30px 10px 10px 30px;
+}
+.opd{
+    border: 2px solid #006275;
+    border-radius: 5px;
+    padding: 5px 50px 5px 5px;
+    display: flex;
+    margin-left: 40px;
+    background-color: white;
+}
+.opd img{
+    height: 20px;
+}
+
+.ipd{
+    border: 2px solid #006275;
+    border-radius: 5px;
+    padding: 5px 50px 5px 5px;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: white;
+}
+.vertical {
+    border-left: 1px solid black;
+    height: 40px;
+    position:relative;
+    margin-left: 20px;
+}
+.num{
+    font-size: 25px;
+    padding: 5px 5px 5px 30px;
+}
+.block-2{
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.row{
+    width: 100%;
+
+}
+.col-7{
+    border-left: 1px solid black;
+}
+table p{
+    line-height: 0%;
+    padding: 6px 10px 1px 1px;
+}
+tr{
+    border-bottom: 1px solid grey;
+}
+.bi-person-circle{
+    font-size: 31px;
+}
+.tdbold{
+    font-weight: 600;
+    font-size: 15px;
+}
+.takeup{
+    background-color: skyblue;
+    border: 1px solid blue;
+    border-radius: 3px;
+    color: blue;
+
+}
+.upcomingApp{
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+    display: flex;
+}
+.upcomingtable{
+    border: 2px solid grey;
+    font-size: 10px;
+}
+.hospitalManagement{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 40px;
+}
+.hospitalManagement img{
+    padding: 10px 10px 10px 10px;
+}

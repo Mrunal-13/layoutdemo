@@ -328,3 +328,34 @@ let charData = {
       legend: { display: false },
     },
   });
+
+  // graph 4
+let charData2 = {
+  labels: ["01 july", "03 july", "05 july", "07 july", "09 july","11 july", "13 july", "15 july", "17 july", "19 july","21 july", "23 july", "25 july", "27 july", "29 july", "31 july"],
+  datasets: [
+    {
+      label: "Traffic",
+      data: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+    }
+  ],
+};
+let ctr = document.getElementById("chartGraph");
+let helloChart = new Chart(ctr, {
+  type: "line",
+  data: charData2,
+  options: {
+    legend: { display: false },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+              min: 0,
+              max: 5000,
+              stepSize: 1000
+          },
+        },
+      ],
+    },
+  },
+});

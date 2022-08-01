@@ -4643,7 +4643,7 @@
                                                                     <button type="button" class="btn dropdown-toggle"
                                                                         aria-expanded="false" style="background-color: 
                                                                     #D7EEFF;" data-bs-toggle="modal"
-                                                                        data-bs-target="#popupDelete">
+                                                                        data-bs-target="#popupDeletePayment">
                                                                         Delete Payment
                                                                     </button>
                                                                 </div>
@@ -4658,7 +4658,8 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header bg-light">
-                                                        <h5 class="modal-title" id="popupAdvPayLabel">Separate and record as an advance payment?</h5>
+                                                        <h5 class="modal-title" id="popupAdvPayLabel">Separate and
+                                                            record as an advance payment?</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
@@ -4668,13 +4669,46 @@
                                                                     class="fa fa-info-circle text-warning fs-1"
                                                                     aria-hidden="
                                                                     true"></i></div>
-                                                            <div class="col-10 text-start">This payment will be separated from this invoice and recorded as an advance payment from the customer.</div>
+                                                            <div class="col-10 text-start">This payment will be
+                                                                separated from this invoice and recorded as an advance
+                                                                payment from the customer.</div>
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
-                                                       <a href="./sentBOS.html"> <button type="button" class="btn btn-primary">Separate & Add As Credit</button></a>
-                                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-                                                      </div>
+                                                        <a href="./sentBOS.html"> <button type="button"
+                                                                class="btn btn-primary">Separate & Add As
+                                                                Credit</button></a>
+                                                        <button type="button" class="btn btn-outline-secondary"
+                                                            data-bs-dismiss="modal">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="popupDeletePayment" tabindex="-1"
+                                            aria-labelledby="popupDeletePaymentLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center mb-4">
+                                                            <h5>Delete payment?</h5>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-center align-items-center mb-4">
+                                                            <p>Once you delete this payment, you will not be able to
+                                                                recover it.</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-around mb-4">
+                                                            <a href="./sentBOS.html"><button type="button"
+                                                                    class="btn btn-light">Delete</button></a>
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-dismiss="modal">No</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

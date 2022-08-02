@@ -571,7 +571,8 @@
     text-decoration: none;
 }
 
-.modal-body ul li {
+.modal-body ul li,
+.dropdown ul li {
     list-style-type: none;
 }
 
@@ -607,8 +608,8 @@
     font-weight: 500;
 }
 
-.main-allItems .col-left .row {
-    border-bottom: 1px solid black;
+.col-left-row {
+    border-bottom: 1px solid black ;
     font-weight: 500;
 }
 
@@ -679,6 +680,13 @@
 .sample {
     color: #D26478;
     background-color: rgba(210, 100, 120, 0.1);
+}
+
+.dropdown-button button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Code for item  @anjudewangan */

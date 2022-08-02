@@ -216,7 +216,7 @@
 }
 
 .sidenav-second-level li a {
-    font-size: 21px;
+    font-size: 10px;
 }
 
 .alertDetails {
@@ -583,7 +583,8 @@ main .active-item {
     background-color: rgb(196, 194, 194);
 }
 
-#popupDelete .modal-body i {
+#popupDelete .modal-body i,
+#popupDeletePayment .modal-body i {
     color: #EF8523;
     font-size: 45px;
 }

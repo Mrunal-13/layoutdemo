@@ -569,32 +569,36 @@ flex-wrap: wrap;
 width: 100%;
 justify-content: space-around;
 }
-.PAPD{
-width: 150px;
-height: 137px;
-border: 1px solid black;
-margin: 10px;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-flex-direction: column;
-border-radius: 5px;
-background-color: #FFFFFF;
-box-shadow: 1px 1px 2px gray;
+.PAPD {
+    width: 150px;
+    height: 137px;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px grey;
 }
-.ActivityNum{
-font-size: 36px;
-margin-bottom: 20px;
-margin-right: 15px;
+.ActivityNum {
+    font-size: 36px;
+    width: 100%;
+    margin: auto 12px;
+    text-align: right;
+    margin-right: 10px;
 }
-.ActivityIcons{
-margin: 0;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-left: 5px
+.ActivityIcons {
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    left: 5px;
+    margin-bottom: 15px;
 }
 .ActivityIcons .iconify{
 border-radius: 50%;
@@ -604,24 +608,25 @@ padding: 6px;
 background-color: #24c534;
 position: relative;
 right: 5px;
-
+padding-right: 27px;
 }
 .Attendance .ActivityIcons span:nth-child(2){
 background-color: #7d7f95;
 position: relative;
 right: 5px;
-
+padding-right: 27px;
 }
 .Pending .ActivityIcons span:nth-child(2){
 background-color: #e92f2f;
 position: relative;
 right: 5px;
-
+padding-right: 27px;
 }
 .Doctors .ActivityIcons span:nth-child(2){
 background-color: #2db0e8;
 position: relative;
 right: 5px;
+padding-right: 27px;
 }
 .Psummary{
 border-left: 2px solid grey;

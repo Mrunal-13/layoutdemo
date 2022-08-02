@@ -748,30 +748,21 @@
                             <label for="" class="col-sm-4 col-form-label">Account<span
                                     class="text-danger">*</span></label>
                             <div class="col-sm-8">
-                                <select class="form-select" aria-label="Default select example"
-                                    aria-label="Default select example" data-bs-toggle="modal"
-                                    data-bs-target="#popupIncome">
-                                    <option selected>Sales</option>
-                                </select>
-                                <div class="modal fade" id="popupIncome" tabindex="-1"
-                                    aria-labelledby="popupIncomeLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-sm">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <input type="text" class="form-control" id="">
-                                                <h6 class="text-secondary mt-3">Income</h6>
-                                                <ul>
-                                                    <li>Discount</li>
-                                                    <li>General Income</li>
-                                                    <li>Interest Income</li>
-                                                    <li>Late Fee Income</li>
-                                                    <li>Other Charges</li>
-                                                    <li>Sales</li>
-                                                    <li>Shipping Charges</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="dropdown dropdown-button">
+                                    <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sales
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item text-secondary" href="#">Income</a></li>
+                                        <li><a class="dropdown-item" href="#">Discount</a></li>
+                                        <li><a class="dropdown-item" href="#">General Income</a></li>
+                                        <li><a class="dropdown-item" href="#">Interest Income</a></li>
+                                        <li><a class="dropdown-item" href="#">Late Fee Income</a></li>
+                                        <li><a class="dropdown-item" href="#">Other Charges</a></li>
+                                        <li><a class="dropdown-item" href="#">Sales</a></li>
+                                        <li><a class="dropdown-item" href="#">Shipping Charges</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -781,60 +772,50 @@
                             <label for="" class="col-sm-4 col-form-label">Account<span
                                     class="text-danger">*</span></label>
                             <div class="col-sm-8">
-                                <select class="form-select" aria-label="Default select example" data-bs-toggle="modal"
-                                    data-bs-target="#popupAccount">
-                                    <option selected>Cost of Goods Sold</option>
-                                </select>
-                                <div class="modal fade" id="popupAccount" tabindex="-1"
-                                    aria-labelledby="popupAccountLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-sm">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <input type="text" class="form-control" id="">
-                                                <h6 class="text-secondary mt-3">Expense</h6>
-                                                <ul>
-                                                    <li>Advertising And Marketing</li>
-                                                    <li>Automobile Expense</li>
-                                                    <li>Bad Debt</li>
-                                                    <li>Bank Fees and Charges</li>
-                                                    <li>Consultant Expense</li>
-                                                    <li>Contract Assets</li>
-                                                    <li>Credit Card Charges</li>
-                                                    <li>Other Expenses</li>
-                                                    <li>Postage</li>
-                                                    <li>Printing and Stationery</li>
-                                                    <li>Purchase Discounts</li>
-                                                    <li>Raw Materials And Consumables</li>
-                                                    <li>Rent Expense</li>
-                                                    <li>Repairs and Maintenance</li>
-                                                    <li>Depreciation And Amortisation</li>
-                                                    <li>Depreciation Expense</li>
-                                                    <li>IT and Internet Expenses</li>
-                                                    <li>Janitorial Expense</li>
-                                                    <li>Lodging</li>
-                                                    <li>Meals and Entertainment</li>
-                                                    <li>Merchandise</li>
-                                                    <li>Offer Supplies</li>
-                                                    <li>Salaries and Employee Wages</li>
-                                                    <li>Telephone Expense</li>
-                                                    <li>Transportation Expense</li>
-                                                    <li>Travel Expense</li>
-                                                    <li>Uncategorized</li>
-                                                </ul>
-                                                <h6 class="text-secondary mt-3">Cost Of Goods Sold</h6>
-                                                <ul>
-                                                    <li>Cost of Goods Sold</li>
-                                                    <li>Job Costing</li>
-                                                    <li>Labor</li>
-                                                    <li>Materials</li>
-                                                    <li>Subcontractor</li>
-                                                    <li class="text-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#popupCreateAccount">+
-                                                        New Account</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="dropdown dropdown-button">
+                                    <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Cost of Goods Sold
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item text-secondary" href="#">Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">Advertising And Marketing</a></li>
+                                        <li><a class="dropdown-item" href="#">Automobile Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">Bad Debt</a></li>
+                                        <li><a class="dropdown-item" href="#">Bank Fees and Charges</a></li>
+                                        <li><a class="dropdown-item" href="#">Consultant Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">Contract Assets</a></li>
+                                        <li><a class="dropdown-item" href="#">Credit Card Charges</a></li>
+                                        <li><a class="dropdown-item" href="#">Other Expenses</a></li>
+                                        <li><a class="dropdown-item" href="#">Postage</a></li>
+                                        <li><a class="dropdown-item" href="#">Printing and Stationery</a></li>
+                                        <li><a class="dropdown-item" href="#">Purchase Discounts</a></li>
+                                        <li><a class="dropdown-item" href="#">Raw Materials And Consumables</a></li>
+                                        <li><a class="dropdown-item" href="#">Rent Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">Repairs and Maintenance</a></li>
+                                        <li><a class="dropdown-item" href="#">Depreciation And Amortisation</a></li>
+                                        <li><a class="dropdown-item" href="#">Depreciation Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">IT and Internet Expenses</a></li>
+                                        <li><a class="dropdown-item" href="#">Janitorial Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">Lodging</a></li>
+                                        <li><a class="dropdown-item" href="#">Meals and Entertainment</a></li>
+                                        <li><a class="dropdown-item" href="#">Merchandise</a></li>
+                                        <li><a class="dropdown-item" href="#">Offer Supplies</a></li>
+                                        <li><a class="dropdown-item" href="#">Salaries and Employee Wages</a></li>
+                                        <li><a class="dropdown-item" href="#">Telephone Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">Transportation Expense</a></li>
+                                        <li><a class="dropdown-item" href="#">Travel Expense</a></li>
+                                        <li><a class="dropdown-item mb-3" href="#">Uncategorized</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Cost Of Goods Sold</a></li>
+                                        <li><a class="dropdown-item" href="#">Cost Of Goods Sold</a></li>
+                                        <li><a class="dropdown-item" href="#">Job Costing</a></li>
+                                        <li><a class="dropdown-item" href="#">Labor</a></li>
+                                        <li><a class="dropdown-item" href="#">Materials</a></li>
+                                        <li><a class="dropdown-item" href="#">Subcontractor</a></li>
+                                        <li><a class="dropdown-item text-primary" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#popupCreateAccount">+
+                                                New Account</a></li>
+                                    </ul>
                                 </div>
                                 <div class="modal fade" id="popupCreateAccount" tabindex="-1"
                                     aria-labelledby="popupCreateAccountLabel" aria-hidden="true">
@@ -924,7 +905,7 @@
             </div>
             <div class="container border-bottom border-dark px-5 py-3">
                 <button class="btn btn-primary">Save</button>
-                <a href="./allItems.html">
+                <a href="./item.html">
                     <button class="btn btn-outline-secondary">Cancel</button>
                 </a>
             </div>

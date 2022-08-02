@@ -483,7 +483,7 @@
             <div class="row">
                 <div class="col-6 gap-3">
                     <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             All Items
                         </button>
@@ -539,8 +539,21 @@
                                                     <div class="mb-3 row">
                                                         <label for="" class="col-sm-4 col-form-label">Rate</label>
                                                         <div class="col-sm-8">
-                                                            <input type="text" class="form-control" id=""
-                                                                data-bs-toggle="modal" data-bs-target="#popupRate">
+                                                            <div class="dropdown dropdown-button">
+                                                                <button class="btn border" type="button"
+                                                                    id="dropdownMenuButton5" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton5">
+                                                                    <li><a class="dropdown-item border-bottom" href="#">
+                                                                            <input type="text" class="form-control"
+                                                                                id=""></a></li>
+                                                                    <li><a class="dropdown-item" href="#">Draft</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Published</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -548,11 +561,22 @@
                                                     <div class="mb-3 row">
                                                         <label for="" class="col-sm-4 col-form-label">Status</label>
                                                         <div class="col-sm-8">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal" data-bs-target="#popupStatus">
-                                                                <option selected>All</option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button dropdown-button-end">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton6" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton6">
+                                                                    <li><a class="dropdown-item border-bottom" href="#">
+                                                                            <input type="text" class="form-control"
+                                                                                id=""></a></li>
+                                                                    <li><a class="dropdown-item" href="#">Active</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Inactive</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -563,12 +587,32 @@
                                                         <label for="" class="col-sm-4 col-form-label">Sales
                                                             Account</label>
                                                         <div class="col-sm-8">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupSalesAccount">
-                                                                <option selected></option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button dropdown-button-end">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton7" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton7">
+                                                                    <li><a class="dropdown-item border-bottom" href="#">
+                                                                            <input type="text" class="form-control"
+                                                                                id=""></a></li>
+                                                                    <li><a class="dropdown-item" href="#">Discount</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">General
+                                                                            Income</a>
+                                                                    <li><a class="dropdown-item" href="#">Interest
+                                                                            Income</a>
+                                                                    <li><a class="dropdown-item" href="#">Late Fee
+                                                                            Income</a>
+                                                                    <li><a class="dropdown-item" href="#">Other
+                                                                            Charges</a>
+                                                                    <li><a class="dropdown-item" href="#">Sales</a>
+                                                                    <li><a class="dropdown-item" href="#">Shipping
+                                                                            Charges</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -577,12 +621,81 @@
                                                         <label for="" class="col-sm-5 col-form-label">Purchase
                                                             Account</label>
                                                         <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupPurchaseAccount">
-                                                                <option selected></option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button dropdown-button-end">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton8" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton8">
+                                                                    <li><a class="dropdown-item border-bottom" href="#">
+                                                                            <input type="text" class="form-control"
+                                                                                id=""></a></li>
+                                                                    <li><a class="dropdown-item" href="#">Advertising
+                                                                            And Marketing</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Automobile
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Bad Debt</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Bank Fees and
+                                                                            Charges</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Consultant
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Contract
+                                                                            Assets</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Credit Card
+                                                                            Charges</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Other
+                                                                            Expenses</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Postage</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Printing and
+                                                                            Stationery</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Purchase
+                                                                            Discounts</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Raw Materials
+                                                                            And Consumables</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Rent
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Repairs and
+                                                                            Maintenance</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Depreciation
+                                                                            And Amortisation</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Depreciation
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item" href="#">IT and
+                                                                            Internet Expenses</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Janitorial
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Lodging</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Meals and
+                                                                            Entertainment</a></li>
+                                                                    <li><a class="dropdown-item"
+                                                                            href="#">Merchandise</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Offer
+                                                                            Supplies</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Salaries and
+                                                                            Employee Wages</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Telephone
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Transportation
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Travel
+                                                                            Expense</a></li>
+                                                                    <li><a class="dropdown-item"
+                                                                            href="#">Uncategorized</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Cost of Goods
+                                                                            Sold</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Job
+                                                                            Costing</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Labor</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Materials</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item"
+                                                                            href="#">Subcontractor</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -596,100 +709,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="popupRate" tabindex="-1" aria-labelledby="popupRateLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Draft</div>
-                                            <div>Published</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupStatus" tabindex="-1" aria-labelledby="popupStatusLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Active</div>
-                                            <div>Inactive</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupSalesAccount" tabindex="-1"
-                                aria-labelledby="popupSalesAccountLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Discount</div>
-                                            <div>General Income</div>
-                                            <div>Interest Income</div>
-                                            <div>Late Fee Income</div>
-                                            <div>Other Charges</div>
-                                            <div>Sales</div>
-                                            <div>Shipping Charges</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupPurchaseAccount" tabindex="-1"
-                                aria-labelledby="popupPurchaseAccountLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body text-start">
-                                            <div>Advertising And Marketing</div>
-                                            <div>Automobile Expense</div>
-                                            <div>Bad Debt</div>
-                                            <div>Bank Fees and Charges</div>
-                                            <div>Consultant Expense</div>
-                                            <div>Contract Assets</div>
-                                            <div>Credit Card Charges</div>
-                                            <div>Other Expenses</div>
-                                            <div>Postage</div>
-                                            <div>Printing and Stationery</div>
-                                            <div>Purchase Discounts</div>
-                                            <div>Raw Materials And Consumables</div>
-                                            <div>Rent Expense</div>
-                                            <div>Repairs and Maintenance</div>
-                                            <div>Depreciation And Amortisation</div>
-                                            <div>Depreciation Expense</div>
-                                            <div>IT and Internet Expenses</div>
-                                            <div>Janitorial Expense</div>
-                                            <div>Lodging</div>
-                                            <div>Meals and Entertainment</div>
-                                            <div>Merchandise</div>
-                                            <div>Offer Supplies</div>
-                                            <div>Salaries and Employee Wages</div>
-                                            <div>Telephone Expense</div>
-                                            <div>Transportation Expense</div>
-                                            <div>Travel Expense</div>
-                                            <div>Uncategorized</div>
-                                            <div>Cost of Goods Sold</div>
-                                            <div>Job Costing</div>
-                                            <div>Labor</div>
-                                            <div>Materials</div>
-                                            <div>Subcontractor</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col">
-                            <a href="./addItem.html">
+                            <a href="./addNew.html">
                                 <button class="btn btn-warning">Add
                                     New</button>
                             </a>
@@ -1696,15 +1718,16 @@
                                     Purchase Description
                                 </label>
                             </a></li>
-                        <li><a class="dropdown-item" href="#">
+                        <li><a class="dropdown-item border-bottom mb-3" href="#">
                                 <input class="form-check-input" type="checkbox" value="" id="">
                                 <label class="form-check-label" for="">
                                     SKU (Stock Keeping Unit)
                                 </label>
                             </a></li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <button type="button" class="btn btn-warning">Save</button>
-                        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                        <li><a class="dropdown-item" href="#">
+                            <button type="button" class="btn btn-warning">Save</button>
+                            <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                        </a></li>
                     </ul>
                 </div>
             </div>

@@ -548,61 +548,71 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-6 gap-3">
-                    <select class="form-select select-all-items" aria-label="Default select example">
-                        <option selected>All Sales Orders</option>
-                        <option class="text-secondary">Default Filters</option>
-                        <option>All</option>
-                        <option>Draft</option>
-                        <option>Pending Approval</option>
-                        <option>Approved</option>
-                        <option>Confirmed</option>
-                        <option>For Packaging</option>
-                        <option>To be Shipped</option>
-                        <option>Shipped</option>
-                        <option>For Invoicing</option>
-                        <option>Drop Shipped</option>
-                        <option>Backorder</option>
-                        <option>Onhold</option>
-                        <option>Fulfilled</option>
-                        <option>Closed</option>
-                        <option>Marketplace</option>
-                        <option>Void</option>
-                        <option>Invoiced</option>
-                        <option>Shipped & Not Invoiced</option>
-                        <option>Invoiced & Not Shipped</option>
-                    </select>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All Sales Orders
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="#">Draft</a></li>
+                            <li><a class="dropdown-item" href="#">Pending Approval</a></li>
+                            <li><a class="dropdown-item" href="#">Approved</a></li>
+                            <li><a class="dropdown-item" href="#">Confirmed</a></li>
+                            <li><a class="dropdown-item" href="#">For Packaging</a></li>
+                            <li><a class="dropdown-item" href="#">To be Shipped</a></li>
+                            <li><a class="dropdown-item" href="#">Shipped</a></li>
+                            <li><a class="dropdown-item" href="#">For Invoicing</a></li>
+                            <li><a class="dropdown-item" href="#">Drop Shipped</a></li>
+                            <li><a class="dropdown-item" href="#">Backorder</a></li>
+                            <li><a class="dropdown-item" href="#">Onhold</a></li>
+                            <li><a class="dropdown-item" href="#">Fulfilled</a></li>
+                            <li><a class="dropdown-item" href="#">Closed</a></li>
+                            <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                            <li><a class="dropdown-item" href="#">Void</a></li>
+                            <li><a class="dropdown-item" href="#">Invoiced</a></li>
+                            <li><a class="dropdown-item" href="#">Shipped & Not Invoiced</a></li>
+                            <li><a class="dropdown-item" href="#">Invoiced & Not Shipped</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-6">
                     <div class="row">
                         <div class="col-4 d-flex align-items-center">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#popupViewOrder"><i
-                                    class="fa fa-info-circle text-secondary" aria-hidden="true"></i> View order
-                                status</a>
-                            <div class="modal fade" id="popupViewOrder" tabindex="-1"
-                                aria-labelledby="popupViewOrderLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
+                            <div class="dropdown">
+                                <a class="btn text-primary" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-info-circle text-secondary" aria-hidden="true"></i> View order
+                                    status
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">
                                             <div class="row mb-3">
                                                 <div class="col-6">Available Orders</div>
                                                 <div class="col-6 text-end"><b>14998</b></div>
                                             </div>
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
                                             <div class="row mb-3">
                                                 <div class="col-6">Used Orders</div>
                                                 <div class="col-6 text-end"><b>2</b></div>
                                             </div>
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
                                             <div class="row mb-3">
                                                 <div class="col-10">Purchased Orders</div>
                                                 <div class="col-2 text-end"><b>0</b></div>
                                             </div>
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
                                             <div class="row mb-3">
                                                 <div class="col-12"><i class="fa fa-info-circle text-secondary"
                                                         aria-hidden="true"></i> The statistics displayed above are for
                                                     the current billing cycle only.</div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-1 text-end">
@@ -690,11 +700,38 @@
                                                     <div class="mb-3 row">
                                                         <label for="" class="col-sm-5 col-form-label">Status</label>
                                                         <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal" data-bs-target="#popupStatus">
-                                                                <option selected></option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button-end">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton8" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton8">
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#"> <input type="text"
+                                                                                class="form-control" id=""></a></li>
+                                                                    <li><a class="dropdown-item text-secondary"
+                                                                            href="#">Sales Orders</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Draft</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Pending</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Confirmed</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Pending</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Void</a></li>
+                                                                    <li><a class="dropdown-item mb-3"
+                                                                            href="#">Closed</a></li>
+                                                                    <li><a class="dropdown-item text-secondary"
+                                                                            href="#">Invoice</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Partially
+                                                                            Invoiced</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Invoiced</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Not
+                                                                            Invoiced</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -704,11 +741,23 @@
                                                     <div class="mb-3 row">
                                                         <label for="" class="col-sm-5 col-form-label">Item Name</label>
                                                         <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal" data-bs-target="#popupItemName">
-                                                                <option selected></option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button dropdown-button-end">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                    <li><a class="dropdown-item border-bottom mb-3"
+                                                                            href="#"> <input type="text" name="" id=""
+                                                                                class="form-control"></a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">AK</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Sample
+                                                                            Service</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -728,12 +777,21 @@
                                                         <label for="" class="col-sm-5 col-form-label">Customer
                                                             Name</label>
                                                         <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupCustomerName">
-                                                                <option selected>Select a Customer</option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                    Select a Customer
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton2">
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#"> <input type="text"
+                                                                                class="form-control" id=""></a></li>
+                                                                    <li><a class="dropdown-item" href="#">no result
+                                                                            found</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -758,11 +816,39 @@
                                                     <div class="mb-3 row">
                                                         <label for="" class="col-sm-5 col-form-label">Tax</label>
                                                         <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal" data-bs-target="#popuptax">
-                                                                <option selected>Select Tax</option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton4" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                    Select Tax
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton4">
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#"> <input type="text"
+                                                                                class="form-control" id=""></a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">GSTO [0%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">GST12 [12%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">GST18 [18%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">GST28 [28%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">GST5 [5%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">IGSTO [0%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">IGST12 [12%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">IGST18 [18%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">IGST28 [28%]</a></li>
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#">IGSTS [5%]</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -771,12 +857,21 @@
                                                         <label for="" class="col-sm-5 col-form-label">Project
                                                             Name</label>
                                                         <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupProjectName">
-                                                                <option selected>Select Project</option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton3" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                    Select a Customer
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton3">
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#"> <input type="text"
+                                                                                class="form-control" id=""></a></li>
+                                                                    <li><a class="dropdown-item" href="#">no result
+                                                                            found</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -787,12 +882,21 @@
                                                         <label for=""
                                                             class="col-sm-5 col-form-label">Salesperson</label>
                                                         <div class="col-sm-7">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupSalesperson">
-                                                                <option selected>Select a Salesperson</option>
-                                                            </select>
+                                                            <div class="dropdown dropdown-button">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton5" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                    Select a Salesperson
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton5">
+                                                                    <li><a class="dropdown-item mb-3 border-bottom"
+                                                                            href="#"> <input type="text"
+                                                                                class="form-control" id=""></a></li>
+                                                                    <li><a class="dropdown-item" href="#">no result
+                                                                            found</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -803,106 +907,6 @@
                                                 data-bs-dismiss="modal">Cancel</button>
                                             <button type="button" class="btn btn-primary">Search</button>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="popupItemName" tabindex="-1" aria-labelledby="popupItemNameLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="border-bottom">AK</div>
-                                        <div>Sample Service</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="popupStatus" tabindex="-1" aria-labelledby="popupStatusLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul>
-                                            <li class="text-secondary">Sales Orders</li>
-                                            <li>Draft</li>
-                                            <li>Pending</li>
-                                            <li>Confirmed</li>
-                                            <li>Pending</li>
-                                            <li>Void</li>
-                                            <li>Closed</li>
-                                            <li class="text-secondary">Invoice</li>
-                                            <li>Partially Invoiced</li>
-                                            <li>Invoiced</li>
-                                            <li>Not Invoiced</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="popupCustomerName" tabindex="-1"
-                            aria-labelledby="popupCustomerNameLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>no result found</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="popupProjectName" tabindex="-1"
-                            aria-labelledby="popupProjectNameLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>no result found</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="popupSalesperson" tabindex="-1"
-                            aria-labelledby="popupSalespersonLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>no result found</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="popuptax" tabindex="-1" aria-labelledby="popuptaxLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="border-bottom mb-3">GSTO [0%]</div>
-                                        <div class="border-bottom mb-3">GST12 [12%]</div>
-                                        <div class="border-bottom mb-3">GST18 [18%]</div>
-                                        <div class="border-bottom mb-3">GST28 [28%]</div>
-                                        <div class="border-bottom mb-3">GST5 [5%]</div>
-                                        <div class="border-bottom mb-3">IGSTO [0%]</div>
-                                        <div class="border-bottom mb-3">IGST12 [12%]</div>
-                                        <div class="border-bottom mb-3">IGST18 [18%]</div>
-                                        <div class="border-bottom mb-3">IGST28 [28%]</div>
-                                        <div>IGSTS [5%]</div>
                                     </div>
                                 </div>
                             </div>
@@ -919,7 +923,7 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Create Sales Order</a></li>
+                                    <li><a class="dropdown-item" href="./newSalesOrder.html">Create Sales Order</a></li>
                                     <li><a class="dropdown-item" href="#">Create Sales Order (Pre GST)</a></li>
                                 </ul>
                             </div>
@@ -928,55 +932,40 @@
                             <a href="#" class="setting-link"><i class="fa fa-fw fa-cog"></i>Settings</a>
                         </div>
                         <div class="col-1">
-                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#popupShort"><i
-                                    class="fa fa-align-left" aria-hidden="true"></i>
-                            </button>
-                            <div class="modal fade" id="popupShort" tabindex="-1" aria-labelledby="popupShortLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="popupShortLabel">SORT BY</h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul class="border-bottom pb-3 pl-5">
-                                                <li>Created Time</li>
-                                                <li>Last Modified Time</li>
-                                                <li>Date</li>
-                                                <li>Sales Order#</li>
-                                                <li>Reference#</li>
-                                                <li>Estimate Number</li>
-                                                <li>Customer Name</li>
-                                                <li>Amount</li>
-                                            </ul>
-                                            <ul class="border-bottom pb-3">
-                                                <li class="fs-5" data-bs-toggle="modal"
-                                                    data-bs-target="#popupImportItem">
-                                                    <i class="fa fa-download text-secondary" aria-hidden="true"></i>
-                                                    Import Sales Orders
-                                                </li>
-                                                <li class="fs-5" data-bs-toggle="modal"
-                                                    data-bs-target="#popupExportItem">
-                                                    <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                                    Export Sales Orders
-                                                </li>
-                                            </ul>
-                                            <ul class="border-bottom pb-3">
-                                                <li class="fs-5" data-bs-toggle="modal"
-                                                    data-bs-target="#popupExportCurrent">
-                                                    <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                                    Export Current View
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li class="fs-5">
-                                                    <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
-                                                    Refresh
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
+                                    <li><a class="dropdown-item" href="#">Created Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Last Modified Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Date</a></li>
+                                    <li><a class="dropdown-item" href="#">Sales Order#</a></li>
+                                    <li><a class="dropdown-item" href="#">Reference#</a></li>
+                                    <li><a class="dropdown-item" href="#">Estimate Number</a></li>
+                                    <li><a class="dropdown-item" href="#">Customer Name</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Amount</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
+                                                aria-hidden="true"></i>
+                                            Import Items</a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportItem">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Items
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportCurrent">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Current View
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
+                                            Refresh
+                                        </a></li>
+                                </ul>
                             </div>
                             <div class="modal fade" id="popupImportItem" tabindex="-1"
                                 aria-labelledby="popupImportItemLabel" aria-hidden="true">
@@ -3456,17 +3445,97 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <h6>Select Module<span class="text-danger">*</span></h6>
-                                                        <select class="form-select mb-3"
-                                                            aria-label="Default select example" data-bs-toggle="modal"
-                                                            data-bs-target="#popupSelectModule">
-                                                            <option selected>Estimates</option>
-                                                        </select>
+                                                        <div class="dropdown mb-3 dropdown-button">
+                                                            <button class="btn border dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton4" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Estimate
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton4">
+                                                                <li><a class="dropdown-item border-bottom" href="#">
+                                                                        <input type="text" class="form-control" name=""
+                                                                            id="">
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item text-secondary" href="#">
+                                                                        Sales
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item" href="#">Estimates</a></li>
+                                                                <li><a class="dropdown-item" href="#">Sales Orders</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Invoices</a></li>
+                                                                <li><a class="dropdown-item" href="#">Invoice
+                                                                        Payments</a></li>
+                                                                <li><a class="dropdown-item" href="#">Recurring
+                                                                        Invoices</a></li>
+                                                                <li><a class="dropdown-item" href="#">Credit Notes</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Credit Notes
+                                                                        Applied to Invoices</a></li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Refunds</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Purchase</a></li>
+                                                                <li><a class="dropdown-item" href="#">Purchase
+                                                                        Orders</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bills</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bill of Entry</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Bill Payments</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Vendor Credits</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Vendor Credit
+                                                                        Refunds</a></li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Timesheet</a></li>
+                                                                <li><a class="dropdown-item" href="#">Projects</a></li>
+                                                                <li><a class="dropdown-item" href="#">Timesheet</a></li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Project
+                                                                        Tasks</a></li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Others</a></li>
+                                                                <li><a class="dropdown-item" href="#">Customers</a></li>
+                                                                <li><a class="dropdown-item" href="#">Vendors</a></li>
+                                                                <li><a class="dropdown-item" href="#">Items</a></li>
+                                                                <li><a class="dropdown-item" href="#">Exchange Rates</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Users</a></li>
+                                                                <li><a class="dropdown-item" href="#">Chart of
+                                                                        Accounts</a></li>
+                                                                <li><a class="dropdown-item" href="#">Manual
+                                                                        Journals</a></li>
+                                                            </ul>
+                                                        </div>
                                                         <h6>Select Status<span class="text-danger">*</span></h6>
-                                                        <select class="form-select mb-3"
-                                                            aria-label="Default select example" data-bs-toggle="modal"
-                                                            data-bs-target="#popupSelectModule1">
-                                                            <option selected>All</option>
-                                                        </select>
+                                                        <div class="dropdown mb-3 dropdown-button">
+                                                            <button class="btn border dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton4" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                All
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton4">
+                                                                <li><a class="dropdown-item border-bottom" href="#">
+                                                                        <input type="text" class="form-control" name=""
+                                                                            id="">
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item" href="#">All</a></li>
+                                                                <li><a class="dropdown-item" href="#">Draft</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Pending
+                                                                        Approval</a></li>
+                                                                <li><a class="dropdown-item" href="#">Approved</a></li>
+                                                                <li><a class="dropdown-item" href="#">Sent</a></li>
+                                                                <li><a class="dropdown-item" href="#">Invoiced</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Accepted</a></li>
+                                                                <li><a class="dropdown-item" href="#">Declined</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Expired</a></li>
+                                                                <li><a class="dropdown-item" href="#">Rejected</a></li>
+                                                            </ul>
+                                                        </div>
                                                         <div class="mb-2">
                                                             <label class="form-label" for="">
                                                                 Date Range
@@ -3488,12 +3557,30 @@
                                                         <div class="mb-3 mt-5">
                                                             <label for="" class="form-label">Fields in Export File
                                                             </label>
-                                                            <select class="form-select"
-                                                                aria-label="Default select example"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#popupExportAddNew">
-                                                                <option selected>Select the export template</option>
-                                                            </select>
+                                                            <div class="dropdown mb-3 dropdown-button">
+                                                                <button class="btn border dropdown-toggle" type="button"
+                                                                    id="dropdownMenuButton4" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                    Select the export template
+                                                                </button>
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton4">
+                                                                    <li><a class="dropdown-item border-bottom mb-3"
+                                                                            href="#">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" id="">
+                                                                        </a></li>
+                                                                    <li><a class="dropdown-item border-bottom mb-3"
+                                                                            href="#">
+                                                                            No results found
+                                                                        </a></li>
+                                                                    <li><a class="dropdown-item text-primary" href="#"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#popupExportNewTemplate">
+                                                                            + Add New
+                                                                        </a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 border-left">
@@ -3548,23 +3635,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="popupExportAddNew" tabindex="-1"
-                                aria-labelledby="popupExportAddNewLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body">
-                                            No results found
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-start">
-                                            <a href="#popupExportNewTemplate" data-bs-toggle="modal"
-                                                data-bs-target="#popupExportNewTemplate">+ Add New</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="modal fade" id="popupExportNewTemplate" tabindex="-1"
                                 aria-labelledby="popupExportNewTemplateLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -3591,7 +3661,82 @@
                                                                 Welldone</label>
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
+                                                                <option>SGST(FCY)</option>
                                                                 <option selected>Estimate Date</option>
+                                                                <option>Estimate Number</option>
+                                                                <option>Estimate Status</option>
+                                                                <option>Customer Name</option>
+                                                                <option>Customer id</option>
+                                                                <option>Expiry Date</option>
+                                                                <option>Purchase Order</option>
+                                                                <option>Currency Code</option>
+                                                                <option>Exchange Rate</option>
+                                                                <option>Discount type</option>
+                                                                <option>Is Discount Before Tax</option>
+                                                                <option>Entity Discount Percent</option>
+                                                                <option>Sub Total</option>
+                                                                <option>Total</option>
+                                                                <option>Adjustment</option>
+                                                                <option>Notes</option>
+                                                                <option>Terms & Conditions</option>
+                                                                <option>Subject</option>
+                                                                <option>Place of Supply</option>
+                                                                <option>Place of Supply(with state code)</option>
+                                                                <option>GST Treatment</option>
+                                                                <option>GST Identification Number (GSTIN)</option>
+                                                                <option>Project ID</option>
+                                                                <option>Project Name</option>
+                                                                <option>Price List</option>
+                                                                <option>Sales person</option>
+                                                                <option>Billing Town/city</option>
+                                                                <option>Billing State/Province/Region</option>
+                                                                <option>Billing Country/Region</option>
+                                                                <option>Billing Pin Code</option>
+                                                                <option>Template Name</option>
+                                                                <option>Adjustment Description</option>
+                                                                <option>Shipping Town/city</option>
+                                                                <option>Shipping State/Province/Region</option>
+                                                                <option>Shipping Country/Region</option>
+                                                                <option>Shipping Pin Code</option>
+                                                                <option>Source</option>
+                                                                <option>Reference id</option>
+                                                                <option>Last sync Time</option>
+                                                                <option>Entity Discount Amount</option>
+                                                                <option>Shipping Charge</option>
+                                                                <option>Shipping Charge Tax id</option>
+                                                                <option>Shipping Charge Tax Amount</option>
+                                                                <option>Item Name</option>
+                                                                <option>Item Desc</option>
+                                                                <option>HSN/SAC</option>
+                                                                <option>Quantity</option>
+                                                                <option>Discount</option>
+                                                                <option>Discount Amount</option>
+                                                                <option>Item Total</option>
+                                                                <option>Product id</option>
+                                                                <option>Account</option>
+                                                                <option>SKU</option>
+                                                                <option>Usage unit</option>
+                                                                <option>Item Price</option>
+                                                                <option>Supply Type</option>
+                                                                <option>Reverse Charge Tax Name</option>
+                                                                <option>Reverse Charge Tax Rate</option>
+                                                                <option>Reverse Charge Tax Type</option>
+                                                                <option>CGST Rate %</option>
+                                                                <option>SGST Rate %</option>
+                                                                <option>IGST Rate %</option>
+                                                                <option>CESS Rate %</option>
+                                                                <option>CGST(FCY)</option>
+                                                                <option>SGST(FCY)</option>
+                                                                <option>IGST(FCY)</option>
+                                                                <option>CESS(FCY)</option>
+                                                                <option>CGST</option>
+                                                                <option>SGST</option>
+                                                                <option>IGST</option>
+                                                                <option>CESS</option>
+                                                                <option>Item Tax Authority</option>
+                                                                <option>Item Tax Exemption Reason</option>
+                                                                <option>Item Type</option>
+                                                                <option>Location</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -3612,7 +3757,82 @@
                                                         <div class="mb-3">
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
+                                                                <option>SGST(FCY)</option>
                                                                 <option selected>Estimate Date</option>
+                                                                <option>Estimate Number</option>
+                                                                <option>Estimate Status</option>
+                                                                <option>Customer Name</option>
+                                                                <option>Customer id</option>
+                                                                <option>Expiry Date</option>
+                                                                <option>Purchase Order</option>
+                                                                <option>Currency Code</option>
+                                                                <option>Exchange Rate</option>
+                                                                <option>Discount type</option>
+                                                                <option>Is Discount Before Tax</option>
+                                                                <option>Entity Discount Percent</option>
+                                                                <option>Sub Total</option>
+                                                                <option>Total</option>
+                                                                <option>Adjustment</option>
+                                                                <option>Notes</option>
+                                                                <option>Terms & Conditions</option>
+                                                                <option>Subject</option>
+                                                                <option>Place of Supply</option>
+                                                                <option>Place of Supply(with state code)</option>
+                                                                <option>GST Treatment</option>
+                                                                <option>GST Identification Number (GSTIN)</option>
+                                                                <option>Project ID</option>
+                                                                <option>Project Name</option>
+                                                                <option>Price List</option>
+                                                                <option>Sales person</option>
+                                                                <option>Billing Town/city</option>
+                                                                <option>Billing State/Province/Region</option>
+                                                                <option>Billing Country/Region</option>
+                                                                <option>Billing Pin Code</option>
+                                                                <option>Template Name</option>
+                                                                <option>Adjustment Description</option>
+                                                                <option>Shipping Town/city</option>
+                                                                <option>Shipping State/Province/Region</option>
+                                                                <option>Shipping Country/Region</option>
+                                                                <option>Shipping Pin Code</option>
+                                                                <option>Source</option>
+                                                                <option>Reference id</option>
+                                                                <option>Last sync Time</option>
+                                                                <option>Entity Discount Amount</option>
+                                                                <option>Shipping Charge</option>
+                                                                <option>Shipping Charge Tax id</option>
+                                                                <option>Shipping Charge Tax Amount</option>
+                                                                <option>Item Name</option>
+                                                                <option>Item Desc</option>
+                                                                <option>HSN/SAC</option>
+                                                                <option>Quantity</option>
+                                                                <option>Discount</option>
+                                                                <option>Discount Amount</option>
+                                                                <option>Item Total</option>
+                                                                <option>Product id</option>
+                                                                <option>Account</option>
+                                                                <option>SKU</option>
+                                                                <option>Usage unit</option>
+                                                                <option>Item Price</option>
+                                                                <option>Supply Type</option>
+                                                                <option>Reverse Charge Tax Name</option>
+                                                                <option>Reverse Charge Tax Rate</option>
+                                                                <option>Reverse Charge Tax Type</option>
+                                                                <option>CGST Rate %</option>
+                                                                <option>SGST Rate %</option>
+                                                                <option>IGST Rate %</option>
+                                                                <option>CESS Rate %</option>
+                                                                <option>CGST(FCY)</option>
+                                                                <option>SGST(FCY)</option>
+                                                                <option>IGST(FCY)</option>
+                                                                <option>CESS(FCY)</option>
+                                                                <option>CGST</option>
+                                                                <option>SGST</option>
+                                                                <option>IGST</option>
+                                                                <option>CESS</option>
+                                                                <option>Item Tax Authority</option>
+                                                                <option>Item Tax Exemption Reason</option>
+                                                                <option>Item Type</option>
+                                                                <option>Location</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -3631,7 +3851,82 @@
                                                         <div class="mb-3">
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
+                                                                <option>SGST(FCY)</option>
                                                                 <option selected>Estimate Date</option>
+                                                                <option>Estimate Number</option>
+                                                                <option>Estimate Status</option>
+                                                                <option>Customer Name</option>
+                                                                <option>Customer id</option>
+                                                                <option>Expiry Date</option>
+                                                                <option>Purchase Order</option>
+                                                                <option>Currency Code</option>
+                                                                <option>Exchange Rate</option>
+                                                                <option>Discount type</option>
+                                                                <option>Is Discount Before Tax</option>
+                                                                <option>Entity Discount Percent</option>
+                                                                <option>Sub Total</option>
+                                                                <option>Total</option>
+                                                                <option>Adjustment</option>
+                                                                <option>Notes</option>
+                                                                <option>Terms & Conditions</option>
+                                                                <option>Subject</option>
+                                                                <option>Place of Supply</option>
+                                                                <option>Place of Supply(with state code)</option>
+                                                                <option>GST Treatment</option>
+                                                                <option>GST Identification Number (GSTIN)</option>
+                                                                <option>Project ID</option>
+                                                                <option>Project Name</option>
+                                                                <option>Price List</option>
+                                                                <option>Sales person</option>
+                                                                <option>Billing Town/city</option>
+                                                                <option>Billing State/Province/Region</option>
+                                                                <option>Billing Country/Region</option>
+                                                                <option>Billing Pin Code</option>
+                                                                <option>Template Name</option>
+                                                                <option>Adjustment Description</option>
+                                                                <option>Shipping Town/city</option>
+                                                                <option>Shipping State/Province/Region</option>
+                                                                <option>Shipping Country/Region</option>
+                                                                <option>Shipping Pin Code</option>
+                                                                <option>Source</option>
+                                                                <option>Reference id</option>
+                                                                <option>Last sync Time</option>
+                                                                <option>Entity Discount Amount</option>
+                                                                <option>Shipping Charge</option>
+                                                                <option>Shipping Charge Tax id</option>
+                                                                <option>Shipping Charge Tax Amount</option>
+                                                                <option>Item Name</option>
+                                                                <option>Item Desc</option>
+                                                                <option>HSN/SAC</option>
+                                                                <option>Quantity</option>
+                                                                <option>Discount</option>
+                                                                <option>Discount Amount</option>
+                                                                <option>Item Total</option>
+                                                                <option>Product id</option>
+                                                                <option>Account</option>
+                                                                <option>SKU</option>
+                                                                <option>Usage unit</option>
+                                                                <option>Item Price</option>
+                                                                <option>Supply Type</option>
+                                                                <option>Reverse Charge Tax Name</option>
+                                                                <option>Reverse Charge Tax Rate</option>
+                                                                <option>Reverse Charge Tax Type</option>
+                                                                <option>CGST Rate %</option>
+                                                                <option>SGST Rate %</option>
+                                                                <option>IGST Rate %</option>
+                                                                <option>CESS Rate %</option>
+                                                                <option>CGST(FCY)</option>
+                                                                <option>SGST(FCY)</option>
+                                                                <option>IGST(FCY)</option>
+                                                                <option>CESS(FCY)</option>
+                                                                <option>CGST</option>
+                                                                <option>SGST</option>
+                                                                <option>IGST</option>
+                                                                <option>CESS</option>
+                                                                <option>Item Tax Authority</option>
+                                                                <option>Item Tax Exemption Reason</option>
+                                                                <option>Item Type</option>
+                                                                <option>Location</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -3650,83 +3945,10 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary"
-                                                data-bs-target="#popupExportAddNew" data-bs-toggle="modal">Save and
+                                                data-bs-target="#popupExportItem" data-bs-toggle="modal">Save and
                                                 Select</button>
                                             <button type="button" class="btn btn-outline-secondary"
                                                 data-bs-target="#popupExportItem" data-bs-toggle="modal">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupSelectModule" tabindex="-1"
-                                aria-labelledby="popupSelectModuleLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body">
-                                            <h6 class="text-secondary">Sales</h6>
-                                            <ul>
-                                                <li>Estimates</li>
-                                                <li>Sales Orders</li>
-                                                <li>Sales Orders</li>
-                                                <li>Invoices</li>
-                                                <li>Invoice Payments</li>
-                                                <li>Recurring Invoices</li>
-                                                <li>Credit Notes</li>
-                                                <li>Credit Notes Applied to Invoices</li>
-                                                <li>Refunds</li>
-                                            </ul>
-                                            <h6 class="text-secondary">Purchase</h6>
-                                            <ul>
-                                                <li>Purchase Orders</li>
-                                                <li>Bills</li>
-                                                <li>Bill of Entry</li>
-                                                <li>Bill Payments</li>
-                                                <li>Vendor Credits</li>
-                                                <li>Vendor Credit Refunds</li>
-                                            </ul>
-                                            <h6 class="text-secondary">Timesheet</h6>
-                                            <ul>
-                                                <li>Projects</li>
-                                                <li>Timesheet</li>
-                                                <li>Project Tasks</li>
-                                            </ul>
-                                            <h6 class="text-secondary">Others</h6>
-                                            <ul>
-                                                <li>Customers</li>
-                                                <li>Vendors</li>
-                                                <li data-bs-toggle="modal" data-bs-target="#popupExportItem">Items</li>
-                                                <li>Exchange Rates</li>
-                                                <li>Users</li>
-                                                <li>Chart of Accounts</li>
-                                                <li>Manual Journals</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupSelectModule1" tabindex="-1"
-                                aria-labelledby="popupSelectModule1Label" aria-hidden="true">
-                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul>
-                                                <li>All</li>
-                                                <li>Draft</li>
-                                                <li>Pending Approval</li>
-                                                <li>Approved</li>
-                                                <li>Sent</li>
-                                                <li>Invoiced</li>
-                                                <li>Accepted</li>
-                                                <li>Declined</li>
-                                                <li>Expired</li>
-                                                <li>Rejected</li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -3793,119 +4015,132 @@
         </div>
         <div class="row mt-5">
             <div class="col-1 text-center mt-3">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#popupItem">
-                    <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
-                </button>
-                <div class="modal fade" id="popupItem" tabindex="-1" aria-labelledby="popupItemLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-body text-start">
-                                <label for="" class="form-label text-secondary">Custamize colums</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Date<span class="text-danger">*</span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Sales Order#<span class="text-danger">*</span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Reference#
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Customer name<span class="text-danger">*</span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Order Status<span class="text-danger">*</span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Invoiced
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Payment
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Packed
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Shipped
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Amount<span class="text-danger">*</span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label" for="">
-                                        Delivery Method
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="">
-                                    <label class="form-check-label" for="">
-                                        Expected Shipment Date
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="">
-                                    <label class="form-check-label" for="">
-                                        Company Name
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="">
-                                    <label class="form-check-label" for="">
-                                        Invoiced Amount
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="">
-                                    <label class="form-check-label" for="">
-                                        Sales Person
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="">
-                                    <label class="form-check-label" for="">
-                                        Status
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item text-secondary" href="#">Custamize colums</a></li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Date<span class="text-danger">*</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Sales Order#<span class="text-danger">*</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Reference#
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Customer name<span class="text-danger">*</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Order Status<span class="text-danger">*</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Invoiced
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Payment
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Packed
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Shipped
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Amount<span class="text-danger">*</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="" checked>
+                                <label class="form-check-label" for="">
+                                    Delivery Method
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="">
+                                <label class="form-check-label" for="">
+                                    Expected Shipment Date
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="">
+                                <label class="form-check-label" for="">
+                                    Company Name
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="">
+                                <label class="form-check-label" for="">
+                                    Invoiced Amount
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="">
+                                <label class="form-check-label" for="">
+                                    Sales Person
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item border-bottom mb-3" href="#"> <input class="form-check-input"
+                                    type="checkbox" value="" id="">
+                                <label class="form-check-label" for="">
+                                    Status
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item d-flex justify-content-around" href="#">
                                 <button type="button" class="btn btn-warning">Save</button>
-                                <button type="button" class="btn btn-outline-secondary"
-                                    data-bs-dismiss="modal">Cancel</button>
-                            </div>
-                        </div>
-                    </div>
+                                <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
             <div class="col-11">

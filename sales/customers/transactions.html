@@ -546,20 +546,25 @@
                     <div class="row border-bottom pb-2">
                         <div class="col-2"></div>
                         <div class="col-6">
-                            <select class="form-select select-all-items" aria-label="Default select example">
-                                <option selected>All Customers</option>
-                                <option class="text-secondary">Default Filters</option>
-                                <option>All Customers</option>
-                                <option>Active Customers</option>
-                                <option>CRM Customers</option>
-                                <option>Duplicate Customers</option>
-                                <option>Inactive Customers</option>
-                                <option>Client Portal Enabled</option>
-                                <option>Client Portal Disabled</option>
-                                <option>Overdue Customers</option>
-                                <option>Unpaid Customers</option>
-                                <option class="text-primary">+ New Custom View</option>
-                            </select>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Customers
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All Customers</a></li>
+                                    <li><a class="dropdown-item" href="#">Active Customers</a></li>
+                                    <li><a class="dropdown-item" href="#">CRM Customers</a></li>
+                                    <li><a class="dropdown-item" href="#">Duplicate Customers</a></li>
+                                    <li><a class="dropdown-item" href="#">Inactive Customers</a></li>
+                                    <li><a class="dropdown-item" href="#">Client Portal Enabled</a></li>
+                                    <li><a class="dropdown-item" href="#">Client Portal Disabled</a></li>
+                                    <li><a class="dropdown-item" href="#">Overdue Customers</a></li>
+                                    <li><a class="dropdown-item" href="#">Unpaid Customers</a></li>
+                                    <li><a class="dropdown-item text-primary" href="#">+ New Custom View</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-2">
                             <a href="./newCustomer.html">
@@ -569,51 +574,37 @@
                             </a>
                         </div>
                         <div class="col-2">
-                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#popupShort"><i
-                                    class="fa fa-align-left" aria-hidden="true"></i>
-                            </button>
-                            <div class="modal fade" id="popupShort" tabindex="-1" aria-labelledby="popupShortLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="popupShortLabel">SORT BY</h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul class="border-bottom pb-3 pl-5">
-                                                <li>Name</li>
-                                                <li>Rate</li>
-                                                <li>HSN/SAC</li>
-                                                <li>Last Modified Time</li>
-                                            </ul>
-                                            <ul class="border-bottom pb-3">
-                                                <li class="fs-5" data-bs-toggle="modal"
-                                                    data-bs-target="#popupImportItem">
-                                                    <i class="fa fa-download text-secondary" aria-hidden="true"></i>
-                                                    Import Items
-                                                </li>
-                                                <li class="fs-5" data-bs-toggle="modal"
-                                                    data-bs-target="#popupExportItem">
-                                                    <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                                    Export Items
-                                                </li>
-                                            </ul>
-                                            <ul class="border-bottom pb-3">
-                                                <li class="fs-5" data-bs-toggle="modal"
-                                                    data-bs-target="#popupExportCurrent">
-                                                    <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                                    Export Current View
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li class="fs-5">
-                                                    <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
-                                                    Refresh
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
+                                    <li><a class="dropdown-item" href="#">Name</a></li>
+                                    <li><a class="dropdown-item" href="#">Company Name</a></li>
+                                    <li><a class="dropdown-item" href="#">Receivables</a></li>
+                                    <li><a class="dropdown-item" href="#">Created Time</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Last Modified Time</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
+                                                aria-hidden="true"></i>
+                                            Import Items</a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportItem">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Items
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportCurrent">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Current View
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
+                                            Refresh
+                                        </a></li>
+                                </ul>
                             </div>
                             <div class="modal fade" id="popupImportItem" tabindex="-1"
                                 aria-labelledby="popupImportItemLabel" aria-hidden="true">
@@ -2789,11 +2780,68 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <h6>Select Module<span class="text-danger">*</span></h6>
-                                                        <select class="form-select mb-3"
-                                                            aria-label="Default select example" data-bs-toggle="modal"
-                                                            data-bs-target="#popupSelectModule">
-                                                            <option selected>Customers</option>
-                                                        </select>
+                                                        <div class="dropdown mb-3 dropdown-button">
+                                                            <button class="btn border dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton4" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Customers
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton4">
+                                                                <li><a class="dropdown-item border-bottom" href="#">
+                                                                        <input type="text" class="form-control" name=""
+                                                                            id="">
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item text-secondary" href="#">
+                                                                        Sales
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item" href="#">Estimates</a></li>
+                                                                <li><a class="dropdown-item" href="#">Sales Orders</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Invoices</a></li>
+                                                                <li><a class="dropdown-item" href="#">Invoice
+                                                                        Payments</a></li>
+                                                                <li><a class="dropdown-item" href="#">Recurring
+                                                                        Invoices</a></li>
+                                                                <li><a class="dropdown-item" href="#">Credit Notes</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Credit Notes
+                                                                        Applied to Invoices</a></li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Refunds</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Purchase</a></li>
+                                                                <li><a class="dropdown-item" href="#">Purchase
+                                                                        Orders</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bills</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bill of Entry</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Bill Payments</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Vendor Credits</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Vendor Credit
+                                                                        Refunds</a></li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Timesheet</a></li>
+                                                                <li><a class="dropdown-item" href="#">Projects</a></li>
+                                                                <li><a class="dropdown-item" href="#">Timesheet</a></li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Project
+                                                                        Tasks</a></li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Others</a></li>
+                                                                <li><a class="dropdown-item" href="#">Customers</a></li>
+                                                                <li><a class="dropdown-item" href="#">Vendors</a></li>
+                                                                <li><a class="dropdown-item" href="#">Items</a></li>
+                                                                <li><a class="dropdown-item" href="#">Exchange Rates</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Users</a></li>
+                                                                <li><a class="dropdown-item" href="#">Chart of
+                                                                        Accounts</a></li>
+                                                                <li><a class="dropdown-item" href="#">Manual
+                                                                        Journals</a></li>
+                                                            </ul>
+                                                        </div>
                                                         <div class="form-check mb-3">
                                                             <input class="form-check-input" type="radio"
                                                                 name="radioAllItem" id="radioAllItem" checked>
@@ -2882,55 +2930,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="popupSelectModule" tabindex="-1"
-                                aria-labelledby="popupSelectModuleLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                        <div class="modal-body">
-                                            <h6 class="text-secondary">Sales</h6>
-                                            <ul>
-                                                <li>Estimates</li>
-                                                <li>Sales Orders</li>
-                                                <li>Sales Orders</li>
-                                                <li>Invoices</li>
-                                                <li>Invoice Payments</li>
-                                                <li>Recurring Invoices</li>
-                                                <li>Credit Notes</li>
-                                                <li>Credit Notes Applied to Invoices</li>
-                                                <li>Refunds</li>
-                                            </ul>
-                                            <h6 class="text-secondary">Purchase</h6>
-                                            <ul>
-                                                <li>Purchase Orders</li>
-                                                <li>Bills</li>
-                                                <li>Bill of Entry</li>
-                                                <li>Bill Payments</li>
-                                                <li>Vendor Credits</li>
-                                                <li>Vendor Credit Refunds</li>
-                                            </ul>
-                                            <h6 class="text-secondary">Timesheet</h6>
-                                            <ul>
-                                                <li>Projects</li>
-                                                <li>Timesheet</li>
-                                                <li>Project Tasks</li>
-                                            </ul>
-                                            <h6 class="text-secondary">Others</h6>
-                                            <ul>
-                                                <li>Customers</li>
-                                                <li>Vendors</li>
-                                                <li data-bs-toggle="modal" data-bs-target="#popupExportItem">Items</li>
-                                                <li>Exchange Rates</li>
-                                                <li>Users</li>
-                                                <li>Chart of Accounts</li>
-                                                <li>Manual Journals</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="modal fade" id="popupExportCurrent" tabindex="-1"
                                 aria-labelledby="popupExportCurrentLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -3007,8 +3006,8 @@
                                             <p>Once deleted, they cannot be undone</p>
                                         </div>
                                         <div class="d-flex justify-content-around mb-4">
-                                            <button type="button" class="btn btn-light"
-                                                data-bs-dismiss="modal">Delete</button>
+                                            <a href="./customers.html"><button type="button"
+                                                    class="btn btn-light">Delete</button></a>
                                             <button type="button" class="btn btn-primary"
                                                 data-bs-dismiss="modal">No</button>
                                         </div>
@@ -3035,11 +3034,11 @@
                         <div class="col"></div>
                         <div class="col-1">
                             <a href="./newCustomer.html">
-                                <button class="btn btn-light">Edit</button>
+                                <button class="btn btn-light border">Edit</button>
                             </a>
                         </div>
                         <div class="col-1">
-                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#popupFiles">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupFiles">
                                 <i class="fa fa-thumb-tack" aria-hidden="true"></i>
                             </button>
                             <div class="modal fade" id="popupFiles" tabindex="-1" aria-labelledby="popupFilesLabel"
@@ -3080,8 +3079,8 @@
                         </div>
                         <div class="col">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-secondary border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     New Transaction
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -3104,8 +3103,8 @@
                         </div>
                         <div class="col-1">
                             <div class="dropdown">
-                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-light border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">

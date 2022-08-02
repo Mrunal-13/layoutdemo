@@ -684,8 +684,16 @@
 
 .dropdown-button button {
     width: 100%;
+    height: 38px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.dropdown-button-end button {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: end;
     align-items: center;
 }
 

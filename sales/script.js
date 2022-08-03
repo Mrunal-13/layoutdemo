@@ -388,6 +388,43 @@ $(document).ready(function () {
         $("input[name='checkTax'][value='2']").prop('checked', true);
     });
     // Code for Record Payment @anjudewangan
+
+
+    // code for add table @anjudewangan
+    const addAnotherLine = [];
+    addAnotherLine.map(() => {
+        $(".table-add-another-line tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td></td><td></td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>₹</option><option>%</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i></div></td></tr>');
+    });
+
+    $("#btn-add-another-line").click(function () {
+        $(".table-add-another-line tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td></td><td></td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>₹</option><option>%</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i></div></td></tr>');
+        return false;
+    });
+
+    $(document).on("click", ".icon-copy-1", function () {
+        $(".table-add-another-line tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" style="opacity: 0.7;"></i>AK</div><div class="text-secondary"><div class="dropdown"><button class="btn btn-white text-secondary btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="./editItem.html">Edit Item</a></li><li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#popupItemDetails">View Item Details</a></li></ul><i class="fa fa-times-circle-o" aria-hidden="true"></i></div></div></div><div class="ml-5 mb-2"><textarea class="form-control" placeholder="Add a description to your item" id="floatingTextarea3"></textarea></div><div class="ml-5"><span class="bg-success">SERVICE</span> SAC: <a href="" data-bs-toggle="modal" data-bs-target="#popupSAC">998313 <i class="fa fa-pencil" aria-hidden="true"></i></a></div></td><td class="text-end">1.00</td><td class="text-end">200.00 <div><a href="" data-bs-toggle="modal" data-bs-target="#popupItemDetails">Recent Transaction</a></div></td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>%</option><option>₹</option></select></td><td class="text-end">₹200.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-1" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i></div></td></tr>');
+        return false;
+    });
+
+    $(document).on("click", ".icon-copy-2", function () {
+        $(".table-add-another-line tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" style="opacity: 0.7;"></i>BK</div><div class="text-secondary"><div class="dropdown"><button class="btn btn-white text-secondary btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="./editItem.html">Edit Item</a></li><li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#popupItemDetails">View Item Details</a> </li></ul><i class="fa fa-times-circle-o" aria-hidden="true"></i></div></div></div><div class="ml-5 mb-2"><textarea class="form-control" placeholder="Add a description to your item" id="floatingTextarea3"></textarea></div><div class="ml-5"><span class="bg-info">GOODS</span> HSN: <a href="" data-bs-toggle="modal" data-bs-target="#popupSAC">84716040 <i class="fa fa-pencil" aria-hidden="true"></i></a></div></td><td class="text-end">1.00<div><small>Stock on Hand:</small></div><div><small>50.00 pcs <i class="fa fa-arrow-circle-o-down text-primary"aria-hidden="true" data-bs-toggle="modal"data-bs-target="#popupStockDetails"></i></small></div></td><td class="text-end">200.00 <div><a href="" data-bs-toggle="modal" data-bs-target="#popupItemDetails">Recent Transaction</a></div></td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>%</option> <option>₹</option></select></td><td class="text-end">₹200.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-2" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i></div></td></tr>');
+        return false;
+    });
+
+    $(document).on("click", ".icon-copy-3", function () {
+        $(".table-add-another-line tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td></td><td></td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>₹</option><option>%</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-3" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i></div></td></tr>');
+        return false;
+    });
+
+    $(document).on("click", ".icon-delete", function () {
+        $(this).parent().parent().parent('tr').remove();
+    });
+
+    // code for add table @anjudewangan
+
+    $(document).ready(function () {
+        $('.js-example-basic-single').select2();
+    });
 });
 
 // Code for Chart @anjudewangan

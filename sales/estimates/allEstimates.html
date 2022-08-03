@@ -652,8 +652,14 @@
                                                                 </button>
                                                                 <ul class="dropdown-menu"
                                                                     aria-labelledby="dropdownMenuButton1">
-                                                                    <li><a class="dropdown-item" href="#">Attach from
-                                                                            desktop</a></li>
+                                                                    <li><a class="dropdown-item" href="#">
+                                                                            <label for="formFileMultiple"
+                                                                                class="form-label">Attach from
+                                                                                Desktop</label>
+                                                                            <input class="form-control" type="file"
+                                                                                id="formFileMultiple" multiple
+                                                                                style="display: none;">
+                                                                        </a></li>
                                                                     <li><a class="dropdown-item" href="#">Attach from
                                                                             the cloud</a></li>
                                                                     <li><a class="dropdown-item" href="#">Attach from
@@ -3763,10 +3769,10 @@
                                                 <p>Once deleted, they cannot be undone</p>
                                             </div>
                                             <div class="d-flex justify-content-around mb-4">
-                                               <a href="./estimates.html">  
-                                                <button type="button" class="btn btn-light"
-                                                data-bs-dismiss="modal">Delete</button>
-                                            </a>
+                                                <a href="./estimates.html">
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Delete</button>
+                                                </a>
                                                 <button type="button" class="btn btn-primary"
                                                     data-bs-dismiss="modal">No</button>
                                             </div>

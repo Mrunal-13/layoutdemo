@@ -207,6 +207,9 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.js-example-basic-single').select2();
+});
 // Add new item in table @anjudewangan
 
 const addNewItem = [];

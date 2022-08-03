@@ -464,7 +464,8 @@
 
 .dvSelect>select,
 #divControl>input,
-#divControl>select {
+#divControl>select,
+.headofSellItems select {
     width: 12rem;
     margin: 16px;
     border: 1px solid black;
@@ -670,20 +671,45 @@ padding: 5px 5px 5px 30px;
 }
 
 .block-2{
-    border: 1px solid grey;
     border-radius: 5px;
-    margin-left: 5px;
+    width: 100%;
     margin-top: 20px;
+    display: flex;
+}
+.headOfblock2{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+}
+.tab1{
+    border-radius: 0 10px 10px 0;
+    border: 1px solid gray;
+    margin-top: 10px;
+    width: 50%;
+}
+.docList:hover{
+    background: #ECECEC;
+}
+#queueBox{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+.headOfQBox{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
 }
 .row{
     width: 100%;
-
 }
 .col-7{
     border-left: 1px solid black;
 }
+
 table p{
-    line-height: 0%;
+    line-height: auto;
     padding: 6px 10px 1px 1px;
 }
 tr{
@@ -708,23 +734,84 @@ tr{
     margin-top: 20px;
     margin-left: 5px;
     display: flex;
+    width: 100%;
+    margin-bottom: 30px;
 }
+.headOfUpcoming{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    }
 .upcomingtable{
-    border: 2px solid grey;
     font-size: 10px;
+}
+.tableForUp{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: 1px solid gray;
 }
 .hospitalManagement{
     border: 1px solid grey;
     border-radius: 5px;
-    width: 40%;
+    width: 35%;
     margin-left: 40px;
 }
 .hospitalManagement img{
     padding: 10px 10px 10px 10px;
 }
+.hospitalManagement ul{
+    list-style: none;
+    
+    padding: 0;
+}
+.hospitalManagement ul li{
+   
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 3px;
+    height: 36px;
+    background-color: #FFBE5C;
+}
+.hospitalManagement ul li p{
+    font-size: 12px;
+    background-color: #0897FF;
+    height: 100%;
+    margin: 0;
+    color: white;
+    padding-left: 15px;
+    padding-top: 8px;
+    border-radius: 3px;
+}
+.hospitalManagement ul li span{
+    font-size: 14px;
+    margin: 0;
+    color: gray;
+    padding-top: 7px;
+    margin-left: auto;
+    margin-right: 5px;
+}
+#opdBar p{
+    width: 16%;
+}
+#pateintBar p{
+    width: 71%;
+}
+#labBar p{
+    width: 82%;
+}
+#treatBar p{
+    width: 67%;
+}
+#dischargeBar p{
+    width: 30%;
+}
+
+
 
 /* sales activity */
-
 .layer1 {
     display: flex;
     justify-content: space-between;
@@ -796,7 +883,7 @@ tr{
 
 .activities {
     background-color: #ECF8FF;
-    width: 100vw;
+    width: 100%;
     display: flex;
 }
 
@@ -929,7 +1016,7 @@ tr{
 
 .productsInfo {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
     margin-top: 30px;
     flex-wrap: wrap;
@@ -1051,7 +1138,7 @@ tr{
 table {
     border-collapse: collapse;
     width: 100%;
-  }
+}
   td, th {
     text-align: left;
     padding: 8px;
@@ -1102,9 +1189,28 @@ margin-top: 10px;
 }
 
 @media only screen and (max-width:1024px) {
+    .block-2{
+        flex-direction: column;
+    }
+    .tab1{
+        width: 100%;
+    }
+    .tableForUp{
+        width: 100%;
+    }
+    .hospitalManagement {
+        width: 80%;
+    }
+    .vLine{
+        width: 80%;
+    }
+    /* upcoming App */
+    .upcomingApp{
+        flex-direction: column;
+    }
     .productsInfo {
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         align-items: center;
     }
 
@@ -1116,17 +1222,56 @@ margin-top: 10px;
 }
 
 @media only screen and (max-width:767px) {
+    /* main whole div */
     .maintograph {
         position: absolute;
         left: 0; 
         max-width: 100vw; 
-        margin-top: 25px;
+        margin-top: 53px;
         margin-left: 0;
     }
-/* PA CSS SECTION */
-.PA{
-    flex-direction: column;
-}
+    #doctorList table,tr,td,td p{
+        font-size: 12px;
+    }
+    td p{
+        font-size: 8px;
+    }
+    table p{
+        padding: 7px 1px 0 0;
+    }
+    .tdbold{
+        font-size: 12px;
+    }
+    td,th{
+        padding: 0;
+    }
+    /* PA CSS SECTION */
+    .PA{
+        flex-direction: column;
+    }
+    .upcomingApp{
+        flex-direction: column;
+    }
+    .upcomingtable{
+        overflow: scroll;
+    }
+    .headOfUpcoming{
+        width: 100%;
+        font-size: 10px;
+    }
+    .hospitalManagement {
+        width: 90%;
+        margin: 15px auto;
+    }
+    .opd,.ipd,.upcomingApp,.topbar{
+        margin-left: 0;
+    }
+    .topbar{
+        margin: auto;
+    }
+    .tableForUp{
+        width: 100%;
+    }
     /* section 1 chart box css */
     .chartDiv {
         flex-direction: column;
@@ -1196,9 +1341,8 @@ margin-top: 10px;
     }
     table{
         font-size: 12px;
-    }
-    td,th{
-        padding: 0;
+        border-collapse: collapse;
+        overflow: scroll;
     }
     /* graph4 */
     .graphAndDetails{
@@ -1222,7 +1366,12 @@ margin-top: 10px;
         width: auto;
         padding: 0;
     }
-
+    .headOfblock2 {
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 10px !important;
+    }
     .summaryBox {
         margin-top: 20px;
         width: auto;

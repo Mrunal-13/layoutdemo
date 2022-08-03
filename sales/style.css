@@ -1017,36 +1017,6 @@ main .active-item {
     left: 35px;
 }
 
-.copy-delete1 {
-    right: 170px;
-    bottom: 950px;
-}
-
-.copy-delete2 {
-    right: 170px;
-    bottom: 800px;
-}
-
-.copy-delete3 {
-    right: 170px;
-    bottom: 650px;
-}
-
-.icon-th1 {
-    left: 187px;
-    bottom: 950px;
-}
-
-.icon-th2 {
-    left: 187px;
-    bottom: 800px;
-}
-
-.icon-th3 {
-    left: 187px;
-    bottom: 650px;
-}
-
 .customer-icon {
     width: 80px;
     height: 80px;
@@ -1113,8 +1083,35 @@ main .active-item {
     align-items: center;
 }
 
-.text-dotted{
+.text-dotted {
     border-bottom: dotted;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    width: 100% !important;
+    height: 38px !important;
+    border: 1px solid #ced4da !important;
+    color: #495057 !important;
+    line-height: 1.5 !important;
+    border-radius: 0.25rem !important;
+    font-size: 1rem !important;
+    padding: 0.375rem 0.75rem !important;
+    text-align: start !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: none !important;
+
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px !important;
+}
+
+.select2-container {
+    width: 100% !important;
+    vertical-align: baseline !important;
+
 }
 
 /* Code for Sales @anjudewangan */

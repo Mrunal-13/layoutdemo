@@ -564,7 +564,7 @@
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
                                                     class="form-control" id=""></a></li>
-                                        <li><a class="dropdown-item border-bottom mb-3" href="#">Mr. Badshah khan</a>
+                                        <li><a class="dropdown-item border-bottom mb-3" href="../customers/allCustomers.html">Mr. Badshah khan</a>
                                         </li>
                                         <li><a class="dropdown-item border-bottom mb-3" href="#">sample baba</a></li>
                                         <li><a class="dropdown-item text-primary" href="./newCustomer.html">+ New
@@ -1354,9 +1354,6 @@
                     </div>
                 </div>
                 <div class="mt-4">
-                    <div class="position-absolute icon-th2"><i class="fa fa-th text-secondary" aria-hidden="true"
-                            aria-hidden="true"></i>
-                    </div>
                     <div class="modal fade" id="popupItemDetails" tabindex="-1" aria-labelledby="popupItemDetailsLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-scrollable">
@@ -1533,15 +1530,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position-absolute icon-th3"><i class="fa fa-th text-secondary" aria-hidden="true"></i>
-                    </div>
-                    <div class="position-absolute copy-delete2"><i class="fa fa-clone text-primary"
-                            aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger" aria-hidden="true"></i>
-                    </div>
-                    <div class="position-absolute copy-delete3"><i class="fa fa-clone text-primary"
-                            aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger" aria-hidden="true"></i>
-                    </div>
-                    <table class="table table-bordered position-relative">
+                    <table class="table table-bordered position-relative table-add-another-line">
                         <thead class="bg-light">
                             <tr>
                                 <th>Item Details</th>
@@ -1553,8 +1542,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <div class="d-flex justify-content-between">
+                                <td><i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true"
+                                        style="margin-left: -44px;"></i>
+                                    <div class="d-flex justify-content-between" style="margin-top: -22px;">
                                         <div><i class="fa fa-picture-o text-secondary fs-3" style="opacity: 0.7;"></i>
                                             AK
                                         </div>
@@ -1698,11 +1688,20 @@
                                         <option>₹</option>
                                     </select>
                                 </td>
-                                <td class="text-end">₹200.00</td>
+                                <td class="text-end">
+                                    ₹200.00
+                                    <div style="margin-right: -62px; margin-top: -23px;"> <i
+                                            class="fa fa-clone text-primary icon-copy icon-copy-1"
+                                            aria-hidden="true"></i> <i
+                                            class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="d-flex justify-content-between">
+                                    <i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true"
+                                        style="margin-left: -44px;"></i>
+                                    <div class="d-flex justify-content-between" style="margin-top: -22px;">
                                         <div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true"
                                                 style="opacity: 0.7;"></i>
                                             <span class="text-secondary">Type or click to select an item</span>
@@ -1719,12 +1718,17 @@
                         <option>%</option>
                     </select>
                 </td>
-                <td class="text-end">₹0.00</td>
+                <td class="text-end">₹0.00
+                    <div style="margin-right: -62px; margin-top: -23px;"> <i
+                            class="fa fa-clone text-primary icon-copy icon-copy-3" aria-hidden="true"></i> <i
+                            class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i>
+                    </div>
+                </td>
                 </tr>
                 </tbody>
                 </table>
                 <div>
-                    <button class="btn btn-light" type="button" id="">
+                    <button class="btn btn-light" type="button" id="btn-add-another-line">
                         <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> Add another line
                     </button>
                 </div>

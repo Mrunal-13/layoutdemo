@@ -224,16 +224,46 @@
     position: absolute;
     top: 100%;
     background-color: #ffffff;
-    left: 70%;
+    left: 60%;
+    max-height: 550px;
     height: auto;
-    width: 30vw;
+    width: 40vw;
     border: 0.01rem solid black;
     box-shadow: 11px 11px 30px -9px black;
     border-radius: 5px;
     z-index: 10;
     padding: 16px;
 }
-
+.alertHeader{
+    display: flex;
+    justify-content: space-around;
+}
+.alertBody ul{
+    padding: 0;
+    overflow-y: scroll;
+}
+.optionsInNotif{
+    display: flex;
+}
+.optionsInNotif p:first-child{
+    margin-right: 15px;
+}
+.optionsInNotif p{
+    color: #000000;
+    cursor: pointer;
+}
+.optionsInNotif p:hover{
+    color:#0897FF;
+    border-bottom: 2px solid #0997FF;
+    border-radius: 4px;
+}
+.notifList,.announceList{
+    display: flex;
+    margin: 0;
+}
+.notifList div,.announceList div{
+    margin: 0 15px;
+}
 .alertBodyitems {
     background-color: transparent;
     padding: 5px;
@@ -244,7 +274,9 @@
     background-color: #cce7ff;
     z-index: 10;
 }
-
+.alertBody li:hover{
+    background-color: #ECECEC;
+}
 .alertBodyitemsPart1 {
     display: flex;
     justify-content: space-between;
@@ -687,9 +719,16 @@ padding: 5px 5px 5px 30px;
     margin-top: 10px;
     width: 50%;
 }
-.docList:hover{
+.docList:hover,.qBoxList:hover{
     background: #ECECEC;
 }
+.docList a,.qBoxList a{
+    text-decoration: none;
+}
+.docList a p,.qBoxList a p{
+    color: black;
+}
+
 #queueBox{
     display: flex;
     flex-direction: column;

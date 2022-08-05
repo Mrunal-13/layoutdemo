@@ -425,6 +425,12 @@
                         <a href="./salesOrders.html" class="sales-link">Sales Orders</a>
                     </li>
                     <li>
+                        <a href="../packages-folder/packages.html">Packages</a>
+                    </li>
+                    <li>
+                        <a href="">Shipments</a>
+                    </li>
+                    <li>
                         <a href="">Delivery Challans</a>
                     </li>
                     <li>
@@ -435,6 +441,9 @@
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
+                    </li>
+                    <li>
+                        <a href="">Sales Return</a>
                     </li>
                     <li>
                         <a href="">Credit Notes</a>
@@ -839,7 +848,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-2" style="top: -15px;">
+                        <div class="col-sm-2" style="top: -13px;">
                             <button class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#popupAdvSearCustomer"><i class="fa fa-search"
                                     aria-hidden="true"></i></button>
@@ -1635,7 +1644,67 @@
                                 <td class="text-end">1.00
                                     <div><small>Stock on Hand:</small></div>
                                     <div><small>50.00 pcs <i class="fa fa-arrow-circle-o-down text-primary"
-                                                aria-hidden="true"></i></small></div>
+                                                aria-hidden="true" data-bs-toggle="modal"
+                                                data-bs-target="#popupStockDetails"></i></small></div>
+                                    <div class="modal fade" id="popupStockDetails" tabindex="-1"
+                                        aria-labelledby="popupStockDetailsLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light">
+                                                    <h5 class="modal-title" id="popupStockDetailsLabel">Stock Details
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row pl-5">
+                                                        <div class="col-6 text-start">
+                                                            <div class="row mb-3">
+                                                                <div class="col">
+                                                                    <h6>Accounting Stock</h6>
+                                                                    <p><small>This is calculated based on Bills and
+                                                                            Invoices.</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6">Stock on Hand</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Committed Stock</div>
+                                                                <div class="col-6">: 0.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Available for Sale</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 text-start">
+                                                            <div class="row mb-3">
+                                                                <div class="col">
+                                                                    <h6>Physical Stock</h6>
+                                                                    <p><small>This is calculated based on Receives and
+                                                                            Shipments.</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6">Stock on Hand</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Committed Stock</div>
+                                                                <div class="col-6">: 0.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Available for Sale</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-end">200.00 <div><a href="" data-bs-toggle="modal"
                                             data-bs-target="#popupItemDetails">Recent Transaction</a></div>

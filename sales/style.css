@@ -584,7 +584,10 @@ main .active-item {
 }
 
 #popupDelete .modal-body i,
-#popupDeletePayment .modal-body i {
+#popupDeletePayment .modal-body i,
+#popupDeleteDelivered .modal-body i,
+#popupDeleteUndelivered .modal-body i,
+#popupDelete2 .modal-body i {
     color: #EF8523;
     font-size: 45px;
 }
@@ -875,11 +878,11 @@ main .active-item {
     font-size: 18px;
     color: white;
     font-weight: 500;
-    top: 227px;
-    left: 15px;
+    top: 229px;
+    left: 6px;
     margin-left: 6px;
     margin-top: 33px;
-    z-index: 1000;
+    z-index: 1;
     padding: 5px 48px;
 }
 
@@ -1056,7 +1059,8 @@ main .active-item {
 }
 
 .draft-banner {
-    top: 189px;
+    top: 191px;
+    left: 13px;
 }
 
 .paid-banner {
@@ -1112,6 +1116,23 @@ main .active-item {
     width: 100% !important;
     vertical-align: baseline !important;
 
+}
+
+/* Packages */
+.package-1 {
+    background-color: #DEEBF4;
+}
+
+.package-2 {
+    background-color: #FEF3B8;
+}
+
+.package-3 {
+    background-color: #D3FDD7;
+}
+
+.packages-div {
+    height: 670px;
 }
 
 /* Code for Sales @anjudewangan */

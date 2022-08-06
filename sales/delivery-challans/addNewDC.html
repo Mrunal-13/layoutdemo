@@ -422,7 +422,7 @@
                         <a href="../estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="./salesOrders.html" class="sales-link">Sales Orders</a>
+                        <a href="../salesOrders/salesOrders.html">Sales Orders</a>
                     </li>
                     <li>
                         <a href="../packages-folder/packages.html">Packages</a>
@@ -431,7 +431,7 @@
                         <a href="../shipmets/shipments.html">Shipments</a>
                     </li>
                     <li>
-                        <a href="../delivery-challans/deliveryChallans.html">Delivery Challans</a>
+                        <a href="./deliveryChallans.html" class="sales-link">Delivery Challans</a>
                     </li>
                     <li>
                         <a href="">Invoices</a>
@@ -554,598 +554,352 @@
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
             <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
-                <h6><i class="fa fa-file-text" aria-hidden="true"></i> New Bill Of Supply</h6>
-                <div><a href="./allSalesOrders.html" class="text-dark"><i class="fa fa-times"
+                <h6><i class="fa fa-truck" aria-hidden="true"></i> New Delivery Challan</h6>
+                <div><a href="./deliveryChallans.html" class="text-dark"><i class="fa fa-times"
                             aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="container mt-3">
-                <div>
-                    <div class="container border border-secondary rounded p-4">
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Customer Name <span
-                                    class="text-danger">*</span></label>
-                            <div class="col-sm-7">
-                                <div class="dropdown dropdown-button">
-                                    <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select Customer
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
-                                                    class="form-control" id=""></a></li>
-                                        <li><a class="dropdown-item border-bottom mb-3"
-                                                href="../customers/allCustomers.html">Mr. Badshah khan</a>
-                                        </li>
-                                        <li><a class="dropdown-item border-bottom mb-3" href="#">sample baba</a></li>
-                                        <li><a class="dropdown-item text-primary" href="./newCustomer.html">+ New
-                                                Customers</a></li>
-                                    </ul>
-                                </div>
-                                <a href="" data-bs-toggle="modal" data-bs-target="#popupCustomerDetails"><i
-                                        class="fa fa-user" aria-hidden="true"></i> View Customer Details</a>
-                                <div class="modal fade" id="popupCustomerDetails" tabindex="-1"
-                                    aria-labelledby="popupCustomerDetailsLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupCustomerDetailsLabel">Customer Details
-                                                </h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-start divCustomer">
-                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
-                                                        aria-hidden="true"></i>
-                                                    <h6 class="ml-4">Mr. Badshah khan <a
-                                                            href="../customers/allCustomers.html"><i
-                                                                class="fa fa-caret-square-o-right fs-5"
-                                                                aria-hidden="true"></i></a></h6>
-                                                </div>
-                                                <div class="container my-4">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <div class="mb-3">Outstanding Receivables</div>
-                                                            <div>₹200.00</div>
-                                                        </div>
-                                                        <div class="col-6 border-left text-end">
-                                                            <div class="mb-3">Unused Credits</div>
-                                                            <div>₹0.00</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="container my-5">
-                                                    <div class="row border-bottom mb-2">
-                                                        <div class="col-4">Other Details</div>
-                                                        <div class="col-7"></div>
-                                                        <div class="col-1"><i class="fa fa-angle-down"
-                                                                aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Customer Type</div>
-                                                        <div class="col-4">Individual</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Payment Terms</div>
-                                                        <div class="col-4">Due on Receipt</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Template Language</div>
-                                                        <div class="col-4">English</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">GST Treatment</div>
-                                                        <div class="col-4">Consumer</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Place Of Supply</div>
-                                                        <div class="col-4">Maharashtra</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">GSTIN</div>
-                                                        <div class="col-4">27AABFB2177L1ZD</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="container">
-                                                    <div class="row border-bottom mb-3">
-                                                        <div class="col-6 text-center"><a href=""
-                                                                class="text-dark">Address</a>
-                                                        </div>
-                                                        <div class="col-6 text-center"><a href="" data-bs-toggle="modal"
-                                                                data-bs-target="#popupCustomerDetails2">Activity</a>
-                                                        </div>
-                                                    </div>
-                                                    <ul>
-                                                        <li><i class="fa fa-file-text-o text-success"
-                                                                aria-hidden="true"></i> Billing Address
-                                                            <ul>
-                                                                <li><b>bashah</b></li>
-                                                                <li><small>dd</small></li>
-                                                                <li><small>sakri</small></li>
-                                                                <li><small>Maharashtra 424304</small></li>
-                                                                <li><small>India</small></li>
-                                                                <li><small>Phone: 9876543210</small></li>
-                                                            </ul>
-                                                        </li>
-
-                                                    </ul>
-                                                    <ul>
-                                                        <li><i class="fa fa-truck text-warning" aria-hidden="true"></i>
-                                                            Shipping Address
-                                                            <ul>
-                                                                <li><b>bashah</b></li>
-                                                                <li><small>dd</small></li>
-                                                                <li><small>sakri</small></li>
-                                                                <li><small>Maharashtra 424304</small></li>
-                                                                <li><small>India</small></li>
-                                                                <li><small>Phone: 9876543210</small></li>
-                                                            </ul>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="popupCustomerDetails2" tabindex="-1"
-                                    aria-labelledby="popupCustomerDetails2Label" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupCustomerDetails2Label">Customer Details
-                                                </h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-start divCustomer">
-                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
-                                                        aria-hidden="true"></i>
-                                                    <h6 class="ml-4">Mr. Badshah khan <a
-                                                            href="../customers/allCustomers.html"><i
-                                                                class="fa fa-caret-square-o-right fs-5"
-                                                                aria-hidden="true"></i></a></h6>
-                                                </div>
-                                                <div class="container my-4">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <div class="mb-3">Outstanding Receivables</div>
-                                                            <div>₹200.00</div>
-                                                        </div>
-                                                        <div class="col-6 border-left text-end">
-                                                            <div class="mb-3">Unused Credits</div>
-                                                            <div>₹0.00</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="container my-5">
-                                                    <div class="row border-bottom mb-2">
-                                                        <div class="col-4">Other Details</div>
-                                                        <div class="col-7"></div>
-                                                        <div class="col-1"><i class="fa fa-angle-down"
-                                                                aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Customer Type</div>
-                                                        <div class="col-4">Individual</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Payment Terms</div>
-                                                        <div class="col-4">Due on Receipt</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Template Language</div>
-                                                        <div class="col-4">English</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">GST Treatment</div>
-                                                        <div class="col-4">Consumer</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Place Of Supply</div>
-                                                        <div class="col-4">Maharashtra</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">GSTIN</div>
-                                                        <div class="col-4">27AABFB2177L1ZD</div>
-                                                        <div class="col-4"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-6 text-center"><a href="" data-bs-toggle="modal"
-                                                                data-bs-target="#popupCustomerDetails">Address</a></div>
-                                                        <div class="col-6 text-center"><a href=""
-                                                                class="text-dark">Activity</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="container border-top mb-5">
-                                                    <div class="timeline">
-                                                        <div class="point1">
-                                                            <div class="commentDate1"><small>11:06 AM</small>
-                                                                <small class="text-secondary">24/06/2022</small>
-                                                            </div>
-                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                            <div
-                                                                class="bg-light rounded border border-secondary divBillContainer1">
-                                                                <div>Bill Of Supply added</div>
-                                                                <div>Bill Of Supply BOS-000002 of amount ₹600.00 created
-                                                                    <b>by
-                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="point2">
-                                                            <div class="commentDate2"><small>11:06 AM</small>
-                                                                <small class="text-secondary">24/06/2022</small>
-                                                            </div>
-                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                            <div
-                                                                class="bg-light rounded border border-secondary divBillContainer2">
-                                                                <div>Payments Received added</div>
-                                                                <div>Payment of amount ₹49.00 received and applied for
-                                                                    BOS-000001 <b>by
-                                                                        rakeshnandre433</b></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="point3">
-                                                            <div class="commentDate3"><small>11:02 AM</small>
-                                                                <small class="text-secondary">24/06/2022</small>
-                                                            </div>
-                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                            <div
-                                                                class="bg-light rounded border border-secondary divBillContainer3">
-                                                                <div>Bill Of Supply updated</div>
-                                                                <div>Bill Of Supply BOS-000001 emailed <b>by
-                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="point4">
-                                                            <div class="commentDate4"><small>10:58 AM</small>
-                                                                <small class="text-secondary">24/06/2022</small>
-                                                            </div>
-                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                            <div
-                                                                class="bg-light rounded border border-secondary divBillContainer4">
-                                                                <div>Bill Of Supply added</div>
-                                                                <div>Bill Of Supply BOS-000001 of amount ₹49.00 created
-                                                                    <b>by
-                                                                        rakeshnandre433</b> - <a href="">View Detail</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="point5">
-                                                            <div class="commentDate5"><small>10:57 AM</small>
-                                                                <small class="text-secondary">24/06/2022</small>
-                                                            </div>
-                                                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                            <div
-                                                                class="bg-light rounded border border-secondary divBillContainer5">
-                                                                <div>Contact added</div>
-                                                                <div>Contact created with GST Treatment 'Consumer'.
-                                                                    State updated to MH.
-                                                                    <b>by rakeshnandre433</b>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="container border border-secondary rounded p-4">
+                    <div class="mb-3 row d-flex align-items-center">
+                        <label for="" class="col-sm-3 col-form-label">Customer Name <span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-7">
+                            <div class="dropdown dropdown-button">
+                                <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Customer
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
+                                                class="form-control" id=""></a></li>
+                                    <li><a class="dropdown-item border-bottom mb-3"
+                                            href="../customers/allCustomers.html">Mr. Badshah khan</a>
+                                    </li>
+                                    <li><a class="dropdown-item border-bottom mb-3" href="#">sample baba</a></li>
+                                    <li><a class="dropdown-item text-primary" href="./newCustomer.html">+ New
+                                            Customers</a></li>
+                                </ul>
                             </div>
-                            <div class="col-sm-2" style="top: -12px;">
-                                <button class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#popupAdvSearCustomer"><i class="fa fa-search"
-                                        aria-hidden="true"></i></button>
-                                <div class="modal fade" id="popupAdvSearCustomer" tabindex="-1"
-                                    aria-labelledby="popupAdvSearCustomerLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupAdvSearCustomerLabel">Advanced Search
-                                                    Customers
-                                                </h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="my-4 row">
-                                                    <div class="col-10">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>Customer Type</option>
-                                                            <option>Customer Name</option>
-                                                            <option>Customer Type</option>
-                                                            <option>First Name</option>
-                                                            <option>Status</option>
-                                                            <option>Address</option>
-                                                            <option>GSTIN</option>
-                                                            <option>GST Treatment</option>
-                                                            <option>Company Name</option>
-                                                            <option>Last Name</option>
-                                                            <option>Email</option>
-                                                            <option>Mobile</option>
-                                                            <option>Place of Supply</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-2"><button type="button"
-                                                            class="btn btn-primary">Done</button></div>
-                                                </div>
-                                                <table class="table">
-                                                    <thead class="bg-light">
-                                                        <tr>
-                                                            <th>Customer Name</th>
-                                                            <th>Customer Type</th>
-                                                            <th>Mobile</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>sample baba
-                                                                <div>xyz@gmail.com</div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Bill Of Supply Number<span
-                                    class="text-danger">*</span></label>
-                            <div class="col-sm-3">
-                                <input type="text" class="form-control" id="" placeholder="BOS-000004">
-                            </div>
-                            <div class="col-sm-2">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
-                                        class="fa fa-cog fs-5" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
-                                aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#popupCustomerDetails"><i
+                                    class="fa fa-user" aria-hidden="true"></i> View Customer Details</a>
+                            <div class="modal fade" id="popupCustomerDetails" tabindex="-1"
+                                aria-labelledby="popupCustomerDetailsLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupEstimateNumberLabel">Estimate Number</h5>
+                                            <h5 class="modal-title" id="popupCustomerDetailsLabel">Customer Details
+                                            </h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="my-3">To save you time, your Estimate numbers are set to
-                                                auto-generate mode. Are you sure you want to change this setting?</div>
-                                            <div class="form-check mb-3 mt-5">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
-                                                    id="flexRadioDefault3" checked>
-                                                <label class="form-check-label" for="flexRadioDefault3">
-                                                    Continue auto-generating sales order numbers
-                                                </label>
-                                                <div class="row ml-3">
-                                                    <div class="col-3">
-                                                        <div class="mb-3">
-                                                            <label for="" class="form-label">Prefix</label>
-                                                            <input type="text" class="form-control" id=""
-                                                                placeholder="EST-">
+                                            <div class="d-flex align-items-center justify-content-start divCustomer">
+                                                <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                    aria-hidden="true"></i>
+                                                <h6 class="ml-4">Mr. Badshah khan <a
+                                                        href="../customers/allCustomers.html"><i
+                                                            class="fa fa-caret-square-o-right fs-5"
+                                                            aria-hidden="true"></i></a></h6>
+                                            </div>
+                                            <div class="container my-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="mb-3">Outstanding Receivables</div>
+                                                        <div>₹200.00</div>
+                                                    </div>
+                                                    <div class="col-6 border-left text-end">
+                                                        <div class="mb-3">Unused Credits</div>
+                                                        <div>₹0.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container my-5">
+                                                <div class="row border-bottom mb-2">
+                                                    <div class="col-4">Other Details</div>
+                                                    <div class="col-7"></div>
+                                                    <div class="col-1"><i class="fa fa-angle-down"
+                                                            aria-hidden="true"></i></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Customer Type</div>
+                                                    <div class="col-4">Individual</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Payment Terms</div>
+                                                    <div class="col-4">Due on Receipt</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Template Language</div>
+                                                    <div class="col-4">English</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">GST Treatment</div>
+                                                    <div class="col-4">Consumer</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Place Of Supply</div>
+                                                    <div class="col-4">Maharashtra</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">GSTIN</div>
+                                                    <div class="col-4">27AABFB2177L1ZD</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row border-bottom mb-3">
+                                                    <div class="col-6 text-center"><a href=""
+                                                            class="text-dark">Address</a>
+                                                    </div>
+                                                    <div class="col-6 text-center"><a href="" data-bs-toggle="modal"
+                                                            data-bs-target="#popupCustomerDetails2">Activity</a>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li><i class="fa fa-file-text-o text-success"
+                                                            aria-hidden="true"></i> Billing Address
+                                                        <ul>
+                                                            <li><b>bashah</b></li>
+                                                            <li><small>dd</small></li>
+                                                            <li><small>sakri</small></li>
+                                                            <li><small>Maharashtra 424304</small></li>
+                                                            <li><small>India</small></li>
+                                                            <li><small>Phone: 9876543210</small></li>
+                                                        </ul>
+                                                    </li>
+
+                                                </ul>
+                                                <ul>
+                                                    <li><i class="fa fa-truck text-warning" aria-hidden="true"></i>
+                                                        Shipping Address
+                                                        <ul>
+                                                            <li><b>bashah</b></li>
+                                                            <li><small>dd</small></li>
+                                                            <li><small>sakri</small></li>
+                                                            <li><small>Maharashtra 424304</small></li>
+                                                            <li><small>India</small></li>
+                                                            <li><small>Phone: 9876543210</small></li>
+                                                        </ul>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupCustomerDetails2" tabindex="-1"
+                                aria-labelledby="popupCustomerDetails2Label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupCustomerDetails2Label">Customer Details
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-start divCustomer">
+                                                <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                    aria-hidden="true"></i>
+                                                <h6 class="ml-4">Mr. Badshah khan <a
+                                                        href="../customers/allCustomers.html"><i
+                                                            class="fa fa-caret-square-o-right fs-5"
+                                                            aria-hidden="true"></i></a></h6>
+                                            </div>
+                                            <div class="container my-4">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="mb-3">Outstanding Receivables</div>
+                                                        <div>₹200.00</div>
+                                                    </div>
+                                                    <div class="col-6 border-left text-end">
+                                                        <div class="mb-3">Unused Credits</div>
+                                                        <div>₹0.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container my-5">
+                                                <div class="row border-bottom mb-2">
+                                                    <div class="col-4">Other Details</div>
+                                                    <div class="col-7"></div>
+                                                    <div class="col-1"><i class="fa fa-angle-down"
+                                                            aria-hidden="true"></i></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Customer Type</div>
+                                                    <div class="col-4">Individual</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Payment Terms</div>
+                                                    <div class="col-4">Due on Receipt</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Template Language</div>
+                                                    <div class="col-4">English</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">GST Treatment</div>
+                                                    <div class="col-4">Consumer</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">Place Of Supply</div>
+                                                    <div class="col-4">Maharashtra</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col-4">GSTIN</div>
+                                                    <div class="col-4">27AABFB2177L1ZD</div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-6 text-center"><a href="" data-bs-toggle="modal"
+                                                            data-bs-target="#popupCustomerDetails">Address</a></div>
+                                                    <div class="col-6 text-center"><a href=""
+                                                            class="text-dark">Activity</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container border-top mb-5">
+                                                <div class="timeline">
+                                                    <div class="point1">
+                                                        <div class="commentDate1"><small>11:06 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divBillContainer1">
+                                                            <div>Bill Of Supply added</div>
+                                                            <div>Bill Of Supply BOS-000002 of amount ₹600.00 created
+                                                                <b>by
+                                                                    rakeshnandre433</b> - <a href="">View Detail</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <div class="mb-3">
-                                                            <label for="" class="form-label">Next Number</label>
-                                                            <input type="text" class="form-control" id=""
-                                                                placeholder="00001">
+                                                    <div class="point2">
+                                                        <div class="commentDate2"><small>11:06 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divBillContainer2">
+                                                            <div>Payments Received added</div>
+                                                            <div>Payment of amount ₹49.00 received and applied for
+                                                                BOS-000001 <b>by
+                                                                    rakeshnandre433</b></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="point3">
+                                                        <div class="commentDate3"><small>11:02 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divBillContainer3">
+                                                            <div>Bill Of Supply updated</div>
+                                                            <div>Bill Of Supply BOS-000001 emailed <b>by
+                                                                    rakeshnandre433</b> - <a href="">View Detail</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="point4">
+                                                        <div class="commentDate4"><small>10:58 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divBillContainer4">
+                                                            <div>Bill Of Supply added</div>
+                                                            <div>Bill Of Supply BOS-000001 of amount ₹49.00 created
+                                                                <b>by
+                                                                    rakeshnandre433</b> - <a href="">View Detail</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="point5">
+                                                        <div class="commentDate5"><small>10:57 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divBillContainer5">
+                                                            <div>Contact added</div>
+                                                            <div>Contact created with GST Treatment 'Consumer'.
+                                                                State updated to MH.
+                                                                <b>by rakeshnandre433</b>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-check mb-3">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
-                                                    id="flexRadioDefault4">
-                                                <label class="form-check-label" for="flexRadioDefault4">
-                                                    I will add them manually each time
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Save</button>
-                                            <button type="button" class="btn btn-outline-dark"
-                                                data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Order Number</label>
-                            <div class="col-sm-3">
-                                <input type="text" class="form-control" id="" placeholder="SO-00008">
-                            </div>
-                        </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <div class="col-5">
-                                <div class="row">
-                                    <label for="" class="col-sm-6 col-form-label">Bill Of Supply Date<span
-                                            class="text-danger">*</span></label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="" placeholder="dd/mm/yyyy">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="row">
-                                    <label for="" class="col-sm-5 col-form-label">Payment Terms</label>
-                                    <div class="col-sm-7">
-                                        <select class="js-example-basic-single" name="state">
-                                            <option>Due on Receipt</option>
-                                            <option>Net 15</option>
-                                            <option>Net 30</option>
-                                            <option>Net 45</option>
-                                            <option>Net 60</option>
-                                            <option>Due end of the month</option>
-                                            <option>Due end of next month</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <label for="" class="col-sm-6 col-form-label">Due Date</label>
-                                    <div class="col-sm-6">
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>22/03/2022</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="container border border-secondary rounded p-4">
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Delivery Method</label>
-                            <div class="col-sm-6">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select a delivery method or type to add</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Salesperson</label>
-                            <div class="col-sm-6">
-                                <div class="dropdown dropdown-button">
-                                    <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select or Add Salesperson
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                        <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
-                                                    class="form-control" id=""></a></li>
-                                        <li><a class="dropdown-item border-bottom mb-3" href="#">no results found</a>
-                                        </li>
-                                        <li><a class="dropdown-item text-primary" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#popupManageSalesPerson"><i class="fa fa-cog fs-5"
-                                                    aria-hidden="true"></i> Manage Salesperson</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupManageSalesPerson" tabindex="-1"
-                                aria-labelledby="popupManageSalesPersonLabel" aria-hidden="true">
+                        <div class="col-sm-2" style="top: -13px;">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#popupAdvSearCustomer"><i class="fa fa-search"
+                                    aria-hidden="true"></i></button>
+                            <div class="modal fade" id="popupAdvSearCustomer" tabindex="-1"
+                                aria-labelledby="popupAdvSearCustomerLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupManageSalesPersonLabel">Manage Salespersons
+                                            <h5 class="modal-title" id="popupAdvSearCustomerLabel">Advanced Search
+                                                Customers
                                             </h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="my-4 row">
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control input-sales-person" id=""
-                                                        placeholder="Search Salespersons">
+                                                <div class="col-10">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Customer Type</option>
+                                                        <option>Customer Name</option>
+                                                        <option>Customer Type</option>
+                                                        <option>First Name</option>
+                                                        <option>Status</option>
+                                                        <option>Address</option>
+                                                        <option>GSTIN</option>
+                                                        <option>GST Treatment</option>
+                                                        <option>Company Name</option>
+                                                        <option>Last Name</option>
+                                                        <option>Email</option>
+                                                        <option>Mobile</option>
+                                                        <option>Place of Supply</option>
+                                                    </select>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <button type="submit" class="btn btn-primary mb-3"
-                                                        data-bs-toggle="modal" data-bs-target="#popupNewSalesPerson">+
-                                                        New
-                                                        Salesperson</button>
-                                                </div>
+                                                <div class="col-2"><button type="button"
+                                                        class="btn btn-primary">Done</button></div>
                                             </div>
                                             <table class="table">
-                                                <thead>
+                                                <thead class="bg-light">
                                                     <tr>
-                                                        <th>Salespersons Name</th>
-                                                        <th></th>
-                                                        <th>Email</th>
+                                                        <th>Customer Name</th>
+                                                        <th>Customer Type</th>
+                                                        <th>Mobile</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td>sample baba
+                                                            <div>xyz@gmail.com</div>
+                                                        </td>
                                                         <td></td>
-                                                        <td class="text-secondary">No salespersons found.</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Save</button>
-                                            <button type="button" class="btn btn-outline-dark"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupNewSalesPerson" tabindex="-1"
-                                aria-labelledby="popupNewSalesPersonLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupNewSalesPersonLabel">Manage Salespersons
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="my-4 row mx-5 bg-light p-3">
-                                                <div class="col-6">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Name<span
-                                                                class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Email<span
-                                                                class="text-danger">*</span></label>
-                                                        <input type="email" class="form-control" id="">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3"> <button type="button"
-                                                            class="btn btn-primary">Save
-                                                            and Send</button>
-                                                    </div>
-                                                    <div class="col-2"><button type="button"
-                                                            class="btn btn-outline-dark" data-bs-toggle="modal"
-                                                            data-bs-target="#popupManageSalesPerson">Cancel</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Salespersons Name</th>
-                                                        <th></th>
-                                                        <th>Email</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td class="text-secondary">No salespersons found.</td>
                                                         <td></td>
                                                     </tr>
                                                 </tbody>
@@ -1156,15 +910,96 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mb-3 row d-flex align-items-center">
+                        <label for="" class="col-sm-3 col-form-label">Delivery Challan#<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="" placeholder="DC-000001">
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
+                                    class="fa fa-cog fs-5" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
+                            aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupEstimateNumberLabel">Delivery Challan#</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="my-3">To save you time, your Estimate numbers are set to
+                                            auto-generate mode. Are you sure you want to change this setting?</div>
+                                        <div class="form-check mb-3 mt-5">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Continue auto-generating sales order numbers
+                                            </label>
+                                            <div class="row ml-3">
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Prefix</label>
+                                                        <input type="text" class="form-control" id="" placeholder="DC-">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Next Number</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="00001">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                I will add them manually each time
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-outline-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row d-flex align-items-center">
+                        <label for="" class="col-sm-3 col-form-label">Reference#</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="mb-3 row d-flex align-items-center">
+                        <label for="" class="col-sm-3 col-form-label">Delivery Challan Date<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="" placeholder="21/03/2022">
+                        </div>
+                    </div>
                 </div>
                 <div class="mt-4">
                     <div class="container border border-secondary rounded p-4">
                         <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Subject <i class="fa fa-question-circle-o"
-                                    aria-hidden="true"></i></label>
-                            <div class="col-sm-7">
-                                <textarea class="form-control"
-                                    placeholder="Let your customer know what this Estimate is for" id=""></textarea>
+                            <label for="" class="col-sm-3 col-form-label">Challan Type<span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-6">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Choose a proper challan type.</option>
+                                    <option>Supply of Liquid Gas</option>
+                                    <option>Job Work</option>
+                                    <option>Supply on Approval</option>
+                                    <option>Others</option>
+                                </select>
+                                <div><small><i>! The Delivery Challan type specifies the purpose for which the Challan
+                                            is being generated</i></small></div>
                             </div>
                         </div>
                     </div>
@@ -1492,7 +1327,12 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="text-end">1.00</td>
+                                <td class="text-end">1.00
+                                    <div><small>Stock on Hand:</small></div>
+                                    <div><small>50.00 pcs <i class="fa fa-arrow-circle-o-down text-primary"
+                                                aria-hidden="true" data-bs-toggle="modal"
+                                                data-bs-target="#popupStockDetails"></i></small></div>
+                                </td>
                                 <td class="text-end">200.00 <div><a href="" data-bs-toggle="modal"
                                             data-bs-target="#popupItemDetails">Recent Transaction</a></div>
                                 </td>
@@ -1512,7 +1352,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true"
+                                <td>
+                                    <i class="fa fa-th text-secondary icon-th" aria-hidden="true" aria-hidden="true"
                                         style="margin-left: -44px;"></i>
                                     <div class="d-flex justify-content-between" style="margin-top: -22px;">
                                         <div><i class="fa fa-picture-o text-secondary fs-3" style="opacity: 0.7;"></i>
@@ -1793,360 +1634,14 @@
                                         <div class="col-6 text-end">0.00</div>
                                     </div>
                                     <div class="row mb-3">
-                                        <div class="col-2">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault1" checked>
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    TDS
-                                                </label>
-                                            </div>
+                                        <div class="col-5">Shipping Charges</div>
+                                        <div class="col-4">
+                                            <input type="text" class="form-control" id="">
                                         </div>
-                                        <div class="col-2">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault2" data-bs-toggle="modal"
-                                                    data-bs-target="#popupTCS">
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    TCS
-                                                </label>
-                                            </div>
-                                            <div class="modal fade" id="popupTCS" tabindex="-1"
-                                                aria-labelledby="popupTCSLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-body bg-light">
-                                                            <div class="row mb-3">
-                                                                <div class="col-6">Sub Total</div>
-                                                                <div class="col-6 text-end">0.00</div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-2">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            name="flexRadioDefault1"
-                                                                            id="flexRadioDefault3">
-                                                                        <label class="form-check-label"
-                                                                            for="flexRadioDefault3">
-                                                                            TDS
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-2">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            name="flexRadioDefault1"
-                                                                            id="flexRadioDefault4" checked>
-                                                                        <label class="form-check-label"
-                                                                            for="flexRadioDefault4">
-                                                                            TCS
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <div class="dropdown dropdown-button">
-                                                                        <button
-                                                                            class="btn border bg-white dropdown-toggle"
-                                                                            type="button" id="dropdownMenuButton8"
-                                                                            data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            Select Tax
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton8">
-                                                                            <li><a class="dropdown-item border-bottom mb-3"
-                                                                                    href="#"> <input type="text"
-                                                                                        class="form-control" id=""></a>
-                                                                            </li>
-                                                                            <li><a class="dropdown-item border-bottom mb-3"
-                                                                                    href="#">no result found</a></li>
-                                                                            <li><a class="dropdown-item text-primary"
-                                                                                    href="#" data-bs-toggle="modal"
-                                                                                    data-bs-target="#popupManageTCS"><i
-                                                                                        class="fa fa-cog"
-                                                                                        aria-hidden="true"></i> Manage
-                                                                                    TCS</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-2 text-end">+0.00</div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-4"><input type="text"
-                                                                        class="form-control" id=""
-                                                                        placeholder="Adjustment"
-                                                                        style="border: dotted;"></div>
-                                                                <div class="col-4"><input type="text"
-                                                                        class="form-control" id=""></div>
-                                                                <div class="col-1"> <i
-                                                                        class="fa fa-question-circle-o text-secondary"
-                                                                        aria-hidden="true" data-bs-toggle="tooltip"
-                                                                        data-bs-placement="bottom"
-                                                                        title="Add any + ve or -ve charges that need to be applied to adjust the total transaction amount e.g. +10 or -10.">
-                                                                    </i></div>
-                                                                <div class="col-3 text-end">0.00</div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-6 fw-bold fs-5">Total ( ₹ )</div>
-                                                                <div class="col-6 text-end fw-bold fs-5">0.00</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal fade" id="popupManageTCS" tabindex="-1"
-                                                aria-labelledby="popupManageTCSLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-scrollable">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header bg-light">
-                                                            <h5 class="modal-title" id="popupManageTCSLabel">Add New TCS
-                                                            </h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Nature of
-                                                                    Collection<span class="text-danger">*</span></label>
-                                                                <input type="text" class="form-control" id="">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Rate (%)<span
-                                                                        class="text-danger">*</span></label>
-                                                                <input type="text" class="form-control" id="">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Tax Name<span
-                                                                        class="text-danger">*</span></label>
-                                                                <input type="text" class="form-control" id=""
-                                                                    placeholder="Select a Tax Type">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">TCS Payable Account <i
-                                                                        class="fa fa-info-circle text-secondary"
-                                                                        aria-hidden="true"></i></label>
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>TCS Payable</option>
-                                                                    <option disabled>Other Current Liability</option>
-                                                                    <option>TCS Payable</option>
-                                                                    <option>TDS Payable</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">TCS Receivable Account
-                                                                    <i class="fa fa-info-circle text-secondary"
-                                                                        aria-hidden="true"></i></label>
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Select Account</option>
-                                                                    <option disabled>Other Current Asset</option>
-                                                                    <option>Advance Tax</option>
-                                                                    <option>Prepaid Expenses</option>
-                                                                    <option>TCS Receivable</option>
-                                                                    <option>TDS Receivable</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckChecked" checked>
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckChecked">
-                                                                        This is a Higher TCS Rate <i
-                                                                            class="fa fa-question-circle-o"
-                                                                            aria-hidden="true" data-bs-toggle="tooltip"
-                                                                            data-bs-placement="bottom"
-                                                                            title="Mark this option if the TDS you are adding is at a higher TDS rate as mentioned under Section 206AB of the Income Tax Act, 1961 (effective from 1 July 2021). If you are preparing a transaction for a non-filer of income tax return, you will have to deduct a higher TDS rate."></i>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Reason for Higher TDS
-                                                                    Rate<span class="text-danger">*</span></label>
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected></option>
-                                                                    <option>Non-furnishing of PAN Deduction is on higher
-                                                                        rate under section 206AA on account of
-                                                                        non-furnishing of PAN</option>
-                                                                    <option>Non-filing of return of income Deduction is
-                                                                        on higher rate in view of section 206AB for
-                                                                        non-filing of return of income</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary">Save</button>
-                                                            <button type="button" class="btn btn-outline-secondary"
-                                                                data-bs-dismiss="modal">Cancel</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="dropdown dropdown-button">
-                                                <button class="btn border bg-white dropdown-toggle" type="button"
-                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    Select Tax
-                                                </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                    <li><a class="dropdown-item" href="#">Commission or Brokerage - [5
-                                                            %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Commission or Brokerage
-                                                            (Reduced) - [3.75 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Dividend - [10 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Dividend (Reduced) - [7.5
-                                                            %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Other Interest than securities
-                                                            - [10 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Other Interest than securities
-                                                            (Reduced) - [7.5 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Payment of contractors for
-                                                            Others - [2 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Payment of contractors for
-                                                            Others (Reduced) - [1.5 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Payment of contractors
-                                                            HUF/Indiv - [1 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Payment of contractors
-                                                            HUF/Indiv (Reduced) - [0.75 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Professional Fees - [10 %)</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Professional Fees (Reduced) -
-                                                            [7.5 %]</a></li>
-                                                    <li><a class="dropdown-item" href="#">Rent on land or furniture etc
-                                                            - [10 %]</a></li>
-                                                    <li><a class="dropdown-item border-bottom mb-3" href="#">Rent on
-                                                            land or furniture etc (Reduced) - [7.5%]</a></li>
-                                                    <li><a class="dropdown-item text-primary" href="#"
-                                                            data-bs-toggle="modal" data-bs-target="#popupManageTDS"><i
-                                                                class="fa fa-cog" aria-hidden="true"></i> Manage TDS</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="modal fade" id="popupManageTDS" tabindex="-1"
-                                                aria-labelledby="popupManageTDSLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-scrollable">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header bg-light">
-                                                            <h5 class="modal-title" id="popupManageTDSLabel">Add New TDS
-                                                            </h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Tax Name<span
-                                                                        class="text-danger">*</span></label>
-                                                                <input type="text" class="form-control" id="">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Rate (%)<span
-                                                                        class="text-danger">*</span></label>
-                                                                <input type="text" class="form-control" id="">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Section<span
-                                                                        class="text-danger">*</span></label>
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Select a Tax Type</option>
-                                                                    <option>193 - Interest on securities</option>
-                                                                    <option>194- Dividend</option>
-                                                                    <option>194A - Other Interest than securities
-                                                                    </option>
-                                                                    <option>194B- Lotteries Winnings</option>
-                                                                    <option>194BB- Horse Race</option>
-                                                                    <option>194C- Payment of contractors HUF/Indiv and
-                                                                        Payment of contractors for Others</option>
-                                                                    <option>194D- Insurance Commission</option>
-                                                                    <option>194DA- Insurance Commission</option>
-                                                                    <option>194EE- Deposits in NSS</option>
-                                                                    <option>194F- Re-purchase By Mutual Funds</option>
-                                                                    <option>194G- Commission - prize on lottery</option>
-                                                                    <option>194H- Commission or Brokerage</option>
-                                                                    <option>194IA- Payments under 1941A</option>
-                                                                    <option>194IB- Rent not covered under 1941</option>
-                                                                    <option>194I- Rent on land or furniture etc and Rent
-                                                                        on plant and machinery</option>
-                                                                    <option>194J- Professional Fees</option>
-                                                                    <option>194LA - Compensation on acquisition</option>
-                                                                    <option>192- Salaries</option>
-                                                                    <option>194O- e-commerce participant</option>
-                                                                    <option>194Q- Payment of purchase of goods</option>
-                                                                    <option>195- Other sums payable to a non-resident
-                                                                    </option>
-                                                                    <option>194R- Benefit or perquisite</option>
-                                                                    <option>194S - Transfer of a virtual digital asset
-                                                                    </option>
-                                                                    <option>Others - Others</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">TDS Payable
-                                                                    Account</label>
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Select Account</option>
-                                                                    <option disabled>Other Current Liability</option>
-                                                                    <option>TCS Payable</option>
-                                                                    <option>TDS Payable</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">TDS Receivable
-                                                                    Account</label>
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Select Account</option>
-                                                                    <option disabled>Other Current Asset</option>
-                                                                    <option>Advance Tax</option>
-                                                                    <option>Prepaid Expenses</option>
-                                                                    <option>TCS Receivable</option>
-                                                                    <option>TDS Receivable</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckChecked" checked>
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckChecked">
-                                                                        This is a Higher TDS Rate <i
-                                                                            class="fa fa-question-circle-o"
-                                                                            aria-hidden="true" data-bs-toggle="tooltip"
-                                                                            data-bs-placement="bottom"
-                                                                            title="Mark this option if the TDS you are adding is at a higher TDS rate as mentioned under Section 206AB of the Income Tax Act, 1961 (effective from 1 July 2021). If you are preparing a transaction for a non-filer of income tax return, you will have to deduct a higher TDS rate."></i>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="" class="form-label">Reason for Higher TDS
-                                                                    Rate<span class="text-danger">*</span></label>
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected></option>
-                                                                    <option>Non-furnishing of PAN Deduction is on higher
-                                                                        rate under section 206AA on account of
-                                                                        non-furnishing of PAN</option>
-                                                                    <option>Non-filing of return of income Deduction is
-                                                                        on higher rate in view of section 206AB for
-                                                                        non-filing of return of income</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary">Save</button>
-                                                            <button type="button" class="btn btn-outline-secondary"
-                                                                data-bs-dismiss="modal">Cancel</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2 text-end">-0.00</div>
+                                        <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
+                                                aria-hidden="true">
+                                            </i></div>
+                                        <div class="col-2 text-end">0.00</div>
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col-4"><input type="text" class="form-control" id=""
@@ -2213,9 +1708,9 @@
                 </div>
                 <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
                 <div class="my-3">
-                    <a href="./draftBOS.html"> <button class="btn btn-outline-secondary">Save as Draft</button></a>
-                    <a href="./sentBOS.html"> <button class="btn btn-primary">Save and Send</button></a>
-                    <a href="./allSalesOrders.html"><button class="btn btn-outline-secondary">Cancel</button></a>
+                    <a href="./draft.html"><button class="btn btn-light border border-secondary">Save as
+                            Draft</button></a>
+                    <a href="./deliveryChallans.html"><button class="btn btn-outline-secondary">Cancel</button></a>
                 </div>
             </div>
         </div>

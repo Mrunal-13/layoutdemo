@@ -16,16 +16,9 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
+    <!-- Chart @anjudewangan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Chart @anjudewangan -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -285,6 +278,7 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -301,8 +295,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
@@ -317,8 +313,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -421,13 +419,13 @@
                         <a href="../customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="../estimates/estimates.html">Estimates</a>
+                        <a href="../estimates/allEstimates.html">Estimates</a>
                     </li>
                     <li>
                         <a href="../salesOrders/salesOrders.html">Sales Orders</a>
                     </li>
                     <li>
-                        <a href="./packages.html" class="sales-link">Packages</a>
+                        <a href="./notShipped.html" class="sales-link">Packages</a>
                     </li>
                     <li>
                         <a href="../shipmets/shipments.html">Shipments</a>
@@ -554,31 +552,15 @@
 
     <!-- Sales Customers -->
     <main class="main">
-        <div class="container mt-3">
+        <div class="container" style="max-width: 1533px !important;">
             <div class="row">
-                <div class="col-6 gap-3">
-                    <b>Packages</b>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <button class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </div>
-                        <div class="col-3">
-                            <a href="./newPackages.html">
-                                <button class="btn btn-warning">Add
-                                    New</button>
-                            </a>
+                <div class="col-3">
+                    <div class="row border-bottom pb-2">
+                        <div class="col-2"></div>
+                        <div class="col-6">
+                            <b>Packages</b>
                         </div>
                         <div class="col-2">
-                            <a href="./allPackages.html"> <button class="btn btn-white border-secondary"><i
-                                        class="fa fa-list-ul" aria-hidden="true"></i>
-                                    <i class="fa fa-align-right bg-dark text-secondary border rounded px-2 py-1 ml-2"
-                                        aria-hidden="true"></i>
-                                </button></a>
-                        </div>
-                        <div class="col-3">
-                            <a href="#" class="setting-link"><i class="fa fa-fw fa-cog"></i>Settings</a>
                         </div>
                         <div class="col-2">
                             <div class="dropdown">
@@ -620,209 +602,464 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row border-top p-2 mt-4 bg-light" style="width: 96%;">
-            <div class="col-1"></div>
-            <div class="col-3">
-                <div class="dropdown">
-                    <button class="btn btn-white border dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        View: Packages, Not Shipped
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled" href="#">Default Filters</a></li>
-                        <li><a class="dropdown-item" href="#">All</a></li>
-                        <li><a class="dropdown-item" href="#">Not Shipped</a></li>
-                        <li><a class="dropdown-item" href="#">Shipped</a></li>
-                        <li><a class="dropdown-item" href="#">Delivered</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1 text-center">
-                <div class="dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item text-secondary" href="#">Custamize colums</a></li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Package Date
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Package#
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Carrier
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Tracking#
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Sales Order#
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Status
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Shipment Date
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Customer Name
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item border-bottom mb-3" href="#"> <input class="form-check-input"
-                                    type="checkbox" value="" id="" checked>
-                                <label class="form-check-label" for="">
-                                    Quantity
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">
-                                <button type="button" class="btn btn-warning">Save</button>
-                                <button type="button" class="btn btn-outline-secondary">Cancel</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-11">
-                <table class="table table-customer">
-                    <thead>
-                        <tr>
-                            <th><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> Package Date</th>
-                            <th>Package#</th>
-                            <th>Carrier</th>
-                            <th>Tracking#</th>
-                            <th>Sales Order#</th>
-                            <th>Status</th>
-                            <th>Shipment Date</th>
-                            <th>Customer Name</th>
-                            <th>Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> 12/07/2022</td>
-                            <td><a href="./notShipped.html">PKG-00001</a></td>
-                            <td>Indiapost</td>
-                            <td></td>
-                            <td>SO-00002</td>
-                            <td class="text-danger">Not Shipped</td>
-                            <td></td>
-                            <td>vishal deore</td>
-                            <td>1.00</td>
-                        </tr>
-                        <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> 12/07/2022</td>
-                            <td><a href="./shipped.html">PKG-00001</a></td>
-                            <td>Indiapost</td>
-                            <td></td>
-                            <td>SO-00002</td>
-                            <td class="text-primary">Shipped</td>
-                            <td></td>
-                            <td>vishal deore</td>
-                            <td>1.00</td>
-                        </tr>
-                        <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> 12/07/2022</td>
-                            <td><a href="./delivered.html">PKG-00001</a></td>
-                            <td>Indiapost</td>
-                            <td></td>
-                            <td>SO-00002</td>
-                            <td class="text-success">Delivered</td>
-                            <td></td>
-                            <td>vishal deore</td>
-                            <td>1.00</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="modal fade" id="popupCheck" tabindex="-1" aria-labelledby="popupCheckLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modalCheck">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="mr-3 text-center">
-                                    <i class="fa fa-square-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="mr-3">
-                                    <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                            class="fa fa-files-o" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="mr-3">
-                                    <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                            class="fa fa-print" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="mr-3">
-                                    <button type="button" class="btn btn-outline-secondary bg-light text-dark"
-                                        data-bs-toggle="modal" data-bs-target="#popupDelete">Delete</button>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-9">
+                            <div class="dropdown">
+                                <button class="btn btn-sm  btn-light border border-secondary dropdown-toggle"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    View: Delivered Packages
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item disabled" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">Not Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Delivered</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="dropdown">
+                                <button class="btn btn-sm  bg-white border border-secondary dropdown-toggle"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Type All
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item disabled" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">Carrier</a></li>
+                                    <li><a class="dropdown-item" href="#">Manual</a></li>
+                                    <li><a class="dropdown-item" href="#">Welldone Presto</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <a href="./notShipped.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10">Vishal deore</div>
+                            <div class="col-2"><small>22/07/2022</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 46px;">
+                                <div class="div-send-text text-danger">Not Shipped <span class="text-dark">1.00</span>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                    <h5>Are you sure?</h5>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                    <p>Once deleted, they cannot be undone</p>
-                                </div>
-                                <div class="d-flex justify-content-around mb-4">
-                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Delete</button>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#popupCheck">No</button>
+                                <div class="text-primary">PKG-00001 <span
+                                        class="border-left pl-2 text-dark">SO-00002</span>
                                 </div>
                             </div>
                         </div>
+                    </a>
+                    <a href="./shipped.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10 text-dark">Vishal deore</div>
+                            <div class="col-2"><small class="text-dark">22/07/2022</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 46px;">
+                                <div class="div-send-text text-primary">Shipped <span class="text-dark">1.00</span>
+                                </div>
+                                <div class="text-primary">PKG-00001 <span
+                                        class="border-left pl-2 text-dark">SO-00002</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-10 text-dark">Vishal deore</div>
+                        <div class="col-2"><small class="text-dark">22/07/2022</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 46px;">
+                            <div class="div-send-text text-success">Delivered <span class="text-dark">1.00</span>
+                            </div>
+                            <div class="text-primary">PKG-00001 <span class="border-left pl-2 text-dark">SO-00002</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-4 px-5 border-bottom">
+                    </div>
+                </div>
+                <div class="col-9 border-left">
+                    <div class="row mb-4 border-bottom py-2 pb-3">
+                        <div class="col-2">
+                            <h5>SHP-00002</h5>
+                        </div>
+                        <div class="col-4"></div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-light border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Package</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-light border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-print" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Package</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupComment">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i> Comments
+                            </button>
+                            <div class="modal fade" id="popupComment" tabindex="-1" aria-labelledby="popupCommentLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupCommentLabel">Comments & History</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id=""
+                                                    style="height: 100px"></textarea>
+                                            </div>
+                                            <button type="button" class="btn btn-primary m-3">Add
+                                                Comment</button>
+                                            <div class="container border-top mb-5">
+                                                <div class="comment">
+                                                    <div class="comment1">
+                                                        <i class="fa fa-file-text-o text-warning"
+                                                            aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment1">
+                                                            <div class="mb-3">Template has been updated</div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate1"><small>11:06 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment2">
+                                                        <i class="fa fa-file-text-o text-warning"
+                                                            aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment2">
+                                                            <div class="mb-3">Template has been updated</div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate2"><small>11:06 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment3">
+                                                        <i class="fa fa-envelope-o text-success" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment3">
+                                                            <div class="mb-3">Customer has viewed the estimate in the
+                                                                email.</div>
+                                                            <div class="fw-bold">by Welldone</div>
+                                                        </div>
+                                                        <div class="commentDate3"><small>11:02 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment4">
+                                                        <i class="fa fa-envelope-o text-success" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment4">
+                                                            <div class="mb-3">Estimate emailed to visaldeore@gmail.com
+                                                            </div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate4"><small>10:58 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment5">
+                                                        <i class="fa fa-file-text-o text-warning"
+                                                            aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment5">
+                                                            <div class="mb-3">Estimate created for ₹800.00</div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate5"><small>10:57 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-light border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupMarkUndelivered">Mark as undelivered</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupDelete">Delete Shipment</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal fade" id="popupMarkUndelivered" tabindex="-1"
+                                aria-labelledby="popupMarkUndeliveredLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupMarkUndeliveredLabel">Mark as
+                                                Undelivered</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Do you want to mark the
+                                                    shipment(s) as undelivered?</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-start">
+                                            <button type="button" class="btn btn-primary">Proceed</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#popupUndelivered">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                                <h5>Are you sure?</h5>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                                <p>Once deleted, they cannot be undone</p>
+                                            </div>
+                                            <div class="d-flex justify-content-around mb-4">
+                                                <a href="./allPackages.html">
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Delete</button>
+                                                </a>
+                                                <button type="button" class="btn btn-primary"
+                                                    data-bs-dismiss="modal">No</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col mt-1">
+                            <a href="./packages.html" class="text-dark"><i class="fa fa-times"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="container mt-4 border rounded">
+                        <div class="row p-3">
+                            <div class="col-1 d-flex align-items-center">
+                                <div class="border rounded p-2"> <img src="../../images/delivered.png" alt=""
+                                        width="48px">
+                                </div>
+                            </div>
+                            <div class="col">Shipment Order#
+                                <div><a href="./shipmentOrder.html">SHP-00002</a> <span
+                                        class="bg-success text-white">DELIVERED</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3" style="background-color: #E7F6FF;">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-4">Date of Shipment</div>
+                                    <div class="col-4">23/07/2022</div>
+                                    <div class="col-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Carrier</div>
+                                    <div class="col-4">Indiapost</div>
+                                    <div class="col-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Tracking#</div>
+                                    <div class="col-4">123456</div>
+                                    <div class="col-4"></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded mx-2 my-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-cog" aria-hidden="true"></i> Customize
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                    <li><a class="dropdown-item disabled" href="#">Standard Template</a></li>
+                                    <li><a class="dropdown-item" href="#">Change Template</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Edit Template</a></li>
+                                    <li><a class="dropdown-item" href="#">Update Logo & Address</a></li>
+                                    <li><a class="dropdown-item" href="#">Manage Custom Fields</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="position-absolute bg-success banner-send banner-delivered">Delivered</div>
+                        <div class="border border-dark mx-5 my-3 mb-5 p-4 position-relative">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <h5>Dr.aware hospital and Nursing Home</h5>
+                                    <div>26b panja bazar</div>
+                                    <div>fulasheth</div>
+                                    <div>bahubali Maharashtra 425160</div>
+                                    <div>India</div>
+                                    <div>GSTIN: 27AAICA5564D1ZO</div>
+                                </div>
+                                <div class="col-6 text-end my-5">
+                                    <h3 class="mb-4">PACKAGE</h3>
+                                    <div>Package# PKG-00001</div>
+                                </div>
+                            </div>
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>Package#</th>
+                                        <th>Order Date</th>
+                                        <th>Package Date</th>
+                                        <th>Sales Order#</th>
+                                        <th class="bg-light">Total Qty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PKG-00001</td>
+                                        <td>21/07/2022</td>
+                                        <td>21/07/2022</td>
+                                        <td>SO-00002</td>
+                                        <td class="bg-light"><b>1.00</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row p-2">
+                                <div class="col-4">
+                                    <div class="row mb-3">
+                                        <div class="col fw-bold">Bill To</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col fw-bold"><a href="../customers/allCustomers.html">Mr. Badshah
+                                                khan</a></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">dd</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">sakri</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">424304 Maharashtra</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">India</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">9876543210</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col"><b>Place of Supply: </b>Maharashtra (27)</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row mb-3">
+                                        <div class="col fw-bold">Ship To</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col fw-bold">Mr. Badshah khan</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">dd</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">sakri</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">424304 Maharashtra</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">India</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">9876543210</div>
+                                    </div>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                            <table class="table mt-4">
+                                <thead class="bg-light">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Item & Description</th>
+                                        <th scope="col">Qty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td><b>AK</b>
+                                            <div>ABC</div>
+                                            <div>SKU : 2984894</div>
+                                        </td>
+                                        <td>1.00 <div>box</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mx-3 mt-2 mb-5">
+                        <div>
+                            <h6>Package Notes <i class="fa fa-pencil" aria-hidden="true" data-bs-toggle="modal"
+                                    data-bs-target="#popupEditNotes"></i></h6>
+                            <div>
+                                <small>errrer</small>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupEditNotes" tabindex="-1" aria-labelledby="popupEditNotesLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupEditNotesLabel">Edit Package Notes</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Update</button>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>Template : 'Spreadsheet Template' <a href="#">Change</a></div>
                     </div>
                 </div>
             </div>

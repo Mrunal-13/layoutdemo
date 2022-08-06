@@ -1062,6 +1062,10 @@ main .active-item {
     top: 191px;
     left: 13px;
 }
+.draft-banner2 {
+    top: 145px;
+    left: 13px;
+}
 
 .paid-banner {
     top: 111px;
@@ -1069,6 +1073,36 @@ main .active-item {
 
 .paid-banner-2 {
     top: 323px;
+}
+
+.banner-not-shipped {
+    top: 100px;
+    padding: 5px 20px;
+    left: 11px;
+}
+
+.banner-shipped {
+    top: 288px;
+    left: 13px;
+    padding: 5px 33px;
+}
+
+.banner-shipped2 {
+    top: 309px;
+    left: 13px;
+    padding: 5px 33px;
+}
+
+.banner-delivered {
+    top: 319px;
+    left: 13px;
+    padding: 5px 33px;
+}
+
+.banner-delivered2 {
+    top: 274px;
+    left: 13px;
+    padding: 5px 33px;
 }
 
 .dropdown-button button {
@@ -1133,6 +1167,10 @@ main .active-item {
 
 .packages-div {
     height: 670px;
+}
+
+.text-decoration {
+    text-decoration: none !important;
 }
 
 /* Code for Sales @anjudewangan */

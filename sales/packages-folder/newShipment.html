@@ -16,16 +16,9 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
+    <!-- Chart @anjudewangan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Chart @anjudewangan -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -285,6 +278,7 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -301,8 +295,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
@@ -317,8 +313,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -421,13 +419,13 @@
                         <a href="../customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="../estimates/estimates.html">Estimates</a>
+                        <a href="../estimates/allEstimates.html">Estimates</a>
                     </li>
                     <li>
                         <a href="../salesOrders/salesOrders.html">Sales Orders</a>
                     </li>
                     <li>
-                        <a href="./packages.html" class="sales-link">Packages</a>
+                        <a href="./notShipped.html" class="sales-link">Packages</a>
                     </li>
                     <li>
                         <a href="../shipmets/shipments.html">Shipments</a>
@@ -555,210 +553,322 @@
     <!-- Sales Customers -->
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
-            <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
-                <h6><i class="fa fa fa-archive" aria-hidden="true"></i> New Package</h6>
-                <div><a href="./packages.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="bg-light container mt-4 p-4">
-                <div class="mb-3 row d-flex align-items-center">
-                    <label for="" class="col-sm-3 col-form-label">Customer Name</label>
-                    <div class="col-sm-7">
-                        <select class="js-example-basic-single" name="state">
-                            <option>Select Customer</option>
-                            <option>Jaysa Suryawanshi</option>
-                            <option>Vishal Deore</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-3 row d-flex align-items-center">
-                    <label for="" class="col-sm-3 col-form-label">Sales Order#<span class="text-danger">*</span></label>
-                    <div class="col-sm-7">
-                        <select class="js-example-basic-single" name="state">
-                            <option>Select Sales Order</option>
-                            <option>SO-00002 2022-07-21</option>
-                            <option>SO-00003 2022-07-21</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-3">
-                <div class="mb-3 row d-flex align-items-center">
-                    <label for="" class="col-sm-3 col-form-label">Package Slip#<span
-                            class="text-danger">*</span></label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="">
-                    </div>
-                    <div class="col-sm-2">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
-                                class="fa fa-cog fs-5" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
-                        aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header bg-light">
-                                    <h5 class="modal-title" id="popupEstimateNumberLabel">Package Slip#</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="my-3">To save you time, your Estimate numbers are set to
-                                        auto-generate mode. Are you sure you want to change this setting?</div>
-                                    <div class="form-check mb-3 mt-5">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Continue auto-generating sales order numbers
-                                        </label>
-                                        <div class="row ml-3">
-                                            <div class="col-3">
-                                                <div class="mb-3">
-                                                    <label for="" class="form-label">Prefix</label>
-                                                    <input type="text" class="form-control" id="" placeholder="PKG-">
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="mb-3">
-                                                    <label for="" class="form-label">Next Number</label>
-                                                    <input type="text" class="form-control" id="" placeholder="00001">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-check mb-3">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            I will add them manually each time
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Save</button>
-                                    <button type="button" class="btn btn-outline-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="row border-bottom pb-2">
+                        <div class="col-2"></div>
+                        <div class="col-6">
+                            <b>Packages</b>
+                        </div>
+                        <div class="col-2">
+                        </div>
+                        <div class="col-2">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
+                                    <li><a class="dropdown-item" href="#">Package Date</a></li>
+                                    <li><a class="dropdown-item" href="#">Package#</a></li>
+                                    <li><a class="dropdown-item" href="#">Carrier</a></li>
+                                    <li><a class="dropdown-item" href="#">Sales Order#</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipment Date</a></li>
+                                    <li><a class="dropdown-item" href="#">Customer Name</a></li>
+                                    <li><a class="dropdown-item" href="#">Quantity</a></li>
+                                    <li><a class="dropdown-item" href="#">Created Time</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Last Modified Time</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
+                                                aria-hidden="true"></i>
+                                            Import Packages</a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportItem">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Packages
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportCurrent">
+                                            <i class="fa fa-download text-secondary" aria-hidden="true"></i>
+                                            Import Shipments
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportCurrent">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Shipments
+                                        </a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="mb-3 row d-flex align-items-center">
-                    <label for="" class="col-sm-3 col-form-label">Date</label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="" placeholder="22/07/2022">
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-9">
+                            <div class="dropdown">
+                                <button class="btn btn-sm  btn-light border border-secondary dropdown-toggle"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    View: Delivered Packages
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item disabled" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">Not Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Delivered</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="dropdown">
+                                <button class="btn btn-sm  bg-white border border-secondary dropdown-toggle"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Type All
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item disabled" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">Carrier</a></li>
+                                    <li><a class="dropdown-item" href="#">Manual</a></li>
+                                    <li><a class="dropdown-item" href="#">Welldone Presto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-10">Vishal deore</div>
+                        <div class="col-2"><small>22/07/2022</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 46px;">
+                            <div class="div-send-text text-danger">Not Shipped <span class="text-dark">1.00</span></div>
+                            <div class="text-primary">PKG-00001 <span class="border-left pl-2 text-dark">SO-00002</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./shipped.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10 text-dark">Vishal deore</div>
+                            <div class="col-2"><small class="text-dark">22/07/2022</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 46px;">
+                                <div class="div-send-text text-primary">Shipped <span class="text-dark">1.00</span>
+                                </div>
+                                <div class="text-primary">PKG-00001 <span
+                                        class="border-left pl-2 text-dark">SO-00002</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./delivered.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10 text-dark">Vishal deore</div>
+                            <div class="col-2"><small class="text-dark">22/07/2022</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 46px;">
+                                <div class="div-send-text text-success">Delivered <span class="text-dark">1.00</span>
+                                </div>
+                                <div class="text-primary">PKG-00001 <span
+                                        class="border-left pl-2 text-dark">SO-00002</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="row py-4 px-5 border-bottom">
                     </div>
                 </div>
-            </div>
-            <div class="container mt-5 p-3" style="background-color:#FFF6E8;">
-                <i class="fa fa-info-circle text-warning" aria-hidden="true"></i> You can also select or scan the items
-                to be included from the sales order.
-                <a href="">Select/scan items</a>
-            </div>
-            <div class="container mt-4">
-                <table class="table table-bordered">
-                    <thead class="bg-light">
-                        <tr>
-                            <th>Item & Description</th>
-                            <th>Ordered</th>
-                            <th>Packed</th>
-                            <th>Quantity to Pack</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><b>AK</b>
-                                <div><small>SKU: 2984894</small></div>
-                                <div><small>,okmoop</small></div>
-                            </td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td class="text-end">
-                                <div class="d-flex justify-content-around align-items-center"><i
-                                        class="fa fa-minus-circle text-primary" aria-hidden="true"></i> <input
-                                        type="text" class="form-control" id="" placeholder="1" style="width: 80px;"> <i
-                                        class="fa fa-plus-circle text-primary" aria-hidden="true"></i></div>
-                                <div style="margin-right: -62px; margin-top: -23px;"><i
-                                        class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i>
-                                </div>
-                                <div><small>Stock on Hand:</small></div>
-                                <div><small>3.00 box </small> <i class="fa fa-arrow-circle-o-down text-primary"
-                                        aria-hidden="true" data-bs-toggle="modal"
-                                        data-bs-target="#popupStockDetails"></i>
-                                    <div class="modal fade" id="popupStockDetails" tabindex="-1"
-                                        aria-labelledby="popupStockDetailsLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header bg-light">
-                                                    <h5 class="modal-title" id="popupStockDetailsLabel">Stock Details
-                                                    </h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="row pl-5">
-                                                        <div class="col-6 text-start">
-                                                            <div class="row mb-3">
-                                                                <div class="col">
-                                                                    <h6>Accounting Stock</h6>
-                                                                    <p><small>This is calculated based on Bills and
-                                                                            Invoices.</small></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-6">Stock on Hand</div>
-                                                                <div class="col-6">: 5.00</div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-6 text-dotted">Committed Stock</div>
-                                                                <div class="col-6">: 0.00</div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-6 text-dotted">Available for Sale</div>
-                                                                <div class="col-6">: 5.00</div>
-                                                            </div>
+                <div class="col-9 border-left">
+                    <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
+                        <h6>New Shipment</h6>
+                        <div><a href="./notShipped.html" class="text-dark"><i class="fa fa-times"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="container mt-5 border-bottom pb-3">
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Package#<span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="" placeholder="PKG-00001">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Shipment Order#<span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="" placeholder="SHP-00004">
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
+                                        class="fa fa-cog fs-5" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
+                                aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupEstimateNumberLabel">Package Slip#</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="my-3">To save you time, your Estimate numbers are set to
+                                                auto-generate mode. Are you sure you want to change this setting?</div>
+                                            <div class="form-check mb-3 mt-5">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Continue auto-generating sales order numbers
+                                                </label>
+                                                <div class="row ml-3">
+                                                    <div class="col-3">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Prefix</label>
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="PKG-">
                                                         </div>
-                                                        <div class="col-6 text-start">
-                                                            <div class="row mb-3">
-                                                                <div class="col">
-                                                                    <h6>Physical Stock</h6>
-                                                                    <p><small>This is calculated based on Receives and
-                                                                            Shipments.</small></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-6">Stock on Hand</div>
-                                                                <div class="col-6">: 5.00</div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-6 text-dotted">Committed Stock</div>
-                                                                <div class="col-6">: 0.00</div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <div class="col-6 text-dotted">Available for Sale</div>
-                                                                <div class="col-6">: 5.00</div>
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Next Number</label>
+                                                            <input type="text" class="form-control" id=""
+                                                                placeholder="00001">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    I will add them manually each time
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="container mt-4 border-bottom pb-3">
-                <div class="mb-3 row px-3">
-                    <label for="" class="col-form-label">Internal Notes</label>
-                    <textarea class="form-control" id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Ship Date<span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="" placeholder="22/07/2022">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Carrier<span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-4">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select or Type to add</option>
+                                </select>
+                            </div>
+                            <label for="" class="col-sm-2 col-form-label">Tracking#</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Tracking URL</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Shipping Charges (if any)</label>
+                            <div class="col-sm-4">
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping">Rs.</span>
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Notes</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-3 border-bottom px-4 pb-3">
+                        <div class="row mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Shipment Already Delivered
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="" class="form-label">Delivered On</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="" placeholder="DD/MM/YYYY">
+                            </div>
+                            <div class="col-sm-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>HH:MM</option>
+                                    <option>00:00</option>
+                                    <option>00:30</option>
+                                    <option>01:00</option>
+                                    <option>01:30</option>
+                                    <option>02:00</option>
+                                    <option>02:30</option>
+                                    <option>03:00</option>
+                                    <option>03:30</option>
+                                    <option>04:00</option>
+                                    <option>04:30</option>
+                                    <option>05:00</option>
+                                    <option>05:30</option>
+                                    <option>06:00</option>
+                                    <option>06:30</option>
+                                    <option>07:00</option>
+                                    <option>07:30</option>
+                                    <option>08:00</option>
+                                    <option>08:30</option>
+                                    <option>09:00</option>
+                                    <option>09:30</option>
+                                    <option>10:00</option>
+                                    <option>10:30</option>
+                                    <option>11:00</option>
+                                    <option>11:30</option>
+                                    <option>12:00</option>
+                                    <option>12:30</option>
+                                    <option>13:00</option>
+                                    <option>13:30</option>
+                                    <option>14:00</option>
+                                    <option>14:30</option>
+                                    <option>15:00</option>
+                                    <option>15:30</option>
+                                    <option>16:00</option>
+                                    <option>16:30</option>
+                                    <option>17:00</option>
+                                    <option>17:30</option>
+                                    <option>18:00</option>
+                                    <option>18:30</option>
+                                    <option>19:00</option>
+                                    <option>19:30</option>
+                                    <option>20:00</option>
+                                    <option>20:30</option>
+                                    <option>21:00</option>
+                                    <option>21:30</option>
+                                    <option>22:00</option>
+                                    <option>22:30</option>
+                                    <option>23:00</option>
+                                    <option>23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            Note: The respective sales order recipients will be notified of the shipment status.
+                        </div>
+                    </div>
+                    <div class="container p-4 mb-5">
+                        <a href="./shipmentOrder.html"><button class="btn btn-primary">Save</button></a>
+                        <a href="./notShipped.html"><button class="btn btn-outline-secondary">Cancel</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="container p-4 mb-5">
-                <a href=""><button class="btn btn-primary">Save</button></a>
-                <a href="./packages.html"><button class="btn btn-outline-secondary">Cancel</button></a>
             </div>
         </div>
     </main>
@@ -766,11 +876,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!-- Code for select field @anjudewangan -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <!-- Code for select field @anjudewangan -->
     <script src="../script.js"></script>
 </body>
 

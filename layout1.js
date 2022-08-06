@@ -11,6 +11,22 @@ alertsDropdown.addEventListener("click", () => {
     }
 })
 
+$(document).ready(function(){
+  $("#ListOfAnnounce").hide();
+
+  $("#notif").click(function(){
+    $("#ListOfNotif").show();
+    $("#ListOfAnnounce").hide();
+
+  })
+  $("#announce").click(function(){
+    $("#ListOfAnnounce").show();
+    $("#ListOfNotif").hide();
+  })
+  $("#hideNotifBox").click(function(){
+    $("#alertDetails").hide();
+  })
+})
 
 // collapse button function to toggle sidenav barr
 function openNav() {
@@ -359,3 +375,4 @@ let helloChart = new Chart(ctr, {
     },
   },
 });
+

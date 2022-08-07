@@ -3260,9 +3260,9 @@
             <div class="col-11">
                 <table class="table table-customer">
                     <thead>
-                        <tr>
+                        <tr class="cusTableHead1">
                             <th>
-                                <input class="form-check-input" type="checkbox" value="" id="">Name
+                                <input class="form-check-input checkCusHead" type="checkbox" value="" id="">Name
                             </th>
                             <th>City</th>
                             <th>Mobile</th>
@@ -3270,66 +3270,56 @@
                             <th>Place of Supply</th>
                             <th>Receivables</th>
                         </tr>
+                        <tr class="cusTableHead2">
+                            <th>
+                                <button type="button"
+                                                    class="btn btn-outline-secondary bg-light text-dark"><i
+                                                        class="fa fa-files-o" aria-hidden="true" data-bs-toggle="modal"
+                                                        data-bs-target="#popupDateRange1"></i></button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
+                                        class="fa fa-print" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDateRange2"></i></button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
+                                    data-bs-toggle="modal" data-bs-target="#popupBulkUpdate">Bulk
+                                    Update</button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
+                                    data-bs-toggle="modal" data-bs-target="#popupReqGSTInfo">Request GST
+                                    Information</button>
+                            </th>
+                            <th>
+                                <button type="button"
+                                    class="btn btn-outline-secondary bg-light text-dark dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">More
+                                    Actions</button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupMarkActive">Mark as Active</a></li>
+                                    <li><a class="dropdown-item" href="#">Merge</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupMarkInactive">Mark as Inactive</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupDelete">Delete</a></li>
+                                </ul>
+                                1 Contact(s) Selected
+                            </th>
+                            <th>
+                                <i class="fa fa-times fs-5 mb-2" aria-hidden="true" id="closeCusHead"></i>
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck">
+                                <input class="form-check-input checkCusHead" type="checkbox" value="" id="">
                                 <a href="./allCustomers.html">Mr. Badshah khan</a>
                             </td>
-                            <div class="modal fade" id="popupCheck" tabindex="-1" aria-labelledby="popupCheckLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modalCheck">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"><i
-                                                        class="fa fa-files-o" aria-hidden="true" data-bs-toggle="modal"
-                                                        data-bs-target="#popupDateRange1"></i></button>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"><i
-                                                        class="fa fa-print" aria-hidden="true" data-bs-toggle="modal"
-                                                        data-bs-target="#popupDateRange2"></i></button>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#popupBulkUpdate">Bulk
-                                                    Update</button>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#popupReqGSTInfo">Request GST
-                                                    Information</button>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark dropdown-toggle"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">More
-                                                    Actions</button>
-                                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#popupMarkActive">Mark as Active</a></li>
-                                                    <li><a class="dropdown-item" href="#">Merge</a></li>
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#popupMarkInactive">Mark as Inactive</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#popupDelete">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="mt-1">1 Contact(s) Selected</div>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="modal fade" id="popupDateRange1" tabindex="-1"
                                 aria-labelledby="popupDateRange1Label" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -3544,8 +3534,7 @@
                         </tr>
                         <tr>
                             <td class="text-primary">
-                                <input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck">
+                                <input class="form-check-input checkCusHead" type="checkbox" value="" id="">
                                 <a href="#">sample baba</a>
                             </td>
                             <td></td>

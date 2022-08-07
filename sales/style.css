@@ -587,7 +587,8 @@ main .active-item {
 #popupDeletePayment .modal-body i,
 #popupDeleteDelivered .modal-body i,
 #popupDeleteUndelivered .modal-body i,
-#popupDelete2 .modal-body i {
+#popupDelete2 .modal-body i,
+#popupDelete3 .modal-body i {
     color: #EF8523;
     font-size: 45px;
 }
@@ -1062,6 +1063,7 @@ main .active-item {
     top: 191px;
     left: 13px;
 }
+
 .draft-banner2 {
     top: 145px;
     left: 13px;
@@ -1104,6 +1106,13 @@ main .active-item {
     left: 13px;
     padding: 5px 33px;
 }
+
+.returned-banner {
+    top: 147px;
+    left: 13px;
+    padding: 5px 33px;
+}
+
 
 .dropdown-button button {
     width: 100%;
@@ -1172,5 +1181,11 @@ main .active-item {
 .text-decoration {
     text-decoration: none !important;
 }
+
+/* Delivery Challans */
+.file-bill {
+    font-size: 60px;
+}
+
 
 /* Code for Sales @anjudewangan */

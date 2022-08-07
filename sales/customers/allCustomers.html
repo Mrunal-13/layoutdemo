@@ -3220,7 +3220,7 @@
                                                     <div class="col-6">
                                                         <div class="mb-3">
                                                             <label for="" class="form-label">State / Province
-                                                                /Region </label>
+                                                                /Region</label>
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
                                                                 <option selected>Select or Type to add</option>
@@ -3617,32 +3617,21 @@
                                     <h6>Income</h6>
                                 </div>
                                 <div class="col-4"></div>
-                                <div class="col-2">
-                                    <div class="dropdown">
-                                        <button class="btn text-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Last 6 Months
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">This Financial Year</a></li>
-                                            <li><a class="dropdown-item" href="#">Previous Financial Year</a></li>
-                                            <li><a class="dropdown-item" href="#">Last 12 Months</a></li>
-                                            <li><a class="dropdown-item" href="#">Last 6 Months</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-3">
+                                    <select class="form-select text-primary border-0"
+                                        aria-label="Default select example">
+                                        <option>This Financial Year</option>
+                                        <option>Previous Financial Year</option>
+                                        <option>Last 12 Months</option>
+                                        <option selected>Last 6 Months</option>
+                                    </select>
                                 </div>
-                                <div class="col-1"></div>
-                                <div class="col-2">
-                                    <div class="dropdown">
-                                        <button class="btn text-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Accrual
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Accrual</a></li>
-                                            <li><a class="dropdown-item" href="#">Cash</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-3">
+                                    <select class="form-select text-primary border-0"
+                                        aria-label="Default select example">
+                                        <option selected>Accrual</option>
+                                        <option>Cash</option>
+                                    </select>
                                 </div>
                             </div>
                             <canvas id="myChart" class="mx-4 my-3" style="width:100%;max-width:700px"></canvas>

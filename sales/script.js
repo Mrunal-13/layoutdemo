@@ -1,5 +1,11 @@
 // Code for add Sales @anjudewangan 
 $(document).ready(function () {
+    $(".showInvoiceTable").show();
+    $("#showInvoice").hide();
+
+    $(".showCustomerPayTable").show();
+    $("#showCustomerPay").hide();
+
     $(".showEastimateTable").hide();
     $("#hideEastimate").hide();
 
@@ -29,6 +35,28 @@ $(document).ready(function () {
 
     $(".showCreditTable").hide();
     $("#hideCredit").hide();
+
+    $("#showInvoice").click(function () {
+        $(".showInvoiceTable").show();
+        $("#hideInvoice").show();
+        $("#showInvoice").hide();
+    });
+    $("#hideInvoice").click(function () {
+        $(".showInvoiceTable").hide();
+        $("#hideInvoice").hide();
+        $("#showInvoice").show();
+    });
+
+    $("#showCustomerPay").click(function () {
+        $(".showCustomerPayTable").show();
+        $("#hideCustomerPay").show();
+        $("#showCustomerPay").hide();
+    });
+    $("#hideCustomerPay").click(function () {
+        $(".showCustomerPayTable").hide();
+        $("#hideCustomerPay").hide();
+        $("#showCustomerPay").show();
+    });
 
     $("#showEastimate").click(function () {
         $(".showEastimateTable").show();
@@ -140,27 +168,66 @@ $(document).ready(function () {
         $("#showCredit").show();
     });
 
-    // Code for add comment @anjudewangan
-    // const addCommentList = [];
-    // addCommentList.map((comment) => {
-    //     $(".timeline").append('<div class="commPoint1"></div><div class="bg-light rounded border border-secondary divComm1"><textarea class="form-control" id="addComment" rows="3">' + comment + '</textarea></div>');
-    // });
+    // Code for Table Head @anjuDewangan
+    $(".cusTableHead1").show();
+    $(".cusTableHead2").hide();
 
-    // $("#btnAddComment").click(function () {
-    //     const getComment = $("#addComment").val().trim();
-    //     addCommentList.push(getComment);
+    $(".checkCusHead").click(function () {
+        $(".cusTableHead2").show();
+        $(".cusTableHead1").hide();
+    });
+    $("#closeCusHead").click(function () {
+        $(".cusTableHead1").show();
+        $(".cusTableHead2").hide();
+    });
 
-    //     $(".divComment").append('<div class="commDate2"><small>08:49 AM</small><small class="text-secondary">24/06/2022</small></div><div class="commPoint3"></div><div class="bg-light rounded border border-secondary divComm3"><div class="d-flex justify-content-between"><div>' + getComment + '</div><i class="fa fa-trash deleteComment" aria-hidden="true"></i></div><div class="mt-4"><small>by rakeshnandre433</small></div></div>');
+    $(".easTableHead1").show();
+    $(".easTableHead2").hide();
 
-    //     $("#addComment").val("");
-    //     return false;
-    // });
+    $(".checkEstHead").click(function () {
+        $(".easTableHead2").show();
+        $(".easTableHead1").hide();
+    });
+    $("#closeEstHead").click(function () {
+        $(".easTableHead1").show();
+        $(".easTableHead2").hide();
+    });
 
-    // $(document).on("click", ".deleteComment", function () {
-    //     $(this).parent().parent('div').remove();
-    // });
-    // Code for add comment @anjudewangan
+    $(".salesTableHead1").show();
+    $(".salesTableHead2").hide();
 
+    $(".checkSalesHead").click(function () {
+        $(".salesTableHead2").show();
+        $(".salesTableHead1").hide();
+    });
+    $("#closeSalesHead").click(function () {
+        $(".salesTableHead1").show();
+        $(".salesTableHead2").hide();
+    });
+
+    $(".packageTableHead1").show();
+    $(".packageTableHead2").hide();
+
+    $(".checkPackageHead").click(function () {
+        $(".packageTableHead2").show();
+        $(".packageTableHead1").hide();
+    });
+    $("#closePackageHead").click(function () {
+        $(".packageTableHead1").show();
+        $(".packageTableHead2").hide();
+    });
+
+    $(".shipmentTableHead1").show();
+    $(".shipmentTableHead2").hide();
+
+    $(".checkShipmentHead").click(function () {
+        $(".shipmentTableHead2").show();
+        $(".shipmentTableHead1").hide();
+    });
+    $("#closeShipmentHead").click(function () {
+        $(".shipmentTableHead1").show();
+        $(".shipmentTableHead2").hide();
+    });
 });
 
 // Alert Dropdown

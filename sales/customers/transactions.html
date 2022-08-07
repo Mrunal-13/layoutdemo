@@ -3174,32 +3174,29 @@
                     </div>
                     <div class="row p-3">
                         <div class="col-2">
-                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-right" aria-hidden="true" id="showInvoice"></i>
+                            <i class="fa fa-caret-down" aria-hidden="true" id="hideInvoice"></i>
                             Invoice
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Draft</a></li>
-                                <li><a class="dropdown-item" href="#">Client Viewed</a></li>
-                                <li><a class="dropdown-item" href="#">Partially Paid</a></li>
-                                <li><a class="dropdown-item" href="#">Unpaid</a></li>
-                                <li><a class="dropdown-item" href="#">Overdue</a></li>
-                                <li><a class="dropdown-item" href="#">Paid</a></li>
-                                <li><a class="dropdown-item" href="#">Void</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showInvoiceTable">Status:</div>
+                        <div class="col-2 border-right showInvoiceTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Draft</option>
+                                <option>Client Viewed</option>
+                                <option>Partially Paid</option>
+                                <option>Unpaid</option>
+                                <option>Overdue</option>
+                                <option>Paid</option>
+                                <option>Void</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
                         </div>
                     </div>
-                    <table class="table text-center">
+                    <table class="table text-center showInvoiceTable">
                         <thead class="bg-light">
                             <tr>
                                 <th>Date</th>
@@ -3229,10 +3226,10 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="d-flex justify-content-between mb-5 mx-4">
-                        <div class="text-secondary">Total Count - 2</div>
+                    <div class="d-flex justify-content-between mb-2 mx-4">
+                        <div class="text-secondary showInvoiceTable">Total Count - 2</div>
                         <nav aria-label="Page navigation example">
-                            <ul class="pagination">
+                            <ul class="pagination showInvoiceTable">
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
@@ -3250,15 +3247,16 @@
                     </div>
                     <div class="row p-3 border-top">
                         <div class="col-3">
-                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-right" aria-hidden="true" id="showCustomerPay"></i>
+                            <i class="fa fa-caret-down" aria-hidden="true" id="hideCustomerPay"></i>
                             Customer Payment
                         </div>
-                        <div class="col-7"></div>
+                        <div class="col-4"></div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
                         </div>
                     </div>
-                    <table class="table text-center">
+                    <table class="table text-center showCustomerPayTable">
                         <thead class="bg-light">
                             <tr>
                                 <th>Date</th>
@@ -3280,10 +3278,10 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="d-flex justify-content-between mb-5 mx-4">
-                        <div class="text-secondary">Total Count - 2</div>
+                    <div class="d-flex justify-content-between mb-2 mx-4">
+                        <div class="text-secondary showCustomerPayTable">Total Count - 2</div>
                         <nav aria-label="Page navigation example">
-                            <ul class="pagination">
+                            <ul class="pagination showCustomerPayTable">
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
@@ -3305,23 +3303,19 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideEastimate"></i>
                             Estimate
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showEastimateTable">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Draft</a></li>
-                                <li><a class="dropdown-item" href="#">Sent</a></li>
-                                <li><a class="dropdown-item" href="#">Client Viewed</a></li>
-                                <li><a class="dropdown-item" href="#">Accepted</a></li>
-                                <li class="border-bottom"><a class="dropdown-item" href="#">Invoiced</a></li>
-                                <li><a class="dropdown-item" href="#">Declined</a></li>
-                                <li><a class="dropdown-item" href="#">Expired</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showEastimateTable">Status:</div>
+                        <div class="col-2 border-right showEastimateTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Draft</option>
+                                <option>Sent</option>
+                                <option>Client Viewed</option>
+                                <option>Accepted</option>
+                                <option>Invoiced</option>
+                                <option>Declined</option>
+                                <option>Expired</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3372,27 +3366,23 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideSalesOrder"></i>
                             Sales Order
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showSalesOrderTable">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Draft</a></li>
-                                <li><a class="dropdown-item" href="#">Partially Invoiced</a></li>
-                                <li><a class="dropdown-item" href="#">Invoiced</a></li>
-                                <li><a class="dropdown-item" href="#">Closed</a></li>
-                                <li><a class="dropdown-item" href="#">Void</a></li>
-                                <li><a class="dropdown-item" href="#">Confirmed</a></li>
-                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
-                                <li><a class="dropdown-item" href="#">Shipped</a></li>
-                                <li><a class="dropdown-item" href="#">Dropshipped</a></li>
-                                <li><a class="dropdown-item" href="#">Backordered</a></li>
-                                <li><a class="dropdown-item" href="#">On Hold</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showSalesOrderTable">Status:</div>
+                        <div class="col-2 border-right showSalesOrderTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Draft</option>
+                                <option>Partially Invoiced</option>
+                                <option>Invoiced</option>
+                                <option>Closed</option>
+                                <option>Void</option>
+                                <option>Confirmed</option>
+                                <option>Partially Shipped</option>
+                                <option>Shipped</option>
+                                <option>Dropshipped</option>
+                                <option>Backordered</option>
+                                <option>On Hold</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3443,27 +3433,23 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideSalesOrder2"></i>
                             Sales Order
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showSalesOrderTable2">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Draft</a></li>
-                                <li><a class="dropdown-item" href="#">Partially Invoiced</a></li>
-                                <li><a class="dropdown-item" href="#">Invoiced</a></li>
-                                <li><a class="dropdown-item" href="#">Closed</a></li>
-                                <li><a class="dropdown-item" href="#">Void</a></li>
-                                <li><a class="dropdown-item" href="#">Confirmed</a></li>
-                                <li><a class="dropdown-item" href="#">Partially Shipped</a></li>
-                                <li><a class="dropdown-item" href="#">Shipped</a></li>
-                                <li><a class="dropdown-item" href="#">Dropshipped</a></li>
-                                <li><a class="dropdown-item" href="#">Backordered</a></li>
-                                <li><a class="dropdown-item" href="#">On Hold</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showSalesOrderTable2">Status:</div>
+                        <div class="col-2 border-right showSalesOrderTable2">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Draft</option>
+                                <option>Partially Invoiced</option>
+                                <option>Invoiced</option>
+                                <option>Closed</option>
+                                <option>Void</option>
+                                <option>Confirmed</option>
+                                <option>Partially Shipped</option>
+                                <option>Shipped</option>
+                                <option>Dropshipped</option>
+                                <option>Backordered</option>
+                                <option>On Hold</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3514,20 +3500,16 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideDeliveryChallan"></i>
                             Delivery Challan
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showSalesOrderTable2">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Draft</a></li>
-                                <li><a class="dropdown-item" href="#">Open</a></li>
-                                <li><a class="dropdown-item" href="#">Delivered</a></li>
-                                <li><a class="dropdown-item" href="#">Returned</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showDeliveryChallanTable">Status:</div>
+                        <div class="col-2 border-right showDeliveryChallanTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Draft</option>
+                                <option>Open</option>
+                                <option>Delivered</option>
+                                <option>Returned</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3576,20 +3558,16 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideRecurring"></i>
                             Recurring Invoices
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showRecurringTable">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Draft</a></li>
-                                <li><a class="dropdown-item" href="#">Open</a></li>
-                                <li><a class="dropdown-item" href="#">Delivered</a></li>
-                                <li><a class="dropdown-item" href="#">Returned</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showRecurringTable">Status:</div>
+                        <div class="col-2 border-right showRecurringTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Draft</option>
+                                <option>Open</option>
+                                <option>Delivered</option>
+                                <option>Returned</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3638,23 +3616,19 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideExpense"></i>
                             Expense
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showExpenseTable">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Unbilled</a></li>
-                                <li><a class="dropdown-item" href="#">Invoiced</a></li>
-                                <li><a class="dropdown-item" href="#">Reimbursed</a></li>
-                                <li><a class="dropdown-item" href="#">Billable</a></li>
-                                <li><a class="dropdown-item" href="#">Non-Billable</a></li>
-                                <li><a class="dropdown-item" href="#">With Receipts</a></li>
-                                <li><a class="dropdown-item" href="#">Without Receipts</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showExpenseTable">Status:</div>
+                        <div class="col-2 border-right showExpenseTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Unbilled</option>
+                                <option>Invoiced</option>
+                                <option>Reimbursed</option>
+                                <option>Billable</option>
+                                <option>Non-Billable</option>
+                                <option>With Receipts</option>
+                                <option>Without Receipts</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3703,18 +3677,14 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideProject"></i>
                             Project
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showProjectTable">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Active</a></li>
-                                <li><a class="dropdown-item" href="#">Inactive</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showProjectTable">Status:</div>
+                        <div class="col-2 border-right showProjectTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Active</option>
+                                <option>Inactive</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3759,7 +3729,7 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideJournals"></i>
                             Journals
                         </div>
-                        <div class="col-6"></div>
+                        <div class="col-5"></div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
                         </div>
@@ -3807,22 +3777,18 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideBill"></i>
                             Bill
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showBillTable">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Open</a></li>
-                                <li><a class="dropdown-item" href="#">Overdue</a></li>
-                                <li><a class="dropdown-item" href="#">Unpaid</a></li>
-                                <li><a class="dropdown-item" href="#">Partially Paid</a></li>
-                                <li><a class="dropdown-item" href="#">Paid</a></li>
-                                <li><a class="dropdown-item" href="#">Void</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showBillTable">Status:</div>
+                        <div class="col-2 border-right showBillTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Open</option>
+                                <option>Overdue</option>
+                                <option>Unpaid</option>
+                                <option>Partially Paid</option>
+                                <option>Paid</option>
+                                <option>Void</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>
@@ -3875,19 +3841,15 @@
                             <i class="fa fa-caret-down" aria-hidden="true" id="hideCredit"></i>
                             Credit Note
                         </div>
-                        <div class="col-6"></div>
-                        <div class="col-2 border-right dropdown showCreditTable">
-                            Status:
-                            <button class="btn btn-white text-primary dropdown-toggle" type="button"
-                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Open</a></li>
-                                <li><a class="dropdown-item" href="#">Void</a></li>
-                                <li><a class="dropdown-item" href="#">Closed</a></li>
-                            </ul>
+                        <div class="col-5"></div>
+                        <div class="col-1 showCreditTable">Status:</div>
+                        <div class="col-2 border-right showCreditTable">
+                            <select class="form-select text-primary border-0" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option>Open</option>
+                                <option>Void</option>
+                                <option>Closed</option>
+                            </select>
                         </div>
                         <div class="col-2">
                             <a href="">+ Add New</a>

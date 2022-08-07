@@ -555,8 +555,7 @@
         <div class="container" style="max-width: 1533px !important;">
             <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
                 <h6><i class="fa fa-truck" aria-hidden="true"></i> Edit Delivery Challan</h6>
-                <div><a href="./draft.html" class="text-dark"><i class="fa fa-times"
-                            aria-hidden="true"></i></a>
+                <div><a href="./draft.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="container mt-3">
@@ -1601,10 +1600,130 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div>
-                        <button class="btn btn-light" type="button" id="btn-add-another-line">
-                            <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> Add another line
-                        </button>
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="btn btn-light" type="button" id="btn-add-another-line">
+                                <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> Add another line
+                            </button>
+                        </div>
+                        <div class="col-1">
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Add another line</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupSalesOrder">Add items in bulk</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupSalesOrder" tabindex="-1"
+                            aria-labelledby="popupSalesOrderLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupSalesOrderLabel">Sales Order#</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control border border-primary" id=""
+                                                        placeholder="Type to search or scan the barcode of the item">
+                                                </div>
+                                                <div
+                                                    class="mb-2 d-flex justify-content-between align-items-center bg-light rounded p-2">
+                                                    <div><b>DK</b>
+                                                        <div><small>SKU: 2984894</small></div>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa fa-check-circle text-secondary"
+                                                            aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="mb-2 d-flex justify-content-between align-items-center bg-light rounded p-2">
+                                                    <div><b>CK</b>
+                                                        <div><small>SKU: 2984894</small></div>
+                                                    </div>
+                                                    <div>
+                                                        <b>Stock on Hand</b> <i
+                                                            class="fa fa-check-circle text-secondary"
+                                                            aria-hidden="true"></i>
+                                                        <div><small class="text-success">50.00 pcs</small></div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="mb-2 d-flex justify-content-between align-items-center bg-light rounded p-2">
+                                                    <div><b>AK</b>
+                                                        <div><small>SKU: 123456</small></div>
+                                                    </div>
+                                                    <div>
+                                                        <b>Stock on Hand</b> <i class="fa fa-check-circle text-success"
+                                                            aria-hidden="true"></i>
+                                                        <div><small class="text-success">49.00 pcs</small></div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="mb-2 d-flex justify-content-between align-items-center bg-light rounded p-2">
+                                                    <div><b>BK</b>
+                                                        <div><small>SKU: 2984894</small></div>
+                                                    </div>
+                                                    <div>
+                                                        <b>Stock on Hand</b> <i class="fa fa-check-circle text-success"
+                                                            aria-hidden="true"></i>
+                                                        <div><small class="text-success">1.00 box</small></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 border-left pl-3">
+                                                <div class="mb-3 row border-bottom pb-3">
+                                                    <label for="" class="col-sm-5 col-form-label">Selected Items
+                                                    </label>
+                                                    <div class="col-sm-2">
+                                                        <input type="text" class="form-control" id="" placeholder="2">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-4">[123456] AK</div>
+                                                    <div class="col-3"></div>
+                                                    <div class="col-5">
+                                                        <div class="d-flex justify-content-around align-items-center"><i
+                                                                class="fa fa-minus-circle text-primary"
+                                                                aria-hidden="true"></i> <input type="text"
+                                                                class="form-control mx-3" id="" placeholder="1"
+                                                                style="width: 65px;"> <i
+                                                                class="fa fa-plus-circle text-primary"
+                                                                aria-hidden="true"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-4">[2984894] BK</div>
+                                                    <div class="col-3"></div>
+                                                    <div class="col-5">
+                                                        <div class="d-flex justify-content-around align-items-center"><i
+                                                                class="fa fa-minus-circle text-primary"
+                                                                aria-hidden="true"></i> <input type="text"
+                                                                class="form-control mx-3" id="" placeholder="1"
+                                                                style="width: 65px;"> <i
+                                                                class="fa fa-plus-circle text-primary"
+                                                                aria-hidden="true"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Add items</button>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="mt-4">

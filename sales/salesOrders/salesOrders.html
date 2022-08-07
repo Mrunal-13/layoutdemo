@@ -4029,9 +4029,9 @@
             <div class="col-11">
                 <table class="table table-customer">
                     <thead>
-                        <tr>
+                        <tr class="salesTableHead1">
                             <th>
-                                <input class="form-check-input" type="checkbox" value="" id="">Date
+                                <input class="form-check-input checkSalesHead" type="checkbox" value="" id="">Date
                             </th>
                             <th>Sales Order#</th>
                             <th>Reference#</th>
@@ -4044,66 +4044,61 @@
                             <th>Amount</th>
                             <th>Delivery Method</th>
                         </tr>
+                        <tr class="salesTableHead2">
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
+                                        class="fa fa-files-o" aria-hidden="true"></i></button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
+                                        class="fa fa-print" aria-hidden="true"></i></button>
+                            </th>
+                            <th>
+                                <button type="button"
+                                    class="btn btn-outline-secondary bg-light text-dark dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Bulk
+                                    Actions</button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Mark as Confirmed</a></li>
+                                    <li><a class="dropdown-item" href="#">Mark shipment as fulfilled</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Bulk Cancel Items</a>
+                                    <li><a class="dropdown-item" href="#">Bulk Update</a>
+                                    <li><a class="dropdown-item" href="#">Bulk reopen canceled items</a>
+                                    <li><a class="dropdown-item" href="#">Backorder</a>
+                                    <li><a class="dropdown-item" href="#">Dropship</a>
+                                    <li><a class="dropdown-item" href="#">Create Quick Shipments</a>
+                                    <li><a class="dropdown-item" href="#">Convert to Invoice</a>
+                                    <li><a class="dropdown-item" href="#">Merge Sales Orders</a>
+                                    </li>
+                                </ul>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
+                                    data-bs-toggle="modal" data-bs-target="#popupDelete">Delete</button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark">Send
+                                    Mail</button>
+                            </th>
+                            <th>
+                                1 Sales Order(s) Selected
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>
+                                <i class="fa fa-times fs-5 mb-2" aria-hidden="true" id="closeSalesHead"></i>
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck">
+                                <input class="form-check-input checkSalesHead" type="checkbox" value="" id="">
                                 12/07/2022
                             </td>
-                            <div class="modal fade" id="popupCheck" tabindex="-1" aria-labelledby="popupCheckLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modalCheck">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"><i
-                                                        class="fa fa-files-o" aria-hidden="true"></i></button>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"><i
-                                                        class="fa fa-print" aria-hidden="true"></i></button>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark dropdown-toggle"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">Bulk
-                                                    Actions</button>
-                                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                    <li><a class="dropdown-item" href="#">Mark as Confirmed</a></li>
-                                                    <li><a class="dropdown-item" href="#">Mark shipment as fulfilled</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Bulk Cancel Items</a>
-                                                    <li><a class="dropdown-item" href="#">Bulk Update</a>
-                                                    <li><a class="dropdown-item" href="#">Bulk reopen canceled items</a>
-                                                    <li><a class="dropdown-item" href="#">Backorder</a>
-                                                    <li><a class="dropdown-item" href="#">Dropship</a>
-                                                    <li><a class="dropdown-item" href="#">Create Quick Shipments</a>
-                                                    <li><a class="dropdown-item" href="#">Convert to Invoice</a>
-                                                    <li><a class="dropdown-item" href="#">Merge Sales Orders</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#popupDelete">Delete</button>
-                                            </div>
-                                            <div class="mr-3">
-                                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark">Send
-                                                    Mail</button>
-                                            </div>
-                                            <div class="mt-1">1 Sales Order(s) Selected</div>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -4141,8 +4136,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck">
+                                <input class="form-check-input checkSalesHead" type="checkbox" value="" id="">
                                 12/07/2022
                             </td>
                             <td><a href="./allSalesOrders.html">SO-00001</a></td>

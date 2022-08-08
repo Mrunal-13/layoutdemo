@@ -278,7 +278,6 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -295,10 +294,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
@@ -313,10 +310,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -411,7 +406,7 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
                     href="#collapseExamplePages" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
+                    <i class="fa fa-fw fa fa-shopping-cart"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
@@ -419,7 +414,7 @@
                         <a href="../customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="./allEstimates.html" class="sales-link">Estimates</a>
+                        <a href="../estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
                         <a href="../salesOrders/salesOrders.html">Sales Orders</a>
@@ -434,7 +429,7 @@
                         <a href="../delivery-challans/deliveryChallans.html">Delivery Challans</a>
                     </li>
                     <li>
-                        <a href="../invoices/invoices.html">Invoices</a>
+                        <a href="./invoices.html" class="sales-link">Invoices</a>
                     </li>
                     <li>
                         <a href="">Received Payments</a>
@@ -561,7 +556,7 @@
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    All Estimates
+                                    All Invoices
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                     <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
@@ -569,21 +564,23 @@
                                     <li><a class="dropdown-item" href="#">Draft</a></li>
                                     <li><a class="dropdown-item" href="#">Pending Approval</a></li>
                                     <li><a class="dropdown-item" href="#">Approved</a></li>
-                                    <li><a class="dropdown-item" href="#">Sent</a></li>
                                     <li><a class="dropdown-item" href="#">Client Viewed</a></li>
-                                    <li><a class="dropdown-item" href="#">Accepted</a></li>
-                                    <li><a class="dropdown-item" href="#">Invoiced</a></li>
-                                    <li><a class="dropdown-item" href="#">Declined</a></li>
-                                    <li><a class="dropdown-item" href="#">Expired</a></li>
+                                    <li><a class="dropdown-item" href="#">Partially Paid</a></li>
+                                    <li><a class="dropdown-item" href="#">Unpaid</a></li>
+                                    <li><a class="dropdown-item" href="#">Overdue</a></li>
+                                    <li><a class="dropdown-item" href="#">Payment Initiated</a></li>
+                                    <li><a class="dropdown-item" href="#">Paid</a></li>
+                                    <li><a class="dropdown-item" href="#">Void</a></li>
+                                    <li><a class="dropdown-item" href="#">Yet To Be Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Invoices</a></li>
+                                    <li><a class="dropdown-item" href="#">Bills Of Supply</a></li>
+                                    <li><a class="dropdown-item" href="#">Debit Note</a></li>
+                                    <li><a class="dropdown-item" href="#">Write Off</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-2">
-                            <a href="./newEstimates.html">
-                                <button class="btn btn-warning text-primary">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </button>
-                            </a>
                         </div>
                         <div class="col-2">
                             <div class="dropdown">
@@ -596,17 +593,29 @@
                                     <li><a class="dropdown-item" href="#">Created Time</a></li>
                                     <li><a class="dropdown-item" href="#">Last Modified Time</a></li>
                                     <li><a class="dropdown-item" href="#">Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Estimate Number</a></li>
+                                    <li><a class="dropdown-item" href="#">Invoice#</a></li>
+                                    <li><a class="dropdown-item" href="#">Order Number</a></li>
                                     <li><a class="dropdown-item" href="#">Customer Name</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Amount</a></li>
+                                    <li><a class="dropdown-item" href="#">Due Date</a></li>
+                                    <li><a class="dropdown-item" href="#">Amount</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Balance Due</a></li>
                                     <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
                                                 aria-hidden="true"></i>
-                                            Import Items</a></li>
+                                            Import Invoices</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
+                                                aria-hidden="true"></i>
+                                            Import Bill of supply</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupExportItem">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Invoices
+                                        </a></li>
                                     <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupExportItem">
                                             <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Items
+                                            Export as E-Way Bill
                                         </a></li>
                                     <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupExportCurrent">
@@ -3093,97 +3102,50 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <h6>Select Module<span class="text-danger">*</span></h6>
-                                                        <div class="dropdown mb-3 dropdown-button">
-                                                            <button class="btn border dropdown-toggle" type="button"
-                                                                id="dropdownMenuButton4" data-bs-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                Estimate
-                                                            </button>
-                                                            <ul class="dropdown-menu"
-                                                                aria-labelledby="dropdownMenuButton4">
-                                                                <li><a class="dropdown-item border-bottom" href="#">
-                                                                        <input type="text" class="form-control" name=""
-                                                                            id="">
-                                                                    </a></li>
-                                                                <li><a class="dropdown-item text-secondary" href="#">
-                                                                        Sales
-                                                                    </a></li>
-                                                                <li><a class="dropdown-item" href="#">Estimates</a></li>
-                                                                <li><a class="dropdown-item" href="#">Sales Orders</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Invoices</a></li>
-                                                                <li><a class="dropdown-item" href="#">Invoice
-                                                                        Payments</a></li>
-                                                                <li><a class="dropdown-item" href="#">Recurring
-                                                                        Invoices</a></li>
-                                                                <li><a class="dropdown-item" href="#">Credit Notes</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Credit Notes
-                                                                        Applied to Invoices</a></li>
-                                                                <li><a class="dropdown-item mb-3" href="#">Refunds</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item text-secondary"
-                                                                        href="#">Purchase</a></li>
-                                                                <li><a class="dropdown-item" href="#">Purchase
-                                                                        Orders</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bills</a></li>
-                                                                <li><a class="dropdown-item" href="#">Bill of Entry</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Bill Payments</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Vendor Credits</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item mb-3" href="#">Vendor Credit
-                                                                        Refunds</a></li>
-                                                                <li><a class="dropdown-item text-secondary"
-                                                                        href="#">Timesheet</a></li>
-                                                                <li><a class="dropdown-item" href="#">Projects</a></li>
-                                                                <li><a class="dropdown-item" href="#">Timesheet</a></li>
-                                                                <li><a class="dropdown-item mb-3" href="#">Project
-                                                                        Tasks</a></li>
-                                                                <li><a class="dropdown-item text-secondary"
-                                                                        href="#">Others</a></li>
-                                                                <li><a class="dropdown-item" href="#">Customers</a></li>
-                                                                <li><a class="dropdown-item" href="#">Vendors</a></li>
-                                                                <li><a class="dropdown-item" href="#">Items</a></li>
-                                                                <li><a class="dropdown-item" href="#">Exchange Rates</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Users</a></li>
-                                                                <li><a class="dropdown-item" href="#">Chart of
-                                                                        Accounts</a></li>
-                                                                <li><a class="dropdown-item" href="#">Manual
-                                                                        Journals</a></li>
-                                                            </ul>
-                                                        </div>
+                                                        <select class="js-example-basic-single" name="state">
+                                                            <option>Estimates</option>
+                                                            <option disabled>Sales</option>
+                                                            <option>Estimates</option>
+                                                            <option>Sales Orders</option>
+                                                            <option>Invoices</option>
+                                                            <option>Invoice Payments</option>
+                                                            <option>Recurring Invoices</option>
+                                                            <option>Credit Notes</option>
+                                                            <option>Credit Notes Applied to Invoices</option>
+                                                            <option>Refunds</option>
+                                                            <option disabled>Purchase</option>
+                                                            <option>Purchase Orders</option>
+                                                            <option>Bills</option>
+                                                            <option>Bill of Entry</option>
+                                                            <option>Bill Payments</option>
+                                                            <option>Vendor Credits</option>
+                                                            <option>Vendor Credit Refunds</option>
+                                                            <option disabled>Timesheet</option>
+                                                            <option>Projects</option>
+                                                            <option>Timesheet</option>
+                                                            <option>Project Tasks</option>
+                                                            <option disabled>Others</option>
+                                                            <option>Customers</option>
+                                                            <option>Vendors</option>
+                                                            <option>Items</option>
+                                                            <option>Exchange Rates</option>
+                                                            <option>Users</option>
+                                                            <option>Chart of Accounts</option>
+                                                            <option>Manual Journals</option>
+                                                        </select>
                                                         <h6>Select Status<span class="text-danger">*</span></h6>
-                                                        <div class="dropdown mb-3 dropdown-button">
-                                                            <button class="btn border dropdown-toggle" type="button"
-                                                                id="dropdownMenuButton4" data-bs-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                All
-                                                            </button>
-                                                            <ul class="dropdown-menu"
-                                                                aria-labelledby="dropdownMenuButton4">
-                                                                <li><a class="dropdown-item border-bottom" href="#">
-                                                                        <input type="text" class="form-control" name=""
-                                                                            id="">
-                                                                    </a></li>
-                                                                <li><a class="dropdown-item" href="#">All</a></li>
-                                                                <li><a class="dropdown-item" href="#">Draft</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Pending
-                                                                        Approval</a></li>
-                                                                <li><a class="dropdown-item" href="#">Approved</a></li>
-                                                                <li><a class="dropdown-item" href="#">Sent</a></li>
-                                                                <li><a class="dropdown-item" href="#">Invoiced</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Accepted</a></li>
-                                                                <li><a class="dropdown-item" href="#">Declined</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Expired</a></li>
-                                                                <li><a class="dropdown-item" href="#">Rejected</a></li>
-                                                            </ul>
-                                                        </div>
+                                                        <select class="js-example-basic-single" name="state">
+                                                            <option>All</option>
+                                                            <option>Draft</option>
+                                                            <option>Pending Approval</option>
+                                                            <option>Approved</option>
+                                                            <option>Sent</option>
+                                                            <option>Invoiced</option>
+                                                            <option>Accepted</option>
+                                                            <option>Declined</option>
+                                                            <option>Expired</option>
+                                                            <option>Rejected</option>
+                                                        </select>
                                                         <div class="mb-2">
                                                             <label class="form-label" for="">
                                                                 Date Range
@@ -3662,40 +3624,46 @@
                         <div class="col-10">Mr. Badshah khan</div>
                         <div class="col-2"><small>26/06/2017</small></div>
                         <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text"><small><i class="fa fa-envelope-open text-secondary"
-                                        aria-hidden="true"></i> Sent</small></div>
-                            <div>₹800.00 <span class="text-primary">EST-000001</span></div>
+                            <div class="div-send-text"><small class="text-secondary">Draft</small></div>
+                            <div>₹800.00 <span class="text-primary">BOS-00004 / SO-00004</span></div>
                         </div>
                     </div>
                     <div class="row py-3 px-5 border-bottom">
                         <div class="col-10">Sanole baba</div>
                         <div class="col-2"><small>26/06/2017</small></div>
                         <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text"><small><i class="fa fa-envelope-open text-secondary"
-                                        aria-hidden="true"></i> Sent</small></div>
-                            <div>₹2800.00 <span class="text-primary">EST-000002</span></div>
+                            <div class="div-send-text"><small class="text-success">Closed</small></div>
+                            <div>₹2800.00 <span class="text-primary">INV-00005 / SO-00002</span></div>
                         </div>
                     </div>
                     <div class="row py-3 px-5 border-bottom">
-                        <div class="col-10">sample baba</div>
+                        <div class="col-10">Sample baba</div>
                         <div class="col-2"><small>26/06/2017</small></div>
                         <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text"><small><i class="fa fa-envelope-open text-secondary"
-                                        aria-hidden="true"></i> Sent</small></div>
-                            <div>₹200.00 <span class="text-primary">EST-000003</span></div>
+                            <div class="div-send-text"><small class="text-success">Closed</small></div>
+                            <div>₹200.00 <span class="text-primary">INV-00005 / SO-00001</span></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-9 border-left">
                     <div class="row mb-4 border-bottom py-2 pb-3">
                         <div class="col-2">
-                            <h5>EST-000001</h5>
+                            <h5>BOS-00004</h5>
                         </div>
-                        <div class="col"></div>
                         <div class="col">
-                            <a href="./newEstimates.html">
+                            <a href="./newSalesOrder.html">
                                 <button class="btn btn-light border">Edit</button>
                             </a>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border">
+                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border">
+                                <i class="fa fa-print" aria-hidden="true"></i>
+                            </button>
                         </div>
                         <div class="col">
                             <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupFiles">
@@ -3738,52 +3706,39 @@
                             </div>
                         </div>
                         <div class="col">
-                            <button class="btn btn-light border">
-                                <i class="fa fa-files-o" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border">
-                                <i class="fa fa-print" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="col">
                             <div class="dropdown">
                                 <button class="btn btn-light border dropdown-toggle" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Create project</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark as Accepted</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark as Declined</a></li>
+                                    <li><a class="dropdown-item" href="#">Create Credit Note</a></li>
                                     <li><a class="dropdown-item" href="#">Clone</a></li>
+                                    <li><a class="dropdown-item" href="#">Void</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
-                                    <li><a class="dropdown-item" href="#">Estimate Preferences</a></li>
+                                    <li><a class="dropdown-item" href="#">Invoice Preferences</a></li>
                                 </ul>
-                            </div>
-                            <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                                <h5>Are you sure?</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                                <p>Once deleted, they cannot be undone</p>
-                                            </div>
-                                            <div class="d-flex justify-content-around mb-4">
-                                                <a href="./estimates.html">
-                                                    <button type="button" class="btn btn-light"
-                                                        data-bs-dismiss="modal">Delete</button>
-                                                </a>
-                                                <button type="button" class="btn btn-primary"
-                                                    data-bs-dismiss="modal">No</button>
+                                <div class="modal fade" id="popupDelete" tabindex="-1"
+                                    aria-labelledby="popupDeleteLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                                    <h5>Are you sure?</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                                    <p>Once deleted, they cannot be undone</p>
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-4">
+                                                    <a href="./invoices.html"><button type="button"
+                                                            class="btn btn-light">Delete</button></a>
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">No</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -3795,7 +3750,32 @@
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                             </button>
                         </div>
-                        <div class="col"></div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupRecordPay"><i class="fa fa-inr" aria-hidden="true"></i> Record Payment</button>
+                            <div class="modal fade" id="popupRecordPay" tabindex="-1"
+                                aria-labelledby="popupRecordPayLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row px-5 py-3">
+                                                <div class="col-1">
+                                                    <i class="fa fa-info-circle fs-1" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    Once the payment is recorded the invoice status will be changed to 'Sent'.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <span class="mr-5">Do not show this again</span>
+                                            <button type="button" class="btn btn-primary">Ok</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col">
                             <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
                                 <i class="fa fa-share-alt" aria-hidden="true"></i> Share
@@ -4064,45 +4044,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1 mt-1">
-                            <a href="./estimates.html" class="text-dark"><i class="fa fa-times"
+                        <div class="col mt-1 delete-link position-absolute">
+                            <a href="./invoices.html" class="text-dark"><i class="fa fa-times"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="row border rounded p-2 m-2 d-flex align-items-center">
+                    <div class="row rounded p-2 m-2 d-flex align-items-center border rounded">
                         <div class="col">
-                            <button class="btn btn-light border">
-                                <i class="fa fa-clone" aria-hidden="true"></i>
-                            </button>
+                            <i class="fa fa-envelope-open-o fs-3" aria-hidden="true"></i>
                         </div>
                         <div class="col-7">
-                            <h6>Convert the estimate</h6>
-                            <div>Create an invoice or sales order for this estimate to confirm the sale and bill your
-                                customer.</div>
-                        </div>
-                        <div class="col">
-                            <div class="dropdown">
-                                <button class="btn btn-light border dropdown-toggle" type="button"
-                                    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Convert
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item" href="#">Convert to Bill of Supply</a></li>
-                                    <li><a class="dropdown-item" href="#">Convert to Sales Order</a></li>
-                                </ul>
+                            <h6><i>Send the bill of supply</i></h6>
+                            <div>A bill of supply is prepared. You can email it to your customer or mark it as sent
                             </div>
                         </div>
+                        <div class="col"></div>
                         <div class="col">
-                            <button class="btn btn-light border" type="button">
-                                Create Project
-                            </button>
+                            <a href="./recordPayment.html"> <button class="btn btn-secondary">
+                                    Send Bill Of Supply
+                                </button></a>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-end text-primary align-items-center m-2"> <i
-                            class="fa fa-envelope-open text-primary" aria-hidden="true" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="Customer has seen this on 03/07/2022 at 09:09 AM">
-                        </i> Viewed</div>
-                    <div class="border rounded mx-2">
+                    <div class="border rounded mx-2 mt-4">
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -4117,7 +4080,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="position-absolute bg-primary banner-send">Sent</div>
+                        <div class="position-absolute bg-secondary banner-send draft-banner">Draft</div>
                         <div class="border mx-5 my-3 mb-5 p-4 position-relative">
                             <div class="">
                                 <h5>Dr.aware hospital and Nursing Home</h5>
@@ -4125,18 +4088,31 @@
                                 <div>fulasheth</div>
                                 <div>bahubali Maharashtra 425160</div>
                                 <div>India</div>
-                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Estimate</h3>
+                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Bill Of Supply
+                                    </h3>
                                 </div>
                             </div>
                             <div class="border-bottom border-top row p-2">
                                 <div class="col-6">
                                     <div class="row">
                                         <div class="col-6">#</div>
-                                        <div class="col-6 fw-bold">: EST-000001</div>
+                                        <div class="col-6 fw-bold">: BOS-000011</div>
                                     </div>
                                     <div class="row mb-4">
-                                        <div class="col-6">Estimate Date</div>
+                                        <div class="col-6">Bill Of Supply Date</div>
                                         <div class="col-6 fw-bold">: 26/06/2017</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Terms</div>
+                                        <div class="col-6 fw-bold">: Due on Receipt</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Due Date</div>
+                                        <div class="col-6 fw-bold">: 26/06/2017</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">P.O.#</div>
+                                        <div class="col-6 fw-bold">: SO-00004</div>
                                     </div>
                                     <div class="row bg-light border-bottom border-top mb-3">
                                         <div class="col fw-bold">Bill To</div>
@@ -4163,7 +4139,23 @@
                                         <div class="col-6">Place Of Supply</div>
                                         <div class="col-6 fw-bold">: Maharashtra (27)</div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-6">Sales person</div>
+                                        <div class="col-6 fw-bold">: Jay</div>
+                                    </div>
                                     <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-3">
                                         <div class="col-6"></div>
                                         <div class="col-6"></div>
                                     </div>
@@ -4187,11 +4179,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="m-2">Subject : I will add them</div>
-                            <table class="table table-bordered mt-5">
+                            <table class="table table-bordered">
                                 <thead class="bg-light">
                                     <tr>
                                         <th>Item & Description</th>
+                                        <th>HSN/SAC</th>
                                         <th>Qty</th>
                                         <th>Rate</th>
                                         <th>Amount</th>
@@ -4201,8 +4193,8 @@
                                     <tr>
                                         <td><span class="fw-bold">AK</span>
                                             <div>Description of item</div>
-                                            <div>SAC: 998313</div>
                                         </td>
+                                        <td>998313</td>
                                         <td>1.0
                                             <div>pcs</div>
                                         </td>
@@ -4213,8 +4205,8 @@
                                         <td>
                                             <span class="fw-bold">sample service
                                             </span>
-                                            <div>SAC: 998514</div>
                                         </td>
+                                        <td>997156</td>
                                         <td>1.0
                                             <div>pcs</div>
                                         </td>
@@ -4223,24 +4215,34 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div>Items in Total- 2.0</div>
                                             <div>Total In Words (Indian Rupee)</div>
-                                            <div class="fw-bold mb-3"><i>Eight Hundred Only</i></div>
-                                            <div class="mb-3">Looking forward for your business.</div>
-                                            <div class="fw-bold">Terms & Conditions</div>
+                                            <div class="mb-3"><i>Nine Hundred Six Only</i></div>
+                                            <div class="mb-3">Thanks for your business.</div>
                                         </td>
-                                        <td colspan="3">
+                                        <td colspan="4">
                                             <div class="d-flex justify-content-around">
                                                 <div>
                                                     Sub Total
                                                 </div>
                                                 <div>800.00</div>
                                             </div>
-                                            <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
+                                            <div class="d-flex justify-content-around">
+                                                <div>
+                                                    Adjustment
+                                                </div>
+                                                <div>6.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-around fw-bold">
                                                 <div>
                                                     Total
                                                 </div>
-                                                <div>₹800.00</div>
+                                                <div>₹806.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
+                                                <div>
+                                                    Balance Due
+                                                </div>
+                                                <div>₹806.00</div>
                                             </div>
                                             <div class="d-flex justify-content-center align-items-center">
                                                 <div>Authorized Signature</div>
@@ -4251,15 +4253,28 @@
                             </table>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between mx-3 mt-2 mb-5">
-                        <div>
-                            <h6>More Information</h6>
-                            <div>
-                                <small>Salesperson : jay</small>
-                            </div>
-                        </div>
+                    <div class="d-flex justify-content-end mx-3 mt-2 mb-5">
                         <div>Template : 'Spreadsheet Template' <a href="#">Change</a></div>
                     </div>
+                    <div class="text-secondary">Associated Sales Orders ( 1 )</div>
+                    <table class="table mb-5">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Sales Order#</th>
+                                <th>Status</th>
+                                <th>Shipment Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>19/07/2022</td>
+                                <td class="text-primary"><a href="./allSalesOrders.html">SO-00004</a></td>
+                                <td class="text-success">CLOSED</td>
+                                <td>20/07/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

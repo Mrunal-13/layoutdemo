@@ -5,15 +5,31 @@
 
 .navbar {
     position: fixed;
+    padding: 0;
+    height: 61px;
     width: 100%;
     z-index: 7;
     border-bottom: 3px solid black;
 }
-
+.navbar-brand{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    height: 100%;
+    font-weight: 700;
+}
+.navbar-brand:hover{
+    background-color: #FFDEDE;
+}
+.navbar-brand p{
+    margin: 0 15px 0 0;
+}
 .buttonForSideNav {
     outline: none;
+    height: 40px;
     border: 1px solid #a4a4a4;
     margin-right: 10px;
+    margin-top: 10px;
     border-radius: 9px;
 }
 
@@ -22,7 +38,8 @@
 }
 
 .navbar-first {
-    width: 200px;
+    width: 20%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -40,7 +57,7 @@
 }
 
 .navbar-second {
-    width: 97%;
+    width: 84%;
 }
 
 .secondNavUl {
@@ -49,6 +66,7 @@
     justify-content: space-between;
     padding: 0;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .navbar-second .nav-item {
@@ -351,13 +369,16 @@
 @media only screen and (max-width: 1024px) {
 
     .navbar-first {
-        width: 100px;
+        width: 15%;
     }
 
     .navbar-second {
-        width: 69%;
+        width: 67%;
     }
-
+    .navbar-brand{
+        display: flex;
+        font-size: 10px;
+    }
     .navbar-brand,
     .buttonForSideNav {
         font-size: 12px;
@@ -440,13 +461,16 @@
     .navbar-third {
         display: none;
     }
-
+    .buttonForSideNav {
+        margin-left: auto;
+    }
     .sidenav {
-        top: 31px;
+        top: 60px;
     }
 
     .navbar-first {
         width: 100%;
+        float: right;
     }
 
     .navbar-sidenav>.nav-item>.nav-link {

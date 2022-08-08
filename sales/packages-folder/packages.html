@@ -724,9 +724,9 @@
             <div class="col-11">
                 <table class="table table-customer">
                     <thead>
-                        <tr>
-                            <th><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> Package Date</th>
+                        <tr class="packageTableHead1">
+                            <th><input class="form-check-input checkPackageHead" type="checkbox" value="" id=""> Package
+                                Date</th>
                             <th>Package#</th>
                             <th>Carrier</th>
                             <th>Tracking#</th>
@@ -736,11 +736,33 @@
                             <th>Customer Name</th>
                             <th>Quantity</th>
                         </tr>
+                        <tr class="packageTableHead2">
+                            <th> <i class="fa fa-square-o" aria-hidden="true"></i></th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
+                                        class="fa fa-files-o" aria-hidden="true"></i></button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
+                                        class="fa fa-print" aria-hidden="true"></i></button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
+                                    data-bs-toggle="modal" data-bs-target="#popupDelete">Delete</button>
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>
+                                <i class="fa fa-times fs-5 mb-2" aria-hidden="true" id="closePackageHead"></i>
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> 12/07/2022</td>
+                            <td><input class="form-check-input checkPackageHead" type="checkbox" value="" id="">
+                                12/07/2022</td>
                             <td><a href="./notShipped.html">PKG-00001</a></td>
                             <td>Indiapost</td>
                             <td></td>
@@ -751,8 +773,8 @@
                             <td>1.00</td>
                         </tr>
                         <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> 12/07/2022</td>
+                            <td><input class="form-check-input checkPackageHead" type="checkbox" value="" id="">
+                                12/07/2022</td>
                             <td><a href="./shipped.html">PKG-00001</a></td>
                             <td>Indiapost</td>
                             <td></td>
@@ -763,8 +785,8 @@
                             <td>1.00</td>
                         </tr>
                         <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="" data-bs-toggle="modal"
-                                    data-bs-target="#popupCheck"> 12/07/2022</td>
+                            <td><input class="form-check-input checkPackageHead" type="checkbox" value="" id="">
+                                12/07/2022</td>
                             <td><a href="./delivered.html">PKG-00001</a></td>
                             <td>Indiapost</td>
                             <td></td>
@@ -776,32 +798,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="modal fade" id="popupCheck" tabindex="-1" aria-labelledby="popupCheckLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modalCheck">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="mr-3 text-center">
-                                    <i class="fa fa-square-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="mr-3">
-                                    <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                            class="fa fa-files-o" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="mr-3">
-                                    <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                            class="fa fa-print" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="mr-3">
-                                    <button type="button" class="btn btn-outline-secondary bg-light text-dark"
-                                        data-bs-toggle="modal" data-bs-target="#popupDelete">Delete</button>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">

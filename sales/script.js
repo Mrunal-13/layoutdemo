@@ -228,6 +228,18 @@ $(document).ready(function () {
         $(".shipmentTableHead1").show();
         $(".shipmentTableHead2").hide();
     });
+
+    $(".invoiceTableHead1").show();
+    $(".invoiceTableHead2").hide();
+
+    $(".checkInvoiceHead").click(function () {
+        $(".invoiceTableHead2").show();
+        $(".invoiceTableHead1").hide();
+    });
+    $("#closeInvoiceHead").click(function () {
+        $(".invoiceTableHead1").show();
+        $(".invoiceTableHead2").hide();
+    });
 });
 
 // Alert Dropdown

@@ -588,7 +588,8 @@ main .active-item {
 #popupDeleteDelivered .modal-body i,
 #popupDeleteUndelivered .modal-body i,
 #popupDelete2 .modal-body i,
-#popupDelete3 .modal-body i {
+#popupDelete3 .modal-body i,  
+#popupRecordPay .modal-body i  {
     color: #EF8523;
     font-size: 45px;
 }
@@ -1200,5 +1201,16 @@ main .active-item {
     font-size: 60px;
 }
 
+/* Invoice */
+.arrow-table {
+    position: absolute;
+    top: 77px;
+    left: 13px;
+}
+.invoice-dropdown {
+    position: absolute;
+    top: 31px;
+    left: 50px;
+}
 
 /* Code for Sales @anjudewangan */

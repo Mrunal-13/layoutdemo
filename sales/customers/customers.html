@@ -3272,10 +3272,9 @@
                         </tr>
                         <tr class="cusTableHead2">
                             <th>
-                                <button type="button"
-                                                    class="btn btn-outline-secondary bg-light text-dark"><i
-                                                        class="fa fa-files-o" aria-hidden="true" data-bs-toggle="modal"
-                                                        data-bs-target="#popupDateRange1"></i></button>
+                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
+                                        class="fa fa-files-o" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#popupDateRange1"></i></button>
                             </th>
                             <th>
                                 <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
@@ -3320,222 +3319,16 @@
                                 <input class="form-check-input checkCusHead" type="checkbox" value="" id="">
                                 <a href="./allCustomers.html">Mr. Badshah khan</a>
                             </td>
-                            <div class="modal fade" id="popupDateRange1" tabindex="-1"
-                                aria-labelledby="popupDateRange1Label" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupDateRange1Label">Choose a date range to
-                                                generate the statement</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">From Date</label>
-                                                <input type="text" class="form-control" id="" placeholder="01/07/2022">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">To Date</label>
-                                                <input type="text" class="form-control" id="" placeholder="31/07/2022">
-                                            </div>
-                                            <div>Note:</div>
-                                            <ul class="ulBilling">
-                                                <li>The customer will create a statement only if the opening balance and
-                                                    the transaction are done within the time chosen by the customer.
-                                                </li>
-                                                <li>The customer statement will be sent to the primary email address of
-                                                    all selected customers.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-start">
-                                            <button type="button" class="btn btn-primary">Send Statements</button>
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupDateRange2" tabindex="-1"
-                                aria-labelledby="popupDateRange2Label" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupDateRange2Label">Choose a date range to
-                                                generate the statement</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">From Date</label>
-                                                <input type="text" class="form-control" id="" placeholder="01/07/2022">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">To Date</label>
-                                                <input type="text" class="form-control" id="" placeholder="31/07/2022">
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-start">
-                                            <button type="button" class="btn btn-primary">Send Statements</button>
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupReqGSTInfo" tabindex="-1"
-                                aria-labelledby="popupReqGSTInfoLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body text-center rounded" style="background-color: #9ddeb7;">
-                                            <h6><i class="fa fa-check" aria-hidden="true"></i> Email has been
-                                                successfully sent to customers.</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupMarkActive" tabindex="-1"
-                                aria-labelledby="popupMarkActiveLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body text-center rounded" style="background-color: #9ddeb7;">
-                                            <h6><i class="fa fa-check" aria-hidden="true"></i> The selected contacts
-                                                have been marked as Active.</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupMarkInactive" tabindex="-1"
-                                aria-labelledby="popupMarkInactiveLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body text-center rounded" style="background-color: #9ddeb7;">
-                                            <h6><i class="fa fa-check" aria-hidden="true"></i> The selected contacts
-                                                have been marked as Inactive.</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupBulkUpdate" tabindex="-1"
-                                aria-labelledby="popupBulkUpdateLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupBulkUpdateLabel">Bulk Update - Contacts
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3 row d-flex align-items-center">
-                                                <label for="" class="col-sm-4 col-form-label">Customer Type</label>
-                                                <div class="col-sm-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                                        <label class="form-check-label" for="flexRadioDefault1">
-                                                            Individual
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="flexRadioDefault" id="flexRadioDefault2">
-                                                        <label class="form-check-label" for="flexRadioDefault2">
-                                                            Business
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="" class="col-sm-4 col-form-label">GST Treatment</label>
-                                                <div class="col-sm-8">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Select a GST Treatment</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="" class="col-sm-4 col-form-label">Place Of Supply</label>
-                                                <div class="col-sm-8">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="" class="col-sm-4 col-form-label">Payment Terms</label>
-                                                <div class="col-sm-8">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Due on Receipt</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="" class="col-sm-4 col-form-label">Template Language</label>
-                                                <div class="col-sm-8">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>English</option>
-                                                        <option></option>
-                                                        <option></option>
-                                                        <option></option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-start">
-                                            <button type="button" class="btn btn-primary">Update Field</button>
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                                <h5>Are you sure?</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                                <p>Once deleted, they cannot be undone</p>
-                                            </div>
-                                            <div class="d-flex justify-content-around mb-4">
-                                                <button type="button" class="btn btn-light"
-                                                    data-bs-dismiss="modal">Delete</button>
-                                                <button type="button" class="btn btn-primary"
-                                                    data-bs-dismiss="modal">No</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <td>Pune</td>
-                            <td>9876543210</td>
-                            <td>Consumer</td>
-                            <td></td>
-                            <td>₹200.00</td>
+                            <td><a href="./allCustomers.html" class="text-dark">Pune</a></td>
+                            <td><a href="./allCustomers.html" class="text-dark">9876543210</a></td>
+                            <td><a href="./allCustomers.html" class="text-dark">Consumer</a></td>
+                            <td><a href="./allCustomers.html" class="text-dark"></a></td>
+                            <td><a href="./allCustomers.html" class="text-dark">₹200.00</a></td>
                         </tr>
                         <tr>
                             <td class="text-primary">
                                 <input class="form-check-input checkCusHead" type="checkbox" value="" id="">
-                                <a href="#">sample baba</a>
+                                sample baba
                             </td>
                             <td></td>
                             <td></td>
@@ -3543,6 +3336,212 @@
                             <td>Maharashtra</td>
                             <td>₹200.00</td>
                         </tr>
+                        <div class="modal fade" id="popupDateRange1" tabindex="-1"
+                            aria-labelledby="popupDateRange1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupDateRange1Label">Choose a date range to
+                                            generate the statement</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">From Date</label>
+                                            <input type="text" class="form-control" id="" placeholder="01/07/2022">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">To Date</label>
+                                            <input type="text" class="form-control" id="" placeholder="31/07/2022">
+                                        </div>
+                                        <div>Note:</div>
+                                        <ul class="ulBilling">
+                                            <li>The customer will create a statement only if the opening balance and
+                                                the transaction are done within the time chosen by the customer.
+                                            </li>
+                                            <li>The customer statement will be sent to the primary email address of
+                                                all selected customers.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-start">
+                                        <button type="button" class="btn btn-primary">Send Statements</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupDateRange2" tabindex="-1"
+                            aria-labelledby="popupDateRange2Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupDateRange2Label">Choose a date range to
+                                            generate the statement</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">From Date</label>
+                                            <input type="text" class="form-control" id="" placeholder="01/07/2022">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">To Date</label>
+                                            <input type="text" class="form-control" id="" placeholder="31/07/2022">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-start">
+                                        <button type="button" class="btn btn-primary">Send Statements</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupReqGSTInfo" tabindex="-1"
+                            aria-labelledby="popupReqGSTInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center rounded" style="background-color: #9ddeb7;">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i> Email has been
+                                            successfully sent to customers.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupMarkActive" tabindex="-1"
+                            aria-labelledby="popupMarkActiveLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center rounded" style="background-color: #9ddeb7;">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i> The selected contacts
+                                            have been marked as Active.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupMarkInactive" tabindex="-1"
+                            aria-labelledby="popupMarkInactiveLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center rounded" style="background-color: #9ddeb7;">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i> The selected contacts
+                                            have been marked as Inactive.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupBulkUpdate" tabindex="-1"
+                            aria-labelledby="popupBulkUpdateLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupBulkUpdateLabel">Bulk Update - Contacts
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3 row d-flex align-items-center">
+                                            <label for="" class="col-sm-4 col-form-label">Customer Type</label>
+                                            <div class="col-sm-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault1" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Individual
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2">
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Business
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="" class="col-sm-4 col-form-label">GST Treatment</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select a GST Treatment</option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="" class="col-sm-4 col-form-label">Place Of Supply</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="" class="col-sm-4 col-form-label">Payment Terms</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Due on Receipt</option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="" class="col-sm-4 col-form-label">Template Language</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>English</option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-start">
+                                        <button type="button" class="btn btn-primary">Update Field</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mb-4">
+                                            <h5>Are you sure?</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mb-4">
+                                            <p>Once deleted, they cannot be undone</p>
+                                        </div>
+                                        <div class="d-flex justify-content-around mb-4">
+                                            <button type="button" class="btn btn-light"
+                                                data-bs-dismiss="modal">Delete</button>
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </tbody>
                 </table>
             </div>

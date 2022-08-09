@@ -3651,7 +3651,7 @@
                             <h5>BOS-00004</h5>
                         </div>
                         <div class="col">
-                            <a href="./newSalesOrder.html">
+                            <a href="../salesOrders/editBOS.html">
                                 <button class="btn btn-light border">Edit</button>
                             </a>
                         </div>
@@ -3661,7 +3661,7 @@
                             </button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-light border">
+                            <button class="btn btn-light border" name="print">
                                 <i class="fa fa-print" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -3751,7 +3751,9 @@
                             </button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupRecordPay"><i class="fa fa-inr" aria-hidden="true"></i> Record Payment</button>
+                            <button class="btn btn-light border" data-bs-toggle="modal"
+                                data-bs-target="#popupRecordPay"><i class="fa fa-inr" aria-hidden="true"></i> Record
+                                Payment</button>
                             <div class="modal fade" id="popupRecordPay" tabindex="-1"
                                 aria-labelledby="popupRecordPayLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -3762,13 +3764,15 @@
                                                     <i class="fa fa-info-circle fs-1" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="col-11">
-                                                    Once the payment is recorded the invoice status will be changed to 'Sent'.
+                                                    Once the payment is recorded the invoice status will be changed to
+                                                    'Sent'.
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
                                             <span class="mr-5">Do not show this again</span>
-                                            <button type="button" class="btn btn-primary">Ok</button>
+                                            <a href="../salesOrders/recordPayment.html"> <button type="button"
+                                                    class="btn btn-primary">Ok</button></a>
                                             <button type="button" class="btn btn-outline-secondary"
                                                 data-bs-dismiss="modal">Cancel</button>
                                         </div>
@@ -4060,12 +4064,13 @@
                         </div>
                         <div class="col"></div>
                         <div class="col">
-                            <a href="./recordPayment.html"> <button class="btn btn-secondary">
+                            <a href="../salesOrders/recordPayment.html"> <button class="btn btn-secondary">
                                     Send Bill Of Supply
                                 </button></a>
                         </div>
                     </div>
-                    <div class="border rounded mx-2 mt-4">
+                    <div class="border rounded mx-2 mt-4" style="overflow: hidden;">
+                        <div class="positionRel bg-secondary banner-send">Draft</div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -4076,12 +4081,11 @@
                                     <li><a class="dropdown-item" href="#">Change Template</a></li>
                                     <li><a class="dropdown-item" href="#">Edit Template</a></li>
                                     <li><a class="dropdown-item" href="#">Update Logo & Address</a></li>
-                                    <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+                                    <li><a class="dropdown-item" href="#">Manage Custom Fields</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="position-absolute bg-secondary banner-send draft-banner">Draft</div>
-                        <div class="border mx-5 my-3 mb-5 p-4 position-relative">
+                        <div class="border mx-5 my-3 mb-5 p-4 position-relative divPrint">
                             <div class="">
                                 <h5>Dr.aware hospital and Nursing Home</h5>
                                 <div>26b panja bazar</div>
@@ -4269,7 +4273,7 @@
                         <tbody>
                             <tr>
                                 <td>19/07/2022</td>
-                                <td class="text-primary"><a href="./allSalesOrders.html">SO-00004</a></td>
+                                <td class="text-primary"><a href="../salesOrders/allSalesOrders.html">SO-00004</a></td>
                                 <td class="text-success">CLOSED</td>
                                 <td>20/07/2022</td>
                             </tr>

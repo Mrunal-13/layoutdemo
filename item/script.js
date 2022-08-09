@@ -212,6 +212,8 @@ $(document).ready(function () {
 });
 // Add new item in table @anjudewangan
 
+// Code for Table row link @anjudewangan
+
 const addNewItem = [];
 addNewItem.map((name, des, rate, hs, usage, purchaseAcco, account, purchaseDes, purchaseRate, sku, showInStore, stockOnHand) => {
     $(".container-add-new-item .div-add-item").append('<input type="text" class="form-control" id="inputName" value="' + name + '"><select class="form-select" aria-label="Default select example" id="inputUnit"><option selected>' + usage + '</option></select> <input type="text" class="form-control" id="inputHSN" value="' + hs + '"><input type="text" class="form-control" id="inputSAC" value="' + hs + '"><input type="text" class="form-control" id="inputSelling" value="' + rate + '"><select class="form-select" aria-label="Default select example" id="inputAccount"><option selected>' + account + '</option></select><select class="form-select" aria-label="Default select example" id="inputAccountGoods"><option selected>' + purchaseAcco + '</option></select><input type="text" class="form-control" id="inputCost" value="' + purchaseRate + '"><textarea class="form-control" id="inputDes2">' + purchaseDes + '</textarea><textarea class="form-control" id="inputDes1">' + des + '</textarea>');

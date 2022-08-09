@@ -240,7 +240,51 @@ $(document).ready(function () {
         $(".invoiceTableHead1").show();
         $(".invoiceTableHead2").hide();
     });
+
+    // Code for packages section @anjuDewangan
+    $(".divPackage1-1").show();
+    $(".divPackage1-2").hide();
+
+    $(".checkPackageInput1").click(function () {
+        $(".divPackage1-2").show();
+        $(".divPackage1-1").hide();
+    });
+    $("#cancelPackage-1").click(function () {
+        $(".divPackage1-1").show();
+        $(".divPackage1-2").hide();
+    });
+
+    $(".divPackage2-1").show();
+    $(".divPackage2-2").hide();
+
+    $(".checkPackageInput2").click(function () {
+        $(".divPackage2-2").show();
+        $(".divPackage2-1").hide();
+    });
+    $("#cancelPackage-2").click(function () {
+        $(".divPackage2-1").show();
+        $(".divPackage2-2").hide();
+    });
+
+    $(".divPackage3-1").show();
+    $(".divPackage3-2").hide();
+
+    $(".checkPackageInput3").click(function () {
+        $(".divPackage3-2").show();
+        $(".divPackage3-1").hide();
+    });
+    $("#cancelPackage-3").click(function () {
+        $(".divPackage3-1").show();
+        $(".divPackage3-2").hide();
+    });
+    // Code for packages section @anjuDewangan
 });
+
+// Code for Print @anjudewangan
+$("button[name='print']").click(function () {
+    window.print();
+});
+// Code for Print @anjudewangan
 
 // Alert Dropdown
 

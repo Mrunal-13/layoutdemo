@@ -1156,6 +1156,9 @@ main .active-item {
     top: -12px;
 }
 
+.divPackages{
+    width: 430px;
+}
 /* Delivery Challans */
 .file-bill {
     font-size: 60px;

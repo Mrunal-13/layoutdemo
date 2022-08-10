@@ -4091,141 +4091,131 @@
                         </div>
                     </div>
                     <div style="margin-top: -25px;">
-                        <button class="btn btn-light border text-primary" data-bs-toggle="modal"
-                            data-bs-target="#popupInvoices">
+                        <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
                             <i class="fa fa-file-text-o" aria-hidden="true"></i> Invoices ( 1 )
                         </button>
-                        <div class="modal fade" id="popupInvoices" tabindex="-1" aria-labelledby="popupInvoicesLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <table class="table table-borderless" style="background-color: #FFFCDD;">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <button class="btn"><i class="fa fa-file-text-o"
-                                                                aria-hidden="true"></i> Invoices ( 1 )</button>
-                                                        <button class="btn btn-light text-primary"
-                                                            data-bs-toggle="modal" data-bs-target="#popupPackages"><i
-                                                                class="fa fa-archive" aria-hidden="true"></i>
-                                                            Packages</button>
-                                                    </th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="text-primary">BOS-000004</div>
-                                                        <div>16/07/2022</div>
-                                                    </td>
-                                                    <td class="text-danger">Overdue</td>
-                                                    <td>Balance Due
-                                                        <div>₹677.98</div>
-                                                        <div><small>(Due On 16/07/2022)</small></div>
-                                                    </td>
-                                                    <td>Amount
-                                                        <div>₹677.98</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button class="btn" type="button" id="dropdownMenuButton1"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa fa-list-alt text-secondary fs-3"
-                                                                    aria-hidden="true"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu"
-                                                                aria-labelledby="dropdownMenuButton1">
-                                                                <li><a class="dropdown-item" href="#">Record Payment</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                                <li><a class="dropdown-item" href="#">Email</a></li>
-                                                                <li><a class="dropdown-item" href="#">Print</a></li>
-                                                                <li><a class="dropdown-item" href="#">PDF</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-light border text-primary" data-bs-toggle="modal"
-                            data-bs-target="#popupPackages">
+                        <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                             <i class="fa fa-archive" aria-hidden="true"></i> Packages
                         </button>
-                        <div class="modal fade" id="popupPackages" tabindex="-1" aria-labelledby="popupPackagesLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <table class="table table-borderless" style="background-color: #FFFCDD;">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <button class="btn btn-light text-dark" data-bs-toggle="modal"
-                                                            data-bs-target="#popupInvoices"><i class="fa fa-file-text-o"
-                                                                aria-hidden="true"></i>
-                                                            Invoices ( 1 )</button>
-                                                        <button class="btn text-primary"><i class="fa fa-archive"
-                                                                aria-hidden="true"></i>
-                                                            Packages</button>
-                                                    </th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="text-primary">PKG-00001</div>
-                                                        <div>16/07/2022</div>
-                                                    </td>
-                                                    <td class="text-success">Delivered</td>
-                                                    <td>Shipped on
-                                                        <div>16/07/2022</div>
-                                                    </td>
-                                                    <td>Amount
-                                                        <div>₹677.98</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button class="btn" type="button" id="dropdownMenuButton1"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa fa-list-alt text-secondary fs-3"
-                                                                    aria-hidden="true"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu"
-                                                                aria-labelledby="dropdownMenuButton1">
-                                                                <li><a class="dropdown-item" href="#">Mark as
-                                                                        Undelivered</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Print Shipment
-                                                                        Order</a></li>
-                                                                <li><a class="dropdown-item" href="#">Download Shipment
-                                                                        Order</a></li>
-                                                                <li><a class="dropdown-item" href="#">Print Package
-                                                                        Slip</a></li>
-                                                                <li><a class="dropdown-item" href="#">Download Package
-                                                                        Slip</a></li>
-                                                                <li><a class="dropdown-item" href="#">Delete
-                                                                        Shipment</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                <table class="table table-borderless" style="background-color: #FFFCDD;">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <button class="btn"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                                    Invoices ( 1 )</button>
+                                                <button class="btn btn-light text-primary" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseExample2" aria-expanded="false"
+                                                    aria-controls="collapseExample2"><i class="fa fa-archive"
+                                                        aria-hidden="true"></i>
+                                                    Packages</button>
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="text-primary">BOS-000004</div>
+                                                <div>16/07/2022</div>
+                                            </td>
+                                            <td class="text-danger">Overdue</td>
+                                            <td>Balance Due
+                                                <div>₹677.98</div>
+                                                <div><small>(Due On 16/07/2022)</small></div>
+                                            </td>
+                                            <td>Amount
+                                                <div>₹677.98</div>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn" type="button" id="dropdownMenuButton1"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa fa-list-alt text-secondary fs-3"
+                                                            aria-hidden="true"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">Record Payment</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Email</a></li>
+                                                        <li><a class="dropdown-item" href="#">Print</a></li>
+                                                        <li><a class="dropdown-item" href="#">PDF</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                <table class="table table-borderless" style="background-color: #FFFCDD;">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <button class="btn btn-light text-dark" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseExample1" aria-expanded="false"
+                                                    aria-controls="collapseExample1"><i class="fa fa-file-text-o"
+                                                        aria-hidden="true"></i>
+                                                    Invoices ( 1 )</button>
+                                                <button class="btn text-primary"><i class="fa fa-archive"
+                                                        aria-hidden="true"></i>
+                                                    Packages</button>
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="text-primary">PKG-00001</div>
+                                                <div>16/07/2022</div>
+                                            </td>
+                                            <td class="text-success">Delivered</td>
+                                            <td>Shipped on
+                                                <div>16/07/2022</div>
+                                            </td>
+                                            <td>Amount
+                                                <div>₹677.98</div>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn" type="button" id="dropdownMenuButton1"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa fa-list-alt text-secondary fs-3"
+                                                            aria-hidden="true"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">Mark as
+                                                                Undelivered</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Print Shipment
+                                                                Order</a></li>
+                                                        <li><a class="dropdown-item" href="#">Download Shipment
+                                                                Order</a></li>
+                                                        <li><a class="dropdown-item" href="#">Print Package
+                                                                Slip</a></li>
+                                                        <li><a class="dropdown-item" href="#">Download Package
+                                                                Slip</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete
+                                                                Shipment</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -4266,7 +4256,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div class="border mx-5 my-3 mb-5 p-4 position-relative divPrint">
                             <div class="row pb-3">
                                 <div class="col-6 my-3 px-5">

@@ -886,34 +886,46 @@
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <table class="table" style="background-color: #FFFCDD;">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <button class="btn">Invoices ( 1 )</button>
-                                </th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="text-primary"><i class="fa fa-file-text-o text-dark fw-bold"
-                                            aria-hidden="true"></i> BOS-000004</div>
-                                    <div>16/07/2022</div>
-                                </td>
-                                <td class="text-secondary">Draft</td>
-                                <td>Balance Due
-                                    <div>₹677.98 <small class="text-secondary">(Due On 16/07/2022)</small></div>
-                                </td>
-                                <td>Amount
-                                    <div>₹677.98</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div>
+                        <p>
+                            <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Invoices ( 1 )
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <table class="table" style="background-color: #FFFCDD;">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <button class="btn">Invoices ( 1 )</button>
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="text-primary"><i class="fa fa-file-text-o text-dark fw-bold"
+                                                        aria-hidden="true"></i> BOS-000004</div>
+                                                <div>16/07/2022</div>
+                                            </td>
+                                            <td class="text-secondary">Draft</td>
+                                            <td>Balance Due
+                                                <div>₹677.98 <small class="text-secondary">(Due On 16/07/2022)</small></div>
+                                            </td>
+                                            <td>Amount
+                                                <div>₹677.98</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row mb-4 px-3">
                         <div class="col">Invoice Status : <span class="text-success fw-bold">Invoiced</span></div>
                     </div>

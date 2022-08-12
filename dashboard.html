@@ -54,7 +54,7 @@
         </div>
         <div class="navbar-second">
             <ul class="ml-auto secondNavUl">
-                <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
+                <a class="hospital-name" href="#">WellDone</a>
                 <li class="nav-item">
                     <form class="form-inline">
                         <div class="searchbox">
@@ -174,7 +174,7 @@
                         <i class="fa fa-fw fa-calendar"></i>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" onclick="showNotifPermission()">
                     <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-bell"></i>
@@ -545,11 +545,12 @@
 
     <div class="maintograph">
         <div class="topbar">
-            <p>Pateints Activity</p>
-            <p class="SA">Sales Activity</p>
+            <p><a href="#patActivity">Pateints Activity</a></p>
+            <p  class="SA"><a href="#salesActivity">Sales Activity</a></p>
+            
         </div>
         <hr>
-        <div class="PA">
+        <div class="PA" id="patActivity">
             <div class="PActivity">
                 <h6>Patient Activity</h6>
                 <div class="pam">

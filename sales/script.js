@@ -589,3 +589,11 @@ new Chart("myChart", {
 // Code for Chart @anjudewangan
 
 // Code for add Sales @anjudewangan
+
+// get the name of the file 
+let formFileMultiple=document.getElementById("formFileMultiple");
+let fileName=document.querySelector("#fileName");
+formFileMultiple.addEventListener("change",()=>{
+    let Myfiles=formFileMultiple.files[0];
+    fileName.innerHTML=`${Myfiles.name}`;
+})

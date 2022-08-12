@@ -435,7 +435,7 @@
                         <a href="../invoices/invoices.html">Invoices</a>
                     </li>
                     <li>
-                        <a href="">Received Payments</a>
+                        <a href="../received-payments/receivedPayments.html">Received Payments</a>
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
@@ -3826,7 +3826,6 @@
                                                                 <li><small>Phone: 9876543210</small></li>
                                                             </ul>
                                                         </li>
-
                                                     </ul>
                                                     <ul>
                                                         <li><i class="fa fa-truck text-warning" aria-hidden="true"></i>
@@ -3840,7 +3839,6 @@
                                                                 <li><small>Phone: 9876543210</small></li>
                                                             </ul>
                                                         </li>
-
                                                     </ul>
                                                 </div>
                                             </div>
@@ -4019,25 +4017,25 @@
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupEstimateNumberLabel">Estimate Number</h5>
+                                            <h5 class="modal-title" id="popupEstimateNumberLabel">Payment Number</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="my-3">To save you time, your Estimate numbers are set to
-                                                auto-generate mode. Are you sure you want to change this setting?</div>
+                                            <div class="my-3">Automatic generation of payment numbers can save you time.
+                                                Would you like to change your current setting?</div>
                                             <div class="form-check mb-3 mt-5">
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                                     id="flexRadioDefault2" checked>
                                                 <label class="form-check-label" for="flexRadioDefault2">
-                                                    Continue auto-generating sales order numbers
+                                                    Continue auto-generating payment numbers
                                                 </label>
                                                 <div class="row ml-3">
                                                     <div class="col-3">
                                                         <div class="mb-3">
                                                             <label for="" class="form-label">Prefix</label>
                                                             <input type="text" class="form-control" id=""
-                                                                placeholder="EST-">
+                                                                placeholder="BOS-">
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
@@ -4053,7 +4051,7 @@
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                                     id="flexRadioDefault1">
                                                 <label class="form-check-label" for="flexRadioDefault1">
-                                                    I will add them manually each time
+                                                    Manually add a payment number for this payment
                                                 </label>
                                             </div>
                                         </div>
@@ -4066,7 +4064,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-5 row d-flex border rounded align-items-center p-3">
+                        <div class="mb-5 row d-flex border border-success rounded align-items-center p-3">
                             <div class="row mb-3">
                                 <label for="" class="col-sm-3 col-form-label">Amount Received (INR)<span
                                         class="text-danger">*</span></label>
@@ -4173,13 +4171,17 @@
                             <div class="col-3">
                                 <label for="" class="form-label">Deposit To<span class="text-danger">*</span></label>
                                 <select class="form-select" aria-label="Default select example">
+                                    <option disabled>Cash</option>
                                     <option selected>Petty Cash</option>
                                     <option>Undeposited Funds</option>
+                                    <option disabled>Bank</option>
                                     <option>[ 747485 ] Assets</option>
+                                    <option disabled>Other Current Liability</option>
                                     <option>Employee Reimbursements</option>
                                     <option>Opening balance Adjustment</option>
                                     <option>TCS Payable</option>
                                     <option>TDS Payable</option>
+                                    <option disabled>Payment Clearing Account</option>
                                     <option>Payment Clearing Account</option>
                                 </select>
                             </div>

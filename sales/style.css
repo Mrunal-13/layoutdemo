@@ -606,8 +606,8 @@ main .active-item {
 #popupDeleteDelivered .modal-body i,
 #popupDeleteUndelivered .modal-body i,
 #popupDelete2 .modal-body i,
-#popupDelete3 .modal-body i,  
-#popupRecordPay .modal-body i  {
+#popupDelete3 .modal-body i,
+#popupRecordPay .modal-body i {
     color: #EF8523;
     font-size: 45px;
 }
@@ -893,15 +893,16 @@ main .active-item {
     margin-left: -41px;
 }
 
-.positionRel{
-        display: inline;
-        width: 185px;
-        display: flex;
-        position: relative;
-        justify-content: center;
-        right: 44px;
-        top: 27px;
+.positionRel {
+    display: inline;
+    width: 185px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    right: 44px;
+    top: 27px;
 }
+
 .banner-send {
     transform: rotate(-42.49deg);
     font-size: 18px;
@@ -1087,65 +1088,6 @@ main .active-item {
     top: 215px;
 }
 
-.draft-banner {
-    top: 191px;
-    left: 13px;
-}
-/* <<<<<<< HEAD
-.draft-banner2 {
-=======
-
-.draft-banner2 {
->>>>>>> b960c28f944208ee0682e3542043935402d8516d
-    top: 145px;
-    left: 13px;
-} */ 
-
-.paid-banner {
-    top: 111px;
-}
-
-.paid-banner-2 {
-    top: 323px;
-}
-
-.banner-not-shipped {
-    /* top: 100px; */
-    padding: 5px 20px;
-    /* left: 11px; */
-}
-
-.banner-shipped {
-    top: 288px;
-    left: 13px;
-    padding: 5px 33px;
-}
-
-/* .banner-shipped2 {
-    top: 309px;
-    left: 13px;
-    padding: 5px 33px;
-} */
-
-/* .banner-delivered {
-    top: 319px;
-    left: 13px;
-    padding: 5px 33px;
-} */
-
-/* .banner-delivered2 {
-    top: 274px;
-    left: 13px;
-    padding: 5px 33px;
-} */
-
-.returned-banner {
-    top: 147px;
-    left: 13px;
-    padding: 5px 33px;
-}
-
-
 .dropdown-button button {
     width: 100%;
     height: 38px;
@@ -1210,8 +1152,36 @@ main .active-item {
     height: 670px;
 }
 
-.text-decoration {
+.text-decoration,
+.table-customer tbody tr td a {
     text-decoration: none !important;
+}
+
+.checkInputHead {
+    position: absolute;
+    top: 19px;
+    left: 45px;
+}
+
+.checkInputShipment {
+    position: absolute;
+    top: 153px;
+    left: 125px;
+}
+
+.checkInputPop {
+    position: absolute;
+    left: 35px;
+}
+
+.checkInputPop2 {
+    position: absolute;
+    left: 30px;
+    top: -12px;
+}
+
+.divPackages {
+    width: 430px;
 }
 
 /* Delivery Challans */
@@ -1225,10 +1195,27 @@ main .active-item {
     top: 77px;
     left: 13px;
 }
+
 .invoice-dropdown {
     position: absolute;
     top: 31px;
     left: 50px;
+}
+
+/* Print */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .divPrint,
+    .divPrint * {
+        visibility: visible;
+    }
+
+    /* .divPrint {
+        position: absolute;
+    } */
 }
 
 /* Code for Sales @anjudewangan */

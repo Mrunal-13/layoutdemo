@@ -435,7 +435,7 @@
                         <a href="../invoices/invoices.html">Invoices</a>
                     </li>
                     <li>
-                        <a href="">Received Payments</a>
+                        <a href="../received-payments/receivedPayments.html">Received Payments</a>
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
@@ -628,7 +628,7 @@
                             </button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-light border">
+                            <button class="btn btn-light border" name="print">
                                 <i class="fa fa-print" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -889,38 +889,53 @@
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <table class="table" style="background-color: #FFFCDD;">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <button class="btn">Invoices ( 1 )</button>
-                                </th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="text-primary"><i class="fa fa-file-text-o text-dark fw-bold"
-                                            aria-hidden="true"></i> BOS-000004</div>
-                                    <div>16/07/2022</div>
-                                </td>
-                                <td class="text-secondary">Draft</td>
-                                <td>Balance Due
-                                    <div>₹677.98 <small class="text-secondary">(Due On 16/07/2022)</small></div>
-                                </td>
-                                <td>Amount
-                                    <div>₹677.98</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div>
+                        <p>
+                            <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Invoices ( 1 )
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <table class="table" style="background-color: #FFFCDD;">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <button class="btn">Invoices ( 1 )</button>
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="text-primary"><i class="fa fa-file-text-o text-dark fw-bold"
+                                                        aria-hidden="true"></i> BOS-000004</div>
+                                                <div>16/07/2022</div>
+                                            </td>
+                                            <td class="text-secondary">Draft</td>
+                                            <td>Balance Due
+                                                <div>₹677.98 <small class="text-secondary">(Due On 16/07/2022)</small></div>
+                                            </td>
+                                            <td>Amount
+                                                <div>₹677.98</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row mb-4 px-3">
                         <div class="col">Invoice Status : <span class="text-success fw-bold">Invoiced</span></div>
                     </div>
-                    <div class="border rounded mx-2">
+                    <div class="border rounded mx-2" style="overflow: hidden;">
+                        <div class="positionRel bg-primary banner-send" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom"
+                            title="An open status indicates that the shipment has been shipped.">Open</div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -936,10 +951,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="position-absolute bg-primary banner-send banner-delivered2" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom"
-                            title="An open status indicates that the shipment has been shipped.">Open</div>
-                        <div class="border mx-5 my-3 mb-5 p-4 position-relative">
+                        <div class="border mx-5 my-3 mb-5 p-4 position-relative divPrint">
                             <div class="row mb-3 border-bottom">
                                 <div class="col-6">
                                     <h5>Dr.aware hospital and Nursing Home</h5>

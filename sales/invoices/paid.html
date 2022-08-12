@@ -435,7 +435,7 @@
                         <a href="./invoices.html" class="sales-link">Invoices</a>
                     </li>
                     <li>
-                        <a href="">Received Payments</a>
+                        <a href="../received-payments/receivedPayments.html">Received Payments</a>
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
@@ -3654,7 +3654,7 @@
                             <h5>BOS-00001</h5>
                         </div>
                         <div class="col">
-                            <a href="./newSalesOrder.html">
+                            <a href="../salesOrders/editBOS.html">
                                 <button class="btn btn-light border">Edit</button>
                             </a>
                         </div>
@@ -3664,7 +3664,7 @@
                             </button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-light border">
+                            <button class="btn btn-light border" name="print">
                                 <i class="fa fa-print" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -4051,7 +4051,7 @@
                                     <td>Cash</td>
                                     <td>₹50.00</td>
                                     <td>
-                                        <i class="fa fa-pencil-square text-secondary fs-3" aria-hidden="true"></i>
+                                        <a href="./editPayment.html"><i class="fa fa-pencil-square text-secondary fs-3" aria-hidden="true"></i></a>
                                         <i class="fa fa-trash text-secondary fs-3" aria-hidden="true"
                                             data-bs-toggle="modal" data-bs-target="#popupDeleteRecPay"></i>
                                         <div class="modal fade" id="popupDeleteRecPay" tabindex="-1"
@@ -4126,7 +4126,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <a href="./sentBOS.html"> <button type="button"
+                                                        <a href="../salesOrders/sentBOS.html"> <button type="button"
                                                                 class="btn btn-primary">Separate & Add As
                                                                 Credit</button></a>
                                                         <button type="button" class="btn btn-outline-secondary"
@@ -4154,7 +4154,7 @@
                                                                 recover it.</p>
                                                         </div>
                                                         <div class="d-flex justify-content-around mb-4">
-                                                            <a href="./sentBOS.html"><button type="button"
+                                                            <a href="../salesOrders/sentBOS.html"><button type="button"
                                                                     class="btn btn-light">Delete</button></a>
                                                             <button type="button" class="btn btn-primary"
                                                                 data-bs-dismiss="modal">No</button>
@@ -4168,7 +4168,8 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="border rounded mx-2">
+                    <div class="border rounded mx-2" style="overflow: hidden;">
+                        <div class="positionRel bg-success banner-send">Paid</div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -4179,12 +4180,11 @@
                                     <li><a class="dropdown-item" href="#">Change Template</a></li>
                                     <li><a class="dropdown-item" href="#">Edit Template</a></li>
                                     <li><a class="dropdown-item" href="#">Update Logo & Address</a></li>
-                                    <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+                                    <li><a class="dropdown-item" href="#">Manage Custom Fields</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="position-absolute bg-success banner-send paid-banner-2">Paid</div>
-                        <div class="border mx-5 my-3 mb-5 p-4 position-relative">
+                        <div class="border mx-5 my-3 mb-5 p-4 position-relative divPrint">
                             <div class="">
                                 <h5>Dr.aware hospital and Nursing Home</h5>
                                 <div>26b panja bazar</div>
@@ -4378,7 +4378,7 @@
                         <tbody>
                             <tr>
                                 <td>19/07/2022</td>
-                                <td><a href="./allSalesOrders.html">SO-00014</a></td>
+                                <td><a href="../salesOrders/allSalesOrders.html">SO-00014</a></td>
                                 <td class="text-success">CLOSED</td>
                                 <td>20/07/2022</td>
                             </tr>

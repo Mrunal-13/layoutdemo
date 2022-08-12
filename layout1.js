@@ -375,4 +375,10 @@ let helloChart = new Chart(ctr, {
     },
   },
 });
-
+// notification permission once when open the browser
+function showNotifPermission() {
+  Notification.requestPermission().then(function(getperm) 
+  { 
+    console.log('Perm granted', getperm) 
+  });
+}

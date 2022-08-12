@@ -603,12 +603,15 @@ display: flex;
 font-size: 21px;
 margin-left: 80px;
 }
-.topbar p {
+.topbar p a{
 margin-left: 50px;
+color: black;
 }
-.SA{
-color: blue;
+.topbar p a:hover{
+    color: blue;
+    font-weight: 600;
 }
+
 .PA{
 background-color: #ECF8FF;
 display: flex;

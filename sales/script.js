@@ -241,6 +241,18 @@ $(document).ready(function () {
         $(".invoiceTableHead2").hide();
     });
 
+    $(".recPayTableHead1").show();
+    $(".recPayTableHead2").hide();
+
+    $(".checkRecPayHead").click(function () {
+        $(".recPayTableHead2").show();
+        $(".recPayTableHead1").hide();
+    });
+    $("#closeRecPayHead").click(function () {
+        $(".recPayTableHead1").show();
+        $(".recPayTableHead2").hide();
+    });
+
     // Code for packages section @anjuDewangan
     $(".divPackage1-1").show();
     $(".divPackage1-2").hide();

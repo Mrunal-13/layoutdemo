@@ -1145,6 +1145,12 @@ main .active-item {
     left: 45px;
 }
 
+.checkInputShipment {
+    position: absolute;
+    top: 153px;
+    left: 125px;
+}
+
 .checkInputPop {
     position: absolute;
     left: 35px;
@@ -1156,9 +1162,10 @@ main .active-item {
     top: -12px;
 }
 
-.divPackages{
+.divPackages {
     width: 430px;
 }
+
 /* Delivery Challans */
 .file-bill {
     font-size: 60px;

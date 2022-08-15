@@ -16,16 +16,9 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
+    <!-- Chart @anjudewangan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Chart @anjudewangan -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -288,7 +281,6 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -305,7 +297,6 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -322,10 +313,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -431,7 +420,7 @@
                         <a href="../estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="./allSalesOrders.html" class="sales-link">Sales Orders</a>
                     </li>
                     <li>
                         <a href="../packages-folder/packages.html">Packages</a>
@@ -443,7 +432,7 @@
                         <a href="../delivery-challans/deliveryChallans.html">Delivery Challans</a>
                     </li>
                     <li>
-                        <a href="./invoices.html" class="sales-link">Invoices</a>
+                        <a href="../invoices/invoices.html">Invoices</a>
                     </li>
                     <li>
                         <a href="../received-payments/receivedPayments.html">Received Payments</a>
@@ -561,49 +550,49 @@
 
     <!-- Sales Customers -->
     <main class="main">
-        <div class="container mt-3">
+        <div class="container" style="max-width: 1533px !important;">
             <div class="row">
-                <div class="col-6 gap-3">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            All Invoices
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
-                            <li><a class="dropdown-item" href="#">All</a></li>
-                            <li><a class="dropdown-item" href="#">Draft</a></li>
-                            <li><a class="dropdown-item" href="#">Pending Approval</a></li>
-                            <li><a class="dropdown-item" href="#">Approved</a></li>
-                            <li><a class="dropdown-item" href="#">Client Viewed</a></li>
-                            <li><a class="dropdown-item" href="#">Partially Paid</a></li>
-                            <li><a class="dropdown-item" href="#">Unpaid</a></li>
-                            <li><a class="dropdown-item" href="#">Overdue</a></li>
-                            <li><a class="dropdown-item" href="#">Payment Initiated</a></li>
-                            <li><a class="dropdown-item" href="#">Paid</a></li>
-                            <li><a class="dropdown-item" href="#">Void</a></li>
-                            <li><a class="dropdown-item" href="#">Yet To Be Shipped</a></li>
-                            <li><a class="dropdown-item" href="#">Shipped</a></li>
-                            <li><a class="dropdown-item" href="#">Invoices</a></li>
-                            <li><a class="dropdown-item" href="#">Bills Of Supply</a></li>
-                            <li><a class="dropdown-item" href="#">Debit Note</a></li>
-                            <li><a class="dropdown-item" href="#">Write Off</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col">
-                            <button class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="col-3">
+                    <div class="row border-bottom pb-2">
+                        <div class="col-2"></div>
+                        <div class="col-6">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Sales Orders
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">Draft</a></li>
+                                    <li><a class="dropdown-item" href="#">Pending Approval</a></li>
+                                    <li><a class="dropdown-item" href="#">Approved</a></li>
+                                    <li><a class="dropdown-item" href="#">Confirmed</a></li>
+                                    <li><a class="dropdown-item" href="#">For Packaging</a></li>
+                                    <li><a class="dropdown-item" href="#">To be Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">For Invoicing</a></li>
+                                    <li><a class="dropdown-item" href="#">Drop Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Backorder</a></li>
+                                    <li><a class="dropdown-item" href="#">Onhold</a></li>
+                                    <li><a class="dropdown-item" href="#">Fulfilled</a></li>
+                                    <li><a class="dropdown-item" href="#">Closed</a></li>
+                                    <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                                    <li><a class="dropdown-item" href="#">Void</a></li>
+                                    <li><a class="dropdown-item" href="#">Invoiced</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipped & Not Invoiced</a></li>
+                                    <li><a class="dropdown-item" href="#">Invoiced & Not Shipped</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col">
-                            <a href="#" class="setting-link"><i class="fa fa-fw fa-cog"></i>Settings</a>
+                        <div class="col-2">
+                            <a href="./newSalesOrder.html">
+                                <button class="btn btn-warning text-primary">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                            </a>
                         </div>
-                        <div class="col">
+                        <div class="col-2">
                             <div class="dropdown">
                                 <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -614,29 +603,19 @@
                                     <li><a class="dropdown-item" href="#">Created Time</a></li>
                                     <li><a class="dropdown-item" href="#">Last Modified Time</a></li>
                                     <li><a class="dropdown-item" href="#">Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Invoice#</a></li>
-                                    <li><a class="dropdown-item" href="#">Order Number</a></li>
+                                    <li><a class="dropdown-item" href="#">Sales Order#</a></li>
+                                    <li><a class="dropdown-item" href="#">Reference#</a></li>
+                                    <li><a class="dropdown-item" href="#">Estimate Number</a></li>
                                     <li><a class="dropdown-item" href="#">Customer Name</a></li>
-                                    <li><a class="dropdown-item" href="#">Due Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Amount</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Balance Due</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Amount</a></li>
                                     <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
                                                 aria-hidden="true"></i>
-                                            Import Invoices</a></li>
-                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
-                                                aria-hidden="true"></i>
-                                            Import Bill of supply</a></li>
-                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupExportItem">
-                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Invoices
-                                        </a></li>
+                                            Import Items</a></li>
                                     <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupExportItem">
                                             <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export as E-Way Bill
+                                            Export Items
                                         </a></li>
                                     <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupExportCurrent">
@@ -733,6 +712,21 @@
                                                                 import file will be ignored and it will be
                                                                 auto-generated during import.</p>
                                                         </div>
+                                                        <div class="form-check mt-5">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="">
+                                                            <label class="form-check-label" for="">
+                                                                <h6>Map the customer addresses in the import file to the
+                                                                    customer records in Welldone.</h6>
+                                                            </label>
+                                                            <p>If you enable this option, it will be used to check
+                                                                whether your customer name in the import file already
+                                                                exists in Welldone. If the customer exists in Welldone,
+                                                                the address in the sales order will be mapped to their
+                                                                customer record. If the customer does not exist, a new
+                                                                customer record will be created using the corresponding
+                                                                address in the import file.</p>
+                                                        </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="mt-3">Download the <a href="#">Sample file</a> and
@@ -744,11 +738,6 @@
                                                                 <li class="mb-3">Import data with details of GST
                                                                     treatment by
                                                                     referring to these accepted formats.
-                                                                </li>
-                                                                <li class="mb-3">You can download the <a href="#">sample
-                                                                        xls</a> file to
-                                                                    get detailed information about the data fields used
-                                                                    during the import.
                                                                 </li>
                                                                 <li class="mb-3">If you have files in other formats, you
                                                                     can convert
@@ -3123,50 +3112,97 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <h6>Select Module<span class="text-danger">*</span></h6>
-                                                        <select class="js-example-basic-single" name="state">
-                                                            <option>Estimates</option>
-                                                            <option disabled>Sales</option>
-                                                            <option>Estimates</option>
-                                                            <option>Sales Orders</option>
-                                                            <option>Invoices</option>
-                                                            <option>Invoice Payments</option>
-                                                            <option>Recurring Invoices</option>
-                                                            <option>Credit Notes</option>
-                                                            <option>Credit Notes Applied to Invoices</option>
-                                                            <option>Refunds</option>
-                                                            <option disabled>Purchase</option>
-                                                            <option>Purchase Orders</option>
-                                                            <option>Bills</option>
-                                                            <option>Bill of Entry</option>
-                                                            <option>Bill Payments</option>
-                                                            <option>Vendor Credits</option>
-                                                            <option>Vendor Credit Refunds</option>
-                                                            <option disabled>Timesheet</option>
-                                                            <option>Projects</option>
-                                                            <option>Timesheet</option>
-                                                            <option>Project Tasks</option>
-                                                            <option disabled>Others</option>
-                                                            <option>Customers</option>
-                                                            <option>Vendors</option>
-                                                            <option>Items</option>
-                                                            <option>Exchange Rates</option>
-                                                            <option>Users</option>
-                                                            <option>Chart of Accounts</option>
-                                                            <option>Manual Journals</option>
-                                                        </select>
+                                                        <div class="dropdown mb-3 dropdown-button">
+                                                            <button class="btn border dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton4" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Estimate
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton4">
+                                                                <li><a class="dropdown-item border-bottom" href="#">
+                                                                        <input type="text" class="form-control" name=""
+                                                                            id="">
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item text-secondary" href="#">
+                                                                        Sales
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item" href="#">Estimates</a></li>
+                                                                <li><a class="dropdown-item" href="#">Sales Orders</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Invoices</a></li>
+                                                                <li><a class="dropdown-item" href="#">Invoice
+                                                                        Payments</a></li>
+                                                                <li><a class="dropdown-item" href="#">Recurring
+                                                                        Invoices</a></li>
+                                                                <li><a class="dropdown-item" href="#">Credit Notes</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Credit Notes
+                                                                        Applied to Invoices</a></li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Refunds</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Purchase</a></li>
+                                                                <li><a class="dropdown-item" href="#">Purchase
+                                                                        Orders</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bills</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bill of Entry</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Bill Payments</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Vendor Credits</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Vendor Credit
+                                                                        Refunds</a></li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Timesheet</a></li>
+                                                                <li><a class="dropdown-item" href="#">Projects</a></li>
+                                                                <li><a class="dropdown-item" href="#">Timesheet</a></li>
+                                                                <li><a class="dropdown-item mb-3" href="#">Project
+                                                                        Tasks</a></li>
+                                                                <li><a class="dropdown-item text-secondary"
+                                                                        href="#">Others</a></li>
+                                                                <li><a class="dropdown-item" href="#">Customers</a></li>
+                                                                <li><a class="dropdown-item" href="#">Vendors</a></li>
+                                                                <li><a class="dropdown-item" href="#">Items</a></li>
+                                                                <li><a class="dropdown-item" href="#">Exchange Rates</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Users</a></li>
+                                                                <li><a class="dropdown-item" href="#">Chart of
+                                                                        Accounts</a></li>
+                                                                <li><a class="dropdown-item" href="#">Manual
+                                                                        Journals</a></li>
+                                                            </ul>
+                                                        </div>
                                                         <h6>Select Status<span class="text-danger">*</span></h6>
-                                                        <select class="js-example-basic-single" name="state">
-                                                            <option>All</option>
-                                                            <option>Draft</option>
-                                                            <option>Pending Approval</option>
-                                                            <option>Approved</option>
-                                                            <option>Sent</option>
-                                                            <option>Invoiced</option>
-                                                            <option>Accepted</option>
-                                                            <option>Declined</option>
-                                                            <option>Expired</option>
-                                                            <option>Rejected</option>
-                                                        </select>
+                                                        <div class="dropdown mb-3 dropdown-button">
+                                                            <button class="btn border dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton4" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                All
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton4">
+                                                                <li><a class="dropdown-item border-bottom" href="#">
+                                                                        <input type="text" class="form-control" name=""
+                                                                            id="">
+                                                                    </a></li>
+                                                                <li><a class="dropdown-item" href="#">All</a></li>
+                                                                <li><a class="dropdown-item" href="#">Draft</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Pending
+                                                                        Approval</a></li>
+                                                                <li><a class="dropdown-item" href="#">Approved</a></li>
+                                                                <li><a class="dropdown-item" href="#">Sent</a></li>
+                                                                <li><a class="dropdown-item" href="#">Invoiced</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Accepted</a></li>
+                                                                <li><a class="dropdown-item" href="#">Declined</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Expired</a></li>
+                                                                <li><a class="dropdown-item" href="#">Rejected</a></li>
+                                                            </ul>
+                                                        </div>
                                                         <div class="mb-2">
                                                             <label class="form-label" for="">
                                                                 Date Range
@@ -3641,313 +3677,109 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-10">Mr. Badshah khan</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-success">Closed</small></div>
+                            <div>₹800.00 <span class="text-primary">SO-00004</span></div>
+                        </div>
+                    </div>
+                    <div class="row py-3 px-5 border-bottom">
+                        <div class="col-10">Sanole baba</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-success">Closed</small></div>
+                            <div>₹2800.00 <span class="text-primary">SO-00002</span></div>
+                        </div>
+                    </div>
+                    <div class="row py-3 px-5 border-bottom">
+                        <div class="col-10">Sample baba</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-success">Closed</small></div>
+                            <div>₹200.00 <span class="text-primary">SO-00001</span></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-1">
-            </div>
-            <div class="col-11 bg-light rounded">
-                <table class="table table-borderless table-customer mt-5">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Total Outstanding Receivables</th>
-                            <th class="text-secondary">Due Today</th>
-                            <th></th>
-                            <th class="text-secondary">Due Within 30 Days</th>
-                            <th></th>
-                            <th class="text-secondary">Overdue Invoice</th>
-                            <th style="background-color: #DEF1FF;">Average No. of Days for Getting Paid</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <i class="fa fa-arrow-circle-down text-warning fs-1 arrow-table" aria-hidden="true"></i>
-                            </td>
-                            <td><span class="mr-5">₹1,892.98</span> <span class="text-primary"><i class="fa fa-repeat"
-                                        aria-hidden="true"></i> Refresh</span></td>
-                            <td class="text-warning">₹1,215.00</td>
-                            <td class="text-secondary"><i class="fa fa-circle" aria-hidden="true"></i></td>
-                            <td>₹1,215.00</td>
-                            <td class="text-secondary"><i class="fa fa-circle" aria-hidden="true"></i></td>
-                            <td>₹677.98</td>
-                            <th style="background-color: #DEF1FF;"><b>0 Days</b></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-1 text-center">
-                <div class="dropdown invoice-dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item text-secondary" href="#">Custamize colums</a></li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Date<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Invoice#<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Order Number
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Customer name<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Status<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Due Date
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Amount<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Balance Due
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">
-                                <button type="button" class="btn btn-warning">Save</button>
-                                <button type="button" class="btn btn-outline-secondary">Cancel</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-11">
-                <table class="table table-customer mt-4">
-                    <thead>
-                        <tr class="invoiceTableHead1">
-                            <th>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">Date
-                            </th>
-                            <th>Invoice#</th>
-                            <th>Order Number</th>
-                            <th>Customer Name</th>
-                            <th>Status</th>
-                            <th>Due Date</th>
-                            <th>Amount</th>
-                            <th>Balance Due</th>
-                            <th></th>
-                        </tr>
-                        <tr class="invoiceTableHead2">
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark">
-                                    Link to existing Sales order(s)
-                                </button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                        class="fa fa-files-o" aria-hidden="true"></i></button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                        class="fa fa-print" aria-hidden="true"></i></button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
-                                    data-bs-toggle="modal" data-bs-target="#popupDelete">
-                                    Export as E-Way Bill
-                                </button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Bulk
-                                    Actions</button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                    <li><a class="dropdown-item" href="#">Mark as Confirmed</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark shipment as fulfilled</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Bulk Cancel Items</a>
-                                    <li><a class="dropdown-item" href="#">Bulk Update</a>
-                                    <li><a class="dropdown-item" href="#">Bulk reopen canceled items</a>
-                                    <li><a class="dropdown-item" href="#">Backorder</a>
-                                    <li><a class="dropdown-item" href="#">Dropship</a>
-                                    <li><a class="dropdown-item" href="#">Create Quick Shipments</a>
-                                    <li><a class="dropdown-item" href="#">Convert to Invoice</a>
-                                    <li><a class="dropdown-item" href="#">Merge Sales Orders</a>
-                                    </li>
-                                </ul>
-                            </th>
-                            <th>
-                                <button type="button"
-                                    class="btn btn-outline-secondary bg-light text-dark dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">More</button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                    <li><a class="dropdown-item" href="#">Delete</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark as Shipped</a></li>
-                                    <li><a class="dropdown-item" href="#">Undo Shipment</a></li>
-                                </ul>
-                            </th>
-                            <th>1 Invoices Selected</th>
-                            <th></th>
-                            <th> <i class="fa fa-times fs-5 mb-2" aria-hidden="true" id="closeInvoiceHead"></i></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">
-                                <a href="./draft.html" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="./draft.html">BOS-00004</a></td>
-                            <td><a href="./draft.html" class="text-dark">SO-00004</a></td>
-                            <td><a href="./draft.html" class="text-dark">Mr. Badshah khan</a></td>
-                            <td><a href="./draft.html" class="text-warning">Overdue By 2 Days</a></td>
-                            <td><a href="./draft.html" class="text-dark">12/07/2022</a></td>
-                            <td><a href="./draft.html" class="text-dark">₹800.00</a></td>
-                            <td><a href="./draft.html" class="text-dark">₹800.00</a></td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa fa-chevron-circle-down text-secondary fs-5" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-pencil"
-                                                    aria-hidden="true"></i> Edit</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-file-pdf-o"
-                                                    aria-hidden="true"></i> Download the PDF</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-print"
-                                                    aria-hidden="true"></i> Print Transaction</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-envelope-o"
-                                                    aria-hidden="true"></i> Send Email</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-link"
-                                                    aria-hidden="true"></i> Share Invoice Link</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">
-                                <a href="#" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="#">INV-00005</a></td>
-                            <td><a href="#" class="text-dark">SO-00004</a></td>
-                            <td><a href="#" class="text-dark">Mr. Badshah khan</a></td>
-                            <td><a href="#" class="text-secondary">Draft</a></td>
-                            <td><a href="#" class="text-dark">12/07/2022</a></td>
-                            <td><a href="#" class="text-dark">₹800.00</a></td>
-                            <td><a href="#" class="text-dark">₹800.00</a></td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa fa-chevron-circle-down text-secondary fs-5" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-pencil"
-                                                    aria-hidden="true"></i> Edit</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-file-pdf-o"
-                                                    aria-hidden="true"></i> Download the PDF</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-print"
-                                                    aria-hidden="true"></i> Print Transaction</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-envelope-o"
-                                                    aria-hidden="true"></i> Send Email</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-link"
-                                                    aria-hidden="true"></i> Share Invoice Link</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">
-                                <a href="./paid.html" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="./paid.html">INV-00006</a></td>
-                            <td><a href="./paid.html" class="text-dark">SO-00004</a></td>
-                            <td><a href="./paid.html" class="text-dark">Mr. Badshah khan</a></td>
-                            <td><a href="./paid.html" class="text-success">Paid</a></td>
-                            <td><a href="./paid.html" class="text-dark">12/07/2022</a></td>
-                            <td><a href="./paid.html" class="text-dark">₹800.00</a></td>
-                            <td><a href="./paid.html" class="text-dark">₹800.00</a></td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa fa-chevron-circle-down text-secondary fs-5" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-pencil"
-                                                    aria-hidden="true"></i> Edit</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-file-pdf-o"
-                                                    aria-hidden="true"></i> Download the PDF</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-print"
-                                                    aria-hidden="true"></i> Print Transaction</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-envelope-o"
-                                                    aria-hidden="true"></i> Send Email</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-link"
-                                                    aria-hidden="true"></i> Share Invoice Link</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                <div class="col-9 border-left">
+                    <div class="row border-bottom py-2 pb-3">
+                        <div class="col-2">
+                            <div><a href="./approvedSR.html">
+                                    < RMA-00001</a>
+                            </div>
+                            <h5>RR-00001</h5>
+                        </div>
+                        <div class="col-8"></div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupDelete">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                            <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-10">Are you sure you want to delete this return
+                                                    receipt?
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="d-flex justify-content-center align-items-center mb-4">
-                                            <h5>Are you sure?</h5>
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center mb-4">
-                                            <p>Once deleted they cannot be undone</p>
-                                        </div>
-                                        <div class="d-flex justify-content-around mb-4">
-                                            <button type="button" class="btn btn-light"
-                                                data-bs-dismiss="modal">Delete</button>
-                                            <button type="button" class="btn btn-primary"
-                                                data-bs-dismiss="modal">No</button>
+                                        <div class="modal-footer d-flex justify-content-start">
+                                            <a href="./approvedSR.html"><button type="button"
+                                                    class="btn btn-primary">Delete</button></a>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </tbody>
-                </table>
+                        <div class="col mt-1">
+                            <a href="./approvedSR.html" class="text-dark"><i class="fa fa-times"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="mx-5 mt-3">
+                        <div class="mb-5">
+                            <b>
+                                <h3>SALES RETURN</h3>
+                            </b>
+                            <span>Receive# <b>RR-00001</b></span>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-2">Date</div>
+                            <div class="col-2">12/07/2022</div>
+                        </div>
+                        <table class="table table-bordered mb-5 mt-5">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Items & Description</th>
+                                    <th scope="col">Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>savta
+                                        <div class="text-secondary">SKU: 2984894</div>
+                                        <div> <input type="text" class="form-control" id="" placeholder=",okmoop"></div>
+                                    </td>
+                                    <td>1 box
+                                        <div class="position-absolute" style="margin-left: 287px; margin-top: -32px;"><i
+                                                class="fa fa-times-circle-o text-danger" aria-hidden="true"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

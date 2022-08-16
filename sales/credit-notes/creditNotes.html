@@ -39,17 +39,14 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navForDeskTop">
         <div class="navbar-first">
-            <a class="navbar-brand" href="http://127.0.0.1:5500/practice-registration/second-stage/html/index.html">
-                <span class="iconify" data-icon="carbon:add" data-width="35" data-height="35"></span>
-                <p>Add Establishment</p>
-            </a>
+            <a class="navbar-brand" href="#">WellDone</a>
             <button class="buttonForSideNav" type="button" onclick="openNav()">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
         <div class="navbar-second">
             <ul class="ml-auto secondNavUl">
-                <a class="hospital-name" href="#">WellDone</a>
+                <a class="hospital-name" href="#">Aware hospital and Nursing Home</a>
                 <li class="nav-item">
                     <form class="form-inline">
                         <div class="searchbox">
@@ -441,7 +438,7 @@
                         <a href="../shipmets/shipments.html">Shipments</a>
                     </li>
                     <li>
-                        <a href="./deliveryChallans.html" class="sales-link">Delivery Challans</a>
+                        <a href="../delivery-challans/deliveryChallans.html">Delivery Challans</a>
                     </li>
                     <li>
                         <a href="../invoices/invoices.html">Invoices</a>
@@ -456,7 +453,7 @@
                         <a href="../sales-return/salesReturn.html">Sales Return</a>
                     </li>
                     <li>
-                        <a href="../credit-notes/creditNotes.html">Credit Notes</a>
+                        <a href="./creditNotes.html" class="sales-link">Credit Notes</a>
                     </li>
                 </ul>
             </li>
@@ -568,35 +565,48 @@
                     <div class="dropdown">
                         <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            All Delivery Challans
+                            All Credit Notes
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                             <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
                             <li><a class="dropdown-item" href="#">All</a></li>
                             <li><a class="dropdown-item" href="#">Draft</a></li>
+                            <li><a class="dropdown-item" href="#">Pending Approval</a></li>
+                            <li><a class="dropdown-item" href="#">Approved</a></li>
                             <li><a class="dropdown-item" href="#">Open</a></li>
-                            <li><a class="dropdown-item" href="#">Delivered</a></li>
-                            <li><a class="dropdown-item" href="#">Returned</a></li>
-                            <li><a class="dropdown-item" href="#">Partially Invoiced</a></li>
-                            <li><a class="dropdown-item" href="#">Invoiced</a></li>
+                            <li><a class="dropdown-item" href="#">Closed</a></li>
+                            <li><a class="dropdown-item" href="#">Void</a></li>
+                            <li><a class="dropdown-item" href="#">Invoice unassociated</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="row">
-                        <div class="col text-end">
+                        <div class="col-3"></div>
+                        <div class="col-1 text-end">
                             <button class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
-                        <div class="col">
-                            <a href="./addNewDC.html">
+                        <div class="col-2">
+                            <a href="./newCreditNote.html">
                                 <button class="btn btn-warning">Add
                                     New</button>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col-1">
+                            <div class="dropdown">
+                                <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="./newCreditNote.html">Create Credit Note</a></li>
+                                    <li><a class="dropdown-item" href="#">Create Credit Note (Pre GST)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3">
                             <a href="#" class="setting-link"><i class="fa fa-fw fa-cog"></i>Settings</a>
                         </div>
-                        <div class="col">
+                        <div class="col-1">
                             <div class="dropdown">
                                 <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -604,13 +614,41 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
                                     <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
+                                    <li><a class="dropdown-item" href="#">Created Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Last Modified Time</a></li>
                                     <li><a class="dropdown-item" href="#">Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Delivery Challan#</a></li>
+                                    <li><a class="dropdown-item" href="#">Credit Note#</a></li>
                                     <li><a class="dropdown-item" href="#">Customer Name</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Amount</a></li>
+                                    <li><a class="dropdown-item" href="#">Amount</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Balance</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#"> <i class="fa fa-download text-secondary"
+                                                aria-hidden="true"></i>
+                                            Import Credit Notes</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#"> <i class="fa fa-download text-secondary"
+                                                aria-hidden="true"></i>
+                                            Import Applied Credit Notes</a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#"> <i
+                                                class="fa fa-download text-secondary" aria-hidden="true"></i>
+                                            Import Refunds</a></li>
                                     <li><a class="dropdown-item fs-5" href="#">
-                                            <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
-                                            Refresh
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Credit Notes
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Applied Credit Notes
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Refunds
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export as E-Way Bill
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Current View
                                         </a></li>
                                 </ul>
                             </div>
@@ -631,12 +669,12 @@
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Date<span class="text-danger">*</span>
+                                    Date
                                 </label></a></li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Delivery Challan#<span class="text-danger">*</span>
+                                    Credit Note#<span class="text-danger">*</span>
                                 </label></a></li>
                         <li><a class="dropdown-item" href="#">
                                 <input class="form-check-input" type="checkbox" value="" id="" checked>
@@ -647,7 +685,13 @@
                         <li><a class="dropdown-item" href="#">
                                 <input class="form-check-input" type="checkbox" value="" id="" checked>
                                 <label class="form-check-label" for="">
-                                    Customer Name<span class="text-danger">*</span>
+                                    Customer Name
+                                </label>
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                                <label class="form-check-label" for="">
+                                    Invoice
                                 </label>
                             </a></li>
                         <li><a class="dropdown-item" href="#">
@@ -659,19 +703,19 @@
                         <li><a class="dropdown-item" href="#">
                                 <input class="form-check-input" type="checkbox" value="" id="" checked>
                                 <label class="form-check-label" for="">
-                                    Invoice Status
+                                    Amount
                                 </label>
                             </a></li>
                         <li><a class="dropdown-item" href="#">
                                 <input class="form-check-input" type="checkbox" value="" id="" checked>
                                 <label class="form-check-label" for="">
-                                    Amount<span class="text-danger">*</span>
+                                    Balance
                                 </label>
                             </a></li>
-                        <li><a class="dropdown-item border-bottom mb-3" href="#">
+                        <li><a class="dropdown-item" href="#">
                                 <input class="form-check-input" type="checkbox" value="" id="">
                                 <label class="form-check-label" for="">
-                                    Company Name
+                                    Sales Person
                                 </label>
                             </a></li>
                         <li><a class="dropdown-item" href="#">
@@ -684,45 +728,67 @@
             <div class="col-11">
                 <table class="table table-customer">
                     <thead>
-                        <tr>
-                            <th>
-                                Date
-                            </th>
-                            <th>Delivery Challan#</th>
+                        <tr class="recPayTableHead1">
+                            <th>Date</th>
+                            <th>Credit Note#</th>
                             <th>Reference Number</th>
                             <th>Customer Name</th>
+                            <th>Invoice</th>
                             <th>Status</th>
-                            <th>Invoice Status</th>
                             <th>Amount</th>
+                            <th>Balance</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="./delivered.html" class="text-dark">12/07/2022</a></td>
-                            <td><a href="./delivered.html">DC-00003</a></td>
-                            <td><a href="./delivered.html" class="text-dark">123456</a></td>
-                            <td><a href="./delivered.html" class="text-dark">vishal deore</a></td>
-                            <td><a href="./delivered.html" class="text-success">Delivered</a></td>
-                            <td><a href="./delivered.html" class="text-dark">Invoice</a></td>
-                            <td><a href="./delivered.html" class="text-dark">Rs.605.00</a></td>
-                        </tr>
-                        <tr>
-                            <td>12/07/2022</td>
-                            <td class="text-primary">DC-00002</td>
-                            <td>123456</td>
-                            <td>vishal deore</td>
-                            <td>Returned</td>
-                            <td>Not Invoice</td>
-                            <td>Rs.0.00</td>
-                        </tr>
-                        <tr>
                             <td><a href="./draft.html" class="text-dark">12/07/2022</a></td>
-                            <td><a href="./draft.html">DC-00001</a></td>
-                            <td><a href="./draft.html" class="text-dark">123456</a></td>
-                            <td><a href="./draft.html" class="text-dark">vishal deore</a></td>
-                            <td><a href="./draft.html" class="text-dark">Returned</a></td>
-                            <td><a href="./draft.html" class="text-dark">Invoice</a></td>
-                            <td><a href="./draft.html" class="text-dark">Rs.605.00</a></td>
+                            <td><a href="./draft.html">CN-00001</a></td>
+                            <td><a href="./draft.html" class="text-dark"></a></td>
+                            <td><a href="./draft.html" class="text-dark">Mr. Badshah khan</a></td>
+                            <td><a href="./draft.html" class="text-dark">INV-000001</a></td>
+                            <td><a href="./draft.html" class="text-secondary">Draft</a></td>
+                            <td><a href="./draft.html" class="text-dark">₹.500.00</a></td>
+                            <td><a href="./draft.html" class="text-dark">₹.500.00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="" class="text-dark">12/07/2022</a></td>
+                            <td><a href="">CN-00001</a></td>
+                            <td><a href="" class="text-dark"></a></td>
+                            <td><a href="" class="text-dark">Mr. Badshah khan</a></td>
+                            <td><a href="" class="text-dark">INV-000002</a></td>
+                            <td><a href="" class="text-secondary">Draft</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="" class="text-dark">12/07/2022</a></td>
+                            <td><a href="">CN-00001</a></td>
+                            <td><a href="" class="text-dark"></a></td>
+                            <td><a href="" class="text-dark">Mr. Badshah khan</a></td>
+                            <td><a href="" class="text-dark">INV-000003</a></td>
+                            <td><a href="" class="text-secondary">Draft</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="" class="text-dark">12/07/2022</a></td>
+                            <td><a href="">CN-00001</a></td>
+                            <td><a href="" class="text-dark"></a></td>
+                            <td><a href="" class="text-dark">Mr. Badshah khan</a></td>
+                            <td><a href="" class="text-dark">INV-000004</a></td>
+                            <td><a href="" class="text-secondary">Draft</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="" class="text-dark">12/07/2022</a></td>
+                            <td><a href="">CN-00001</a></td>
+                            <td><a href="" class="text-dark"></a></td>
+                            <td><a href="" class="text-dark">Mr. Badshah khan</a></td>
+                            <td><a href="" class="text-dark">INV-000005</a></td>
+                            <td><a href="" class="text-secondary">Draft</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
+                            <td><a href="" class="text-dark">₹.500.00</a></td>
                         </tr>
                     </tbody>
                 </table>

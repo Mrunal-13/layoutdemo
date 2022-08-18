@@ -35,13 +35,13 @@
                 <a href="../html/register.html"><i class="fa-solid fa-plus"></i></a>
                 <label for="">Add Branch</label>
             </div>
-            <div class="branch-card" onclick="goBack()">
+            <div id="branchCard" class="branch-card">
                 <div class="hd">
                     <p>Branch-</p>
                     <p>Sakinaka,Nagpur</p>
                 </div>
-                <div class="branch_detail">
-                    <p>Dr. Aware hospital and Nursing Home</p>
+                <div  class="branch_detail">
+                    <p id="hospName">Dr. Aware hospital and Nursing Home</p>
                     <p>ANJHK2545K</p>
                     <P>Shop no. 20 $ 21 Full Bazzar Half gali,Complete</P>
                     <a href="../html/register.html">Change</a>
@@ -91,10 +91,13 @@
             </div>
         </div>
     </div>
+    <script src="http://127.0.0.1:5500/layout1.js">
+    </script>
+    <script>
+        let branchCard=document.getElementById("branchCard");
+        branchCard.addEventListener("click",()=>{
+        window.location.href ="http://127.0.0.1:5500/dashboard.html";
+        })
+    </script>
 </body>
-<script>
-    function goBack(){
-        history.back();
-    }
-</script>
-</html
+</html>

@@ -382,3 +382,14 @@ function showNotifPermission() {
     console.log('Perm granted', getperm) 
   });
 }
+
+// go back from the label page box
+let myHospName=document.getElementById("myHospName");
+myHospName.innerText="Add Establishment";
+// let data=window.performance.getEntriesByType("navigation");
+// console.log(data);
+// if (data==="reload") {
+//   let hospName=localStorage.getItem("hospName");
+//   localStorage.removeItem("hospName")
+//   myHospName.innerText=hospName
+// }

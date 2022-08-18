@@ -446,10 +446,10 @@
                         <a href="">Recurring Invoices</a>
                     </li>
                     <li>
-                        <a href="">Sales Return</a>
+                        <a href="../sales-return/salesReturn.html">Sales Return</a>
                     </li>
                     <li>
-                        <a href="">Credit Notes</a>
+                        <a href="../credit-notes/creditNotes.html">Credit Notes</a>
                     </li>
                 </ul>
             </li>
@@ -576,7 +576,8 @@
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
                                                     class="form-control" id=""></a></li>
-                                        <li><a class="dropdown-item border-bottom mb-3" href="../customers/allCustomers.html">Mr. Badshah khan</a>
+                                        <li><a class="dropdown-item border-bottom mb-3"
+                                                href="../customers/allCustomers.html">Mr. Badshah khan</a>
                                         </li>
                                         <li><a class="dropdown-item border-bottom mb-3" href="#">sample baba</a></li>
                                         <li><a class="dropdown-item text-primary" href="./newCustomer.html">+ New
@@ -871,34 +872,21 @@
                                             <div class="modal-body">
                                                 <div class="my-4 row">
                                                     <div class="col-10">
-                                                        <div class="dropdown border rounded">
-                                                            <button class="btn btn-light dropdown-toggle" type="button"
-                                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                Customer Type
-                                                            </button>
-                                                            <ul class="dropdown-menu"
-                                                                aria-labelledby="dropdownMenuButton1">
-                                                                <li><a class="dropdown-item" href="#">Customer Name</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Customer Type</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">First Name</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Status</a></li>
-                                                                <li><a class="dropdown-item" href="#">Address</a></li>
-                                                                <li><a class="dropdown-item" href="#">GSTIN</a></li>
-                                                                <li><a class="dropdown-item" href="#">GST Treatment</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Company Name</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Last Name</a></li>
-                                                                <li><a class="dropdown-item" href="#">Email</a></li>
-                                                                <li><a class="dropdown-item" href="#">Mobile</a></li>
-                                                                <li><a class="dropdown-item" href="#">Place of
-                                                                        Supply</a></li>
-                                                            </ul>
-                                                        </div>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Customer Type</option>
+                                                            <option>Customer Name</option>
+                                                            <option>Customer Type</option>
+                                                            <option>First Name</option>
+                                                            <option>Status</option>
+                                                            <option>Address</option>
+                                                            <option>GSTIN</option>
+                                                            <option>GST Treatment</option>
+                                                            <option>Company Name</option>
+                                                            <option>Last Name</option>
+                                                            <option>Email</option>
+                                                            <option>Mobile</option>
+                                                            <option>Place of Supply</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-2"><button type="button"
                                                             class="btn btn-primary">Done</button></div>
@@ -1721,141 +1709,144 @@
                                     </div>
                                 </td>
                                 <td></td>
-                                <td>
-                </div>
-                </td>
-                <td class="d-flex justify-content-between">
-                    <div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;">
-                        <option selected>₹</option>
-                        <option>%</option>
-                    </select>
-                </td>
-                <td class="text-end">₹0.00
-                    <div style="margin-right: -62px; margin-top: -23px;"> <i
-                            class="fa fa-clone text-primary icon-copy icon-copy-3" aria-hidden="true"></i> <i
-                            class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i>
+                                <td></td>
+                                <td class="d-flex justify-content-between">
+                                    <div>0</div> <select class="form-select" aria-label="Default select example"
+                                        style="width: 64px;">
+                                        <option selected>₹</option>
+                                        <option>%</option>
+                                    </select>
+                                </td>
+                                <td class="text-end">₹0.00
+                                    <div style="margin-right: -62px; margin-top: -23px;"> <i
+                                            class="fa fa-clone text-primary icon-copy icon-copy-3"
+                                            aria-hidden="true"></i> <i
+                                            class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <button class="btn btn-light" type="button" id="btn-add-another-line">
+                            <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> Add another line
+                        </button>
                     </div>
-                </td>
-                </tr>
-                </tbody>
-                </table>
-                <div>
-                    <button class="btn btn-light" type="button" id="btn-add-another-line">
-                        <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> Add another line
-                    </button>
                 </div>
-            </div>
-            <div class="mt-4">
-                <div class="container">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-5 border border-secondary rounded">
-                            <div class="p-3">
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Customer Notes</label>
-                                    <textarea class="form-control"
-                                        placeholder="Enter any notes to be displayed in your transaction"
-                                        id=""></textarea>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="checkChecked"
-                                            checked>
-                                        <label class="form-check-label" for="checkChecked">
-                                            Use this in future for all estimates of all customers.
-                                        </label>
+                <div class="mt-4">
+                    <div class="container">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-5 border border-secondary rounded">
+                                <div class="p-3">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Customer Notes</label>
+                                        <textarea class="form-control"
+                                            placeholder="Enter any notes to be displayed in your transaction"
+                                            id=""></textarea>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked"
+                                                checked>
+                                            <label class="form-check-label" for="checkChecked">
+                                                Use this in future for all estimates of all customers.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 border border-secondary rounded bg-light">
+                                <div class="p-3">
+                                    <div class="row mb-3">
+                                        <div class="col-6">Sub Total</div>
+                                        <div class="col-6 text-end">0.00</div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-4"><input type="text" class="form-control" id=""
+                                                placeholder="Adjustment" style="border: dotted;"></div>
+                                        <div class="col-4"><input type="text" class="form-control" id=""></div>
+                                        <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
+                                                aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                title="Add any + ve or -ve charges that need to be applied to adjust the total transaction amount e.g. +10 or -10.">
+                                            </i></div>
+                                        <div class="col-3 text-end">0.00</div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-4">TCS</div>
+                                        <div class="col-5"><select class="form-select"
+                                                aria-label="Default select example">
+                                                <option selected>Select Tax</option>
+                                                <option>%</option>
+                                                <option>₹</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
+                                                aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                title="TCS is calculated on the total amount which includes taxes, shipping charges, discounts and adjustments.">
+                                            </i></div>
+                                        <div class="col-2 text-end">0.00</div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6 fw-bold fs-5">Total ( ₹ )</div>
+                                        <div class="col-6 text-end fw-bold fs-5">0.00</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5 border border-secondary rounded bg-light">
-                            <div class="p-3">
-                                <div class="row mb-3">
-                                    <div class="col-6">Sub Total</div>
-                                    <div class="col-6 text-end">0.00</div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-4"><input type="text" class="form-control" id=""
-                                            placeholder="Adjustment" style="border: dotted;"></div>
-                                    <div class="col-4"><input type="text" class="form-control" id=""></div>
-                                    <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
-                                            aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Add any + ve or -ve charges that need to be applied to adjust the total transaction amount e.g. +10 or -10.">
-                                        </i></div>
-                                    <div class="col-3 text-end">0.00</div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-4">TCS</div>
-                                    <div class="col-5"><select class="form-select" aria-label="Default select example">
-                                            <option selected>Select Tax</option>
-                                            <option>%</option>
-                                            <option>₹</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-1"> <i class="fa fa-question-circle-o text-secondary"
-                                            aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="TCS is calculated on the total amount which includes taxes, shipping charges, discounts and adjustments.">
-                                        </i></div>
-                                    <div class="col-2 text-end">0.00</div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-6 fw-bold fs-5">Total ( ₹ )</div>
-                                    <div class="col-6 text-end fw-bold fs-5">0.00</div>
-                                </div>
+                    </div>
+                </div>
+                <div class="mt-4 border border-secondary rounded pb-3 bg-light">
+                    <div class="row p-3">
+                        <div class="col-8">
+                            <label for="" class="form-label">Terms & Conditions</label>
+                            <textarea class="form-control"
+                                placeholder="Enter the terms and condition and business to be displayed in your transaction"
+                                id=""></textarea>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkChecked2" checked>
+                                <label class="form-check-label" for="checkChecked2">
+                                    Use this in future for all estimates of all customers.
+                                </label>
                             </div>
+                        </div>
+                        <div class="col-4 border-left">
+                            <label for="" class="form-label">Attach File(s) to Delivery Challan</label>
+                            <div class="input-group mb-3">
+                                <label for="formFileMultiple" class="form-label mr-1 px-3 py-2 rounded"
+                                    style="border: dotted;"> <i class="fa fa-upload" aria-hidden="true"></i></label>
+                                <input class="form-control" type="file" id="formFileMultiple" multiple
+                                    style="display: none;">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="border: dotted;">
+                                        Upload Files
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">
+                                                <label for="formFileMultiple" class="form-label">Attach from
+                                                    Desktop</label>
+                                                <input class="form-control" type="file" id="formFileMultiple" multiple
+                                                    style="display: none;">
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="#">Attach from Cloud</a></li>
+                                        <li><a class="dropdown-item" href="#">Attach from Documents</a></li>
+                                    </ul>
+                                </div>
+                                <input type="file" class="form-control" id="inputGroupFile01"
+                                    style="visibility: hidden;">
+                            </div>
+                            <div class="filName">
+                                <a href="" id="fileName"></a>
+                            </div>
+                            <div>You can upload a maximum of 5 files, 5MB each</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mt-4 border border-secondary rounded pb-3 bg-light">
-                <div class="row p-3">
-                    <div class="col-8">
-                        <label for="" class="form-label">Terms & Conditions</label>
-                        <textarea class="form-control"
-                            placeholder="Enter the terms and condition and business to be displayed in your transaction"
-                            id=""></textarea>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkChecked2" checked>
-                            <label class="form-check-label" for="checkChecked2">
-                                Use this in future for all estimates of all customers.
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-4 border-left">
-                        <label for="" class="form-label">Attach File(s) to Delivery Challan</label>
-                        <div class="input-group mb-3">
-                            <label for="formFileMultiple" class="form-label mr-1 px-3 py-2 rounded"
-                                style="border: dotted;"> <i class="fa fa-upload" aria-hidden="true"></i></label>
-                            <input class="form-control" type="file" id="formFileMultiple" multiple
-                                style="display: none;">
-                            <div class="dropdown">
-                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false" style="border: dotted;">
-                                    Upload Files
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">
-                                            <label for="formFileMultiple" class="form-label">Attach from Desktop</label>
-                                            <input class="form-control" type="file" id="formFileMultiple" multiple
-                                                style="display: none;">
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="#">Attach from Cloud</a></li>
-                                    <li><a class="dropdown-item" href="#">Attach from Documents</a></li>
-                                </ul>
-                            </div>
-                            <input type="file" class="form-control" id="inputGroupFile01" style="visibility: hidden;">
-                        </div>
-                        <div class="filName">
-                            <p id="fileName"></p>
-                        </div>
-                        <div>You can upload a maximum of 5 files, 5MB each</div>
-                    </div>
+                <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
+                <div class="my-3">
+                    <button class="btn btn-outline-secondary">Save as Draft</button>
+                    <button class="btn btn-primary">Save and Send</button>
+                    <a href="./estimates.html"><button class="btn btn-outline-secondary">Cancel</button></a>
                 </div>
             </div>
-            <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
-            <div class="my-3">
-                <button class="btn btn-outline-secondary">Save as Draft</button>
-                <button class="btn btn-primary">Save and Send</button>
-                <a href="./estimates.html"><button class="btn btn-outline-secondary">Cancel</button></a>
-            </div>
-        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

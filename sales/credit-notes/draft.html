@@ -630,32 +630,39 @@
                         </div>
                     </div>
                     <div class="row py-3 px-5 active-item border-bottom">
-                        <div class="col-10">Sample baba</div>
-                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="col-10 text-dark">Sample baba</div>
+                        <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
                         <div class="d-flex justify-content-between" style="margin-left: 47px;">
                             <div class="div-send-text text-secondary">Draft</div>
-                            <div><small>₹200.00</small> <small class="text-primary pl-3">SO-00001</small> <small
-                                    class="border-left pl-2">INV-00003</small></div>
+                            <div><small class="text-dark">₹200.00</small> <small class="pl-3">SO-00001</small>
+                                <small class="border-left pl-2 text-dark">INV-00003</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="row py-3 px-5 border-bottom">
-                        <div class="col-10">Sample baba</div>
-                        <div class="col-2"><small>26/06/2017</small></div>
-                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text text-secondary">Draft</div>
-                            <div><small>₹200.00</small> <small class="text-primary pl-3">SO-00001</small> <small
-                                    class="border-left pl-2">INV-00002</small></div>
+                    <a href="./open.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10 text-dark">Sample baba</div>
+                            <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                                <div class="div-send-text">Open</div>
+                                <div><small class="text-dark">₹200.00</small> <small class="pl-3">SO-00001</small>
+                                    <small class="border-left pl-2 text-dark">INV-00002</small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row py-3 px-5 border-bottom">
-                        <div class="col-10">Sample baba</div>
-                        <div class="col-2"><small>26/06/2017</small></div>
-                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text text-secondary">Draft</div>
-                            <div><small>₹200.00</small> <small class="text-primary pl-3">SO-00001</small> <small
-                                    class="border-left pl-2">INV-00001</small></div>
+                    </a>
+                    <a href="./closed.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10 text-dark">Sample baba</div>
+                            <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                                <div class="div-send-text text-success">Closed</div>
+                                <div><small class="text-dark">₹200.00</small> <small class="pl-3">SO-00001</small>
+                                    <small class="border-left pl-2 text-dark">INV-00001</small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-9 border-left">
                     <div class="row mb-4 border-bottom py-2 pb-3">
@@ -724,11 +731,14 @@
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Refund</a></li>
-                                    <li><a class="dropdown-item" href="#">Clone</a></li>
-                                    <li><a class="dropdown-item" href="#">Apply To Invoice</a></li>
-                                    <li><a class="dropdown-item" href="#">Add e-Way Bill Details</a></li>
-                                    <li><a class="dropdown-item" href="#">Void</a></li>
+                                    <li><a class="dropdown-item" href="./refund.html">Refund</a></li>
+                                    <li><a class="dropdown-item" href="./newCreditNote.html">Clone</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupInvoice">Apply To Invoice</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupE-Way">Add e-Way Bill Details</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupVoid">Void</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
                                 </ul>
@@ -752,6 +762,77 @@
                                                     <button type="button" class="btn btn-primary"
                                                         data-bs-dismiss="modal">No</button>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupE-Way" tabindex="-1" aria-labelledby="popupE-WayLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupE-WayLabel">Add e-Way Bill Details</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
+                                                            <i class="fa fa-file-text file-bill" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="text-primary text-center">Create New e-Way Bill
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border-left pl-2">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
+                                                            <i class="fa fa-hand-o-up file-bill" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="text-primary text-center">Associate e-Way Bill
+                                                            Number</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupInvoice" tabindex="-1"
+                                    aria-labelledby="popupInvoiceLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupInvoiceLabel">Apply credits from
+                                                    CN-00001</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="text-center">There are no invoices in open status for this
+                                                    customer. Hence,
+                                                    credit cannot be applied.</div>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <button type="button" class="btn btn-primary"
+                                                    data-bs-dismiss="modal">Ok</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupVoid" tabindex="-1" aria-labelledby="popupVoidLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <label for="" class="form-label">Enter a reason for marking this
+                                                    transaction as Void.</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <button type="button" class="btn btn-primary">Void it</button>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
                                             </div>
                                         </div>
                                     </div>

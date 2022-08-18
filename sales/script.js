@@ -253,6 +253,18 @@ $(document).ready(function () {
         $(".recPayTableHead2").hide();
     });
 
+    $(".creditNoteTableHead1").show();
+    $(".creditNoteTableHead2").hide();
+
+    $(".checkCreditHead").click(function () {
+        $(".creditNoteTableHead2").show();
+        $(".creditNoteTableHead1").hide();
+    });
+    $("#closeCreNoteHead").click(function () {
+        $(".creditNoteTableHead1").show();
+        $(".creditNoteTableHead2").hide();
+    });
+
     // Code for packages section @anjuDewangan
     $(".divPackage1-1").show();
     $(".divPackage1-2").hide();

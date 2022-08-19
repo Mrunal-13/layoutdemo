@@ -629,15 +629,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row py-3 px-5 active-item border-bottom">
-                        <div class="col-10">Sample baba</div>
-                        <div class="col-2"><small>26/06/2017</small></div>
-                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text text-primary">Open</div>
-                            <div><small>₹200.00</small> <small class="text-primary pl-3">SO-00001</small> <small
-                                    class="border-left pl-2">INV-00003</small></div>
+                    <a href="./open.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10 text-dark">Sample baba</div>
+                            <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                                <div class="div-send-text">Open</div>
+                                <div><small class="text-dark">₹200.00</small> <small class="pl-3">SO-00001</small>
+                                    <small class="border-left pl-2 text-dark">INV-00003</small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <a href="./draft.html" class="text-decoration">
                         <div class="row py-3 px-5 border-bottom">
                             <div class="col-10 text-dark">Sample baba</div>
@@ -650,24 +653,25 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./closed.html" class="text-decoration">
-                        <div class="row py-3 px-5 border-bottom">
-                            <div class="col-10 text-dark">Sample baba</div>
-                            <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
-                            <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                                <div class="div-send-text text-success">Closed</div>
-                                <div><small class="text-dark">₹200.00</small> <small class="pl-3">SO-00001</small>
-                                    <small class="border-left pl-2 text-dark">INV-00001</small>
-                                </div>
-                            </div>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-10">Sample baba</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text text-success">Closed</div>
+                            <div><small>₹200.00</small> <small class="text-primary pl-3">SO-00001</small> <small
+                                    class="border-left pl-2">INV-00001</small></div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-9 border-left">
                     <div class="row mb-4 border-bottom py-2 pb-3">
                         <div class="col-2">
                             <h5>CN-00001</h5>
                         </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
                         <div class="col">
                             <a href="./editCreditNote.html">
                                 <button class="btn btn-light border">Edit</button>
@@ -842,9 +846,6 @@
                             <button class="btn btn-light border">
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                             </button>
-                        </div>
-                        <div class="col">
-                            <a href="#"><button class="btn btn-light border">Apply To Invoice</button></a>
                         </div>
                         <div class="col">
                             <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
@@ -1114,17 +1115,79 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-1 delete-link position-absolute">
+                        <div class="col mt-1">
                             <a href="./creditNotes.html" class="text-dark"><i class="fa fa-times"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="mt-5 mb-3 mx-3">Associated Invoice: <span class="text-primary">INV-000003</span></div>
+                    <div class="border p-3 rounded mb-3 mx-2">
+                        <div class="d-flex justify-content-between pb-3">
+                            <div>Refund History</div>
+                            <div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                        </div>
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Payment Mode</th>
+                                    <th>Amount Refunded</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>19/07/2022</td>
+                                    <td>Cash</td>
+                                    <td>₹806.00</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="./refund.html"> <i class="fa fa-pencil-square text-secondary fs-3"
+                                                aria-hidden="true"></i></a>
+                                        <i class="fa fa-trash text-secondary fs-3" aria-hidden="true"
+                                            data-bs-toggle="modal" data-bs-target="#popupDelete2"></i>
+                                        <div class="modal fade" id="popupDelete2" tabindex="-1"
+                                            aria-labelledby="popupDelete2Label" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div class="col-10">
+                                                                <div>Are you sure about deleting a refund for this
+                                                                    credit note?</div>
+                                                                <div class="row mt-3">
+                                                                    <div class="col-3">
+                                                                        <a href="./creditNotes.html">
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">Delete</button>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <button type="button" class="btn btn-light"
+                                                                            data-bs-dismiss="modal">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="border rounded mx-2" style="overflow: hidden;">
-                        <div class="positionRel bg-primary banner-send" data-bs-toggle="tooltip"
+                        <div class="positionRel bg-success banner-send" data-bs-toggle="tooltip"
                             data-bs-placement="bottom"
                             title="A credit note with an open status indicates that it has not yet been applied to an invoice or a refund has been issued.">
-                            Open</div>
+                            Closed</div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -1146,7 +1209,7 @@
                                 <div>fulasheth</div>
                                 <div>bahubali Maharashtra 425160</div>
                                 <div>India</div>
-                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Credits Remaining
+                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Credit Note
                                     </h3>
                                 </div>
                             </div>
@@ -1277,17 +1340,17 @@
                                                 </div>
                                                 <div>800.00</div>
                                             </div>
-                                            <div class="d-flex justify-content-around">
-                                                <div>
-                                                    Adjustment
-                                                </div>
-                                                <div>6.00</div>
-                                            </div>
                                             <div class="d-flex justify-content-around fw-bold">
                                                 <div>
                                                     Total
                                                 </div>
                                                 <div>₹806.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-around">
+                                                <div>
+                                                    Refund
+                                                </div>
+                                                <div class="text-danger text-end">(-)806.00</div>
                                             </div>
                                             <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
                                                 <div>

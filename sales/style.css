@@ -10,39 +10,43 @@
     width: 100%;
     z-index: 7;
     border-bottom: 3px solid black;
-  }
-  .navbar-brand{
+}
+
+.navbar-brand {
     display: flex;
     font-size: 15px;
     align-items: center;
     height: 100%;
     font-weight: 700;
-  }
-  .navbar-brand:hover{
+}
+
+.navbar-brand:hover {
     background-color: #FFDEDE;
-  }
-  .navbar-brand p{
+}
+
+.navbar-brand p {
     margin: 0 15px 0 0;
-  }
-  .buttonForSideNav {
+}
+
+.buttonForSideNav {
     outline: none;
     height: 40px;
     border: 1px solid #a4a4a4;
     margin-right: 10px;
     margin-top: 10px;
     border-radius: 9px;
-  }
-  
-  .buttonForSideNav:hover {
+}
+
+.buttonForSideNav:hover {
     background-color: #a4a4a4;
-  }
-  
-  .navbar-first {
+}
+
+.navbar-first {
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-  }
+}
 
 .hospital-name {
     flex-wrap: nowrap;
@@ -1216,6 +1220,10 @@ main .active-item {
     /* .divPrint {
         position: absolute;
     } */
+}
+
+.justify-content-end .dropdown {
+    margin-top: -37px !important;
 }
 
 /* Code for Sales @anjudewangan */

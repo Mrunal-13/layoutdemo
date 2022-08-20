@@ -3623,7 +3623,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row py-3 px-5 active-item border-bottom">
+                    <div class="row py-3 px-5 border-bottom">
                         <div class="col-10">Mr. Badshah khan</div>
                         <div class="col-2"><small>26/06/2017</small></div>
                         <div class="d-flex justify-content-between" style="margin-left: 47px;">
@@ -3647,14 +3647,22 @@
                             <div>₹200.00 <span class="text-primary">INV-00005 / SO-00001</span></div>
                         </div>
                     </div>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-10">Mr. Badshah khan</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-secondary">Draft</small></div>
+                            <div>₹800.00 <span class="text-primary">INV-00007 / SO-00004</span></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-9 border-left">
                     <div class="row mb-4 border-bottom py-2 pb-3">
                         <div class="col-2">
-                            <h5>BOS-00001</h5>
+                            <h5>INV-00007</h5>
                         </div>
                         <div class="col">
-                            <a href="../salesOrders/editBOS.html">
+                            <a href="./editInvoice.html">
                                 <button class="btn btn-light border">Edit</button>
                             </a>
                         </div>
@@ -3717,8 +3725,12 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="../credit-notes/newCreditNote.html">Create Credit
                                             Note</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupE-Way">Add e-Way Bill Details</a></li>
                                     <li><a class="dropdown-item" href="../salesOrders/newBillOfSupply.html">Clone</a>
                                     </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupVoid">Void</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
                                 </ul>
@@ -3746,6 +3758,57 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="modal fade" id="popupVoid" tabindex="-1" aria-labelledby="popupVoidLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <label for="" class="form-label">Enter a reason for marking this
+                                                    transaction as Void.</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <a href="./void.html">
+                                                    <button type="button" class="btn btn-primary">Void it</button>
+                                                </a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupE-Way" tabindex="-1" aria-labelledby="popupE-WayLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupE-WayLabel">Add e-Way Bill Details</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
+                                                            <i class="fa fa-file-text file-bill" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="text-primary text-center">Create New e-Way Bill
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border-left pl-2">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
+                                                            <i class="fa fa-hand-o-up file-bill" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="text-primary text-center">Associate e-Way Bill
+                                                            Number</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col">
@@ -3753,7 +3816,77 @@
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                             </button>
                         </div>
-                        <div class="col"></div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-light border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-bell-o" aria-hidden="true"></i> Reminders
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li><a class="dropdown-item" href="#">Send Now</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupRecordPay">Stop Reminders</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupIWOff2">Expected Payment Date</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal fade" id="popupRecordPay" tabindex="-1"
+                                aria-labelledby="popupRecordPayLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row px-5 py-3">
+                                                <div class="col-1">
+                                                    <i class="fa fa-info-circle fs-1" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Warning! Clicking OK will turn off all reminders for
+                                                                this invoice. If that's fine, go ahead.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Ok</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupIWOff2" tabindex="-1" aria-labelledby="popupIWOff2Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupIWOffLabel">Expected Payment Date</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-5">
+                                                <input class="form-control" type="date" value="" id="">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Notes<span
+                                                        class="text-danger">*</span></label>
+                                                <textarea class="form-control" id="" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col">
                             <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
                                 <i class="fa fa-share-alt" aria-hidden="true"></i> Share
@@ -4022,156 +4155,72 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-1">
+                        <div class="col mt-1 delete-link position-absolute">
                             <a href="./invoices.html" class="text-dark"><i class="fa fa-times"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="border p-3 rounded mb-3 mx-2">
-                        <div class="d-flex justify-content-between pb-3">
-                            <div>Payments Received</div>
-                            <div><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                    <div class="row rounded p-2 m-2 d-flex align-items-center" style="background-color: #E7F6FF;">
+                        <div class="col">
+                            <i class="fa fa-inr fs-3" aria-hidden="true"></i>
                         </div>
-                        <table class="table text-center">
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Payment#</th>
-                                    <th>Reference#</th>
-                                    <th>Payment Mode</th>
-                                    <th>Amount</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>19/07/2022</td>
-                                    <td><a href="../received-payments/allRecPay.html">1</a></td>
-                                    <td>Sample</td>
-                                    <td>Cash</td>
-                                    <td>₹50.00</td>
-                                    <td>
-                                        <a href="./editPayment.html"><i class="fa fa-pencil-square text-secondary fs-3"
-                                                aria-hidden="true"></i></a>
-                                        <i class="fa fa-trash text-secondary fs-3" aria-hidden="true"
-                                            data-bs-toggle="modal" data-bs-target="#popupDeleteRecPay"></i>
-                                        <div class="modal fade" id="popupDeleteRecPay" tabindex="-1"
-                                            aria-labelledby="popupDeleteRecPayLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header bg-light">
-                                                        <h5 class="modal-title" id="popupDeleteRecPayLabel">Delete
-                                                            Recorded payment?</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="row mb-3">
-                                                            <div class="col-2 d-flex align-items-center"><i
-                                                                    class="fa fa-info-circle text-warning fs-1"
-                                                                    aria-hidden="
-                                                                    true"></i></div>
-                                                            <div class="col-10 text-start">You are deleting a payment of
-                                                                ₹50.00.
-                                                                You can either separate this payment from this invoice
-                                                                and add it to the customer as a credit, or you can
-                                                                delete this payment entirely.</div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="btn-group dropend">
-                                                                    <button type="button" class="btn dropdown-toggle"
-                                                                        aria-expanded="false" style="background-color: 
-                                                                #D7EEFF;" data-bs-toggle="modal"
-                                                                        data-bs-target="#popupAdvPay">
-                                                                        Separate & Add As Credit
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3">
-                                                            <div class="col">
-                                                                <div class="btn-group dropend">
-                                                                    <button type="button" class="btn dropdown-toggle"
-                                                                        aria-expanded="false" style="background-color: 
-                                                                    #D7EEFF;" data-bs-toggle="modal"
-                                                                        data-bs-target="#popupDeletePayment">
-                                                                        Delete Payment
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="col-7">
+                            <h6><i>Record payment for bills of supply</i></h6>
+                            <div>If you have received partial or full payment of this supply bill from your customer,
+                                you can record it.
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col">
+                            <a href="./recordPayment.html"> <button class="btn btn-primary">
+                                    Record Payment
+                                </button></a>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton5"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                    <li><a class="dropdown-item" href="./recordPayment.html">Record Payment</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupIWOff">Write Off</a></li>
+                                </ul>
+                                <div class="modal fade" id="popupIWOff" tabindex="-1" aria-labelledby="popupIWOffLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupIWOffLabel">Invoice Write Off</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-5">
+                                                    <input class="form-control" type="date" value="" id="">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="" class="form-label">Reason <span
+                                                            class="text-danger">*</span></label>
+                                                    <textarea class="form-control" id="" rows="3"></textarea>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="modal fade" id="popupAdvPay" tabindex="-1"
-                                            aria-labelledby="popupAdvPayLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header bg-light">
-                                                        <h5 class="modal-title" id="popupAdvPayLabel">Separate and
-                                                            record as an advance payment?</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="row mb-3">
-                                                            <div class="col-2 d-flex align-items-center"><i
-                                                                    class="fa fa-info-circle text-warning fs-1"
-                                                                    aria-hidden="
-                                                                    true"></i></div>
-                                                            <div class="col-10 text-start">This payment will be
-                                                                separated from this invoice and recorded as an advance
-                                                                payment from the customer.</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <a href="../salesOrders/sentBOS.html"> <button type="button"
-                                                                class="btn btn-primary">Separate & Add As
-                                                                Credit</button></a>
-                                                        <button type="button" class="btn btn-outline-secondary"
-                                                            data-bs-dismiss="modal">Cancel</button>
-                                                    </div>
-                                                </div>
+                                            <div class="modal-footer">
+                                                <a href="./paidInvoice.html"> <button type="button"
+                                                        class="btn btn-primary">Write it Off</button></a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
                                             </div>
                                         </div>
-                                        <div class="modal fade" id="popupDeletePayment" tabindex="-1"
-                                            aria-labelledby="popupDeletePaymentLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center mb-4">
-                                                            <h5>Delete payment?</h5>
-                                                        </div>
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center mb-4">
-                                                            <p>Once you delete this payment, you will not be able to
-                                                                recover it.</p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-around mb-4">
-                                                            <a href="../salesOrders/sentBOS.html"><button type="button"
-                                                                    class="btn btn-light">Delete</button></a>
-                                                            <button type="button" class="btn btn-primary"
-                                                                data-bs-dismiss="modal">No</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="border rounded mx-2" style="overflow: hidden;">
-                        <div class="positionRel bg-success banner-send" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="A fully paid invoice will be in paid status.">Paid</div>
+                    <div class="border rounded mx-2 mt-4" style="overflow: hidden;">
+                        <div class="positionRel bg-warning banner-send" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="An invoice not paid on time will be in overdue status.">
+                            Overdue</div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -4193,7 +4242,7 @@
                                 <div>fulasheth</div>
                                 <div>bahubali Maharashtra 425160</div>
                                 <div>India</div>
-                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Bill Of Supply
+                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>TAX INVOICE
                                     </h3>
                                 </div>
                             </div>
@@ -4201,10 +4250,10 @@
                                 <div class="col-6">
                                     <div class="row">
                                         <div class="col-6">#</div>
-                                        <div class="col-6 fw-bold">: BOS-000011</div>
+                                        <div class="col-6 fw-bold">: INV-00007</div>
                                     </div>
                                     <div class="row mb-4">
-                                        <div class="col-6">Bill Of Supply Date</div>
+                                        <div class="col-6">Invoice Date</div>
                                         <div class="col-6 fw-bold">: 26/06/2017</div>
                                     </div>
                                     <div class="row mb-4">
@@ -4343,17 +4392,11 @@
                                                 </div>
                                                 <div>₹806.00</div>
                                             </div>
-                                            <div class="d-flex justify-content-around">
-                                                <div>
-                                                    Write Off Amount
-                                                </div>
-                                                <div class="text-danger text-end">(-)906.00</div>
-                                            </div>
                                             <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
                                                 <div>
                                                     Balance Due
                                                 </div>
-                                                <div>₹0.00</div>
+                                                <div>₹806.00</div>
                                             </div>
                                             <div class="d-flex justify-content-center align-items-center">
                                                 <div>Authorized Signature</div>
@@ -4367,25 +4410,6 @@
                     <div class="d-flex justify-content-end mx-3 mt-2 mb-5">
                         <div>Template : 'Spreadsheet Template' <a href="#">Change</a></div>
                     </div>
-                    <div class="text-secondary">Associated Sales Orders ( 1 )</div>
-                    <table class="table mb-5">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Sales Order#</th>
-                                <th>Status</th>
-                                <th>Shipment Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>19/07/2022</td>
-                                <td><a href="../salesOrders/allSalesOrders.html">SO-00014</a></td>
-                                <td class="text-success">CLOSED</td>
-                                <td>20/07/2022</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>

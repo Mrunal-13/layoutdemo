@@ -3715,12 +3715,12 @@
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Create Credit Note</a></li>
-                                    <li><a class="dropdown-item" href="#">Clone</a></li>
-                                    <li><a class="dropdown-item" href="#">Void</a></li>
+                                    <li><a class="dropdown-item" href="../credit-notes/newCreditNote.html">Create Credit
+                                            Note</a></li>
+                                    <li><a class="dropdown-item" href="../salesOrders/newBillOfSupply.html">Clone</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
-                                    <li><a class="dropdown-item" href="#">Invoice Preferences</a></li>
                                 </ul>
                                 <div class="modal fade" id="popupDelete" tabindex="-1"
                                     aria-labelledby="popupDeleteLabel" aria-hidden="true">
@@ -4046,12 +4046,13 @@
                             <tbody>
                                 <tr>
                                     <td>19/07/2022</td>
-                                    <td>6</td>
+                                    <td><a href="../received-payments/allRecPay.html">1</a></td>
                                     <td>Sample</td>
                                     <td>Cash</td>
                                     <td>₹50.00</td>
                                     <td>
-                                        <a href="./editPayment.html"><i class="fa fa-pencil-square text-secondary fs-3" aria-hidden="true"></i></a>
+                                        <a href="./editPayment.html"><i class="fa fa-pencil-square text-secondary fs-3"
+                                                aria-hidden="true"></i></a>
                                         <i class="fa fa-trash text-secondary fs-3" aria-hidden="true"
                                             data-bs-toggle="modal" data-bs-target="#popupDeleteRecPay"></i>
                                         <div class="modal fade" id="popupDeleteRecPay" tabindex="-1"
@@ -4154,7 +4155,7 @@
                                                                 recover it.</p>
                                                         </div>
                                                         <div class="d-flex justify-content-around mb-4">
-                                                            <a href="../salesOrders/sentBOS.html"><button type="button"
+                                                            <a href="./invoices.html"><button type="button"
                                                                     class="btn btn-light">Delete</button></a>
                                                             <button type="button" class="btn btn-primary"
                                                                 data-bs-dismiss="modal">No</button>
@@ -4169,7 +4170,8 @@
                         </table>
                     </div>
                     <div class="border rounded mx-2" style="overflow: hidden;">
-                        <div class="positionRel bg-success banner-send">Paid</div>
+                        <div class="positionRel bg-success banner-send" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="A fully paid invoice will be in paid status.">Paid</div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -4319,7 +4321,7 @@
                                     <tr>
                                         <td>
                                             <div>Total In Words (Indian Rupee)</div>
-                                            <div class="mb-3"><i>Nine Hundred Six Only</i></div>
+                                            <div class="mb-3"><i>Eight Hundred Six Only</i></div>
                                             <div class="mb-3">Thanks for your business.</div>
                                         </td>
                                         <td colspan="4">

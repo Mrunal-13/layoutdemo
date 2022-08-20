@@ -3715,12 +3715,14 @@
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Create Credit Note</a></li>
-                                    <li><a class="dropdown-item" href="#">Clone</a></li>
-                                    <li><a class="dropdown-item" href="#">Void</a></li>
+                                    <li><a class="dropdown-item" href="../credit-notes/newCreditNote.html">Create Credit
+                                            Note</a></li>
+                                    <li><a class="dropdown-item" href="../salesOrders/newBillOfSupply.html">Clone</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupVoid">Void</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
-                                    <li><a class="dropdown-item" href="#">Invoice Preferences</a></li>
                                 </ul>
                                 <div class="modal fade" id="popupDelete" tabindex="-1"
                                     aria-labelledby="popupDeleteLabel" aria-hidden="true">
@@ -3742,6 +3744,25 @@
                                                     <button type="button" class="btn btn-primary"
                                                         data-bs-dismiss="modal">No</button>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupVoid" tabindex="-1" aria-labelledby="popupVoidLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <label for="" class="form-label">Enter a reason for marking this
+                                                    transaction as Void.</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <a href="./void.html">
+                                                    <button type="button" class="btn btn-primary">Void it</button>
+                                                </a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
                                             </div>
                                         </div>
                                     </div>
@@ -3777,16 +3798,19 @@
                                                         </div>
                                                     </div>
                                                     <div class="row mx-4 mb-3">
-                                                        <div class="col">
+                                                        <div class="form-check">
                                                             <input class="form-check-input" type="checkbox" value=""
                                                                 id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Do not show this
+                                                                again
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <span class="mr-5">Do not show this again</span>
                                             <a href="../salesOrders/recordPayment.html"> <button type="button"
                                                     class="btn btn-primary">Ok</button></a>
                                             <button type="button" class="btn btn-outline-secondary"
@@ -4080,13 +4104,16 @@
                         </div>
                         <div class="col"></div>
                         <div class="col">
-                            <a href="../salesOrders/recordPayment.html"> <button class="btn btn-secondary">
+                            <a href="./paid.html"> <button class="btn btn-secondary">
                                     Send Bill Of Supply
                                 </button></a>
                         </div>
                     </div>
                     <div class="border rounded mx-2 mt-4" style="overflow: hidden;">
-                        <div class="positionRel bg-secondary banner-send">Draft</div>
+                        <div class="positionRel bg-secondary banner-send" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom"
+                            title="Draft status indicates that the invoice may be subject to further changes and the amount will be reflected in your sales figures.">
+                            Draft</div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -4236,7 +4263,7 @@
                                     <tr>
                                         <td>
                                             <div>Total In Words (Indian Rupee)</div>
-                                            <div class="mb-3"><i>Nine Hundred Six Only</i></div>
+                                            <div class="mb-3"><i>Eight Hundred Six Only</i></div>
                                             <div class="mb-3">Thanks for your business.</div>
                                         </td>
                                         <td colspan="4">

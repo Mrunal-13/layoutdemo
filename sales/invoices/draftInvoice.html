@@ -16,16 +16,9 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script async defer type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
-    <!-- Advanced search popup console error solve @anjudewangan -->
+    <!-- Chart @anjudewangan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Chart @anjudewangan -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -288,7 +281,6 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -305,7 +297,6 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -322,10 +313,8 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
-
                     </div>
                     <div class="dropdown-divider"></div>
-
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -420,7 +409,7 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
                     href="#collapseExamplePages" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
+                    <i class="fa fa-fw fa fa-shopping-cart"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
@@ -561,254 +550,42 @@
 
     <!-- Sales Customers -->
     <main class="main">
-        <div class="container mt-3">
+        <div class="container" style="max-width: 1533px !important;">
             <div class="row">
-                <div class="col-6 gap-3">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            All Invoices
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
-                            <li><a class="dropdown-item" href="#">All</a></li>
-                            <li><a class="dropdown-item" href="#">Draft</a></li>
-                            <li><a class="dropdown-item" href="#">Pending Approval</a></li>
-                            <li><a class="dropdown-item" href="#">Approved</a></li>
-                            <li><a class="dropdown-item" href="#">Client Viewed</a></li>
-                            <li><a class="dropdown-item" href="#">Partially Paid</a></li>
-                            <li><a class="dropdown-item" href="#">Unpaid</a></li>
-                            <li><a class="dropdown-item" href="#">Overdue</a></li>
-                            <li><a class="dropdown-item" href="#">Payment Initiated</a></li>
-                            <li><a class="dropdown-item" href="#">Paid</a></li>
-                            <li><a class="dropdown-item" href="#">Void</a></li>
-                            <li><a class="dropdown-item" href="#">Yet To Be Shipped</a></li>
-                            <li><a class="dropdown-item" href="#">Shipped</a></li>
-                            <li><a class="dropdown-item" href="#">Invoices</a></li>
-                            <li><a class="dropdown-item" href="#">Bills Of Supply</a></li>
-                            <li><a class="dropdown-item" href="#">Debit Note</a></li>
-                            <li><a class="dropdown-item" href="#">Write Off</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col">
-                            <button class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#popupSearchCustomers"><i class="fa fa-search"
-                                    aria-hidden="true"></i></button>
-                            <div class="modal fade" id="popupSearchCustomers" tabindex="-1"
-                                aria-labelledby="popupSearchCustomersLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupSearchCustomersLabel">Search Invoice#
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Invoice#</label>
-                                                        <div class="col-sm-7">
-                                                            <input type="text" class="form-control" id="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Order
-                                                            Number</label>
-                                                        <div class="col-sm-7">
-                                                            <input type="text" class="form-control" id="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Date Range</label>
-                                                        <div class="col-sm-3">
-                                                            <input type="date" name="" id="" class="form-control">
-                                                        </div>
-                                                        <div class="col-sm-1">
-                                                            -
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <input type="date" name="" id="" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Created Date
-                                                            Range</label>
-                                                        <div class="col-sm-3">
-                                                            <input type="date" name="" id="" class="form-control">
-                                                        </div>
-                                                        <div class="col-sm-1">
-                                                            -
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <input type="date" name="" id="" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Status</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="js-example-basic-single" name="state">
-                                                                <option></option>
-                                                                <option disabled>Sales Orders</option>
-                                                                <option>Draft</option>
-                                                                <option>Pending</option>
-                                                                <option>Confirmed</option>
-                                                                <option>Void</option>
-                                                                <option>Closed</option>
-                                                                <option disabled>Invoice</option>
-                                                                <option>Partially Invoiced</option>
-                                                                <option>Invoiced</option>
-                                                                <option>Not Invoiced</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Item Name</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="js-example-basic-single" name="state">
-                                                                <option></option>
-                                                                <option>AK</option>
-                                                                <option>Sample Service</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Item
-                                                            Description</label>
-                                                        <div class="col-sm-7">
-                                                            <input type="date" name="" id="" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Account</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="js-example-basic-single" name="state">
-                                                                <option>Select a Account</option>
-                                                                <option>no result found</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Total
-                                                            Range</label>
-                                                        <div class="col-sm-3">
-                                                            <input type="text" name="" id="" class="form-control">
-                                                        </div>
-                                                        <div class="col-sm-1">
-                                                            -
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <input type="text" name="" id="" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Customer
-                                                            Name</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="js-example-basic-single" name="state">
-                                                                <option>Select a Customer</option>
-                                                                <option>no result found</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Project
-                                                            Name</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="js-example-basic-single" name="state">
-                                                                <option>Select a Customer</option>
-                                                                <option>no result found</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for=""
-                                                            class="col-sm-5 col-form-label">Salesperson</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="js-example-basic-single" name="state">
-                                                                <option>Select a Salesperson</option>
-                                                                <option>no result found</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <label for="" class="col-sm-5 col-form-label">Tax</label>
-                                                        <div class="col-sm-7">
-                                                            <select class="js-example-basic-single" name="state">
-                                                                <option>Select Tax</option>
-                                                                <option>GSTO [0%]</option>
-                                                                <option>GST12 [12%]</option>
-                                                                <option>GST18 [18%]</option>
-                                                                <option>GST28 [28%]</option>
-                                                                <option>GST5 [5%]</option>
-                                                                <option>IGSTO [0%]</option>
-                                                                <option>IGST12 [12%]</option>
-                                                                <option>IGST18 [18%]</option>
-                                                                <option>IGST28 [28%]</option>
-                                                                <option>IGSTS [5%]</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline-secondary"
-                                                data-bs-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-primary">Search</button>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="col-3">
+                    <div class="row border-bottom pb-2">
+                        <div class="col-2"></div>
+                        <div class="col-6">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Invoices
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">Draft</a></li>
+                                    <li><a class="dropdown-item" href="#">Pending Approval</a></li>
+                                    <li><a class="dropdown-item" href="#">Approved</a></li>
+                                    <li><a class="dropdown-item" href="#">Client Viewed</a></li>
+                                    <li><a class="dropdown-item" href="#">Partially Paid</a></li>
+                                    <li><a class="dropdown-item" href="#">Unpaid</a></li>
+                                    <li><a class="dropdown-item" href="#">Overdue</a></li>
+                                    <li><a class="dropdown-item" href="#">Payment Initiated</a></li>
+                                    <li><a class="dropdown-item" href="#">Paid</a></li>
+                                    <li><a class="dropdown-item" href="#">Void</a></li>
+                                    <li><a class="dropdown-item" href="#">Yet To Be Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Shipped</a></li>
+                                    <li><a class="dropdown-item" href="#">Invoices</a></li>
+                                    <li><a class="dropdown-item" href="#">Bills Of Supply</a></li>
+                                    <li><a class="dropdown-item" href="#">Debit Note</a></li>
+                                    <li><a class="dropdown-item" href="#">Write Off</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col">
-                            <a href="#" class="setting-link"><i class="fa fa-fw fa-cog"></i>Settings</a>
+                        <div class="col-2">
                         </div>
-                        <div class="col">
+                        <div class="col-2">
                             <div class="dropdown">
                                 <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -3846,313 +3623,734 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row py-3 px-5 border-bottom">
+                        <div class="col-10">Mr. Badshah khan</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-secondary">Draft</small></div>
+                            <div>₹800.00 <span class="text-primary">BOS-00004 / SO-00004</span></div>
+                        </div>
+                    </div>
+                    <div class="row py-3 px-5 border-bottom">
+                        <div class="col-10">Sanole baba</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-success">Closed</small></div>
+                            <div>₹2800.00 <span class="text-primary">INV-00005 / SO-00002</span></div>
+                        </div>
+                    </div>
+                    <div class="row py-3 px-5 border-bottom">
+                        <div class="col-10">Sample baba</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-success">Closed</small></div>
+                            <div>₹200.00 <span class="text-primary">INV-00005 / SO-00001</span></div>
+                        </div>
+                    </div>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="col-10">Mr. Badshah khan</div>
+                        <div class="col-2"><small>26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text"><small class="text-secondary">Draft</small></div>
+                            <div>₹800.00 <span class="text-primary">INV-00007 / SO-00004</span></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-1">
-            </div>
-            <div class="col-11 bg-light rounded">
-                <table class="table table-borderless table-customer mt-5">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Total Outstanding Receivables</th>
-                            <th class="text-secondary">Due Today</th>
-                            <th></th>
-                            <th class="text-secondary">Due Within 30 Days</th>
-                            <th></th>
-                            <th class="text-secondary">Overdue Invoice</th>
-                            <th style="background-color: #DEF1FF;">Average No. of Days for Getting Paid</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <i class="fa fa-arrow-circle-down text-warning fs-1 arrow-table" aria-hidden="true"></i>
-                            </td>
-                            <td><span class="mr-5">₹1,892.98</span> <span class="text-primary"><i class="fa fa-repeat"
-                                        aria-hidden="true"></i> Refresh</span></td>
-                            <td class="text-warning">₹1,215.00</td>
-                            <td class="text-secondary"><i class="fa fa-circle" aria-hidden="true"></i></td>
-                            <td>₹1,215.00</td>
-                            <td class="text-secondary"><i class="fa fa-circle" aria-hidden="true"></i></td>
-                            <td>₹677.98</td>
-                            <th style="background-color: #DEF1FF;"><b>0 Days</b></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-1 text-center">
-                <div class="dropdown invoice-dropdown">
-                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item text-secondary" href="#">Custamize colums</a></li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Date<span class="text-danger">*</span>
-                                </label>
+                <div class="col-9 border-left">
+                    <div class="row mb-4 border-bottom py-2 pb-3">
+                        <div class="col-2">
+                            <h5>INV-00007</h5>
+                        </div>
+                        <div class="col">
+                            <a href="./editInvoice.html">
+                                <button class="btn btn-light border">Edit</button>
                             </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Invoice#<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Order Number
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Customer name<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Status<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Due Date
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Amount<span class="text-danger">*</span>
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
-                                <label class="form-check-label" for="">
-                                    Balance Due
-                                </label>
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">
-                                <button type="button" class="btn btn-warning">Save</button>
-                                <button type="button" class="btn btn-outline-secondary">Cancel</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-11">
-                <table class="table table-customer mt-4">
-                    <thead>
-                        <tr class="invoiceTableHead1">
-                            <th>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">Date
-                            </th>
-                            <th>Invoice#</th>
-                            <th>Order Number</th>
-                            <th>Customer Name</th>
-                            <th>Status</th>
-                            <th>Due Date</th>
-                            <th>Amount</th>
-                            <th>Balance Due</th>
-                            <th></th>
-                        </tr>
-                        <tr class="invoiceTableHead2">
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark">
-                                    Link to existing Sales order(s)
-                                </button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                        class="fa fa-files-o" aria-hidden="true"></i></button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
-                                        class="fa fa-print" aria-hidden="true"></i></button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
-                                    data-bs-toggle="modal" data-bs-target="#popupDelete">
-                                    Export as E-Way Bill
-                                </button>
-                            </th>
-                            <th>
-                                <button type="button" class="btn btn-outline-secondary bg-light text-dark"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Bulk
-                                    Actions</button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                    <li><a class="dropdown-item" href="#">Mark as Confirmed</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark shipment as fulfilled</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Bulk Cancel Items</a>
-                                    <li><a class="dropdown-item" href="#">Bulk Update</a>
-                                    <li><a class="dropdown-item" href="#">Bulk reopen canceled items</a>
-                                    <li><a class="dropdown-item" href="#">Backorder</a>
-                                    <li><a class="dropdown-item" href="#">Dropship</a>
-                                    <li><a class="dropdown-item" href="#">Create Quick Shipments</a>
-                                    <li><a class="dropdown-item" href="#">Convert to Invoice</a>
-                                    <li><a class="dropdown-item" href="#">Merge Sales Orders</a>
-                                    </li>
-                                </ul>
-                            </th>
-                            <th>
-                                <button type="button"
-                                    class="btn btn-outline-secondary bg-light text-dark dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">More</button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                    <li><a class="dropdown-item" href="#">Delete</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark as Shipped</a></li>
-                                    <li><a class="dropdown-item" href="#">Undo Shipment</a></li>
-                                </ul>
-                            </th>
-                            <th>1 Invoices Selected</th>
-                            <th></th>
-                            <th> <i class="fa fa-times fs-5 mb-2" aria-hidden="true" id="closeInvoiceHead"></i></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">
-                                <a href="./draft.html" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="./draft.html">BOS-00004</a></td>
-                            <td><a href="./draft.html" class="text-dark">SO-00004</a></td>
-                            <td><a href="./draft.html" class="text-dark">Mr. Badshah khan</a></td>
-                            <td><a href="./draft.html" class="text-warning">Overdue By 2 Days</a></td>
-                            <td><a href="./draft.html" class="text-dark">12/07/2022</a></td>
-                            <td><a href="./draft.html" class="text-dark">₹800.00</a></td>
-                            <td><a href="./draft.html" class="text-dark">₹800.00</a></td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa fa-chevron-circle-down text-secondary fs-5" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-pencil"
-                                                    aria-hidden="true"></i> Edit</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-file-pdf-o"
-                                                    aria-hidden="true"></i> Download the PDF</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-print"
-                                                    aria-hidden="true"></i> Print Transaction</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-envelope-o"
-                                                    aria-hidden="true"></i> Send Email</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-link"
-                                                    aria-hidden="true"></i> Share Invoice Link</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">
-                                <a href="./draftInvoice.html" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="./draftInvoice.html">INV-00005</a></td>
-                            <td><a href="./draftInvoice.html" class="text-dark">SO-00004</a></td>
-                            <td><a href="./draftInvoice.html" class="text-dark">Mr. Badshah khan</a></td>
-                            <td><a href="./draftInvoice.html" class="text-secondary">Draft</a></td>
-                            <td><a href="./draftInvoice.html" class="text-dark">12/07/2022</a></td>
-                            <td><a href="./draftInvoice.html" class="text-dark">₹800.00</a></td>
-                            <td><a href="./draftInvoice.html" class="text-dark">₹800.00</a></td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa fa-chevron-circle-down text-secondary fs-5" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-pencil"
-                                                    aria-hidden="true"></i> Edit</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-file-pdf-o"
-                                                    aria-hidden="true"></i> Download the PDF</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-print"
-                                                    aria-hidden="true"></i> Print Transaction</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-envelope-o"
-                                                    aria-hidden="true"></i> Send Email</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-link"
-                                                    aria-hidden="true"></i> Share Invoice Link</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="form-check-input checkInvoiceHead" type="checkbox" value="" id="">
-                                <a href="./paidInvoice.html" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="./paidInvoice.html">INV-00006</a></td>
-                            <td><a href="./paidInvoice.html" class="text-dark">SO-00004</a></td>
-                            <td><a href="./paidInvoice.html" class="text-dark">Mr. Badshah khan</a></td>
-                            <td><a href="./paidInvoice.html" class="text-success">Paid</a></td>
-                            <td><a href="./paidInvoice.html" class="text-dark">12/07/2022</a></td>
-                            <td><a href="./paidInvoice.html" class="text-dark">₹800.00</a></td>
-                            <td><a href="./paidInvoice.html" class="text-dark">₹800.00</a></td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa fa-chevron-circle-down text-secondary fs-5" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-pencil"
-                                                    aria-hidden="true"></i> Edit</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-file-pdf-o"
-                                                    aria-hidden="true"></i> Download the PDF</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-print"
-                                                    aria-hidden="true"></i> Print Transaction</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-envelope-o"
-                                                    aria-hidden="true"></i> Send Email</a></li>
-                                        <li><a class="dropdown-item border-bottom" href="#"><i class="fa fa-link"
-                                                    aria-hidden="true"></i> Share Invoice Link</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center mb-4">
-                                            <h5>Are you sure?</h5>
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center mb-4">
-                                            <p>Once deleted they cannot be undone</p>
-                                        </div>
-                                        <div class="d-flex justify-content-around mb-4">
-                                            <button type="button" class="btn btn-light"
-                                                data-bs-dismiss="modal">Delete</button>
-                                            <button type="button" class="btn btn-primary"
-                                                data-bs-dismiss="modal">No</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border">
+                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border" name="print">
+                                <i class="fa fa-print" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupFiles">
+                                <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                            </button>
+                            <div class="modal fade" id="popupFiles" tabindex="-1" aria-labelledby="popupFilesLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-4">
+                                            <h6 class="text-secondary text-center">You can upload a maximum of 10 files,
+                                                5MB each</h6>
+                                            <div class="container mt-3">
+                                                <div class="row">
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-upload text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Drag & drop</h6>
+                                                    </div>
+                                                    <div class="col"></div>
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-cloud-upload text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Cloud</h6>
+                                                    </div>
+                                                    <div class="col"></div>
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-file text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Documents</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </tbody>
-                </table>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-light border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="./overdue.html">Mark as Sent</a></li>
+                                    <li><a class="dropdown-item" href="../credit-notes/newCreditNote.html">Create Credit
+                                            Note</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupE-Way">Add e-Way Bill Details</a></li>
+                                    <li><a class="dropdown-item" href="../salesOrders/newBillOfSupply.html">Clone</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupVoid">Void</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupDelete">Delete</a></li>
+                                </ul>
+                                <div class="modal fade" id="popupDelete" tabindex="-1"
+                                    aria-labelledby="popupDeleteLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                                    <h5>Are you sure?</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                                    <p>Once deleted, they cannot be undone</p>
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-4">
+                                                    <a href="./invoices.html"><button type="button"
+                                                            class="btn btn-light">Delete</button></a>
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">No</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupVoid" tabindex="-1" aria-labelledby="popupVoidLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <label for="" class="form-label">Enter a reason for marking this
+                                                    transaction as Void.</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <a href="./void.html">
+                                                    <button type="button" class="btn btn-primary">Void it</button>
+                                                </a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupE-Way" tabindex="-1" aria-labelledby="popupE-WayLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupE-WayLabel">Add e-Way Bill Details</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
+                                                            <i class="fa fa-file-text file-bill" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="text-primary text-center">Create New e-Way Bill
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border-left pl-2">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
+                                                            <i class="fa fa-hand-o-up file-bill" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="text-primary text-center">Associate e-Way Bill
+                                                            Number</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal"
+                                data-bs-target="#popupRecordPay"><i class="fa fa-inr" aria-hidden="true"></i> Record
+                                Payment</button>
+                            <div class="modal fade" id="popupRecordPay" tabindex="-1"
+                                aria-labelledby="popupRecordPayLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row px-5 py-3">
+                                                <div class="col-1">
+                                                    <i class="fa fa-info-circle fs-1" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Once the payment is recorded the invoice status will be
+                                                                changed to
+                                                                'Sent'.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mx-4 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Do not show this
+                                                                again
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="../salesOrders/recordPayment.html"> <button type="button"
+                                                    class="btn btn-primary">Ok</button></a>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
+                                <i class="fa fa-share-alt" aria-hidden="true"></i> Share
+                            </button>
+                            <div class="modal fade" id="popupShare" tabindex="-1" aria-labelledby="popupShareLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupShareLabel">Share Estimate Link</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3 row">
+                                                <label for="" class="col-sm-2 col-form-label">Visibility: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="dropdown">
+                                                        <button class="btn text-primary border-0 dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton5"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Public
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                                            <li class="border-bottom pb-3"><a
+                                                                    class="dropdown-item fw-bold" href="#"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#popupShare">Public</a>
+                                                                <div>Anyone with the link can access the full forecast
+                                                                    before its expiration date.</div>
+                                                            </li>
+                                                            <li><a class="dropdown-item fw-bold" href="#"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#popupShare3">Private &
+                                                                    Secure</a>
+                                                                <div>Your client can only access estimates from the
+                                                                    client portal.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-5">Select an expiration date and generate a link to share it
+                                                with your customers. Note that anyone with access to this link can view,
+                                                print, or download it.</div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Link Expiration Date <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="" placeholder="08/10/2022">
+                                                <small class="text-secondary"><i class="fa fa-info-circle"
+                                                        aria-hidden="true"></i> By default, the link is set to expire 30
+                                                    days from today.</small>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#popupShare2">Generate Link</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Disable All Active Links</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupShare2" tabindex="-1" aria-labelledby="popupShare2Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupShare2Label">Share Estimate Link</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3 row">
+                                                <label for="" class="col-sm-2 col-form-label">Visibility: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="dropdown">
+                                                        <button class="btn text-primary border-0 dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton5"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Public
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                                            <li class="border-bottom pb-3"><a
+                                                                    class="dropdown-item fw-bold" href="#"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#popupShare">Public</a>
+                                                                <div>Anyone with the link can access the full forecast
+                                                                    before its expiration date.</div>
+                                                            </li>
+                                                            <li><a class="dropdown-item fw-bold" href="#"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#popupShare3">Private &
+                                                                    Secure</a>
+                                                                <div>Your client can only access estimates from the
+                                                                    client portal.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-5">Select an expiration date and generate a link to share it
+                                                with your customers. Note that anyone with access to this link can view,
+                                                print, or download it.</div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Link Expiration Date <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control bg-light" id=""
+                                                    placeholder="08/10/2022">
+                                                <small class="text-secondary"><i class="fa fa-info-circle"
+                                                        aria-hidden="true"></i> By default, the link is set to expire 30
+                                                    days from today.</small>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id=""
+                                                        placeholder="https://welldonehealth.in/samplebaba/secure?CEstimateID=2-ee5b99cb308863d032af83f8bb99c2f6cc10cf6579fb60a69ffe9870c31f813e480af0059f428077c0faa63d3d578f32e109bcc5dd06cc56c0a8faa5a29253b288e74ab6e90d6e51 ">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#popupShare3">Copy Link</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="popupShare3" tabindex="-1" aria-labelledby="popupShare3Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupShare3Label">Share Estimate Link</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3 row">
+                                                <label for="" class="col-sm-2 col-form-label">Visibility: </label>
+                                                <div class="col-sm-10">
+                                                    <div class="dropdown">
+                                                        <button class="btn text-primary border-0 dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton5"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Private & Secure
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                                            <li class="border-bottom pb-3"><a
+                                                                    class="dropdown-item fw-bold" href="#"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#popupShare">Public</a>
+                                                                <div>Anyone with the link can access the full forecast
+                                                                    before its expiration date.</div>
+                                                            </li>
+                                                            <li><a class="dropdown-item fw-bold" href="#"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#popupShare3">Private &
+                                                                    Secure</a>
+                                                                <div>Your client can only access estimates from the
+                                                                    client portal.</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">You can only share estimates privately through the client
+                                                portal.</div>
+                                            <div class="mb-3">A client portal is enabled for these customers or their
+                                                contact persons and estimates will be available on their customer
+                                                portal. They can view, download or print it from the client portal.
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Okay, Got it</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupComment">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i> Comments
+                            </button>
+                            <div class="modal fade" id="popupComment" tabindex="-1" aria-labelledby="popupCommentLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupCommentLabel">Comments & History</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id=""
+                                                    style="height: 100px"></textarea>
+                                            </div>
+                                            <button type="button" class="btn btn-primary m-3">Add
+                                                Comment</button>
+                                            <div class="container border-top mb-5">
+                                                <div class="comment">
+                                                    <div class="comment1">
+                                                        <i class="fa fa-file-text-o text-warning"
+                                                            aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment1">
+                                                            <div class="mb-3">Template has been updated</div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate1"><small>11:06 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment2">
+                                                        <i class="fa fa-file-text-o text-warning"
+                                                            aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment2">
+                                                            <div class="mb-3">Template has been updated</div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate2"><small>11:06 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment3">
+                                                        <i class="fa fa-envelope-o text-success" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment3">
+                                                            <div class="mb-3">Customer has viewed the estimate in the
+                                                                email.</div>
+                                                            <div class="fw-bold">by Welldone</div>
+                                                        </div>
+                                                        <div class="commentDate3"><small>11:02 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment4">
+                                                        <i class="fa fa-envelope-o text-success" aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment4">
+                                                            <div class="mb-3">Estimate emailed to visaldeore@gmail.com
+                                                            </div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate4"><small>10:58 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment5">
+                                                        <i class="fa fa-file-text-o text-warning"
+                                                            aria-hidden="true"></i>
+                                                        <div
+                                                            class="bg-light rounded border border-secondary divcomment5">
+                                                            <div class="mb-3">Estimate created for ₹800.00</div>
+                                                            <div class="fw-bold">by rakeshnandre433</div>
+                                                        </div>
+                                                        <div class="commentDate5"><small>10:57 AM</small>
+                                                            <small class="text-secondary">24/06/2022</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-1 delete-link position-absolute">
+                            <a href="./invoices.html" class="text-dark"><i class="fa fa-times"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="row rounded p-2 m-2 d-flex align-items-center border rounded">
+                        <div class="col">
+                            <i class="fa fa-envelope-open-o fs-3" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-7">
+                            <h6><i>Send the invoice</i></h6>
+                            <div>The invoice is created. You can email it to your customer or mark it as sent.
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a href="./overdue.html"> <button class="btn btn-secondary">
+                                    Send the Invoice
+                                </button></a>
+                        </div>
+                        <div class="col">
+                            <a href="./overdue.html"> <button class="btn bg-white border">
+                                    Mark as Sent
+                                </button></a>
+                        </div>
+                    </div>
+                    <div class="border rounded mx-2 mt-4" style="overflow: hidden;">
+                        <div class="positionRel bg-secondary banner-send" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom"
+                            title="Draft status indicates that the invoice may be subject to further changes and the amount will be reflected in your sales figures.">
+                            Draft</div>
+                        <div class="d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-cog" aria-hidden="true"></i> Customize
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                    <li><a class="dropdown-item" href="#">Change Template</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit Template</a></li>
+                                    <li><a class="dropdown-item" href="#">Update Logo & Address</a></li>
+                                    <li><a class="dropdown-item" href="#">Manage Custom Fields</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border mx-5 my-3 mb-5 p-4 position-relative divPrint">
+                            <div class="">
+                                <h5>Dr.aware hospital and Nursing Home</h5>
+                                <div>26b panja bazar</div>
+                                <div>fulasheth</div>
+                                <div>bahubali Maharashtra 425160</div>
+                                <div>India</div>
+                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>TAX INVOICE
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="border-bottom border-top row p-2">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-6">#</div>
+                                        <div class="col-6 fw-bold">: INV-00007</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Invoice Date</div>
+                                        <div class="col-6 fw-bold">: 26/06/2017</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Terms</div>
+                                        <div class="col-6 fw-bold">: Due on Receipt</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">Due Date</div>
+                                        <div class="col-6 fw-bold">: 26/06/2017</div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-6">P.O.#</div>
+                                        <div class="col-6 fw-bold">: SO-00004</div>
+                                    </div>
+                                    <div class="row bg-light border-bottom border-top mb-3">
+                                        <div class="col fw-bold">Bill To</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col fw-bold"><a href="../customers/allCustomers.html">Mr. Badshah
+                                                khan</a></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">dd</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">sakri</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">424304 Maharashtra</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">India</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 border-left">
+                                    <div class="row">
+                                        <div class="col-6">Place Of Supply</div>
+                                        <div class="col-6 fw-bold">: Maharashtra (27)</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">Sales person</div>
+                                        <div class="col-6 fw-bold">: Jay</div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row bg-light border-bottom border-top mb-3">
+                                        <div class="col fw-bold">Ship To</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col fw-bold">Mr. Badshah khan</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">dd</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">sakri</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">424304 Maharashtra</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">India</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-bordered">
+                                <thead class="bg-light">
+                                    <tr>
+                                        <th>Item & Description</th>
+                                        <th>HSN/SAC</th>
+                                        <th>Qty</th>
+                                        <th>Rate</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="fw-bold">AK</span>
+                                            <div>Description of item</div>
+                                        </td>
+                                        <td>998313</td>
+                                        <td>1.0
+                                            <div>pcs</div>
+                                        </td>
+                                        <td>600.00</td>
+                                        <td>600.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="fw-bold">sample service
+                                            </span>
+                                        </td>
+                                        <td>997156</td>
+                                        <td>1.0
+                                            <div>pcs</div>
+                                        </td>
+                                        <td>200.00</td>
+                                        <td>200.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>Total In Words (Indian Rupee)</div>
+                                            <div class="mb-3"><i>Eight Hundred Six Only</i></div>
+                                            <div class="mb-3">Thanks for your business.</div>
+                                        </td>
+                                        <td colspan="4">
+                                            <div class="d-flex justify-content-around">
+                                                <div>
+                                                    Sub Total
+                                                </div>
+                                                <div>800.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-around">
+                                                <div>
+                                                    Adjustment
+                                                </div>
+                                                <div>6.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-around fw-bold">
+                                                <div>
+                                                    Total
+                                                </div>
+                                                <div>₹806.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
+                                                <div>
+                                                    Balance Due
+                                                </div>
+                                                <div>₹806.00</div>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <div>Authorized Signature</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mx-3 mt-2 mb-5">
+                        <div>Template : 'Spreadsheet Template' <a href="#">Change</a></div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -4160,11 +4358,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!-- Code for select field @anjudewangan -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <!-- Code for select field @anjudewangan -->
     <script src="../script.js"></script>
 </body>
 

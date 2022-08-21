@@ -650,7 +650,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./closed.html" class="text-decoration">
+                    <a href="./closedCN.html" class="text-decoration">
                         <div class="row py-3 px-5 border-bottom">
                             <div class="col-10 text-dark">Sample baba</div>
                             <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
@@ -829,7 +829,8 @@
                                                 <textarea class="form-control"></textarea>
                                             </div>
                                             <div class="modal-footer d-flex justify-content-start">
-                                                <button type="button" class="btn btn-primary">Void it</button>
+                                                <a href="./void.html"> <button type="button"
+                                                        class="btn btn-primary">Void it</button></a>
                                                 <button type="button" class="btn btn-outline-secondary"
                                                     data-bs-dismiss="modal">Cancel</button>
                                             </div>
@@ -844,7 +845,68 @@
                             </button>
                         </div>
                         <div class="col">
-                            <a href="#"><button class="btn btn-light border">Apply To Invoice</button></a>
+                            <button class="btn btn-light border" data-bs-toggle="modal"
+                                data-bs-target="#popupApplyInvoice">
+                                Apply To Invoice
+                            </button>
+                            <div class="modal fade" id="popupApplyInvoice" tabindex="-1"
+                                aria-labelledby="popupApplyInvoiceLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupApplyInvoiceLabel">Apply credits from
+                                                CN-00001</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="text-end mb-3">
+                                                Invoice Balance: Rs.500.00
+                                            </div>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Invoice Number</th>
+                                                        <th>Invoice Date</th>
+                                                        <th>Invoice Amount</th>
+                                                        <th>Invoice Balance</th>
+                                                        <th>Amount to Credit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>INV-000003</td>
+                                                        <td>12/07/2022</td>
+                                                        <td>Rs.906.00</td>
+                                                        <td>Rs.906.00</td>
+                                                        <td class="text-end">0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>Amount to Credit:
+                                                            <div class="mt-3 bg-light py-2 px-3">Invoice Balance Due
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text-end">0.00</div>
+                                                            <div class="mt-3 bg-light px-3 py-2 text-end">Rs.500.00
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="./closedCN.html"><button type="button"
+                                                    class="btn btn-primary">Save</button></a>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col">
                             <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
@@ -1119,7 +1181,8 @@
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div class="mt-5 mb-3 mx-3">Associated Invoice: <span class="text-primary">INV-000003</span></div>
+                    <div class="mt-5 mb-3 mx-3">Associated Invoice: <span><a
+                                href="../invoices/paidInvoice.html">INV-000003</a></span></div>
                     <div class="border rounded mx-2" style="overflow: hidden;">
                         <div class="positionRel bg-primary banner-send" data-bs-toggle="tooltip"
                             data-bs-placement="bottom"

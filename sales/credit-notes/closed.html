@@ -734,41 +734,10 @@
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="./refund.html">Refund</a></li>
                                     <li><a class="dropdown-item" href="./newCreditNote.html">Clone</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupInvoice">Apply To Invoice</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupE-Way">Add e-Way Bill Details</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupVoid">Void</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupDelete">Delete</a></li>
                                 </ul>
-                                <div class="modal fade" id="popupDelete" tabindex="-1"
-                                    aria-labelledby="popupDeleteLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                                    <h5>Are you sure?</h5>
-                                                </div>
-                                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                                    <p>Once deleted, they cannot be undone</p>
-                                                </div>
-                                                <div class="d-flex justify-content-around mb-4">
-                                                    <a href="./creditNotes.html"><button type="button"
-                                                            class="btn btn-light">Delete</button></a>
-                                                    <button type="button" class="btn btn-primary"
-                                                        data-bs-dismiss="modal">No</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="modal fade" id="popupE-Way" tabindex="-1" aria-labelledby="popupE-WayLabel"
                                     aria-hidden="true">
                                     <div class="modal-dialog">
@@ -797,45 +766,6 @@
                                                             Number</div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="popupInvoice" tabindex="-1"
-                                    aria-labelledby="popupInvoiceLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupInvoiceLabel">Apply credits from
-                                                    CN-00001</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="text-center">There are no invoices in open status for this
-                                                    customer. Hence,
-                                                    credit cannot be applied.</div>
-                                            </div>
-                                            <div class="modal-footer d-flex justify-content-start">
-                                                <button type="button" class="btn btn-primary"
-                                                    data-bs-dismiss="modal">Ok</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="popupVoid" tabindex="-1" aria-labelledby="popupVoidLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <label for="" class="form-label">Enter a reason for marking this
-                                                    transaction as Void.</label>
-                                                <textarea class="form-control"></textarea>
-                                            </div>
-                                            <div class="modal-footer d-flex justify-content-start">
-                                                <button type="button" class="btn btn-primary">Void it</button>
-                                                <button type="button" class="btn btn-outline-secondary"
-                                                    data-bs-dismiss="modal">Cancel</button>
                                             </div>
                                         </div>
                                     </div>

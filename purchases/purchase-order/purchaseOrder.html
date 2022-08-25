@@ -1,4 +1,4 @@
-<!-- Code for add Sales @anjudewangan -->
+<!-- Code for add Purschases @anjudewangan -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -278,6 +278,7 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -294,6 +295,7 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -310,8 +312,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -404,44 +408,44 @@
             <!-- Code for link item @anjudewangan -->
             <!-- Code for link Sales @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
-                    href="#collapseExamplePages" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="../customers/customers.html">Customers</a>
+                        <a href="../../sales/customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="../estimates/estimates.html">Estimates</a>
+                        <a href="../../sales/estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="../../sales/salesOrders/salesOrders.html">Sales Orders</a>
                     </li>
                     <li>
-                        <a href="./packages.html" class="sales-link">Packages</a>
+                        <a href="../../sales/packages-folder/packages.html">Packages</a>
                     </li>
                     <li>
-                        <a href="../shipmets/shipments.html">Shipments</a>
+                        <a href="../../sales/shipmets/shipments.html">Shipments</a>
                     </li>
                     <li>
-                        <a href="../delivery-challans/deliveryChallans.html">Delivery Challans</a>
+                        <a href="../../sales/delivery-challans/deliveryChallans.html">Delivery Challans</a>
                     </li>
                     <li>
-                        <a href="../invoices/invoices.html">Invoices</a>
+                        <a href="../../sales/invoices/invoices.html">Invoices</a>
                     </li>
                     <li>
-                        <a href="../received-payments/receivedPayments.html">Received Payments</a>
+                        <a href="../../sales/received-payments/receivedPayments.html">Received Payments</a>
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
                     </li>
                     <li>
-                        <a href="../sales-return/salesReturn.html">Sales Return</a>
+                        <a href="../../sales/sales-return/salesReturn.html">Sales Return</a>
                     </li>
                     <li>
-                        <a href="../credit-notes/creditNotes.html">Credit Notes</a>
+                        <a href="../../sales/credit-notes/creditNotes.html">Credit Notes</a>
                     </li>
                 </ul>
             </li>
@@ -449,17 +453,17 @@
 
             <!-- Code for link Purchases @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePurchases"
-                    data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
+                    href="#collapsePurchases" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-shopping-bag"></i>
                     <span class="nav-link-text">Purchases</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapsePurchases">
                     <li>
-                        <a href="../../purchases/vendors/vendors.html">Vendors</a>
+                        <a href="../vendors/vendors.html">Vendors</a>
                     </li>
                     <li>
-                        <a href="../../purchases/purchase-order/purchaseOrder.html">Purchase Orders</a>
+                        <a href="./purchaseOrder.html" class="sales-link">Purchase Orders</a>
                     </li>
                     <li>
                         <a href="">Purchase Receives</a>
@@ -576,35 +580,349 @@
         </ul>
     </div>
 
-    <!-- Sales Customers -->
+    <!-- Vendor -->
     <main class="main">
         <div class="container mt-3">
             <div class="row">
                 <div class="col-6 gap-3">
-                    <b>Packages</b>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All Purchase Orders
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="#">Draft</a></li>
+                            <li><a class="dropdown-item" href="#">Pending Approval</a></li>
+                            <li><a class="dropdown-item" href="#">Approved</a></li>
+                            <li><a class="dropdown-item" href="#">Issued</a></li>
+                            <li><a class="dropdown-item" href="#">Billed</a></li>
+                            <li><a class="dropdown-item" href="#">Partially Billed</a></li>
+                            <li><a class="dropdown-item" href="#">Closed</a></li>
+                            <li><a class="dropdown-item" href="#">Canceled</a></li>
+                            <li><a class="dropdown-item" href="#">Partially Received</a></li>
+                            <li><a class="dropdown-item" href="#">Received</a></li>
+                            <li><a class="dropdown-item" href="#">Pending Received</a></li>
+                            <li><a class="dropdown-item" href="#">Dropshiped</a></li>
+                            <li><a class="dropdown-item" href="#">Backorder</a></li>
+                            <li><a class="dropdown-item" href="#">Unbilled Backorder</a></li>
+                            <li><a class="dropdown-item" href="#">Billed & Not Received</a></li>
+                            <li><a class="dropdown-item" href="#">Received & Not Billed</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-6">
                     <div class="row">
-                        <div class="col-2">
-                            <button class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <div class="col-4 d-flex align-items-center">
+                            <a href="#" style="background-color: #E6F2FF;" class="py-2 px-1 rounded">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> In Transit Receives
+                            </a>
                         </div>
-                        <div class="col-3">
-                            <a href="./newPackages.html">
+                        <div class="col-1">
+                            <button class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#popupSearchCustomers"><i class="fa fa-search"
+                                    aria-hidden="true"></i></button>
+                            <div class="modal fade" id="popupSearchCustomers" tabindex="-1"
+                                aria-labelledby="popupSearchCustomersLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-light">
+                                            <h5 class="modal-title" id="popupSearchCustomersLabel">Search Purchase
+                                                Orders
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Purchase
+                                                            Order#</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="text" class="form-control" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Reference#</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="text" class="form-control" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Date Range</label>
+                                                        <div class="col-sm-3">
+                                                            <input type="date" name="" id="" class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            -
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input type="date" name="" id="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Expected Delivery
+                                                            Date</label>
+                                                        <div class="col-sm-3">
+                                                            <input type="date" name="" id="" class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            -
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input type="date" name="" id="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Created Date
+                                                            Range</label>
+                                                        <div class="col-sm-3">
+                                                            <input type="date" name="" id="" class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            -
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input type="date" name="" id="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Status</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="js-example-basic-single" name="state">
+                                                                <option></option>
+                                                                <option disabled>Sales Orders</option>
+                                                                <option>Draft</option>
+                                                                <option>Issued</option>
+                                                                <option>Partially Billed</option>
+                                                                <option>Billed</option>
+                                                                <option>Canceled</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Item Name</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="js-example-basic-single" name="state">
+                                                                <option></option>
+                                                                <option>AK</option>
+                                                                <option>Sample Service</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Item
+                                                            Description</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="date" name="" id="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Total
+                                                            Range</label>
+                                                        <div class="col-sm-3">
+                                                            <input type="text" name="" id="" class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            -
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input type="text" name="" id="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Vendor</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="js-example-basic-single" name="state">
+                                                                <option></option>
+                                                                <option>no result found</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Account</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="js-example-basic-single" name="state">
+                                                                <option>Select a Account</option>
+                                                                <option disabled>Other Current Asset</option>
+                                                                <option>Advance Tax</option>
+                                                                <option>Employee Advance</option>
+                                                                <option>Input Tax Credits</option>
+                                                                <option>Input CGST</option>
+                                                                <option>Input IGST</option>
+                                                                <option>Input SGST</option>
+                                                                <option>Prepaid Expenses</option>
+                                                                <option>Reverse Charge Tax Input but not due</option>
+                                                                <option>TDS Receivable</option>
+                                                                <option disabled>Fixed Asset</option>
+                                                                <option>Furniture and Equipment</option>
+                                                                <option disabled>Other Current Liability</option>
+                                                                <option>Employee Reimbursements</option>
+                                                                <option>GST Pavable</option>
+                                                                <option>Output CGST</option>
+                                                                <option>Output IGST</option>
+                                                                <option>Output SGST</option>
+                                                                <option>Opening Balance Adjustments</option>
+                                                                <option>TDS Payable</option>
+                                                                <option>Unearned Revenue</option>
+                                                                <option disabled>Income</option>
+                                                                <option>Discount</option>
+                                                                <option>General Income</option>
+                                                                <option>Interest Income</option>
+                                                                <option>Late Fee Income</option>
+                                                                <option>Other Charges</option>
+                                                                <option>Sales</option>
+                                                                <option>Shipping Charge</option>
+                                                                <option disabled>Expense</option>
+                                                                <option>Advertising And Marketing</option>
+                                                                <option>Automobile Expense</option>
+                                                                <option>Bad Debt</option>
+                                                                <option>Bank Fees and Charges</option>
+                                                                <option>Consultant Expense</option>
+                                                                <option>Contract Assets</option>
+                                                                <option>Credit Card Charges</option>
+                                                                <option>Depreciation And Amortisation</option>
+                                                                <option>Depreciation Expense</option>
+                                                                <option>IT and Internet Expenses</option>
+                                                                <option>Janitorial Expense</option>
+                                                                <option>Lodging</option>
+                                                                <option>Meals and Entertainment</option>
+                                                                <option>Merchandise</option>
+                                                                <option>Office Supplies</option>
+                                                                <option>Other Expenses</option>
+                                                                <option>Postage</option>
+                                                                <option>Printing and Stationery</option>
+                                                                <option>Purchase Discounts</option>
+                                                                <option>Raw Materials And Consumables</option>
+                                                                <option>Rent Expense</option>
+                                                                <option>Repairs and Maintenance</option>
+                                                                <option>Salaries and Employee Wages</option>
+                                                                <option>Telephone Expense</option>
+                                                                <option>Transportation Expense</option>
+                                                                <option>Travel Expense</option>
+                                                                <option>Uncategorized</option>
+                                                                <option disabled>Cost Of Goods Sold</option>
+                                                                <option>Cost Of Goods Sold</option>
+                                                                <option>Job Costing</option>
+                                                                <option>Labor</option>
+                                                                <option>Materials</option>
+                                                                <option>Nurse Charges</option>
+                                                                <option disabled>Stock</option>
+                                                                <option>Inventory Asset</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Project
+                                                            Name</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="js-example-basic-single" name="state">
+                                                                <option>Select Project</option>
+                                                                <option>no result found</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Deliver To
+                                                            Customer</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="js-example-basic-single" name="state">
+                                                                <option>Select a Customer</option>
+                                                                <option>no result found</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3 row">
+                                                        <label for="" class="col-sm-5 col-form-label">Tax</label>
+                                                        <div class="col-sm-7">
+                                                            <select class="js-example-basic-single" name="state">
+                                                                <option>Select Tax</option>
+                                                                <option>GSTO [0%]</option>
+                                                                <option>GST12 [12%]</option>
+                                                                <option>GST18 [18%]</option>
+                                                                <option>GST28 [28%]</option>
+                                                                <option>GST5 [5%]</option>
+                                                                <option>IGSTO [0%]</option>
+                                                                <option>IGST12 [12%]</option>
+                                                                <option>IGST18 [18%]</option>
+                                                                <option>IGST28 [28%]</option>
+                                                                <option>IGSTS [5%]</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-primary">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <a href="./newPO.html">
                                 <button class="btn btn-warning">Add
                                     New</button>
                             </a>
                         </div>
-                        <div class="col-2">
-                            <a href="./allPackages.html"> <button class="btn btn-white border-secondary"><i
-                                        class="fa fa-list-ul" aria-hidden="true"></i>
-                                    <i class="fa fa-align-right bg-dark text-secondary border rounded px-2 py-1 ml-2"
-                                        aria-hidden="true"></i>
-                                </button></a>
+                        <div class="col-1">
+                            <div class="dropdown">
+                                <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="./newPO.html">Create Purchase Order</a></li>
+                                    <li><a class="dropdown-item" href="#">Create Purchase Order (Pre GST)</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-3">
                             <a href="#" class="setting-link"><i class="fa fa-fw fa-cog"></i>Settings</a>
                         </div>
-                        <div class="col-2">
+                        <div class="col-1">
                             <div class="dropdown">
                                 <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -612,33 +930,31 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
                                     <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
-                                    <li><a class="dropdown-item" href="#">Package Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Package#</a></li>
-                                    <li><a class="dropdown-item" href="#">Carrier</a></li>
-                                    <li><a class="dropdown-item" href="#">Sales Order#</a></li>
-                                    <li><a class="dropdown-item" href="#">Shipment Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Customer Name</a></li>
-                                    <li><a class="dropdown-item" href="#">Quantity</a></li>
                                     <li><a class="dropdown-item" href="#">Created Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Date</a></li>
+                                    <li><a class="dropdown-item" href="#">Purchase Order#</a></li>
+                                    <li><a class="dropdown-item" href="#">Vendor Name</a></li>
+                                    <li><a class="dropdown-item" href="#">Amount</a></li>
+                                    <li><a class="dropdown-item" href="#">Expected Delivery Date</a></li>
                                     <li><a class="dropdown-item border-bottom" href="#">Last Modified Time</a></li>
-                                    <li><a class="dropdown-item fs-5" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupImportItem"> <i class="fa fa-download text-secondary"
+                                    <li><a class="dropdown-item fs-5" href="#"> <i class="fa fa-download text-secondary"
                                                 aria-hidden="true"></i>
-                                            Import Packages</a></li>
-                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupExportItem">
+                                            Import Purchase Orders</a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
                                             <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Packages
+                                            Export Purchase Orders
                                         </a></li>
-                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupExportCurrent">
-                                            <i class="fa fa-download text-secondary" aria-hidden="true"></i>
-                                            Import Shipments
-                                        </a></li>
-                                    <li><a class="dropdown-item fs-5 border-bottom" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupExportCurrent">
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#">
                                             <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Shipments
+                                            Export Receives
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Current View
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
+                                            Refresh List
                                         </a></li>
                                 </ul>
                             </div>
@@ -647,27 +963,9 @@
                 </div>
             </div>
         </div>
-        <div class="row border-top p-2 mt-4 bg-light" style="width: 96%;">
-            <div class="col-1"></div>
-            <div class="col-3">
-                <div class="dropdown">
-                    <button class="btn btn-white border dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        View: Packages, Not Shipped
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item disabled" href="#">Default Filters</a></li>
-                        <li><a class="dropdown-item" href="#">All</a></li>
-                        <li><a class="dropdown-item" href="#">Not Shipped</a></li>
-                        <li><a class="dropdown-item" href="#">Shipped</a></li>
-                        <li><a class="dropdown-item" href="#">Delivered</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-1 text-center">
-                <div class="dropdown">
+                <div class="dropdown invoice-dropdown">
                     <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <i class="fa fa-th-large text-primary fs-4" aria-hidden="true"></i>
@@ -677,63 +975,70 @@
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Package Date
+                                    Date<span class="text-danger">*</span>
                                 </label>
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Package#
+                                    Purchase Order#<span class="text-danger">*</span>
                                 </label>
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Carrier
+                                    Reference#
                                 </label>
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Tracking#
+                                    Vendor Name<span class="text-danger">*</span>
                                 </label>
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Sales Order#
+                                    Status<span class="text-danger">*</span>
                                 </label>
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
                                     id="" checked>
                                 <label class="form-check-label" for="">
-                                    Status
+                                    Received
                                 </label>
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
+                                    id="">
                                 <label class="form-check-label" for="">
-                                    Shipment Date
+                                    Billed
                                 </label>
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
-                                    id="" checked>
+                                    id="">
                                 <label class="form-check-label" for="">
-                                    Customer Name
+                                    Amount<span class="text-danger">*</span>
                                 </label>
                             </a>
                         </li>
-                        <li><a class="dropdown-item border-bottom mb-3" href="#"> <input class="form-check-input"
-                                    type="checkbox" value="" id="" checked>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="">
                                 <label class="form-check-label" for="">
-                                    Quantity
+                                    Expected Delivery Date
+                                </label>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> <input class="form-check-input" type="checkbox" value=""
+                                    id="">
+                                <label class="form-check-label" for="">
+                                    Company Name
                                 </label>
                             </a>
                         </li>
@@ -746,21 +1051,23 @@
                 </div>
             </div>
             <div class="col-11">
-                <table class="table table-customer">
+                <table class="table table-customer mt-4">
                     <thead>
-                        <tr class="packageTableHead1">
-                            <th><input class="form-check-input checkPackageHead" type="checkbox" value="" id=""> Package
-                                Date</th>
-                            <th>Package#</th>
-                            <th>Carrier</th>
-                            <th>Tracking#</th>
-                            <th>Sales Order#</th>
+                        <tr class="purOrderTableHead1">
+                            <th>
+                                <input class="form-check-input checkPurOrderHead" type="checkbox" value="" id="">
+                                Date
+                            </th>
+                            <th>Purchase Order#</th>
+                            <th>Reference#</th>
+                            <th>Vendor Name</th>
                             <th>Status</th>
-                            <th>Shipment Date</th>
-                            <th>Customer Name</th>
-                            <th>Quantity</th>
+                            <th>Received</th>
+                            <th>Bill</th>
+                            <th>Amount</th>
+                            <th>Expected Delivery Date</th>
                         </tr>
-                        <tr class="packageTableHead2">
+                        <tr class="purOrderTableHead2">
                             <th><input class="form-check-input checkInputHead" type="checkbox" value="" id=""></th>
                             <th>
                                 <button type="button" class="btn btn-outline-secondary bg-light text-dark"><i
@@ -771,83 +1078,71 @@
                                         class="fa fa-print" aria-hidden="true"></i></button>
                             </th>
                             <th>
+                                <button type="button"
+                                    class="btn btn-outline-secondary bg-light text-dark dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Bulk
+                                    Update</button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Bulk Update</a></li>
+                                    <li><a class="dropdown-item" href="#">Mark as Issued</a></li>
+                                    <li><a class="dropdown-item" href="#">Bulk Cancel Items</a></li>
+                                    <li><a class="dropdown-item" href="#">Bulk reopen canceled items</a></li>
+                                    <li><a class="dropdown-item" href="#">Convert to Bill</a></li>
+                                </ul>
+                            </th>
+                            <th>
                                 <button type="button" class="btn btn-outline-secondary bg-light text-dark"
                                     data-bs-toggle="modal" data-bs-target="#popupDelete">Delete</button>
                             </th>
-                            <th></th>
-                            <th></th>
+                            <th>1 Contact(s) Selected</th>
                             <th></th>
                             <th></th>
                             <th>
-                                <i class="fa fa-times fs-5 mb-2" aria-hidden="true" id="closePackageHead"></i>
+                                <i class="fa fa-times fs-5 mb-2" aria-hidden="true" id="closePurOrderHead"></i>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input class="form-check-input checkPackageHead" type="checkbox" value="" id="">
-                                <a href="./notShipped.html" class="text-dark">12/07/2022</a>
+                            <td>
+                                <input class="form-check-input checkPurOrderHead" type="checkbox" value="" id="">
+                                <a href="" class="text-dark">05/08/2022</a>
                             </td>
-                            <td><a href="./notShipped.html">PKG-00001</a></td>
-                            <td><a href="./notShipped.html" class="text-dark">Indiapost</a></td>
-                            <td><a href="./notShipped.html" class="text-dark"></a></td>
-                            <td><a href="./notShipped.html" class="text-dark">SO-00002</a></td>
-                            <td><a href="./notShipped.html" class="text-danger">Not Shipped</a></td>
-                            <td><a href="./notShipped.html" class="text-dark"></a> </td>
-                            <td><a href="./notShipped.html" class="text-dark">vishal deore</a></td>
-                            <td><a href="./notShipped.html" class="text-dark">1.00</a></td>
+                            <td><a href="">PO-00001</a></td>
+                            <td><a href="" class="text-dark">SO-00005</a></td>
+                            <td><a href="" class="text-dark">Jay Suryawanshi</a></td>
+                            <td><a href="" class="text-secondary">Draft</a></td>
+                            <td><a href="" class="text-dark"><i class="fa fa-circle text-secondary"></i></a></td>
+                            <td><a href="" class="text-dark"><i class="fa fa-circle text-secondary"></i></a></td>
+                            <td><a href="" class="text-dark">Rs.47,200.00</a></td>
+                            <td><a href="" class="text-dark">16/08/2022</a></td>
                         </tr>
-                        <tr>
-                            <td><input class="form-check-input checkPackageHead" type="checkbox" value="" id="">
-                                <a href="./shipped.html" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="./shipped.html">PKG-00001</a></td>
-                            <td><a href="./shipped.html" class="text-dark">Indiapost</a></td>
-                            <td><a href="./shipped.html" class="text-dark"></a></td>
-                            <td><a href="./shipped.html" class="text-dark">SO-00002</a></td>
-                            <td><a href="./shipped.html">Shipped</a></td>
-                            <td><a href="./shipped.html" class="text-dark"></a> </td>
-                            <td><a href="./shipped.html" class="text-dark">vishal deore</a></td>
-                            <td><a href="./shipped.html" class="text-dark">1.00</a></td>
-                        </tr>
-                        <tr>
-                            <td><input class="form-check-input checkPackageHead" type="checkbox" value="" id="">
-                                <a href="./delivered.html" class="text-dark">12/07/2022</a>
-                            </td>
-                            <td><a href="./delivered.html">PKG-00001</a></td>
-                            <td><a href="./delivered.html" class="text-dark">Indiapost</a></td>
-                            <td><a href="./delivered.html" class="text-dark"></a></td>
-                            <td><a href="./delivered.html" class="text-dark">SO-00002</a></td>
-                            <td><a href="./delivered.html" class="text-success">Delivered</a></td>
-                            <td><a href="./delivered.html" class="text-dark"></a> </td>
-                            <td><a href="./delivered.html" class="text-dark">vishal deore</a></td>
-                            <td><a href="./delivered.html" class="text-dark">1.00</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
-                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                    <h5>Are you sure?</h5>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center mb-4">
-                                    <p>Once deleted, they cannot be undone</p>
-                                </div>
-                                <div class="d-flex justify-content-around mb-4">
-                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Delete</button>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#popupCheck">No</button>
+                        <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="d-flex justify-content-center align-items-center mb-4 mt-3">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mb-4">
+                                            <h5>Are you sure?</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mb-4">
+                                            <p>Once deleted, they cannot be undone</p>
+                                        </div>
+                                        <div class="d-flex justify-content-around mb-4">
+                                            <button type="button" class="btn btn-light"
+                                                data-bs-dismiss="modal">Delete</button>
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">No</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
@@ -855,8 +1150,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- Code for select field @anjudewangan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <!-- Code for select field @anjudewangan -->
     <script src="../script.js"></script>
 </body>
 
 </html>
-<!-- Code for add Sales @anjudewangan -->
+<!-- Code for add Purschases @anjudewangan -->

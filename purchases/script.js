@@ -83,6 +83,18 @@ $(document).ready(function () {
         $(".vendorsTableHead2").hide();
     });
 
+    $(".purOrderTableHead1").show();
+    $(".purOrderTableHead2").hide();
+
+    $(".checkPurOrderHead").click(function () {
+        $(".purOrderTableHead2").show();
+        $(".purOrderTableHead1").hide();
+    });
+    $("#closePurOrderHead").click(function () {
+        $(".purOrderTableHead1").show();
+        $(".purOrderTableHead2").hide();
+    });
+
 });
 
 // Code for Print @anjudewangan
@@ -317,6 +329,19 @@ $(document).ready(function () {
     });
     // Code for Record Payment @anjudewangan
 
+    // Code for Purchase Order @anjudewangan
+    $("#divCustomerCheck").hide();
+    $("#checkDeliver1").click(function () {
+        $("#divCustomerCheck").show();
+        $("#divOrganization").hide();
+        $("input[name='checkDeliver'][value='2']").prop('checked', true);
+    });
+    $("#checkDeliver").click(function () {
+        $("#divOrganization").show();
+        $("#divCustomerCheck").hide();
+        $("input[name='checkDeliver'][value='1']").prop('checked', true);
+    });
+    // Code for Purchase Order @anjudewangan
 
     // code for add table @anjudewangan
     const addAnotherLine = [];

@@ -409,44 +409,44 @@
             <!-- Code for link item @anjudewangan -->
             <!-- Code for link Sales @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
-                    href="#collapseExamplePages" data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                    data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="../customers/customers.html">Customers</a>
+                        <a href="../../sales/customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="../estimates/estimates.html">Estimates</a>
+                        <a href="../../sales/estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="../../sales/salesOrders/salesOrders.html">Sales Orders</a>
                     </li>
                     <li>
-                        <a href="../packages-folder/packages.html">Packages</a>
+                        <a href="../../sales/packages-folder/packages.html">Packages</a>
                     </li>
                     <li>
-                        <a href="../shipmets/shipments.html">Shipments</a>
+                        <a href="../../sales/shipmets/shipments.html">Shipments</a>
                     </li>
                     <li>
-                        <a href="../delivery-challans/deliveryChallans.html">Delivery Challans</a>
+                        <a href="../../sales/delivery-challans/deliveryChallans.html">Delivery Challans</a>
                     </li>
                     <li>
-                        <a href="../invoices/invoices.html">Invoices</a>
+                        <a href="../../sales/invoices/invoices.html">Invoices</a>
                     </li>
                     <li>
-                        <a href="../received-payments/receivedPayments.html">Received Payments</a>
+                        <a href="../../sales/received-payments/receivedPayments.html">Received Payments</a>
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
                     </li>
                     <li>
-                        <a href="../sales-return/salesReturn.html">Sales Return</a>
+                        <a href="../../sales/sales-return/salesReturn.html">Sales Return</a>
                     </li>
                     <li>
-                        <a href="./creditNotes.html" class="sales-link">Credit Notes</a>
+                        <a href="../../sales/credit-notes/creditNotes.html">Credit Notes</a>
                     </li>
                 </ul>
             </li>
@@ -454,17 +454,17 @@
 
             <!-- Code for link Purchases @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePurchases"
-                    data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
+                    href="#collapsePurchases" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-shopping-bag"></i>
                     <span class="nav-link-text">Purchases</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapsePurchases">
                     <li>
-                        <a href="../../purchases/vendors/vendors.html">Vendors</a>
+                        <a href="../vendors/vendors.html">Vendors</a>
                     </li>
                     <li>
-                        <a href="../../purchases/purchase-order/purchaseOrder.html">Purchase Orders</a>
+                        <a href="./purchaseOrder.html" class="sales-link">Purchase Orders</a>
                     </li>
                     <li>
                         <a href="">Purchase Receives</a>
@@ -585,41 +585,67 @@
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
             <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
-                <h6><i class="fa fa-inr" aria-hidden="true"></i> Edit Credit Note</h6>
-                <div><a href="./draft.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <h6><i class="fa fa-shopping-bag" aria-hidden="true"></i> New Purchase Order</h6>
+                <div><a href="./purchaseOrder.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="container mt-3">
                 <div>
                     <div class="container border border-secondary rounded p-4">
                         <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Customer Name <span
+                            <label for="" class="col-sm-3 col-form-label">Vendor Name<span
                                     class="text-danger">*</span></label>
                             <div class="col-sm-7">
                                 <div class="dropdown dropdown-button">
                                     <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton1"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select Customer
+                                        Select a Vendor Name
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
                                                     class="form-control" id=""></a></li>
                                         <li><a class="dropdown-item border-bottom mb-3"
-                                                href="../customers/allCustomers.html">Mr. Badshah khan</a>
+                                                href="../vendors/allVendors.html">Mr. Badshah khan</a>
                                         </li>
                                         <li><a class="dropdown-item border-bottom mb-3" href="#">sample baba</a></li>
                                         <li><a class="dropdown-item text-primary" href="./newCustomer.html">+ New
                                                 Customers</a></li>
                                     </ul>
                                 </div>
-                                <a href="" data-bs-toggle="modal" data-bs-target="#popupCustomerDetails"><i
-                                        class="fa fa-user" aria-hidden="true"></i> View Customer Details</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#popupCustomerDetails"><i
+                                            class="fa fa-user" aria-hidden="true"></i> View Vendor Details</a>
+                                    <span data-bs-toggle="modal" data-bs-target="#popupOpenPurOrder"><i
+                                            class="fa fa-exclamation-triangle text-warning" aria-hidden="true"></i> Open
+                                        Purchase Orders</span>
+                                    <div class="modal fade" id="popupOpenPurOrder" tabindex="-1"
+                                        aria-labelledby="popupOpenPurOrderLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light">
+                                                    <h5 class="modal-title" id="popupOpenPurOrderLabel">Recent Orders
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mb-3">PO-00001</div>
+                                                        <div>Rs.47,200.00</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mb-3">25/07/2022</div>
+                                                        <div class="text-primary">Issued</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="modal fade" id="popupCustomerDetails" tabindex="-1"
                                     aria-labelledby="popupCustomerDetailsLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-scrollable modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupCustomerDetailsLabel">Customer Details
+                                                <h5 class="modal-title" id="popupCustomerDetailsLabel">Vendor Details
                                                 </h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -627,10 +653,10 @@
                                             <div class="modal-body">
                                                 <div
                                                     class="d-flex align-items-center justify-content-start divCustomer">
-                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                    <i class="fa fa-home text-primary customer-icon"
                                                         aria-hidden="true"></i>
-                                                    <h6 class="ml-4">Mr. Badshah khan <a
-                                                            href="../customers/allCustomers.html"><i
+                                                    <h6 class="ml-4">Appario Technology <a
+                                                            href="../vendors/allVendors.html"><i
                                                                 class="fa fa-caret-square-o-right fs-5"
                                                                 aria-hidden="true"></i></a></h6>
                                                 </div>
@@ -652,11 +678,6 @@
                                                         <div class="col-7"></div>
                                                         <div class="col-1"><i class="fa fa-angle-down"
                                                                 aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Customer Type</div>
-                                                        <div class="col-4">Individual</div>
-                                                        <div class="col-4"></div>
                                                     </div>
                                                     <div class="row mb-2">
                                                         <div class="col-4">Payment Terms</div>
@@ -681,6 +702,11 @@
                                                     <div class="row mb-2">
                                                         <div class="col-4">GSTIN</div>
                                                         <div class="col-4">27AABFB2177L1ZD</div>
+                                                        <div class="col-4"></div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                        <div class="col-4">PAN</div>
+                                                        <div class="col-4">AALCA0171E</div>
                                                         <div class="col-4"></div>
                                                     </div>
                                                 </div>
@@ -731,7 +757,7 @@
                                     <div class="modal-dialog modal-dialog-scrollable modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupCustomerDetails2Label">Customer Details
+                                                <h5 class="modal-title" id="popupCustomerDetails2Label">Vendor Details
                                                 </h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -739,10 +765,10 @@
                                             <div class="modal-body">
                                                 <div
                                                     class="d-flex align-items-center justify-content-start divCustomer">
-                                                    <i class="fa fa-user-circle-o text-primary customer-icon"
+                                                    <i class="fa fa-home text-primary customer-icon"
                                                         aria-hidden="true"></i>
-                                                    <h6 class="ml-4">Mr. Badshah khan <a
-                                                            href="../customers/allCustomers.html"><i
+                                                    <h6 class="ml-4">Appario Technology <a
+                                                            href="../vendors/allVendors.html"><i
                                                                 class="fa fa-caret-square-o-right fs-5"
                                                                 aria-hidden="true"></i></a></h6>
                                                 </div>
@@ -764,11 +790,6 @@
                                                         <div class="col-7"></div>
                                                         <div class="col-1"><i class="fa fa-angle-down"
                                                                 aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="row mb-2">
-                                                        <div class="col-4">Customer Type</div>
-                                                        <div class="col-4">Individual</div>
-                                                        <div class="col-4"></div>
                                                     </div>
                                                     <div class="row mb-2">
                                                         <div class="col-4">Payment Terms</div>
@@ -814,8 +835,8 @@
                                                             <i class="fa fa-commenting-o" aria-hidden="true"></i>
                                                             <div
                                                                 class="bg-light rounded border border-secondary divBillContainer1">
-                                                                <div>Bill Of Supply added</div>
-                                                                <div>Bill Of Supply BOS-000002 of amount ₹600.00 created
+                                                                <div>Purchase Order updated</div>
+                                                                <div>Purchase Order PO-00001 marked as sent
                                                                     <b>by
                                                                         rakeshnandre433</b> - <a href="">View Detail</a>
                                                                 </div>
@@ -828,9 +849,8 @@
                                                             <i class="fa fa-commenting-o" aria-hidden="true"></i>
                                                             <div
                                                                 class="bg-light rounded border border-secondary divBillContainer2">
-                                                                <div>Payments Received added</div>
-                                                                <div>Payment of amount ₹49.00 received and applied for
-                                                                    BOS-000001 <b>by
+                                                                <div>Contact updated</div>
+                                                                <div>Marked as active <b>by
                                                                         rakeshnandre433</b></div>
                                                             </div>
                                                         </div>
@@ -841,8 +861,9 @@
                                                             <i class="fa fa-commenting-o" aria-hidden="true"></i>
                                                             <div
                                                                 class="bg-light rounded border border-secondary divBillContainer3">
-                                                                <div>Bill Of Supply updated</div>
-                                                                <div>Bill Of Supply BOS-000001 emailed <b>by
+                                                                <div>Purchase Order added</div>
+                                                                <div>Purchase Order PO-00001 of amount Rs.47,200.00
+                                                                    created from sales order <b>by
                                                                         rakeshnandre433</b> - <a href="">View Detail</a>
                                                                 </div>
                                                             </div>
@@ -869,8 +890,9 @@
                                                             <div
                                                                 class="bg-light rounded border border-secondary divBillContainer5">
                                                                 <div>Contact added</div>
-                                                                <div>Contact created with GST Treatment 'Consumer'.
-                                                                    State updated to MH.
+                                                                <div>Contact created with GST Treatment 'Registered
+                                                                    Business - Regular' & GSTIN '27AALCA0171E1ZZ'. State
+                                                                    updated to MH.
                                                                     <b>by rakeshnandre433</b>
                                                                 </div>
                                                             </div>
@@ -943,86 +965,69 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Invoice#</label>
-                            <div class="col-sm-3">
-                                <select class="js-example-basic-single" name="state">
-                                    <option>BOS-000002</option>
-                                    <option>BOS-000003</option>
-                                    <option>BOS-000005</option>
-                                    <option>BOS-000006</option>
-                                    <option>INV-000002</option>
-                                    <option>INV-000004</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Invoice Type</label>
-                            <div class="col-sm-3">
-                                <select class="js-example-basic-single" name="state">
-                                    <option>Select</option>
-                                    <option>Registered
-                                        Invoices that have been created for customers whose GST treatment is Registered
-                                        Business - Regular or Registered Business - Composition or Tax Deductor.
-                                    </option>
-                                    <option>Deemed Export
-                                        Invoices that have been created for
-                                        customers whose GST treatment is
-                                        Deemed Export.</option>
-                                    <option>SEZ With Payment
-                                        Invoices that have been created for
-                                        customers whose GST treatment is Special
-                                        Economic Zone or SEZ Developer and the
-                                        tax has been paid without a LUT bond.</option>
-                                    <option>SEZ Without Payment
-                                        Invoices that have been created for customers whose GST treatment is Special
-                                        Economic
-                                        Zone or SEZ Developer, and you dont have to pay the tax.
-                                    </option>
-                                    <option>Export With Payment
-                                        Invoices that have been created for customers whose GST treatment is Overseas
-                                        and the tax
-                                        has been paid without a LUT band.</option>
-                                    <option>Export Without Payment
-                                        Invoices that have been created for customers whose GST treatment is Overseas,
-                                        and you
-                                        dont have to pay the tax.</option>
-                                    <option>B2C (Large)
-                                        Invoices that have been created for customers whose GST Treatment is GST
-                                        Unregistered or
-                                        Consumer, the sale is an inter-state sale, and the value of the invoice is
-                                        greater than a
-                                        2.5 lakhs.</option>
-                                    <option>B2C Others
-                                        Invoices that have been created for customers whose GST Treatment is GST
-                                        Unregistered or
-                                        Consumer and the sale is an intra-state sale or inter-state sale where the value
-                                        of the invoice
-                                        is less than a * *2.5 lakhs.</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Reason<span
+                        <div class="mb-3 row">
+                            <label for="" class="col-sm-3 col-form-label">Deliver To<span
                                     class="text-danger">*</span></label>
-                            <div class="col-sm-7">
-                                <select class="js-example-basic-single" name="state">
-                                    <option>Select</option>
-                                    <option>Sales Return</option>
-                                    <option>Post Sale Discount</option>
-                                    <option>Deficiency in service</option>
-                                    <option>Correction in invoice</option>
-                                    <option>Change in POS</option>
-                                    <option>Finalization of Provisional assessment</option>
-                                    <option>Others</option>
-                                </select>
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="checkDeliver" id="checkDeliver"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Organization
+                                    </label>
+                                    <div id="divOrganization">
+                                        <div>rakeshnandre433 <i class="fa fa-pencil text-primary"></i></div>
+                                        <div>26b panja bazar</div>
+                                        <div>fulasheth</div>
+                                        <div>bahubali, Maharashtra</div>
+                                        <div>India , 425160</div>
+                                        <div>9876543210</div>
+                                        <div class="text-primary">Change destination to deliver</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="checkDeliver" id="checkDeliver1"
+                                        value="2">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Customer
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3"></div>
+                            <div class="col-6">
+                                <div id="divCustomerCheck">
+                                    <div class="dropdown dropdown-button mb-3">
+                                        <button class="btn border dropdown-toggle" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Select Customer
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
+                                                        class="form-control" id=""></a></li>
+                                            <li><a class="dropdown-item border-bottom mb-3"
+                                                    href="../vendors/allVendors.html">Mr. Badshah khan</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">sample baba</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        Stock on hand will not be affected in case of dropshipment only. Selecting the
+                                        customer option in the Deliver to field of a typical purchase order will affect
+                                        your
+                                        stock levels
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Credit Note<span
-                                    class="text-danger">#*</span></label>
+                            <label for="" class="col-sm-3 col-form-label">Purchase Order<span
+                                    class="text-danger">*</span></label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="" placeholder="CN-00001">
+                                <input type="text" class="form-control" id="" placeholder="PO-00002">
                             </div>
                             <div class="col-sm-2">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
@@ -1051,14 +1056,14 @@
                                                         <div class="mb-3">
                                                             <label for="" class="form-label">Prefix</label>
                                                             <input type="text" class="form-control" id=""
-                                                                placeholder="CN-">
+                                                                placeholder="PO-">
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="mb-3">
                                                             <label for="" class="form-label">Next Number</label>
                                                             <input type="text" class="form-control" id=""
-                                                                placeholder="00001">
+                                                                placeholder="00002">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1089,8 +1094,7 @@
                         <div class="mb-3 row d-flex align-items-center">
                             <div class="col-6">
                                 <div class="row">
-                                    <label for="" class="col-sm-6 col-form-label">Credit Note Date<span
-                                            class="text-danger">*</span></label>
+                                    <label for="" class="col-sm-6 col-form-label">Date</label>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control" id="" placeholder="21/03/2022">
                                         <div><small>To create transaction dated before 01/07/2017, <a href="">click
@@ -1100,145 +1104,44 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="container border border-secondary rounded p-4">
                         <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Salesperson</label>
-                            <div class="col-sm-6">
-                                <div class="dropdown dropdown-button">
-                                    <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select or Add Salesperson
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                        <li><a class="dropdown-item border-bottom mb-3" href="#"> <input type="text"
-                                                    class="form-control" id=""></a></li>
-                                        <li><a class="dropdown-item border-bottom mb-3" href="#">no results found</a>
-                                        </li>
-                                        <li><a class="dropdown-item text-primary" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#popupManageSalesPerson"><i class="fa fa-cog fs-5"
-                                                    aria-hidden="true"></i> Manage Salesperson</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="popupManageSalesPerson" tabindex="-1"
-                                aria-labelledby="popupManageSalesPersonLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupManageSalesPersonLabel">Manage Salespersons
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="my-4 row">
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control input-sales-person" id=""
-                                                        placeholder="Search Salespersons">
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <button type="submit" class="btn btn-primary mb-3"
-                                                        data-bs-toggle="modal" data-bs-target="#popupNewSalesPerson">+
-                                                        New
-                                                        Salesperson</button>
-                                                </div>
-                                            </div>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Salespersons Name</th>
-                                                        <th></th>
-                                                        <th>Email</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td class="text-secondary">No salespersons found.</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Save</button>
-                                            <button type="button" class="btn btn-outline-dark"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <label for="" class="col-sm-6 col-form-label">Expected Shipment Date</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="" placeholder="dd/mm/yyyy">
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="popupNewSalesPerson" tabindex="-1"
-                                aria-labelledby="popupNewSalesPersonLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupNewSalesPersonLabel">Manage Salespersons
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="my-4 row mx-5 bg-light p-3">
-                                                <div class="col-6">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Name<span
-                                                                class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Email<span
-                                                                class="text-danger">*</span></label>
-                                                        <input type="email" class="form-control" id="">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3"> <button type="button"
-                                                            class="btn btn-primary">Save
-                                                            and Send</button>
-                                                    </div>
-                                                    <div class="col-2"><button type="button"
-                                                            class="btn btn-outline-dark" data-bs-toggle="modal"
-                                                            data-bs-target="#popupManageSalesPerson">Cancel</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Salespersons Name</th>
-                                                        <th></th>
-                                                        <th>Email</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td class="text-secondary">No salespersons found.</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <label for="" class="col-sm-4 col-form-label">Payment Terms</label>
+                                    <div class="col-sm-6">
+                                        <select class="js-example-basic-single" name="state">
+                                            <option>Due on Receipt</option>
+                                            <option>Net 15</option>
+                                            <option>Net 30</option>
+                                            <option>Net 45</option>
+                                            <option>Net 60</option>
+                                            <option>Due end of the month</option>
+                                            <option>Due end of next month</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="container border border-secondary rounded p-4">
                         <div class="mb-3 row d-flex align-items-center">
-                            <label for="" class="col-sm-3 col-form-label">Subject <i class="fa fa-question-circle-o"
-                                    aria-hidden="true"></i></label>
-                            <div class="col-sm-7">
-                                <textarea class="form-control"
-                                    placeholder="Let your customer know what this Estimate is for" id=""></textarea>
+                            <label for="" class="col-sm-3 col-form-label">Shipment Preference</label>
+                            <div class="col-sm-5">
+                                <select class="form-select">
+                                    <option selected>Choose the shipment preference or type to add</option>
+                                </select>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        This transaction is applicable for reverse charge
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1256,14 +1159,15 @@
                                 <div class="modal-body">
                                     <div class="d-flex align-items-center justify-content-start divItem">
                                         <i
-                                            class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
+                                            class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i>
                                         <div class="ml-4">
-                                            <div>Sales and Purchase Items (Service)</div>
+                                            <div>Inventory Items</div>
                                             <h6 class="ml-2">AK <a href="../../item/allItems.html"><i
                                                         class="fa fa-caret-square-o-right fs-5"
                                                         aria-hidden="true"></i></a>
                                                 <div>
-                                                    <small>pcs</small>
+                                                    <small>606249BOSS <i class="fa fa-circle text-secondary"></i>
+                                                        pcs</small>
                                                 </div>
                                             </h6>
                                         </div>
@@ -1280,6 +1184,63 @@
                                         </div>
                                     </div>
                                     <div class="container mb-5">
+                                        <div class="row mx-3">
+                                            <div class="col-6">
+                                                <i class="fa fa-truck fs-3 border rounded p-3 divItemDetails"
+                                                    aria-hidden="true"></i>
+                                                To Be Shipped
+                                                <b class="fs-5">0.00</b>
+                                            </div>
+                                            <div class="col-6">
+                                                <i class="fa fa-sign-in fs-3 border rounded p-3 divItemDetails"
+                                                    aria-hidden="true"></i>
+                                                To Be Received
+                                                <b class="fs-5">0.00</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container mb-5">
+                                        <div class="row mb-2">
+                                            <div class="col"><b>Stock Details</b></div>
+                                        </div>
+                                        <div class="row mb-2 border-bottom">
+                                            <div class="col"><b>Accounting Stock</b></div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-6">Stock on Hand</div>
+                                            <div class="col-6 text-end">5.00</div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-6">Committed Stock</div>
+                                            <div class="col-6 text-end">1.00</div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-6">Available for Sale</div>
+                                            <div class="col-6 text-end">45.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="container mb-5">
+                                        <div class="row mb-2 border-bottom">
+                                            <div class="col"><b>Physical Stock</b></div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-6">Stock on Hand</div>
+                                            <div class="col-6 text-end">5.00</div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-6">Committed Stock</div>
+                                            <div class="col-6 text-end">1.00</div>
+                                        </div>
+                                        <div class="row mb-2 ml-2 border-bottom pb-3">
+                                            <div class="col-6">Available for Sale</div>
+                                            <div class="col-6 text-end">45.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="container mb-5 border-bottom pb-3 mb-2 ml-2">
+                                        <i class="fa fa-repeat bg-warning p-2 rounded-circle" aria-hidden="true"></i>
+                                        Reorder point: <b>10</b>
+                                    </div>
+                                    <div class="container mb-5">
                                         <div class="row mb-2">
                                             <div class="col"><b>Sales Information</b></div>
                                         </div>
@@ -1287,12 +1248,12 @@
                                             <div class="col-3 text-secondary">Selling Price</div>
                                             <div class="col-3">₹200.00</div>
                                         </div>
-                                        <div class="row mb-2 ml-2">
+                                        <div class="row mb-2 ml-2 border-bottom pb-3">
                                             <div class="col-3 text-secondary">Sales Account</div>
                                             <div class="col-3">Sales</div>
                                         </div>
                                     </div>
-                                    <div class="container">
+                                    <div class="container mb-5">
                                         <div class="row mb-2">
                                             <div class="col"><b>Purchase Information</b></div>
                                         </div>
@@ -1300,9 +1261,18 @@
                                             <div class="col-3 text-secondary">Purchase Price</div>
                                             <div class="col-3">₹100.00</div>
                                         </div>
-                                        <div class="row mb-2 ml-2">
+                                        <div class="row mb-2 ml-2 border-bottom pb-3">
                                             <div class="col-3 text-secondary">Sales Account</div>
                                             <div class="col-3">Cost of Goods Sold</div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row mb-2">
+                                            <div class="col"><b>Other Details</b></div>
+                                        </div>
+                                        <div class="row mb-2 ml-2">
+                                            <div class="col-3 text-secondary">Inventory Account</div>
+                                            <div class="col-3">Inventory Asset</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1323,12 +1293,13 @@
                                         <i
                                             class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
                                         <div class="ml-4">
-                                            <div>Sales and Purchase Items (Service)</div>
+                                            <div>Inventory Items</div>
                                             <h6 class="ml-2">AK <a href="../../item/allItems.html"><i
                                                         class="fa fa-caret-square-o-right fs-5"
                                                         aria-hidden="true"></i></a>
                                                 <div>
-                                                    <small>pcs</small>
+                                                    <small>606249BOSS <i class="fa fa-circle text-secondary"></i>
+                                                        pcs</small>
                                                 </div>
                                             </h6>
                                         </div>
@@ -1351,7 +1322,7 @@
                                                     <button class="btn btn-white dropdown-toggle" type="button"
                                                         id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
-                                                        Sales Order
+                                                        Purchase Order
                                                     </button>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                                         <li><a class="dropdown-item" href="#">Sales Order</a></li>
@@ -1389,29 +1360,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row mb-3 bg-light text-center p-3">
+                                        <div class="row mb-5 bg-light text-center p-3">
                                             <div class="col">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value=""
                                                         id="flexCheckChecked" checked>
                                                     <label class="form-check-label" for="flexCheckChecked">
-                                                        Show only Dr.aware hospital and Nursing Home's transactions
+                                                        Show only <b>appario technology's</b> transactions
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row mb-3">
-                                            <div class="col"><b>Dr.aware hospital and Nursing Home</b></div>
-                                        </div>
-                                        <div class="row mb-3 text-center">
-                                            <div class="col-4">EST-000002</div>
-                                            <div class="col-4"><a href="">Sent</a></div>
-                                            <div class="col-4">Item Price: <b>₹629.99</b></div>
-                                        </div>
-                                        <div class="row mb-3 border-bottom text-center">
-                                            <div class="col-4">10/07/2022</div>
-                                            <div class="col-4"></div>
-                                            <div class="col-4">Quantity Sold: <b>1.00</b></div>
+                                        <div class="d-flex align-items-center justify-content-center mb-5">
+                                            <div class="text-secondary">No Purchase Orders recorded yet.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1567,11 +1528,140 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <select class="form-select bg-light" aria-label="Default select example">
-                                        <option selected>Sales</option>
+                                    <select class="js-example-basic-single" name="state">
+                                        <option>Inventory Asset</option>
+                                        <option disabled>Other Current Asset</option>
+                                        <option>Advance Tax</option>
+                                        <option>Employee Advance</option>
+                                        <option>Input Tax Credits</option>
+                                        <option>Input CGST</option>
+                                        <option>Input IGST</option>
+                                        <option>Input SGST</option>
+                                        <option>Prepaid Expenses</option>
+                                        <option>Reverse Charge Tax Input but not due</option>
+                                        <option>TDS Receivable</option>
+                                        <option disabled>Fixed Asset</option>
+                                        <option>Furniture and Equipment</option>
+                                        <option disabled>Other Current Liability</option>
+                                        <option>Employee Reimbursements</option>
+                                        <option>GST Pavable</option>
+                                        <option>Output CGST</option>
+                                        <option>Output IGST</option>
+                                        <option>Output SGST</option>
+                                        <option>Opening Balance Adjustments</option>
+                                        <option>TDS Payable</option>
+                                        <option>Unearned Revenue</option>
+                                        <option disabled>Income</option>
+                                        <option>Discount</option>
+                                        <option>General Income</option>
+                                        <option>Interest Income</option>
+                                        <option>Late Fee Income</option>
+                                        <option>Other Charges</option>
+                                        <option>Sales</option>
+                                        <option>Shipping Charge</option>
+                                        <option disabled>Expense</option>
+                                        <option>Advertising And Marketing</option>
+                                        <option>Automobile Expense</option>
+                                        <option>Bad Debt</option>
+                                        <option>Bank Fees and Charges</option>
+                                        <option>Consultant Expense</option>
+                                        <option>Contract Assets</option>
+                                        <option>Credit Card Charges</option>
+                                        <option>Depreciation And Amortisation</option>
+                                        <option>Depreciation Expense</option>
+                                        <option>IT and Internet Expenses</option>
+                                        <option>Janitorial Expense</option>
+                                        <option>Lodging</option>
+                                        <option>Meals and Entertainment</option>
+                                        <option>Merchandise</option>
+                                        <option>Office Supplies</option>
+                                        <option>Other Expenses</option>
+                                        <option>Postage</option>
+                                        <option>Printing and Stationery</option>
+                                        <option>Purchase Discounts</option>
+                                        <option>Raw Materials And Consumables</option>
+                                        <option>Rent Expense</option>
+                                        <option>Repairs and Maintenance</option>
+                                        <option>Salaries and Employee Wages</option>
+                                        <option>Telephone Expense</option>
+                                        <option>Transportation Expense</option>
+                                        <option>Travel Expense</option>
+                                        <option>Uncategorized</option>
+                                        <option disabled>Cost Of Goods Sold</option>
+                                        <option>Cost Of Goods Sold</option>
+                                        <option>Job Costing</option>
+                                        <option>Labor</option>
+                                        <option>Materials</option>
+                                        <option>Nurse Charges</option>
+                                        <option disabled>Stock</option>
+                                        <option>Inventory Asset</option>
                                     </select>
                                 </td>
-                                <td class="text-end">1.00</td>
+                                <td class="text-end">1.00
+                                    <div><small>Stock on Hand:</small></div>
+                                    <div><small>50.00 pcs <i class="fa fa-arrow-circle-o-down text-primary"
+                                                aria-hidden="true" data-bs-toggle="modal"
+                                                data-bs-target="#popupStockDetails"></i></small></div>
+                                    <div class="modal fade" id="popupStockDetails" tabindex="-1"
+                                        aria-labelledby="popupStockDetailsLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light">
+                                                    <h5 class="modal-title" id="popupStockDetailsLabel">Stock Details
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row pl-5">
+                                                        <div class="col-6 text-start">
+                                                            <div class="row mb-3">
+                                                                <div class="col">
+                                                                    <h6>Accounting Stock</h6>
+                                                                    <p><small>This is calculated based on Bills and
+                                                                            Invoices.</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6">Stock on Hand</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Committed Stock</div>
+                                                                <div class="col-6">: 0.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Available for Sale</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 text-start">
+                                                            <div class="row mb-3">
+                                                                <div class="col">
+                                                                    <h6>Physical Stock</h6>
+                                                                    <p><small>This is calculated based on Receives and
+                                                                            Shipments.</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6">Stock on Hand</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Committed Stock</div>
+                                                                <div class="col-6">: 0.00</div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-dotted">Available for Sale</div>
+                                                                <div class="col-6">: 5.00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="text-end">200.00 <div><a href="" data-bs-toggle="modal"
                                             data-bs-target="#popupItemDetails">Recent Transaction</a></div>
                                 </td>
@@ -1604,8 +1694,73 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <select class="form-select bg-light" aria-label="Default select example">
-                                        <option selected>Sales Account</option>
+                                    <select class="js-example-basic-single" name="state">
+                                        <option>Select a Account</option>
+                                        <option disabled>Other Current Asset</option>
+                                        <option>Advance Tax</option>
+                                        <option>Employee Advance</option>
+                                        <option>Input Tax Credits</option>
+                                        <option>Input CGST</option>
+                                        <option>Input IGST</option>
+                                        <option>Input SGST</option>
+                                        <option>Prepaid Expenses</option>
+                                        <option>Reverse Charge Tax Input but not due</option>
+                                        <option>TDS Receivable</option>
+                                        <option disabled>Fixed Asset</option>
+                                        <option>Furniture and Equipment</option>
+                                        <option disabled>Other Current Liability</option>
+                                        <option>Employee Reimbursements</option>
+                                        <option>GST Pavable</option>
+                                        <option>Output CGST</option>
+                                        <option>Output IGST</option>
+                                        <option>Output SGST</option>
+                                        <option>Opening Balance Adjustments</option>
+                                        <option>TDS Payable</option>
+                                        <option>Unearned Revenue</option>
+                                        <option disabled>Income</option>
+                                        <option>Discount</option>
+                                        <option>General Income</option>
+                                        <option>Interest Income</option>
+                                        <option>Late Fee Income</option>
+                                        <option>Other Charges</option>
+                                        <option>Sales</option>
+                                        <option>Shipping Charge</option>
+                                        <option disabled>Expense</option>
+                                        <option>Advertising And Marketing</option>
+                                        <option>Automobile Expense</option>
+                                        <option>Bad Debt</option>
+                                        <option>Bank Fees and Charges</option>
+                                        <option>Consultant Expense</option>
+                                        <option>Contract Assets</option>
+                                        <option>Credit Card Charges</option>
+                                        <option>Depreciation And Amortisation</option>
+                                        <option>Depreciation Expense</option>
+                                        <option>IT and Internet Expenses</option>
+                                        <option>Janitorial Expense</option>
+                                        <option>Lodging</option>
+                                        <option>Meals and Entertainment</option>
+                                        <option>Merchandise</option>
+                                        <option>Office Supplies</option>
+                                        <option>Other Expenses</option>
+                                        <option>Postage</option>
+                                        <option>Printing and Stationery</option>
+                                        <option>Purchase Discounts</option>
+                                        <option>Raw Materials And Consumables</option>
+                                        <option>Rent Expense</option>
+                                        <option>Repairs and Maintenance</option>
+                                        <option>Salaries and Employee Wages</option>
+                                        <option>Telephone Expense</option>
+                                        <option>Transportation Expense</option>
+                                        <option>Travel Expense</option>
+                                        <option>Uncategorized</option>
+                                        <option disabled>Cost Of Goods Sold</option>
+                                        <option>Cost Of Goods Sold</option>
+                                        <option>Job Costing</option>
+                                        <option>Labor</option>
+                                        <option>Materials</option>
+                                        <option>Nurse Charges</option>
+                                        <option disabled>Stock</option>
+                                        <option>Inventory Asset</option>
                                     </select>
                                 </td>
                                 <td class="text-end">1.00</td>
@@ -1874,8 +2029,8 @@
                 <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
                 <div class="my-3">
                     <button class="btn btn-outline-secondary">Save as Draft</button>
-                    <button class="btn btn-primary">Save as Open</button>
-                    <a href="./draft.html"><button class="btn btn-outline-secondary">Cancel</button></a>
+                    <button class="btn btn-primary">Save and Send</button>
+                    <a href="./purchaseOrder.html"><button class="btn btn-outline-secondary">Cancel</button></a>
                 </div>
             </div>
     </main>

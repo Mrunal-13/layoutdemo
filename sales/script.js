@@ -612,6 +612,20 @@ $(document).ready(function () {
 // Code for add Sales @anjudewangan
 
 // get the name of the file 
+let formFileMultiple = document.getElementById("formFileMultiple");
+let fileName = document.querySelector("#fileName");
+let span = document.createElement("span");
+span.classList.add("iconify");
+span.setAttribute("data-icon", "charm:circle-cross")
+span.setAttribute("id", "cancleName");
+span.setAttribute("style", "color:red")
+span.setAttribute("data-width", "17")
+span.setAttribute("data-height", "17")
+span.setAttribute("onclick", "removeName()")
+
+formFileMultiple.addEventListener("change", () => {
+    let Myfiles = formFileMultiple.files[0];
+    fileName.innerHTML = `${Myfiles.name}&nbsp;&nbsp;&nbsp;`;
 let formFileMultiple=document.querySelector("#formFileMultiple");
 let fileName=document.querySelector("#fileName");
 let span=document.createElement("span");
@@ -629,6 +643,6 @@ formFileMultiple.addEventListener("change",()=>{
     fileName.append(span)
 })
 
-function removeName(){
-    fileName.innerHTML=""
+function removeName() {
+    fileName.innerHTML = ""
 }

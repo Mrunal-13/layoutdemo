@@ -654,10 +654,9 @@
                                 <div class="input-group mb-3">
                                     <span class="mr-2"><i class="fa fa-file-pdf-o text-danger fs-5"
                                             aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" placeholder="statement_appariotechnology"
-                                        aria-label="statement_appariotechnology" aria-describedby="basic-addon2">
-                                    <span class="input-group-text" id="basic-addon2"><i class="fa fa-eye text-primary"
-                                            aria-hidden="true"></i></span>
+                                    <input type="text" id="textEye" class="form-control" placeholder="statement_appariotechnology"
+                                        aria-label="statement_appariotechnology">
+                                    <span class="input-group-text" ><i id="basic-addon2" class="fa fa-eye text-primary"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -670,6 +669,9 @@
                         <label for="formFileMultiple" class="form-label text-primary"> <i class="fa fa-paperclip"
                                 aria-hidden="true"></i> Attach File(s)</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple style="display: none;">
+                        <div class="filName">
+                            <p id="fileName"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="mb-3 row">
@@ -690,6 +692,14 @@
         crossorigin="anonymous"></script>
     <script src="../script.js"></script>
 </body>
-
+<script>
+    let basic_addon2=document.getElementById("basic-addon2");
+    basic_addon2.addEventListener("click",function(){
+        let textEye=document.getElementById("textEye");
+        const type = textEye.getAttribute("type") === "password" ? "text" : "password";
+        textEye.setAttribute("type", type);
+        
+    })
+</script>
 </html>
 <!-- Code for add Purchases @anjudewangan -->

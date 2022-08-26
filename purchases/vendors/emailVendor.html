@@ -644,7 +644,7 @@
                                 <div class="input-group mb-3">
                                     <span class="mr-2"><i class="fa fa-file-pdf-o text-danger fs-5"
                                             aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" placeholder="statement_appariotechnology"
+                                    <input type="text" id="textEye" class="form-control" placeholder="statement_appariotechnology"
                                         aria-label="statement_appariotechnology" aria-describedby="basic-addon2">
                                     <span class="input-group-text" id="basic-addon2"><i class="fa fa-eye text-primary"
                                             aria-hidden="true"></i></span>
@@ -659,6 +659,9 @@
                         <label for="formFileMultiple" class="form-label text-primary"> <i class="fa fa-paperclip"
                                 aria-hidden="true"></i> Attach File(s)</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple style="display: none;">
+                        <div class="filName">
+                            <p id="fileName"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="mb-3 row">
@@ -678,6 +681,15 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="../script.js"></script>
+    <script>
+        let basic_addon2=document.getElementById("basic-addon2");
+        basic_addon2.addEventListener("click",function(){
+            let textEye=document.getElementById("textEye");
+            const type = textEye.getAttribute("type") === "password" ? "text" : "password";
+            textEye.setAttribute("type", type);
+            
+        })
+    </script>
 </body>
 
 </html>

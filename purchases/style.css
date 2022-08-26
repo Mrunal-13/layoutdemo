@@ -1225,4 +1225,11 @@ main .active-item {
     margin-top: -37px !important;
 }
 
+/* Purchase order */
+.divItemDetails {
+    background-color: #E3F5FF;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    ;
+}
+
 /* Code for Purschases  @anjudewangan */

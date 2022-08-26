@@ -607,28 +607,6 @@ $(document).ready(function () {
 
 // Code for Chart @anjudewangan
 
-var xValues = ["Dec 2022", "Jan 2022", "Feb 2022", "Mar 2022", "Apr 2022", "May 2022", "Jun 2022"];
-var yValues = [0, 0, 0, 0, 0, 0, 40];
-var barColors = ["", "", "", "", "", "", "green"];
-
-new Chart("myChart", {
-    type: "bar",
-    data: {
-        labels: xValues,
-        datasets: [{
-            backgroundColor: barColors,
-            data: yValues
-        }]
-    },
-    options: {
-        legend: { display: false },
-        title: {
-            display: true,
-            text: "Total Income ( Last 6 Months ) - ₹49.00"
-        }
-    }
-});
-
 // Code for Chart @anjudewangan
 
 // Code for add Sales @anjudewangan
@@ -648,8 +626,21 @@ span.setAttribute("onclick", "removeName()")
 formFileMultiple.addEventListener("change", () => {
     let Myfiles = formFileMultiple.files[0];
     fileName.innerHTML = `${Myfiles.name}&nbsp;&nbsp;&nbsp;`;
+let formFileMultiple=document.querySelector("#formFileMultiple");
+let fileName=document.querySelector("#fileName");
+let span=document.createElement("span");
+    span.classList.add("iconify");
+    span.setAttribute("data-icon","charm:circle-cross")
+    span.setAttribute("id","cancleName");
+    span.setAttribute("style","color:red")
+    span.setAttribute("data-width","17")
+    span.setAttribute("data-height","17")
+    span.setAttribute("onclick","removeName()")
+
+formFileMultiple.addEventListener("change",()=>{
+    let Myfiles=formFileMultiple.files[0];
+    fileName.innerHTML=`${Myfiles.name}&nbsp;&nbsp;&nbsp;`;
     fileName.append(span)
-    console.log(fileName);
 })
 
 function removeName() {

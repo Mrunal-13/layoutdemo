@@ -659,24 +659,33 @@
                             </button>
                             <div class="modal fade" id="popupFiles" tabindex="-1" aria-labelledby="popupFilesLabel"
                                 aria-hidden="true">
-                                <div class="modal-dialog">
+                                <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-1 d-flex align-items-center">
-                                                    <label for="formFileMultiple" class="form-label">
-                                                        <i class="fa fa-plus-square-o text-primary fs-1"
-                                                            aria-hidden="true"></i></label>
-                                                    <input class="form-control" type="file" id="formFileMultiple"
-                                                        multiple style="display: none;">
-                                                </div>
-                                                <div class="col-11">
-                                                    <h5>Upload File(s)</h5>
-                                                    <div>You can upload a maximum of 5 files, 5MB each</div>
+                                        <div class="modal-body p-4">
+                                            <h6 class="text-secondary text-center">You can upload a maximum of 10 files,
+                                                5MB each</h6>
+                                            <div class="container mt-3">
+                                                <div class="row">
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-upload text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Drag & drop</h6>
+                                                    </div>
+                                                    <div class="col"></div>
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-cloud-upload text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Cloud</h6>
+                                                    </div>
+                                                    <div class="col"></div>
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-file text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Documents</h6>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

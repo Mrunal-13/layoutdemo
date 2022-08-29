@@ -413,7 +413,7 @@ $(document).ready(function () {
 
 // Code for add Purchases @anjudewangan
 
-// get the name of the file 
+// get the name of the file by AakashDave
 let formFileMultiple = document.getElementById("formFileMultiple");
 let fileName = document.querySelector("#fileName");
 let span = document.createElement("span");

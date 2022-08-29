@@ -623,9 +623,9 @@ span.setAttribute("data-width", "17")
 span.setAttribute("data-height", "17")
 span.setAttribute("onclick", "removeName()")
 
-formFileMultiple.addEventListener("change", () => {
-    let Myfiles = formFileMultiple.files[0];
-    fileName.innerHTML = `${Myfiles.name}&nbsp;&nbsp;&nbsp;`;
+formFileMultiple.addEventListener("change",()=>{
+    let Myfiles=formFileMultiple.files[0];
+    fileName.innerHTML=`${Myfiles.name}&nbsp;&nbsp;&nbsp;`;
     fileName.append(span)
     console.log(fileName);
 })

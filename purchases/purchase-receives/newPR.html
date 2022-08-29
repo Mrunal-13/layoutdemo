@@ -584,7 +584,7 @@
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
             <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
-                <h6><i class="fa fa fa-arrow-down" aria-hidden="true"></i> Edit Purchase Receive</h6>
+                <h6><i class="fa fa fa-arrow-down" aria-hidden="true"></i> New Purchase Receive</h6>
                 <div><a href="#" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -598,52 +598,58 @@
                     <div class="col-sm-2">
                         <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
                                 class="fa fa-cog fs-5" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
-                        aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header bg-light">
-                                    <h5 class="modal-title" id="popupEstimateNumberLabel">Purchase Receive#</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="my-3">To save you time, your Estimate numbers are set to
-                                        auto-generate mode. Are you sure you want to change this setting?</div>
-                                    <div class="form-check mb-3 mt-5">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Continue auto-generating sales order numbers
-                                        </label>
-                                        <div class="row ml-3">
-                                            <div class="col-3">
-                                                <div class="mb-3">
-                                                    <label for="" class="form-label">Prefix</label>
-                                                    <input type="text" class="form-control" id="" placeholder="PKG-">
+                        <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
+                            aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupEstimateNumberLabel">
+                                            Purchase Receive#</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="my-3">To save you time, your Estimate
+                                            numbers are set to
+                                            auto-generate mode. Are you sure you want to
+                                            change this setting?</div>
+                                        <div class="form-check mb-3 mt-5">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Continue auto-generating sales order numbers
+                                            </label>
+                                            <div class="row ml-3">
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Prefix</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="PKG-">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="mb-3">
-                                                    <label for="" class="form-label">Next Number</label>
-                                                    <input type="text" class="form-control" id="" placeholder="00001">
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Next
+                                                            Number</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="00001">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                I will add them manually each time
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="form-check mb-3">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            I will add them manually each time
-                                        </label>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal">Close</button>
                                     </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Save</button>
-                                    <button type="button" class="btn btn-outline-secondary"
-                                        data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -657,30 +663,37 @@
                     </div>
                 </div>
             </div>
+            <div class="container mt-5 p-3" style="background-color:#FFF6E8;">
+                <i class="fa fa-info-circle text-warning" aria-hidden="true"></i> You can
+                also select or scan the items to be included from the purchase order.
+                <a href="">Select/scan items</a>
+            </div>
             <div class="container mt-4">
                 <table class="table table-bordered">
                     <thead class="bg-light">
                         <tr>
                             <th>Item & Description</th>
                             <th>Ordered</th>
-                            <th>USED</th>
+                            <th>Used</th>
                             <th>Quantity to Receive</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><b>AK</b>
-                                <div><small class="text-secondary">SKU: 2984894</small></div>
+                                <div><small class="text-secondary">SKU: 2984894</small>
+                                </div>
                                 <div><small class="text-secondary">,okmoop</small></div>
                             </td>
                             <td>1</td>
                             <td>0</td>
                             <td class="text-end">
-                                <div class="d-flex justify-content-around align-items-center"><i
-                                        class="fa fa-minus-circle text-primary" aria-hidden="true"></i> <input
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <i class="fa fa-minus-circle text-primary" aria-hidden="true"></i> <input
                                         type="text" class="form-control" id="" placeholder="1" style="width: 80px;"> <i
-                                        class="fa fa-plus-circle text-primary" aria-hidden="true"></i></div>
-                                <div style="margin-right: -62px; margin-top: -23px;"><i
+                                        class="fa fa-plus-circle text-primary" aria-hidden="true"></i>
+                                </div>
+                                <div style="margin-right: -34px; margin-top: -32px;"><i
                                         class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i>
                                 </div>
                             </td>
@@ -688,15 +701,24 @@
                     </tbody>
                 </table>
             </div>
-            <div class="container mt-4 border-bottom pb-3">
+            <div class="container mt-4 border-bottom">
                 <div class="mb-3 row px-3">
                     <label for="" class="col-form-label">Internal Notes</label>
                     <textarea class="form-control" id=""></textarea>
                 </div>
             </div>
-            <div class="container p-4 mb-5">
-                <a href=""><button class="btn btn-primary">Save</button></a>
-                <a href=""><button class="btn btn-outline-secondary">Cancel</button></a>
+            <div class="container mt-4 d-flex justify-content-start gap-2 mb-5">
+                <button type="button" class="btn btn-primary">Save as Received</button>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#">Save as In Transit</a></li>
+                        <li><a class="dropdown-item" href="#">Save as Received</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
         </div>
     </main>

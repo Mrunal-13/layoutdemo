@@ -615,29 +615,29 @@
                                 <div class="d-flex justify-content-between">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#popupCustomerDetails"><i
                                             class="fa fa-user" aria-hidden="true"></i> View Vendor Details</a>
-                                    <span data-bs-toggle="modal" data-bs-target="#popupOpenPurOrder"><i
-                                            class="fa fa-exclamation-triangle text-warning" aria-hidden="true"></i> Open
-                                        Purchase Orders</span>
-                                    <div class="modal fade" id="popupOpenPurOrder" tabindex="-1"
-                                        aria-labelledby="popupOpenPurOrderLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header bg-light">
-                                                    <h5 class="modal-title" id="popupOpenPurOrderLabel">Recent Orders
-                                                    </h5>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="mb-3">PO-00001</div>
-                                                        <div>Rs.47,200.00</div>
+                                    <div class="dropdown" style="width: 39%;">
+                                        <a class="btn text-dark" href="#" role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-warning text-warning" aria-hidden="true"></i>Open Purchase
+                                            Orders
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item bg-light mb-3" href="#">
+                                                    Recent Orders
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">PO-00001</div>
+                                                        <div class="col-6 text-end">Rs.47,200.00</div>
                                                     </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="mb-3">25/07/2022</div>
-                                                        <div class="text-primary">Issued</div>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">25/07/2022</div>
+                                                        <div class="col-6 text-end text-primary">Issued</div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                </a></li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="modal fade" id="popupCustomerDetails" tabindex="-1"
@@ -2028,8 +2028,10 @@
                 </div>
                 <div class="text-end border-top mt-4">Template: 'Spreadsheet Template' <a href="">Change</a></div>
                 <div class="my-3">
-                    <button class="btn btn-outline-secondary">Save as Draft</button>
-                    <button class="btn btn-primary">Save and Send</button>
+                    <button class="btn btn-primary">Save</button>
+                    <a href="./issued.html">
+                        <button class="btn btn-outline-secondary">Save and Send</button>
+                    </a>
                     <a href="./purchaseOrder.html"><button class="btn btn-outline-secondary">Cancel</button></a>
                 </div>
             </div>

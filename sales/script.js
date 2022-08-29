@@ -627,6 +627,7 @@ formFileMultiple.addEventListener("change",()=>{
     let Myfiles=formFileMultiple.files[0];
     fileName.innerHTML=`${Myfiles.name}&nbsp;&nbsp;&nbsp;`;
     fileName.append(span)
+    console.log(fileName);
 })
 
 function removeName() {

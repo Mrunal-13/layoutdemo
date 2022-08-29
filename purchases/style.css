@@ -595,6 +595,14 @@
     list-style-type: disc !important;
 }
 
+.ulBilling ul li {
+    list-style-type: none;
+}
+
+.ulBilling li{
+    list-style-type: none;
+}
+
 .modalCheck,
 .modalManageTaxInfo {
     max-width: 1200px !important;

@@ -278,6 +278,7 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -294,8 +295,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                     <div class="alertBodyitems" href="#">
                         <div class="alertBodyitemsPart1">
                             <span class="text-success">
@@ -310,8 +313,10 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
+
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -404,44 +409,44 @@
             <!-- Code for link item @anjudewangan -->
             <!-- Code for link Sales @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
-                    href="#collapseExamplePages" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa fa-shopping-cart"></i>
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
+                    data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="../customers/customers.html">Customers</a>
+                        <a href="../../sales/customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="../estimates/estimates.html">Estimates</a>
+                        <a href="../../sales/estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="../../sales/salesOrders/salesOrders.html">Sales Orders</a>
                     </li>
                     <li>
-                        <a href="../packages-folder/packages.html">Packages</a>
+                        <a href="../../sales/packages-folder/packages.html">Packages</a>
                     </li>
                     <li>
-                        <a href="../shipmets/shipments.html">Shipments</a>
+                        <a href="../../sales/shipmets/shipments.html">Shipments</a>
                     </li>
                     <li>
-                        <a href="../delivery-challans/deliveryChallans.html">Delivery Challans</a>
+                        <a href="../../sales/delivery-challans/deliveryChallans.html">Delivery Challans</a>
                     </li>
                     <li>
-                        <a href="../invoices/invoices.html">Invoices</a>
+                        <a href="../../sales/invoices/invoices.html">Invoices</a>
                     </li>
                     <li>
-                        <a href="../received-payments/receivedPayments.html">Received Payments</a>
+                        <a href="../../sales/received-payments/receivedPayments.html">Received Payments</a>
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
                     </li>
                     <li>
-                        <a href="../sales-return/salesReturn.html">Sales Return</a>
+                        <a href="../../sales/sales-return/salesReturn.html">Sales Return</a>
                     </li>
                     <li>
-                        <a href="./creditNotes.html" class="sales-link">Credit Notes</a>
+                        <a href="../../sales/credit-notes/creditNotes.html">Credit Notes</a>
                     </li>
                 </ul>
             </li>
@@ -449,20 +454,20 @@
 
             <!-- Code for link Purchases @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePurchases"
-                    data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
+                    href="#collapsePurchases" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-shopping-bag"></i>
                     <span class="nav-link-text">Purchases</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapsePurchases">
                     <li>
-                        <a href="../../purchases/vendors/vendors.html">Vendors</a>
+                        <a href="../vendors/vendors.html">Vendors</a>
                     </li>
                     <li>
-                        <a href="../../purchases/purchase-order/purchaseOrder.html">Purchase Orders</a>
+                        <a href="./purchaseOrder.html" class="sales-link">Purchase Orders</a>
                     </li>
                     <li>
-                        <a href="../../purchases/purchase-receives/purchaseReceives.html">Purchase Receives</a>
+                        <a href="../purchase-receives/purchaseReceives.html">Purchase Receives</a>
                     </li>
                     <li>
                         <a href="">Bills</a>
@@ -576,7 +581,7 @@
         </ul>
     </div>
 
-    <!-- Sales Customers -->
+    <!--Draft Purchase Order -->
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
             <div class="row">
@@ -587,7 +592,7 @@
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    All Credit Notes
+                                    All Purchase Orders
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                     <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
@@ -595,19 +600,33 @@
                                     <li><a class="dropdown-item" href="#">Draft</a></li>
                                     <li><a class="dropdown-item" href="#">Pending Approval</a></li>
                                     <li><a class="dropdown-item" href="#">Approved</a></li>
-                                    <li><a class="dropdown-item" href="#">Open</a></li>
+                                    <li><a class="dropdown-item" href="#">Issued</a></li>
+                                    <li><a class="dropdown-item" href="#">Billed</a></li>
+                                    <li><a class="dropdown-item" href="#">Partially Billed</a></li>
                                     <li><a class="dropdown-item" href="#">Closed</a></li>
-                                    <li><a class="dropdown-item" href="#">Void</a></li>
-                                    <li><a class="dropdown-item" href="#">Invoice unassociated</a></li>
+                                    <li><a class="dropdown-item" href="#">Canceled</a></li>
+                                    <li><a class="dropdown-item" href="#">Partially Received</a></li>
+                                    <li><a class="dropdown-item" href="#">Received</a></li>
+                                    <li><a class="dropdown-item" href="#">Pending Received</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropshiped</a></li>
+                                    <li><a class="dropdown-item" href="#">Backorder</a></li>
+                                    <li><a class="dropdown-item" href="#">Unbilled Backorder</a></li>
+                                    <li><a class="dropdown-item" href="#">Billed & Not Received</a></li>
+                                    <li><a class="dropdown-item" href="#">Received & Not Billed</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-2">
-                            <a href="./newCreditNote.html">
-                                <button class="btn btn-warning text-primary">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                            <div class="dropdown">
+                                <button class="btn btn-warning" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-plus"></i>
                                 </button>
-                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="./newPO.html">Create Purchase Order</a></li>
+                                    <li><a class="dropdown-item" href="#">Create Purchase Order (Pre GST)</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-2">
                             <div class="dropdown">
@@ -618,86 +637,86 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
                                     <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
                                     <li><a class="dropdown-item" href="#">Created Time</a></li>
-                                    <li><a class="dropdown-item" href="#">Last Modified Time</a></li>
                                     <li><a class="dropdown-item" href="#">Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Credit Note#</a></li>
-                                    <li><a class="dropdown-item" href="#">Customer Name</a></li>
+                                    <li><a class="dropdown-item" href="#">Purchase Order#</a></li>
+                                    <li><a class="dropdown-item" href="#">Vendor Name</a></li>
                                     <li><a class="dropdown-item" href="#">Amount</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Balance</a></li>
+                                    <li><a class="dropdown-item" href="#">Expected Delivery Date</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Last Modified Time</a></li>
                                     <li><a class="dropdown-item fs-5" href="#"> <i class="fa fa-download text-secondary"
                                                 aria-hidden="true"></i>
-                                            Import Credit Notes</a></li>
-                                    <li><a class="dropdown-item fs-5" href="#"> <i class="fa fa-download text-secondary"
-                                                aria-hidden="true"></i>
-                                            Import Applied Credit Notes</a></li>
-                                    <li><a class="dropdown-item fs-5 border-bottom" href="#"> <i
-                                                class="fa fa-download text-secondary" aria-hidden="true"></i>
-                                            Import Refunds</a></li>
+                                            Import Purchase Orders</a></li>
                                     <li><a class="dropdown-item fs-5" href="#">
                                             <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Credit Notes
-                                        </a></li>
-                                    <li><a class="dropdown-item fs-5" href="#">
-                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Applied Credit Notes
-                                        </a></li>
-                                    <li><a class="dropdown-item fs-5" href="#">
-                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Refunds
+                                            Export Purchase Orders
                                         </a></li>
                                     <li><a class="dropdown-item fs-5 border-bottom" href="#">
                                             <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export as E-Way Bill
+                                            Export Receives
                                         </a></li>
-                                    <li><a class="dropdown-item fs-5" href="#">
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#">
                                             <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
                                             Export Current View
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
+                                            Refresh List
                                         </a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="row py-3 px-5 active-item border-bottom">
-                        <div class="col-10">Sample baba</div>
+                        <div class="col-10">Mr. Badshah khan</div>
                         <div class="col-2"><small>26/06/2017</small></div>
                         <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text text-primary">Open</div>
-                            <div><small>₹200.00</small> <small class="text-primary pl-3">SO-00001</small> <small
-                                    class="border-left pl-2">INV-00003</small></div>
+                            <div class="div-send-text text-secondary">Draft</div>
+                            <div><small class="text-dark">₹800.00</small> <small
+                                    class="text-primary border-left pl-2">PO-00001</small></div>
                         </div>
                     </div>
-                    <a href="./draft.html" class="text-decoration">
+                    <a href="../../sales/salesOrders/allSalesOrders.html" class="text-decoration">
                         <div class="row py-3 px-5 border-bottom">
-                            <div class="col-10 text-dark">Sample baba</div>
-                            <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
+                            <div class="col-10 text-dark">Sanole baba</div>
+                            <div class="col-2"><small class="text-dark">26/06/2017</small></div>
                             <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                                <div class="div-send-text text-secondary">Draft</div>
-                                <div><small class="text-dark">₹200.00</small> <small class="pl-3">SO-00001</small>
-                                    <small class="border-left pl-2 text-dark">INV-00002</small>
-                                </div>
+                                <div class="div-send-text text-primary">Issued</div>
+                                <div><small class="text-dark">₹2800.00</small> <small
+                                        class="text-primary border-left pl-2">PO-00002</small></div>
                             </div>
                         </div>
                     </a>
-                    <a href="./closedCN.html" class="text-decoration">
+                    <a href="../../sales/salesOrders/allSalesOrders.html" class="text-decoration">
                         <div class="row py-3 px-5 border-bottom">
                             <div class="col-10 text-dark">Sample baba</div>
-                            <div class="col-2"><small class="text-secondary">26/06/2017</small></div>
+                            <div class="col-2"><small class="text-dark">26/06/2017</small></div>
                             <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                                <div class="div-send-text text-success">Closed</div>
-                                <div><small class="text-dark">₹200.00</small> <small class="pl-3">SO-00001</small>
-                                    <small class="border-left pl-2 text-dark">INV-00001</small>
-                                </div>
+                                <div class="div-send-text text-secondary">Draft</div>
+                                <div><small class="text-dark">₹200.00</small> <small
+                                        class="text-primary border-left pl-2">PO-00003</small></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../../sales/salesOrders/allSalesOrders.html" class="text-decoration">
+                        <div class="row py-3 px-5 border-bottom">
+                            <div class="col-10 text-dark">Sample baba</div>
+                            <div class="col-2"><small class="text-dark">26/06/2017</small></div>
+                            <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                                <div class="div-send-text text-secondary">Draft</div>
+                                <div><small class="text-dark">₹200.00</small> <small
+                                        class="text-primary border-left pl-2">PO-00004</small></div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-9 border-left">
-                    <div class="row mb-4 border-bottom py-2 pb-3">
+                    <div class="row border-bottom py-2 pb-3">
                         <div class="col-2">
-                            <h5>CN-00001</h5>
+                            <h5>PO-00002</h5>
                         </div>
+                        <div class="col"></div>
                         <div class="col">
-                            <a href="./editCreditNote.html">
+                            <a href="./editPO.html">
                                 <button class="btn btn-light border">Edit</button>
                             </a>
                         </div>
@@ -758,14 +777,11 @@
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="./refund.html">Refund</a></li>
-                                    <li><a class="dropdown-item" href="./newCreditNote.html">Clone</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupInvoice">Apply To Invoice</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupE-Way">Add e-Way Bill Details</a></li>
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupVoid">Void</a></li>
+                                    <li><a class="dropdown-item" href="#">Mark as Issued</a></li>
+                                    <li><a class="dropdown-item" href="#">Convert to Bill</a></li>
+                                    <li><a class="dropdown-item" href="#">Mark as Received</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Create Receive</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Clone</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
                                 </ul>
@@ -784,83 +800,11 @@
                                                     <p>Once deleted, they cannot be undone</p>
                                                 </div>
                                                 <div class="d-flex justify-content-around mb-4">
-                                                    <a href="./creditNotes.html"><button type="button"
+                                                    <a href="./purchaseOrder.html"><button type="button"
                                                             class="btn btn-light">Delete</button></a>
                                                     <button type="button" class="btn btn-primary"
                                                         data-bs-dismiss="modal">No</button>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="popupE-Way" tabindex="-1" aria-labelledby="popupE-WayLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupE-WayLabel">Add e-Way Bill Details</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
-                                                            <i class="fa fa-file-text file-bill" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="text-primary text-center">Create New e-Way Bill
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 border-left pl-2">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-center px-3 py-5">
-                                                            <i class="fa fa-hand-o-up file-bill" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="text-primary text-center">Associate e-Way Bill
-                                                            Number</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="popupInvoice" tabindex="-1"
-                                    aria-labelledby="popupInvoiceLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-light">
-                                                <h5 class="modal-title" id="popupInvoiceLabel">Apply credits from
-                                                    CN-00001</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="text-center">There are no invoices in open status for this
-                                                    customer. Hence,
-                                                    credit cannot be applied.</div>
-                                            </div>
-                                            <div class="modal-footer d-flex justify-content-start">
-                                                <button type="button" class="btn btn-primary"
-                                                    data-bs-dismiss="modal">Ok</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="popupVoid" tabindex="-1" aria-labelledby="popupVoidLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <label for="" class="form-label">Enter a reason for marking this
-                                                    transaction as Void.</label>
-                                                <textarea class="form-control"></textarea>
-                                            </div>
-                                            <div class="modal-footer d-flex justify-content-start">
-                                                <a href="./void.html"> <button type="button"
-                                                        class="btn btn-primary">Void it</button></a>
-                                                <button type="button" class="btn btn-outline-secondary"
-                                                    data-bs-dismiss="modal">Cancel</button>
                                             </div>
                                         </div>
                                     </div>
@@ -872,70 +816,7 @@
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                             </button>
                         </div>
-                        <div class="col">
-                            <button class="btn btn-light border" data-bs-toggle="modal"
-                                data-bs-target="#popupApplyInvoice">
-                                Apply To Invoice
-                            </button>
-                            <div class="modal fade" id="popupApplyInvoice" tabindex="-1"
-                                aria-labelledby="popupApplyInvoiceLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupApplyInvoiceLabel">Apply credits from
-                                                CN-00001</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="text-end mb-3">
-                                                Invoice Balance: Rs.500.00
-                                            </div>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Invoice Number</th>
-                                                        <th>Invoice Date</th>
-                                                        <th>Invoice Amount</th>
-                                                        <th>Invoice Balance</th>
-                                                        <th>Amount to Credit</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>INV-000003</td>
-                                                        <td>12/07/2022</td>
-                                                        <td>Rs.906.00</td>
-                                                        <td>Rs.906.00</td>
-                                                        <td class="text-end">0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td>Amount to Credit:
-                                                            <div class="mt-3 bg-light py-2 px-3">Invoice Balance Due
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="text-end">0.00</div>
-                                                            <div class="mt-3 bg-light px-3 py-2 text-end">Rs.500.00
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="./closedCN.html"><button type="button"
-                                                    class="btn btn-primary">Save</button></a>
-                                            <button type="button" class="btn btn-outline-secondary"
-                                                data-bs-dismiss="modal">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col"></div>
                         <div class="col">
                             <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupShare">
                                 <i class="fa fa-share-alt" aria-hidden="true"></i> Share
@@ -1204,18 +1085,228 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-1 delete-link position-absolute">
-                            <a href="./creditNotes.html" class="text-dark"><i class="fa fa-times"
+                        <div class="col mt-1">
+                            <a href="./purchaseOrder.html" class="text-dark"><i class="fa fa-times"
                                     aria-hidden="true"></i></a>
                         </div>
+                        <div class="modal fade" id="popupReceive" tabindex="-1" aria-labelledby="popupReceiveLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupReceiveLabel"><i class="fa fa-arrow-down"></i>
+                                            New Purchase Receive</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container mt-3">
+                                            <div class="mb-3 row d-flex align-items-center">
+                                                <label for="" class="col-sm-3 col-form-label">Purchase Receive#<span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-sm-3">
+                                                    <input type="text" class="form-control" id="">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <a href="" data-bs-toggle="modal"
+                                                        data-bs-target="#popupEstimateNumber"><i class="fa fa-cog fs-5"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row d-flex align-items-center">
+                                                <label for="" class="col-sm-3 col-form-label">Received Date<span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-sm-3">
+                                                    <input type="text" class="form-control" id=""
+                                                        placeholder="22/07/2022">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container mt-5 p-3" style="background-color:#FFF6E8;">
+                                            <i class="fa fa-info-circle text-warning" aria-hidden="true"></i> You can
+                                            also select or scan the items to be included from the purchase order.
+                                            <a href="">Select/scan items</a>
+                                        </div>
+                                        <div class="container mt-4">
+                                            <table class="table table-bordered">
+                                                <thead class="bg-light">
+                                                    <tr>
+                                                        <th>Item & Description</th>
+                                                        <th>Ordered</th>
+                                                        <th>Used</th>
+                                                        <th>Quantity to Receive</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><b>AK</b>
+                                                            <div><small class="text-secondary">SKU: 2984894</small>
+                                                            </div>
+                                                            <div><small class="text-secondary">,okmoop</small></div>
+                                                        </td>
+                                                        <td>1</td>
+                                                        <td>0</td>
+                                                        <td class="text-end">
+                                                            <div
+                                                                class="d-flex justify-content-around align-items-center">
+                                                                <i class="fa fa-minus-circle text-primary"
+                                                                    aria-hidden="true"></i> <input type="text"
+                                                                    class="form-control" id="" placeholder="1"
+                                                                    style="width: 80px;"> <i
+                                                                    class="fa fa-plus-circle text-primary"
+                                                                    aria-hidden="true"></i>
+                                                            </div>
+                                                            <div style="margin-right: -34px; margin-top: -32px;"><i
+                                                                    class="fa fa-times-circle-o text-danger icon-delete"
+                                                                    aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="container mt-4">
+                                            <div class="mb-3 row px-3">
+                                                <label for="" class="col-form-label">Internal Notes</label>
+                                                <textarea class="form-control" id=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-start">
+                                        <button type="button" class="btn btn-primary">Save as Received</button>
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                <li><a class="dropdown-item" href="#">Save as In Transit</a></li>
+                                                <li><a class="dropdown-item" href="#">Save as Received</a></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
+                            aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupEstimateNumberLabel">
+                                            Purchase Receive#</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="my-3">To save you time, your Estimate
+                                            numbers are set to
+                                            auto-generate mode. Are you sure you want to
+                                            change this setting?</div>
+                                        <div class="form-check mb-3 mt-5">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Continue auto-generating sales order numbers
+                                            </label>
+                                            <div class="row ml-3">
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Prefix</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="PKG-">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Next
+                                                            Number</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="00001">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                I will add them manually each time
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mt-5 mb-3 mx-3">Associated Invoice: <span><a
-                                href="../invoices/paidInvoice.html">INV-000003</a></span></div>
+                    <div class="mb-3">
+                        <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i> bills ( 1 )
+                        </button>
+                        <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i> Receives
+                        </button>
+                    </div>
+                    <div class="row rounded p-2 m-2 d-flex align-items-center mb-3" style="background-color: #E7F6FF;">
+                        <div class="col">
+                            <i class="fa fa-arrow-circle-right fs-3" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-7">
+                            <h6><i>Complete Your Purchase</i></h6>
+                            <div>You can create bills and receipts (in any order) with this order to complete your
+                                purchase.</div>
+                        </div>
+                        <div class="col">
+                            <a href="#"><button class="btn btn-light border">
+                                    Receive
+                                </button></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"> <button class="btn btn-secondary">
+                                    Convert to Bill
+                                </button></a>
+                        </div>
+                    </div>
+                    <div class="mb-3 m-2">
+                        <div class="mb-2"><b>Reverse Charge Summary</b></div>
+                        <table class="table">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th>Reverse Charge Rate</th>
+                                    <th class="text-end">Tax Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CGST9 (9%)</td>
+                                    <td class="text-end">Rs.36.00</td>
+                                </tr>
+                                <tr>
+                                    <td>SGST9 (9%)</td>
+                                    <td class="text-end">Rs.36.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td class="text-end">Rs.72.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
                     <div class="border rounded mx-2" style="overflow: hidden;">
-                        <div class="positionRel bg-primary banner-send" data-bs-toggle="tooltip"
+                        <div class="positionRel bg-primary banner-send banner-delivered2 " data-bs-toggle="tooltip"
                             data-bs-placement="bottom"
-                            title="A credit note with an open status indicates that it has not yet been applied to an invoice or a refund has been issued.">
-                            Open</div>
+                            title="Issued status indicates that your vendor has received the purchase order.">Issued
+                        </div>
                         <div class="d-flex justify-content-end">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4"
@@ -1231,96 +1322,78 @@
                             </div>
                         </div>
                         <div class="border mx-5 my-3 mb-5 p-4 position-relative divPrint">
-                            <div class="">
-                                <h5>Dr.aware hospital and Nursing Home</h5>
-                                <div>26b panja bazar</div>
-                                <div>fulasheth</div>
-                                <div>bahubali Maharashtra 425160</div>
-                                <div>India</div>
-                                <div class="d-flex justify-content-between">GSTIN: 27AAICA5564D1ZO <h3>Credits Remaining
-                                    </h3>
+                            <div class="row mb-3 border-bottom">
+                                <div class="col-6">
+                                    <h5>Dr.aware hospital and Nursing Home</h5>
+                                    <div>26b panja bazar</div>
+                                    <div>fulasheth</div>
+                                    <div>bahubali Maharashtra 425160</div>
+                                    <div>India</div>
+                                    <div>GSTIN: 27AAICA5564D1ZO</div>
+                                </div>
+                                <div class="col-6 text-end my-5">
+                                    <h3 class="mb-4">PURCHASE ORDER</h3>
+                                    <div>Purchase Order #PO-00001</div>
                                 </div>
                             </div>
-                            <div class="border-bottom border-top row p-2">
+                            <div class="row p-3">
                                 <div class="col-6">
                                     <div class="row">
-                                        <div class="col-6">#</div>
-                                        <div class="col-6 fw-bold">: BOS-000011</div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col-6">Credit Date</div>
-                                        <div class="col-6 fw-bold">: 26/06/2017</div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col-6">Invoice#</div>
-                                        <div class="col-6 fw-bold">: INV-000003</div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="col-6">Invoice Date</div>
-                                        <div class="col-6 fw-bold">: 26/06/2017</div>
-                                    </div>
-                                    <div class="row bg-light border-bottom border-top">
-                                        <div class="col fw-bold">Bill To</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col fw-bold"><a href="../customers/allCustomers.html">Mr. Badshah
-                                                khan</a></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">dd</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">sakri</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">424304 Maharashtra</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">India</div>
+                                        <div class="col-6">
+                                            <button class="btn btn-primary mb-2" data-bs-toggle="tooltip"
+                                                data-bs-placement="bottom"
+                                                title="Issued status indicates that your vendor has received the purchase order.">Issued</button>
+                                            <div class="mb-2">Reference#</div>
+                                            <div class="mb-2">Order Date</div>
+                                            <div class="mb-2">Expected Shipment Date</div>
+                                            <div class="mb-2">Payment Terms</div>
+                                            <div class="mb-5">Sales Person</div>
+                                            <div class="mb-2">Shipment preference</div>
+                                            <div class="mb-2">Date</div>
+                                            <div class="mb-2">Delivery Date</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-2 mt-5">SO-00005</div>
+                                            <div class="mb-2">12/07/2022</div>
+                                            <div class="mb-2">13/07/2022</div>
+                                            <div class="mb-2">Due on Receipt</div>
+                                            <div class="mb-5">jay</div>
+                                            <div class="mb-2">by road</div>
+                                            <div class="mb-2">25/08/2022</div>
+                                            <div class="mb-2">26/08/2022</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-6 border-left">
-                                    <div class="row">
-                                        <div class="col-6">Place Of Supply</div>
-                                        <div class="col-6 fw-bold">: Maharashtra (27)</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">Sales person</div>
-                                        <div class="col-6 fw-bold">: Jay</div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-6"></div>
-                                        <div class="col-6"></div>
-                                    </div>
-                                    <div class="row bg-light border-bottom border-top">
-                                        <div class="col fw-bold">Ship To</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col fw-bold">Mr. Badshah khan</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">dd</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">sakri</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">424304 Maharashtra</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">India</div>
-                                    </div>
+                                <div class="col-2"></div>
+                                <div class="col-4">
+                                    <ul class="ulBilling mb-5">
+                                        <li><b>Vendor Address</b>
+                                            <ul>
+                                                <li><a href="../vendors/allVendors.html"><b>Appario Technology</b></a>
+                                                </li>
+                                                <li>dd</li>
+                                                <li>sakri</li>
+                                                <li>424304 Maharashtra</li>
+                                                <li>India</li>
+                                                <li>GSTIN- 27AALCA0171E1ZZ</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="ulBilling">
+                                        <li><b>Deliver To</b>
+                                            <ul>
+                                                <li><b>Mr. Badshah khan</b></li>
+                                                <li>dd</li>
+                                                <li>sakri</li>
+                                                <li>424304 Maharashtra</li>
+                                                <li>India</li>
+                                                <li>GSTIN- 27AALCA0171E1ZZ</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <table class="table table-bordered">
+                            <table class="table">
                                 <thead class="bg-light">
                                     <tr>
                                         <th>Item & Description</th>
@@ -1332,62 +1405,257 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><span class="fw-bold">AK</span>
-                                            <div class="text-secondary">SKU : 2984894</div>
-                                            <div>Description of item</div>
+                                        <td>
+                                            <div><i class="fa fa-picture-o text-secondary fs-3"
+                                                    style="opacity: 0.7;"></i>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#popupItemDetails">AK</a>
+                                            </div>
+                                            <div class="text-secondary ml-5">SKU : 123456</div>
+                                            <div class="ml-5"><small>ABC</small></div>
                                         </td>
+                                        <div class="modal fade" id="popupItemDetails" tabindex="-1"
+                                            aria-labelledby="popupItemDetailsLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-light">
+                                                        <h5 class="modal-title" id="popupItemDetailsLabel">Item Details
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-start divItem">
+                                                            <i
+                                                                class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
+                                                            <div class="ml-4">
+                                                                <div>Sales and Purchase Items (Service)</div>
+                                                                <h6 class="ml-2">AK <a
+                                                                        href="../../item/allItems.html"><i
+                                                                            class="fa fa-caret-square-o-right fs-5"
+                                                                            aria-hidden="true"></i></a>
+                                                                    <div>
+                                                                        <small>pcs</small>
+                                                                    </div>
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container my-4">
+                                                            <div class="row border-bottom mb-3">
+                                                                <div class="col-6 text-center">
+                                                                    <h6><a href="">Item Details</a></h6>
+                                                                </div>
+                                                                <div class="col-6 text-center">
+                                                                    <h6><a href="" class="text-dark"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#popupItemDetails2">Activity</a>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container mb-5">
+                                                            <div class="row mb-2">
+                                                                <div class="col"><b>Sales Information</b></div>
+                                                            </div>
+                                                            <div class="row mb-2 ml-2">
+                                                                <div class="col-3 text-secondary">Selling Price</div>
+                                                                <div class="col-3">₹200.00</div>
+                                                            </div>
+                                                            <div class="row mb-2 ml-2">
+                                                                <div class="col-3 text-secondary">Sales Account</div>
+                                                                <div class="col-3">Sales</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container">
+                                                            <div class="row mb-2">
+                                                                <div class="col"><b>Purchase Information</b></div>
+                                                            </div>
+                                                            <div class="row mb-2 ml-2">
+                                                                <div class="col-3 text-secondary">Purchase Price</div>
+                                                                <div class="col-3">₹100.00</div>
+                                                            </div>
+                                                            <div class="row mb-2 ml-2">
+                                                                <div class="col-3 text-secondary">Sales Account</div>
+                                                                <div class="col-3">Cost of Goods Sold</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="popupItemDetails2" tabindex="-1"
+                                            aria-labelledby="popupItemDetails2Label" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-light">
+                                                        <h5 class="modal-title" id="popupItemDetails2Label">Item Details
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-start divItem">
+                                                            <i
+                                                                class="fa fa-picture-o text-secondary fs-1 item-icon bg-white border rounded"></i></i>
+                                                            <div class="ml-4">
+                                                                <div>Sales and Purchase Items (Service)</div>
+                                                                <h6 class="ml-2">AK <a
+                                                                        href="../../item/allItems.html"><i
+                                                                            class="fa fa-caret-square-o-right fs-5"
+                                                                            aria-hidden="true"></i></a>
+                                                                    <div>
+                                                                        <small>pcs</small>
+                                                                    </div>
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container my-4">
+                                                            <div class="row border-bottom mb-3">
+                                                                <div class="col-6 text-center">
+                                                                    <h6><a href="" class="text-dark"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#popupItemDetails">Item
+                                                                            Details</a></h6>
+                                                                </div>
+                                                                <div class="col-6 text-center">
+                                                                    <h6><a href="">Transactions</a></h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container">
+                                                            <div class="row mb-3">
+                                                                <div class="col-6 text-center">
+                                                                    <div class="dropdown">
+                                                                        <button class="btn btn-white dropdown-toggle"
+                                                                            type="button" id="dropdownMenuButton1"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            Sales Order
+                                                                        </button>
+                                                                        <ul class="dropdown-menu"
+                                                                            aria-labelledby="dropdownMenuButton1">
+                                                                            <li><a class="dropdown-item" href="#">Sales
+                                                                                    Order</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Invoice</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Delivery Challan</a></li>
+                                                                            <li><a class="dropdown-item" href="#">Credit
+                                                                                    Note</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Purchase Order</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Bill</a></li>
+                                                                            <li><a class="dropdown-item" href="#">Vendor
+                                                                                    Credits</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 text-center">
+                                                                    <div class="dropdown">
+                                                                        <button class="btn btn-white dropdown-toggle"
+                                                                            type="button" id="dropdownMenuButton2"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            Status: All
+                                                                        </button>
+                                                                        <ul class="dropdown-menu"
+                                                                            aria-labelledby="dropdownMenuButton2">
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">All</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Draft</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Partially Invoiced</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Invoiced</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Closed</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Void</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Confirmed</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Partially shipped</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Shipped</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Dropshipped</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Backordered</a></li>
+                                                                            <li><a class="dropdown-item" href="#">On
+                                                                                    Hold</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 bg-light text-center p-3">
+                                                                <div class="col">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="" id="flexCheckChecked" checked>
+                                                                        <label class="form-check-label"
+                                                                            for="flexCheckChecked">
+                                                                            Show only Dr.aware hospital and Nursing
+                                                                            Home's transactions
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col"><b>Dr.aware hospital and Nursing
+                                                                        Home</b></div>
+                                                            </div>
+                                                            <div class="row mb-3 text-center">
+                                                                <div class="col-4">EST-000002</div>
+                                                                <div class="col-4"><a href="">Sent</a></div>
+                                                                <div class="col-4">Item Price: <b>₹629.99</b></div>
+                                                            </div>
+                                                            <div class="row mb-3 border-bottom text-center">
+                                                                <div class="col-4">10/07/2022</div>
+                                                                <div class="col-4"></div>
+                                                                <div class="col-4">Quantity Sold: <b>1.00</b></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <td>998313</td>
-                                        <td>1.0
+                                        <td>1.00
                                             <div>pcs</div>
                                         </td>
-                                        <td>600.00</td>
-                                        <td>600.00</td>
+                                        <td>₹50.00</td>
+                                        <td>₹50.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="mb-3">
+                                                Sub Total
+                                            </div>
+                                            <div>
+                                                <h5>Total</h5>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mb-3">
+                                                ₹50.00
+                                            </div>
+                                            <div>
+                                                <h5>₹55.00</h5>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="fw-bold">sample service
-                                            </span>
-                                        </td>
-                                        <td>997156</td>
-                                        <td>1.0
-                                            <div>pcs</div>
-                                        </td>
-                                        <td>200.00</td>
-                                        <td>200.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div>Total In Words (Indian Rupee)</div>
-                                            <div class="mb-3"><i>Eight Hundred Six Only</i></div>
-                                            <div class="mb-3">Thanks for your business.</div>
-                                        </td>
-                                        <td colspan="4">
-                                            <div class="d-flex justify-content-around">
-                                                <div>
-                                                    Sub Total
-                                                </div>
-                                                <div>800.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-around">
-                                                <div>
-                                                    Adjustment
-                                                </div>
-                                                <div>6.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-around fw-bold">
-                                                <div>
-                                                    Total
-                                                </div>
-                                                <div>₹806.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-around fw-bold border-bottom mb-5 pb-4">
-                                                <div>
-                                                    Credits Remaining
-                                                </div>
-                                                <div>₹806.00</div>
-                                            </div>
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div>Authorized Signature</div>
+                                            <div class="mb-4">
+                                                <div class="fw-bold">Authorized Signature :</div>
                                             </div>
                                         </td>
                                     </tr>

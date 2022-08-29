@@ -1,6 +1,6 @@
+<!-- Code for add Purschases @anjudewangan -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- Code for add Department @anjudewangan -->
 
 <head>
     <meta charset="UTF-8" />
@@ -23,13 +23,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navForDeskTop">
         <div class="navbar-first">
-            <a class="navbar-brand" href="../practice-registration/second-stage/html/index.html">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/practice-registration/second-stage/html/index.html">
                 <span class="iconify" data-icon="carbon:add" data-width="35" data-height="35"></span>
                 <p>Add Establishment</p>
             </a>
@@ -53,8 +53,10 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="dashboardPopupLabel">Advance Patient Search</h5>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close" onclick="HandleCancel()"></button>
+                                            <!-- Code for Advanced Patient Search @anjudewangan -->
                                         </div>
                                         <div class="modal-body">
                                             <form action="" class="popup-form">
@@ -148,12 +150,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="addPateintButton" href="../Addpateints/addpatient.html">
+                    <a class="nav-link mr-lg-2" id="addPateintButton" href="../../Addpateints/addpatient.html">
                         <button type="button" class="addpatient">Add Patient</button>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-lg-2" id="calenderButton" href="../Calendar/calendar.html">
+                    <a class="nav-link mr-lg-2" id="calenderButton" href="../../Calendar/calendar.html">
                         <i class="fa fa-fw fa-calendar"></i>
                     </a>
                 </li>
@@ -170,11 +172,62 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="../chat/index.html">
+                    <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="../../chat/index.html">
                         <i class="fa fa-phone" aria-hidden="true"></i>
+                        <!-- <span class="d-lg-none">Call-Messages
+                            <span class="badge badge-pill badge-primary">12 New</span>
+                        </span>
+                        <span class="indicator text-primary d-none d-lg-block">
+                            <i class="fa fa-fw fa-circle"></i>
+                        </span> -->
                     </a>
                 </li>
             </ul>
+
+            <!-- message shortcut
+            <div class="messageAlertDetails" id="messageAlertDetails">
+                <div class="MADHeader">
+                    <h6 class="MADHeader-info">New Messages:</h6>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="MADBody">
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>David Miller</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>Jane Smith</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="MadBodyitems">
+                        <div class="MadBodyitemsPart1 d-flex justify-content-between">
+                            <strong>John Doe</strong>
+                            <span class="MADTime">11:21 AM</span>
+                        </div>
+                        <div class="MadBodyitemsPart2">
+                            <p>Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="MADFooter">
+                    <a class="viewAllMsgs" href="#">View all messages</a>
+                </div>
+
+            </div> -->
+            <!-- admin setting box -->
             <div class="adminSettingBox" id="adminSettingBox">
                 <div class="adminSettingHeader">
                     <strong id="nameofAdmin">Rakesh Nandre</strong>
@@ -183,9 +236,11 @@
                 </div>
                 <hr style="margin: 15px 0;">
                 <ul id="settingOptions">
-                    <li><a href="../admin profile/admin.html" style="text-decoration: none; color: black;"><span
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
+                    <li><a href="../../admin profile/admin.html" style="text-decoration: none; color: black;"><span
                                 class="iconify" style="color: gray;" data-icon="akar-icons:pencil" data-width="17"
                                 data-height="17"></span> Edit Profile</a></li>
+                    <!-- Code for edit profile in admin profile @anjudewangan -->
                     <li><span class="iconify" data-icon="ant-design:setting-outlined" style="color: gray;"
                             data-width="17" data-height="17"></span> Account Setting</li>
                     <li><span class="iconify" data-icon="ant-design:user-outlined" style="color: gray;" data-width="17"
@@ -198,7 +253,7 @@
         <div class="navbar-third">
             <div class="dropdown">
                 <button id="dropbtnMyfunction" class="dropbtn">
-                    <img class="user-img" src="../images/2.png" />Rakesh Nandare
+                    <img class="user-img" src="../../images/2.png" />Rakesh Nandare
                     <i class="fa fa-angle-down"></i>
                 </button>
             </div>
@@ -223,6 +278,7 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -239,6 +295,7 @@
                                 This is an automated server response message. All systems are online.
                             </div>
                         </div>
+
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="alertBodyitems" href="#">
@@ -258,6 +315,7 @@
 
                     </div>
                     <div class="dropdown-divider"></div>
+
                 </div>
                 <div class="alertFooter">
                     <a>View All Events</a>
@@ -265,47 +323,54 @@
             </div>
         </div>
     </nav>
+
     <div id="mySidenav" class="sidenav">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                <a class="nav-link" href="../dashboard.html">
+                <a class="nav-link" href="../../dashboard.html">
                     <i class="fa fa-fw fa-dashboard"></i>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="../doctor1/doctor.html">
+                <a class="nav-link" href="../../doctor1/doctor.html">
                     <i class="fa fa-fw fa-user-md"></i>
                     <span class="nav-link-text">Doctors</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables"
                 onclick="showpateintTable()">
-                <a class="nav-link" href="../pateints/index.html">
+                <a class="nav-link" href="../../pateints/index.html">
                     <i class="fa fa-fw fa fa-wheelchair"></i>
                     <span class="nav-link-text">Patient</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="../Calendar/calendar.html">
+                <a class="nav-link" href="../../Calendar/calendar.html">
                     <i class="fa fa-fw fa fa-calendar"></i>
                     <span class="nav-link-text">Appointment</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="../doctorschedule/doctorSchedule.html">
+                <!-- Code for add Dr. Schedule @anjudewangan -->
+                <a class="nav-link" href="../../doctorschedule/doctorSchedule.html">
+                    <!-- Code for add Dr. Schedule @anjudewangan -->
                     <i class="fa fa-fw fa fa-calendar-check-o"></i>
                     <span class="nav-link-text">Dr. Schedule</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link active-link" href="../department/department.html">
+                <!-- Code for add Department @anjudewangan -->
+                <a class="nav-link" href="../../department/department.html">
+                    <!-- Code for add Department @anjudewangan -->
                     <i class="fa fa-fw fa-building-o"></i>
                     <span class="nav-link-text">Departments</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="../insurance/insurance.html">
+                <!-- Code for add Insurance @anjudewangan -->
+                <a class="nav-link" href="../../insurance/insurance.html">
+                    <!-- Code for add Insurance @anjudewangan -->
                     <i class="fa fa-fw fa-umbrella" aria-hidden="true"></i>
                     <span class="nav-link-text">Insurance Network</span>
                 </a>
@@ -319,90 +384,89 @@
                 <!-- Code for link Employee Section @anjudewangan -->
                 <ul class="collapse sidenav-second-level" id="collapseComponents">
                     <li>
-                        <a href="../employee/employeeList.html">Employee List</a>
+                        <a href="../../employee/employeeList.html">Employee List</a>
                     </li>
                     <li>
-                        <a href="../employee/leave.html">Leaves</a>
+                        <a href="../../employee/leave.html">Leaves</a>
                     </li>
                     <li>
-                        <a href="../employee/holiday.html">Holidays</a>
+                        <a href="../../employee/holiday.html">Holidays</a>
                     </li>
                     <li>
-                        <a href="../employee/attendance.html">Attendance</a>
+                        <a href="../../employee/attendance.html">Attendance</a>
                     </li>
                 </ul>
                 <!-- Code for link Employee Section @anjudewangan -->
             </li>
             <!-- Code for link item @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="../item/item.html">
+                <a class="nav-link" href="../../item/item.html">
                     <i class="fa fa-fw fa-sitemap" aria-hidden="true"></i>
                     <span class="nav-link-text">Item</span>
                 </a>
             </li>
-
-            <!--Code by @Mrunal for link sales-->
+            <!-- Code for link item @anjudewangan -->
             <!-- Code for link Sales @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages"
                     data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-cart-arrow-down"></i>
+                    <i class="fa fa-fw fa-cart-arrow-down" aria-hidden="true"></i>
                     <span class="nav-link-text">Sales</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="../sales/customers/customers.html">Customers</a>
+                        <a href="../../sales/customers/customers.html">Customers</a>
                     </li>
                     <li>
-                        <a href="../sales/estimates/estimates.html">Estimates</a>
+                        <a href="../../sales/estimates/estimates.html">Estimates</a>
                     </li>
                     <li>
-                        <a href="../sales/salesOrders/salesOrders.html">Sales Orders</a>
+                        <a href="../../sales/salesOrders/salesOrders.html">Sales Orders</a>
                     </li>
                     <li>
-                        <a href="../sales/packages-folder/packages.html">Packages</a>
+                        <a href="../../sales/packages-folder/packages.html">Packages</a>
                     </li>
                     <li>
-                        <a href="../sales/shipmets/shipments.html">Shipments</a>
+                        <a href="../../sales/shipmets/shipments.html">Shipments</a>
                     </li>
                     <li>
-                        <a href="../sales/delivery-challans/deliveryChallans.html">Delivery Challans</a>
+                        <a href="../../sales/delivery-challans/deliveryChallans.html">Delivery Challans</a>
                     </li>
                     <li>
-                        <a href="../sales/invoices/invoices.html">Invoices</a>
+                        <a href="../../sales/invoices/invoices.html">Invoices</a>
                     </li>
                     <li>
-                        <a href="../sales/received-payments/receivedPayments.html">Received Payments</a>
+                        <a href="../../sales/received-payments/receivedPayments.html">Received Payments</a>
                     </li>
                     <li>
                         <a href="">Recurring Invoices</a>
                     </li>
                     <li>
-                        <a href="../sales/sales-return/salesReturn.html">Sales Return</a>
+                        <a href="../../sales/sales-return/salesReturn.html">Sales Return</a>
                     </li>
                     <li>
-                        <a href="../sales/credit-notes/creditNotes.html">Credit Notes</a>
+                        <a href="../../sales/credit-notes/creditNotes.html">Credit Notes</a>
                     </li>
                 </ul>
             </li>
-            <!-- end Code for link Sales @anjudewangan & @mrunal  -->
+            <!-- Code for link Sales @anjudewangan -->
 
             <!-- Code for link Purchases @anjudewangan -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePurchases"
-                    data-parent="#exampleAccordion">
+                <a class="nav-link nav-link-collapse collapsed active-link" data-toggle="collapse"
+                    href="#collapsePurchases" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa fa-shopping-bag"></i>
                     <span class="nav-link-text">Purchases</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapsePurchases">
                     <li>
-                        <a href="../purchases/vendors/vendors.html">Vendors</a>
+                        <a href="../vendors/vendors.html">Vendors</a>
                     </li>
                     <li>
-                        <a href="../purchases/purchase-order/purchaseOrder.html">Purchase Orders</a>
+                        <a href="../purchase-order/purchaseOrder.html">Purchase Orders</a>
                     </li>
                     <li>
-                        <a href="../purchases/purchase-receives/purchaseReceives.html">Purchase Receives</a>
+                        <a href="./purchaseReceives.html" class="sales-link">Purchase Receives</a>
                     </li>
                     <li>
                         <a href="">Bills</a>
@@ -508,49 +572,224 @@
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-                <a class="nav-link" href="../Setting Folder/practice-profile.html">
+                <a class="nav-link" href="../../Setting Folder/practice-profile.html">
                     <i class="fa fa-fw fa-cog"></i>
                     <span class="nav-link-text">Setting</span>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="casualty_department">
-        <div class="insurance_settings">
-            <p>Casualty Department Staff</p>
-            <a href=""> <i class="fa fa-fw fa-cog"></i>Settings</a>
-        </div>
-        <div class="casualty_dtable">
-            <table class="casualty_staff_table">
-                <tr>
-                    <th>Name</th>
-                    <th>Role</th>
-                    <th>Login Status</th>
-                    <th>Last Logged in</th>
-                </tr>
-                <tr>
-                    <td>Dr.Rakesh Nandre</td>
-                    <td>Head Of Department</td>
-                    <td>Active</td>
-                    <td>2 hours ago</td>
-                </tr>
-                <tr>
-                    <td>Dr.Rakesh Nandre</td>
-                    <td>Nurse</td>
-                    <td>Active</td>
-                    <td>2 hours ago</td>
-                </tr>
-            </table>
 
+    <!-- Purchase Receives -->
+    <main class="main">
+        <div class="container" style="max-width: 1533px !important;">
+            <div class="row">
+                <div class="col-3">
+                    <div class="row border-bottom pb-2">
+                        <div class="col-2"></div>
+                        <div class="col-6">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Purchase Receives
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">In Transit</a></li>
+                                    <li><a class="dropdown-item" href="#">Received</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                        </div>
+                        <div class="col-2">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
+                                    <li><a class="dropdown-item" href="#">Created Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Last Modified Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Date</a></li>
+                                    <li><a class="dropdown-item" href="#">Purchase Receive#</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Purchase Order#</a></li>
+                                    <li><a class="dropdown-item fs-5 border-bottom" href="#">
+                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
+                                            Export Receives
+                                        </a></li>
+                                    <li><a class="dropdown-item fs-5" href="#">
+                                            <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
+                                            Refresh List
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-3 px-5 active-item border-bottom">
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text text-dark">Appario Technology</div>
+                            <div><small>PR-00001 ₹800.00</small></div>
+                        </div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text text-danger">In Transit</div>
+                            <div><small class="text-primary">PO-00001</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 border-left">
+                    <div class="row border-bottom py-2 pb-3">
+                        <div class="col-2">
+                            <h5>PR-00001</h5>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col">
+                            <a href="./editPR.html">
+                                <button class="btn btn-light border">
+                                    Edit
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupFiles">
+                                <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                            </button>
+                            <div class="modal fade" id="popupFiles" tabindex="-1" aria-labelledby="popupFilesLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-4">
+                                            <h6 class="text-secondary text-center">You can upload a maximum of 10 files,
+                                                5MB each</h6>
+                                            <div class="container mt-3">
+                                                <div class="row">
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-upload text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Drag & drop</h6>
+                                                    </div>
+                                                    <div class="col"></div>
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-cloud-upload text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Cloud</h6>
+                                                    </div>
+                                                    <div class="col"></div>
+                                                    <div
+                                                        class="col text-center rounded bg-light border border-secondary py-2">
+                                                        <i class="fa fa-file text-primary mb-2 fs-5"
+                                                            aria-hidden="true"></i>
+                                                        <h6>Documents</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a href="./received.html">
+                                <button class="btn btn-primary">
+                                    Mark as Receive
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn btn-light border dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupDelete">Delete</a></li>
+                                </ul>
+                                <div class="modal fade" id="popupDelete" tabindex="-1"
+                                    aria-labelledby="popupDelete2Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-10">Are you sure you want to delete this Purchase
+                                                        Receive?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <a href="#"><button type="button"
+                                                        class="btn btn-primary">Delete</button></a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-1">
+                            <a href="#" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="mt-5 mx-4 mb-5">
+                        <b>
+                            <h3>PURCHASE RECEIVE</h3>
+                        </b>
+                        <span>Receive# PR-00001</span>
+                    </div>
+                    <div class="p-3 mb-5">
+                        <div class="row mb-3">
+                            <div class="col-2">Purchase Order#</div>
+                            <div class="col-2"><span class="text-primary">PO-00002</span></div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-2">Date</div>
+                            <div class="col-2">28/08/2022</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-2">Status</div>
+                            <div class="col-2"><button class="btn btn-danger">In Transit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered mb-5">
+                        <thead class="bg-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Items & Description</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>savta
+                                    <div class="text-secondary">SKU: 2984894</div>
+                                    <div>okmoop</div>
+                                </td>
+                                <td>1 pcs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-    <script src="./script1.js"></script>
-    <!-- Code for add Department @anjudewangan -->
+    <script src="../script.js"></script>
 </body>
 
 </html>
+<!-- Code for add Purschases @anjudewangan -->

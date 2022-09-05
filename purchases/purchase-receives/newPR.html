@@ -580,207 +580,145 @@
         </ul>
     </div>
 
-    <!-- Purchase Receives -->
+    <!--Edit Purchase Receives -->
     <main class="main">
         <div class="container" style="max-width: 1533px !important;">
-            <div class="row">
-                <div class="col-3">
-                    <div class="row border-bottom pb-2">
-                        <div class="col-2"></div>
-                        <div class="col-6">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    All Purchase Receives
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item text-secondary" href="#">Default Filters</a></li>
-                                    <li><a class="dropdown-item" href="#">All</a></li>
-                                    <li><a class="dropdown-item" href="#">In Transit</a></li>
-                                    <li><a class="dropdown-item" href="#">Received</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                        </div>
-                        <div class="col-2">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton3"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa fa-align-left" aria-hidden="true"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                    <li><a class="dropdown-item fs-4" href="#">SORT BY</a></li>
-                                    <li><a class="dropdown-item" href="#">Created Time</a></li>
-                                    <li><a class="dropdown-item" href="#">Last Modified Time</a></li>
-                                    <li><a class="dropdown-item" href="#">Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Purchase Receive#</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Purchase Order#</a></li>
-                                    <li><a class="dropdown-item fs-5 border-bottom" href="#">
-                                            <i class="fa fa-arrow-up text-secondary" aria-hidden="true"></i>
-                                            Export Receives
-                                        </a></li>
-                                    <li><a class="dropdown-item fs-5" href="#">
-                                            <i class="fa fa-refresh text-secondary" aria-hidden="true"></i>
-                                            Refresh List
-                                        </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row py-3 px-5 active-item border-bottom">
-                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text text-dark">Appario Technology</div>
-                            <div><small>PR-00001 ₹800.00</small></div>
-                        </div>
-                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                            <div class="div-send-text text-danger">In Transit</div>
-                            <div><small class="text-primary">PO-00001</small></div>
-                        </div>
-                    </div>
+            <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
+                <h6><i class="fa fa fa-arrow-down" aria-hidden="true"></i> New Purchase Receive</h6>
+                <div><a href="#" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
                 </div>
-                <div class="col-9 border-left">
-                    <div class="row border-bottom py-2 pb-3">
-                        <div class="col-2">
-                            <h5>PR-00001</h5>
-                        </div>
-                        <div class="col-3"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col">
-                            <a href="./editPR.html">
-                                <button class="btn btn-light border">
-                                    Edit
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#popupFiles">
-                                <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-                            </button>
-                            <div class="modal fade" id="popupFiles" tabindex="-1" aria-labelledby="popupFilesLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-body p-4">
-                                            <h6 class="text-secondary text-center">You can upload a maximum of 10 files,
-                                                5MB each</h6>
-                                            <div class="container mt-3">
-                                                <div class="row">
-                                                    <div
-                                                        class="col text-center rounded bg-light border border-secondary py-2">
-                                                        <i class="fa fa-upload text-primary mb-2 fs-5"
-                                                            aria-hidden="true"></i>
-                                                        <h6>Drag & drop</h6>
+            </div>
+            <div class="container mt-3">
+                <div class="mb-3 row d-flex align-items-center">
+                    <label for="" class="col-sm-3 col-form-label">Purchase Receive#<span
+                            class="text-danger">*</span></label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="PR-00001">
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#popupEstimateNumber"><i
+                                class="fa fa-cog fs-5" aria-hidden="true"></i></a>
+                        <div class="modal fade" id="popupEstimateNumber" tabindex="-1"
+                            aria-labelledby="popupEstimateNumberLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupEstimateNumberLabel">
+                                            Purchase Receive#</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="my-3">To save you time, your Estimate
+                                            numbers are set to
+                                            auto-generate mode. Are you sure you want to
+                                            change this setting?</div>
+                                        <div class="form-check mb-3 mt-5">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Continue auto-generating sales order numbers
+                                            </label>
+                                            <div class="row ml-3">
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Prefix</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="PR-">
                                                     </div>
-                                                    <div class="col"></div>
-                                                    <div
-                                                        class="col text-center rounded bg-light border border-secondary py-2">
-                                                        <i class="fa fa-cloud-upload text-primary mb-2 fs-5"
-                                                            aria-hidden="true"></i>
-                                                        <h6>Cloud</h6>
-                                                    </div>
-                                                    <div class="col"></div>
-                                                    <div
-                                                        class="col text-center rounded bg-light border border-secondary py-2">
-                                                        <i class="fa fa-file text-primary mb-2 fs-5"
-                                                            aria-hidden="true"></i>
-                                                        <h6>Documents</h6>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Next
+                                                            Number</label>
+                                                        <input type="text" class="form-control" id=""
+                                                            placeholder="00001">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <a href="./received.html">
-                                <button class="btn btn-primary">
-                                    Mark as Receive
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <div class="dropdown">
-                                <button class="btn btn-light border dropdown-toggle" type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    More
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#popupDelete">Delete</a></li>
-                                </ul>
-                                <div class="modal fade" id="popupDelete" tabindex="-1"
-                                    aria-labelledby="popupDeleteLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-2">
-                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-10">Are you sure you want to delete this Purchase
-                                                        Receive?
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer d-flex justify-content-start">
-                                                <a href="#"><button type="button"
-                                                        class="btn btn-primary">Delete</button></a>
-                                                <button type="button" class="btn btn-outline-secondary"
-                                                    data-bs-dismiss="modal">Cancel</button>
-                                            </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                I will add them manually each time
+                                            </label>
                                         </div>
                                     </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col mt-1">
-                            <a href="#" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
-                        </div>
                     </div>
-                    <div class="mt-5 mx-4 mb-5">
-                        <b>
-                            <h3>PURCHASE RECEIVE</h3>
-                        </b>
-                        <span>Receive# PR-00001</span>
-                    </div>
-                    <div class="p-3 mb-5">
-                        <div class="row mb-3">
-                            <div class="col-2">Purchase Order#</div>
-                            <div class="col-2"><span class="text-primary">PO-00002</span></div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-2">Date</div>
-                            <div class="col-2">28/08/2022</div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-2">Status</div>
-                            <div class="col-2"><button class="btn btn-danger">In Transit</button>
-                            </div>
-                        </div>
-                    </div>
-                    <table class="table table-bordered mb-5">
-                        <thead class="bg-light">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Items & Description</th>
-                                <th scope="col">Quantity</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>savta
-                                    <div class="text-secondary">SKU: 2984894</div>
-                                    <div>okmoop</div>
-                                </td>
-                                <td>1 pcs</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
+                <div class="mb-3 row d-flex align-items-center">
+                    <label for="" class="col-sm-3 col-form-label">Received Date<span
+                            class="text-danger">*</span></label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="" placeholder="22/07/2022">
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 p-3" style="background-color:#FFF6E8;">
+                <i class="fa fa-info-circle text-warning" aria-hidden="true"></i> You can
+                also select or scan the items to be included from the purchase order.
+                <a href="">Select/scan items</a>
+            </div>
+            <div class="container mt-4">
+                <table class="table table-bordered">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Item & Description</th>
+                            <th>Ordered</th>
+                            <th>Used</th>
+                            <th>Quantity to Receive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>AK</b>
+                                <div><small class="text-secondary">SKU: 2984894</small>
+                                </div>
+                                <div><small class="text-secondary">,okmoop</small></div>
+                            </td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td class="text-end">
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <i class="fa fa-minus-circle text-primary" aria-hidden="true"></i> <input
+                                        type="text" class="form-control" id="" placeholder="1" style="width: 80px;"> <i
+                                        class="fa fa-plus-circle text-primary" aria-hidden="true"></i>
+                                </div>
+                                <div style="margin-right: -34px; margin-top: -32px;"><i
+                                        class="fa fa-times-circle-o text-danger icon-delete" aria-hidden="true"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container mt-4 border-bottom">
+                <div class="mb-3 row px-3">
+                    <label for="" class="col-form-label">Internal Notes</label>
+                    <textarea class="form-control" id=""></textarea>
+                </div>
+            </div>
+            <div class="container mt-4 d-flex justify-content-start gap-2 mb-5">
+                <button type="button" class="btn btn-primary">Save as Received</button>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#">Save as In Transit</a></li>
+                        <li><a class="dropdown-item" href="#">Save as Received</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
         </div>
     </main>

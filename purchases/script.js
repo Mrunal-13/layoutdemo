@@ -95,6 +95,18 @@ $(document).ready(function () {
         $(".purOrderTableHead2").hide();
     });
 
+    $(".billTableHead1").show();
+    $(".billTableHead2").hide();
+
+    $(".checkBillHead").click(function () {
+        $(".billTableHead2").show();
+        $(".billTableHead1").hide();
+    });
+    $("#closeBillHead").click(function () {
+        $(".billTableHead1").show();
+        $(".billTableHead2").hide();
+    });
+
 });
 
 // Code for Print @anjudewangan

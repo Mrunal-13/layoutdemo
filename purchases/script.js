@@ -107,6 +107,18 @@ $(document).ready(function () {
         $(".billTableHead2").hide();
     });
 
+    $(".paymentTableHead1").show();
+    $(".paymentTableHead2").hide();
+
+    $(".checkPaymentHead").click(function () {
+        $(".paymentTableHead2").show();
+        $(".paymentTableHead1").hide();
+    });
+    $("#closePaymentHead").click(function () {
+        $(".paymentTableHead1").show();
+        $(".paymentTableHead2").hide();
+    });
+
 });
 
 // Code for Print @anjudewangan

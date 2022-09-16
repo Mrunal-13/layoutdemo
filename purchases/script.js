@@ -119,6 +119,18 @@ $(document).ready(function () {
         $(".paymentTableHead2").hide();
     });
 
+    $(".vendorCreTableHead1").show();
+    $(".vendorCreTableHead2").hide();
+
+    $(".checkVendorCreHead").click(function () {
+        $(".vendorCreTableHead2").show();
+        $(".vendorCreTableHead1").hide();
+    });
+    $("#closeVendorCreHead").click(function () {
+        $(".vendorCreTableHead1").show();
+        $(".vendorCreTableHead2").hide();
+    });
+
 });
 
 // Code for Print @anjudewangan
@@ -431,7 +443,7 @@ $(document).ready(function () {
     });
 
     $("#btn-add-bills").click(function () {
-        $(".table-add-bills tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th-credit" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td><select class="form-select bg-light" aria-label="Default select example"><option selected>Select a Account</option></select></td><td class="text-end">1.00<div><small>Stock on Hand:</small></div><div><small>50.00 pcs <i class="fa fa-arrow-circle-o-down text-primary"aria-hidden="true" data-bs-toggle="modal"data-bs-target="#popupStockDetails"></i></small></div></td><td class="text-end">0.00</td><td class="d-flex justify-content-between"><div>0</div><select class="form-select" aria-label="Default select example" style="width: 64px;"><option selected>₹</option><option>%</option></select></td><td><select class="form-select"><option selected>Select Customer</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-3credit" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete-credit" aria-hidden="true"></i></div></td></tr>');
+        $(".table-add-bills tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th-credit" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td><select class="form-select bg-light" aria-label="Default select example"><option selected>Select a Account</option></select></td><td class="text-end">1.00</td><td class="text-end">0.00</td><td class="d-flex justify-content-between"><div>0</div><select class="form-select" aria-label="Default select example" style="width: 64px;"><option selected>₹</option><option>%</option></select></td><td><select class="form-select"><option selected>Select Customer</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-3credit" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete-credit" aria-hidden="true"></i></div></td></tr>');
         return false;
     });
 
@@ -445,6 +457,28 @@ $(document).ready(function () {
         return false;
     });
     // Code for table bills @anjudewangan
+
+    // Code for table vendor credits @anjudewangan
+    const addTableVendorCre = [];
+    addTableVendorCre.map(() => {
+        $(".table-add-vendorCre tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th-credit" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td></td><td></td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>₹</option><option>%</option></select></td><td><select class="form-select"><option selected>Select Customer</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"><i class="fa fa-clone text-primary icon-copy icon-copy-3credit" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete-credit" aria-hidden="true"></i></div></td></tr>');
+    });
+
+    $("#btn-add-vendorCre").click(function () {
+        $(".table-add-vendorCre tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th-credit" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td><select class="form-select bg-light" aria-label="Default select example"><option selected>Select a Account</option></select></td><td class="text-end">1.00</td><td class="text-end">0.00</td><td class="d-flex justify-content-between"><div>0</div><select class="form-select" aria-label="Default select example" style="width: 64px;"><option selected>₹</option><option>%</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-3credit" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete-credit" aria-hidden="true"></i></div></td></tr>');
+        return false;
+    });
+
+    $(document).on("click", ".icon-copy-1credit", function () {
+        $(".table-add-vendorCre tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th-credit" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" style="opacity: 0.7;"></i>AK</div><div class="text-secondary"><div class="dropdown"><button class="btn btn-white text-secondary btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="./editItem.html">Edit Item</a></li><li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#popupItemDetails">View Item Details</a></li></ul><i class="fa fa-times-circle-o" aria-hidden="true"></i></div></div></div><div class="ml-5 mb-2"><textarea class="form-control" placeholder="Add a description to your item" id="floatingTextarea3"></textarea></div><div class="ml-5"><span class="bg-success">SERVICE</span> SAC: <a href="" data-bs-toggle="modal" data-bs-target="#popupSAC">998313 <i class="fa fa-pencil" aria-hidden="true"></i></a></div></td><td><select class="form-select bg-light" aria-label="Default select example"><option selected>Cost of Goods Sold</option></select></td><td class="text-end">1.00<div><small>Stock on Hand:</small></div><div><small>50.00 pcs <i class="fa fa-arrow-circle-o-down text-primary"aria-hidden="true" data-bs-toggle="modal"data-bs-target="#popupStockDetails"></i></small></div></td><td class="text-end">200.00 <div><a href="" data-bs-toggle="modal" data-bs-target="#popupItemDetails">Recent Transaction</a></div></td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>%</option><option>₹</option></select></td><td class="text-end">₹200.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-1credit" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete-credit" aria-hidden="true"></i></div></td></tr>');
+        return false;
+    });
+
+    $(document).on("click", ".icon-copy-3credit", function () {
+        $(".table-add-vendorCre tbody").append('<tr><td><i class="fa fa-th text-secondary icon-th-credit" aria-hidden="true" aria-hidden="true" style="margin-left: -44px;"></i><div class="d-flex justify-content-between" style="margin-top: -22px;"><div><i class="fa fa-picture-o text-secondary fs-3" aria-hidden="true" style="opacity: 0.7;"></i><span class="text-secondary">Type or click to select an item</span></div></div></td><td><select class="form-select bg-light" aria-label="Default select example"><option selected>Select a Account</option></select></td><td class="text-end">1.00</td><td class="text-end">0.00</td><td class="d-flex justify-content-between"><div>0</div> <select class="form-select" aria-label="Default select example" style="width: 64px;"> <option selected>₹</option><option>%</option></select></td><td class="text-end">₹0.00<div style="margin-right: -62px; margin-top: -23px;"> <i class="fa fa-clone text-primary icon-copy icon-copy-3credit" aria-hidden="true"></i> <i class="fa fa-times-circle-o text-danger icon-delete-credit" aria-hidden="true"></i></div></td></tr>');
+        return false;
+    });
+    // Code for table vendor credits @anjudewangan
 
     $(document).on("click", ".icon-delete-credit", function () {
         $(this).parent().parent().parent('tr').remove();

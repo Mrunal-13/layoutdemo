@@ -476,7 +476,7 @@
                         <a href="../payments-made/paymentsMade.html">Payments Made</a>
                     </li>
                     <li>
-                        <a href="">Vendor Credits</a>
+                        <a href="../vendor-credits/vendorCredits.html">Vendor Credits</a>
                     </li>
                 </ul>
             </li>
@@ -758,17 +758,75 @@
                                     More
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Use Credits</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupApplyInvoice">Use Credits</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupVoid">Void</a></li>
                                     <li><a class="dropdown-item border-bottom" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupIWOff">Expected Payment Date</a></li>
                                     <li><a class="dropdown-item" href="./newBill.html">Clone</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Create Vendor Credits</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupVendorCredit">Create Vendor Credits</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
-                                    <li><a class="dropdown-item" href="#">Undo Receive</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupUndo">Undo Receive</a></li>
                                 </ul>
+                                <div class="modal fade" id="popupVendorCredit" tabindex="-1"
+                                    aria-labelledby="popupVendorCreditLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <span class="mb-3">When a credit is created for this vendor, the
+                                                            credit amount will be applied to this bill. Do you want to
+                                                            continue?</span>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Do not show this again
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <a href="../vendor-credits/newVC.html"><button type="button"
+                                                        class="btn btn-primary">Proceed</button></a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupUndo" tabindex="-1" aria-labelledby="popupUndoLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-10">The Undo Receive action will decrease the
+                                                        physical stock of the associated items. Would you like to
+                                                        proceed?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <button type="button" class="btn btn-primary">Yes</button>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="modal fade" id="popupDelete" tabindex="-1"
                                     aria-labelledby="popupDeleteLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -995,6 +1053,13 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                            <div class="text-end row">
+                                                <div class="col-8"></div>
+                                                <div class="col-4">
+                                                    <div class="mb-3">Total Amount Applied: 52.00</div>
+                                                    <div class="bg-light p-2">Final Bill Balance: 392.00</div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary">Add</button>

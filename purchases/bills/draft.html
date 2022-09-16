@@ -476,7 +476,7 @@
                         <a href="../payments-made/paymentsMade.html">Payments Made</a>
                     </li>
                     <li>
-                        <a href="">Vendor Credits</a>
+                        <a href="../vendor-credits/vendorCredits.html">Vendor Credits</a>
                     </li>
                 </ul>
             </li>
@@ -763,10 +763,43 @@
                                     <li><a class="dropdown-item border-bottom" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupVoid">Void</a></li>
                                     <li><a class="dropdown-item" href="./newBill.html">Clone</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Create Vendor Credits</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupVendorCredit">Create Vendor Credits</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
                                 </ul>
+                                <div class="modal fade" id="popupVendorCredit" tabindex="-1"
+                                    aria-labelledby="popupVendorCreditLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <span class="mb-3">When a credit is created for this vendor, the
+                                                            credit amount will be applied to this bill. Do you want to
+                                                            continue?</span>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Do not show this again
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <a href="../vendor-credits/newVC.html"><button type="button"
+                                                        class="btn btn-primary">Proceed</button></a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="modal fade" id="popupDelete" tabindex="-1"
                                     aria-labelledby="popupDeleteLabel" aria-hidden="true">
                                     <div class="modal-dialog">

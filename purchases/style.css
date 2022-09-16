@@ -599,7 +599,7 @@
     list-style-type: none;
 }
 
-.ulBilling li{
+.ulBilling li {
     list-style-type: none;
 }
 
@@ -622,7 +622,10 @@ main .active-item {
 #popupMarkReceived .modal-body i,
 #popupMarkUndo .modal-body i,
 #popupCredit .modal-body i,
-#popupUndo .modal-body i {
+#popupUndo .modal-body i,
+#popupBills .modal-body i,
+#popupRefund .modal-body i,
+#popupVendorCredit .modal-body i {
     color: #EF8523;
     font-size: 45px;
 }

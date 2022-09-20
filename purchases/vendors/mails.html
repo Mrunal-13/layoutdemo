@@ -707,9 +707,11 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item text-secondary" href="#">Purchase</a></li>
-                                    <li><a class="dropdown-item" href="#">Bill Payment</a></li>
-                                    <li><a class="dropdown-item" href="#">Purchase Order</a></li>
-                                    <li><a class="dropdown-item" href="#">Vendor Credits</a></li>
+                                    <li><a class="dropdown-item" href="./billPayment.html">Bill Payment</a></li>
+                                    <li><a class="dropdown-item" href="../purchase-order/newPO.html">Purchase Order</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../vendor-credits/newVC.html">Vendor Credits</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -723,11 +725,93 @@
                                     <li class="border-bottom"><a class="dropdown-item" href="./emailVendor.html">Email
                                             Vendor</a></li>
                                     <li><a class="dropdown-item" href="./newVendor.html">Clone</a></li>
-                                    <li><a class="dropdown-item" href="#">Link to Customer</a></li>
-                                    <li class="border-bottom"><a class="dropdown-item" href="#">Merge Vendor</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
-                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupLinkCust">Link to Customer</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupMargevendor">Merge Vendor</a></li>
+                                    <li><a class="dropdown-item" href="./inactive.html">Mark as Inactive</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupDelete">Delete</a></li>
                                 </ul>
+                                <div class="modal fade" id="popupDelete" tabindex="-1"
+                                    aria-labelledby="popupDeleteLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-10">Do you want to delete the selected contact’s ?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <a href="./vendors.html"><button type="button"
+                                                        class="btn btn-primary">Delete</button></a>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupLinkCust" tabindex="-1"
+                                    aria-labelledby="popupLinkCustLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupLinkCustLabel">Link Appario Technology
+                                                    to Customer</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    You are going to link this seller to a customer. As a result the
+                                                    contact's seller profile will be linked to the other contact's
+                                                    customer profile. This process will allow you to view receivables
+                                                    and payables for a contact from the contact's overview section.
+                                                </div>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Choose a customer to link</option>
+                                                </select>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">Link</button>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="popupMargevendor" tabindex="-1"
+                                    aria-labelledby="popupMargevendorLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-light">
+                                                <h5 class="modal-title" id="popupMargevendorLabel">Select Master Vendor
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    Please select a vendor from the list to merge and transfer all
+                                                    transactions of "Jai Suryavanshi". "Jai Suryavanshi" will be
+                                                    deactivated after the merger.
+                                                </div>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select Vender</option>
+                                                </select>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary disabled">Continue</button>
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-1 mt-1">

@@ -585,7 +585,7 @@
         <div class="container" style="max-width: 1533px !important;">
             <div class="py-2 border-bottom divSendEmailHead d-flex justify-content-between">
                 <h6><i class="fa fa fa-arrow-down" aria-hidden="true"></i> New Purchase Receive</h6>
-                <div><a href="#" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div><a href="./purchaseReceives.html" class="text-dark"><i class="fa fa-times" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="container mt-3">
@@ -623,8 +623,7 @@
                                                 <div class="col-3">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Prefix</label>
-                                                        <input type="text" class="form-control" id=""
-                                                            placeholder="PR-">
+                                                        <input type="text" class="form-control" id="" placeholder="PR-">
                                                     </div>
                                                 </div>
                                                 <div class="col-3">
@@ -708,17 +707,18 @@
                 </div>
             </div>
             <div class="container mt-4 d-flex justify-content-start gap-2 mb-5">
-                <button type="button" class="btn btn-primary">Save as Received</button>
+                <a href="./received.html"><button type="button" class="btn btn-primary">Save as Received</button></a>
                 <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
                         data-bs-toggle="dropdown" aria-expanded="false">
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item" href="#">Save as In Transit</a></li>
-                        <li><a class="dropdown-item" href="#">Save as Received</a></li>
+                        <li><a class="dropdown-item" href="./transit.html">Save as In Transit</a></li>
+                        <li><a class="dropdown-item" href="./received.html">Save as Received</a></li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a href="./purchaseReceives.html"><button type="button"
+                        class="btn btn-outline-secondary">Cancel</button></a>
             </div>
         </div>
     </main>

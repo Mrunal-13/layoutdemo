@@ -675,7 +675,7 @@
                                     class="text-primary border-left pl-2">PO-00001</small></div>
                         </div>
                     </div>
-                    <a href="../../sales/salesOrders/allSalesOrders.html" class="text-decoration">
+                    <a href="./issued.html" class="text-decoration">
                         <div class="row py-3 px-5 border-bottom">
                             <div class="col-10 text-dark">Sanole baba</div>
                             <div class="col-2"><small class="text-dark">26/06/2017</small></div>
@@ -686,28 +686,24 @@
                             </div>
                         </div>
                     </a>
-                    <a href="../../sales/salesOrders/allSalesOrders.html" class="text-decoration">
-                        <div class="row py-3 px-5 border-bottom">
-                            <div class="col-10 text-dark">Sample baba</div>
-                            <div class="col-2"><small class="text-dark">26/06/2017</small></div>
-                            <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                                <div class="div-send-text text-secondary">Draft</div>
-                                <div><small class="text-dark">₹200.00</small> <small
-                                        class="text-primary border-left pl-2">PO-00003</small></div>
-                            </div>
+                    <div class="row py-3 px-5 border-bottom">
+                        <div class="col-10 text-dark">Sample baba</div>
+                        <div class="col-2"><small class="text-dark">26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text text-secondary">Draft</div>
+                            <div><small class="text-dark">₹200.00</small> <small
+                                    class="text-primary border-left pl-2">PO-00003</small></div>
                         </div>
-                    </a>
-                    <a href="../../sales/salesOrders/allSalesOrders.html" class="text-decoration">
-                        <div class="row py-3 px-5 border-bottom">
-                            <div class="col-10 text-dark">Sample baba</div>
-                            <div class="col-2"><small class="text-dark">26/06/2017</small></div>
-                            <div class="d-flex justify-content-between" style="margin-left: 47px;">
-                                <div class="div-send-text text-secondary">Draft</div>
-                                <div><small class="text-dark">₹200.00</small> <small
-                                        class="text-primary border-left pl-2">PO-00004</small></div>
-                            </div>
+                    </div>
+                    <div class="row py-3 px-5 border-bottom">
+                        <div class="col-10 text-dark">Sample baba</div>
+                        <div class="col-2"><small class="text-dark">26/06/2017</small></div>
+                        <div class="d-flex justify-content-between" style="margin-left: 47px;">
+                            <div class="div-send-text text-secondary">Draft</div>
+                            <div><small class="text-dark">₹200.00</small> <small
+                                    class="text-primary border-left pl-2">PO-00004</small></div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-9 border-left">
                     <div class="row border-bottom py-2 pb-3">
@@ -779,8 +775,9 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="./issued.html">Mark as Issued</a></li>
                                     <li><a class="dropdown-item" href="#">Convert to Bill</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark as Received</a></li>
-                                    <li><a class="dropdown-item border-bottom" href="#">Create Receive</a></li>
+                                    <li><a class="dropdown-item" href="../purchase-receives/newPR.html">Mark as
+                                            Received</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="../purchase-receives/newPR.html">Create Receive</a></li>
                                     <li><a class="dropdown-item border-bottom" href="./newPO.html">Clone</a></li>
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                             data-bs-target="#popupDelete">Delete</a></li>
@@ -830,7 +827,7 @@
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupShareLabel">Share Estimate Link</h5>
+                                            <h5 class="modal-title" id="popupShareLabel">Share Purchase Order Link</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -889,7 +886,7 @@
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupShare2Label">Share Estimate Link</h5>
+                                            <h5 class="modal-title" id="popupShare2Label">Share Purchase Order Link</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -953,7 +950,7 @@
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header bg-light">
-                                            <h5 class="modal-title" id="popupShare3Label">Share Estimate Link</h5>
+                                            <h5 class="modal-title" id="popupShare3Label">Share Purchase Order Link</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -1219,8 +1216,7 @@
                                                 <div class="col-3">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Prefix</label>
-                                                        <input type="text" class="form-control" id=""
-                                                            placeholder="PR-">
+                                                        <input type="text" class="form-control" id="" placeholder="PR-">
                                                     </div>
                                                 </div>
                                                 <div class="col-3">
@@ -1253,12 +1249,47 @@
                     <div class="mb-3">
                         <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
                             data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <i class="fa fa-file-text-o" aria-hidden="true"></i> bills ( 1 )
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i> Bills ( 1 )
                         </button>
                         <button class="btn btn-light border text-primary" data-bs-toggle="collapse"
                             data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
                             <i class="fa fa-arrow-down" aria-hidden="true"></i> Receives
                         </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <table class="table" style="background-color: #FFFCDD;">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-primary">
+                                                <i class="fa fa-file-text-o" aria-hidden="true"></i> Bills ( 1 )
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="d-flex justify-content-center align-items-center">
+                                            <td>1No bills created so far <span class="text-primary"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+                                                    aria-expanded="false" aria-controls="collapseExample2">New
+                                                    Bill</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                <div class="row rounded bg-danger p-3">
+                                    <div class="col-1"><i class="fa fa-warning text-white"></i></div>
+                                    <div class="col-10 text-white">You have recorded some purchase receipts in this
+                                        purchase order and converted all unreceived items to bills. Please go to the
+                                        'Receipts' section and convert each receipt into a bill.</div>
+                                    <div class="col-1"><i class="fa fa-times text-secondary"></i></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="collapse" id="collapseExample1">
                             <div class="card card-body">
                                 <table class="table" style="background-color: #FFFCDD;">
@@ -1284,9 +1315,10 @@
                                             <td>12/08/2022</td>
                                             <td class="text-danger">In Transit</td>
                                             <td></td>
-                                            <td class="text-primary">Convert to Bill <i
-                                                    class="fa fa-trash border-left pl-2" aria-hidden="true"
-                                                    data-bs-toggle="modal" data-bs-target="#popupDelete3"></i></td>
+                                            <td class="text-primary"><a href="../bills/newBill.html">Convert to Bill</a>
+                                                <i class="fa fa-trash border-left pl-2" aria-hidden="true"
+                                                    data-bs-toggle="modal" data-bs-target="#popupDelete3"></i>
+                                            </td>
                                         </tr>
                                         <div class="modal fade" id="popupDelete3" tabindex="-1"
                                             aria-labelledby="popupDelete3Label" aria-hidden="true">
@@ -1332,9 +1364,32 @@
                                 </button></a>
                         </div>
                         <div class="col">
-                            <a href="#"> <button class="btn btn-secondary">
-                                    Send Purchase Order
-                                </button></a>
+                            <button class="btn btn-secondary" data-bs-target="#popupDelete2" data-bs-toggle="modal">
+                                Send Purchase Order
+                            </button>
+                            <div class="modal fade" id="popupDelete2" tabindex="-1" aria-labelledby="popupDelete2Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-10">The purchase order will automatically be marked as
+                                                    open when you mail it.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-start">
+                                            <a href="./sendPO.html"><button type="button"
+                                                    class="btn btn-primary">Ok</button></a>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3 m-2">

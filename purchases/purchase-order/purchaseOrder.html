@@ -469,13 +469,13 @@
                         <a href="../purchase-receives/purchaseReceives.html">Purchase Receives</a>
                     </li>
                     <li>
-                        <a href="">Bills</a>
+                        <a href="../bills/bills.html">Bills</a>
                     </li>
                     <li>
-                        <a href="">Payments Made</a>
+                        <a href="../payments-made/paymentsMade.html">Payments Made</a>
                     </li>
                     <li>
-                        <a href="">Vendor Credits</a>
+                        <a href="../vendor-credits/vendorCredits.html">Vendor Credits</a>
                     </li>
                 </ul>
             </li>
@@ -1084,8 +1084,10 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">Bulk
                                     Update</button>
                                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                    <li><a class="dropdown-item" href="#">Bulk Update</a></li>
-                                    <li><a class="dropdown-item" href="#">Mark as Issued</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupBulkUpdate">Bulk Update</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#popupDelete2">Mark as Issued</a></li>
                                     <li><a class="dropdown-item" href="#">Bulk Cancel Items</a></li>
                                     <li><a class="dropdown-item" href="#">Bulk reopen canceled items</a></li>
                                     <li><a class="dropdown-item" href="#">Convert to Bill</a></li>
@@ -1113,10 +1115,45 @@
                             <td><a href="./draft.html" class="text-dark">SO-00005</a></td>
                             <td><a href="./draft.html" class="text-dark">Jay Suryawanshi</a></td>
                             <td><a href="./draft.html" class="text-secondary">Draft</a></td>
-                            <td><a href="./draft.html" class="text-dark"><i class="fa fa-circle text-secondary"></i></a></td>
-                            <td><a href="./draft.html" class="text-dark"><i class="fa fa-circle text-secondary"></i></a></td>
+                            <td><a href="./draft.html" class="text-dark"><i class="fa fa-circle text-secondary"></i></a>
+                            </td>
+                            <td><a href="./draft.html" class="text-dark"><i class="fa fa-circle text-primary"></i></a>
+                            </td>
                             <td><a href="./draft.html" class="text-dark">Rs.47,200.00</a></td>
                             <td><a href="./draft.html" class="text-dark">16/08/2022</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-check-input checkPurOrderHead" type="checkbox" value="" id="">
+                                <a href="./issued.html" class="text-dark">05/08/2022</a>
+                            </td>
+                            <td><a href="./issued.html">PO-00001</a></td>
+                            <td><a href="./issued.html" class="text-dark">SO-00005</a></td>
+                            <td><a href="./issued.html" class="text-dark">Jay Suryawanshi</a></td>
+                            <td><a href="./issued.html" class="text-primary">Issued</a></td>
+                            <td><a href="./issued.html" class="text-dark"><i class="fa fa-circle text-primary"></i></a>
+                            </td>
+                            <td><a href="./issued.html" class="text-dark"><i
+                                        class="fa fa-circle text-secondary"></i></a>
+                            </td>
+                            <td><a href="./issued.html" class="text-dark">Rs.47,200.00</a></td>
+                            <td><a href="./issued.html" class="text-dark">16/08/2022</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-check-input checkPurOrderHead" type="checkbox" value="" id="">
+                                <a href="./closed.html" class="text-dark">05/08/2022</a>
+                            </td>
+                            <td><a href="./closed.html">PO-00001</a></td>
+                            <td><a href="./closed.html" class="text-dark">SO-00005</a></td>
+                            <td><a href="./closed.html" class="text-dark">Jay Suryawanshi</a></td>
+                            <td><a href="./closed.html" class="text-success">Closed</a></td>
+                            <td><a href="./closed.html" class="text-dark"><i class="fa fa-circle text-primary"></i></a>
+                            </td>
+                            <td><a href="./closed.html" class="text-dark"><i class="fa fa-circle text-primary"></i></a>
+                            </td>
+                            <td><a href="./closed.html" class="text-dark">Rs.47,200.00</a></td>
+                            <td><a href="./closed.html" class="text-dark">16/08/2022</a></td>
                         </tr>
                         <div class="modal fade" id="popupDelete" tabindex="-1" aria-labelledby="popupDeleteLabel"
                             aria-hidden="true">
@@ -1138,6 +1175,69 @@
                                             <button type="button" class="btn btn-primary"
                                                 data-bs-dismiss="modal">No</button>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupBulkUpdate" tabindex="-1"
+                            aria-labelledby="popupBulkUpdateLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-light">
+                                        <h5 class="modal-title" id="popupBulkUpdateLabel">Bulk Update Purchase Orders
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">Select a field from the dropdown and update with the
+                                            latest information.</div>
+                                        <div class="mb-5 row">
+                                            <div class="col-6">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select a field</option>
+                                                    <option>Reference#</option>
+                                                    <option>PDF Template</option>
+                                                    <option>Date</option>
+                                                    <option>Delivery Date</option>
+                                                    <option>Notes</option>
+                                                    <option>Terms & Conditions</option>
+                                                    <option>Shipment preference</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control" name="" id="">
+                                            </div>
+                                        </div>
+                                        <div>Note: All selected predictions will be updated with new information and
+                                            you cannot undo this action.</div>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-start">
+                                        <button type="button" class="btn btn-primary">Update</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popupDelete2" tabindex="-1" aria-labelledby="popupDelete2Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="col-10">Are you sure about marking the selected purchase order
+                                                as issued?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-start">
+                                        <button type="button" class="btn btn-primary">Yes, Mark as Issued</button>
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
                                     </div>
                                 </div>
                             </div>
